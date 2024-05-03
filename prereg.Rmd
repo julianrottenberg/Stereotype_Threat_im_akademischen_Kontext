@@ -1,0 +1,27 @@
+---
+title: "Präregistrierung Stereotype Threat im akademischen Kontext"
+author: "Julian Rottenberg"
+output: pdf_document
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "stu"
+---
+
+```{r setup, include=FALSE}
+```
+
+# Präregistrierung systematisches Review - vor systematischer Recherche und Auswertung
+
+**Titel:** Stereotype Threat im akademischen Kontext
+Autor_in/Betreuung: Julian Rottenberg, Dr. Julia Zimmermann
+Datum:
+
+### Hintergrund
+
+### Hypothesen:
+
+**H1:** In academic context, stereotype threat induces variations in neural activation across different brain areas and networks, potentially influcencing academic performance. These may include, but are not limited to, the amygdala, the prefrontal cortex, the default mode network, and the salience network.
+
+**H2**: Individuals under stereotype threat will experience a temporary delice in cognitive control (as measured through brain activation patterns in the cognitive control network, executive function network, or through performance on behavioural tasks and questionnaires). This decline will lead to poorer academic performance compared to individuals not experiencing stereotype threat.
+
+**H3**: Students working memory performance is impaired under conditions of stereotype threat in academic settings. This impairment manifests through a reduction in working memory capacity, processing speed and accuracy, resulting in lower academic performance.
