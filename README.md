@@ -1,1 +1,1 @@
-# Stereotype_Threat_im_akademischen_Kontext
+# Stereotype Threat im akademischen Kontext
