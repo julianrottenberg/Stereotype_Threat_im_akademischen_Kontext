@@ -1,19 +1,28 @@
 ---
 title: "Präregistrierung Stereotype Threat im akademischen Kontext"
 author: "Julian Rottenberg"
-output: pdf_document
-csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
-documentclass     : "apa7"
-classoption       : "stu"
+output: 
+  pdf_document:
+    latex_engine: xelatex
+    includes:
+      in_header:
+        - files/header.tex
+csl: "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass: "apa7"
+classoption: "stu"
+fontsize: 11pt
 ---
+
+
+
 
 ```{r setup, include=FALSE}
 ```
 
 # Präregistrierung systematisches Review - vor systematischer Recherche und Auswertung
 
-**Titel:** Stereotype Threat im akademischen Kontext
-Autor_in/Betreuung: Julian Rottenberg, Dr. Julia Zimmermann
+**Titel:** Stereotype Threat im akademischen Kontext  
+Autor_in/Betreuung: Julian Rottenberg, Dr. Julia Zimmermann  
 Datum:
 
 ### Hintergrund

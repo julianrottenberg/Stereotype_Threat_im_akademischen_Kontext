@@ -1,0 +1,28 @@
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{anyfontsize}
+\usepackage{atbegshi}
+\usepackage{fontspec}
+
+% Set the main document font to Arial and size to 12
+\setmainfont{Arial}
+\fontsize{12}{14}\selectfont
+
+% Use atbegshi to remove the first page
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+% Set up the header with the logo and text
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{
+  \begin{minipage}{0.7\textwidth}
+    \raggedright
+    \fontsize{9}{11}\selectfont
+    Fakultät für Psychologie\\
+    Lehrgebiet Psychologische Methodenlehre und Evaluation
+  \end{minipage}
+}
+\fancyhead[R]{
+  \includegraphics[height=1.5cm]{files/unnamed.png}
+}
+\setlength{\headheight}{52pt}  % Adjust to avoid warnings
