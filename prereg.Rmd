@@ -1,16 +1,16 @@
 ---
 title: "Präregistrierung Stereotype Threat im akademischen Kontext"
 author: "Julian Rottenberg"
-output:
-  word_document: default
+output: 
   pdf_document:
     latex_engine: xelatex
     includes:
-      in_header: files/header.tex
-bibliography: "files/pre-reg.bib"
-csl: `r system.file('rmd', 'apa7.csl', package = 'papaja')`
-documentclass: apa7
-classoption: stu, biblatex, a4paper
+      in_header:
+        - files/header.tex
+bibliography: files/pre-reg.bib
+csl: "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass: "apa7"
+classoption: "stu, biblatex, a4paper"
 fontsize: 11pt
 ---
 
