@@ -1,0 +1,22 @@
+\begin{lltable}
+
+\small{
+
+\begin{longtable}{lllllll}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:unnamed-chunk-1}Overview of the First Included Paper for Hypothesis 1}\\
+\toprule
+Citation & \multicolumn{1}{c}{Study\_Design} & \multicolumn{1}{c}{Population} & \multicolumn{1}{c}{Methods} & \multicolumn{1}{c}{Key\_Findings} & \multicolumn{1}{c}{Neural\_Regions\_Networks} & \multicolumn{1}{c}{Impact\_on\_Academic\_Performance}\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:unnamed-chunk-1} continued}}\\
+\toprule
+Citation & \multicolumn{1}{c}{Study\_Design} & \multicolumn{1}{c}{Population} & \multicolumn{1}{c}{Methods} & \multicolumn{1}{c}{Key\_Findings} & \multicolumn{1}{c}{Neural\_Regions\_Networks} & \multicolumn{1}{c}{Impact\_on\_Academic\_Performance}\\
+\midrule
+\endhead
+Beilock et al. (2007) & Experimental & 100 college students, mixed gender & Behavioral tasks, fMRI & Stereotype threat impairs working memory efficiency & Prefrontal cortex, phonological loop & Reduced performance on cognitive tasks under threat\\
+\bottomrule
+\end{longtable}
+
+}
+
+\end{lltable}

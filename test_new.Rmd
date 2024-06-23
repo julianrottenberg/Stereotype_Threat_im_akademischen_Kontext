@@ -1,0 +1,136 @@
+---
+title             : "The title"
+shorttitle        : "Title"
+
+author: 
+  - name          : "First Author"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Postal address"
+    email         : "my@email.com"
+    role: # Contributorship roles (e.g., CRediT, https://credit.niso.org/)
+      - "Conceptualization"
+
+affiliation:
+  - id            : "1"
+    institution   : "Wilhelm-Wundt-University"
+
+authornote: |
+  Enter author note here.
+
+abstract: |
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : "r-references.bib"
+
+floatsintext      : no
+linenumbers       : yes
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+classoption       : "man"
+output            : papaja::apa6_pdf
+header-includes:
+  - \usepackage{pdflscape}
+  - \usepackage{adjustbox}
+  - \usepackage{booktabs} # Ensure proper formatting
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+r_refs("r-references.bib")
+```
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+\begin{landscape}
+
+```{r include = TRUE}
+# Create the data frame with the necessary columns
+overview_table <- data.frame(
+  Citation = character(),
+  Study_Design = character(),
+  Population = character(),
+  Methods = character(),
+  Key_Findings = character(),
+  Neural_Regions_Networks = character(),
+  Impact_on_Academic_Performance = character(),
+  stringsAsFactors = FALSE
+)
+
+colnames(overview_table) <- c(
+  "Citation",
+  "Study Design",
+  "Population",
+  "Methods",
+  "Key Findings",
+  "Neural Regions/Networks",
+  "Impact on Academic Performance"
+)
+
+# Example entry for manual filling (you will need to fill these with the actual data)
+overview_table[1, ] <- c(
+  "Beilock et al. (2007)",
+  "Experimental",
+  "100 college students, mixed gender",
+  "Behavioral tasks, fMRI",
+  "Stereotype threat impairs working memory efficiency",
+  "Prefrontal cortex, phonological loop",
+  "Reduced performance on cognitive tasks under threat"
+)
+
+# Calculate adjusted column widths to fit within 27cm
+column_widths <- c("2cm", "3cm", "4cm", "3cm", "3cm", "4cm", "4cm")
+
+# Construct the align string
+align_string <- paste0("p{", column_widths, "}")
+
+# Use apa_table to create the table with adjusted column widths
+apa_table(
+  overview_table,
+  caption = "Overview of the Included Papers for Hypothesis 1",
+  escape = FALSE,
+  landscape = T,
+  align = align_string,
+  font_size = "small"
+)
+```
+
+\end{landscape}
+
+# Methods
+We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
+
+## Participants
+
+## Material
+
+## Procedure
+
+## Data analysis
+We used `r cite_r("r-references.bib")` for all our analyses.
+
+
+# Results
+
+# Discussion
+
+
+\newpage
+
+# References
+
+::: {#refs custom-style="Bibliography"}
+:::
