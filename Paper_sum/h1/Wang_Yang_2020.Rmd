@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@wangEffectsPovertyStereotype2020"
+shorttitle        : "@wangEffectsPovertyStereotype2020"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h1.bib"]
 
 floatsintext      : no
 linenumbers       : no 

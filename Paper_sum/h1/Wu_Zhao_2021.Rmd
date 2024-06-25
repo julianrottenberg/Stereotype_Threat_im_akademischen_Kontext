@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@wuDegreeCentralityBrain2021"
+shorttitle        : "@wuDegreeCentralityBrain2021"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h1.bib"]
 
 floatsintext      : no
 linenumbers       : no 

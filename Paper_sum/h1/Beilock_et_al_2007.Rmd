@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@beilockStereotypeThreatWorking2007"
+shorttitle        : "@beilockStereotypeThreatWorking2007"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h1.bib"]
 
 floatsintext      : no
 linenumbers       : no 

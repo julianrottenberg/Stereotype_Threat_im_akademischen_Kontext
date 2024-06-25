@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@dunstSexDifferencesNeural2013"
+shorttitle        : "@dunstSexDifferencesNeural2013"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h1.bib"]
 
 floatsintext      : no
 linenumbers       : no 
@@ -49,7 +49,7 @@ r_refs("r-references.bib")
 
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
-- [ ] Not applicable (whole study is focus of data extraction)  
+- [x] Not applicable (whole study is focus of data extraction)  
 - [ ] Specific focus of this data extraction (please specify)  
 
 ## Study aim(s) and rationale
@@ -57,38 +57,50 @@ r_refs("r-references.bib")
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+Stereotype threat 
 
 ### Do authors report how the study was funded?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+Two Grants from the Austrian Science Fund (FWF): P19842; P23914
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
 
+Main aim: whether sex differences in neural efficiency could be attributed to the stereotype threat effect.  
+Stereotype threat may affect brain activation differentially in women according to their individual level of intellectual ability. It can be hypothesized that high IQ women (who sense the task easier than low IQ women generally show lower brain activation according to the neural efficiency hypothesis) confronted with the stereotype show increased brain activation because they feel challenged to disprove this stereotype. Low IQ women may also strive to disprove the stereotype, but their already high level of arousal (due to their perception of increased task difficulty) may limit a further increase of activation.  
+Therefore, this study aims at testing whether stereotype threat is partly responsible for sex differences in neural efficiency
+
 ### What is/are the population focus/foci of the study?
+
+Women in STEM (Science, Technology, Engineering, and Mathematics)
 
 ### What is the relevant age group? 
 
 - [ ] Not applicate (focus not learners)  
 - [ ] 0 - 4  
 - [ ] 5 - 10  
-- [ ] 11 - 16  
-- [ ] 17 - 20  
+- [x] 11 - 16  
+- [x] 17 - 20  
 - [ ] 21 and over  
 - [ ] Not stated/unclear  
+
+Austrian adolecents between 15 and 18 years
 
 ### What is the sex of the population focus/foci?
 
 - [ ] Not applicate (focus not learners)  
 - [ ] Female only  
 - [ ] Male only  
-- [ ] Mixed sex  
+- [x] Mixed sex  
 - [ ] Not stated/unclear  
 
 ### What is/are the educational setting(s) of the study?
@@ -96,7 +108,7 @@ r_refs("r-references.bib")
 - [ ] Community centre  
 - [ ] Correctional institution  
 - [ ] Government department  
-- [ ] Higher education institution  
+- [x] Higher education institution  
 - [ ] Home  
 - [ ] Independent school  
 - [ ] Local education authority  
@@ -105,32 +117,39 @@ r_refs("r-references.bib")
 - [ ] Post-compulsory education institution  
 - [ ] Primary school  
 - [ ] Residential school  
-- [ ] Secondary school  
+- [x] Secondary school  
 - [ ] Special needs school  
 - [ ] Workplace  
 - [ ] Other educational setting  
 
 ### In Which country or cuntries was the study carried out?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+Austria
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+1. Can sex differences in neural efficiency be attributed to the stereotype threat effect?
+2. Does stereotype threat affect brain activation differentially in women according to their IQ?
+
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
 
 
 ### Study timing
@@ -140,7 +159,7 @@ r_refs("r-references.bib")
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -161,7 +180,7 @@ r_refs("r-references.bib")
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -170,15 +189,17 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Explicityly stated (please specify)  
-- [ ] Implicit (please specify)  
+- [x] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+One group is exposed to stereotype threat, the other is not
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
 
 - [ ] Not applicable (not more than one group)  
 - [ ] One  
-- [ ] Two  
+- [x] Two  
 - [ ] Three  
 - [ ] Four or more (please specify)  
 - [ ] Other/unclear (please specify)  
@@ -188,9 +209,11 @@ r_refs("r-references.bib")
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
 - [ ] Random  
-- [ ] Quasi-random  
+- [x] Quasi-random  
 - [ ] Non-random  
 - [ ] Not stated/unclear (please specify)  
+
+Participants were IQ-matched between experimental groups in order to avoid confounding.
 
 ### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
 *Bias can be introduced, consciously or otherwise, if the allocation of pupils or classes or schools to a programme or intervention is made in the knowledge of key characteristics of those allocated. For example: children with more serious reading difficulty might be seen as in greater need and might be more likely to be allocated to the 'new' programme, or the opposite might happen. Either would introduce bias.*
@@ -216,8 +239,11 @@ r_refs("r-references.bib")
 *Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.*
 
 - [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+63 healthy Austrian adolencents were selected to represent a large variability in figural intelligence participated in the study
+
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
@@ -225,7 +251,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
@@ -233,14 +259,15 @@ r_refs("r-references.bib")
 - [ ] Not applicable (no sampling frame)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
+
 
 ### Planned sample size
 *If more than one group please give details for each group separately.*
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -250,27 +277,29 @@ r_refs("r-references.bib")
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Not stated/unclear (please specify)
+
+Students received 20€ for participation
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
 
 - [ ] Not applicable (please specify)
-- [ ] Participant consent sought
-- [ ] Parental consent sought
+- [x] Participant consent sought
+- [x] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
 - [ ] Not stated/unclear (please specify)
 
 ### Are there any other details relevant to recruitment and consent?
 
-- [ ] No
+- [x] No
 - [ ] Yes (please specify)
 
 ## Methods - Actual sample
@@ -279,25 +308,21 @@ r_refs("r-references.bib")
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
 
-### What is the proportion of those selected for the study who actually participated in the study? 
-*Please specify numbers and percentages if possible.*
-
-- [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+63 - 5 = 58 participants (26 girls, 32 boys)
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+Austria
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -305,10 +330,12 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] 0 to 4
 - [ ] 5 to 10
-- [ ] 11 to 16
-- [ ] 17 to 20
+- [x] 11 to 16
+- [x] 17 to 20
 - [ ] 21 and over
 - [ ] Not stated/unclear (please specify)
+
+ages 15 to 18
 
 ### What is the socio-economic status of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -316,7 +343,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -324,7 +351,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,14 +359,16 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify no/s.)
+- [x] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+Average IQ of 100.50 (SD = 15.52), no differences in figural IQ neither between sex groups (F(1,54)=0.04, p = 0.84; M_{girls} = 101.11, SD_{girls} = 17.59; M_{boys}= 100.26, SD_{boys}= 13.89) nor between stereotype exposure conditions (stereotype exposure vs. no-stereotype exposure) (F(1,54) = 0.17, p = .68; M_{non_st} = 99.83, SD_{non_st}= 17.55; M_{st} = 101.54, SD_{st} = 13.21)
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
@@ -355,7 +384,7 @@ r_refs("r-references.bib")
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -363,7 +392,7 @@ r_refs("r-references.bib")
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -371,7 +400,7 @@ r_refs("r-references.bib")
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -380,6 +409,14 @@ r_refs("r-references.bib")
 ### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
 
 - [ ] Details
+
+Shepard-Metzler (SM) figures -> b: Figures have to be rotated mentally until the main axis points in the same direction, before it can be decided whether teh pair of figures is identical or not (i.e., mirror images).
+
+EEG -> b: measured by gold electrodes with 9 mm in diameter. Thirty-three electrodes were placed according to the international 10 - 20 system. A ground electrode was placed on the forehead, a reference electrode on the tip of the nose. EEG impendances were kept below 5 $k\Omega$. All signals were sampled at a frequency of 512 Hz. During recording a bandpass (0.1 - 100 Hz) as well as a 50 Hz notch-filter in order to avoid power line contaminations, were applied.  
+The raw EEG was corrected for ocular artefacts by means of a regression-based algorithm using the softwair Brain Vision Analyzer (1.05). Remaining artefacts were removed by visual inspection. Further analysis steps were performed by means of a set of Matlab scripts (R2011b). The bandpower of the EEG ($\mu$V2) was computed by means of a time-frequency analysis employing a Fast Fourier-transformation (FFT) with a window size of 1000 ms and an overlap of 900 ms. For each trail the EEG band power in the upper alpha band (10 - 12 Hz) was computed as this alpha frequency band is particularly sensitive to task- and ability related effects. Changes in cortical activation were quantified by means of task-related power (TRP) changes between reference and activation phases for each electrode and trail.  
+
+EOG (electrooculogram) -> b: to measure eye movements, recording bipolarly between two diagnonally placed electrodes above and below the inner and outer canthus of the right eye. 
+
 
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -398,20 +435,25 @@ r_refs("r-references.bib")
 - [ ] Hypothetical scenario including vignettes
 - [ ] School/college records (e.g. attendance records etc)
 - [ ] Secondary data such as publicly available statistics
-- [ ] Other documentation
+- [x] Other documentation
 - [ ] Not stated/unclear (please specify)
+
+EEG, EOG
 
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+48 pairs of Shepard-Metzler (SM) figured - 3D presentation mode
+EEG, EOG
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
 
-- [ ] Researcher
+- [x] Researcher
 - [ ] Head teacher/Senior management
 - [ ] Teaching or other staff
 - [ ] Parents
@@ -456,9 +498,14 @@ r_refs("r-references.bib")
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+Behavioural results: two-way ANOVA with SEX and STEREOTYPE EXPOSURE as between-subjects variables was computed  
+
+EEG results: four-way ANOVA, where STEREOTYPE EXPOSURE and SEX were treated as between-subjects factors, and HEISPHERE and AREA were considered as within subjects factors.  
+We analyzed the effect of stereotype exposure and sex on neural efficiency. Correlations were computed separately for each experimental condition and each topographic area of both hemispheres.
 
 ### Which statistical methods, if any, were used in the analysis?
 
@@ -481,6 +528,8 @@ r_refs("r-references.bib")
 *e.g. using more than one researcher to analyse data, looking for negative cases.*
 
 - [ ] Details
+
+No
 
 ### Do the authors describe any ways they have addressed the validity of data analysis?
 *e.g. internal or external consistency; checking results with participants.*
@@ -506,32 +555,56 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+Figures within text, as quotations within text
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+**Behavioural results**:  
+average response time: 4.02 s (SD = 0.78)
+Neither significant group mean differences for SEX (F(1,54) = 1.20, p = .28), nor for the STEREOTYPE EXPOSURE condition (F(1,54) = .05, p = .82); the two-way interaction was also not significant (SEX * STEREOTYPE EXPOSURE: F(1,54) = .01, p = .95; no-stereotype exposure condition: M_{girls} = 4.04, SD_{girls} = 0.91; M_{boys} = 4.04, SD_{boys} = 0.84; stereotype exposure condition: M_{girls} = 3.86, SD_{girls} = 0.79; M_{boys} = 4.11, SD_{boys} = 0.63)
+
+Analysis of solution rates: There were neither significant group mean differences for SEX (F(1,54) = 2.94, p = .09, partial $\eta^2$ = .05), nor for the STEREOTYPE EXPOSURE condition (F(1,54) = 0.15, p = .70, partial $\eta^2$ = .00)  
+
+The interaction of SEX * STEREOTYPE EXPOSURE remained insignificant (F(1,54) = 2.43, p = .12, partial $\eta^2$ = .04); no-stereotype exposure condition: M_{girls} = 36.92, SD_{girls} = 5.55; M_{boys} = 37.12, SD_{boys} = 5.43; stereotype exposure condition: M_{girls} = 34.46, SD_{girls} = 4.68; M_{boys} = 38.60, SD_{boys} = 4.36; see Fig. 2)
+
+**EEG results**:  
+First step, analysed the effect of stereotype exposure and sex on task-related power (TRP) changes in the upper alpha band. Four-way ANOVA, where STEREOTYPE EXPOSURE and SEX were treated as between-subjects factors, and HEMISPHERE and AREA were considered as within-subjects factors. A main effect of STEREOTYPE EXPOSURE (F(1,54) = 3.93, p = .05, partial $\eta^2$ = .07) indicated that participants working in the stereotype exposure condition showed higher cortical activation (M = 0.07, SD = 0.03) than participants working in the no-stereotype exposure condition (M = -0.03, SD = 0.03). No further TRP effects reached statistical significance.  
+
+Then analyzed the ffect of stereotype exposure and sex on neural efficiency. In line with previous studies, the correlation between figural intelligence and brain activation (TRP) during performance of the mental rotation task was used as an inverse indicator of neural efficiency (i.e., a negative correlation would support the neural efficiency hypothesis). Correlations were computed separetely for each experimental condition (factors STEREOTYPE EXPOSURE and SEX) and each topographic area of both hemispheres. The TRP was normally distributed in each topographic area for all groups.  
+
+Fig. 3: the IQ-brain activation relationship differs considerably depending on sex and stereotype exposure condition. In the no-stereotype exposure condition, boys showed the expected negative IQ-brain activation relationships especially at centroparietal (r = -.45, p = .05) and temporal areas (r = -.50, p = .04) of the left hemisphere. Girls working under the no-stereotype exposure condition rather tended to show a positive IQ-brain activation relationship especially in frontal areas (r = .48, p = .10) in the right hemisphere of the brain. In the stereotype exposure condition, no significant IQ-brain activation correlations were found, neither for boys nor girls. To sum up, in the no-stereotype exposure condition the neural efficiency hypothesis is supported only for boys, but not for girls. In the stereotype exposure condition no support for the nerual efficiency hypothesis was obtained, neither for girls nor boys.
+
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
+
+Methods on how the data was obtained are not described in detail  
+It is implied that more was asked of the participants than reported by the exclusion of 5 participants due to EEG artifacts or because they disagreed to one of the two following statements: (1) "I am good at math" and (2) "It is important to me that I am good at math". Maybe there were more questions in the questionnaire that are not mentioned in the methods part of the paper.  
+Did not always specify which calculations were performed, why and how.
+
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
@@ -543,43 +616,53 @@ r_refs("r-references.bib")
 ### Is the context of the study adequately described?
 *Consider your answer to questions: Why was this study done at this point in time, in those contexts and with those people or institutions? (Section B question 2) Was the study informed by or linked to an existing body of empirical and/or theoretical research? (Section B question 3) Which of the following groups were consulted in working out the aims to be addressed in the study? (Section B question 4) Do the authors report how the study was funded? (Section B question 5) When was the study carried out? (Section B question 6)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Are the aims of the study clearly reported?
 *Consider your answer to questions: What are the broad aims of the study? (Section B question 1) What are the study research questions and/or hypotheses? (Section C question 10)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
 *Consider your answer to all questions in Methods on ‘Sampling Strategy’, ‘Recruitment and Consent’, and ‘Actual Sample’.*
 
 - [ ] Yes (please specify)
-- [ ] No (please specify)
+- [x] No (please specify)
+
+Not clear how the sample was recruited or how they ended up at 63 adolecents out of 929 participants.
 
 ### Is there an adequate description of the methods used in the study to collect data?
 *Consider your answer to the following questions in Section I: Which methods were used to collect the data? Details of data collection methods or tools Who collected the data? Do the authors describe the setting where the data were collected? Are there other important features of the data collection procedures?*
 
 - [ ] Yes (please specify)
-- [ ] No (please specify)
+- [x] No (please specify)
+
+Some data is just reported without specifying where it is coming from.
 
 ### Is there an adequate description of the methods of data analysis?
 *Consider your answer to the following questions in Section J: Which methods were used to analyse the data? What statistical methods, if any, were used in the analysis? Who carried out the data analysis?*
 
-- [ ] Yes (please specify)
-- [ ] No (please specify)
+- [x] Yes (please specify)
+- [x] No (please specify)
+
+
 
 ### Is the study replicable from this report?
 
 - [ ] Yes (please specify)
-- [ ] No (please specify)
+- [x] No (please specify)
+
+Don't know which questionnaires the participants got exactly, how the data was obtained, how the data was analyzed, as the authors refer to some data that is not listed in the methods part.
 
 ### Do the authors avoid selective reporting bias?
 *(e.g. do they report on all variables they aimed to study as specified in their aims/research questions?)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
+
+They also report results that are contrary to their hypothesis.
 
 ## Quality of the study - Methods and data
 
@@ -587,22 +670,24 @@ r_refs("r-references.bib")
 *Consider consent, funding, privacy, etc.*
 
 - [ ] Yes, some concerns (please specify)
-- [ ] No concerns
+- [x] No concerns
 
 ### Were students and/or parents appropriately involved in the design or conduct of the study?
 
 - [ ] Yes, a lot (please specify)
 - [ ] Yes, a little (please specify)
-- [ ] No (please specify)
+- [x] No (please specify)
+
+They weren't involved in the design.
 
 ### Is there sufficient justification for why the study was done the way it was?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Was the choice of research design appropriate for addressing the research question(s) posed?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
@@ -616,18 +701,22 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+Not that much, the participants were adolescents from Austria, there has been no further information on the sample. In regards to stereotypes the ethnicity of the participants is relevant, since this is not mentioned here it is unclear how generalizable the results are. Furthermore, the researchers did not mention whether "women being bad at math" is a generally accepted stereotype in Austria. There is some research indicating that it is not necessary for the target to be aware of a stereotype to suffer under stereotype threat but it would still be interesting to know if the stereotype is generally accepted in Austria. In addition, we do not have any information about the socio-economic background of the participants, which is relevant for generalizability. 
+
 ### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
 *In some studies it is difficult to distinguish between the findings of the study and the conclusions. In those cases please code the trustworthiness of this combined results/conclusion.** Please remember to complete the weight of evidence questions B-D which are in your review specific data extraction guidelines. ***
 
 - [ ] High trustworthiness (please specify)
-- [ ] Medium trustworthiness (please specify)
+- [x] Medium trustworthiness (please specify)
 - [ ] Low trustworthiness (please specify)
+
+The authors acknowledge that their results provide preliminary evidence, they also mention different approaches further research can take to gather more evidence. It is good however, that they mentioned results that do not support their hypothesis.
 
 ### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
 
 - [ ] Not applicable (results and conclusions inseparable)
 - [ ] High trustworthiness
-- [ ] Medium trustworthiness
+- [x] Medium trustworthiness
 - [ ] Low trustworthiness
     
 
