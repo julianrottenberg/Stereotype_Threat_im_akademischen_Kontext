@@ -49,7 +49,7 @@ r_refs("r-references.bib")
 
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
-- [ ] Not applicable (whole study is focus of data extraction)  
+- [x] Not applicable (whole study is focus of data extraction)  
 - [ ] Specific focus of this data extraction (please specify)  
 
 ## Study aim(s) and rationale
@@ -57,21 +57,30 @@ r_refs("r-references.bib")
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threat + the fact that at that time only two studies using an fMRI to uncover the neural mechanisms of stereotype threat were available.
+- RSDC : RS-fMRI degree centrality is a graph theory-based network analysis of the number of edges connecting to a node or the node strength for a given node (a voxel) in a whole-brain network.  
 
 ### Do authors report how the study was funded?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+This study was supported by the National Natural Science Foundation of China (31371055) and the Major Project for Key Research Institutes of Humanities and Social Science by the Ministry of Education (16JJD1900007).  
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
 
+The current study aimed to investigate the neffects of ST on RSDC under math ST.  
+
 ### What is/are the population focus/foci of the study?
+
+- women
 
 ### What is the relevant age group? 
 
@@ -81,12 +90,12 @@ r_refs("r-references.bib")
 - [ ] 11 - 16  
 - [ ] 17 - 20  
 - [ ] 21 and over  
-- [ ] Not stated/unclear  
+- [x] Not stated/unclear  
 
 ### What is the sex of the population focus/foci?
 
 - [ ] Not applicate (focus not learners)  
-- [ ] Female only  
+- [x] Female only  
 - [ ] Male only  
 - [ ] Mixed sex  
 - [ ] Not stated/unclear  
@@ -96,7 +105,7 @@ r_refs("r-references.bib")
 - [ ] Community centre  
 - [ ] Correctional institution  
 - [ ] Government department  
-- [ ] Higher education institution  
+- [x] Higher education institution  
 - [ ] Home  
 - [ ] Independent school  
 - [ ] Local education authority  
@@ -112,25 +121,38 @@ r_refs("r-references.bib")
 
 ### In Which country or cuntries was the study carried out?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- China  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Effects of ST on RSDC under math ST.
+- We speculated that the RSDC of brain regions related to the regulation of social emotions (e.g. the medial prefrontal cortex and anterior cingulate cortex) might be increased.
+- Considering the roles of the hippocampus in the generation of stressful responses, we hypothesized that the RSDC of the hippocampus might be decreased under ST, which might make the individuals more prone to experience stress-based arousal.
+- Except in this region, due to the self-relevant processes being increased by ST, we thought that the RSDC of the brain regions related to self-memory should be increased. Therefore, we further speculated that the RSDC of the brain regions, such as the right posterior parietal regions (PPC), related to the retrieval of episodic memory or autobiographical memory might be increased.  
+
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threat manipulation
+- fMRI 
+- RS-fMRI degree centrality (RSDC)
+- Math problems
 
 
 ### Study timing
@@ -140,7 +162,7 @@ r_refs("r-references.bib")
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -149,7 +171,7 @@ r_refs("r-references.bib")
 *If at least one of the outcome variables is measured both before and after the intervention, please use the before and after category.*
 
 - [ ] Not applicable (not an evaluation)  
-- [ ] Before and after  
+- [x] Before and after  
 - [ ] Only after  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -161,7 +183,7 @@ r_refs("r-references.bib")
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -169,16 +191,18 @@ r_refs("r-references.bib")
 ### How do the groups differ?
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Explicityly stated (please specify)  
+- [x] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- control vs st manipulation
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
 
 - [ ] Not applicable (not more than one group)  
 - [ ] One  
-- [ ] Two  
+- [x] Two  
 - [ ] Three  
 - [ ] Four or more (please specify)  
 - [ ] Other/unclear (please specify)  
@@ -187,7 +211,7 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
-- [ ] Random  
+- [x] Random  
 - [ ] Quasi-random  
 - [ ] Non-random  
 - [ ] Not stated/unclear (please specify)  
@@ -197,13 +221,17 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
-- [ ] Yes (please specify)  
+- [x] Yes (please specify)  
 - [ ] No (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
+- ST group was introduced to the material with statements such as "women are bad at math across all cultures"  
+- control group was instructed to read a scientific investigation about two fictitious mountain peaks
+
+
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
@@ -215,9 +243,11 @@ r_refs("r-references.bib")
 ### Are the authors trying to produce findings that are representative of a given population? 
 *Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- women under math stereotype threat  
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
@@ -225,22 +255,25 @@ r_refs("r-references.bib")
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
+
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
 
 - [ ] Not applicable (no sampling frame)
 - [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- females from the Southwest University of China  
 
 ### Planned sample size
 *If more than one group please give details for each group separately.*
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -250,19 +283,19 @@ r_refs("r-references.bib")
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [ x Not stated/unclear (please specify)
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
 
 - [ ] Not applicable (please specify)
-- [ ] Participant consent sought
+- [x] Participant consent sought
 - [ ] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
@@ -271,7 +304,9 @@ r_refs("r-references.bib")
 ### Are there any other details relevant to recruitment and consent?
 
 - [ ] No
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
+
+All the subjects gave written informed consent. The studies involving human participants were reviewed and approved by Brain Imaging Center Institutional Review Board of Southwest China University. The patients/participants provided their written informed consent to participate in this study.  
 
 ## Methods - Actual sample
 
@@ -281,7 +316,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
@@ -289,15 +324,17 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Study takes place at a Chinese University, no further details given.  
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -306,9 +343,11 @@ r_refs("r-references.bib")
 - [ ] 0 to 4
 - [ ] 5 to 10
 - [ ] 11 to 16
-- [ ] 17 to 20
-- [ ] 21 and over
+- [x] 17 to 20
+- [x] 21 and over
 - [ ] Not stated/unclear (please specify)
+
+- mean age was 20.75, SD = 1.79 years   
 
 ### What is the socio-economic status of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -316,7 +355,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -324,7 +363,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,14 +371,14 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
@@ -347,7 +386,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Not applicable (no sampling frame)
 - [ ] High (please specify)
-- [ ] Medium (please specify)
+- [x] Medium (please specify)
 - [ ] Low (please specify)
 - [ ] Unclear (please specify)
 
@@ -355,7 +394,7 @@ r_refs("r-references.bib")
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -363,7 +402,7 @@ r_refs("r-references.bib")
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -371,7 +410,7 @@ r_refs("r-references.bib")
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -380,6 +419,10 @@ r_refs("r-references.bib")
 ### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
 
 - [ ] Details
+
+- math problems, fMRI, RS-fMRI degree centrality (RSDC) -> b
+- manipulation check
+
 
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -391,10 +434,10 @@ r_refs("r-references.bib")
 - [ ] Observation
 - [ ] Self-completion questionnaire
 - [ ] Self-completion report or diary
-- [ ] Exams
-- [ ] Clinical test
+- [x] Exams
+- [x] Clinical test
 - [ ] Practical test
-- [ ] Psychological test
+- [x] Psychological test
 - [ ] Hypothetical scenario including vignettes
 - [ ] School/college records (e.g. attendance records etc)
 - [ ] Secondary data such as publicly available statistics
@@ -404,14 +447,25 @@ r_refs("r-references.bib")
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- ST manipulation: e.g. "women are abd at math across all cultures"
+- Control group: scientific investigation about two fictitious mountain peaks
+- Math problems: There were three numbers in each math problem. The subjects were asked to calculate whether the result of the subtraction of the first and second numbers could be divided by the third number, e.g.: whether the result of "(30 - 26) / 7 = ?" was an integer.
+- Manipulation check: 7-point scale (from strongly disagree to strongly agree), "I am worried that the experimenters will conclude that women are bad at math based on my performance."
+- ST and Control material was verified with a different group of 112 female subjects of the same university (56 for each ST/control group). They read the ST or control materials, then completed 20 math problems.
+- RS-fMRI scan, each included 242 scans with 484 s in duration.
+- 20 math problems
+- whole-brain RS-fMRI images were acquired from a Siemens 3T scanner (MAGENTOM Trio, a Tim system) with a gradient-echo echo-planar imaging sequence. For each subjest, 242 functional images were acquired. Additionally, high-resolution T1-weighted anatomical images were acquired using a magnetization-prepared, rapid gradient echo sequence.
+- RS-fMRI images were pre-processes using statistical parametric mapping software (SPM8), a toolbox for Data Processing and Analysis for Brain Imaging (DPABI). DICOM data were converted to NIFTI images, first 10 images were discarded. All functional images were normalized to the Montreal Neurological Institute (MNI) space of 3 x 3 x 3 mm voxel sized using the segmented data. Normalized images were spatially smoothed with a Gaussian kernel having a full width at half maximum (FWHM) of 8 mm. 
+- RSDC was calculated using DPABI. RSDC values of each region of interest (ROI) were extracted by using the "ROI Signal Extractor" of DPABI.  
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
 
-- [ ] Researcher
+- [x] Researcher
 - [ ] Head teacher/Senior management
 - [ ] Teaching or other staff
 - [ ] Parents
@@ -430,21 +484,27 @@ r_refs("r-references.bib")
 ### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
 *e.g. mention previous validation of tools, published version of tools, involvement of target population in development of tools. (Where more than one tool was employed please provide details for each.)*
 
-- [ ] Details
+- [x] Details
+
+ST and Control Material Verification was performed with a sample of 112 female subjects selected from the Southwest Univeristy in China.  
 
 ### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
 *Not applicable – e.g. analysis of existing data, qualitative study. No – e.g. assessment of reading progress for dyslexic pupils done by teacher who provided intervention. Yes – e.g. researcher assessing pupil knowledge of drugs - unaware of pupil allocation.*
 
 - [ ] Not applicable (please say why)
 - [ ] Yes (please specify)
-- [ ] No (please specify)
+- [x] No (please specify)
+
+Not stated  
 
 ### Where were the data collected?
 *e.g. school, home.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Unclear/not stated (please specify)
+
+- MRI lab  
 
 ### Are there other important features of data collection?
 *e.g. use of video or audio tape; ethical issues such as confidentiality etc.*
@@ -456,13 +516,19 @@ r_refs("r-references.bib")
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- see above  
 
 ### Which statistical methods, if any, were used in the analysis?
 
 - [ ] Details
+- Mixed-effect analysis: 2 (test: pre-test vs. post-test) x 2 (ST: ST group vs. control group) mixed-effect analysis for binary and weighted graphs 
+- Statistical criterion was set at a Gaussian random field (GRF) corrected threshold for the main effect of the test, the main effect of ST, and the interaction effect between ST and test.  
+- Interaction between ST and MC score predicting RSDC: the interactions between ST and MC scores were assessed by using t-contrast, where the statistical inference was p < 0.0005 at the vox level with GRF-corrected p < 0.05 at the cluster level.
+- Results of the MC: two-sample t-test 
 
 ### What rationale do the authors give for the methods of analysis for the study?
 *e.g. for their methods of sampling, data collection, or analysis.*
@@ -474,7 +540,7 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not an evaluation study with prospective allocation)
 - [ ] 'Intention to intervene'
-- [ ] 'Intervention received'
+- [x] 'Intervention received'
 - [ ] Not stated/unclear (please specify)
 
 ### Do the authors describe any ways they have addressed the reliability of data analysis?
@@ -506,79 +572,127 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- figures, tables, in text  
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+**Results of the Manipulation Check (MC)**:  
+- MC score for the ST group was 4.52 (SD: 1.58), while the MC score for the control group was 3.47 (SD: 1.31). 
+- Two-sample t-test analysis showed that the mean MC score for the ST group was significantly higher than that of the control group.  
+
+**Results of RSDC Analysis**:  
+*Mixed-Effect Analysis of the Binary Graph*:  
+- Results of 2 (test) x 2 (ST) mixed-effect analysis for the binary graph shpwed that the main effect of the test was significant to the left hippocampus, middle cingulate gyrus (MCG), right cerebellum, and left precentral gyrus (PCG), while the interaction between the test and ST was significant in the left cerebellum anterior lobe, left hippocampus, left precuneus, and left MOC (see Figure 1, Table 2). 
+- Brain regions that showed a significant main effect of the test, the results showed that the mean RSDC z-value only in MCG was higher for the ST groups relative to the control group. 
+- Of those brain regions that had significant interactions, the mean RSDC z-value in the left cerebellum was lower for the ST group relative to the control group; the mean RSDC z-value in the right superior parietal gyrus (SPG) was higher for the ST group relative to the control group; the mean RSDC z-value in the left precuneus was higher for the ST group relative to the control group; the mean RSDC z-value in the left MOG was higher for the ST group relative to the control group; the mean RSDC z-value in the right AG was higher for the ST group relative to the control group; and the mean RSDC z-value in the left hippocampus was lower for the ST group relative to the control group.
+- The RSDC for these regions was not significantly correlated with the MC score (see Table 2).  
+
+*Mixed-effect analysis of the weighted graph*:  
+- The results of whole brain 2 (test) x 2 (ST) mixed-effect analysis for the weighted graph showed that the main effect of the test was significant in the left hippocampus, left MCG, right cerebellum, and left PCFG, while the interaction between the test and ST was significant in the left cerebellum anterior lobe, left precuneus, left MCG, right SPG, and right AG (see Figure 2, Table 2)
+- For the brain regions that had a significant main effect of the test, the results showed that the mean RSDC z-value only in MCG was higher for the ST group relative to the control group.
+- For the brain regions that had significant interactions, the mean RSDC z-value in the left cerebellum was lower for the ST group relative to the control group; the mean RSDC z-value in the left precuneus was higher for the ST group relative to the control group; the mean RSDC z-value in the right SPG was higher for the ST group relative to the control group; the mean RSDC z-value wasin the left precuneus was higher for the ST group relative to the control group; the mean RSDC z-value in the left MOG was higher for the ST group relative to the control group; and the mean RSDC z-value in AG was higher for the ST group relative to the control group.
+- However, the RSDC for these regions was not significantly correlated with the MC score (see table 3).  
+
+*The modulating roles of ST in the relationships between RSDC and MC score*:  
+- The interaction between ST and MC score was significant in the right anterior temporal lobe (ATL) and the right hippocampus/amygdala for the binary graph, while only the right hippocampus/amygdala showed significant results for the weighted graph (see figure 3)
+- for the binary graph, the results showed that the interaction between ST and psot-test RSDC fo the right ATL was significant
+- the sample slope test showed that the post-test RSDC for the ST group was negatively correlated with the MC score, while the post-test RSDC for the ST group was positively correlated with the MC score.
+- The interaction between ST and post-test RSDC of the right hippocampus was significant
+- The sample slope test showed that the post-test RSDC of the right hippocampus was negatively correlated with the MC score in the ST group, while the post-test RSC of the hippocampus was positively correlated with the MC score in the control group, see Figure 4
+- For the weighted graph, the results showed that the interaction between ST and post-test RSDC of the right ATL was significant for the weighted graph.
+- the sample slope test showed that the post-test RSDC for the ST group was negatively correlated with the MC score, while the post-test RSDC for the ST group was positively correlated with the MC score.
+- The interaction between ST and post-test RSDC of the right hippocampus was significant
+- The sample slope test showed that the post-test RSDC of the right hippocampus was negatively correlated with the MC score in the ST group, while the post-test RSDC of the hippocampus was positively correlated with the MC score in the control group, see Figure 4  
+
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
+
+- The datasets generated for this study are available on request to the corresponding author.  
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
 
+Results showed that the RSDC decreased in the left MOG and left hippocampus, while the RSDC increased in the right MCG, right SPG, right AG, and left precuneus. Furthermore, the results also showed that the right ATL and right hippocampus were negatively correlated with the MC score in the ST group, while the right ATL and the right hippocampus were positively correlated with the MC score in the control group.  
+
+We speculated that the increased RSDC in the left precuneus and MCG might reflect that some self-relevant thoughts are generated by retrieving autobiographical memory or episodic memory.  
+The self-relevant processes under ST could also be reflected by the increased RSDC in the PPC.  
+According to the results, the RSDC of the left hippocampus was decreased, and the RSDC of the right hippocampus was negatively correlated with the MC score under the ST condition. These results might reflect that the importance of the hippocampus in the brain networks was decreased by the ST condition, which might make individuals prone to exhibit stress-based arousal.  
+According to the result, the RSDC of the right ATL was negatively correlated with the MC score in the ST group, while the RSDC of the rigth ATL was positively correlated with the MC score in the control group. These findings reflect that the relative importance of the brain regions related to social concepts is decreased under ST, especially for more threatened individuals. It is dangerous to increase the self-relevant processes related to ST and at the same time decrease the functions of social concepts. Doing so might make the indiviual more prone to be influenced by their stigmatized social identity and discount other beneficial social identities.  
+
+**Conclusion**:  
+We detected the effects of ST on brain network degree centrality by directly comparing the RSDC between ST and control groups. These findings expand the knowledge of the neural basis of ST. Specifically, the results suggest that ST decreases the imporance of brain regions related to social concepts and stress regulation in the whole brain networks and, at the same time, increases the importance of brain regions associated with self-relevant processes. 
+
+
+*Limitations*:  
+We acknowledge several limitations of the study. First, the performance of the math problem was not measured in an RS-fMRI study, and we did not confirm whether the altered RSDCs were related to underperformance under ST. Second, Steele and Aronson (1995) found that ST could lead to some self-concerning processes, such as self-doubts, self-validating the stereotype, and stereotype avoidance. Although we speculate that the altered RSDCs might be ralted to these mental processes, we could not provide direct evidence from them because behaviour related to these processes was not measured. Third, due to this evidence being exclusively from female math ST, future studies should verify whether these results generalize to other STs (e.g. racial ST or ST related to social status). Therefore, we suggest that a sophisticated experiment integrating behavioural, task, and RS-fMRI may be required to reveal the detailed mechanism of ST.  
+
 ## Quality of the study - Reporting 
 
 ### Is the context of the study adequately described?
 *Consider your answer to questions: Why was this study done at this point in time, in those contexts and with those people or institutions? (Section B question 2) Was the study informed by or linked to an existing body of empirical and/or theoretical research? (Section B question 3) Which of the following groups were consulted in working out the aims to be addressed in the study? (Section B question 4) Do the authors report how the study was funded? (Section B question 5) When was the study carried out? (Section B question 6)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Are the aims of the study clearly reported?
 *Consider your answer to questions: What are the broad aims of the study? (Section B question 1) What are the study research questions and/or hypotheses? (Section C question 10)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
 *Consider your answer to all questions in Methods on ‘Sampling Strategy’, ‘Recruitment and Consent’, and ‘Actual Sample’.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the methods used in the study to collect data?
 *Consider your answer to the following questions in Section I: Which methods were used to collect the data? Details of data collection methods or tools Who collected the data? Do the authors describe the setting where the data were collected? Are there other important features of the data collection procedures?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the methods of data analysis?
 *Consider your answer to the following questions in Section J: Which methods were used to analyse the data? What statistical methods, if any, were used in the analysis? Who carried out the data analysis?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is the study replicable from this report?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Do the authors avoid selective reporting bias?
 *(e.g. do they report on all variables they aimed to study as specified in their aims/research questions?)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ## Quality of the study - Methods and data
@@ -587,28 +701,28 @@ r_refs("r-references.bib")
 *Consider consent, funding, privacy, etc.*
 
 - [ ] Yes, some concerns (please specify)
-- [ ] No concerns
+- [x] No concerns
 
 ### Were students and/or parents appropriately involved in the design or conduct of the study?
 
-- [ ] Yes, a lot (please specify)
+- [x] Yes, a lot (please specify)
 - [ ] Yes, a little (please specify)
 - [ ] No (please specify)
 
 ### Is there sufficient justification for why the study was done the way it was?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Was the choice of research design appropriate for addressing the research question(s) posed?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
 *e.g. (1) In an evaluation, was the process by which participants were allocated to or otherwise received the factor being evaluated concealed and not predictable in advance? If not, were sufficient substitute procedures employed with adequate rigour to rule out any alternative explanations of the findings which arise as a result? e.g. (2) Was the attrition rate low and if applicable similar between different groups?*
 
-- [ ] A lot (please specify)
+- [x] A lot (please specify)
 - [ ] A little (please specify)
 - [ ] Not at all (please specify)
 
@@ -616,17 +730,19 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- just towards female math ST  
+
 ### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
 *In some studies it is difficult to distinguish between the findings of the study and the conclusions. In those cases please code the trustworthiness of this combined results/conclusion.** Please remember to complete the weight of evidence questions B-D which are in your review specific data extraction guidelines. ***
 
-- [ ] High trustworthiness (please specify)
+- [x] High trustworthiness (please specify)
 - [ ] Medium trustworthiness (please specify)
 - [ ] Low trustworthiness (please specify)
 
 ### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
 
 - [ ] Not applicable (results and conclusions inseparable)
-- [ ] High trustworthiness
+- [x] High trustworthiness
 - [ ] Medium trustworthiness
 - [ ] Low trustworthiness
     
