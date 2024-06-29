@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@guardabassiWeightStatusWeight2020"
+shorttitle        : "@guardabassiWeightStatusWeight2020"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["../files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
 
 floatsintext      : no
 linenumbers       : no 
@@ -49,7 +49,7 @@ r_refs("r-references.bib")
 
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
-- [ ] Not applicable (whole study is focus of data extraction)  
+- [x] Not applicable (whole study is focus of data extraction)  
 - [ ] Specific focus of this data extraction (please specify)  
 
 ## Study aim(s) and rationale
@@ -57,19 +57,30 @@ r_refs("r-references.bib")
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threat 
+- Child obesity
+- Working memory depletion
+- Research on obesity stereotype threat in adults
 
 ### Do authors report how the study was funded?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
+
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
+
+- Negative association between BMI and working memory in obese children during stereotype threat  
 
 ### What is/are the population focus/foci of the study?
 
@@ -83,12 +94,14 @@ r_refs("r-references.bib")
 - [ ] 21 and over  
 - [ ] Not stated/unclear  
 
+- Children, not stated how old exactly  
+
 ### What is the sex of the population focus/foci?
 
 - [ ] Not applicate (focus not learners)  
 - [ ] Female only  
 - [ ] Male only  
-- [ ] Mixed sex  
+- [x] Mixed sex  
 - [ ] Not stated/unclear  
 
 ### What is/are the educational setting(s) of the study?
@@ -103,7 +116,7 @@ r_refs("r-references.bib")
 - [ ] Nursery school  
 - [ ] Other early years setting  
 - [ ] Post-compulsory education institution  
-- [ ] Primary school  
+- [x] Primary school  
 - [ ] Residential school  
 - [ ] Secondary school  
 - [ ] Special needs school  
@@ -112,23 +125,31 @@ r_refs("r-references.bib")
 
 ### In Which country or cuntries was the study carried out?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Italy  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+**H1:** We examined, for the first time, whether a negative association between BMI and working memory (i.e., a decrease in working memory associated with higher levels of BMI) emerges among children with obesity when working memory tasks are labelled as an assessment of stereotype-related cognitive abilities (i.e., as an intelligence test) as compared with when the same tasks are labelled as nondiagnostic tools (i.e., when stereotype threat is removed).  
+
+**H2:** We investigated whether experiences of weight stigmatization (e.g. being teased by peers due to one's overweight) strengthens the negative relation between a children's BMI and working memory under stereotype threat.  
+
+**H3:** We investigated whether experiences of personal endorsement of the intelligence obesity stereotype threat strengthens the negative relation between a children's BMI and working memory under stereotype threat.  
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
 

@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@wulandariTrustYourAbilities2020"
+shorttitle        : "@wulandariTrustYourAbilities2020"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["../files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
 
 floatsintext      : no
 linenumbers       : no 

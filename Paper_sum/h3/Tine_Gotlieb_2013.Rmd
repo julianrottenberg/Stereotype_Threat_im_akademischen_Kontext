@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@tineGenderRaceIncomebased2013"
+shorttitle        : "@tineGenderRaceIncomebased2013"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["../files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h3.bib"]
 
 floatsintext      : no
 linenumbers       : no 

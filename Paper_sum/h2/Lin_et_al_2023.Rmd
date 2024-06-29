@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@linEffectStereotypeThreat2023a"
+shorttitle        : "@linEffectStereotypeThreat2023a"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["../files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
 
 floatsintext      : no
 linenumbers       : no 

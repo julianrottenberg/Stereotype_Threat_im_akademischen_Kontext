@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@jordanoPrimingPerformancerelatedConcerns2017"
+shorttitle        : "@jordanoPrimingPerformancerelatedConcerns2017"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["../files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
 
 floatsintext      : no
 linenumbers       : no 

@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@stahlRolePreventionFocus2012a"
+shorttitle        : "@stahlRolePreventionFocus2012a"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["../files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
 
 floatsintext      : no
 linenumbers       : no 

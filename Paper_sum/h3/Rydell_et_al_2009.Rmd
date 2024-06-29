@@ -1,12 +1,12 @@
 ---
-title             : "Template"
-shorttitle        : "Template"
+title             : "@rydellMultipleSocialIdentities2009"
+shorttitle        : "@rydellMultipleSocialIdentities2009"
 
 
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["../files/Describing_studies.bib", "r-references.bib"]
+bibliography      : ["../files/Describing_studies.bib", "h3.bib"]
 
 floatsintext      : no
 linenumbers       : no 
