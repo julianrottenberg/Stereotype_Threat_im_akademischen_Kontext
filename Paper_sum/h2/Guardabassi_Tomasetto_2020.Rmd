@@ -154,6 +154,12 @@ This research did not receive any specific grant from funding agencies in the pu
 - [ ] Not stated/unclear (please specify)  
 
 
+- zBMI
+- N-back task results -> working memory
+- Stigma experiences
+- Obesity stereotype endorsement  
+
+
 ### Study timing
 *Please indicate all that apply and give further details where possible.*
 
@@ -161,7 +167,7 @@ This research did not receive any specific grant from funding agencies in the pu
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -170,7 +176,7 @@ This research did not receive any specific grant from funding agencies in the pu
 *If at least one of the outcome variables is measured both before and after the intervention, please use the before and after category.*
 
 - [ ] Not applicable (not an evaluation)  
-- [ ] Before and after  
+- [x] Before and after  
 - [ ] Only after  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -182,7 +188,7 @@ This research did not receive any specific grant from funding agencies in the pu
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -190,16 +196,18 @@ This research did not receive any specific grant from funding agencies in the pu
 ### How do the groups differ?
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Explicityly stated (please specify)  
+- [x] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threatening condition vs non-steretype threatening condition  
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
 
 - [ ] Not applicable (not more than one group)  
 - [ ] One  
-- [ ] Two  
+- [x] Two  
 - [ ] Three  
 - [ ] Four or more (please specify)  
 - [ ] Other/unclear (please specify)  
@@ -208,7 +216,7 @@ This research did not receive any specific grant from funding agencies in the pu
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
-- [ ] Random  
+- [x] Random  
 - [ ] Quasi-random  
 - [ ] Non-random  
 - [ ] Not stated/unclear (please specify)  
@@ -218,13 +226,13 @@ This research did not receive any specific grant from funding agencies in the pu
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
-- [ ] Yes (please specify)  
+- [x] Yes (please specify)  
 - [ ] No (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
@@ -236,32 +244,40 @@ This research did not receive any specific grant from funding agencies in the pu
 ### Are the authors trying to produce findings that are representative of a given population? 
 *Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- obesity stereotype threat in school-ages children  
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- larger sample of children participating in a broader survey.  
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
 
 - [ ] Not applicable (no sampling frame)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Both children and parents filled out a paper-and-pencil questionnaire on obesity and psychological functioning. 
+- All children with obesity (i.e. with estimated zBMI based on parental reports: >= 95th percentile according to the WHO growth charts) were retained.
+- for each child with obesity, one or two age- and gender-matched classmates with average weight (zBMI: 5th - 84th percentiles) and, wehere available, one classmate with overweight (zBMI: 85th-94th percentiles) werea lso recruited.  
 
 ### Planned sample size
 *If more than one group please give details for each group separately.*
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -269,22 +285,24 @@ This research did not receive any specific grant from funding agencies in the pu
 *e.g. letters of invitation, telephone contact, face-to-face contact.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- penicl-and-paper questionnaire  
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
 
 - [ ] Not applicable (please specify)
 - [ ] Participant consent sought
-- [ ] Parental consent sought
+- [x] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
 - [ ] Not stated/unclear (please specify)
@@ -292,7 +310,9 @@ This research did not receive any specific grant from funding agencies in the pu
 ### Are there any other details relevant to recruitment and consent?
 
 - [ ] No
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
+
+- Approval from the local university ethical committee was received, as well as parental informed consent was obtained.  
 
 ## Methods - Actual sample
 
@@ -300,9 +320,12 @@ This research did not receive any specific grant from funding agencies in the pu
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- 176 primary school children (106 boys), mostly born in Italy (n = 173), attending the third, fourth, or fith grade ($M_{age} = 116.07 months, SD = 10.43$)  
+- n = 63, obesity children (>= 95th percentile)  
 
 ### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
@@ -310,26 +333,31 @@ This research did not receive any specific grant from funding agencies in the pu
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Explicitly stated (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- 173 out of the 176 children are born in Italy, the other 3 are not further specified.  
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] 0 to 4
-- [ ] 5 to 10
+- [x] 5 to 10
 - [ ] 11 to 16
 - [ ] 17 to 20
 - [ ] 21 and over
 - [ ] Not stated/unclear (please specify)
+
+- $M_{age} = 116.07 months, SD = 10.43$
+
 
 ### What is the socio-economic status of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -337,23 +365,27 @@ This research did not receive any specific grant from funding agencies in the pu
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Explicitly stated (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- 173 born in Italy, 3 not further specified.  
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- 63 were obese children (>= 95th percentile)  
 
 ### Is there any other useful information about the study participants?
 
@@ -362,13 +394,15 @@ This research did not receive any specific grant from funding agencies in the pu
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
 
+- see Appendix A for more details  
+
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Not applicable (no sampling frame)
 - [ ] High (please specify)
-- [ ] Medium (please specify)
+- [x] Medium (please specify)
 - [ ] Low (please specify)
 - [ ] Unclear (please specify)
 
@@ -376,7 +410,7 @@ This research did not receive any specific grant from funding agencies in the pu
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -384,7 +418,7 @@ This research did not receive any specific grant from funding agencies in the pu
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -392,7 +426,7 @@ This research did not receive any specific grant from funding agencies in the pu
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -401,6 +435,17 @@ This research did not receive any specific grant from funding agencies in the pu
 ### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
 
 - [ ] Details
+
+- zBMI -> a & b
+- Age -> a
+- parental-reported zBMI -> b
+- measured zBMI -> b
+- Sex -> a
+- Children's ethnicity -> a
+- Parents' ethnicity -> a
+- Weight-based teasing -> b
+- Stereotype on intelligence -> b
+- Working memory (N-back) -> b
 
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -412,27 +457,32 @@ This research did not receive any specific grant from funding agencies in the pu
 - [ ] Observation
 - [ ] Self-completion questionnaire
 - [ ] Self-completion report or diary
-- [ ] Exams
+- [x] Exams
 - [ ] Clinical test
 - [ ] Practical test
-- [ ] Psychological test
+- [x] Psychological test
 - [ ] Hypothetical scenario including vignettes
 - [ ] School/college records (e.g. attendance records etc)
-- [ ] Secondary data such as publicly available statistics
+- [x] Secondary data such as publicly available statistics
 - [ ] Other documentation
 - [ ] Not stated/unclear (please specify)
 
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Obesity Stigmatization Questionnaire (Latner et al., 2007)
+- Perception of Teasing Scale (POTS; Thompson, Cattarin, Fowler, & Fisher, 1995)
+- N-back task (Jaeggi et al., 2010)
+- Sex- and age-adjusted zBMI was computed according to the WHO computation formula (Onis et al., 2007)
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
 
-- [ ] Researcher
+- [x] Researcher
 - [ ] Head teacher/Senior management
 - [ ] Teaching or other staff
 - [ ] Parents
@@ -465,7 +515,7 @@ This research did not receive any specific grant from funding agencies in the pu
 
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Unclear/not stated (please specify)
+- [x] Unclear/not stated (please specify)
 
 ### Are there other important features of data collection?
 *e.g. use of video or audio tape; ethical issues such as confidentiality etc.*
@@ -477,13 +527,21 @@ This research did not receive any specific grant from funding agencies in the pu
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- SPSS 25 
 
 ### Which statistical methods, if any, were used in the analysis?
 
 - [ ] Details
+
+- fixed effects were condition, BMI, and their interaction term as between-participants factors and the three levels of difficulty of the N-back task as a within-participant factor
+- Akaike information criterion (AIC) 
+- Bayesian information criterion (BIC)
+- correlations  
+
 
 ### What rationale do the authors give for the methods of analysis for the study?
 *e.g. for their methods of sampling, data collection, or analysis.*
@@ -527,79 +585,109 @@ This research did not receive any specific grant from funding agencies in the pu
 
 - [ ] Details
 
+- Table
+- in text
+- figure
+
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+- table 1 displays descriptive statistics and bivariate correlation
+- Stigma experiences were more prevalent at increased levels of zBMI
+- Endorsement of the obesity stereotype about intelligence was unrelated to zBMI
+- Results from the mixed-effects model revealed that the main effect of N-back difficulty, were significant, whereas the main effect of condition was not
+- H1, the two-way interaction between zBMI and condition was significant, indicating that the relation between body weight and working memory varied depending on the presence of stereotype threat
+- This effect was not further qualified by the three-way interaction among zBMI, condition, and N-back difficulty, suggesting that the impairing effect of stereotype threat on the relation between zBMI and working memory did not vary in strength or direction at different levels of task difficulty.
+- Two-way interactions were N-back levels and zBMI, and between N-back levels and condition were also non-significant
+- Simple slopes analyses revealed that working memory scores declined by 0.35 SD per unit of increase in children's zBMI in the ST condition
+- The relation between zBMI and working memory was null in the NST condition
+- Regarding the role of potential moderators (H2 and H3), the interaction between participants' zBMI and condition was not further qualified by either weight-based stigma experiences, or endorsement of the obesity stereotype about intelligence.
+- Fit indices were markedly worse when the three-way interactions among zBMI, condition, and stigma experiences and among zBMI, condition, and stereotype endorsement were included in the models. 
+- Supplemental analyses did not show age and gender differences or significant two-way interactions between zBMI and POTS or obesity stereotype endorsement.  
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
-- [ ] Yes (please specify)
-- [ ] No
+- [x] Yes (please specify)
+- [x] No
+
+- supplemental data is available on the doi page.  
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
 
+The current study is the first to demonstrate that the assessment of working memory in children with excess weight may yield biased results. Specifically, our findings indicate that a decrease in working memory at increasing levels of body weight emerged only when children were told that a working memory task assessed their intelligence. When concerns about the capability of the test to diagnose intelligence were removed, children with excess weight performed at levles that were indistinguishable from those children with average weight.  
+We also investigated whether the negative relation between body weight and working memory was strengthened among children who had more often been the target of weight-based teasing or among those who personally avowed that children with obesity are less intelligent. Neither of these two personal characteristics emerged as a relevant moderator.  
+Similarly, gender, age, and (contrary to our expectation) task difficulty did not moderate the explored relation, possibly because weight stigma equally affects boys and girls during middle childhood and may impair performance even on tasks demanding relatively low cognitive control.  
+Our findings concerning the role of weight-based stereotypes in hampering executive functions during middle childhood parallel our prior research with adults and have far-reaching developmental implications.  
+
+Limitations of this study should be considered. For example, the ethnic-homogeneous convenience sample of this study limits the generalization of findings to other cultural groups. In addition, measurement of potential moderators could be strengthened in future studies by including no only direct teasing by peers but also more subtle forms of stigma experience (e.g., exposure to obesity stereotype in media) or more overt ones (e.g. bullying). Moreover, measures of weight bias internalization, which is a strong predictor of obesity-related health and psychological complications should also be included in future work. This is particularly important because stereotype threat susceptibility in children may depend more on implicit attitudes and cognitions than on explicit ones. Finally, because group identification is a potential moderator of stereotype threat, future studies may take into account children's subjective identification with their weight status group.
+
+In conclusion, this study offers a new explanation for the observed working memory deficits associated with child obesity.  
+
 ## Quality of the study - Reporting 
 
 ### Is the context of the study adequately described?
 *Consider your answer to questions: Why was this study done at this point in time, in those contexts and with those people or institutions? (Section B question 2) Was the study informed by or linked to an existing body of empirical and/or theoretical research? (Section B question 3) Which of the following groups were consulted in working out the aims to be addressed in the study? (Section B question 4) Do the authors report how the study was funded? (Section B question 5) When was the study carried out? (Section B question 6)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Are the aims of the study clearly reported?
 *Consider your answer to questions: What are the broad aims of the study? (Section B question 1) What are the study research questions and/or hypotheses? (Section C question 10)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
 *Consider your answer to all questions in Methods on ‘Sampling Strategy’, ‘Recruitment and Consent’, and ‘Actual Sample’.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the methods used in the study to collect data?
 *Consider your answer to the following questions in Section I: Which methods were used to collect the data? Details of data collection methods or tools Who collected the data? Do the authors describe the setting where the data were collected? Are there other important features of the data collection procedures?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the methods of data analysis?
 *Consider your answer to the following questions in Section J: Which methods were used to analyse the data? What statistical methods, if any, were used in the analysis? Who carried out the data analysis?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is the study replicable from this report?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Do the authors avoid selective reporting bias?
 *(e.g. do they report on all variables they aimed to study as specified in their aims/research questions?)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ## Quality of the study - Methods and data
@@ -608,46 +696,48 @@ This research did not receive any specific grant from funding agencies in the pu
 *Consider consent, funding, privacy, etc.*
 
 - [ ] Yes, some concerns (please specify)
-- [ ] No concerns
+- [x] No concerns
 
 ### Were students and/or parents appropriately involved in the design or conduct of the study?
 
-- [ ] Yes, a lot (please specify)
+- [x] Yes, a lot (please specify)
 - [ ] Yes, a little (please specify)
 - [ ] No (please specify)
 
 ### Is there sufficient justification for why the study was done the way it was?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Was the choice of research design appropriate for addressing the research question(s) posed?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
 *e.g. (1) In an evaluation, was the process by which participants were allocated to or otherwise received the factor being evaluated concealed and not predictable in advance? If not, were sufficient substitute procedures employed with adequate rigour to rule out any alternative explanations of the findings which arise as a result? e.g. (2) Was the attrition rate low and if applicable similar between different groups?*
 
 - [ ] A lot (please specify)
-- [ ] A little (please specify)
+- [x] A little (please specify)
 - [ ] Not at all (please specify)
 
 ### How generalisable are the study results?
 
 - [ ] Details
 
+- only towards Italian school-aged children that are obese, or children that are from a similar culture.  
+
 ### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
 *In some studies it is difficult to distinguish between the findings of the study and the conclusions. In those cases please code the trustworthiness of this combined results/conclusion.** Please remember to complete the weight of evidence questions B-D which are in your review specific data extraction guidelines. ***
 
 - [ ] High trustworthiness (please specify)
-- [ ] Medium trustworthiness (please specify)
+- [x] Medium trustworthiness (please specify)
 - [ ] Low trustworthiness (please specify)
 
 ### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
 
 - [ ] Not applicable (results and conclusions inseparable)
-- [ ] High trustworthiness
+- [x] High trustworthiness
 - [ ] Medium trustworthiness
 - [ ] Low trustworthiness
     

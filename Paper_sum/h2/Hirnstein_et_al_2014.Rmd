@@ -45,11 +45,20 @@ library(kableExtra)
 r_refs("r-references.bib")
 ```
 
+---
+
+# **IMPORTANT NOTE: PUT AS FOOTNOTE! **
+# **UNCLEAR WHETHER OR NOT THE PAPER FITS THE INCLUSION/EXCLUSION CRITERIA. **
+# **DESCRIPTION OF THE PARTICIPANTS IS TOO VAGUE!**
+# **EVERYTHING ELSE FITS THE INCLUSION/EXCLUSION CRITERIA SET BY THE PREREGISTRATION SO IT IS INCLUDED ANYWAYS **
+
+---
+
 # @eppi-centreReviewGuidelinesExtracting2003 & @criticalappraisalskillsprogrammeCASPSystematicReview2018
 
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
-- [ ] Not applicable (whole study is focus of data extraction)  
+- [x] Not applicable (whole study is focus of data extraction)  
 - [ ] Specific focus of this data extraction (please specify)  
 
 ## Study aim(s) and rationale
@@ -57,21 +66,33 @@ r_refs("r-references.bib")
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threat
+- sex/gender differences in cognitive tasks
+- Testosterone (T) and stereotype threat  
 
 ### Do authors report how the study was funded?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- This work was supported by Grant HA3285/4-1 and HI1496/1-1 of the Deutsche Forschungsgemeinschaft (DFG).  
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
 
+- Testosterone (T) in particular has been shown to have oranizational effects during prenatal neural development with consequences for cognitive abilities later in life.
+- The present study focused on activational effects that occur throughout life by its non-genomic, direct neuromodulatory effects on brain functions and cognitive abilities.
+- The aim of the present study was to investigate whether gender stereotypes affect cognitive sex differences only in mixed-sex groups or whether they also apply to same-sex settings which amy have important implications for the ongoing debate on co-education.
+
 ### What is/are the population focus/foci of the study?
+
+- Males and females in an educational setting  
 
 ### What is the relevant age group? 
 
@@ -80,7 +101,7 @@ r_refs("r-references.bib")
 - [ ] 5 - 10  
 - [ ] 11 - 16  
 - [ ] 17 - 20  
-- [ ] 21 and over  
+- [x] 21 and over  
 - [ ] Not stated/unclear  
 
 ### What is the sex of the population focus/foci?
@@ -88,7 +109,7 @@ r_refs("r-references.bib")
 - [ ] Not applicate (focus not learners)  
 - [ ] Female only  
 - [ ] Male only  
-- [ ] Mixed sex  
+- [x] Mixed sex  
 - [ ] Not stated/unclear  
 
 ### What is/are the educational setting(s) of the study?
@@ -112,25 +133,37 @@ r_refs("r-references.bib")
 
 ### In Which country or cuntries was the study carried out?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Germany  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+**H1**: We hypothesized that the action of gender stereotypes increases sex differences in all tasks (Sex by Condition interaction) by either enhancing performance of positively stereotyped participants (e.g., females' performance in verbal fluency) or by reducing performance of negatively stereotyped participants (e.g. males' performance in verbal fluency).  
+**H2**: We further hypothesized that cognitive sex differences will be largest if gender-stereotypes are activated in mixed-sex setting (Sex by Condition by Group Sex Composition interaction). By measuring participants' T levels as a consequence of the competitive testing situation related to gender stereotypes and group sex composition.  
+**H3**: Based on Hausmann et al. (2009) and Josephs et al. (2003) and the general assumption that T levels are related to cognitive performance, we hypothesized that if cognitive performance is enhanced after gender stereotype activation, there will be a rise in T levels, particularly in mixed-sex groups. In contrast, stereotype threat might be associated with a T drop.  
+**H4**: In addition, we investigated whether T levels in general were correlated with cognitive performance and whether cognitive performance was correlated with the magnitude of the corresponding gender stereotype. That is, the more strongly females are convinced that females in general excel in verbal fluency, the higher their verbal fluency performance (and the more strongly males are convinced, the lower their performance).
+
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Gender Stereotype Questionnaire
+- Testosterone Assays
+- Cognitive Tests
 
 
 ### Study timing
@@ -140,7 +173,7 @@ r_refs("r-references.bib")
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -149,7 +182,7 @@ r_refs("r-references.bib")
 *If at least one of the outcome variables is measured both before and after the intervention, please use the before and after category.*
 
 - [ ] Not applicable (not an evaluation)  
-- [ ] Before and after  
+- [x] Before and after  
 - [ ] Only after  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -161,17 +194,22 @@ r_refs("r-references.bib")
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
-- [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
 ### How do the groups differ?
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Explicityly stated (please specify)  
+- [x] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Mixed vs same-sex group   
+- Gender stereotype activated vs control 
+- gender
+- it is Gender stereotype activated vs control -> Males vs Females -> Same-sex vs Mixed-sex
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
@@ -187,7 +225,7 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
-- [ ] Random  
+- [x] Random  
 - [ ] Quasi-random  
 - [ ] Non-random  
 - [ ] Not stated/unclear (please specify)  
@@ -197,13 +235,15 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
-- [ ] Yes (please specify)  
+- [x] Yes (please specify)  
 - [ ] No (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
+- All participants were naive to the study's hypotheses.  
+
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
@@ -217,7 +257,7 @@ r_refs("r-references.bib")
 
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
@@ -225,7 +265,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
@@ -233,14 +273,14 @@ r_refs("r-references.bib")
 - [ ] Not applicable (no sampling frame)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Planned sample size
 *If more than one group please give details for each group separately.*
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -250,13 +290,13 @@ r_refs("r-references.bib")
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
@@ -266,12 +306,14 @@ r_refs("r-references.bib")
 - [ ] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Are there any other details relevant to recruitment and consent?
 
 - [ ] No
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
+
+- 12 participants were excluded because of neurological conditions, cognitive performance of more than two SDs below average in all five cognitive tests, or missing data.  
 
 ## Methods - Actual sample
 
@@ -279,9 +321,11 @@ r_refs("r-references.bib")
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- 148 adults (78 women, 70 men) recrited at the Department of Psychology, Ruhr-University Bochum, Germany.  
 
 ### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
@@ -289,7 +333,12 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
+
+- 12 participants were excluded
+- 70 women participated
+- 66 men participated
+- in total 136 participants  
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
@@ -297,7 +346,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -307,8 +356,11 @@ r_refs("r-references.bib")
 - [ ] 5 to 10
 - [ ] 11 to 16
 - [ ] 17 to 20
-- [ ] 21 and over
+- [x] 21 and over
 - [ ] Not stated/unclear (please specify)
+
+- Mean age of 24.40 years (SD=4.9) for women
+- Mean age of 25.56 years (SD=4.3) for men.
 
 ### What is the socio-economic status of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -316,7 +368,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -324,7 +376,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,14 +384,29 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify no/s.)
+- [x] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Gender stereotypes activated: n = 66
+- Control = 70
+- Gender stereotypes activated -> males: 32
+- Gender stereotypes activated -> females: 34
+- Control -> males: 34
+- Control -> females: 36
+- Gender stereotypes activated -> males -> same-sex: 13
+- gender stereotypes activated -> males -> mixed-sex: 19
+- gender stereotypes activated -> females -> same-sex: 17
+- gender stereotypes activated -> females -> mixed-sex: 17
+- control -> males -> same-sex: 16
+- control -> males -> mixed-sex:  18
+- control -> females -> same-sex: 20
+- control -> females -> mixed-sex: 16  
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
@@ -349,13 +416,15 @@ r_refs("r-references.bib")
 - [ ] High (please specify)
 - [ ] Medium (please specify)
 - [ ] Low (please specify)
-- [ ] Unclear (please specify)
+- [x] Unclear (please specify)
+
+- sample was not described  
 
 ### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -363,7 +432,7 @@ r_refs("r-references.bib")
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -371,7 +440,7 @@ r_refs("r-references.bib")
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -380,6 +449,18 @@ r_refs("r-references.bib")
 ### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
 
 - [ ] Details
+
+- ages -> a
+- gender -> a
+- gender stereotype questionnaire -> b
+- gender neutral stereotype questionnaire -> b
+- Redrawn Vandenberg and Kuse Mental Rotation Test (Version A) [MRT-3D] -> b
+- MP-2d -> b (is a subtest of the WILDE-Intelligenz-Test)
+- Word Fluency Test (WF) -> b
+- 4-Word Sentences Test (4W) -> b
+- Perceptual Speed Tst (PS) -> b
+- Testosterone Assays -> b (salvia samples)
+
 
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -404,9 +485,11 @@ r_refs("r-references.bib")
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- see above  
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -456,13 +539,21 @@ r_refs("r-references.bib")
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- ANOVA
+- alpha-level pretest and posttest
+- t-test
+- multiple linear regressions
 
 ### Which statistical methods, if any, were used in the analysis?
 
 - [ ] Details
+
+- see above
+
 
 ### What rationale do the authors give for the methods of analysis for the study?
 *e.g. for their methods of sampling, data collection, or analysis.*
@@ -506,37 +597,117 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- Tables
+- Figures
+- in text
+
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+**Gender stereotypes**:
+- Females were generally associated with higher verbal and males with higher spatial skills
+- 2 (Sex) x 2 (Condition: Gender-stereotyped vs control) vs 2 (Group sex composition: same- vs mixed-sex) ANOVA, only a main effect of Sex, for item 8 and a main effect of Group Sex Composition, for Item 15 emerged. No further main effects or interactions were significant across all 16 items.
+- Examined whether gender stereotypes changed from before to after cognitive testing by subjecting probability estimates for all 16 items in the gender-stereotyped group to a 2 (sex) x 2 (group: same vs mixed-sex) vs 2 (Pre-/post cognitive testing) ANOVA, a main effect of Pre-/Post cognitive testing was found for Item 5.
+- Before stereotype threat manipulation, participants were significantly more convinced that a person who "can draw a map of the area where he/she lives" was more likely to be male than after testing.
+- No further main effects or interactions involving Pre-/Post cognitive testing were significant. 
+- Overall, the analyses of individual questionnaire items indicated pronounced gender stereotypes, which were relatively stable over the time of testing and differed only marginally between groups and conditions.  
+
+**Cognitive Test Performance**:
+- Test socres of the MRT-3D, MP-2D, WF, 4W, and PS were subjected to 2 (Sex) x 2 (Condition) x 2 (Group sex composition) ANOVAS
+- The alpha-level was set at .05 post hoc t-tests were carried out with Bonferroni adjustment, and effect sized are given as the proportion of variance accounted for. 
+- For sex differences, Cohen's d is additionally provided to facilitate comparison with previous studies. Means and SEs are shown in *Table 2*.  
+
+**Mental Rotation**:
+- For the MRT-3D, the ANOVA revealed a significant main effect of Sex with higher scores for men than women. There were no other significant main effects or interactions.
+- In the MP-2D, the main effect of Condition was significant, indicating that participants in the control condition achieved higher scores than those in the gender-stereotyped condition. No further main effects or interactions were significant.  
+
+**Verbal Fluency**:
+- For WF, the ANOVA revealed a main effect of SEX, indicating that women obtained higher verbal fluency scores than men. 
+- Moreover, there was an interaction between Condition and Group Sex Composition.
+- Controls in mixed-sex groups achieved the highest scores, differing significantly from controls in same-sex groups.
+- No other post hoc t-test reached significance
+- The higher performance of controls in mixed-sex groups led to a significant main effect of Group Sex Composition, with participants in mixed-sex groups outperforming participants in same-sex groups. No other main effects or interactions were significant.  
+
+- For 4W, there was a Sex x Condition Interaction.
+- As predicted in H1, there was no significant difference between men and women in the control condition, but verbal fluency was significantly lower in men than women in the gender stereotype condition.
+- Gender-stereotyped men also had significantly lower scores than non-stereotyped men and non-stereotyped women. 
+- As in WF, a significant interaction between Condition and Group Sex Composition emerged, with controls in mixed-sex groups achieving the highest 4W score. They outperformed controls in the same-sex groups and gender-stereotyped participants in mixed-sex groups.
+- The main effect of Condition was significant with lower scores in the gender stereotype condition than in the control condition, and a trend towards higher scores in women was observed. No other main effects or interactions were significant.  
+
+**Perceptual Speed**:
+- For PS, the ANOVA revealed a significant interaction between Condition and Group Sex Composition. 
+- Controls in the mixed-sex groups obtained the highest score, they significantly outperformed controls in same-sex groups as well as gender-stereotyped participants in same-sex and mixed-sex groups. 
+- Paired comparisons between the three same-sex groups did not reach significance. As a result of the higher performance of controls in the mixed-sex groups, there was a significant main effect of Condition, and Group Sex Composition, with higher performance in controls and mixed-sex groups compared to gender-stereotyped and same-sex participants, respectively. There were no other significant main effects or interactions.  
+
+- Despite a relatively large sample size (N = 136), the predicted 3-way interaction between Condition, Group Sex Composition, and Sex (h2) did not approach significance in any cognitive test. 
+- A power analysis revealed a power of .82 to detect a three way interaction.  
+
+**Testosterone Levels**:
+- To test whether T changes occurred with respect ot stereotype boost or stereotype threat (h3), T levels from saliva samples were subjected to a 2 (Sex) x 2 (Condition) x 2 (Group Sex Composition) x 2 (pre-/post stereotype manipulation) mixed-design ANOVA
+- A main effect of Sex revealed significantly higher T levels in men than women. No other effects were significant.   
+
+**Relationship between Gender Stereotypes, Testosterone, and Cognitive Performance**:
+- We investigated whether there was a general association between T, gender stereotypes, and cognitive performance (h4)
+- Multiple linear regressions were computed for each cognitive test (MRT-3D, MP-2D, 4W, WF, and PS) with the specific test score as the dependent variable and T levels (after the experiment) as well as gender stereotypes as predictors.
+- We focused on Items 10 and 12 from the gender stereotype questionnaire because they directly relate to mental rotation (MRT-3D and MP-2D) and verbal fluency (WF and 4W) tasks, respectively. 
+- Item 10 was used as a predictor for MRT-3D and MP-2D, while Item 12 was used as a predictor for WF and 4W. 
+- No gender stereotype item was used for PS
+- Multiple regressions were conducted separately for men and women because it has previously been suggested that the relationship between T and cognitive performance is sex-specific. 
+- Given that T levels are highly correlated with sex, this procedure additionally avoids multicollinearity.  
+
+- In men, none of the cognitive tasks showed a significant model. Only the MRT-3D, gender stereotype was as significant predictor, indicating a positive correlation between MRT-3D score and the probability that somebody who was good at mental rotation was male (i.e., the better men performed on the MRT-3D the stronger was their gender stereotype that males excel in mental rotation). 
+- T levels were not significantly correlated with cognitive performance.  
+
+- In women, a significant model only emerged in 4W, accounting for 13 % of variance
+- Only the gender stereotype significantly predicted the 4W score, indicating a negative correlation between 4W scores and the probability that somebody who was good at verbal fluency was male (i.e., the better women performed on the 4W the stronger was their gender stereotype that women excel in verbal fluency).
+- T levels did not significantly predict any of the cognitive task scores
+- Since T levels before and after the experiment were highly correlated, regressions did not include both predictors because of multicollinearity.
+- The results did not change if the predictor T levels after the experiment, as reported above, was replaced by pre-test T levels.  
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
+
+The gender stereotype questionnaire revealed that participants of both sexes believed that males, rather than females, were more likely to do well on spatial tasks and that females, rather than males, were more likely to do well in verbal tasks. These findings are consistent with two previous studies which used the same gender stereotype questionnaire. The gender stereotypes remained stable across cognitive testing and were very similar across men and women, across participants in the control and gender stereotype condition, and across participants in mixed and same-sex groups. The observed differences in cognitive performance were thus unlikely to arise from differences in pre-existing gender stereotypes. Finally, in accordance with Hypothesis 7, we found that men and women who performed better on mental rotation (MRT-3D) and verbal fluency (4W), respectively, also held stronger gender stereotypes regarding spatial and verbal skills. As gender stereotypes for all participants were measured after cognitive testing, this shows that cognitive performance may strengthen gender stereotypes.
+
+Overall, there was a female advantage in verbal fluency, which was consistent with meta-analyses and comprehensive reviews on sex differences in verbal abilities. IN the control condition, however, men generated as many four-word sentences as women whereas men's performance was significantly reduced when gender stereotypes were. This is a typical stereotype threat effect consistent with Hypothesis 1. No stereotype threat emerged in the other verbal fluency test. This discrepancy between tasks can be explained by the fact that stereotype threat emerges particularly in cognitively more demanding tasks. Since 4W is considered to be more demanding than WF, because whole sentences instead of only single words need to be generated, this might explain the emergence of stereotype threat in 4W only. 
+
+In mental rotation, the typical male advantage emerged on the MRT-3D. The sex differences in the MP-2D were nonsignificant and negligible in size and was consistent with previous findings showing that 3-dimensional objects yield stronger sex differences than 2-dimensional objects. Unexpectedly, the sex difference in MRT-3D was unaffected by the gender stereotype manipulation. Most importantly, we did not replicate the enhanced MRT-3D scores in gender-stereotyped men as reported in Hausmann et al. (2009) although the gender stereotype manipulation was identical and participants in both studies showed similar pronounced gender stereotypes with respect to spatial abilities. This cannot be attributed to a failure of the stereotype manipulation, since our stereotype intervention successfully induced stereotype threat and group sex composition effects in other tasks. It is also rather unlikely that we recruited an unusual sample, since well-known sex differences in mental rotation and verbal fluency were found. The results of the present study rather suggest that it is difficult to induce stereotype threat and boost simultaneously when the test battery includes tasks favouring men and women.
+
+In addition, the perceptual speed test neither revealed significant sex differences nor any gender stereotype effects.  
+
+Hypothesis 2 was that stereotype boost or threat effects, such as men’s reduced performance in verbal fluency, are particularly pronounced in mixed-sex groups. However, no three-way interaction emerged. 
+
+...
+
+Taken together, the present study showed that the cognitive performance of men and women was affected by gender stereotypes and group sex composition. First, the present study was one of the very few that found a stereotype threat in men's cognitive performance (i.e., verbal fluency). Second, the present study demonstrated that an interaction of gender stereotyping and group sex composition affected the performance in sex-sensitive cognitive tasks. This probably occurs when the test environment is appraised as challenging, thereby raising the arousal level close to its optimum. However, when gender stereotypes are additionally activated, the testing situation might be evaluated as threatening and performance is likely to be reduced. This is a strong argument against proponents of single-sex schooling who argue that mixed-sex settings have generally detrimental effects on performance. Finally, the present study did not find any interaction between gender-stereotyping and T levels: Gender-stereotyping neither affected T levels nor were baseline T levels related to the susceptibility to stereotype threat. In fact, the present study did not find any evidence for a relationship between baseline T and cognitive performance.
 
 ## Quality of the study - Reporting 
 

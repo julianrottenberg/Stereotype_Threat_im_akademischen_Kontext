@@ -49,7 +49,7 @@ r_refs("r-references.bib")
 
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
-- [ ] Not applicable (whole study is focus of data extraction)  
+- [x] Not applicable (whole study is focus of data extraction)  
 - [ ] Specific focus of this data extraction (please specify)  
 
 ## Study aim(s) and rationale
@@ -57,21 +57,31 @@ r_refs("r-references.bib")
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Mind-wandering
+- Executive Control
+- Mind-wandering and executive control: relationship
+- Stereotype threat
 
 ### Do authors report how the study was funded?
 
 - [ ] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
-- [ ] Not stated/unclear (please specify)  
+- [x] Not stated/unclear (please specify)  
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
 
+- In the current studies, we provide a direct test of the "control failure x current concerns" framework by priming performance-related concerns in younger adults and assessing the impact on probe-caught off-task thoughts regarding the task (TRI). More specifically, we prime current, performance-related concerns in these younger adults using a stereotype threat intervention.  
+- The current studies examine the effect of priming personal, performance-related concerns on midn-wandering by using a stereotype threat manipulation.   
+
 ### What is/are the population focus/foci of the study?
+
+- younger adults  
 
 ### What is the relevant age group? 
 
@@ -81,7 +91,7 @@ r_refs("r-references.bib")
 - [ ] 11 - 16  
 - [ ] 17 - 20  
 - [ ] 21 and over  
-- [ ] Not stated/unclear  
+- [x] Not stated/unclear  
 
 ### What is the sex of the population focus/foci?
 
@@ -89,7 +99,7 @@ r_refs("r-references.bib")
 - [ ] Female only  
 - [ ] Male only  
 - [ ] Mixed sex  
-- [ ] Not stated/unclear  
+- [x] Not stated/unclear  
 
 ### What is/are the educational setting(s) of the study?
 
@@ -112,17 +122,21 @@ r_refs("r-references.bib")
 
 ### In Which country or cuntries was the study carried out?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- United States of America  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Two experiments tested the hypothesis that priming of performance-related concerns would (1) increase the frequency of task-related mind-wandering (i.e., task-related interference; TRI) and (2) decrease task performance.  
 
 ## Methods - Design
 
@@ -132,6 +146,11 @@ r_refs("r-references.bib")
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
+- Mind-wandering
+- Stereotype threat
+- OSPAN task
+- IAT
+- 
 
 ### Study timing
 *Please indicate all that apply and give further details where possible.*
@@ -140,7 +159,7 @@ r_refs("r-references.bib")
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -161,7 +180,7 @@ r_refs("r-references.bib")
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -169,25 +188,31 @@ r_refs("r-references.bib")
 ### How do the groups differ?
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Explicityly stated (please specify)  
+- [x] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+
+- stereotype threat vs no stereotype threat  
+
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
 
 - [ ] Not applicable (not more than one group)  
 - [ ] One  
-- [ ] Two  
+- [x] Two  
 - [ ] Three  
 - [ ] Four or more (please specify)  
 - [ ] Other/unclear (please specify)  
+
+- two
 
 ### Was the assignment of participants to interventions randomised?
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
-- [ ] Random  
+- [x] Random  
 - [ ] Quasi-random  
 - [ ] Non-random  
 - [ ] Not stated/unclear (please specify)  
@@ -197,13 +222,15 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
-- [ ] Yes (please specify)  
+- [x] Yes (please specify)  
 - [ ] No (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
+- The researchers also recruited male participants, to disguise that the study was about stereotype threat and gender differences in cognition. Male participants were tested in both the control and stereotype threat conditions together with the female participants, but only the data of the female participants were included in the analysis
+
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
@@ -215,32 +242,38 @@ r_refs("r-references.bib")
 ### Are the authors trying to produce findings that are representative of a given population? 
 *Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Females under stereotype threat  
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Gender (only females are included in the data analysis)  
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
 
 - [ ] Not applicable (no sampling frame)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Gender, see above
 
 ### Planned sample size
 *If more than one group please give details for each group separately.*
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -248,15 +281,21 @@ r_refs("r-references.bib")
 *e.g. letters of invitation, telephone contact, face-to-face contact.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Undergraduate students from the University of North Carolina at Greensboro participated in exchange for course credit.  
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Experiment 1**:
+- Course credit
+
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
@@ -266,12 +305,15 @@ r_refs("r-references.bib")
 - [ ] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Are there any other details relevant to recruitment and consent?
 
 - [ ] No
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
+
+**Experiment 1**:
+- there were no exclusions.
 
 ## Methods - Actual sample
 
@@ -279,17 +321,25 @@ r_refs("r-references.bib")
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Experiment 1**:
+- Sixty female undergraduate students from the University of North Carolina at Greensboro participated in exchange for course credit ($M_{age}$ = 19.10, SD = 1.24). Half of the participants were tested in the stereotype threat condition, and the other half in the control condition. All of these participants were included in the analyses described below.
+
+**Experiment 2**:
+- Sixty female undergraduate students from the University of North Carolina at Greensboro participated in exchange for course credit ($M_{age}$ = 19.25, SD = 1.12). All of these participants were included in the analyses.
 
 ### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- all of them 100%
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
@@ -297,7 +347,9 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
+
+- not stated. 
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -306,9 +358,16 @@ r_refs("r-references.bib")
 - [ ] 0 to 4
 - [ ] 5 to 10
 - [ ] 11 to 16
-- [ ] 17 to 20
+- [x] 17 to 20
 - [ ] 21 and over
 - [ ] Not stated/unclear (please specify)
+
+**Experiment 1**:
+- Mean age = 19.10, SD = 1.24
+
+**Experiment 2**:
+- Mean age = 19.25, SD = 1.12  
+
 
 ### What is the socio-economic status of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -316,7 +375,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -324,7 +383,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,14 +391,14 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
@@ -347,15 +406,17 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Not applicable (no sampling frame)
 - [ ] High (please specify)
-- [ ] Medium (please specify)
+- [x] Medium (please specify)
 - [ ] Low (please specify)
 - [ ] Unclear (please specify)
+
+- there were talking about "young adults", now we only have females. -> low to medium 
 
 ### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -363,7 +424,7 @@ r_refs("r-references.bib")
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -371,7 +432,7 @@ r_refs("r-references.bib")
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -381,6 +442,25 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+**Experiment 1**:
+- age -> a
+- gender -> a
+- OSPAN task (Operation Span Task) -> b
+- Stereotype threat priming -> b
+- Gender-Science Implicit Associations Task (IAT)
+- manipulation check
+- working memory capacity (OSPAN)
+- response to 10 thought probes (appeared at quasi-random intervals - spacing was proximately every 2 min)
+- TUT, TRI, on-task thoughts
+- Dundee Stress State Questionnaire (DSSQ)
+- Positive and Negative Affect Schedule (PANAS)
+- Questionnaire (post task, about e.g. task difficulty, perceived fatigue during OSPAN, perceived stress duing the OSPAN)  
+
+**Experiment 2**:
+- Almost completely the same
+- this time 9 thought probes
+- OSPAN tasks were more challenigng  
+
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
 
@@ -389,12 +469,12 @@ r_refs("r-references.bib")
 - [ ] Group interview
 - [ ] One to one interview (face to face or by phone)
 - [ ] Observation
-- [ ] Self-completion questionnaire
+- [x] Self-completion questionnaire
 - [ ] Self-completion report or diary
-- [ ] Exams
+- [x] Exams
 - [ ] Clinical test
 - [ ] Practical test
-- [ ] Psychological test
+- [x] Psychological test
 - [ ] Hypothetical scenario including vignettes
 - [ ] School/college records (e.g. attendance records etc)
 - [ ] Secondary data such as publicly available statistics
@@ -404,14 +484,16 @@ r_refs("r-references.bib")
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- see above
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
 
-- [ ] Researcher
+- [x] Researcher
 - [ ] Head teacher/Senior management
 - [ ] Teaching or other staff
 - [ ] Parents
@@ -456,13 +538,19 @@ r_refs("r-references.bib")
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Questionnaires
+
 
 ### Which statistical methods, if any, were used in the analysis?
 
 - [ ] Details
+
+- Mean scores and SE (standard error)
+- ANOVA
 
 ### What rationale do the authors give for the methods of analysis for the study?
 *e.g. for their methods of sampling, data collection, or analysis.*
@@ -506,37 +594,106 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- tables
+- figures
+- in text
+
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+**Experiment 1**:
+- The proportion of probe-caught TRI was higher in stereotype threat primed participants than in control participants
+- Participants primed for stereotype threat reported more intrusive off-task thoughts about task performance and task strategy than participants who were not primed for threat.
+- Participants in the control condition were more likely to indicate being on-task than participants primed for stereotype threat, although this difference did not reach statistical significance.
+- We expected that individuals could engage in TRI regarding task strategy ("proactive TRI") or TRI regarding evaluating one's task performance ("reactive TRI").
+- Participants primed for stereotype threat engaged in both of these subtypes of TRI
+- Primed participants reported higher proportion of TRI regarding task evaluation, compared to the control group, although this difference was not statistically significant.
+- Primed participants also reported a significantly higher proportion of TRI regarding task approach or task strategy than control participants.
+
+
+**Experiment 2**:
+- Study 2 replicated the mind-wandering findings of Study 1 using a more challenging experimental task
+- Probe-caught TRI was higher in the stereotype threat primed participants than in the control participants
+- Control participants were more likely to indicate being on-task than stereotype threat primed participants
+- Although the stereotype threat participants reported more TRI than controls, the groups did not differ in reported TUTs
+- The group differences in mean proportion of on-task thoughts were driven by group differences in TRIs rather than TUTs
+- Participants reported both subtypes of TRI
+- Group differenes were not statistically significant, primed participants reported numerically more TRI regarding task evaluation compared to control participants
+- Although this difference did not reach statistical significance it is possible that those under threat reflect more upon their task performance.
+- Those under threat may have been more likely to think about way to imporve task performance.
+- Engaging in proactive TRi did not seem to improve performance
+- Probe-caught proactive TRI was not positively related with task performance in either condition.
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
+
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
+
+**Experiment 1**:
+- These results suggest that not only do those under threat potentially reflect more upon their task performance, but they may also think more about ways to improve task performance than those who do not experience threat.
+- Although we had thought that proactive TRI might be beneficial for task performance, proactive TRI was *not* positively correlated with math verification accuracy in either the control condition or the stereotype threat primed condition.
+- We found using online thought probes that stereotype threat primed and control participants did not differ in terms of probe-caught TUTs
+- Primed participants were off-task more than control participants, but group differences in mind- wandering were driven by differences in TRI rather than TUTs
+- Although we found that stereotype primed participants reported increased TRI and decrease on-task thoughts compared to control, we did not replicate the standard stereotype threat effect on task performance. 
+- Contrary to our initial hypothesis, threat participants did *not* have worse math verification accuracy than control participants. 
+- Letter recall accuracy also did not differ between the two conditions.
+
+- Study 1 addressed the impact of priming personal, performance-related concerns on mind-wandering and task performance using a stereotype threat manipulation. As predicted, priming stereotype threat resulted in increased mind-wandering, particularly TRI. While participants primed for threat reported more TRI in general, participants in both conditions reported mind-wandering about task evaluation as well as task strategy. Although participants primed for threat reported fewer on-task thoughts than controls, they did not report more TUTs. The stereotype threat manipulation cued performance-related concerns, but did not increase concerns about things unrelated to the experimental task. This pattern of results is consistent with the “control failures × current concerns” framework of mind-wandering (2010).  
+
+
+**Experiment 2**:
+- Using a more challenging OSPAN task, we replicated the standard stereotype threat effect on task performance.
+- Participants primed for math-gender stereotype threat had worse math verification accuracy than control participants
+- There were no group differences in letter recall accuracy
+- As in Study 1, we found no effect of stereotype threat priming on retrospective TUTs and TRI as measured by the DSSQ
+- As in Study 1, we did not find that scores on the TRI subscale of the DSSQ correlated with probe-caught TRI in the control participants
+- DSSQ TRI scores did correlate with probe-caught TRI in the stereotype threat primed participants
+- We found no condition differences for the post-task questions regarding perceived stress, perceived fatigue, positive affect, and negative affect
+- The two conditions did not differ in terms of reported motivation to do the task and perceived difficulty of the math verification portion of the OSPAN 
+
+
+**General discussion**
+The present studies demonstrate that priming of personal, performance-related current concerns can increase mind-wandering, particularly mind-wandering regarding task strategy and task evaluation (TRI). 
+In Study 1, female undergraduates primed for math-gender stereotype threat reported more TRI than female undergraduate controls.
+In Study 2, which employed a more challenging task, female undergraduates primed for math-gender stereotype threat reported more TRI than female undergraduate controls and also had worse performance on the mathematical component of the experimental task.  
+In addition to supporting the "control failures x current concerns" framework of mind-wandering, these studies support current theories of stereotype threat.
+The Study 2 findings are consistent with an explanations that stereotype threat undermines task performance through increases in metacognitive thoughts, which can result in teh depletion of executive control resources.
+While past work has suggested that stereotype threat may decouple one's attention from the current task in a way that leads to increases in task-unrelated thoughts, the present studies find that stereotype threat increases thoughts related to the current task.
+
+In the current studies, participants primed for stereotype threat did not report increased stress and increased negative mood compared to controls, which are proposed mechanisms by which stereotype threat leads to increased off-task thoughts and worse performance on the stereotyped task. In addition to work in the stereotype threat literature suggesting that increases in anxiety and suppression of worry-laden thoughts impair task performance, work within the mind-wandering literature also suggests that valence predicts whether off-task thoughts will disrupt performance.  
+It is also worth noting that in the current studies, it remains unclear whether our stereotype type threat manipulation influences participants’ thought content by specifically increasing worry-laden thoughts or by increasing task diligence in those under threat.   
+
+
+Overall, the current studies provide a test with replication of the “control failures x current concerns” framework of mind-wandering.
+In addition to demonstrating that priming personal, performance-related concerns in younger adults leads to increased TRI, the current studies can provide insight into why older adults consistently report less overall mind-wandering but more TRI than younger adults.
+
 
 ## Quality of the study - Reporting 
 
@@ -546,11 +703,17 @@ r_refs("r-references.bib")
 - [ ] Yes (please specify)
 - [ ] No (please specify)
 
+**Experiment 1**:
+- yes
+
 ### Are the aims of the study clearly reported?
 *Consider your answer to questions: What are the broad aims of the study? (Section B question 1) What are the study research questions and/or hypotheses? (Section C question 10)*
 
 - [ ] Yes (please specify)
 - [ ] No (please specify)
+
+**Experiment 1**:
+- yes
 
 ### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
 *Consider your answer to all questions in Methods on ‘Sampling Strategy’, ‘Recruitment and Consent’, and ‘Actual Sample’.*
@@ -558,11 +721,17 @@ r_refs("r-references.bib")
 - [ ] Yes (please specify)
 - [ ] No (please specify)
 
+**Experiment 1**:
+- yes
+
 ### Is there an adequate description of the methods used in the study to collect data?
 *Consider your answer to the following questions in Section I: Which methods were used to collect the data? Details of data collection methods or tools Who collected the data? Do the authors describe the setting where the data were collected? Are there other important features of the data collection procedures?*
 
 - [ ] Yes (please specify)
 - [ ] No (please specify)
+
+**Experiment 1**:
+- yes
 
 ### Is there an adequate description of the methods of data analysis?
 *Consider your answer to the following questions in Section J: Which methods were used to analyse the data? What statistical methods, if any, were used in the analysis? Who carried out the data analysis?*
@@ -570,10 +739,16 @@ r_refs("r-references.bib")
 - [ ] Yes (please specify)
 - [ ] No (please specify)
 
+**Experiment 1**:
+- yea
+
 ### Is the study replicable from this report?
 
 - [ ] Yes (please specify)
 - [ ] No (please specify)
+
+**Experiment 1**:
+- yes
 
 ### Do the authors avoid selective reporting bias?
 *(e.g. do they report on all variables they aimed to study as specified in their aims/research questions?)*
@@ -589,21 +764,34 @@ r_refs("r-references.bib")
 - [ ] Yes, some concerns (please specify)
 - [ ] No concerns
 
+- neither consent nor funding was mentioned anywhere in their paper
+
+
 ### Were students and/or parents appropriately involved in the design or conduct of the study?
 
 - [ ] Yes, a lot (please specify)
 - [ ] Yes, a little (please specify)
 - [ ] No (please specify)
 
+**Experiment 1**:
+- yes
+
 ### Is there sufficient justification for why the study was done the way it was?
 
 - [ ] Yes (please specify)
 - [ ] No (please specify)
 
+**Experiment 1**:
+- yes
+
 ### Was the choice of research design appropriate for addressing the research question(s) posed?
 
 - [ ] Yes (please specify)
 - [ ] No (please specify)
+
+**Experiment 1**:
+- maybe, self-report questionnaires for mind wandering might not be the best choice but a good enough one considering cost and time etc 
+
 
 ### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
 *e.g. (1) In an evaluation, was the process by which participants were allocated to or otherwise received the factor being evaluated concealed and not predictable in advance? If not, were sufficient substitute procedures employed with adequate rigour to rule out any alternative explanations of the findings which arise as a result? e.g. (2) Was the attrition rate low and if applicable similar between different groups?*
@@ -616,6 +804,9 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+**Experiment 1**:
+- only towards female under math stereotype threat   
+
 ### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
 *In some studies it is difficult to distinguish between the findings of the study and the conclusions. In those cases please code the trustworthiness of this combined results/conclusion.** Please remember to complete the weight of evidence questions B-D which are in your review specific data extraction guidelines. ***
 
@@ -623,12 +814,18 @@ r_refs("r-references.bib")
 - [ ] Medium trustworthiness (please specify)
 - [ ] Low trustworthiness (please specify)
 
+**Experiment 1**:
+- medium
+
 ### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
 
 - [ ] Not applicable (results and conclusions inseparable)
 - [ ] High trustworthiness
 - [ ] Medium trustworthiness
 - [ ] Low trustworthiness
+
+**Experiment 1**:
+- not applicable
     
 
 # @wellsNewcastleottawaScaleNOS2014
