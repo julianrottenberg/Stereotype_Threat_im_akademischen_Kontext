@@ -49,7 +49,7 @@ r_refs("r-references.bib")
 
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
-- [ ] Not applicable (whole study is focus of data extraction)  
+- [x] Not applicable (whole study is focus of data extraction)  
 - [ ] Specific focus of this data extraction (please specify)  
 
 ## Study aim(s) and rationale
@@ -57,21 +57,31 @@ r_refs("r-references.bib")
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- stereotype threat 
+- menstruation/menstruation priming
+- the degree to which menstruation is a barrier to education
+- effects of menstruation on cognition
+- impact of stereotype threat on cognitive performance.
+- positive aspects of menstruation
 
 ### Do authors report how the study was funded?
 
 - [ ] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
-- [ ] Not stated/unclear (please specify)  
+- [x] Not stated/unclear (please specify)  
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
+- The current research is expected broaden our understanding of stereotype threat, and more specifically, to add to the literature about how attitudes towards menstruation operate behaviourally in women's lives. 
 
 ### What is/are the population focus/foci of the study?
+
+- menstruating women
 
 ### What is the relevant age group? 
 
@@ -79,14 +89,16 @@ r_refs("r-references.bib")
 - [ ] 0 - 4  
 - [ ] 5 - 10  
 - [ ] 11 - 16  
-- [ ] 17 - 20  
+- [x] 17 - 20  
 - [ ] 21 and over  
 - [ ] Not stated/unclear  
+
+- young women
 
 ### What is the sex of the population focus/foci?
 
 - [ ] Not applicate (focus not learners)  
-- [ ] Female only  
+- [x] Female only  
 - [ ] Male only  
 - [ ] Mixed sex  
 - [ ] Not stated/unclear  
@@ -112,25 +124,38 @@ r_refs("r-references.bib")
 
 ### In Which country or cuntries was the study carried out?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- USA  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+1. It was hypothesized, that participants in the Menstruation Threat conditions (Menstruation Threat/Positive Prime; Menstruation Threat/No Positive Prime), that is, those simply being asked about their own menstruation before completing cognitive tasks, would perform more poorly on both cognitive tasks than women in the No Menstruation Threat conditions (No Menstruation Threat/Positive Prime; No Menstruation Threat/No Positive Prime).  
+2. The Positive Prime would counteract the influence of the Menstruation Threat, such that participants in the Menstruation Threat/Positive Prime condition would perform no differently from the participants who did not receive a menstruation Threat. However, we considered the possibility that the Positive Prime, although intended to be positive, might activate stereotype threat simply because menstruation was mentioned.  
+3. Women who thought menstruation was bothersome and/or debilitating, and those who specifically endorsed the belief that menstruation negatively impacted their cognitive performance, would not do as well on either of the cogntiive tasks compared to women who did not hold these belifs. We expected women in the Menstruation Threat conditions, in which these negative beliefs had been primed, to perform least well on both cognitive tasks, compared to the women in the other conditions.  
+4. Women in the Menstruation Threat conditions would perform more poorly on both cognitive tasks than women in the No Menstruation Threat conditions, the closer they were to menstruating.  
+
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- menstruation threat
+- positive priming
+- cognitive task performance
+- attitudes towards menstruation
 
 
 ### Study timing
@@ -140,7 +165,7 @@ r_refs("r-references.bib")
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -149,10 +174,12 @@ r_refs("r-references.bib")
 *If at least one of the outcome variables is measured both before and after the intervention, please use the before and after category.*
 
 - [ ] Not applicable (not an evaluation)  
-- [ ] Before and after  
+- [x] Before and after  
 - [ ] Only after  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- depending on the condition one was in
 
 
 ## Methods - Groups
@@ -161,7 +188,7 @@ r_refs("r-references.bib")
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -169,9 +196,12 @@ r_refs("r-references.bib")
 ### How do the groups differ?
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Explicityly stated (please specify)  
+- [x] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Menstruation Threat vs No Menstruation Threat
+- Positive Prime vs No Positive Prime  
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
@@ -180,14 +210,17 @@ r_refs("r-references.bib")
 - [ ] One  
 - [ ] Two  
 - [ ] Three  
-- [ ] Four or more (please specify)  
+- [x] Four or more (please specify)  
 - [ ] Other/unclear (please specify)  
+
+- Four (2 [Menstruation threat vs no threat] x 2 [Positive prime vs no prime])  
+
 
 ### Was the assignment of participants to interventions randomised?
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
-- [ ] Random  
+- [x] Random  
 - [ ] Quasi-random  
 - [ ] Non-random  
 - [ ] Not stated/unclear (please specify)  
@@ -197,13 +230,14 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
-- [ ] Yes (please specify)  
+- [x] Yes (please specify)  
 - [ ] No (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
+
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
@@ -215,15 +249,17 @@ r_refs("r-references.bib")
 ### Are the authors trying to produce findings that are representative of a given population? 
 *Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- female undergraduate students 
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
 
@@ -256,7 +292,7 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
@@ -266,7 +302,7 @@ r_refs("r-references.bib")
 - [ ] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Are there any other details relevant to recruitment and consent?
 
@@ -279,25 +315,36 @@ r_refs("r-references.bib")
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- 92 undergraduate women from a small, urban, university in the Mid-Atlantic region. 
+- Menstruation Threat, Positive Prime: n = 22
+- Menstruation Threat, No Positive Prime: n = 20
+- No Menstruation Threat, Positive Prime: n = 17
+- No Menstruation Threat, No Positive Primie: n = 18  
 
 ### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- 75 participants provided the complete set of responses needed for analysis  
+
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- population was primarily European American (87%)  
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -306,9 +353,11 @@ r_refs("r-references.bib")
 - [ ] 0 to 4
 - [ ] 5 to 10
 - [ ] 11 to 16
-- [ ] 17 to 20
-- [ ] 21 and over
+- [x] 17 to 20
+- [x] 21 and over
 - [ ] Not stated/unclear (please specify)
+
+- Ranging from 18 to 29 years (M = 20.75, SD = 2.57)  
 
 ### What is the socio-economic status of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -316,15 +365,18 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Explicitly stated (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- 87% were European American
+
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,30 +384,39 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify no/s.)
+- [x] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Four participants were eliminated from the study who were 30 years old or older, in order to restrict the sample to a traditional undergraduate age range.
+- Two participants whose number of days since the last day of their last menstrual period exceeded 40 days were also eliminated, since the normal range of menstrual cycle length in adults is 24 - 38 days 
+- Fifty percent of the participants reported taking oral contraceptives. Results from a Chi-Square analysis were not significant, indicating that these women were evenly distributed across all conditions. 
+- The results reported below are based on the data from the 75 participants who provided the complete set of responses needed for analysis.  
+
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Not applicable (no sampling frame)
-- [ ] High (please specify)
+- [x] High (please specify)
 - [ ] Medium (please specify)
 - [ ] Low (please specify)
 - [ ] Unclear (please specify)
+
+- Exactly what they wanted  
+
 
 ### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -363,7 +424,7 @@ r_refs("r-references.bib")
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -371,7 +432,7 @@ r_refs("r-references.bib")
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -381,6 +442,11 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- Menstrual History ->  a and b
+- Positive Prime -> b
+- cognitive task performance: Stroop and short SAT-like Math test -> b
+- Menstrual Attitude Questionnaire (MAQ) -> b
+
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
 
@@ -389,12 +455,12 @@ r_refs("r-references.bib")
 - [ ] Group interview
 - [ ] One to one interview (face to face or by phone)
 - [ ] Observation
-- [ ] Self-completion questionnaire
+- [x] Self-completion questionnaire
 - [ ] Self-completion report or diary
 - [ ] Exams
 - [ ] Clinical test
 - [ ] Practical test
-- [ ] Psychological test
+- [x] Psychological test
 - [ ] Hypothetical scenario including vignettes
 - [ ] School/college records (e.g. attendance records etc)
 - [ ] Secondary data such as publicly available statistics
@@ -404,14 +470,19 @@ r_refs("r-references.bib")
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Attitudes toward Menstruation: Menstrual Attitude Questionnaire (MAQ) (Brooks-Gunn and Ruble 1980)
+- Cognitive Tasks: Stroop test (Stroop, 1935) & short SAT-like Math test.  
+- Positive Prime: created by the researchers, see Appendix 1
+- Menstruation History/Threat: 6-item survey developed by the researchers that asked participants to provide descriptive information about their own menstrual period, an estimation of how many days since the last day of the last period, and how many days until the first day of the next expected period, whether or not the participant was menstruating on the day of participation in the study and whether or not the participant was using any form of hormonal contraception. (see Appendix 1) -> also served as the Menstruation Threat.
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
 
-- [ ] Researcher
+- [x] Researcher
 - [ ] Head teacher/Senior management
 - [ ] Teaching or other staff
 - [ ] Parents
@@ -444,12 +515,18 @@ r_refs("r-references.bib")
 
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Unclear/not stated (please specify)
+- [x] Unclear/not stated (please specify)
 
 ### Are there other important features of data collection?
 *e.g. use of video or audio tape; ethical issues such as confidentiality etc.*
 
 - [ ] Details
+
+- Participants in the Menstruation Threat Conditions completed the Menstruation History before attempting the cognitive tasks.
+- Participants in the No Threat conditions completed the Menstruation History after the cognitive tasks.
+- Participants in the Positive Prime conditions initially received the paragraph noting positive aspects of menstruation
+- Participants in the No Positive Prime conditions did not receive the positive prime.
+- All subjects received the Menstrual Attitude Questionnaire subscales last.  
 
 ## Methods - Data analysis
 
@@ -463,6 +540,12 @@ r_refs("r-references.bib")
 ### Which statistical methods, if any, were used in the analysis?
 
 - [ ] Details
+
+- 2 x 2 MANOVA was calculated examining the effects of Menstruation Threat (Threat vs no Threat) and Positive Prime (Positive Prime vs No positive Prime) on Stroop and mathematics performance.
+- calculation of the overall mean scores on the MAQ sub scales and item MAQ 20
+- Correlation analyses
+- MANOVA was conducted to test for difference sin sub scale scores and responses to MAQ 20 across conditions
+- r to z transformation
 
 ### What rationale do the authors give for the methods of analysis for the study?
 *e.g. for their methods of sampling, data collection, or analysis.*
@@ -506,17 +589,50 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- tables
+- in text 
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+- 2 (Menstruation Threat vs No Threat) x 2 (Positive Prime vs No Prime) MANOVA on Stroop and mathematics performance only partially supported H1. 
+- A main effect was found for Menstruation Threat on Stroop performance. 
+- Participants in the Menstruation Threat conditions completed significantly fewer items correctly on the Stroop than participants in the No Menstruation Threat conditions. 
+- Participants in the No Menstruation/No Positive Prime condition had the best score while participants in the Menstruation Threat/Positive Prime condition had the worse scores.
+- There was no effect of Menstruation Threat on math performance.
+- There was no effect for Positive Prime, or for the Menstruation Threat/Positive Prime interaction on either Stroop or mathematics performance.
+
+- Women were neutral (neither negative nor positive) in their assessment of menstruation as debilitating and bothersome.
+- In addition, they were neutral in their belief that menstruation would impact how well they did on intellectual tasks
+- Correlational analyses to test for any meaningful relationships between MAQ subscales and MAQ 20 and correct responses on the Stroop test or the mathematics test were conducted and revealed on significant results.
+- Correlation among these variables were calculated for each cell and revealed only two significant relationships.
+- In the Menstruation Threat/No Positive Prime condition, the more menstruation was viewed as Bothersome, the fewer correct Math responses.
+- For participants in the No Threat/No Positive Prime condition, the more menstruation was viewed as Debilitating, the more correct responses on the Stroop.
+
+- A MANOVA to test for differences in subscale scores and responses to MAQ 20 across condition, found a significant effect for Menstruation Threat
+- Results did not support the prediction that women in Menstruation Threat conditions would endorse menstruation as more bothersome, debilitating and contributed to their diminished cognitive performance.
+- Participants in the Menstruation Threat conditions viewed menstruation as *less* debilitating than those in the No Menstruation Threat conditions.
+- Participants in the Menstruation Threat conditions viewed menstruation as *less* bothersome = than those in the No Menstruation Threat conditions.
+- Participants in the Menstruation Threat conditions viewed menstruation having *less* impact on intellectual tasks than those in the No Menstruation Threat conditions.
+- No significant effects were found for Positive Prime, or a Menstruation Threat/Positive Prime interaction.
+
+- Correlations between the number of days since the last day of the last menstrual period and correct Stroop and Math responses for each condition, provide partial support for H4
+- The correlation between the days since last menstruation and correct Stroop responses was significant for the Menstruation Threat/No Positive Prime condition, indicating that the closer participants were to their next period, the more *poorly* they performed on the Stroop test.
+- The correlation between closeness to menstruation and Stroop responses, though not statistically significant, was reversed for the No Menstruation Threat/Positive prime condition, indicating that the closer these participants were to their next period, the *better* they performed on the Stroop.
+- There were no significant correlations for the No Menstruation Threat/No Positive Prime condition, or the Menstruation Threat/Positive Prime condition.
+
+- Comparison of the correlations between closeness to menstruation and correct Stroop responses for each condition with each other, revealed a significant difference between the Menstruation Threat/No Positive Prime and No Menstruation Threat/Positive Prime conditions.
+- There were also significant differences between the correlations for the Menstruation Threat/No Positive Prime and Menstruation Threat/Positive Prime condition, and the No Menstruation Threat/No Positive Prime and No Menstruation Threat/Positive Prime.
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
@@ -525,60 +641,69 @@ r_refs("r-references.bib")
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
 
+- The Menstruation History/Threat questions did not imply any negative stereotype about menstruation or its effects on cognition and as such was considered an implicit or subtle threat. The Positive Prime about menstruation offered to some participants was much more explicit in nature, implying that menstruation did not have a negative impact on cognition and instead was associated with enhanced creased and divergent thinking.  
+- The main effect of Menstruation Threat, such that women in the Menstruation Threat conditions scored lower on the Stroop than women not exposed to Menstruation Threat, indicates support for the hypothesis that when menstruation is brought to mind, it does serve as a threat that diminishes at least one area of cognition. The data also provide for support for our second hypothesis, in that women who were not exposed to either the Menstruation Threat or the Positive Prime scored highest on the Stroop. Women receiving the Positive Prime, but no Menstruation Threat, also had high scores, although slightly lower and not significantly different from the scores of the women in the highest scoring group.  
+- Finally, women presented with the Positive Prime and then exposed to Menstruation Threat had the least number of correct Stroop scores. Thus, the data suggest that the Positive Prime used in this study did not counteract the effect of Menstruation Threat but served rather to intensify it. These findings appear to be robust, considering that women in the Menstruation Threat conditions believed that menstruation was less debilitating, less bothersome and specifically, would have less impact on how well they would do on intellectual tasks compared to women in the No Menstruation Threat conditions who held more negative attitudes. It is reasonable to expect that women in the Menstruation Threat conditions might think menstruation would be more debilitating, more bothersome and more likely to impact performance on intellectual tasks, but this was not the case. In spite of reporting more positive attitudes, these women did more poorly on the Stroop.
+- We expected that women in the Menstruation Threat conditions would perform more poorly the closer they were to menstruation, while women receiving the Positive Prime only, and no Menstruation Threat, would perform better the closer they were to menstruation, and this pattern did emerge in the examination of the correlations pertaining to Stroop performance.
+- However, women in the Menstruation Threat/No Positive Prime condition performed more poorly on the Stroop the closer they were to menstruation, (as measured, the further away from the last day of their last menstrual cycle). Women in the No Menstruation Threat/Positive Prime condition performed better on the Stroop the closer they were to menstruating. These findings provide some evidence of positive priming as a moderator of the relationship between closeness to menstruation and enhanced performance.
+- While these findings provide some support for the hypothesis that menstruation serves as a threat that diminishes cognitive performance, it would be premature to assume that the menstruation threat has a negative impact on women’s cognition broadly considered, since only two cognitive tests were used, and there were no effects of menstruation threat on women’s performance of the math test.
+- It is not clear why there were no effects of menstruation threat on the math test. As mentioned earlier, previous research suggests that test difficulty and domain identification are important moderating variables in studies of the impact of stereotype threat on test taking. n this study, neither the level of challenge of the math test, nor the degree of math identification was assessed, although it can be assumed that the math test was moderately challenging (e.g., designed to mimic an SAT test) and therefore not easy or advanced.
+- The most important finding from this study is that menstruation threat can be elicited by asking women to answer some descriptive questions about their own menstrual cycles and diminishes performance in at least one area of cognition. Second, the study provides evidence that positive priming, absent calling attention to one’s own menstruation, moderates the relationship between closeness to menstruation and performance on the Stroop.
+
 ## Quality of the study - Reporting 
 
 ### Is the context of the study adequately described?
 *Consider your answer to questions: Why was this study done at this point in time, in those contexts and with those people or institutions? (Section B question 2) Was the study informed by or linked to an existing body of empirical and/or theoretical research? (Section B question 3) Which of the following groups were consulted in working out the aims to be addressed in the study? (Section B question 4) Do the authors report how the study was funded? (Section B question 5) When was the study carried out? (Section B question 6)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Are the aims of the study clearly reported?
 *Consider your answer to questions: What are the broad aims of the study? (Section B question 1) What are the study research questions and/or hypotheses? (Section C question 10)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
 *Consider your answer to all questions in Methods on ‘Sampling Strategy’, ‘Recruitment and Consent’, and ‘Actual Sample’.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the methods used in the study to collect data?
 *Consider your answer to the following questions in Section I: Which methods were used to collect the data? Details of data collection methods or tools Who collected the data? Do the authors describe the setting where the data were collected? Are there other important features of the data collection procedures?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the methods of data analysis?
 *Consider your answer to the following questions in Section J: Which methods were used to analyse the data? What statistical methods, if any, were used in the analysis? Who carried out the data analysis?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is the study replicable from this report?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Do the authors avoid selective reporting bias?
 *(e.g. do they report on all variables they aimed to study as specified in their aims/research questions?)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ## Quality of the study - Methods and data
@@ -586,48 +711,55 @@ r_refs("r-references.bib")
 ### Are there ethical concerns about the way the study was done?
 *Consider consent, funding, privacy, etc.*
 
-- [ ] Yes, some concerns (please specify)
+- [x] Yes, some concerns (please specify)
 - [ ] No concerns
+
+- no consent or funding mentioned  
 
 ### Were students and/or parents appropriately involved in the design or conduct of the study?
 
-- [ ] Yes, a lot (please specify)
+- [x] Yes, a lot (please specify)
 - [ ] Yes, a little (please specify)
 - [ ] No (please specify)
 
 ### Is there sufficient justification for why the study was done the way it was?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Was the choice of research design appropriate for addressing the research question(s) posed?
 
-- [ ] Yes (please specify)
-- [ ] No (please specify)
+- [x] Yes (please specify)
+- [x] No (please specify)
+
+- could be better. No manipulation check and only an implicit threat  
 
 ### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
 *e.g. (1) In an evaluation, was the process by which participants were allocated to or otherwise received the factor being evaluated concealed and not predictable in advance? If not, were sufficient substitute procedures employed with adequate rigour to rule out any alternative explanations of the findings which arise as a result? e.g. (2) Was the attrition rate low and if applicable similar between different groups?*
 
 - [ ] A lot (please specify)
-- [ ] A little (please specify)
+- [x] A little (please specify)
 - [ ] Not at all (please specify)
 
 ### How generalisable are the study results?
 
 - [ ] Details
 
+- towards undergraduate females  
+
+
 ### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
 *In some studies it is difficult to distinguish between the findings of the study and the conclusions. In those cases please code the trustworthiness of this combined results/conclusion.** Please remember to complete the weight of evidence questions B-D which are in your review specific data extraction guidelines. ***
 
 - [ ] High trustworthiness (please specify)
-- [ ] Medium trustworthiness (please specify)
+- [x] Medium trustworthiness (please specify)
 - [ ] Low trustworthiness (please specify)
 
 ### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
 
 - [ ] Not applicable (results and conclusions inseparable)
 - [ ] High trustworthiness
-- [ ] Medium trustworthiness
+- [x] Medium trustworthiness
 - [ ] Low trustworthiness
     
 
