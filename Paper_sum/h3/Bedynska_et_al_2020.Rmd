@@ -49,7 +49,7 @@ r_refs("r-references.bib")
 
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
-- [ ] Not applicable (whole study is focus of data extraction)  
+- [x] Not applicable (whole study is focus of data extraction)  
 - [ ] Specific focus of this data extraction (please specify)  
 
 ## Study aim(s) and rationale
@@ -57,28 +57,39 @@ r_refs("r-references.bib")
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threat
+- Association between stereotype threat and laguage achievement and domain identification among secondary school boys.
 
 ### Do authors report how the study was funded?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- The presented study was part of the system‐level project “Quality and effectiveness of education—strengthening institutional research capabilities” executed by the Educational Research Institute and co‐financed by the European Social Fund (Human Capital Operational Programme 2007–2013, Priority III High quality of the education system).
+
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
 
+- Association between stereotype threat, language achievement and domain identification among secondary school boys
+- Our aim was to understand the role of two intervening variables: working memory and intellectual helplessness
+
 ### What is/are the population focus/foci of the study?
+
+- secondary school boys  
 
 ### What is the relevant age group? 
 
 - [ ] Not applicate (focus not learners)  
 - [ ] 0 - 4  
 - [ ] 5 - 10  
-- [ ] 11 - 16  
+- [x] 11 - 16  
 - [ ] 17 - 20  
 - [ ] 21 and over  
 - [ ] Not stated/unclear  
@@ -87,7 +98,7 @@ r_refs("r-references.bib")
 
 - [ ] Not applicate (focus not learners)  
 - [ ] Female only  
-- [ ] Male only  
+- [x] Male only  
 - [ ] Mixed sex  
 - [ ] Not stated/unclear  
 
@@ -105,32 +116,49 @@ r_refs("r-references.bib")
 - [ ] Post-compulsory education institution  
 - [ ] Primary school  
 - [ ] Residential school  
-- [ ] Secondary school  
+- [x] Secondary school  
 - [ ] Special needs school  
 - [ ] Workplace  
 - [ ] Other educational setting  
 
 ### In Which country or cuntries was the study carried out?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Poland  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- This study tested the associations of chronic stereotype threat to language achievement and domain identification
+- Our study also tested two intervening variables: working memory and intellectual helplessness
+- We assumed that working memory should be linked to language achievement
+- We also predicted that intellectual helplessness, due to its motivational component, would mediate the link between chronic stereotype threat and domain identification as well as language achievement
+- Furthermore, for boys highly identified with their gender group, we expected to observe stronger relationships between chronic stereotype threat and the dependent variables: language achievement and identification.
+- Therefore, we entered gender identification as moderator in the model.  
+
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Chronic stereotype threat
+- domain identification
+- language achievement
+- intellectual helplessness
+- working memory
+
 
 
 ### Study timing
@@ -140,7 +168,7 @@ r_refs("r-references.bib")
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -150,7 +178,7 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not an evaluation)  
 - [ ] Before and after  
-- [ ] Only after  
+- [x] Only after  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
@@ -160,7 +188,7 @@ r_refs("r-references.bib")
 ### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
 *Please give further details where possible.*
 
-- [ ] Not applicable (not more than one group)  
+- [x] Not applicable (not more than one group)  
 - [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
@@ -168,7 +196,7 @@ r_refs("r-references.bib")
 
 ### How do the groups differ?
 
-- [ ] Not applicable (not more than one group)  
+- [x] Not applicable (not more than one group)  
 - [ ] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -176,7 +204,7 @@ r_refs("r-references.bib")
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
 
-- [ ] Not applicable (not more than one group)  
+- [x] Not applicable (not more than one group)  
 - [ ] One  
 - [ ] Two  
 - [ ] Three  
@@ -185,7 +213,7 @@ r_refs("r-references.bib")
 
 ### Was the assignment of participants to interventions randomised?
 
-- [ ] Not applicable (not more than one group)  
+- [x] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
 - [ ] Random  
 - [ ] Quasi-random  
@@ -195,7 +223,7 @@ r_refs("r-references.bib")
 ### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
 *Bias can be introduced, consciously or otherwise, if the allocation of pupils or classes or schools to a programme or intervention is made in the knowledge of key characteristics of those allocated. For example: children with more serious reading difficulty might be seen as in greater need and might be more likely to be allocated to the 'new' programme, or the opposite might happen. Either would introduce bias.*
 
-- [ ] Not applicable (not more than one group)  
+- [x] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
 - [ ] Yes (please specify)  
 - [ ] No (please specify)  
@@ -203,44 +231,59 @@ r_refs("r-references.bib")
 
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
 ### Study design summary 
 *In addition to answering the questions in this section, describe the study design in your own words. You may want to draw upon and elaborate the answers you have already given.*
 
+1. parents and boys provided written consent 
+- boys were informed by the experimenter about the general aim of the research and were reassured that their data were anonymous and their participation was voluntary
+2. After describing the purpose of the study and explaining the procedure, children opened a web browser to solve a working memory test and fill out online questionnaires
+- Scales of chronic stereotype threat, intellectual helplessness, gender identity, language achievement, and domain identification were mixed with other self-descriptive measures of learning motivation and attitudes toward school and learning used in the study. 
+- These additional scales were presented before the stereotype threat scale to avoid any potential influence of stereotype activation.  
+
 ## Methods - Sampling strategy
 
 ### Are the authors trying to produce findings that are representative of a given population? 
 *Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- secondary school boys under chronic stereotype threat  
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- School  
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
 
 - [ ] Not applicable (no sampling frame)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Participants were selected using the sampling procedure with stratification
+- in the first step, schools were randomly selected within two strata: based on regions (in two regions of Poland) and based on three school locations (cottage, small city, medium city).
+- In the second step, 1-2 classes from each of the three class grades were randomly selected in each school
+
 
 ### Planned sample size
 *If more than one group please give details for each group separately.*
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -248,29 +291,33 @@ r_refs("r-references.bib")
 *e.g. letters of invitation, telephone contact, face-to-face contact.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Invitations  
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Boys did not receive any compensation for their participation in the study.  
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
 
 - [ ] Not applicable (please specify)
-- [ ] Participant consent sought
-- [ ] Parental consent sought
+- [x] Participant consent sought
+- [x] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
 - [ ] Not stated/unclear (please specify)
 
 ### Are there any other details relevant to recruitment and consent?
 
-- [ ] No
+- [x] No
 - [ ] Yes (please specify)
 
 ## Methods - Actual sample
@@ -279,17 +326,27 @@ r_refs("r-references.bib")
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Data from 635 male youth ($M_{age}$ = 14.53, $SD$ = 0.91) from 24 coeducational secondary schools were collected in the study.
+- Final sample consisted of 319 youths. 
+-> there were 231 first-class studnets (M = 14.55 years, SD = 0.42)
+-> 204 second-class students (M = 15.5 years, SD = 0.37)
+-> 184 third-class students (M = 16.54 years, SD = 0.38)
+
 
 ### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- 5% were absent at the time of the study
+- All pupils present at school agreed to participate (0% dropout rate).
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
@@ -297,7 +354,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -305,7 +362,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] 0 to 4
 - [ ] 5 to 10
-- [ ] 11 to 16
+- [x] 11 to 16
 - [ ] 17 to 20
 - [ ] 21 and over
 - [ ] Not stated/unclear (please specify)
@@ -316,7 +373,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -324,7 +381,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,21 +389,21 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Not applicable (no sampling frame)
-- [ ] High (please specify)
+- [x] High (please specify)
 - [ ] Medium (please specify)
 - [ ] Low (please specify)
 - [ ] Unclear (please specify)
@@ -355,7 +412,7 @@ r_refs("r-references.bib")
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -363,7 +420,7 @@ r_refs("r-references.bib")
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -371,7 +428,7 @@ r_refs("r-references.bib")
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -380,6 +437,16 @@ r_refs("r-references.bib")
 ### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
 
 - [ ] Details
+
+- demographic data -> a
+- Grade Point Average (GPA) -> b
+- Working Memory Test -> b
+- Intellectual Helplessness Scale -> b
+- Chronic Stereotype Threat Scale -> b
+- gender identification -> b
+- language achievement -> b
+- domain identification -> b
+
 
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -404,9 +471,17 @@ r_refs("r-references.bib")
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- a web browser was used
+- Chronic stereotype threat in language: using items from Bedynska et al. (2018), items were rephrased into a masculine form and with respect to the language arts domain
+- Language achievement -> GPA from two semesters before the study
+- Intellectual helplessness -> 9-item Likert type scale, Items from Intellectual Helplessness Scale (IHS; Sedek & McIntosh, 1998)
+- Working memory capacity -> functional aspects of working memory test (Sedek, Krejtz, Rydzewska, Kaczan, & Rycielski, 2016). Consisted of three tasks, counting span task, set switching task, a spatial location memory task.
+- Gender Identity: One-item measure was used: "Being a boy is important to me" (Leach et al., 2008), 6-point Likert type scale
+- Domain identification: single-item measure: "It is important to me to be good at language) adopted from Aronson et al. (1999), 6-point Likert type scale  
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -442,27 +517,37 @@ r_refs("r-references.bib")
 ### Where were the data collected?
 *e.g. school, home.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Unclear/not stated (please specify)
+
+- School  
 
 ### Are there other important features of data collection?
 *e.g. use of video or audio tape; ethical issues such as confidentiality etc.*
 
 - [ ] Details
 
+- All classes smaller than three students were excluded from the data sets (four classes and seven participants)  
+
 ## Methods - Data analysis
 
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
 
 ### Which statistical methods, if any, were used in the analysis?
 
 - [ ] Details
+
+- maximum likelihood robust estimation in structural equation modelling in Mplus 7.3 was used for all analyses.
+- examined a preliminary model with two mediators - working memory as a latent variable (loaded by three tasks of working memory), and an indicator of intellectual helplessness - as well as two dependent variables - achievement and domain identification in language
+- indirect effects were investigated using 95% Ci method
+- We used specific fit indices recommended by Kline (2011) to evaluate the model: RMSEA, SRMR, CFI, and TLI and the general fit indicator based on $\chi^2$ test of model fit and its associated probability ($p$). 
+- Most widely recommended cut-off values were applies respectively: RMSEA and SRMR lower than 0.06, CFI and TFI higher than 0.95   
 
 ### What rationale do the authors give for the methods of analysis for the study?
 *e.g. for their methods of sampling, data collection, or analysis.*
@@ -506,79 +591,143 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- Tables
+- Figure
+- in text
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+*Descriptive statistics*:
+- Descriptive statistics and correlation coefficients describing the correlations between variables entered to the model are shown in table 1
+- Inspection of the means showed that the level of stereotype threat was relatively low, while intellectual helplessness was rather high
+- language achievement in the entire sample was moderated, with the mean GPA around three in the grading scale from 1 to 6
+- Language achievement was negatively correlated with stereotype threat and intellectual helplessness, and positively correlated with all three working memory tasks
+- Stereotype threat was only moderately correlated with intellectual helplessness and working memory.  
+
+*Moderated model with working memory and intellectual helplessness as mediators*:
+- Two parallel indirect effects were evaluated, a one involving working memory and the other one involving intellectual helplessness
+- Results indicated that the model with intellectual helplessness and working memory as mediators achieved a good fit to the data
+- General test of fit was nonsignificant, showing a good general fit
+- The inspection of the fit values supported the good fit
+- Model explained a substantial percentage of variability of domain identification, language achievement, working memory effectiveness, and intellectual helplessness
+- All standardized factor loadings for working memory were moderate to strong
+- Unstandardized and standardized path coefficients as well as standard errors, critical values of Students t-test, and confidence intervals are presented in Table 2  
+
+- The results indicated that the majority of significant relationships between the variables were consistent with our predictions
+- Domain identification was significantly related to the interaction of stereotype threat and gender identity, strongly positively related with gender identity, negatively, and weakly related with intellectual helplessness, and positive and moderately related with stereotype threat.
+- Second, intellectual helplessness was negatively associated with gender identity and significantly associated with the interaction of gender identity and stereotype threat
+- Third, language achievement was negatively predicted by intellectual helplessness and positive and strongly predicted by working memory
+- There was also a correlation between working memory and its predictors: there was a positive correlation between working memory and gender identity as well as between working memory and the interaction of chronic stereotype threat and gender identity.
+- We also observed interesting but not predicted links between gender identity and working memory, and domain identification. 
+- Stronger gender identity was associated with higher effectiveness of working memory and higher domain identification.
+
+- The results also revealed three separate moderate mediations: (1) from stereotype threat via intellectual helplessness to achievement, (2) from stereotype threat via working memory to achievement, and (3) from stereotype threat via learned helplessness to domain identification.  
+
+All indirect effects were calculated for low (-3 SD), medium (0 SD), and high (3 SD) values of gender identity, and they were significant only when gender identity was high: mediation on domain identification via intellectual helplessness, mediation on achievement via intellectual helplessness, and mediation on achievement via working memroy.
+- None of the mediations were significant when gender identity was medium or low.  
+*Reversed model*:
+- The general test of the reversed model fit was significant and showed no general fit to the data
+- The inspection of the fit indices confirmed the poor fit
+- Therefore, there is rather strong evidence that reversed relations between variables, with chronic stereotype threat as a dependent variable and language achievement and identification as predictors, are not plausible.
+
+
+- In summary, our findings indicated that for boys with a high level of gender identification, a higher level of chronic stereotype threat was associated with a higher level of intellectual helplessness, lower language achievement, and lower domain identification with the language. 
+- Similarly, higher chronic stereotype threat was related to a lower effectiveness of working memory and lower language achievement, but it was not related with domain identification. 
+-Therefore, intellectual helplessness mediated between stereotype threat and both dependent variables (i.e., achievement and domain identification), while working memory effectiveness only mediated the link between stereotype threat and language achievement.
+
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
-   - [ ] Yes
+   - [x] Yes
    - [ ] No
    - [ ] Can’t tell
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
 
+- Consistent with previous studies (Schmader & Johns, 2003), our results demonstrated that working memory was a significant intervening variable linking chronic stereotype threat and language achievement. 
+- A higher level of stereotype threat reported by boys was related to lower efficiency of working memory and lower language achievement, measured by GPA.  
+
+- Interestingly, the indirect effect via working memory did not work in the case of domain identification. 
+- Domain identification was indirectly linked with chronic stereotype threat through intellectual helplessness. 
+- Thus, boys who experienced stereotype threat more often during language lessons felt more intellectually helpless and they rated the importance of learning the native language as lower than boys who experienced less stereotype threat in language.  
+
+- In line with expectations, the proposed model linking chronic stereotype threat with achievement and identification with the native language was significant only in a subsample of boys with a higher level of gender identification. 
+- Only among boys for whom being a boy was an important part of their self-esteem, a higher level of chronic stereotype threat was related to lower achievement in language, and lower domain identification.  
+
+- Surprisingly, gender identity was quite strongly and positively related to language achievement and working memory.  
+
+
+- To conclude, we have contributed to previous studies on stereotype threat by showing that the conceptualization of stereotype threat as a chronic phenomenon has a predictive value to both school achievement and domain identification by two relatively separate mechanisms. 
+- The first mechanism is based on intellectual helplessness and leads to domain disengagement, the second involves working memory deficits and leads to lower language achievement. 
+- Although the present research was correlational, the examination of two mediational routes in one model—with a new mediator (i.e., intellectual helplessness)—offers an important contribution to understanding the long-term consequences of chronic stereotype threat in school settings. 
+- The value of this information can be seen in its potential for guiding interventions to reduce the chronic effects of stereotype threat.
+
+
 ## Quality of the study - Reporting 
 
 ### Is the context of the study adequately described?
 *Consider your answer to questions: Why was this study done at this point in time, in those contexts and with those people or institutions? (Section B question 2) Was the study informed by or linked to an existing body of empirical and/or theoretical research? (Section B question 3) Which of the following groups were consulted in working out the aims to be addressed in the study? (Section B question 4) Do the authors report how the study was funded? (Section B question 5) When was the study carried out? (Section B question 6)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Are the aims of the study clearly reported?
 *Consider your answer to questions: What are the broad aims of the study? (Section B question 1) What are the study research questions and/or hypotheses? (Section C question 10)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
 *Consider your answer to all questions in Methods on ‘Sampling Strategy’, ‘Recruitment and Consent’, and ‘Actual Sample’.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the methods used in the study to collect data?
 *Consider your answer to the following questions in Section I: Which methods were used to collect the data? Details of data collection methods or tools Who collected the data? Do the authors describe the setting where the data were collected? Are there other important features of the data collection procedures?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
+
 
 ### Is there an adequate description of the methods of data analysis?
 *Consider your answer to the following questions in Section J: Which methods were used to analyse the data? What statistical methods, if any, were used in the analysis? Who carried out the data analysis?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is the study replicable from this report?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Do the authors avoid selective reporting bias?
 *(e.g. do they report on all variables they aimed to study as specified in their aims/research questions?)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ## Quality of the study - Methods and data
@@ -587,46 +736,49 @@ r_refs("r-references.bib")
 *Consider consent, funding, privacy, etc.*
 
 - [ ] Yes, some concerns (please specify)
-- [ ] No concerns
+- [x] No concerns
 
 ### Were students and/or parents appropriately involved in the design or conduct of the study?
 
-- [ ] Yes, a lot (please specify)
+- [x] Yes, a lot (please specify)
 - [ ] Yes, a little (please specify)
 - [ ] No (please specify)
 
 ### Is there sufficient justification for why the study was done the way it was?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Was the choice of research design appropriate for addressing the research question(s) posed?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
 *e.g. (1) In an evaluation, was the process by which participants were allocated to or otherwise received the factor being evaluated concealed and not predictable in advance? If not, were sufficient substitute procedures employed with adequate rigour to rule out any alternative explanations of the findings which arise as a result? e.g. (2) Was the attrition rate low and if applicable similar between different groups?*
 
 - [ ] A lot (please specify)
-- [ ] A little (please specify)
+- [x] A little (please specify)
 - [ ] Not at all (please specify)
 
 ### How generalisable are the study results?
 
 - [ ] Details
 
+- only towards secondary school boys under language related stereotype threat  
+
+
 ### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
 *In some studies it is difficult to distinguish between the findings of the study and the conclusions. In those cases please code the trustworthiness of this combined results/conclusion.** Please remember to complete the weight of evidence questions B-D which are in your review specific data extraction guidelines. ***
 
 - [ ] High trustworthiness (please specify)
-- [ ] Medium trustworthiness (please specify)
+- [x] Medium trustworthiness (please specify)
 - [ ] Low trustworthiness (please specify)
 
 ### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
 
 - [ ] Not applicable (results and conclusions inseparable)
-- [ ] High trustworthiness
+- [x] High trustworthiness
 - [ ] Medium trustworthiness
 - [ ] Low trustworthiness
     
