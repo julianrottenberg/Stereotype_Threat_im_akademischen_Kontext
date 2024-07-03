@@ -49,7 +49,7 @@ r_refs("r-references.bib")
 
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
-- [ ] Not applicable (whole study is focus of data extraction)  
+- [x] Not applicable (whole study is focus of data extraction)  
 - [ ] Specific focus of this data extraction (please specify)  
 
 ## Study aim(s) and rationale
@@ -57,21 +57,33 @@ r_refs("r-references.bib")
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threat
+- working memory depletion account
 
 ### Do authors report how the study was funded?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+Authorship of this article was made possible in part by Grant Number HRD-1036767 from the National Science Foundation awarded to the second author.  
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
 
+- To understand just *how* stereotype threat "interferes" with mental resources
+- To the extent that stereotype threat reduces working memory, we aim to clarify just how this "reduction" manifests.  
+- Examining the direct influece of stereotype threat on Stroop performance.
+
+
 ### What is/are the population focus/foci of the study?
+
+- men
 
 ### What is the relevant age group? 
 
@@ -81,13 +93,13 @@ r_refs("r-references.bib")
 - [ ] 11 - 16  
 - [ ] 17 - 20  
 - [ ] 21 and over  
-- [ ] Not stated/unclear  
+- [x] Not stated/unclear  
 
 ### What is the sex of the population focus/foci?
 
 - [ ] Not applicate (focus not learners)  
 - [ ] Female only  
-- [ ] Male only  
+- [x] Male only  
 - [ ] Mixed sex  
 - [ ] Not stated/unclear  
 
@@ -113,24 +125,35 @@ r_refs("r-references.bib")
 ### In Which country or cuntries was the study carried out?
 
 - [ ] Explicitly stated (please specify)  
-- [ ] Not stated/unclear (please specify)  
+- [x] Not stated/unclear (please specify)  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- A *distraction* hypothesis would predict that stereotype threatened individuals become distracted and start to mind wander during the task, which interferes with their ability to maintain the task goal of naming colours not words. If stereotype threat causes distraction, threat effects should emerge specifically on error rates within mostly congruent lists in which task goals must be internally supported. Such a pattern of results would suggest stereotype threat impairs the target individuals' ability to stay focused on their test-taking strategy and goals for successful test performance.
+- A *response competition* hypothesis would predict that stereotype threat impairs peoples' ability to resolve the competition created by the incorrect, but habitual, word response. This response competition hypothesis predicts stereotype threat effect emerge in Stroop RTs within mostly incongruent lists in which goals are externally supported. Such a pattern of results would suggest that stereotype threat impairs the speed with which target individuals can override their (incorrect) habitual responses.
+- Stereotype threat may impair both the ability to avoid distraction and to resolve response competition, in which both hypotheses would be correct and stereotype threat effects should emerge both in Stroop error rates under mostly congruent lists and in Stroop RTs within mostly incongruent lists.
+
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Working memory capacity (WMC)
+- Stroop performance
+- operation span score
+- stereotype threat vs no threat
+- mostly congruent list vs mostly incongruent list
 
 
 ### Study timing
@@ -140,7 +163,7 @@ r_refs("r-references.bib")
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -150,7 +173,7 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not an evaluation)  
 - [ ] Before and after  
-- [ ] Only after  
+- [x] Only after  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
@@ -161,7 +184,7 @@ r_refs("r-references.bib")
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -169,9 +192,12 @@ r_refs("r-references.bib")
 ### How do the groups differ?
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Explicityly stated (please specify)  
+- [x] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- 2 (stereotype threat vs no threat) x 2 (mostly congruent list vs. mostly incongruent list) between-subjects design
+
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
@@ -180,14 +206,17 @@ r_refs("r-references.bib")
 - [ ] One  
 - [ ] Two  
 - [ ] Three  
-- [ ] Four or more (please specify)  
+- [x] Four or more (please specify)  
 - [ ] Other/unclear (please specify)  
+
+- 2 x 2 between subjects design
+
 
 ### Was the assignment of participants to interventions randomised?
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
-- [ ] Random  
+- [x] Random  
 - [ ] Quasi-random  
 - [ ] Non-random  
 - [ ] Not stated/unclear (please specify)  
@@ -197,18 +226,28 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
-- [ ] Yes (please specify)  
+- [x] Yes (please specify)  
 - [ ] No (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
 ### Study design summary 
 *In addition to answering the questions in this section, describe the study design in your own words. You may want to draw upon and elaborate the answers you have already given.*
+
+1. automated version of the operation span WMC task
+2. random assignment to one of the four conditions 2 (stereotype threat vs. no threat) x 2 (mostly congruent list vs. mostly incongruent list)
+3. Stereotype threat manipulation
+   - ST condition: told that they were about to engage in a test measuring "verbal skills of men and women" and marked their gender before the test
+   - Control condition: told that the test measured "processing skills" and were not asked to mark their gender until after the test
+4. Stroop task
+    - coded by an experimenter who sat next to the participant
+    
+
 
 ## Methods - Sampling strategy
 
@@ -217,7 +256,7 @@ r_refs("r-references.bib")
 
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
@@ -225,7 +264,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
@@ -233,14 +272,14 @@ r_refs("r-references.bib")
 - [ ] Not applicable (no sampling frame)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Planned sample size
 *If more than one group please give details for each group separately.*
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -248,15 +287,19 @@ r_refs("r-references.bib")
 *e.g. letters of invitation, telephone contact, face-to-face contact.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- university 
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- course credit  
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
@@ -266,12 +309,15 @@ r_refs("r-references.bib")
 - [ ] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Are there any other details relevant to recruitment and consent?
 
 - [ ] No
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
+
+- no mention of ethical approval or consent  
+- no mention of the participants major or subject of study (could have implication on how well the stereotype threat manipulation works since we are looking at verbal stereotype threat, a literature student might react differently than a physics student for example).  
 
 ## Methods - Actual sample
 
@@ -279,9 +325,11 @@ r_refs("r-references.bib")
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- A total of 187 men (M = 21.2 years old, 88.5% Caucasian) participated in exchange for course credit.  
 
 ### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
@@ -289,7 +337,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
@@ -297,7 +345,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -307,8 +355,10 @@ r_refs("r-references.bib")
 - [ ] 5 to 10
 - [ ] 11 to 16
 - [ ] 17 to 20
-- [ ] 21 and over
+- [x] 21 and over
 - [ ] Not stated/unclear (please specify)
+
+- M = 21.2 years old, no SD given  
 
 ### What is the socio-economic status of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -316,15 +366,18 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Explicitly stated (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- 88.5% Caucasian
+- remaining 11.5% not specified  
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,14 +385,14 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
@@ -349,13 +402,13 @@ r_refs("r-references.bib")
 - [ ] High (please specify)
 - [ ] Medium (please specify)
 - [ ] Low (please specify)
-- [ ] Unclear (please specify)
+- [x] Unclear (please specify)
 
 ### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -363,7 +416,7 @@ r_refs("r-references.bib")
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -371,7 +424,7 @@ r_refs("r-references.bib")
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -380,6 +433,11 @@ r_refs("r-references.bib")
 ### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
 
 - [ ] Details
+
+- demographic information -> a (and b for stereotype threat manipulation)
+- WMC -> b
+- Stroop performance -> b
+
 
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -404,14 +462,19 @@ r_refs("r-references.bib")
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- automated version of the operation span WMC task (Unsworth, Heitz, Schrock, & Engle, 2005)
+- Stereotype threat manipulation modeled after Seibt and Forster (2004)
+- computer-based color-naming Stroop task, stimuli were taken from Spieler, Baloat, and Faust (1996) 
+
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
 
-- [ ] Researcher
+- [x] Researcher
 - [ ] Head teacher/Senior management
 - [ ] Teaching or other staff
 - [ ] Parents
@@ -426,6 +489,8 @@ r_refs("r-references.bib")
 *e.g. test-retest methods (Where more than one tool was employed please provide details for each.)*
 
 - [ ] Details
+
+- Unsworth et al. (2005) demonstrated that this version of OSPAN correlates well with other measures of WMC and has both good internal consistency ($\alpha$ = .78) and test-retest reliability (r = .83).  
 
 ### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
 *e.g. mention previous validation of tools, published version of tools, involvement of target population in development of tools. (Where more than one tool was employed please provide details for each.)*
@@ -456,7 +521,7 @@ r_refs("r-references.bib")
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
 
@@ -464,10 +529,26 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- only correct responses were considered for the RT analyses
+- mean and SD deviation computed for congruent, neutral, and incongruent trails for each participants
+- nonrecursive outlier removal procedure, suggested by Van Selst and Jolicoeur (1994), was used
+- basic regression models examining Stroop effects in both errors and Rts were created
+
+*Testing the Distraction Hypothesis*:
+- Stroop effects in errors were regressed on the model
+- stratified analyses by list-type 
+- comparisons of the simple slopes in the most congruent list (following guidelines by Aiken and West (1991))
+
+*Testing the Response Competition Hypothesis*:
+- Stroop effects in RTs were regressed on the model
+
 ### What rationale do the authors give for the methods of analysis for the study?
-*e.g. for their methods of sampling, data collection, or analysis.*
+*e.g. for the ir methods of sampling, data collection, or analysis.*
 
 - [ ] Details
+
+- guidelines by Aiken and West (1991)
+- suggestions by Van Selst and Jolicoeur (1994)  
 
 ### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
 *'Intention to intervene' means that data were analysed on the basis of the original number of participants as recruited into the different groups. 'Intervention received' means data were analysed on the basis of the number of participants actually receiving the intervention.*
@@ -506,79 +587,121 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- figure
+- in text  
+
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+- None of the operation span scores differed across the four experimental conditions
+- RTs and eroor rates to neutral items did not vary as a function of threat, regardless of list so neutral items are not discussed further
+
+*Testing the Distraction Hypothesis*:  
+- The overall model was significant and revealed the typical effect of list congruency and WMC on Stroop errors, whereby participants' Stroop effects were greater in the mostly congruent list than the mostly incongruent list, and participants lower in WMC had larger Stroop effects than those higher in WMC.
+- Replicating Hutchison (2011), these two main effects were qualified by their two-way interaction
+- Stratified analyses by list-type showed WMC differences in Stroop effects were pronounced among those receiving the mostly congruent list but absent among those receiving the mostly incongruent list
+- There was a main effect of stereotype threat, such that men in the stereotype threat condition had a larger Stroop effect than those in the control condition
+- This stereotype threat main effect was qualified by an interaction with list condition
+- Stratified analyses by list-type showed stereotype threat increased Stroop errors among those in the mostly congruent list, but not among those in the mostly incongruent list
+- There was also a marginal two-way interaction between threat condition and WMC.
+- These main effects and two-way interactions were qualified by a significant three-way interaction between stereotype threat, list congruency, and WMC
+- TO decompose the interaction, we tested the Simple Stereotype Threat x WMC interaction separately for each list and then, if significant, determined the effects of stereotype threat separately for those relatively high and low in WMC
+- For the mostly congruent list, the two-way Stereotype threat x WMC interaction was significant
+- Comparison of the simple slopes in the mostly congruent list at 1 SD below the mean WMC revealed a significant slope for the stereotype threat condition, with Stroop effects increasing under stereotype threat
+- The simple slope analysis at 1 SD above the mean WMC did not reveal significant difference
+- Within the mostly congruent list, in which internal goal maintenance is required for successful performance, those with lower WMC made more Stroop errors in the stereotype threat condition compared to the control condition
+- In contrast to the mostly congruent list, the two-way Stereotype Threat x WMC interaction was not significant among those in the mostly incongruent list, suggesting no effect of stereotype threat on Stroop performance.
+- As predicted by the distraction hypothesis, these results suggest that stereotype threat interferes with goal maintenance particularly among low-WMC individuals, presumably due to their increased susceptibility to distraction
+- Specifically, low-WMC individuals showed increased Stroop errors under stereotype threat for the mostly congruent list
+- Within the mostly incongruent list, stereotype threat had no effect on Stroop performance, regardless of WMC.  
+
+*Testing the Response Competition Hypothesis*:
+- Stroop RT effects were regressed on the model, which was also significant
+- The only significant effects were a main effect of WMC in which Stroop RT effects were larger for low-WMC individuals and a main effect of list in which Stroop effects were larger in the mostly congruent list.
+- These findings replicate previous reserach
+- No other main effect or two-way interactions emerged, and the three-way interaction did not approach statistical significance.  
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
 
+As predicted by the distraction hypothesis, stereotype threat produced a significant increase in Stroop errors among those low in WMC only under conditions in which the task goal had to be internally maintained (i.e., mostly congruent list). In contrast, when the task goal was externally supported through frequent exposure to incongruent stimuli, no such disruption occurred. These findings support the hypothesis that stereotype threat impairs performance on conflict tasks by disrupting peoples’ ability to maintain focus throughout the task. The distraction caused by stereotype threat–related thoughts leads to a loss of the appropriate goal to suppress habitual, yet incorrect, response tendencies.  
+Our results did not support the response competition hypothesis, neither low- nor high-WMC individuals showed stereotype threat-induced response competition effects. Therefore, we found evidence that stereotype threat exerts its debilitating effect primarily through goal neglect, but found no evidence that stereotype threat weakens one’s ability to resolve response competition.
+
+In summary, results from the current study clearly demonstrate that under stereotype threat, a disruption in goal maintenance occurs during task engagement, especially among those low in WMC. We posit that subtly triggered stereotype threat effects reflect goal-neglect problems in which individuals (particularly those low in WMC) become distracted following the threat and begin mind wandering. This mind wandering then causes goal-neglect, which impairs performance in attention-demanding situations such as those involving planning, troubleshooting, technical difficulty, or novel sequences of action (Norman & Shallice, 1986).
+
+Our data suggest mind wandering is an important reason why stereotype threat produces such varied outcomes as counterproductive leadership communication styles (von Hippel, Wiryakusuma, Bowden, & Shochet, 2011) and impaired driving skills among women (Yeung & von Hippel, 2008). Indeed, we suggest that stereotype threat effects will be greatest not only among those chronically prone to distraction (i.e., individuals low in WMC or diagnosed with attention deficit hyperactivity disorder (ADHD)), but to all individuals during states of impaired WMC such as that during divided attention, ego-depletion (Carr & Steele, 2010), or off-peak circadian rhythms (Hasher, Zacks, & May, 1999).
+
+
+
 ## Quality of the study - Reporting 
 
 ### Is the context of the study adequately described?
 *Consider your answer to questions: Why was this study done at this point in time, in those contexts and with those people or institutions? (Section B question 2) Was the study informed by or linked to an existing body of empirical and/or theoretical research? (Section B question 3) Which of the following groups were consulted in working out the aims to be addressed in the study? (Section B question 4) Do the authors report how the study was funded? (Section B question 5) When was the study carried out? (Section B question 6)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Are the aims of the study clearly reported?
 *Consider your answer to questions: What are the broad aims of the study? (Section B question 1) What are the study research questions and/or hypotheses? (Section C question 10)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
 *Consider your answer to all questions in Methods on ‘Sampling Strategy’, ‘Recruitment and Consent’, and ‘Actual Sample’.*
 
 - [ ] Yes (please specify)
-- [ ] No (please specify)
+- [x] No (please specify)
 
 ### Is there an adequate description of the methods used in the study to collect data?
 *Consider your answer to the following questions in Section I: Which methods were used to collect the data? Details of data collection methods or tools Who collected the data? Do the authors describe the setting where the data were collected? Are there other important features of the data collection procedures?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the methods of data analysis?
 *Consider your answer to the following questions in Section J: Which methods were used to analyse the data? What statistical methods, if any, were used in the analysis? Who carried out the data analysis?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is the study replicable from this report?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Do the authors avoid selective reporting bias?
 *(e.g. do they report on all variables they aimed to study as specified in their aims/research questions?)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ## Quality of the study - Methods and data
@@ -586,47 +709,50 @@ r_refs("r-references.bib")
 ### Are there ethical concerns about the way the study was done?
 *Consider consent, funding, privacy, etc.*
 
-- [ ] Yes, some concerns (please specify)
+- [x] Yes, some concerns (please specify)
 - [ ] No concerns
 
 ### Were students and/or parents appropriately involved in the design or conduct of the study?
 
-- [ ] Yes, a lot (please specify)
+- [x] Yes, a lot (please specify)
 - [ ] Yes, a little (please specify)
 - [ ] No (please specify)
 
 ### Is there sufficient justification for why the study was done the way it was?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Was the choice of research design appropriate for addressing the research question(s) posed?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
 *e.g. (1) In an evaluation, was the process by which participants were allocated to or otherwise received the factor being evaluated concealed and not predictable in advance? If not, were sufficient substitute procedures employed with adequate rigour to rule out any alternative explanations of the findings which arise as a result? e.g. (2) Was the attrition rate low and if applicable similar between different groups?*
 
 - [ ] A lot (please specify)
-- [ ] A little (please specify)
+- [x] A little (please specify)
 - [ ] Not at all (please specify)
 
 ### How generalisable are the study results?
 
 - [ ] Details
 
+- see above, not too much since the sample is so unclear
+
+
 ### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
 *In some studies it is difficult to distinguish between the findings of the study and the conclusions. In those cases please code the trustworthiness of this combined results/conclusion.** Please remember to complete the weight of evidence questions B-D which are in your review specific data extraction guidelines. ***
 
 - [ ] High trustworthiness (please specify)
-- [ ] Medium trustworthiness (please specify)
+- [x] Medium trustworthiness (please specify)
 - [ ] Low trustworthiness (please specify)
 
 ### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
 
 - [ ] Not applicable (results and conclusions inseparable)
-- [ ] High trustworthiness
+- [x] High trustworthiness
 - [ ] Medium trustworthiness
 - [ ] Low trustworthiness
     
