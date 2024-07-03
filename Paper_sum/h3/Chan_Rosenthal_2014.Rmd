@@ -49,7 +49,7 @@ r_refs("r-references.bib")
 
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
-- [ ] Not applicable (whole study is focus of data extraction)  
+- [x] Not applicable (whole study is focus of data extraction)  
 - [ ] Specific focus of this data extraction (please specify)  
 
 ## Study aim(s) and rationale
@@ -57,28 +57,35 @@ r_refs("r-references.bib")
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threat
+- 
 
 ### Do authors report how the study was funded?
 
 - [ ] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
-- [ ] Not stated/unclear (please specify)  
+- [x] Not stated/unclear (please specify)  
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
 
+- Examine the moderating role of working memory on gender-maths stereotype threat.  
+
 ### What is/are the population focus/foci of the study?
+
+- adolescents from Hong Kong.
 
 ### What is the relevant age group? 
 
 - [ ] Not applicate (focus not learners)  
 - [ ] 0 - 4  
 - [ ] 5 - 10  
-- [ ] 11 - 16  
+- [x] 11 - 16  
 - [ ] 17 - 20  
 - [ ] 21 and over  
 - [ ] Not stated/unclear  
@@ -88,7 +95,7 @@ r_refs("r-references.bib")
 - [ ] Not applicate (focus not learners)  
 - [ ] Female only  
 - [ ] Male only  
-- [ ] Mixed sex  
+- [x] Mixed sex  
 - [ ] Not stated/unclear  
 
 ### What is/are the educational setting(s) of the study?
@@ -105,32 +112,43 @@ r_refs("r-references.bib")
 - [ ] Post-compulsory education institution  
 - [ ] Primary school  
 - [ ] Residential school  
-- [ ] Secondary school  
+- [x] Secondary school  
 - [ ] Special needs school  
 - [ ] Workplace  
 - [ ] Other educational setting  
 
 ### In Which country or cuntries was the study carried out?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Hong Kong  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- We expected typical stereotype threat effects, such that female adolescents in the threat condition would underperform compared to female adolescents in the control condition, and male adolescents in the threat condition.
+- We expected high WM females in the threat condition to outperform low WM females in the threat conditoin
+- We expected no difference between low and high WM females in the control condition, and no difference between low and high WM males in either condition.  
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Working memory (high vs low)
+- Stereotype threat (threat vs control)
+- gender 
+- math test performance  
 
 
 ### Study timing
@@ -140,7 +158,7 @@ r_refs("r-references.bib")
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -149,7 +167,7 @@ r_refs("r-references.bib")
 *If at least one of the outcome variables is measured both before and after the intervention, please use the before and after category.*
 
 - [ ] Not applicable (not an evaluation)  
-- [ ] Before and after  
+- [x] Before and after  
 - [ ] Only after  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -161,7 +179,7 @@ r_refs("r-references.bib")
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -169,16 +187,18 @@ r_refs("r-references.bib")
 ### How do the groups differ?
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Explicityly stated (please specify)  
+- [x] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threat vs no stereotype threat  
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
 
 - [ ] Not applicable (not more than one group)  
 - [ ] One  
-- [ ] Two  
+- [x] Two  
 - [ ] Three  
 - [ ] Four or more (please specify)  
 - [ ] Other/unclear (please specify)  
@@ -187,7 +207,7 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
-- [ ] Random  
+- [x] Random  
 - [ ] Quasi-random  
 - [ ] Non-random  
 - [ ] Not stated/unclear (please specify)  
@@ -197,50 +217,65 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
-- [ ] Yes (please specify)  
+- [x] Yes (please specify)  
 - [ ] No (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
+- Those in the threat condition were told that mathematics ability can be affected by many personal factors, including gender, and that the purpose of the mathematics test was to evaluate how different factors such as gender relate to mathematics performance. They were informed that the scores for male and female students would be compared and were asked to put effort into the mathematics test
+- For those in the control condition, gender was not mentioned. Instead participants were told that the aim of the study was to examine the reliability of the mathematics test, to establish whether the mathematics test was too easy or too difficult for Year 10 students. They were also asked to put effort into the mathematics test.  
+
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
 ### Study design summary 
 *In addition to answering the questions in this section, describe the study design in your own words. You may want to draw upon and elaborate the answers you have already given.*
 
+1. Allocation in two groups
+2. Working memory test
+3. Stereotype threat manipulation vs no manipulation
+4. Math test
+5. demographic questions.  
+
 ## Methods - Sampling strategy
 
 ### Are the authors trying to produce findings that are representative of a given population? 
 *Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- adolescents from Hong Kong under gender-maths stereotype threat  
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- School  
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
 
 - [ ] Not applicable (no sampling frame)
 - [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- it is stated that all participants were studying mathematics and passed their previous school mathematics test.  
 
 ### Planned sample size
 *If more than one group please give details for each group separately.*
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -250,13 +285,13 @@ r_refs("r-references.bib")
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
@@ -266,11 +301,11 @@ r_refs("r-references.bib")
 - [ ] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Are there any other details relevant to recruitment and consent?
 
-- [ ] No
+- [x] No
 - [ ] Yes (please specify)
 
 ## Methods - Actual sample
@@ -279,9 +314,11 @@ r_refs("r-references.bib")
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Seventy (N = 70, 33 male; 37 female) Year 10 students (M = 15.54, SD = 0.58) were recruited from a secondary school in Hong Kong.  
 
 ### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
@@ -289,15 +326,17 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Hong Kong
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -305,7 +344,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] 0 to 4
 - [ ] 5 to 10
-- [ ] 11 to 16
+- [x] 11 to 16
 - [ ] 17 to 20
 - [ ] 21 and over
 - [ ] Not stated/unclear (please specify)
@@ -316,7 +355,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -324,7 +363,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,21 +371,21 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Not applicable (no sampling frame)
-- [ ] High (please specify)
+- [x] High (please specify)
 - [ ] Medium (please specify)
 - [ ] Low (please specify)
 - [ ] Unclear (please specify)
@@ -355,7 +394,7 @@ r_refs("r-references.bib")
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -363,7 +402,7 @@ r_refs("r-references.bib")
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -371,7 +410,7 @@ r_refs("r-references.bib")
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -381,6 +420,11 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- demographic information -> a
+- Working memory test -> b
+- Stereotype threat manipulation -> b
+- maths test -> b
+
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
 
@@ -389,12 +433,12 @@ r_refs("r-references.bib")
 - [ ] Group interview
 - [ ] One to one interview (face to face or by phone)
 - [ ] Observation
-- [ ] Self-completion questionnaire
+- [x] Self-completion questionnaire
 - [ ] Self-completion report or diary
 - [ ] Exams
 - [ ] Clinical test
 - [ ] Practical test
-- [ ] Psychological test
+- [x] Psychological test
 - [ ] Hypothetical scenario including vignettes
 - [ ] School/college records (e.g. attendance records etc)
 - [ ] Secondary data such as publicly available statistics
@@ -404,9 +448,13 @@ r_refs("r-references.bib")
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Working memory: A modified version of the reading span task (Robert, Borella, Fagot, Lecerf, & De Ribaupierre, 2009) assessed WM capacity.  
+- Mathematics test: twenty-one questions were extracted from an English-language version of a Hong Kong Certificate of Education Examination past paper (Hong Kong Exam Authority), the questions were multiple choice with either 4 or 5 answer choices.
+- Demographics: Demographic information was also collected  
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -420,7 +468,7 @@ r_refs("r-references.bib")
 - [ ] LEA/Government officials
 - [ ] Other education practitioner
 - [ ] Other (please specify)
-- [ ] Not stated/unclear
+- [x] Not stated/unclear
 
 ### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
 *e.g. test-retest methods (Where more than one tool was employed please provide details for each.)*
@@ -456,13 +504,22 @@ r_refs("r-references.bib")
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
 
 ### Which statistical methods, if any, were used in the analysis?
 
 - [ ] Details
+
+Mathematics performance: 
+- A gender x condition (threat, control) ANOVA
+- Bonferroni-adjusted comparisons  
+
+Moderating role of working memory:
+- For the moderation analysis, gender was dummy coded and WM was mean-centred prior to analysis
+- A gender x WM x condition moderated regression on mathematics performance was conducted.
+- Threat condition: Moderated regression tested whether WM moderated mathematics performance. A gender x WM interaction variable was created. Additional simple slopes analysis was conducted.  
 
 ### What rationale do the authors give for the methods of analysis for the study?
 *e.g. for their methods of sampling, data collection, or analysis.*
@@ -506,73 +563,107 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- Figures
+- in text
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+**Mathematics performance**:
+- There was a significant effect of gender with adolescent males performing better than adolescent famles.
+- The main effect for condition was also significant
+- Performance in the control condition was significantly better than in the threat condition
+- The significant gender x condition interaction was explored further
+- Bonferroni-adjusted comparisons revealed a significant difference between males and females in the threat condition but no significant differences between males and females in the control condition
+- This suggests that stereotype threat was experiences by adolescent females in the threat condition.
+- There was a significant difference between the two conditions for females with underperformance in the threat condition compared to the control condition.
+- There was no significant difference between the two conditions for males.  
+
+**Moderating role of working memory**:
+- Considering the difference in number of questions and age range, this is comparable to the findings of Robert et al. (2009)
+- An initial gender x WM x condition moderated regression on mathematics performance was non-significant
+
+*Threat condition*:
+- At step 1, gender was significant with females underperforming compared to males: however, the effect of WM was non-significant
+- At step 2, the gender x WM interaction variable was significant
+- Through additional analysis we explored this significant interaction further and revealed that WM did not significantly predict mathematics performance for male adolescents
+- WM did significantly predict mathematics performance for female adolescents; as WM increased, so too did mathematics performance
+- Additional simple slopes analysis revealed a significant difference in mathematics performance for male and female adolescents with low WM, with low WM females underperforming compared to low WM males
+- There was no significant difference between the genders of high WM.  
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+   
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
 
+When female adolescents were informed that their scores would be compared to male adolescents, they underperformed compared to male adolescents in the same condition and female adolescents in the control condition. This suggests that the gender-mathematics stereotype exists in Hong Kong, and is capable of affecting performance. In addition, we established WM capacity as a moderator of stereotype threat.  
+In line with Régner et al. (2010), low WM female adolescents underperformed compared to high WM females in the experimental condition. This suggests that low WM females were affected by stereotype threat, while high WM females were not. In contrast, no such effect was found in the control condition.  
+High WM female adolescents were able to overcome stereotype threat, so that that their performance surpassed the performance of low WM females.  
+
+
+We established stereotype threat effects for adolescent females taking a mathematics test in Hong Kong. This confirms that stereotype threat can occur for the gender-mathematics stereotype in an Asian nation. Crucially, we found that WM moderates this effect, such that low WM females experienced stereotype threat, while high WM females were protected.  `
+
 ## Quality of the study - Reporting 
 
 ### Is the context of the study adequately described?
 *Consider your answer to questions: Why was this study done at this point in time, in those contexts and with those people or institutions? (Section B question 2) Was the study informed by or linked to an existing body of empirical and/or theoretical research? (Section B question 3) Which of the following groups were consulted in working out the aims to be addressed in the study? (Section B question 4) Do the authors report how the study was funded? (Section B question 5) When was the study carried out? (Section B question 6)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Are the aims of the study clearly reported?
 *Consider your answer to questions: What are the broad aims of the study? (Section B question 1) What are the study research questions and/or hypotheses? (Section C question 10)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
 *Consider your answer to all questions in Methods on ‘Sampling Strategy’, ‘Recruitment and Consent’, and ‘Actual Sample’.*
 
 - [ ] Yes (please specify)
-- [ ] No (please specify)
+- [x] No (please specify)
 
 ### Is there an adequate description of the methods used in the study to collect data?
 *Consider your answer to the following questions in Section I: Which methods were used to collect the data? Details of data collection methods or tools Who collected the data? Do the authors describe the setting where the data were collected? Are there other important features of the data collection procedures?*
 
 - [ ] Yes (please specify)
-- [ ] No (please specify)
+- [x] No (please specify)
 
 ### Is there an adequate description of the methods of data analysis?
 *Consider your answer to the following questions in Section J: Which methods were used to analyse the data? What statistical methods, if any, were used in the analysis? Who carried out the data analysis?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is the study replicable from this report?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Do the authors avoid selective reporting bias?
@@ -586,23 +677,25 @@ r_refs("r-references.bib")
 ### Are there ethical concerns about the way the study was done?
 *Consider consent, funding, privacy, etc.*
 
-- [ ] Yes, some concerns (please specify)
+- [x] Yes, some concerns (please specify)
 - [ ] No concerns
+
+- No mention of consent sought, no mention of ethical approval, no mention of funding.  
 
 ### Were students and/or parents appropriately involved in the design or conduct of the study?
 
-- [ ] Yes, a lot (please specify)
+- [x] Yes, a lot (please specify)
 - [ ] Yes, a little (please specify)
 - [ ] No (please specify)
 
 ### Is there sufficient justification for why the study was done the way it was?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Was the choice of research design appropriate for addressing the research question(s) posed?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
@@ -616,17 +709,22 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- for adolescents in Hong Kong  
+
 ### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
 *In some studies it is difficult to distinguish between the findings of the study and the conclusions. In those cases please code the trustworthiness of this combined results/conclusion.** Please remember to complete the weight of evidence questions B-D which are in your review specific data extraction guidelines. ***
 
 - [ ] High trustworthiness (please specify)
-- [ ] Medium trustworthiness (please specify)
+- [x] Medium trustworthiness (please specify)
 - [ ] Low trustworthiness (please specify)
+
+- Did not test how difficult the test were. 
+
 
 ### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
 
 - [ ] Not applicable (results and conclusions inseparable)
-- [ ] High trustworthiness
+- [x] High trustworthiness
 - [ ] Medium trustworthiness
 - [ ] Low trustworthiness
     
