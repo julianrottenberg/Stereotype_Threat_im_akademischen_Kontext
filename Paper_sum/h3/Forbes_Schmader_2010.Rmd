@@ -50,28 +50,46 @@ r_refs("r-references.bib")
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
 - [ ] Not applicable (whole study is focus of data extraction)  
-- [ ] Specific focus of this data extraction (please specify)  
+- [x] Specific focus of this data extraction (please specify)  
+
+- Study 1 
+- 2 was excluded since it didn't measure working memory
+- 3 was excluded since it was not clear whether or not it was in the academic context. In the other studies it was explicitly mentioned that participants were compensated with course credit, inferring that they were students. Only in Study 3 the authors skipped this description and simply mentioned that the participants were moderately math-identified women, no mention of compensation or anything else that could be related to the academic context.  
+- 4 was excluded since it does not actually measure the impact stereotype threat has on working memory, instead it measures whether or not working memory improved under retraining.  
 
 ## Study aim(s) and rationale
 
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threat
+- Stereotype threat and working memory
+- Work of Amodio and Devine (2006)
+- Stereotype threat and motivation  
+- mere effort perspective on stereotype threat  
 
 ### Do authors report how the study was funded?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+This research was supported by a Social and Behavioral Sciences Research Institute Dissertation Research Grant awarded to the first author, and National Institute of Mental Health Grant #1R01MH071749 to the second author.
+
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
 
+- The present research will examine experimentally if changing stereotypes and attitudes differently affects the cognitive capacity and motivation needed for successful test performance.  
+
 ### What is/are the population focus/foci of the study?
+
+- women under maths stereotype threat   
 
 ### What is the relevant age group? 
 
@@ -81,12 +99,12 @@ r_refs("r-references.bib")
 - [ ] 11 - 16  
 - [ ] 17 - 20  
 - [ ] 21 and over  
-- [ ] Not stated/unclear  
+- [x] Not stated/unclear  
 
 ### What is the sex of the population focus/foci?
 
 - [ ] Not applicate (focus not learners)  
-- [ ] Female only  
+- [x] Female only  
 - [ ] Male only  
 - [ ] Mixed sex  
 - [ ] Not stated/unclear  
@@ -96,7 +114,7 @@ r_refs("r-references.bib")
 - [ ] Community centre  
 - [ ] Correctional institution  
 - [ ] Government department  
-- [ ] Higher education institution  
+- [x] Higher education institution  
 - [ ] Home  
 - [ ] Independent school  
 - [ ] Local education authority  
@@ -113,24 +131,47 @@ r_refs("r-references.bib")
 ### In Which country or cuntries was the study carried out?
 
 - [ ] Explicitly stated (please specify)  
-- [ ] Not stated/unclear (please specify)  
+- [x] Not stated/unclear (please specify)  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+
+**Study 1**:
+- The purpose of Study 1 was to test the hypothesis that retraining women to have a positive maths attitude will motivated them to spend more time working at maths problems compared to women reinforced with a negative maths. We hypothesized that retraining attitudes would elevate motivation in a neutral context, but would not increase working memory capacity or performance on complex maths problems when cues to threat are present.
+
+**Study 4**:
+- We assume that having the counter stereotype about women and maths is specifically beneficial when cues to stereotype threat are present. 
+- Study 4 focused exclusively on counterstereotype retraining as a means to improve women's maths performance, as mediated by an increase in working memory, when cues to stereotype threat are present.
+
+
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+**Study 1**:
+- pIAT
+- maths motivation
+- working memory capacity
+- maths performance
+
+**Study 4**:
+- pIAT and traditional IAT
+- working memory
+- maths test 
+- demographic questionnaire
+
 
 
 ### Study timing
@@ -142,17 +183,22 @@ r_refs("r-references.bib")
 
 - [ ] Cross-sectional  
 - [ ] Retrospective  
-- [ ] Prospective  
+- [x] Prospective  
 - [ ] Not stated/unclear (please specify)  
+
+- prospective
+
 
 ### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
 *If at least one of the outcome variables is measured both before and after the intervention, please use the before and after category.*
 
 - [ ] Not applicable (not an evaluation)  
 - [ ] Before and after  
-- [ ] Only after  
+- [x] Only after  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- after
 
 
 ## Methods - Groups
@@ -161,7 +207,7 @@ r_refs("r-references.bib")
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -169,78 +215,125 @@ r_refs("r-references.bib")
 ### How do the groups differ?
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Explicityly stated (please specify)  
+- [x] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+**Study 1**:
+- "like maths" vs "dislike maths"
+
+**Study 4**:
+- 2 (stereotype training: 'stereotype reinforcement' or 'counterstereotype retraining') x 2 (Task description: 'Diagnostic maths test' or 'Problem solving task') factorical design.
+
+
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
 
 - [ ] Not applicable (not more than one group)  
 - [ ] One  
-- [ ] Two  
+- [x] Two  
 - [ ] Three  
 - [ ] Four or more (please specify)  
 - [ ] Other/unclear (please specify)  
+
+**Study 1**:
+- two
+
+**Study 4**:
+- four
+
 
 ### Was the assignment of participants to interventions randomised?
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
-- [ ] Random  
+- [x] Random  
 - [ ] Quasi-random  
 - [ ] Non-random  
-- [ ] Not stated/unclear (please specify)  
+- [ ] Not stated/unclear (please specify) 
+
+- random  
 
 ### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
 *Bias can be introduced, consciously or otherwise, if the allocation of pupils or classes or schools to a programme or intervention is made in the knowledge of key characteristics of those allocated. For example: children with more serious reading difficulty might be seen as in greater need and might be more likely to be allocated to the 'new' programme, or the opposite might happen. Either would introduce bias.*
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
-- [ ] Yes (please specify)  
+- [x] Yes (please specify)  
 - [ ] No (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
 ### Study design summary 
 *In addition to answering the questions in this section, describe the study design in your own words. You may want to draw upon and elaborate the answers you have already given.*
 
+**Study 1**:
+1. pIAT
+2. 24 to 30 hours break
+3. math effort task, working memory measure, math strategy test
+4. debriefing  
+
+**Study 4**:
+1. pIAT and traditional IAT
+2. 24 to 30 hours break
+3. Stereotype threat manipulation
+   - either just a demographic questionnaire without the gender and information that they were to complete problem solving tasks(no stereotype threat)
+   - recording of a male researcher that they would be completing a diagnostic measure of their natural maths ability after the working memory task, they were also asked to mark their gendre on a demographic questionniare)
+4. working memory measue (from Study 1 and 3)
+5. maths test (GRE)
+6. debriefing
+
+
 ## Methods - Sampling strategy
 
 ### Are the authors trying to produce findings that are representative of a given population? 
 *Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- moderately math identified women under math stereotype threat 
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+
+**Study 1**:
+- Based on mass survey data, women were considered eligible if their average response to three items: "Being good at maths is an important part of who I am", "I think that I'm good at tasks that require the use of maths", and "I like tasks that involve maths or computation" was between 3.5 and 5.5 on a 7-point scale.
+- We targeted moderately maths identified women because those who are at the extremes of identification are also likely to have extreme attitudes toward the domain that would be more resistant to attitude change.  
+
+**Study 4**:
+- We did not select individuals on any predetermined characteristics like maths identification.  
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
 
 - [ ] Not applicable (no sampling frame)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:
+- characteristic: moderate maths identification and gender = female  
 
 ### Planned sample size
 *If more than one group please give details for each group separately.*
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -250,13 +343,15 @@ r_refs("r-references.bib")
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Participants were compensated with course credit.  
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
@@ -266,11 +361,11 @@ r_refs("r-references.bib")
 - [ ] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Are there any other details relevant to recruitment and consent?
 
-- [ ] No
+- [x] No
 - [ ] Yes (please specify)
 
 ## Methods - Actual sample
@@ -279,9 +374,16 @@ r_refs("r-references.bib")
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:
+- Fifty-eight (N = 58) moderately math identified women participated in the experiment for course credit and were randomly assigned to a 'like maths' or 'disklike maths' training condition.  
+
+**Study 4**:
+- One hundred and ninety women (N = 190) participated in the experiment for course credit.
+
 
 ### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
@@ -289,7 +391,10 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
+
+**Study 4**:
+- nine participants were excluded for not following directions in either the training or working memory task and four were excluded for correctly identifying hte purpose of the study. Thus 177 participants were included in the analysies.  
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
@@ -297,7 +402,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -308,7 +413,7 @@ r_refs("r-references.bib")
 - [ ] 11 to 16
 - [ ] 17 to 20
 - [ ] 21 and over
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the socio-economic status of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -316,7 +421,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -324,7 +429,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,24 +437,31 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Not applicable (no sampling frame)
-- [ ] High (please specify)
+- [x] High (please specify)
 - [ ] Medium (please specify)
 - [ ] Low (please specify)
 - [ ] Unclear (please specify)
+
+**Study 1**:
+- They wanted to find moderately maths identified women, which they did.  
+
+**Study 4**:
+- high
+
 
 ### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
@@ -358,7 +470,9 @@ r_refs("r-references.bib")
 - [ ] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear
+- [x] Not stated/unclear
+
+- not stated  
 
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
@@ -366,20 +480,33 @@ r_refs("r-references.bib")
 - [ ] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ## Methods - Data collection
 
 ### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
 
 - [ ] Details
+
+**Study 1**:
+- Maths motivation -> b
+- Working memory capacity -> b
+- Maths performance -> b
+- maths identification -> a
+
+**Study 4**:
+- demographic questionnaire -> a and b (due to the stereotype threat manipulation)
+- working memory capacity -> b
+- maths test -> b
+
+
 
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -404,9 +531,19 @@ r_refs("r-references.bib")
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:
+- Maths identification (for questions see above)
+- Maths motivation: the motivation task was comprised of 30 maths and 30 remote associates (RAT) problems presented to participants on a series of choice screens
+- Working memory capacity: The working memory task that participants completed was a vowel counting version adapted by Schmader and Johns (2003) from the Reading Span Test (Daneman & Carpenter, 1980)
+- Maths performance: Was assessed with the Necessary Arithmetic Operations Test (NAOT; Ekstrom, French, Harman, & Dermen, 1976).  
+
+**Study 4**:
+- same stereotype retraining task described in Study 3 during Session 1
+- maths test composed of 30 moderately difficult maths problems taken from the GRE (Schmader & Johns, 2003).
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -456,13 +593,37 @@ r_refs("r-references.bib")
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
 
 ### Which statistical methods, if any, were used in the analysis?
 
 - [ ] Details
+
+**Study 1**:
+*Maths motivation*:
+- means calculation
+- independent samples t-test on the total amount of time participants spent working on maths problems during the choice task
+- parallel analysis  
+*Working memory and maths test performance*:
+- independent samples t-test on women's working memory scores and performance accuracy on the maths test  
+*Self-reported maths attitudes*:
+- Means calculation
+- regression analysis of both retraining condition and post-training self-report attitudes  
+
+**Study 4**:
+*Working memory:*
+- 2 x 2 ANOVA conducted on participants' working memory scores
+- simple effects analyses  
+*Maths test performance*:
+- 2 x 2 ANOVA conducted on participants' maths test accuracy
+- simple effects analyses  
+*Mediated Moderation analyses*:
+- regression analyses as per guidelines of Muller, Judd, and Yzerbyt (2005)   
+*Supplementary Analyses*:
+- within-cell correlations
+- parallel analyses with maths performance
 
 ### What rationale do the authors give for the methods of analysis for the study?
 *e.g. for their methods of sampling, data collection, or analysis.*
@@ -506,37 +667,109 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+**Study 1**:
+- table
+- in text
+
+**Study 4**:
+- Figures
+- in text
+
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+**Study 1**:
+*Maths motivation*:
+- initial analyses of performance on the choice task revealed that participants looked at more maths problems than RAT problems, tended to provide an answer to them maths problems they looked at, and those answers were typically accurate 
+- They also spent more total time on maths problems compared to RAT problems
+- All participants spent some time on both kinds of problems (i.e., there were neither floor nor ceiling effects) and there was considerable variability in time spent on both types of problems.  
+- Independent samples t-test conducted on the total amount of time participants spent working on maths problems during the choice task revealed that, as predicted, women trained to like maths spent significantly more time working on maths problems compared to women trained to dislike maths, although they were not necessarily more accurate in their solutions to the problems they answered
+- Even with a 24 hour delay, the retraining task was successful at affecting women's motivation for maths
+- In the parallel analysis conducted on the total time spent working on RAT problems revealed no differences between the two conditions
+- Participants had a fixed amount of time to work on either type of problem or do noting, this suggests that the pattern of motivation effects was shaped more by the training of women's attitudes towards maths than by the yoked inverse training of their attitudes towards language.  
+
+*Working memory and maths test performance*:
+- Independent samples t-test on women's working memory scores and performance accuracy on the maths test revealed no significant differences on either variable
+- Neither variable showed floor or ceiling effects
+- These analyses provide no evidence that retraining attitudes enhances working memory or performance on complex maths test when cues to threat are present.  
+
+*Self-reported maths attitudes*:
+- Women trained to like maths reported comparable levels of self-reported maths liking compared to women trained to dislike maths
+- When both retraining condition and post-training self-report attitudes were entered simultaneously into a regression analysis predicting maths motivation, both attitude retraining and self-reported maths attitudes had unique but independent relationships to maths motivation
+- There was no evidence that the effects of attitude retraining on motivation were due to conscious changes in women's attitudes towards maths. 
+- Self-report measures of maths liking were taken in subsequent studies but showed no effects of the attitude retraining manipulation and will thus not be discussed further.  
+
+
+
+**Study 4**:
+*Working memory*:
+- A 2 x 2 ANOVA conducted on participants' working memory scores revealed a marginal main effect for stereotype threat training, that was qualified by the predicted interaction
+- The main effect for task description was not significant
+- Simple effects analyses revealed a pattern in the diagnostic condition that replicated the result from Study 3
+- Women who received counterstereotype retraining exhibited greater working memory capacity when taking a 'diagnostic maths test' compared to women who received reinforcement training
+- When the situation was stereotype neutral, stereotype retraining had no effect on working memory capacity.
+- Among women who received counterstereotype retraining, working memory was higher in the diagnostic maths test condition compared to the problem solving task condition
+- Women trained to reinforce the stereotype did not show significantly lower working memory when they believed they would be taking a 'diagnostic maths test' compared to a 'problem solving task'.  
+*Maths test performance*:
+- A 2 x 2 ANOVA conducted on participants' maths test accuracy yielded only the predicted interaction
+- The main effects were not significant
+- Consistent with the working memory findings, simple effects analyses indicated that women who thought they were taking a diagnostic maths test performed better on the maths test when they were retrained with the counterstereotype - women are good at maths - than when the traditional stereotype was reinforced.
+- Stereotype retraining had no effect on accuracy in the problem solving condition as women retrained with the counterstereotype performed comparably to women who reinforced the stereotype
+- Although women who thought their maths ability was being assessed did not under perform those in the problem solving condition when the stereotype was reinforced, they did outperform their problem solving counterparts when they were retrained to associate maths with things women are good at.  
+*Mediated moderation analyses*:
+- In the first analysis training type, task diagnosticity and the interaction term was entered in to a model predicting working memory
+- Consistent with the ANOVA results described above, only the interaction was significant
+- A parallel analysis on maths test accuracy yielded the same interaction pattern
+- A final regression analysis revealed that when working memory was added to the second model, it was a significant predictor of maths test accuracy, and the interaction predicting test performance became non-significant
+- A Sobel test testing for the indirect pathway was significant
+- These results are consistent with the hypothesis that counterstereotype retraining can increase women's performance under stereotype threat because it increases their working memory capacity.  
+*Supplementary Analyses*:
+- It is notable that the effect of our diagnosticity manipulation on working memory and performance was more of a performance lift effect for those trained with a counterstereotype than a performance impairment effect for those reinforced with the stereotype. 
+The lack of clear impairment due to threat could be due to the fact that our sample was comprised of women of all levels of maths identification, where prior research suggests that stereotype threat effects should be most pronounced among those who most value or most identify with the domain
+- Consistent with this assumption, within-cell correlations revealed that among women taking the ‘diagnostic maths test’, those who received counterstereotype retraining had a significant positive relationship between an earlier mass survey measure of maths identification and working memory but this pattern was significantly reversed among those trained to reinforce the stereotype
+- There was no relationship among these variables for women 'taking a problem solving task'.
+- Parallel analyses with maths performance revealed that pre-test maths identification was generally positive realted to maths performance for all conditions and was not significantly different between conditions.
+- Given that measures of maths identification are likely to be conflated with past maths experience, the domain-general measure of working memory capacity might have been a more sensitive way to detect how identification with the domain exposes one to stereotype threat.  
+
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
+
+**Study 1**:  
+Results from Study 1 provide evidence that retraining maths attitudes affects women's motivation for choosing to work on maths. Women instructed to indirectly yet repeatedly associate maths-related constructs with things they like chose to spend more time solving maths problems compared to women trained to associate maths with things they dislike. Whereas Kawakami et al. showed motivation effects immediately following their approach retraining manipulation, we were able to confirm that attitude associative training effects persist even with a 24 hour delay, thus minimizing a simple priming explanation. We found no evidence that retraining maths attitudes improved women's working memory capacity or maths performance under standard stereotype threat conditions. As we have argued, having a positive association with maths might not improve complex cognitive processing.  
+
+
+**Study 4**:
+
+
 
 ## Quality of the study - Reporting 
 
