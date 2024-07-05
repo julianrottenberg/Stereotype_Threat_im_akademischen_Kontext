@@ -50,28 +50,45 @@ r_refs("r-references.bib")
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
 - [ ] Not applicable (whole study is focus of data extraction)  
-- [ ] Specific focus of this data extraction (please specify)  
+- [x] Specific focus of this data extraction (please specify)  
+
+- Study 1 and 2 were used
+- Study 3 excluded since it did not measure working memory directly.  
 
 ## Study aim(s) and rationale
 
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Stereotype threat and its effects on working memory
+- affective and cognitive processes that underlie stereotype threat effects on working memory
+
 
 ### Do authors report how the study was funded?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+This research was supported by National Institute of Mental Health Grant 1R01MH071749 awarded to the first author.
+
+
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
 
+- Negative metacognitive interpretations of anxious arousal under stereotype threat create cognitive deficits in intellectually threatening environments.  
+
 ### What is/are the population focus/foci of the study?
+
+- minority and white undergraduates
+- women under stereotype threat
+- women under stereotype threat  
 
 ### What is the relevant age group? 
 
@@ -81,14 +98,14 @@ r_refs("r-references.bib")
 - [ ] 11 - 16  
 - [ ] 17 - 20  
 - [ ] 21 and over  
-- [ ] Not stated/unclear  
+- [x] Not stated/unclear  
 
 ### What is the sex of the population focus/foci?
 
 - [ ] Not applicate (focus not learners)  
 - [ ] Female only  
 - [ ] Male only  
-- [ ] Mixed sex  
+- [x] Mixed sex  
 - [ ] Not stated/unclear  
 
 ### What is/are the educational setting(s) of the study?
@@ -112,25 +129,45 @@ r_refs("r-references.bib")
 
 ### In Which country or cuntries was the study carried out?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- United States  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+Three studies tested the hypothesis that negative metacognitive interpretations of anxious arousal under stereotype threat create cognitive deficits in intellectually threatening environments
+
+**Study 1**:  
+We expected primed thoughts of confidence or doubt to interact with participants' initial experience of anxiety in the situation to predict working memory.  
+When primed with doubt, anxiety should predict lower working memory, but when primed with confidence, this relationship should be mitigated.  
+
+
+**Study 2**:  
+We hypothesized that when the situation was described as a diagnostic test, women primed with thoughts of doubt would show a negative relationship between their anxiety levels and working memory.  
+However, priming women with thoughts of confidence was expected to attenuate if not reverse this pattern.  
+In contrast, when the primary task was described as a simple problem-solving exercise, we expected our manipulation of confidence and doubt to have little effect on working memory, either direcly or in interaction with initial anxiety levels.  
+
+
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+**Study 1 and 2**:  
+- Working memory
+- Anxiety
 
 
 ### Study timing
@@ -140,7 +177,7 @@ r_refs("r-references.bib")
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -161,7 +198,7 @@ r_refs("r-references.bib")
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -169,9 +206,15 @@ r_refs("r-references.bib")
 ### How do the groups differ?
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Explicityly stated (please specify)  
+- [x] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+**Study 1**:  
+- 2 (prime: confidence vs. doubt) x 2 (ehtnicity: White vs minority)  
+
+**Study 2**:  
+- 2 (task frame: diagnostic vs. neutral) x 2 (prime: confidence vs doubt).  
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
@@ -180,14 +223,14 @@ r_refs("r-references.bib")
 - [ ] One  
 - [ ] Two  
 - [ ] Three  
-- [ ] Four or more (please specify)  
+- [x] Four or more (please specify)  
 - [ ] Other/unclear (please specify)  
 
 ### Was the assignment of participants to interventions randomised?
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
-- [ ] Random  
+- [x] Random  
 - [ ] Quasi-random  
 - [ ] Non-random  
 - [ ] Not stated/unclear (please specify)  
@@ -197,18 +240,31 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
-- [ ] Yes (please specify)  
+- [x] Yes (please specify)  
 - [ ] No (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
 ### Study design summary 
 *In addition to answering the questions in this section, describe the study design in your own words. You may want to draw upon and elaborate the answers you have already given.*
+
+**Study 1**:  
+1. participants were told that they would be completing several computerized tasks, including an initial verbal analogy test, other basic memory and categorization tasks, including an initial verbal analogy test, other basic memory and categorization tasks, and finally a second verbal analogy test.
+2. All participants were told that the verbal analogy tests were highly predictive of performance on a variety of intelligence tests and that some people are better able to perform these tasks than others (instructions designed to elicit stereotype threat for minorities)
+3. Demographic questions, including item about their ethnicity
+4. five moderately difficult verbal analogy items that were taken from the GRE and were then asked to report the level of anxiety they were experiencing at the time
+5. Participants completed a modified working memory task that contained sentences designed to prime either confidence or doubt
+6. followed by a questionnaire that included a manipulation check of stereotype threat
+7. were informed that they were not completing the second part of the verbal analogy test
+8. debriefing  
+
+**Study 2**:  
+- same as Study 1, except that the central task in this study was either described as a maths test or a problem-solving task  
 
 ## Methods - Sampling strategy
 
@@ -216,22 +272,32 @@ r_refs("r-references.bib")
 *Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.*
 
 - [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:  
+- minorities under stereotype threat  
+
+**Study 2**:  
+- women under maths stereotype threat.  
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:  
+- participants were considered eligible for the study if they reported on a pretest having knowledge of the stereotype that Whites are perceived to be more intelligent than stigmatized minorities in society.
+
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
 
 - [ ] Not applicable (no sampling frame)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
 
@@ -240,7 +306,7 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -248,15 +314,23 @@ r_refs("r-references.bib")
 *e.g. letters of invitation, telephone contact, face-to-face contact.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- University  
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:  
+- course creit or $10  
+
+**Study 2**:  
+- all participants received course credit  
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
@@ -266,11 +340,11 @@ r_refs("r-references.bib")
 - [ ] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Are there any other details relevant to recruitment and consent?
 
-- [ ] No
+- [x] No
 - [ ] Yes (please specify)
 
 ## Methods - Actual sample
@@ -279,25 +353,50 @@ r_refs("r-references.bib")
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
 
-### What is the proportion of those selected for the study who actually participated in the study? 
+**Study 1**:  
+- Participants were 78 undergraduates who self-identified as White American, Hispanic American, African American, or American Indian.
+- One participant was excluded for not following instructions on the working memory task 
+- The final sample consisted of 37 academically stigmatized minorities (17 Hispanics, 16 African Americans, and 4 American Indian) and 40 Whites.
+
+**Study 2**:  
+- 116 female undergraduates who self-identified as American.  
+- Final sample consisted of 111 females (79 White, 10 Hispanic, 7 African American, 7 Asian American, 1 American Indian, and 7 unidentified)
+
+
+-### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:  
+- one was excluded for not following instructions on the working memory task  
+- 77 out of 78  
+
+**Study 2**:  
+- Three participants were excluded for not following instructions on the working memory task
+- Two additional participants with working memory scores over 3 SD above the mean were also excluded
+- 111 out of 116  
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
-- [ ] Implicit (please specify)
+- [x] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:  
+- US 
+
+**Study 2**:  
+- US 
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -308,7 +407,7 @@ r_refs("r-references.bib")
 - [ ] 11 to 16
 - [ ] 17 to 20
 - [ ] 21 and over
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the socio-economic status of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -316,15 +415,21 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:  
+- 17 Hispanics, 16 African Americans, 4 American Indian, 40 Whites  
+
+**Study 2**:   
+- 79 White, 10 Hispanic, 7 African American, 7 Asian American, 1 American Indian, 7 unidentified  
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,14 +437,14 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
@@ -347,7 +452,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Not applicable (no sampling frame)
 - [ ] High (please specify)
-- [ ] Medium (please specify)
+- [x] Medium (please specify)
 - [ ] Low (please specify)
 - [ ] Unclear (please specify)
 
@@ -355,7 +460,7 @@ r_refs("r-references.bib")
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -363,7 +468,7 @@ r_refs("r-references.bib")
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -371,7 +476,7 @@ r_refs("r-references.bib")
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -380,6 +485,16 @@ r_refs("r-references.bib")
 ### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
 
 - [ ] Details
+
+**Study 1**:  
+- demographics  -> a and b
+- working memory test -> b
+- anxiety measure -> b  
+
+**Study 2**:  
+- see study 1
+
+
 
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -404,9 +519,27 @@ r_refs("r-references.bib")
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:  
+*Anxiety*:
+- rated the extent to which they felt agitated, anxious, nervous, uneasy, and worried after completing the initial five verbal analogy items 
+- 7 point scale
+
+*Working memory*:
+- Adapted from the Reading Span Test (Daneman & Carpenter, 1980)
+- Modified so that one sentence in each of hte 12 sets contained either a confidence- or doubt-related word (e.g., "I am very confident/doubtful that our team will win the big game tonight")
+
+*Manipulation check for stereotype threat*:
+- rated their agreement on a 7-point scale with the two statements:
+- "Thoughts of my ethnic group occurred frequently on my mind when I was working on the verbal IQ test"
+- "I am concerned that the researcher will judge people of my race/ethnicity based on my performance if I did not do well on today's IQ test."
+
+**Study 2**:  
+- see study 1
+
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -456,9 +589,42 @@ r_refs("r-references.bib")
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+**Study 1**:  
+*Manipulation check for stereotype threat*:
+- Responses to the two items were averaged to create an index of ethnicity-based evaluation concern. 
+- 2 (prime) x 2 (ethnicity) ANOVA was conducted on our measure of ethnicity-based evaluation concerns  
+*Anxiety*:
+- 2 (prime) x 2 (ethnicity) ANOVA was performed on the self-reported anxiety scores  
+*Working memory*:
+Sentence reading time:
+   - 2 (ethnicity) x 2 (prime condition) x 2 (sentence type: prime vs neutral) ANOVA (with sentence type as a within-subjects factor)  
+Word recall:  
+   - series of hierarchical regression analyses (Aiken & West, 1991)
+   - The ethnicity of the participants, the type of prime they received, and the centred anxiety variable were entered in the first step of the model
+   - The two-way interaction variables (e.g. Anxiety x Prime) were entered in the second step of the model, and the three-way interaction variable was entered in the last step.  
+   
+
+**Study 2**:  
+*Manipulation check for stereotype threat*:
+- 2 (prime) x (task frame) ANOVA was conducted on participants' rating of concern that the researcher would judge women's abilities based on their personal performance  
+*Anxiety Ratings*:
+- 2 (prime) x 2 (task frame) ANOVA was conducted on participants' self-reported anxiety scores  
+- simple effects tests  
+*Working memory*:  
+Time spent reading sentences:
+   - 2 (task frame) x 2 (prime) x 2 (sentence type) ANOVA (with sentence type as a within subjects factor) was conducted on the average time participants spent reading aloud confidence/doubt versus sentences in the working memory task  
+Word recall:
+   - Hierarchical regression analysis
+   - Working memory scores were regressed on task frame, prime, and the entered anxiety variable on Step 1, the two-way interactions between these predictions on Step 2, and the three-way interaction variable on Step 3.
+   - simple interaction analyses
+   - simple slope analyses  
+
+
+   
 
 ### Which statistical methods, if any, were used in the analysis?
 
@@ -506,37 +672,110 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+**Study 1 and 2**:  
+- figure
+- in text
+
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+**Study 1**:  
+*Manipulation Check of Stereotype Threat*:  
+- As predicted, minority students were more concerned about their performance reflecting on their group than were Whites.  
+*Anxiety*:
+- ANOVa yielded no main effect for prime or a Prime x Ethnicity interaction
+- There was, however, a marginal main effect for ethnicity
+- Minorities reported marginally higher levels of anxiety compared to Whites 
+- Thus, the stereotype threat manipulation engendered some feelings of anxiety among minority participants.  
+*Working memory*:  
+Sentence reading time:
+   - ANOVA yielded no main effects or interactions
+   - Thus, participants read the neutral sentences at the same pace as the prime sentences  
+Word recall:
+   - main effect for anxiety
+   - main effect was qualified by the predicted two-way interaction between anxiety and the type of prime
+   - Anxiety predicted lower working memory scores in the doubt condition but not in the confidence condition
+   - at 1 SD above mean of anxiety, those primed with doubt had significantly lower working memory scores than those primed with confidence
+   - Pattern was reversed at 1 SD below the mean of anxiety
+   - No other effects were significant including the three-way interaction among ethnicity, prime type, and anxiety
+   - Lack of prime main effect suggests that thoughts of doubt (vs. confidence) did not promote cognitive interference overall and that the lack of a significant three-way interaction with ethnicity reveals that the moderated pattern observed was not significantly different between White and minority participants.  
+   
+
+**Study 2**:  
+*Manipulation Check of Stereotype Threat*:  
+- Women led to believe that they would be taking a diagnostic maths test reported more concern about how their gender would be evaluated compared with women in the neutral condition
+- No other effects were significant
+- Manipulation of stereotype threat was effective in eliciting group-based performance concerns  
+*Anxiety Ratings*:  
+- ANOVA produced an unexpected interaction
+- Although the simple effects tests were not significant, women subsequently assigned to the doubt prime condition reported somewhat more anxiety in the diagnostic condition compared to the neutral condition
+- Anxiety ratings were reversed between the diagnostic and neutral conditions among women subsequently assigned to receive confidence primes
+- As our primary hypothesis concerns the relationship that these anxiety ratings have with working memory, rather than simple mean differences in working memory between the four conditions, these initial condition differences in anxiety are partialed out of our analysis of working memory, minimizing any effect they could have.  
+*Working memory*:  
+Time spent reading sentences:  
+   - ANOVA revealed no significant main effect or interactions  
+Word recall:  
+   - Analysis revealed no significant main effects or two-way interactions
+   - the predicted three-way interaction among task frame, prime, and anxiety level was significant
+   - Simple interaction analyses revealed that the Anxiety x Prime interaction observed in Study 1 was only significant in the diagnostic task frame condition and was not significant in the neutral task frame condition
+   - Simple slope analyses within the diagnostic task frame condition further revealed that at 1 SD above the mean of anxiety, women primed with doubt had significantly lower working memory scores compared with women primed with confidence.
+   - At 1 SD below the mean of anxiety, the prime manipulation had no effect on working memory
+   - In addition, within the diagnostic task frame condition, women primed with doubt who reported higher levels of anxiety tended to have lower working memory scores compared with women who reported lower levels of anxiety
+   - This pattern was reversed but was not significant among women who received confidence primes
+   - Thus, consistent with our hypothesis, primed thoughts of doubt significantly altered the relationship between anxiety and working memory, but only among women expecting to take a diagnostic maths test.
+   
+   
+   
+   
+   
+   
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
+
+**Study 1**:  
+Results supported our hypothesis that although individuals vary in the degree to which they experience anxiety in an intellectually threatening environment, the valence of their thoughts can alter whether that anxiety predicts cognitive impairments
+- When individuals experience heightened anxiety in an intellectual performance situation, they subsequently exhibit lower working memory but only when primed with thoughts of doubt 
+- By comparison, anxiety did not predict lower working memory when participants had been primed with thoughts of confidence
+- This occurred regardless of ethnicity of participant, suggesting that metacognitive processes might play a general role in self-relevant performance situations, such as high-stakes intellectual testing
+
+
+**Study 2**:  
+Results replicated findings in Study 1 with a different stigmatized group.
+Primed thoughts of confidence or doubt moderated the relationships that anxiety had with women's working memory only when women were placed in a stereotype-threatening environment.
+Specifically, women who experienced higher levels of anxiety under stereotype threat exhibited somewhat lower working memory when they were primed with doubt.
+Conversely, priming women with confidence buffered them from this relationship under stereotype threat.
+However, when the situation was framed in a less self-relevant way, anxiety did not predict women's working memory.
+Presumably, this less threatening frame did not promote the level of self-evaluation required to elicit metacognitive interpretation of anxiety in light of primed thoguhts of doubt.  
+
 
 ## Quality of the study - Reporting 
 
