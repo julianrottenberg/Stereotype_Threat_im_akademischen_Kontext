@@ -50,28 +50,43 @@ r_refs("r-references.bib")
 ### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
  
 - [ ] Not applicable (whole study is focus of data extraction)  
-- [ ] Specific focus of this data extraction (please specify)  
+- [x] Specific focus of this data extraction (please specify)  
+
+- Only Experiment 3 tests working memory capacity directly.  
 
 ## Study aim(s) and rationale
 
 ### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
 *Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- social identity and stereotype threat
+- stereotype threat and identity identification
+- effects of stereotype threat on working memory  
 
 ### Do authors report how the study was funded?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+This research was supported by National Science Foundation (NSF) Grant BCS 0601148, Institute of Education Sciences Grant R305H050004, NSF CAREER Grant DRL-0746970, and by the Lewis Endowed Professorship.
+
 
 ## Study research question(s) and its policy or practice focus
 
 ### What is/are the topic focus/foci of the study?
 
+- We sought to document how the availability of multiple social identities impacts the cognitive substrates governing maths problem solving.
+- In the present experiment, we examined whether those in the mulitple-identities condition, who receive both college student and gender stereotypes, might not experience the compromises of working memory typically observed when women's gender stereotypes are available.
+
+
 ### What is/are the population focus/foci of the study?
+
+- women under stereotype threat  
 
 ### What is the relevant age group? 
 
@@ -81,12 +96,12 @@ r_refs("r-references.bib")
 - [ ] 11 - 16  
 - [ ] 17 - 20  
 - [ ] 21 and over  
-- [ ] Not stated/unclear  
+- [x] Not stated/unclear  
 
 ### What is the sex of the population focus/foci?
 
 - [ ] Not applicate (focus not learners)  
-- [ ] Female only  
+- [x] Female only  
 - [ ] Male only  
 - [ ] Mixed sex  
 - [ ] Not stated/unclear  
@@ -112,25 +127,36 @@ r_refs("r-references.bib")
 
 ### In Which country or cuntries was the study carried out?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- United States  
 
 ### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
 
 ### What are the study reserach questions and/or hypotheses?
 *Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+We expected that participants in the gender identity condition would show poorer working memory capacity presumably because of intrusive thoughts and verbal ruminations associated with being under stereotype threat, which, in turn, would impair maths performance.  
+In this condition, gender identity should be accessible (see Experiment 2) as well as the imbalance between concepts of self, group, and ability domain.  
+However, we expected participants in the multiple-identities condition, because of their greater identification with being a college students, would show no relative decrements in working memory capacity because the accessibility of the college student identity would presumably reduce intrusive thoughts and worries about the stereotype that women are bad at maths.  
+This should result in consonance between propositions about the self, group, and ability domain, and thus maths performance should not suffer.  
+Those in the control condition and in the college identity condition are also expected to show relatively better maths performance than the gender identity condition (replacing Experiment 1 and 2) and not reveal compromised working memory capacity because gender stereotyepes were not made salient to them.  
 
 ## Methods - Design
 
 ### Which variables or concepts, if any, does the study aim to measure or examine?
 
-- [ ] Explicitly stated (please specify)  
+- [x] Explicitly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- Working memory task
+- maths performance  
 
 
 ### Study timing
@@ -140,7 +166,7 @@ r_refs("r-references.bib")
 *If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.*  
 *If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.*  
 
-- [ ] Cross-sectional  
+- [x] Cross-sectional  
 - [ ] Retrospective  
 - [ ] Prospective  
 - [ ] Not stated/unclear (please specify)  
@@ -161,7 +187,7 @@ r_refs("r-references.bib")
 *Please give further details where possible.*
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
 - [ ] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
 - [ ] Other (please specify)  
 - [ ] Not stated/unclear (please specify)  
@@ -169,9 +195,11 @@ r_refs("r-references.bib")
 ### How do the groups differ?
 
 - [ ] Not applicable (not more than one group)  
-- [ ] Explicityly stated (please specify)  
+- [x] Explicityly stated (please specify)  
 - [ ] Implicit (please specify)  
 - [ ] Not stated/unclear (please specify)  
+
+- 2 (college student stereotype: absent vs present) x 2 (gender stereotype: absent vs present) between-subjects factorial design.  
 
 ### Number of groups
 *For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g. social class, or form size), or the number of groups allocated to, or receiving, an intervention.*
@@ -180,14 +208,14 @@ r_refs("r-references.bib")
 - [ ] One  
 - [ ] Two  
 - [ ] Three  
-- [ ] Four or more (please specify)  
+- [x] Four or more (please specify)  
 - [ ] Other/unclear (please specify)  
 
 ### Was the assignment of participants to interventions randomised?
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicate (no prospective allocation)  
-- [ ] Random  
+- [x] Random  
 - [ ] Quasi-random  
 - [ ] Non-random  
 - [ ] Not stated/unclear (please specify)  
@@ -197,50 +225,61 @@ r_refs("r-references.bib")
 
 - [ ] Not applicable (not more than one group)  
 - [ ] Not applicable (no prospective allocation)  
-- [ ] Yes (please specify)  
+- [x] Yes (please specify)  
 - [ ] No (please specify)  
 - [ ] Not stated/unclear (please specify)  
 
 ### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
 
-- [ ] Yes
+- [x] Yes
 - [ ] No
 - [ ] Can’t tell
 
 ### Study design summary 
 *In addition to answering the questions in this section, describe the study design in your own words. You may want to draw upon and elaborate the answers you have already given.*
 
+ 1. seated at a computer in a private room
+ 2. received instructions to manipulate the availability of stereotypes for college students and women regarding maths performance
+ 3. completed a working memory task
+ 4. difficult maths problems  
+
 ## Methods - Sampling strategy
 
 ### Are the authors trying to produce findings that are representative of a given population? 
 *Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- Women under maths-gender stereotype threat  
 
 ### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
 *e.g. telephone directory, electoral register, postcode, school listing, etc. There may be two stages – e.g. first sampling schools and then classes or pupils within them.*
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- University  
 
 ### Which methods does the study use to select people or groups of people (from the sampling frame)?
 *e.g. selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.*
 
 - [ ] Not applicable (no sampling frame)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- gender -> females  
 
 ### Planned sample size
 *If more than one group please give details for each group separately.*
 
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ## Methods - Recruitment and consent
 
@@ -250,13 +289,15 @@ r_refs("r-references.bib")
 - [ ] Not applicable (please specify)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Were any incentives provided to recruit people into the study?
 
 - [ ] Not applicable (please specify)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Not stated/unclear (please specify)
+
+- research credit  
 
 ### Was consent sought?
 *Please comment on the quality of consent if relevant.*
@@ -266,11 +307,11 @@ r_refs("r-references.bib")
 - [ ] Parental consent sought
 - [ ] Other consent sought
 - [ ] Consent not sought
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Are there any other details relevant to recruitment and consent?
 
-- [ ] No
+- [x] No
 - [ ] Yes (please specify)
 
 ## Methods - Actual sample
@@ -279,9 +320,11 @@ r_refs("r-references.bib")
 *If more than one group is being compared please give numbers for each group.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+Female (N = 57) undergraduates at the University of Missouri  
 
 ### What is the proportion of those selected for the study who actually participated in the study? 
 *Please specify numbers and percentages if possible.*
@@ -289,7 +332,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Which country/countries are the individuals in the actual sample from?
 *If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.*
@@ -297,7 +340,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What ages are covered by the actual sample?
 *Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g. for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.*
@@ -308,7 +351,7 @@ r_refs("r-references.bib")
 - [ ] 11 to 16
 - [ ] 17 to 20
 - [ ] 21 and over
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the socio-economic status of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -316,7 +359,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is the ethnicity of the individuals within the actual sample?
 *If more than one group is being compared, please describe for each group.*
@@ -324,7 +367,7 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### What is known about the special educational needs of individuals within the actual sample?
 *e.g. specific learning, physical, emotional, behavioural, intellectual difficulties.*
@@ -332,21 +375,21 @@ r_refs("r-references.bib")
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### Is there any other useful information about the study participants?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Explicitly stated (please specify no/s.)
 - [ ] Implicit (please specify)
-- [ ] Not stated/unclear (please specify)
+- [x] Not stated/unclear (please specify)
 
 ### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
 *Please specify basis for your decision.*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
 - [ ] Not applicable (no sampling frame)
-- [ ] High (please specify)
+- [x] High (please specify)
 - [ ] Medium (please specify)
 - [ ] Low (please specify)
 - [ ] Unclear (please specify)
@@ -355,7 +398,7 @@ r_refs("r-references.bib")
 *If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g. for a useful table).*
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear
@@ -363,7 +406,7 @@ r_refs("r-references.bib")
 ### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Not applicable (no drop outs)
 - [ ] Yes (please specify)
 - [ ] No
@@ -371,7 +414,7 @@ r_refs("r-references.bib")
 ### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
 
 - [ ] Not applicable (e.g. study of policies, documents, etc)
-- [ ] Not applicable (not following samples prospectively over time)
+- [x] Not applicable (not following samples prospectively over time)
 - [ ] Yes (please specify)
 - [ ] No
 
@@ -380,6 +423,11 @@ r_refs("r-references.bib")
 ### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
 
 - [ ] Details
+
+- demographics -> a
+- maths problem performance -> b
+- stereotype threat manipulation -> b
+- Working memory task performance -> b
 
 ### Which methods were used to collect the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -404,9 +452,16 @@ r_refs("r-references.bib")
 ### Details of data collection methods or tool(s).
 *Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
+
+*Working memory*: 
+- shorted version of the verbal ("vowel counting") task used by Schmader and Johns (2003; modelled after Turner & Engle, 1989)  
+
+*Maths problem*:
+- 10 maths problems, selected from the 15 used in Experiment 1)
+- Maths problems in Experiment 1 modelled after those used on standardized tests, and used in past stereotype threat research (Schmader & Johns, 2003)  
 
 ### Who collected the data?
 *Please indicate all that apply and give further detail where possible.*
@@ -456,13 +511,27 @@ r_refs("r-references.bib")
 ### Which methods were used to analyse the data?
 *Please give details e.g. for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.*
 
-- [ ] Explicitly stated (please specify)
+- [x] Explicitly stated (please specify)
 - [ ] Implicit (please specify)
 - [ ] Not stated/unclear (please specify)
 
 ### Which statistical methods, if any, were used in the analysis?
 
 - [ ] Details
+
+*Maths performance*:
+- ANOVA on the number of maths problems answered correctly
+- Simple effects analyses   
+
+*Working memory capacity*:
+- The number of words correctly recalled on the working memory task in a 2 x 2 ANOVA 
+- Simple effects analyses
+- Examined the accuracy of vowel counting in a 2 x 2 ANOVA  
+
+*Mediational analyses*:
+-multiple regression analyses to examine the mediational role of working memory capacity for the relation between the college student and gender stereotypes interaction and maths performance
+- the conditions necessary to conduct mediational analyses were met
+- Sobel test   
 
 ### What rationale do the authors give for the methods of analysis for the study?
 *e.g. for their methods of sampling, data collection, or analysis.*
@@ -506,79 +575,114 @@ r_refs("r-references.bib")
 
 - [ ] Details
 
+- in text 
+- table 
+- figure  
+
 ### What are the results of the study as reported by authors?
 *Please give details and refer to page numbers in the report(s) of the study where necessary (e.g. for key tables).*
 
 - [ ] Details
 
+*Maths performance*:
+- ANOVA revealed the anticipated two-way interaction
+- Simple effects analyses revealed that when participants were not given gender stereotypes, performance was equally strong regardless of the presentation of college student stereotypes.
+- When participants were given the gender stereotype, those who received college student stereotypes performed better than those who did not receive college student stereotypes
+- Consistent with Experiments 1 - 2, maths performance in the gender identity condition was significantly poorer than in the three other conditions, which did not differ from one another.  
+
+*Working memory capacity*:
+- ANOVA revealed a significant interaction 
+- Simple effects analyses showed that when participants were not given gender stereotypes, working memory capacity (as assessed by the number of words recalled) did not differ as a function of the presentation of college student stereotypes
+- When given gender stereotypes, those who did not receive college student stereotypes (i.e., multiple-identities condition) recalled fewer words than those who received college student stereotypes (i.e., gender identity condition)
+- Working memory capacity in the gender identity condition was significantly lower than in the three other conditions, which did not differ from one another.
+- Thus, the condition in which the poorest maths problem performance was produces (i.e., the gender identity condition) was also the condition in which the lowest working memory capacity was revealed as assessed by the word recall analyses.
+- We also examined hte accuracy of vowel counting in a 2 x 2 ANOVA, which revealed no significant effects.  
+
+*Mediational analyses*:
+- The independent variable (i.e., the interaction between college student and gender stereotype manipulations) mad a unique contribution in predicting the dependent variable (i.e, maths performance) when the main effect of college student and gender stereotypes were included in the regression equation
+- Also, the independent variable (the interaction term) made a unique contribution in predicting the mediator variable (i.e., working memory capacity) when the main effects of positive and negative stereotypic information were statistically controlled
+- In addition, the mediator variable also predicted the dependent variable
+- Thus, participants had their maths performance simultaneously regressed on the manipulation of college student stereotypes, the manipulation of gender stereotypes, the interaction of these manipulations, and on working memory capacity.
+- This multiple regression revealed that when working memory capacity was included, the relation between the interaction of college student and gender stereotypes and maths performance was no longer significant.
+- A Sobel test demonstrated that working memory capacity accounted for a significant amount of variance in the relation between maths performance and the interaction between college student and gender stereotypes
+- Thus, working memory full mediated the relation between maths performance and the interaction between college student and gender stereotypes.
+
+
 ### Was the precision of the estimate of the intervention or treatment effect reported?
    - CONSIDER:
      - Were confidence intervals (CIs) reported?
    - [ ] Yes
-   - [ ] No
+   - [x] No
    - [ ] Can’t tell
+   
 ### Are there any obvious shortcomings in the reporting of the data?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
 *This excludes variables just used to describe the sample.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No
 
 ### Do the authors state where the full original data are stored?
 
 - [ ] Yes (please specify)
-- [ ] No
+- [x] No
 
 ### What do the author(s) conclude about the findings of the study?
 *Please give details and refer to page numbers in the report of the study where necessary.*
 
 - [ ] Details
 
+Experiment 3 further elucidated the processes by which the availability of a social identity associated with positive stereotypes eradicates the impact of a social identity associated with a negative stereotype.
+Concurrently providing women with two applicable social identities, one associated with positive stereotypes in a performance domain (i.e., college students are good at maths) and one associated with negative stereotypes in a performance domain (i.e., women are bad at maths; the typical condition that evokes stereotype threat), once again eliminated the averse impact on performance typically seen in stereotype threat research.  
+Specifically, when the social identity available to these women was associated with a negative performances stereotype, their working memory capacity was compromised, and performance suffered.
+However, the availability of an additional identity associated with positive performance did not lead to working memory depletion, and accordingly, performance did not suffer despite the fact that one's gender was also highlighted.
+Thus, Experiments 2 and 3 show the processes, both in terms of social identity accessibility and working memory capacity through which stereotype threat for women in a maths task can be eliminated by introducing an additional social identity associated with a positive performance.  
+
 ## Quality of the study - Reporting 
 
 ### Is the context of the study adequately described?
 *Consider your answer to questions: Why was this study done at this point in time, in those contexts and with those people or institutions? (Section B question 2) Was the study informed by or linked to an existing body of empirical and/or theoretical research? (Section B question 3) Which of the following groups were consulted in working out the aims to be addressed in the study? (Section B question 4) Do the authors report how the study was funded? (Section B question 5) When was the study carried out? (Section B question 6)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Are the aims of the study clearly reported?
 *Consider your answer to questions: What are the broad aims of the study? (Section B question 1) What are the study research questions and/or hypotheses? (Section C question 10)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
 *Consider your answer to all questions in Methods on ‘Sampling Strategy’, ‘Recruitment and Consent’, and ‘Actual Sample’.*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the methods used in the study to collect data?
 *Consider your answer to the following questions in Section I: Which methods were used to collect the data? Details of data collection methods or tools Who collected the data? Do the authors describe the setting where the data were collected? Are there other important features of the data collection procedures?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is there an adequate description of the methods of data analysis?
 *Consider your answer to the following questions in Section J: Which methods were used to analyse the data? What statistical methods, if any, were used in the analysis? Who carried out the data analysis?*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Is the study replicable from this report?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Do the authors avoid selective reporting bias?
 *(e.g. do they report on all variables they aimed to study as specified in their aims/research questions?)*
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ## Quality of the study - Methods and data
@@ -586,47 +690,51 @@ r_refs("r-references.bib")
 ### Are there ethical concerns about the way the study was done?
 *Consider consent, funding, privacy, etc.*
 
-- [ ] Yes, some concerns (please specify)
+- [x] Yes, some concerns (please specify)
 - [ ] No concerns
+
+- consent was not mentioned.  
 
 ### Were students and/or parents appropriately involved in the design or conduct of the study?
 
-- [ ] Yes, a lot (please specify)
+- [x] Yes, a lot (please specify)
 - [ ] Yes, a little (please specify)
 - [ ] No (please specify)
 
 ### Is there sufficient justification for why the study was done the way it was?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### Was the choice of research design appropriate for addressing the research question(s) posed?
 
-- [ ] Yes (please specify)
+- [x] Yes (please specify)
 - [ ] No (please specify)
 
 ### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
 *e.g. (1) In an evaluation, was the process by which participants were allocated to or otherwise received the factor being evaluated concealed and not predictable in advance? If not, were sufficient substitute procedures employed with adequate rigour to rule out any alternative explanations of the findings which arise as a result? e.g. (2) Was the attrition rate low and if applicable similar between different groups?*
 
 - [ ] A lot (please specify)
-- [ ] A little (please specify)
+- [x] A little (please specify)
 - [ ] Not at all (please specify)
 
 ### How generalisable are the study results?
 
 - [ ] Details
 
+- very for women under maths stereotype threat  
+
 ### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
 *In some studies it is difficult to distinguish between the findings of the study and the conclusions. In those cases please code the trustworthiness of this combined results/conclusion.** Please remember to complete the weight of evidence questions B-D which are in your review specific data extraction guidelines. ***
 
-- [ ] High trustworthiness (please specify)
+- [x] High trustworthiness (please specify)
 - [ ] Medium trustworthiness (please specify)
 - [ ] Low trustworthiness (please specify)
 
 ### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
 
 - [ ] Not applicable (results and conclusions inseparable)
-- [ ] High trustworthiness
+- [x] High trustworthiness
 - [ ] Medium trustworthiness
 - [ ] Low trustworthiness
     
