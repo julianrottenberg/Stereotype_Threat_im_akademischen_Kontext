@@ -1,0 +1,641 @@
+---
+title             : "@jonczykHowStereotypeThreat2022"
+shorttitle        : "@jonczykHowStereotypeThreat2022"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h1.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Not applicable (whole study is focus of data extraction)  
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was informed by existing research on stereotype threat, creative thinking, and EEG alpha power. The authors cite numerous studies linking alpha power to creative ideation and discussing the effects of stereotype threat on academic performance.
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)  
+
+The study was funded by grants from the National Science Foundation and the Foundation for Polish Science, as stated in the Acknowledgments section.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on how stereotype threat affects neural and behavioral indices of creative thinking in female engineering students.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is female undergraduate engineering students.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+
+The mean age of participants was 19.1 years (SD = 0.89).
+
+### What is the sex of the population focus/foci?
+
+- [x] Female only  
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in the United States at a large American university.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examines how exposure to stereotype threat affects creative thinking in female engineering students, as measured by EEG alpha power and behavioral performance on two creative thinking tasks (Alternate Uses Task and Utopian Situations Task).
+
+### What are the study reserach questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The study aimed to address whether, and if so how, exposure to a stereotype threat impacts the neural and behavioral correlates of creative thinking in female engineering students.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study measures:
+1. EEG alpha power (8-12 Hz) during creative thinking tasks
+2. Behavioral performance on creative thinking tasks (idea originality and fluency)
+3. Effects of stereotype threat on these measures
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study examined participants at a single time point, with measurements taken before and after a stereotype threat manipulation within the same session.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Before and after  
+
+EEG and behavioral measurements were taken both before and after the stereotype threat manipulation.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
+
+The study compared the same group of participants before and after exposure to stereotype threat.
+
+### How do the groups differ?
+
+- [x] Explicitly stated (please specify)  
+
+The groups differ in their exposure to stereotype threat (pre-threat vs. post-threat).
+
+### Number of groups
+
+- [x] Two  
+
+Pre-threat and post-threat conditions.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Not applicable (not more than one group)  
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not applicable (not more than one group)  
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+### Study design summary 
+
+This study used a within-subjects design where female engineering students completed creative thinking tasks while EEG was recorded. Participants completed tasks before and after exposure to a stereotype threat manipulation. The study compared neural (EEG alpha power) and behavioral (idea originality and fluency) measures of creative thinking between pre-threat and post-threat conditions.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Implicit (please specify)
+
+The authors do not explicitly state that they are trying to produce representative findings, but they focus on female engineering students, a population vulnerable to stereotype threat in STEM fields.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide details on how participants were identified or recruited.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide details on the selection methods.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)
+
+The planned sample size is not reported.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The recruitment methods are not described in the paper.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)  
+
+Participants were compensated with either course credit or money.
+
+### Was consent sought?
+
+- [x] Participant consent sought
+
+The paper states that participants gave informed consent.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)  
+
+23 female undergraduate students majoring in engineering (22 for EEG analyses).
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+This information is not provided in the paper.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)  
+
+The participants were from the United States.
+
+### What ages are covered by the actual sample?
+
+- [x] 17 to 20
+
+Mean age = 19.1 years (SD = 0.89)
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The socio-economic status of participants is not reported.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The ethnicity of participants is not reported.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+No information is provided about special educational needs.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+All participants were right-handed native speakers of English, had normal or corrected-to-normal vision, and reported no history of neurological impairment.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+The representativeness of the sample is unclear as the sampling frame and recruitment methods are not described.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main types of data collected were:
+(a) To define the sample: demographic information, handedness, language history
+(b) To measure aspects of the sample as findings: EEG recordings, behavioral performance on creative thinking tasks (idea originality and fluency), questionnaire responses (Stereotype Vulnerability Scale, self-efficacy scale, Big Five Inventory)
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Psychological test
+- [x] Other (please specify)
+
+EEG recordings, behavioral tasks (Alternate Uses Task and Utopian Situations Task)
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+EEG was recorded using a 31-channel cap with Ag/AgCl electrodes. Behavioral data was collected using E-prime software for the Alternate Uses Task and Utopian Situations Task. Questionnaires included the Stereotype Vulnerability Scale, self-efficacy scale, and Big Five Inventory.
+
+### Who collected the data?
+
+- [x] Researcher
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors report inter-rater reliability for originality ratings (ICC_AUT = 0.64; ICC_UST = 0.74).
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors used established tasks (AUT and UST) and questionnaires (SVS, self-efficacy scale, Big Five Inventory) with known psychometric properties.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] No (please specify)
+
+The stereotype threat manipulation was delivered openly to participants.
+
+### Where were the data collected?
+
+- [x] Explicitly stated (please specify)
+
+Data were collected in a dimly lit and sound-attenuated booth.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+EEG data were collected continuously during task performance. Verbal responses were recorded using E-prime software.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+Behavioral data were analyzed using repeated measures ANOVAs. EEG data were analyzed using time-frequency decomposition, independent component analysis, and repeated measures ANOVAs.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+Repeated measures ANOVAs, correlational analyses, independent component analysis, time-frequency decomposition
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors state that their methods are modeled after previous work in the field of creative ideation and EEG analysis.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not applicable (not an evaluation study with prospective allocation)
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors report using established EEG analysis methods and software (EEGLAB, DIPFIT).
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors used multiple analysis approaches (sensor-level and independent component analysis) to validate their findings.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors included control analyses to rule out time-on-task effects.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors conducted analyses on both lower (8-10 Hz) and upper (10-12 Hz) alpha bands and compared results across sensor-level and independent component analyses.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+The authors used a Greenhouse-Geisser correction where applicable and adjusted p-values for post-hoc comparisons using the Holm correction.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented through text descriptions, statistical test results, and figures showing EEG topographies and time-frequency plots.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+The main findings were:
+1. Increased alpha power (both lower and upper bands) after stereotype threat exposure
+2. No significant changes in behavioral performance (idea originality or fluency) after stereotype threat
+3. No significant correlations between alpha power and behavioral measures
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] Yes
+
+95% confidence intervals were reported for behavioral measures and some EEG results.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all variables mentioned in their aims: EEG alpha power, behavioral performance on creative thinking tasks, and the effects of stereotype threat on these measures.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that stereotype threat increased alpha power during creative ideation, possibly reflecting increased internal attention. However, this increase in alpha power was not associated with improvements in creative performance. The authors suggest that stereotype threat may have decoupled alpha power from creative thinking outcomes.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide a thorough background on stereotype threat, creative thinking, and the relevance of studying female engineering students.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims are clearly stated: to examine how stereotype threat affects neural and behavioral indices of creative thinking in female engineering students.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+While the sample characteristics are described, there is no information on how participants were identified or recruited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The EEG recording setup, behavioral tasks, and questionnaires are described in detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The data analysis methods for both behavioral and EEG data are described in detail.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The methods and analyses are described in sufficient detail to allow replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all variables mentioned in their aims and hypotheses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+The study received IRB approval and obtained informed consent from participants.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no mention of student or parent involvement in the study design or conduct.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide a clear rationale for studying stereotype threat effects on creative thinking in female engineering students.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The within-subjects design with pre- and post-threat measurements was appropriate for examining the effects of stereotype threat on creative thinking.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The study controlled for time-on-task effects, but other potential confounds (e.g., practice effects) were not explicitly addressed.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may be generalizable to female engineering students in similar cultural contexts, but the small sample size and lack of information on participant demographics limit broader generalizability.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods and analyses, but the small sample size and lack of information on recruitment limit its trustworthiness. The findings can be trusted to some extent in answering the study questions, but should be interpreted with caution.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors provide a detailed discussion of their findings in relation to existing literature. However, they could have been more cautious in their interpretations given the lack of significant behavioral effects and the small sample size.
+
+# @wellsNewcastleottawaScaleNOS2014
+
+## **CASE CONTROL STUDIES**
+
+This section is not applicable as the study is not a case-control design.
+
+## **COHORT STUDIES**
+
+This section is not applicable as the study is not a cohort design.
+
+# @universityofglasgowCriticalAppraisalChecklistn.d.nodate
+
+## DOES THIS REVIEW ADDRESS A CLEAR QUESTION?
+
+### Did the review address a clearly focussed issue?
+- Was there enough information on:
+  - The population studied
+  - The intervention given
+  - The outcomes considered
+- [x] Yes
+
+The study clearly defined the population (female engineering students), intervention (stereotype threat), and outcomes (EEG alpha power and creative thinking performance).
+
+### Did the authors look for the appropriate sort of papers?
+- The 'best sort of studies' would:
+  - Address the review's question
+  - Have an appropriate study design
+- [x] Can't tell
+
+This question is not applicable as this is a primary study, not a review.
+
+## ARE THE RESULTS OF THIS REVIEW VALID?
+
+### Do you think the important, relevant studies were included?
+- Look for:
+  - Which bibliographic databases were used
+  - Follow up from reference lists
+  - Personal contact with experts
+  - Search for unpublished as well as published studies
+  - Search for non-English language studies
+- [x] Can't tell
+
+This question is not applicable as this is a primary study, not a review.
+
+### Did the review's authors do enough to assess the quality of the included studies?
+- The authors need to consider the rigour of the studies they have identified. Lack of rigour may affect the studies results.
+- [x] Can't tell
+
+This question is not applicable as this is a primary study, not a review.
+
+### If the results of the review have been combined, was it reasonable to do so?
+- Consider whether:
+  - The results were similar from study to study
+  - The results of all the included studies are clearly displayed
+  - The results of the different studies are similar
+  - The reasons for any variations are discussed
+- [x] Can't tell
+
+This question is not applicable as this is a primary study, not a review.
+
+## WHAT ARE THE RESULTS?
+
+### What is the overall result of the review?
+- Consider:
+  - If you are clear about the review's 'bottom line' results
+  - What these are (numerically if appropriate)
+  - How were the results expressed (NNT, odds ratio, etc)
+
+The main results of this primary study are:
+1. Increased alpha power (both lower and upper bands) after stereotype threat exposure
+2. No significant changes in behavioral performance (idea originality or fluency) after stereotype threat
+3. No significant correlations between alpha power and behavioral measures
+
+Results were expressed as F-statistics from ANOVAs and correlation coefficients.
+
+### How precise are the results?
+- Are the results presented with confidence intervals?
+- [x] Yes
+
+95% confidence intervals were reported for behavioral measures and some EEG results.
+
+## WILL THE RESULTS HELP LOCALLY?
+
+### Can the results be applied to the local population?
+- Consider whether:
+  - The patients covered by the review could be sufficiently different from your population to cause concern
+  - Your local setting is likely to differ much from that of the review
+- [x] Can't tell
+
+The results might be applicable to female engineering students in similar cultural contexts, but more information about the sample and setting would be needed to determine local applicability.
+
+### Were all important outcomes considered?
+- [x] Yes
+
+The study considered both neural (EEG alpha power) and behavioral (idea originality and fluency) outcomes related to creative thinking.
+
+### Are the benefits worth the harms and costs?
+- Even if this is not addressed by the review, what do you think?
+- [x] Yes
+
+The study involved minimal risk to participants and provides valuable insights into the effects of stereotype threat on creative thinking processes. The potential benefits of understanding these processes likely outweigh the costs of conducting the study.
+
+
+# References
+
+
+
+::: {#refs custom-style="Bibliography"}
+:::

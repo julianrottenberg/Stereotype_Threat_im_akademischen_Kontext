@@ -1,0 +1,576 @@
+---
+title             : "@linEffectStereotypeThreat2023a"
+shorttitle        : "@linEffectStereotypeThreat2023a"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+
+- [x] Specific focus of this data extraction (please specify)  
+
+This data extraction focuses specifically on the aspects of the study related to stereotype threat, executive functions (particularly inhibition), and spatial perspective-taking performance, which are relevant to hypothesis 2 of the preregistration.
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was explicitly linked to existing research on stereotype threat, spatial abilities, and executive functions. The authors cite numerous studies on these topics and discuss how their research builds on and extends previous findings.
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)  
+
+The study was funded by the National Nature Science Foundation of China (31200778) and the Swedish Research Council (2018-06664).
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on the effect of stereotype threat on females' spatial perspective-taking ability and the mediating role of executive functions, particularly inhibition.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is female university students.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+
+The mean age of participants in Experiment 1 was 18.36 years (SD = 1.17) and in Experiment 2 was 18.53 years (SD = 1.17).
+
+### What is the sex of the population focus/foci?
+
+- [x] Female only  
+
+The study focused exclusively on female participants.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+The participants were undergraduate students.
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in China, as indicated by the authors' affiliations and the funding source.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study is concerned with the effect of stereotype threat on females' spatial perspective-taking ability, and how this effect is mediated by executive functions, particularly inhibition. It involves manipulating stereotype threat and measuring its impact on spatial perspective-taking performance and executive function tasks.
+
+### What are the study reserach questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The study hypotheses were:
+1. Stereotype threat would impair females' spatial perspective-taking ability.
+2. Stereotype threat would negatively affect executive functions, particularly inhibition and updating.
+3. The effect of stereotype threat on spatial perspective-taking would be mediated by inhibition.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study explicitly measured:
+1. Stereotype threat (manipulated as an independent variable)
+2. Spatial perspective-taking ability (dependent variable)
+3. Executive functions: inhibition, updating, and shifting (potential mediators)
+4. Gender identification (covariate)
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study examined participants at a single point in time, with no follow-up measurements.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Only after  
+
+Measurements of spatial perspective-taking and executive functions were made after the stereotype threat manipulation.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+Participants were randomly assigned to either a stereotype threat condition or a control condition.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The groups differed in the information they received before the tasks. The stereotype threat group read a brief report stating that males have an advantage over females in spatial ability, while the control group read a neutral article about poplar trees.
+
+### Number of groups
+
+- [x] Two  
+
+There were two groups: a stereotype threat group and a control group.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random  
+
+Participants were randomly assigned to either the stereotype threat or control condition.
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not provide information on whether the allocation sequence was concealed.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+Apart from the stereotype threat manipulation, both groups underwent the same procedures and completed the same tasks.
+
+### Study design summary 
+
+This study used a between-subjects experimental design with random assignment to two conditions (stereotype threat vs. control). The independent variable was stereotype threat, manipulated through different texts read by participants. The main dependent variables were spatial perspective-taking performance and executive function measures. The study also examined the mediating role of executive functions, particularly inhibition, in the relationship between stereotype threat and spatial perspective-taking performance.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Implicit (please specify)  
+
+While not explicitly stated, the authors seem to be aiming for findings representative of female university students in China.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not provide specific information about the sampling frame or methods used to identify participants.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Explicitly stated (please specify)  
+
+The paper states that participants were "randomly recruited" for the study.
+
+### Planned sample size
+
+- [x] Explicitly stated (please specify)  
+
+The planned sample sizes were explicitly stated: 76 participants in Experiment 1 and 84 participants in Experiment 2.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)  
+
+The specific methods used to recruit participants are not described in the paper.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)  
+
+Participants were given ¥10 as compensation for their participation.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not explicitly mention obtaining consent from participants.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)  
+
+Experiment 1: 76 participants (38 in each condition)
+Experiment 2: 77 participants (40 in the stereotype threat condition, 37 in the control condition)
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not provide information on the number of people initially selected versus those who actually participated.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)  
+
+The participants were from China, as indicated by the authors' affiliations and the funding source.
+
+### What ages are covered by the actual sample?
+
+- [x] 17 to 20  
+
+The mean age of participants in Experiment 1 was 18.36 years (SD = 1.17) and in Experiment 2 was 18.53 years (SD = 1.17).
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not provide information on the socio-economic status of the participants.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not provide information on the ethnicity of the participants.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not provide information on any special educational needs of the participants.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)  
+
+All participants were female undergraduate students.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)  
+
+Without information about the sampling frame, it's unclear how representative the achieved sample was.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)  
+
+This was not a longitudinal study.
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)  
+
+This was not a longitudinal study.
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)  
+
+This was not a longitudinal study.
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main types of data collected were:
+(a) To define the sample: demographic information (age, gender)
+(b) To measure aspects of the sample as findings: 
+- Gender identification scores
+- Spatial perspective-taking test scores
+- Executive function task scores (inhibition, updating, shifting)
+- Manipulation check scores
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Self-completion report or diary
+- [x] Psychological test
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)  
+
+The study used:
+- Gender Identification Scale (adapted from the Collective Self-Esteem Scale)
+- Spatial perspective-taking test (paper-and-pencil test created by Hegarty and Waller, 2004)
+- Executive function tasks:
+  - Stroop task (inhibition)
+  - Keep track task (updating)
+  - Local-global task (shifting)
+- Manipulation check scale
+
+### Who collected the data?
+
+- [x] Not stated/unclear
+
+The paper does not specify who collected the data.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors report Cronbach's alpha for the gender identification scale (α = .71) and the manipulation check scale (α = .72 in Experiment 1, α = .66 in Experiment 2).
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors used established measures for their key variables, such as the Stroop task for inhibition and a spatial perspective-taking test created by Hegarty and Waller (2004).
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] No (please specify)
+
+The paper does not mention any concealment of study allocation from those carrying out measurements.
+
+### Where were the data collected?
+
+- [x] Explicitly stated (please specify)  
+
+The data were collected in a laboratory setting.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+All participants were tested individually.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)  
+
+The study used t-tests, ANCOVA, correlation analysis, and mediation analysis.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+The study used independent t-tests, ANCOVA (with gender identification as a covariate), Pearson correlation, and multiple mediation analysis using bootstrapping.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors justify their use of ANCOVA to control for gender identification, and their use of multiple mediation analysis to examine the mediating role of executive functions.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] 'Intervention received'
+
+The analysis was based on the conditions that participants actually received (stereotype threat or control).
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors used established statistical methods and reported effect sizes and confidence intervals for their analyses.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors used appropriate statistical techniques for their research questions and controlled for potential confounding variables (e.g., gender identification).
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors included gender identification as a covariate in their analyses to control for its potential confounding effect.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors used a multiple mediation analysis to examine the role of different executive functions in mediating the effect of stereotype threat on spatial perspective-taking.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+The authors conducted post-hoc power analyses to confirm the adequacy of their sample sizes.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+The results are presented through text descriptions, statistical test results, and a path diagram for the mediation analysis.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+The main findings were:
+1. Stereotype threat impaired females' spatial perspective-taking performance.
+2. Stereotype threat negatively affected inhibition and updating, but not shifting.
+3. Inhibition mediated the effect of stereotype threat on spatial perspective-taking performance.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] Yes
+
+The authors reported confidence intervals for their mediation analyses.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors reported on all variables specified in their research questions, including stereotype threat, spatial perspective-taking, and executive functions.
+
+### Do the authors state where the full original data are stored?
+
+- [x] Yes (please specify)
+
+The authors state that the materials and data are available on the OSF.
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that stereotype threat negatively affects females' spatial perspective-taking ability, and this effect is partially mediated by reduced inhibition. They suggest that their findings contribute to a more comprehensive understanding of stereotype threat's impact in academic contexts.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide adequate context, describing the background of stereotype threat research and its relevance to spatial abilities and executive functions.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims of the study are clearly stated in the introduction, focusing on examining the effect of stereotype threat on females' spatial perspective-taking and the mediating role of executive functions.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+While the sample size and basic demographics are reported, there is limited information on how participants were identified and recruited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The methods for data collection, including the measures and tasks used, are described in detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The statistical analyses used are clearly described, including t-tests, ANCOVA, correlation analysis, and mediation analysis.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The methods and procedures are described in sufficient detail to allow replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all variables and analyses mentioned in their research questions and hypotheses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+There are no obvious ethical concerns reported. However, it's worth noting that the paper does not explicitly mention obtaining informed consent from participants.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication that students or parents were involved in the design or conduct of the study beyond participation.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide justification for their study design, measures, and analyses based on previous research and theoretical considerations.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The experimental design with random assignment to conditions was appropriate for examining the causal effects of stereotype threat on spatial perspective-taking and executive functions.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The study controls for gender identification and uses random assignment to conditions, which helps rule out some alternative explanations. However, there could be other unmeasured variables influencing the results.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may be generalizable to female university students in China. However, generalizability to other populations or cultures is unclear and would require further research.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods and analyses, but there are some limitations in sample description and potential unmeasured variables that could affect the results.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors' conclusions are generally well-supported by their findings, but they could have discussed limitations and alternative explanations more thoroughly.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

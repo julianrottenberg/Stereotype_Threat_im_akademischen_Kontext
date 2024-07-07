@@ -1,0 +1,591 @@
+---
+title             : "@hirnsteinGenderstereotypingCognitiveSex2014"
+shorttitle        : "@hirnsteinGenderstereotypingCognitiveSex2014"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+
+- [x] Not applicable (whole study is focus of data extraction)
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)
+
+The study was informed by previous research on gender stereotypes, stereotype threat/boost effects, and the role of testosterone in cognitive sex differences. The authors cite numerous studies examining these topics.
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)
+
+The study was supported by Grants HA3285/4-1 and HI1496/1-1 of the Deutsche Forschungsgemeinschaft (DFG).
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on how gender stereotypes and group sex composition affect cognitive sex differences in mental rotation, verbal fluency, and perceptual speed tasks. It also examines the potential role of testosterone as a mediator.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is adult men and women.
+
+### What is the relevant age group? 
+
+- [x] 21 and over
+
+The mean age was 24.40 years for women and 25.56 years for men.
+
+### What is the sex of the population focus/foci?
+
+- [x] Mixed sex
+
+The study included both male and female participants.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution
+
+Participants were recruited from the Department of Psychology at Ruhr-University Bochum, Germany.
+
+### In Which country or countries was the study carried out?
+
+- [x] Explicitly stated (please specify)
+
+The study was carried out in Germany.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examines how activating gender stereotypes affects performance on cognitive tasks in mixed-sex versus same-sex groups. It looks at mental rotation, verbal fluency, and perceptual speed tasks. The study also measures testosterone levels to examine potential mediating effects.
+
+### What are the study research questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)
+
+The study hypotheses were:
+1. Activation of gender stereotypes will increase sex differences in all tasks.
+2. Cognitive sex differences will be largest when gender stereotypes are activated in mixed-sex settings.
+3. Enhanced cognitive performance after gender stereotype activation will be associated with increased testosterone levels, particularly in mixed-sex groups.
+4. Testosterone levels will be correlated with cognitive performance, and cognitive performance will correlate with the strength of corresponding gender stereotypes.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)
+
+The study measured:
+- Performance on mental rotation, verbal fluency, and perceptual speed tasks
+- Gender stereotypes 
+- Testosterone levels
+- Effects of gender stereotype activation
+- Effects of mixed-sex vs same-sex testing groups
+
+### Study timing
+
+- [x] Cross-sectional
+
+The study collected data at one time point.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Before and after
+
+Testosterone levels were measured before the gender stereotype manipulation and after cognitive testing. Cognitive tests were administered after the stereotype manipulation.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)
+
+Participants were allocated to gender-stereotyped or control conditions, and to mixed-sex or same-sex testing groups.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)
+
+The groups differed in:
+1) Whether they received the gender stereotype activation or control questionnaire 
+2) Whether they were tested in mixed-sex or same-sex groups
+
+### Number of groups
+
+- [x] Four or more (please specify)
+
+There were 8 groups total: 2 (stereotype vs control) x 2 (mixed vs same sex) x 2 (male vs female)
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not explicitly state if assignment to conditions was randomized.
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information about concealment of allocation.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+Other than the experimental manipulations, all groups completed the same cognitive tests and procedures.
+
+### Study design summary 
+
+This was a 2 (Sex) x 2 (Condition: Gender-Stereotyped vs. Control) x 2 (Group Sex Composition: Same- vs. Mixed-Sex) between-subjects experimental design. Participants completed cognitive tests after either a gender stereotype or control manipulation, in either same-sex or mixed-sex groups. Testosterone levels were measured before and after.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Not stated/unclear (please specify)
+
+The authors do not explicitly state they are aiming for a representative sample. They recruited university students, which may limit generalizability.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)
+
+The paper states participants were recruited from the Department of Psychology but does not provide details on the sampling method or frame.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on how participants were selected from the sampling frame.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)
+
+The planned sample size is not reported.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The recruitment methods are not described, only that participants were recruited from the Psychology Department.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not mention if any incentives were provided.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not explicitly mention obtaining consent, though this was likely done as per standard ethics procedures.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+No other relevant details are provided.
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)
+
+The final sample included 136 participants (70 women, 66 men).
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Explicitly stated (please specify)
+
+148 participants were initially recruited, and 12 were excluded, resulting in 91.9% of the selected sample participating in the final analysis.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)
+
+The participants were from Germany.
+
+### What ages are covered by the actual sample?
+
+- [x] 21 and over
+
+The mean age was 24.40 years (SD = 4.9) for women and 25.56 years (SD = 4.3) for men.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The socio-economic status of participants is not reported.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The ethnicity of participants is not reported.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+No information is provided about special educational needs of the sample.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+Participants were recruited from the Department of Psychology at Ruhr-University Bochum, Germany.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Not applicable (no sampling frame)
+
+There is insufficient information provided about the sampling frame to assess representativeness.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main types of data collected were:
+a) To define the sample: Demographics (age, sex)
+b) To measure aspects of the sample: 
+- Scores on cognitive tests (mental rotation, verbal fluency, perceptual speed)
+- Gender stereotype questionnaire responses
+- Testosterone levels from saliva samples
+
+### Which methods were used to collect the data?
+
+- [x] Curriculum-based assessment
+- [x] Self-completion questionnaire
+- [x] Psychological test
+- [x] Clinical test
+
+Cognitive tests, gender stereotype questionnaires, and saliva samples for testosterone measurement were used.
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+The following measures were used:
+- Mental rotation: Redrawn Vandenberg and Kuse Mental Rotation Test (MRT-3D) and Mirror Pictures (MP-2D) test
+- Verbal fluency: Word Fluency Test (WF) and 4-Word Sentences Test (4W)
+- Perceptual speed: Perceptual Speed Test (PS) 
+- Gender stereotypes: Questionnaire adapted from Halpern & Tan (2001)
+- Testosterone: Saliva samples analyzed with Chemiluminescent Immunoassay
+
+### Who collected the data?
+
+- [x] Not stated/unclear
+
+The paper does not specify who collected the data.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+For testosterone measurement, the authors report intra-assay and inter-assay coefficients of variation.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors cite previous studies establishing the validity of the cognitive tests used. The gender stereotype questionnaire was adapted from a published source.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] No (please specify)
+
+The paper does not mention any concealment procedures for those administering the tests.
+
+### Where were the data collected?
+
+- [x] Unclear/not stated (please specify)
+
+The specific location of data collection is not stated, though presumably at Ruhr-University Bochum.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+Saliva samples were collected twice - once before the stereotype manipulation and once after cognitive testing.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+The main analyses were ANOVAs and multiple linear regressions.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+ANOVAs were used to analyze cognitive test scores and testosterone levels. Multiple linear regressions examined relationships between gender stereotypes, testosterone, and cognitive performance.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors do not provide an explicit rationale for their choice of analytical methods.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not applicable (not an evaluation study with prospective allocation)
+
+This was not an evaluation study with prospective allocation.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors do not explicitly address reliability of the data analysis.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors do not explicitly address validity of the data analysis.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors do not explicitly describe strategies to control for confounding variables in their analysis.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors used Bonferroni adjustment for post-hoc tests and report effect sizes (partial η2 and Cohen's d).
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+The authors conducted a power analysis to determine their ability to detect a three-way interaction.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented in text and tables, with means and standard errors reported. Statistical test results (F-values, p-values, effect sizes) are provided.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+Key findings include:
+1. Men outperformed women in 3D mental rotation.
+2. Women outperformed men in verbal fluency.
+3. A stereotype threat effect was found for men in the 4-word sentences verbal fluency task.
+4. Participants in mixed-sex groups whose gender stereotypes were not activated performed best on verbal fluency and perceptual speed tasks.
+5. No significant effects of gender stereotyping or group composition were found for testosterone levels.
+6. Testosterone levels were not related to cognitive performance.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] No
+
+The study did not report confidence intervals.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+The data reporting appears thorough and appropriate.
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report results for all variables mentioned in their hypotheses: cognitive task performance, effects of gender stereotyping and group composition, and testosterone levels.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+The authors do not provide information about data storage or availability.
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that:
+1. Gender stereotypes and group sex composition interact to affect cognitive performance.
+2. Mixed-sex settings can enhance performance on sex-sensitive cognitive tasks when gender stereotypes are not activated.
+3. Stereotype threat can occur for men in verbal tasks.
+4. Testosterone does not mediate the effects of gender stereotyping or group composition on cognitive performance.
+5. The findings support arguments for co-educational settings over single-sex education.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide a thorough background on gender stereotypes, cognitive sex differences, and the potential role of testosterone, situating their study within the existing literature.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims and hypotheses of the study are clearly stated in the introduction.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+While basic demographic information is provided, there is limited information on how the sample was identified and recruited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The cognitive tests, gender stereotype questionnaire, and testosterone measurement procedures are described in detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The statistical analyses (ANOVAs, regressions) are clearly described.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The methods and measures are described in sufficient detail to allow replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report results for all hypotheses and measures mentioned in their introduction.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+No ethical concerns are apparent. While consent procedures are not explicitly mentioned, the study appears to follow standard ethical practices for psychological research.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication that students or parents were involved in the design or conduct of the study beyond participation.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide a clear rationale for their study design, linking it to previous research and gaps in the literature on gender stereotypes, cognitive performance, and the role of testosterone.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The 2x2x2 experimental design was appropriate for examining the effects of gender stereotyping and group composition on cognitive performance in men and women.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The experimental design controls for some potential confounds, but there are limitations:
+- The sample consists only of psychology students, limiting generalizability.
+- The method of allocation to conditions is not specified, so potential selection bias cannot be ruled out.
+- The study does not control for potential practice effects on the cognitive tests.
+
+### How generalisable are the study results?
+
+The results may be generalizable to young adult university students in Western countries. However, generalizability to other age groups, education levels, or cultures is limited.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses established measures and appropriate statistical analyses. However, there are some limitations in sampling and potential confounds that were not addressed, reducing the overall trustworthiness to medium.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors' conclusions generally follow from their findings, but some interpretations (e.g., implications for co-education) may be somewhat speculative given the limited sample and laboratory setting.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

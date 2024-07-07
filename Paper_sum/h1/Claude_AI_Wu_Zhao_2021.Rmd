@@ -1,0 +1,626 @@
+---
+title             : "@wuDegreeCentralityBrain2021"
+shorttitle        : "@wuDegreeCentralityBrain2021"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h1.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Not applicable (whole study is focus of data extraction)  
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was informed by previous research on stereotype threat and its effects on cognitive processes, emotions, and motivations. The authors cite several prior studies examining the neural mechanisms of stereotype threat using fMRI.
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)  
+
+The study was supported by the National Natural Science Foundation of China (31371055) and the Major Project for Key Research Institutes of Humanities and Social Science by the Ministry of Education (16JJD190007).
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on investigating the effects of stereotype threat on the degree centrality of brain networks using resting-state functional magnetic resonance imaging (RS-fMRI).
+
+### What is/are the population focus/foci of the study?
+
+The population focus is female undergraduate students.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+- [x] 21 and over  
+
+The participants were aged 18-26 years (mean age 20.75 ± 1.79 years).
+
+### What is the sex of the population focus/foci?
+
+- [x] Female only  
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was conducted in China.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study is concerned with the effects of math-related stereotype threat on brain network degree centrality in female university students, as measured by resting-state functional magnetic resonance imaging (RS-fMRI).
+
+### What are the study reserach questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The study hypothesized that:
+1. Stereotype threat would induce variations in neural activation across different brain areas and networks.
+2. The degree centrality of brain regions related to regulation of social emotions would be increased under stereotype threat.
+3. The degree centrality of the hippocampus would be decreased under stereotype threat.
+4. The degree centrality of brain regions related to self-memory retrieval would be increased under stereotype threat.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study aims to measure:
+1. Resting-state degree centrality (RSDC) of brain regions
+2. Manipulation check (MC) score to assess effectiveness of stereotype threat induction
+
+### Study timing
+
+- [x] Cross-sectional  
+- [x] Prospective  
+
+The study used a pre-test/post-test design with RS-fMRI scans before and after the stereotype threat manipulation.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Before and after  
+
+RS-fMRI scans were conducted before and after the stereotype threat manipulation.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+Participants were randomly assigned to either the stereotype threat group or control group.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The stereotype threat group read materials inducing math-related stereotype threat, while the control group read neutral materials about mountain peaks.
+
+### Number of groups
+
+- [x] Two  
+
+Stereotype threat group and control group.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random  
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not provide information on whether allocation was concealed.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+Both groups underwent the same experimental procedures apart from the stereotype threat vs. control materials.
+
+### Study design summary 
+
+This study used a randomized experimental design with pre-test and post-test RS-fMRI scans. Female undergraduate participants were randomly assigned to either a stereotype threat or control group. The stereotype threat group read materials inducing math-related stereotype threat, while the control group read neutral materials. RS-fMRI scans were conducted before and after the manipulation to measure changes in resting-state degree centrality of brain regions.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Not stated/unclear (please specify)
+
+The authors do not explicitly state whether they are aiming for representativeness of a broader population.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide details on the sampling frame or recruitment methods.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The selection methods are not specified in the paper.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)
+
+The planned sample size is not reported.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The recruitment methods are not described in the paper.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not mention whether incentives were provided.
+
+### Was consent sought?
+
+- [x] Participant consent sought
+
+The paper states "All the subjects gave written informed consent".
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)
+
+The total sample was 48 female undergraduates (25 in the stereotype threat group and 23 in the control group).
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on the proportion of selected participants who actually participated.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)
+
+The participants were from China.
+
+### What ages are covered by the actual sample?
+
+- [x] 17 to 20
+- [x] 21 and over
+
+The participants were aged 18-26 years (mean age 20.75 ± 1.79 years).
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Socio-economic status is not reported.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Ethnicity is not reported.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+No information is provided about special educational needs.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+All participants were right-handed and had no current or past neurological or psychiatric illness.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+The representativeness of the sample is unclear as the sampling frame is not described.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not stated/unclear
+
+Dropout rates are not reported.
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main types of data collected were:
+(a) Demographic information (age, sex, education level) to define the sample
+(b) RS-fMRI data to measure resting-state degree centrality of brain regions
+(c) Manipulation check scores to assess effectiveness of stereotype threat induction
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Clinical test
+
+RS-fMRI scans were used to collect brain imaging data. A self-completion questionnaire was used for the manipulation check.
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+RS-fMRI data were collected using a Siemens 3T scanner with specific parameters detailed in the paper. The manipulation check used a 7-point scale questionnaire item.
+
+### Who collected the data?
+
+- [x] Researcher
+
+A male experimenter and male scanning technician conducted the experiment and collected the data.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors state that RSDC has test-retest reliability and high sensitivity, citing previous research.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors conducted a separate verification study with 112 participants to validate that their stereotype threat materials could induce performance decrements.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] No (please specify)
+
+The experimenters were aware of group allocation.
+
+### Where were the data collected?
+
+- [x] Explicitly stated (please specify)
+
+Data were collected at the MRI lab, presumably at Southwest University in China.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+The RS-fMRI scans included 242 scans with 484 seconds duration for both pre-test and post-test.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+The data were analyzed using statistical parametric mapping software (SPM8) and a toolbox for Data Processing and Analysis for Brain Imaging (DPABI) in MATLAB.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+The study used mixed-effect analysis, analysis of covariance, Pearson's correlation, and moderation analysis using PROCESS 3.0.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors state that RS-fMRI degree centrality analysis can find the hubs of brain networks and provide functional connectivity of the entire brain.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] 'Intention to intervene'
+
+The analysis was based on the original group allocation.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors used established analysis methods and software tools for fMRI data analysis.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors used multiple analysis methods (binary and weighted graphs) and corrected for multiple comparisons using Gaussian random field theory.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors used pre-test RSDC values as covariates when comparing post-test values between groups.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors used both binary and weighted graph analyses for RSDC calculation.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+The authors used a relatively liberal threshold (p < 0.005 voxel-level with p < 0.05 cluster-level) for some analyses, which may increase the risk of false positives.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented in text, tables, and figures, including brain maps showing significant clusters.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+The main results were:
+1. RSDC decreased in the left hippocampus and left middle occipital gyrus under stereotype threat.
+2. RSDC increased in the left precuneus, right angular gyrus, and right superior parietal gyrus under stereotype threat.
+3. RSDC in the right anterior temporal lobe and right hippocampus was negatively correlated with manipulation check scores in the stereotype threat group, but positively correlated in the control group.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+
+- [x] Yes
+
+The authors report F-values, p-values, and effect sizes (Cohen's f2) for their analyses.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] Yes (please specify)
+
+The authors do not report confidence intervals for their effect estimates.
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all variables mentioned in their hypotheses.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that stereotype threat decreases the importance of brain regions related to social concepts and stress regulation in whole brain networks, while increasing the importance of brain regions associated with self-relevant processes.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide adequate background on stereotype threat and its neural correlates.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims and hypotheses are clearly stated in the introduction.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+The paper lacks details on how participants were identified and recruited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The RS-fMRI data collection methods are described in detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The data analysis methods are described in detail.
+
+### Is the study replicable from this report?
+
+- [x] No (please specify)
+
+Some key details are missing, such as recruitment methods and exact stereotype threat materials used.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all variables mentioned in their hypotheses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication of student or parent involvement in the study design or conduct.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide a rationale for using RS-fMRI to study stereotype threat effects on brain networks.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The randomized experimental design with pre- and post-test RS-fMRI scans is appropriate for examining the effects of stereotype threat on brain networks.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The study design controls for some potential confounds by using a randomized design and pre-test measures. However, the lack of behavioral performance measures and the single-blind design (experimenters not blinded) introduce potential sources of bias.
+
+### How generalisable are the study results?
+
+The results may be generalizable to female university students in China experiencing math-related stereotype threat. However, generalizability to other populations, cultures, or types of stereotype threat is limited.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods for addressing the research questions and provides detailed analysis. However, there are some limitations in reporting (e.g., lack of recruitment details, confidence intervals) and potential sources of bias (e.g., experimenters not blinded) that reduce trustworthiness.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors' conclusions generally align with their findings, but they could have been more cautious in their interpretations given the limitations of the study.
+
+## **COHORT STUDIES**
+
+Not applicable - this is an experimental study, not a cohort study.
+
+## DOES THIS REVIEW ADDRESS A CLEAR QUESTION?
+
+### Did the review address a clearly focussed issue?
+- Was there enough information on:
+  - The population studied
+  - The intervention given
+  - The outcomes considered
+- [x] Yes
+
+The study clearly defines the population (female university students), intervention (stereotype threat induction), and outcomes (changes in resting-state degree centrality).
+
+### Did the authors look for the appropriate sort of papers?
+- The 'best sort of studies' would:
+  - Address the review's question
+  - Have an appropriate study design
+- [x] Can't tell
+
+This is not applicable as this is a primary study, not a review.
+
+## ARE THE RESULTS OF THIS REVIEW VALID?
+
+### Do you think the important, relevant studies were included?
+
+- [x] Can't tell
+
+Not applicable - this is a primary study, not a review.
+
+### Did the review's authors do enough to assess the quality of the included studies?
+
+- [x] Can't tell
+
+Not applicable - this is a primary study, not a review.
+
+### If the results of the review have been combined, was it reasonable to do so?
+
+- [x] Can't tell
+
+Not applicable - this is a primary study, not a review.
+
+## WHAT ARE THE RESULTS?
+
+### What is the overall result of the review?
+
+This is a primary study, not a review. The main results show changes in resting-state degree centrality in specific brain regions under stereotype threat conditions.
+
+### How precise are the results?
+
+- [x] Can't tell
+
+The authors report p-values and effect sizes, but do not provide confidence intervals, making it difficult to assess the precision of the results.
+
+## WILL THE RESULTS HELP LOCALLY?
+
+### Can the results be applied to the local population?
+
+- [x] Can't tell
+
+The applicability to local populations would depend on the similarity to the study sample (female university students in China).
+
+### Were all important outcomes considered?
+
+- [x] No
+
+The study did not include behavioral measures of math performance, which would have been relevant given the focus on math-related stereotype threat.
+
+### Are the benefits worth the harms and costs?
+
+- [x] Can't tell
+
+The study does not discuss potential harms or costs associated with the research or its application.
+
+# References
+
+
+
+::: {#refs custom-style="Bibliography"}
+:::

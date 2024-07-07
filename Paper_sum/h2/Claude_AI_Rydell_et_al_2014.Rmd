@@ -1,0 +1,585 @@
+---
+title             : "@rydellStereotypeThreatExecutive2014"
+shorttitle        : "@rydellStereotypeThreatExecutive2014"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Not applicable (whole study is focus of data extraction)  
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was informed by existing research on stereotype threat and executive functioning. The authors cite previous work showing that stereotype threat reduces executive functioning and impairs performance on difficult math problems for women (e.g., Schmader et al., 2008; Beilock et al., 2007).
+
+### Do authors report how the study was funded?
+
+- [x] Not stated/unclear (please specify)  
+
+The authors do not report how the study was funded.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on examining which specific executive functions (inhibition, updating, shifting) mediate the effects of stereotype threat on women's math performance and risk-taking behavior.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is on female university students.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+- [x] 21 and over  
+
+The study used undergraduate students, likely spanning ages 17-22+.
+
+### What is the sex of the population focus/foci?
+
+- [x] Female only  
+
+The study focused specifically on female participants.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+The study was conducted with undergraduate students at a university.
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in the United States (at Indiana University).
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examined how stereotype threat affects women's performance on math tasks and risk-taking behavior, and which specific executive functions (inhibition, updating, shifting) mediate these effects. The interventions included manipulating stereotype threat and measuring executive functions using cognitive tasks.
+
+### What are the study research questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The main hypotheses were:
+1. Stereotype threat would impair women's performance on math tasks by reducing updating ability.
+2. Stereotype threat would increase women's risk-taking by reducing inhibition ability.
+3. Shifting ability would not mediate stereotype threat effects on math performance or risk-taking.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study measured:
+- Executive functions: inhibition, updating, shifting
+- Math performance 
+- Risk-taking behavior
+- Stereotype threat manipulation check
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study used a cross-sectional design, measuring outcomes at a single time point.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Only after  
+
+Outcomes were measured only after the stereotype threat manipulation.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+Participants were randomly assigned to either a stereotype threat condition or control condition.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The stereotype threat group was told the study was investigating why women perform worse at math than men. The control group received no gender-related information.
+
+### Number of groups
+
+- [x] Two  
+
+There were two experimental groups: stereotype threat and control.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random  
+
+Participants were randomly assigned to conditions.
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not specify if allocation was concealed.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+Both groups completed the same tasks, with the only difference being the stereotype threat manipulation.
+
+### Study design summary 
+
+This was an experimental study using a between-subjects design. Female undergraduate participants were randomly assigned to either a stereotype threat or control condition. All participants then completed measures of executive functioning (inhibition, updating, shifting), followed by a math test and risk-taking task. The study examined how stereotype threat affected performance on these tasks and which executive functions mediated the effects.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Implicit (please specify)  
+
+The authors do not explicitly state they are trying to produce representative findings, but their use of a university student sample implies an attempt to study effects in a young adult female population.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide details on how participants were identified or recruited.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not specify how participants were selected from the sampling frame.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)
+
+The planned sample size is not reported.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The recruitment methods are not specified in the paper.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)  
+
+Participants received course credit or extra credit for participating.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not mention obtaining consent from participants.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)  
+
+Experiment 1: 168 participants (93 men, 75 women)
+Experiment 2: 90 female participants
+Experiment 3: 81 female participants
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on the proportion of selected participants who actually participated.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)  
+
+The participants were from the United States (Indiana University students).
+
+### What ages are covered by the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The exact ages are not specified, but the sample consisted of undergraduate students.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The socio-economic status of participants is not reported.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The ethnicity of participants is not reported.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+No information is provided about special educational needs of the sample.
+
+### Is there any other useful information about the study participants?
+
+- [x] Not stated/unclear (please specify)
+
+No other relevant information about the participants is provided.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+Without information on the sampling frame or recruitment methods, it is unclear how representative the sample was.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main types of data collected were:
+(b) To measure aspects of the sample as findings:
+- Executive function task performance (inhibition, updating, shifting)
+- Math test performance
+- Risk-taking measure
+- Manipulation check measure of stereotype threat
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Psychological test
+
+Participants completed computerized cognitive tasks to measure executive functions, a math test, and questionnaires for the risk-taking measure and manipulation check.
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+Executive function measures:
+- Inhibition: Stroop task (Exp 1-2), antisaccade task (Exp 3)
+- Updating: letter-memory task (Exp 1,3), keep track task (Exp 2)  
+- Shifting: number-letter task (Exp 1), color-shape task (Exp 2-3)
+
+Math performance: 
+- Modular arithmetic problems (Exp 1)
+- GRE math word problems (Exp 2-3)
+
+Risk-taking: Lottery choice task (Exp 3)
+
+Manipulation check: 3-item measure of threat-based concern (Exp 3)
+
+### Who collected the data?
+
+- [x] Not stated/unclear
+
+The paper does not specify who collected the data.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors used established measures of executive functions from previous research (e.g., Miyake et al., 2000). They also used multiple measures of some constructs across experiments (e.g., different inhibition tasks) to show generalizability.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors cite previous research validating the executive function measures. They also include a manipulation check in Experiment 3 to validate the stereotype threat manipulation.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not specify if there was concealment from those measuring outcomes.
+
+### Where were the data collected?
+
+- [x] Not stated/unclear (please specify)
+
+The specific location of data collection is not reported, though it was likely in a laboratory setting at Indiana University.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+Data were collected via computerized tasks for the executive function measures and math test. The risk-taking measure was a hypothetical scenario.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+The main analyses used were ANOVAs to examine effects of stereotype threat on executive functions and outcomes. Mediation analyses using bootstrapping procedures were used to test which executive functions accounted for stereotype threat effects.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+- ANOVAs 
+- t-tests
+- Bootstrapped mediation analyses using Preacher & Hayes (2008) procedure
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors state they used bootstrapped mediation analyses to simultaneously examine indirect effects of multiple mediators (the executive functions).
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not explicitly state if analysis was done on an intention-to-treat or as-treated basis.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors replicated key findings across multiple experiments with different measures, enhancing reliability.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors used established statistical procedures and controlled for relevant variables in their analyses.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+In the mediation analyses, the authors controlled for the main effects of gender and stereotype threat when examining their interaction.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors examined correlations between the executive function measures to assess their independence.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+The authors note that multicollinearity was not problematic in their mediation models, with low variance inflation factors.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented in text and tables, with statistics reported for ANOVAs, t-tests, and mediation analyses. Path diagrams are used to illustrate mediation results.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+Key findings:
+- Stereotype threat impaired women's math performance across experiments
+- Stereotype threat reduced inhibition and updating, but not shifting
+- Only updating mediated the effect of stereotype threat on math performance
+- Inhibition mediated the effect of stereotype threat on risk-taking
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] Yes
+
+95% confidence intervals were reported for the indirect effects in the mediation analyses.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+The data appear to be reported thoroughly and appropriately.
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all executive functions, math performance, and risk-taking as specified in their aims.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+The paper does not mention where the original data are stored.
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that stereotype threat impairs women's math performance by reducing updating ability specifically, not general executive functioning. They also conclude that reduced inhibition accounts for increased risk-taking under stereotype threat. This demonstrates that different executive functions can account for different stereotype threat outcomes.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide adequate context, describing relevant background on stereotype threat and executive functioning research.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims to examine which specific executive functions account for stereotype threat effects on math and risk-taking are clearly stated.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+While the sample sizes and basic characteristics are reported, there is little information on how participants were identified or recruited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The executive function tasks, math tests, and other measures are described in adequate detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The statistical analyses, including ANOVAs and mediation procedures, are described adequately.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The methods and measures are described in sufficient detail to allow replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all variables and analyses mentioned in their aims.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+There do not appear to be major ethical issues with the study procedures.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no mention of student or parent involvement in the study design or conduct.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors justify their approach of examining specific executive functions rather than general executive functioning.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The experimental design with random assignment to stereotype threat conditions was appropriate for examining the causal effects of stereotype threat on executive functions and performance outcomes.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A lot (please specify)
+
+The use of random assignment helps rule out many alternative explanations. The replication of key findings across multiple experiments with different measures also increases confidence in the results.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may generalize to female university students in the United States. However, generalizability to other populations (e.g., different ages, cultures) is unclear. The use of laboratory tasks also limits ecological validity.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods and analyses to address its research questions. However, the lack of information on sampling and recruitment, as well as the limited sample demographics, somewhat reduce trustworthiness.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors provide reasonable justifications for their conclusions based on the data. However, some limitations (e.g., lab-based tasks, student sample) could have been discussed more thoroughly.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

@@ -1,0 +1,571 @@
+---
+title             : "@forbesSpontaneousDefaultMode2015"
+shorttitle        : "@forbesSpontaneousDefaultMode2015"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h1.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Not applicable (whole study is focus of data extraction)
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was informed by existing research on stereotype threat, the default mode network (DMN), and self-oriented processing. The authors cite previous work showing that stereotype threat can impair performance and lead to negative self-appraisals (e.g., Steele & Aronson, 1995; Schmader et al., 2008). They also discuss prior research on the DMN and its role in self-related cognition (e.g., Raichle et al., 2001; Buckner et al., 2008).
+
+### Do authors report how the study was funded?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not include any information about funding sources.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on stereotype threat, neural correlates of self-oriented processing (specifically default mode network connectivity), and performance perceptions in academic settings.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is on white and racial minority (Latino and African American) undergraduate students.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+- [x] 21 and over  
+
+The study used undergraduate students, so the relevant age groups likely span both 17-20 and 21 and over.
+
+### What is the sex of the population focus/foci?
+
+- [x] Mixed sex  
+
+The study included both male and female participants.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+The study was conducted with undergraduate students at a university.
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in the United States. This is evident from the mention of "permanent US residents" in the participants section.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study is concerned with:
+1. Stereotype threat effects on minority students' performance perceptions and self-doubt
+2. Default mode network (DMN) connectivity as measured by EEG phase-locking between key DMN regions
+3. The relationship between DMN connectivity and performance perceptions/self-doubt under stereotype threat
+
+### What are the study research questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The study aimed to address the following research questions:
+1. How does stereotype threat impact neural activation patterns and cognitive processes in academic settings?
+2. What are the specific neural and cognitive mechanisms through which stereotype threat influences academic performance?
+
+The authors hypothesized that individual differences in DMN connectivity (measured as baseline neural synchrony) would be associated with stigmatized minorities' performance perceptions in a stereotype threatening context.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study measured:
+1. EEG phase-locking between DMN regions (LLPC-P/PCC and LLPC-MPFC) in theta and alpha bands
+2. Performance on a probabilistic learning task
+3. Post-task error estimations
+4. Post-task self-doubt
+5. Perceptions of stereotype threat
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study collected data at a single time point for each participant.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Not applicable (not an evaluation)
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
+
+The study compared white and racial minority (Latino and African American) students based on their pre-existing racial/ethnic group membership.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The groups differed by race/ethnicity: white students vs. racial minority students (Latino and African American).
+
+### Number of groups
+
+- [x] Two  
+
+The study compared two groups: white students and racial minority students.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Not applicate (no prospective allocation)
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not applicable (no prospective allocation)
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [ ] Yes
+- [ ] No
+- [x] Can't tell
+
+The paper does not provide enough information to determine if the groups were treated exactly the same apart from the inherent differences in their experiences of stereotype threat.
+
+### Study design summary 
+
+This was a cross-sectional study comparing white and racial minority undergraduate students. Participants completed baseline EEG measurements, followed by a probabilistic learning task framed as an intelligence test to induce stereotype threat in minority students. Post-task measures included error estimations and self-doubt ratings. The study examined relationships between DMN connectivity (measured by EEG phase-locking) and performance perceptions/self-doubt, with a focus on how these relationships differed between white and minority students.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Implicit (please specify)
+
+While not explicitly stated, the authors seem to be aiming for findings representative of white and racial minority undergraduate students in stereotype threatening academic contexts.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide specific information about the sampling frame or methods used to identify potential participants.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information about specific selection methods.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not mention a planned sample size.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information about recruitment methods.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)  
+
+Participants received course credit for their participation.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not mention obtaining consent from participants.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)
+
+The initial sample included 42 white and 49 racial minority (38 Latino, 11 African American) students. Due to EEG data incompatibilities, the final sample for EEG analyses was 33 minorities (22 Female) and 25 white (11 Female) participants.
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information about the total number of people initially selected or approached for the study.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)
+
+The participants were from the United States. The paper specifies that only permanent US residents were included.
+
+### What ages are covered by the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide specific age information for the sample, only that they were undergraduate students.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information about the socio-economic status of the participants.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Explicitly stated (please specify)
+
+The sample included white, Latino, and African American students. Specifically, the final sample for EEG analyses included 33 racial minority (combination of Latino and African American) and 25 white participants.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Explicitly stated (please specify)
+
+The paper states that the sample included only individuals who had no disabilities that would impair task performance.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+All participants were right-handed.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+Without more information about the sampling frame and recruitment methods, it's not possible to determine how representative the achieved sample was.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main types of data collected were:
+a) To define the sample: race/ethnicity
+b) To measure aspects of the sample as findings:
+- EEG data (used to calculate DMN phase-locking)
+- Performance on the probabilistic learning task
+- Post-task error estimations
+- Post-task self-doubt ratings
+- Perceptions of stereotype threat (manipulation check)
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Psychological test
+- [x] Clinical test
+
+The study used EEG recordings, a probabilistic learning task (psychological test), and self-report questionnaires for post-task measures.
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+EEG data was collected using 32 tin electrodes in a stretch-lycra cap. The probabilistic learning task involved presenting pairs of Hiragana characters and providing probabilistic feedback. Post-task questionnaires measured error estimations, self-doubt, and perceptions of stereotype threat.
+
+### Who collected the data?
+
+- [x] Researcher
+
+The paper mentions that a white male experimenter prepped participants for EEG recording.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors used standardized EEG recording procedures and a previously established probabilistic learning task (Frank et al., 2004). They also used multiple items to assess self-doubt (α = 0.79).
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors used established methods for EEG data collection and analysis, including source localization techniques. They also used a validated probabilistic learning task.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] No (please specify)
+
+The experimenter was aware of participants' race/ethnicity, which was a key factor in the study.
+
+### Where were the data collected?
+
+- [x] Unclear/not stated (please specify)
+
+The paper does not specify the exact location of data collection, though it was likely in a laboratory setting at a university.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+EEG data was collected during a baseline resting period and during the probabilistic learning task. The task was framed as an intelligence test to induce stereotype threat.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+The study used source localization and time-frequency analyses for EEG data, focusing on phase-locking values between DMN regions. Moderated regression analyses were used to examine relationships between DMN phase-locking, ethnicity, and outcome variables.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+The study used moderated regression analyses, simple slopes analyses, and correlation analyses. They also used Fisher r-to-z transformation tests to compare correlation coefficients between groups.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors justify their use of EEG phase-locking analyses as a more direct index of neural communication compared to fMRI methods. They also explain their focus on theta and alpha frequency bands based on previous research linking these to DMN processes.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not applicable (not an evaluation study with prospective allocation)
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors used established methods for EEG data analysis and source localization. They also used multiple regression models to examine relationships between variables.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors used theoretically-driven analyses based on previous research on the DMN and stereotype threat. They also examined relationships between variables separately for white and minority participants to validate the specificity of their findings to stereotype threat contexts.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors included ethnicity as a moderator in their analyses to control for potential confounding effects. They also examined the effects of gender but found no significant effects.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors focused on spontaneous phase-locking during the baseline resting period rather than during the task itself, as they were interested in individual differences in DMN connectivity that might predict responses to stereotype threat.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+The authors acknowledge limitations in their EEG source localization due to using only 32 channels. They also note that they assumed standard electrode placement without direct verification.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented through a combination of descriptive statistics, correlation tables, and figures showing moderated regression results. The authors also report statistical test results (e.g., b values, p-values) in the text.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+Key findings include:
+1. Minorities with greater LPC-P/PCC phase-locking in the theta band reported more accurate error estimations.
+2. All individuals, but especially minorities, experienced less self-doubt to the extent they exhibited greater LPC-MPFC phase-locking in the alpha band.
+3. Minorities reported more self-doubt to the extent they overestimated errors.
+4. There were no differences between whites and minorities in actual task performance or overall levels of self-doubt.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [ ] Yes
+   - [x] No
+   - [ ] Can't tell
+
+The study did not report confidence intervals for the main effects.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all key variables mentioned in their research questions, including DMN phase-locking, error estimations, and self-doubt.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that individual differences in spontaneous phase-locking between DMN regions at rest were associated with stereotype-threatened minorities' self and performance perceptions. They suggest that greater DMN connectivity might enable more accurate performance appraisals and buffer against negative effects of stereotype threat. The authors propose that DMN phase-locking could be a novel biological marker for individual differences in stereotype threat vulnerability.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide a thorough background on stereotype threat and the default mode network
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims are clearly stated in the introduction, including investigating whether neural correlates of self-oriented processing (DMN connectivity) moderate the effect of stereotype threat on performance perceptions.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [ ] Yes (please specify)
+- [x] No (please specify)
+
+While the final sample size and basic demographics are reported, there is limited information on how participants were identified and recruited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The paper provides detailed information on EEG data collection, the probabilistic learning task, and post-task questionnaires.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The authors provide a thorough description of EEG data analysis methods, including source localization and phase-locking calculations, as well as statistical analyses used.
+
+### Is the study replicable from this report?
+
+- [ ] Yes (please specify)
+- [x] No (please specify)
+
+While many aspects of the study are well-described, the lack of information on participant recruitment and exact laboratory settings might make full replication challenging.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all variables mentioned in their research questions and hypotheses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [ ] Yes, some concerns (please specify)
+- [x] No concerns
+
+The study does not raise any obvious ethical concerns, although more information on informed consent procedures would be beneficial.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [ ] Yes, a lot (please specify)
+- [ ] Yes, a little (please specify)
+- [x] No (please specify)
+
+There is no indication that students or parents were involved in the design or conduct of the study beyond participation.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide a clear rationale for their methods, including the use of EEG to measure DMN connectivity and the choice of a probabilistic learning task.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The cross-sectional design with EEG measurement and a stereotype threat manipulation was appropriate for examining the relationship between DMN connectivity and responses to stereotype threat.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The study controls for some potential confounds (e.g., gender) and uses established methods, but the lack of random assignment and potential for selection bias limit the ability to rule out all alternative explanations.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may be generalizable to undergraduate students in the United States, particularly in academic settings where stereotype threat is salient. However, the specific sample characteristics (e.g., right-handed, no disabilities) and the laboratory setting may limit broader generalizability.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses well-established methods and provides detailed analysis, but limitations in sample description and recruitment procedures somewhat reduce its trustworthiness.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors provide a thorough discussion of their findings in the context of existing literature and acknowledge limitations of their study. However, some conclusions may be slightly overstated given the correlational nature of the data.
+
+
+# References
+
+
+
+::: {#refs custom-style="Bibliography"}
+:::

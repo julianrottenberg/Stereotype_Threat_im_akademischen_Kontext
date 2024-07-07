@@ -1,0 +1,558 @@
+---
+title             : "@guardabassiWeightStatusWeight2020"
+shorttitle        : "@guardabassiWeightStatusWeight2020"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Not applicable (whole study is focus of data extraction)
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)
+
+The study was informed by existing research on stereotype threat, working memory deficits associated with obesity, and weight stigma in children. The authors cite multiple studies demonstrating associations between higher BMI and impaired executive functions, including working memory, in children. They also reference prior work on stereotype threat effects in other domains and populations.
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)
+
+The authors state: "This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors."
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on stereotype threat effects on working memory in children with excess weight. Specifically, it examines whether obesity stereotypes, rather than excess weight itself, contribute to working memory impairments in children.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is primary school children, including those with obesity, overweight, and average weight.
+
+### What is the relevant age group? 
+
+- [x] 5 - 10
+- [x] 11 - 16
+
+The sample included children in 3rd, 4th, and 5th grade, with a mean age of 116.07 months (approximately 9.7 years).
+
+### What is the sex of the population focus/foci?
+
+- [x] Mixed sex
+
+The sample included both boys (n=106) and girls (n=70).
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Primary school
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)
+
+The study was carried out in Italy.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examines how stereotype threat affects working memory performance in children with varying BMI levels. It manipulates stereotype threat by framing a working memory task as either diagnostic of intelligence (stereotype-threatening condition) or as a non-diagnostic computer game (non-stereotype-threatening condition). The study also considers potential moderating effects of weight-based teasing experiences and personal endorsement of obesity stereotypes.
+
+### What are the study research questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)
+
+The study has three main hypotheses:
+
+H1: A negative association between BMI and working memory will emerge when working memory tasks are labeled as an assessment of stereotype-related cognitive abilities, compared to when they are labeled as non-diagnostic tools.
+
+H2: Experiences of weight stigmatization will strengthen the negative relation between children's BMI and working memory under stereotype threat.
+
+H3: Personal endorsement of the intelligence obesity stereotype will strengthen the negative relation between children's BMI and working memory under stereotype threat.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)
+
+The study measures:
+- Body Mass Index (BMI)
+- Working memory (using the N-back task)
+- Weight-based teasing experiences (using the Perception of Teasing Scale)
+- Personal endorsement of obesity stereotypes about intelligence
+- Stereotype threat condition (manipulated)
+
+### Study timing
+
+- [x] Cross-sectional
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Only after
+
+Measurements were taken after the stereotype threat manipulation.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group
+
+Participants were randomly assigned to either a stereotype-threatening (ST) condition or a non-stereotype-threatening (NST) condition.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)
+
+The groups differed in how the working memory task was framed. In the ST condition, it was labeled as a test to assess intelligence. In the NST condition, it was labeled as a non-diagnostic computer game.
+
+### Number of groups
+
+- [x] Two
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on whether the allocation sequence was concealed.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+### Study design summary 
+
+This study used a cross-sectional, experimental design with random allocation to two groups (stereotype-threatening and non-stereotype-threatening conditions). The main outcome was working memory performance, measured using the N-back task. The study examined how BMI, stereotype threat condition, and their interaction affected working memory performance, as well as potential moderating effects of weight-based teasing experiences and personal endorsement of obesity stereotypes.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Implicit (please specify)
+
+While not explicitly stated, the sampling strategy suggests an attempt to represent children across different weight categories (obesity, overweight, and average weight).
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Explicitly stated (please specify)
+
+Participants were selected from a larger sample of children (N = 1292) participating in a broader survey. All children with obesity were retained, and for each child with obesity, one or two age- and gender-matched classmates with average weight and, where available, one classmate with overweight were also recruited.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Explicitly stated (please specify)
+
+The study used a stratified sampling approach based on BMI categories, with matching for age and gender.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)
+
+The planned sample size is not explicitly stated in the paper.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The specific methods of recruitment are not detailed in the paper.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not mention any incentives for participation.
+
+### Was consent sought?
+
+- [x] Parental consent sought
+
+The paper states that parental informed consent was obtained.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] Yes (please specify)
+
+The study was approved by the local university ethical committee.
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)
+
+The actual sample consisted of 176 primary school children (106 boys).
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on the proportion of selected participants who actually participated.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)
+
+The participants were from Italy, with 173 out of 176 born in Italy.
+
+### What ages are covered by the actual sample?
+
+- [x] 5 to 10
+- [x] 11 to 16
+
+The mean age was 116.07 months (SD = 10.43), which is approximately 9.7 years old. The sample included children from 3rd to 5th grade.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on the socio-economic status of the participants.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Explicitly stated (please specify)
+
+The majority of participants (97.2%) were born in Italy. For 83.5% of participants, both parents were born in Italy.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on any special educational needs of the participants.
+
+### Is there any other useful information about the study participants?
+
+- [x] Not stated/unclear (please specify)
+
+No additional relevant information about the participants is provided.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+The paper does not provide enough information to determine the representativeness of the achieved sample.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+(a) To define the sample: BMI was used to categorize children into obesity, overweight, and average weight groups.
+
+(b) To measure aspects of the sample as findings: Working memory performance (N-back task), weight-based teasing experiences (POTS scale), and personal endorsement of obesity stereotypes were collected as outcome and moderator variables.
+
+### Which methods were used to collect the data?
+
+- [x] One to one interview (face to face or by phone)
+- [x] Self-completion questionnaire
+- [x] Psychological test
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+The study used:
+- N-back task to measure working memory
+- Perception of Teasing Scale (POTS) to assess weight-based teasing experiences
+- Obesity Stigmatization Questionnaire to evaluate explicit attitudes about body weight
+- Anthropometric measurements (weight and height) to calculate BMI
+
+### Who collected the data?
+
+- [x] Not stated/unclear
+
+The paper does not specify who collected the data.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors report Cronbach's alpha (α = .84) for the POTS scale, indicating good internal consistency reliability.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors use established measures (N-back task, POTS scale, Obesity Stigmatization Questionnaire) which have been validated in previous research.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on concealment of study allocation from those measuring outcomes.
+
+### Where were the data collected?
+
+- [x] Explicitly stated (please specify)
+
+Data were collected in a quiet room at the participants' schools.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+The study used a precision scale and stadiometer to obtain objective anthropometric data for BMI calculation.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+The study used a linear mixed-effects model for the main analysis.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+The study used a linear mixed-effects model with fixed effects for condition, BMI, their interaction, and N-back task difficulty level. Random effects for participants' class and N-back levels were included. The Akaike information criterion (AIC) and the Bayesian information criterion (BIC) were used to evaluate model fit when including potential moderators.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors used a mixed-effects model to account for the nested structure of the data (participants within classes) and to examine both main effects and interactions of key variables.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not explicitly state whether analysis was based on 'intention to intervene' or 'intervention received'.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors used established model fit indices (AIC and BIC) to evaluate the inclusion of potential moderators in their models.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors conducted supplemental analyses to check for age and gender differences and potential two-way interactions between BMI and moderator variables.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors included random effects for participants' class in their mixed-effects model to account for potential clustering effects.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors used simple slopes analyses to interpret significant interactions.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+The authors used standardized coefficients to report effect sizes for the simple slopes analyses.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented in text, tables (descriptive statistics and correlations), and a figure showing the interaction between BMI and stereotype threat condition.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+Key findings include:
+1. A significant interaction between BMI and stereotype threat condition on working memory performance.
+2. In the stereotype-threatening condition, working memory scores declined by 0.35 standard deviations per unit increase in children's BMI.
+3. In the non-stereotype-threatening condition, there was no significant relation between BMI and working memory.
+4. Contrary to hypotheses, neither weight-based stigma experiences nor endorsement of the obesity stereotype about intelligence moderated the BMI x condition interaction effect on working memory.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - [x] No
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all variables specified in their hypotheses, including BMI, working memory performance, stereotype threat condition, weight-based teasing experiences, and endorsement of obesity stereotypes.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that:
+1. Stereotype threat contributes to working memory impairments in children with excess weight.
+2. The negative relation between body weight and working memory emerges only when children believe their intelligence is being assessed.
+3. Vulnerability to weight-related stereotype threat emerges early in life.
+4. Neither experiences of weight-based teasing nor personal endorsement of obesity stereotypes moderated the stereotype threat effect.
+5. Researchers and clinicians should be aware that negative stereotypes about obesity may bias the assessment of executive functions in children with excess weight.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide a comprehensive background on obesity, weight stigma, and stereotype threat, situating their study within existing literature.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The study's aims and hypotheses are clearly stated in the introduction.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] Yes (please specify)
+
+The paper describes the sampling strategy, including how participants were selected from a larger sample and matched based on weight status, age, and gender.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The paper describes the measures used, including the N-back task, POTS scale, and Obesity Stigmatization Questionnaire.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The authors provide a detailed description of their linear mixed-effects model and the rationale for its use.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The authors provide sufficient detail about their methods, measures, and analyses to allow for replication of the study.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all variables they set out to study in their hypotheses and do not appear to selectively report results.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+The study was approved by the local university ethical committee and obtained parental informed consent.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] Yes, a little (please specify)
+
+Parents were involved in providing informed consent for their children's participation.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide a clear rationale for their study design, grounded in previous research on stereotype threat and obesity-related cognitive deficits.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The experimental design with random allocation to stereotype threat conditions was appropriate for testing the hypotheses about the effects of stereotype threat on working memory performance.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The random allocation to conditions helps control for some potential biases. However, the cross-sectional nature of the study limits causal inferences, and there may be other unmeasured variables that could influence the results.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may be generalizable to primary school children in Italy. However, the ethnic homogeneity of the sample limits generalizability to other cultural groups.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods and analyses to address its research questions. However, the cross-sectional design and potential unmeasured confounders limit the strength of causal inferences.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors' conclusions are generally well-supported by their findings. They appropriately acknowledge limitations of their study and suggest directions for future research.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

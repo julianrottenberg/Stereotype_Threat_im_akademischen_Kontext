@@ -1,0 +1,120 @@
+---
+title             : "Link Directory Claude AI"
+shorttitle        : "Link Direcotry Claude AI"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "../h1/h1.bib", "../h2/h2.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+# Paper summaries
+
+## @beilockStereotypeThreatWorking2007
+
+https://aiarchives.org/id/yif3dUhW1z2qeNRq3mce-p
+
+## @dunstSexDifferencesNeural2013
+
+https://aiarchives.org/id/dPtsG0OsmA7u4afK8euY-p
+
+## @forbesSpontaneousDefaultMode2015
+
+https://aiarchives.org/id/IMnbLf5gCqjsGwNHc8dr-p
+
+## @forbesRoleDevaluingDiscounting2008
+
+https://aiarchives.org/id/kf2H1r42Wh2YSwq2tpER-p
+
+## @jonczykHowStereotypeThreat2022
+
+https://aiarchives.org/id/IfrmZTkrxeEwwIze1rkO-p
+
+## @krendlNegativeConsequencesThreat2008
+
+https://aiarchives.org/id/eGFa3aeF6jdb4RzQIzrv-p
+
+## @mangelsEmotionBlocksPath2012
+
+https://aiarchives.org/id/RjAvSsI3ZkMOb2OF4a1C-p
+
+## @wuDegreeCentralityBrain2021
+
+https://aiarchives.org/id/fsDQp5kQ7jY8fHpteimr-p
+
+## @guardabassiWeightStatusWeight2020
+
+https://aiarchives.org/id/MKtlXc0xny62hSkAchgq-p
+
+## @hirnsteinGenderstereotypingCognitiveSex2014
+
+https://aiarchives.org/id/QmsoeBwLsFmo2bh8rBqs-p
+
+## @jordanoPrimingPerformancerelatedConcerns2017
+
+https://aiarchives.org/id/wJwTQSXRjB5ff3Lsueuy-p
+
+## @linEffectStereotypeThreat2023a
+
+https://aiarchives.org/id/AEeIzDo6a57edPTJvbw8-p
+
+## @rydellStereotypeThreatExecutive2014
+
+https://aiarchives.org/id/OK6r6mtDvu38rkPLlKCa-p
+
+## @stahlRolePreventionFocus2012a
+
+https://aiarchives.org/id/3HeqjNu7AnIA0ELPW06X-p
+
+## @wisterMentioningMenstruationStereotype2013
+
+
+
+
+
+
+
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

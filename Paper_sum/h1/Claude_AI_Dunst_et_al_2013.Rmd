@@ -1,0 +1,572 @@
+---
+title             : "@dunstSexDifferencesNeural2013"
+shorttitle        : "@dunstSexDifferencesNeural2013"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h1.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Not applicable (whole study is focus of data extraction)  
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was informed by previous research on neural efficiency, stereotype threat, and sex differences in visuo-spatial tasks. It aimed to examine whether sex differences in neural efficiency during visuo-spatial tasks could be attributed to stereotype threat effects.
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)  
+
+The research was supported by two Grants from the Austrian Science Fund (FWF): P19842 and P23914.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on neural efficiency, stereotype threat, and sex differences in visuo-spatial task performance.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is on adolescents aged 15-18 years.
+
+### What is the relevant age group? 
+
+- [x] 11 - 16  
+- [x] 17 - 20  
+
+### What is the sex of the population focus/foci?
+
+- [x] Mixed sex  
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Secondary school  
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in Austria.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study is concerned with neural efficiency (IQ-brain activation relationship) during a mental rotation task, and how this relationship is affected by stereotype threat for males and females.
+
+### What are the study reserach questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The main research question was to examine whether sex differences in neural efficiency could be attributed to stereotype threat effects. The hypothesis was that stereotype threat may affect brain activation differentially in women according to their individual level of intellectual ability, which could explain why neural efficiency in visuo-spatial tasks has only been found for men but not for women.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study aimed to measure:
+1. Task performance (response time and solution rate) on a mental rotation task
+2. Brain activation (EEG task-related power in the upper alpha band)
+3. Figural intelligence (IQ)
+4. The relationship between IQ and brain activation (neural efficiency)
+
+### Study timing
+
+- [x] Cross-sectional  
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Only after  
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+Participants were divided based on sex (male/female) and randomly assigned to either a stereotype exposure or no-stereotype exposure condition.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The groups differ by sex (male/female) and by experimental condition (stereotype exposure vs. no-stereotype exposure).
+
+### Number of groups
+
+- [x] Four or more (please specify)  
+
+There were four groups: males in stereotype exposure condition, males in no-stereotype exposure condition, females in stereotype exposure condition, and females in no-stereotype exposure condition.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random  
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not explicitly state whether the allocation sequence was concealed.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+### Study design summary 
+
+This study used a 2x2 between-subjects design with factors SEX (male/female) and STEREOTYPE EXPOSURE (stereotype exposure vs. no-stereotype exposure). Participants were randomly assigned to either the stereotype exposure or no-stereotype exposure condition. All participants completed a mental rotation task while their EEG was recorded. The study examined task performance, brain activation, and the relationship between IQ and brain activation (neural efficiency) across the different groups.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Explicitly stated (please specify)
+
+The authors selected participants to represent a large variability in figural intelligence.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Explicitly stated (please specify)
+
+Participants were selected from a pool of 929 participants to represent a large variability in figural intelligence.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Explicitly stated (please specify)
+
+63 healthy Austrian adolescents (31 girls and 32 boys aged between 15 and 18 years) were selected to represent a large variability in figural intelligence.
+
+### Planned sample size
+
+- [x] Explicitly stated (please specify)
+
+The planned sample size was 63 participants (31 girls and 32 boys).
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The specific recruitment methods are not clearly stated in the paper.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)
+
+Participants received €20 for participation.
+
+### Was consent sought?
+
+- [x] Participant consent sought
+- [x] Parental consent sought
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] Yes (please specify)
+
+Prior to the study, participants provided written informed consent (for underage students it was provided by their parents).
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)
+
+The final sample consisted of 58 participants (26 girls and 32 boys).
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Explicitly stated (please specify)
+
+58 out of 63 selected participants (92%) were included in the final analysis.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)
+
+All participants were from Austria.
+
+### What ages are covered by the actual sample?
+
+- [x] 11 to 16
+- [x] 17 to 20
+
+The participants were aged between 15 and 18 years.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The socio-economic status of the participants is not reported in the paper.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The ethnicity of the participants is not reported in the paper.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+No information about special educational needs is provided in the paper.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+The sample showed an average IQ of 100.50 (SD = 15.52), and there were no differences in figural IQ between sex groups or between stereotype exposure conditions.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+The paper does not provide enough information to determine how representative the achieved sample was in relation to the sampling frame.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+(a) To define the sample: Figural IQ scores were used to select participants representing a large variability in figural intelligence.
+
+(b) To measure aspects of the sample as findings of the study: 
+- Task performance (response time and solution rate) on the mental rotation task
+- EEG data to measure brain activation (task-related power in the upper alpha band)
+- Figural IQ scores to examine the relationship with brain activation (neural efficiency)
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Practical test
+- [x] Psychological test
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+1. Mental rotation task: 48 pairs of Shepard-Metzler figures presented in 3D mode
+2. EEG recording: 33 electrodes placed according to the international 10-20 system
+3. Figural intelligence test (not specified in the paper)
+
+### Who collected the data?
+
+- [x] Not stated/unclear
+
+The paper does not explicitly state who collected the data.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors used standardized EEG recording procedures and data processing techniques, including artifact correction and removal.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors used a well-established mental rotation task and standardized EEG recording and analysis procedures.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] No (please specify)
+
+The experimenters were likely aware of the participants' group allocation (sex and stereotype exposure condition).
+
+### Where were the data collected?
+
+- [x] Unclear/not stated (please specify)
+
+The specific location of data collection is not stated in the paper.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+The EEG was recorded using gold electrodes with 9 mm in diameter, and a bandpass filter (0.1-100 Hz) and a 50 Hz notch-filter were applied during recording.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+The authors used ANOVAs to analyze behavioral data and task-related power changes. Correlations between figural intelligence and brain activation were used to examine neural efficiency.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+- Two-way ANOVA for behavioral data analysis
+- Four-way ANOVA for task-related power analysis
+- Pearson correlations for examining the relationship between IQ and brain activation
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors used these methods to examine group differences in task performance and brain activation, as well as to investigate the relationship between intelligence and brain activation (neural efficiency) across different groups and brain regions.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not applicable (not an evaluation study with prospective allocation)
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors used established EEG analysis techniques, including artifact correction and removal, and aggregation of data from different electrode positions.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors used standardized procedures for EEG data analysis and followed established methods for examining neural efficiency (correlations between IQ and brain activation).
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors matched participants on IQ between experimental groups to avoid confounding.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors analyzed task-related power changes in the upper alpha band (10-12 Hz) of the EEG, which is particularly sensitive to task- and ability-related effects.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+The authors used a fixed alpha band rather than an individually defined band to ensure comparability with previous studies.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented in text form, with statistical test results, and visualized using figures (e.g., bar graphs for performance data and correlation maps for neural efficiency results).
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+1. No significant behavioral differences were found between groups in task performance.
+2. Participants in the stereotype exposure condition showed higher cortical activation than those in the no-stereotype exposure condition.
+3. Neural efficiency (negative IQ-brain activation correlation) was observed only for boys in the no-stereotype exposure condition, particularly in left centroparietal and temporal areas.
+4. No neural efficiency was observed in the stereotype exposure condition for either boys or girls.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] No
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors reported on all variables specified in their aims, including task performance, brain activation, and the relationship between IQ and brain activation (neural efficiency).
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that stereotype threat itself cannot explain sex differences in neural efficiency in visuo-spatial tasks. They suggest that visuo-spatial sex differences in brain activation patterns may be caused by biological factors and long-term social factors rather than short-lived stressing effects of stereotype threat on performance.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The study context is well described, including background on neural efficiency, stereotype threat, and sex differences in visuo-spatial tasks.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims of the study are clearly stated, focusing on examining whether sex differences in neural efficiency could be attributed to stereotype threat effects.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] Yes (please specify)
+
+The sample is adequately described, including age range, sex distribution, and selection criteria based on figural intelligence.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The methods for data collection, including the mental rotation task and EEG recording procedures, are adequately described.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The data analysis methods, including statistical tests and EEG analysis procedures, are adequately described.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The study provides sufficient detail on methods and procedures to be replicable.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all variables they aimed to study as specified in their research questions.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication that students or parents were involved in the design or conduct of the study beyond providing consent.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide sufficient justification for their study design, based on previous research on neural efficiency and stereotype threat.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The 2x2 between-subjects design with factors of SEX and STEREOTYPE EXPOSURE was appropriate for examining the effects of stereotype threat on neural efficiency in males and females.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The study controlled for IQ differences between groups and used standardized procedures for data collection and analysis. However, the lack of counterbalancing for the stereotype exposure conditions and the absence of a manipulation check for stereotype threat may introduce some potential for bias.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may be generalizable to Austrian adolescents aged 15-18 with varying levels of figural intelligence. However, generalizability to other age groups, cultures, or educational settings may be limited.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study employs appropriate methods and analyses to address the research question. However, some limitations (e.g., lack of manipulation check for stereotype threat, potential confounds) reduce the overall trustworthiness to a medium level.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors provide a reasonable interpretation of their findings, acknowledging some limitations and suggesting alternative explanations. However, some conclusions may be drawn more cautiously given the study's limitations.
+
+# @wellsNewcastleottawaScaleNOS2014
+
+## **CASE CONTROL STUDIES**
+
+This section is not applicable as the study is not a case-control study.
+
+## **COHORT STUDIES**
+
+This section is not applicable as the study is not a cohort study.
+
+# @universityofglasgowCriticalAppraisalChecklistn.d.nodate
+
+## DOES THIS REVIEW ADDRESS A CLEAR QUESTION?
+
+This section is not applicable as the study is not a systematic review.
+
+## ARE THE RESULTS OF THIS REVIEW VALID?
+
+This section is not applicable as the study is not a systematic review.
+
+## WHAT ARE THE RESULTS?
+
+This section is not applicable as the study is not a systematic review.
+
+## WILL THE RESULTS HELP LOCALLY?
+
+This section is not applicable as the study is not a systematic review.
+
+
+
+# References
+
+
+
+::: {#refs custom-style="Bibliography"}
+:::

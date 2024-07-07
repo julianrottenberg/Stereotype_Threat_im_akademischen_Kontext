@@ -1,0 +1,540 @@
+---
+title             : "@stahlRolePreventionFocus2012a"
+shorttitle        : "@stahlRolePreventionFocus2012a"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Not applicable (whole study is focus of data extraction)  
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study builds on previous research on stereotype threat, regulatory focus theory, and cognitive control. It aims to integrate self-regulation accounts and limited resource accounts of stereotype threat effects.
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)  
+
+The research was funded by a VIDI-grant from the Dutch National Science Foundation (NWO) awarded to Colette Van Laar.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on how stereotype threat affects cognitive control and performance through regulatory focus.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is on students, particularly those in social sciences.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+- [x] 21 and over  
+
+### What is the sex of the population focus/foci?
+
+- [x] Mixed sex  
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The Netherlands
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examines how stereotype threat affects cognitive control and performance through regulatory focus. It looks at immediate and longer-term effects on cognitive control and math performance.
+
+### What are the study reserach questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The key hypotheses are:
+1. Stereotype threat facilitates immediate cognitive control under a prevention focus.
+2. This effect is due to recruitment of cognitive control resources in response to threat.
+3. Over time, stereotype threat leads to impaired cognitive performance under a prevention focus due to depletion of resources.
+4. These effects do not occur under a promotion focus.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+Key variables measured:
+- Stereotype threat (manipulated)
+- Regulatory focus (manipulated and measured)  
+- Cognitive control (measured via Stroop task)
+- Math performance (measured via modular arithmetic task)
+
+### Study timing
+
+- [x] Cross-sectional  
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Only after  
+
+Cognitive control and math performance were measured after the stereotype threat and regulatory focus manipulations.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+Participants were randomly assigned to stereotype threat vs control conditions and prevention vs promotion focus conditions.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+Groups differed based on the experimental manipulations of stereotype threat and regulatory focus.
+
+### Number of groups
+
+- [x] Four or more (please specify)  
+
+There were 4-6 groups depending on the study (2x2 or 2x3 design).
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random  
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not specify if allocation was concealed.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+### Study design summary 
+
+The study used experimental designs with random assignment to stereotype threat and regulatory focus conditions. Cognitive control and math performance were measured as outcomes. Study 1 had a 2-group design, Study 2 had a 2x3 design, and Study 3 had a 2x2x2 design.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Implicit (please specify)
+
+The authors seem to be aiming for findings generalizable to students, particularly social science students, but this is not explicitly stated.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Explicitly stated (please specify)
+
+Participants were social science students at Leiden University.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The specific sampling method is not described beyond recruiting social science students.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)
+
+Planned sample sizes are not reported.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+Specific recruitment methods are not described.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)  
+
+Participants received €2 or course credits for participation.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)
+
+The consent process is not described.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)
+
+Study 1: 63 participants
+Study 2: 108 participants  
+Study 3: 164 participants
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+This information is not provided.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)
+
+The Netherlands
+
+### What ages are covered by the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Exact age ranges are not provided, only mean ages (19-22 years).
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Socioeconomic status is not reported.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Ethnicity information is not provided.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+No information is provided about special educational needs.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+Participants were social science students at Leiden University.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+Representativeness is not discussed.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+(b) The main data collected were measures of cognitive control (Stroop task) and math performance (modular arithmetic task) as outcome variables.
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Psychological test
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+Cognitive control was measured using a Stroop color-naming task. Math performance was measured using a modular arithmetic task.
+
+### Who collected the data?
+
+- [x] Not stated/unclear
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors do not explicitly discuss reliability of measures.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors justify their choice of measures, noting the Stroop task is a domain-general measure of cognitive control and the modular arithmetic task relies on working memory.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] Not stated/unclear (please specify)
+
+Concealment of allocation is not discussed.
+
+### Where were the data collected?
+
+- [x] Explicitly stated (please specify)
+
+Data were collected in laboratory cubicles.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+All data were collected via computer.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+ANOVAs were used to analyze the data.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+ANOVAs, t-tests, and contrast analyses were used.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors do not provide an explicit rationale for their analysis methods.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not stated/unclear (please specify)
+
+The basis of analysis is not explicitly stated, but appears to be 'intention to intervene'.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors do not explicitly discuss reliability of data analysis.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors do not explicitly discuss validity of data analysis.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors control for speed-accuracy tradeoffs in their analyses.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+No other notable features.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+No other notable issues.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented in text and figures showing mean differences between conditions.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+Key results:
+- Stereotype threat facilitated immediate cognitive control under prevention focus
+- This effect did not occur under promotion focus
+- Stereotype threat improved short-term math performance under prevention focus
+- Stereotype threat impaired longer-term math performance under prevention focus
+- No effects were found under promotion focus
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] No
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all key variables related to their hypotheses.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that stereotype threat induces a prevention focus, leading to immediate recruitment of cognitive control resources as an adaptive short-term response. However, this depletes resources over time, impairing performance. These effects do not occur under promotion focus.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The theoretical context and rationale are thoroughly described.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims and hypotheses are clearly stated.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+Limited information is provided about sampling and recruitment.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The experimental procedures and measures are described in detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The statistical analyses are adequately described.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The key procedures and measures are described in sufficient detail to allow replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all key variables related to their hypotheses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication of student/parent involvement in the design.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide a clear rationale for their approach and methods.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The experimental design was appropriate for testing causal hypotheses about stereotype threat and regulatory focus effects.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A lot (please specify)
+
+The experimental design with random assignment helps rule out many alternative explanations.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may generalize to university students, but broader generalizability is unclear.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The experimental design and measures are strong, but limited sample information reduces trustworthiness somewhat.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] High trustworthiness
+
+The authors thoroughly discuss their findings in relation to theory and previous research.
+
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

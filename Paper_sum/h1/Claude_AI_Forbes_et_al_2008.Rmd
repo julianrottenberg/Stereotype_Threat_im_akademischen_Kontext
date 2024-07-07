@@ -1,0 +1,573 @@
+---
+title             : "@forbesRoleDevaluingDiscounting2008"
+shorttitle        : "@forbesRoleDevaluingDiscounting2008"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h1.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Specific focus of this data extraction (please specify)  
+
+This extraction focuses on the aspects of the study related to neural activation patterns in response to errors, particularly the error-related negativity (ERN) and error positivity (Pe) components, as relevant to hypothesis 1 of the preregistration.
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was informed by prior research on stereotype threat, psychological disengagement, and neural correlates of error monitoring. Specifically, it builds on work examining how stigmatized individuals cope with negative stereotypes and feedback in academic domains through psychological disengagement (e.g. Major et al., 1998; Schmader et al., 2001). It also draws on neuroscience research on the error-related negativity (ERN) and error positivity (Pe) components as indices of performance monitoring (e.g. Gehring et al., 1993; Falkenstein et al., 2000).
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)  
+
+The research was supported by National Institute of Mental Health Grant #1R01MH071749 to T.S.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on how psychological disengagement (specifically devaluing academics and discounting intelligence tests) relates to neural indices of error monitoring (ERN and Pe) among minority students under stereotype threat conditions.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is minority (Latino and African American) college students.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+- [x] 21 and over  
+
+The study included college students, likely spanning both the 17-20 and 21+ age groups.
+
+### What is the sex of the population focus/foci?
+
+- [x] Mixed sex  
+
+The study included both male and female participants.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+The study was conducted with college students at a university.
+
+### In Which country or countries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in the United States (at the University of Arizona).
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examines how psychological disengagement (devaluing and discounting) relates to neural indices of error monitoring (ERN and Pe) when minority students complete a task described as either diagnostic or non-diagnostic of intelligence. It investigates how these factors influence early motivational (ERN) and later evaluative (Pe) stages of error processing.
+
+### What are the study research questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The main hypotheses were:
+
+1. Valuing academics would predict greater ERN amplitudes when the task was described as a measure of intelligence, reflecting more vigilant early stage error monitoring.
+
+2. Discounting would predict greater Pe amplitudes to errors when the task was described as a measure of intelligence, reflecting later evaluation of errors as more threatening.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study aimed to measure:
+- Psychological disengagement (devaluing and discounting)
+- Neural indices of error monitoring (ERN and Pe amplitudes)
+- Task performance (errors, post-error slowing)
+- Self-reported task difficulty and self-doubt
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study measured variables at a single time point.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Before and after  
+
+ERN and Pe were measured both before (baseline task) and after the diagnosticity manipulation.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+Participants were randomly assigned to either a diagnostic of intelligence (DIQ) condition or a control condition.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The groups differed in how the task was described. In the DIQ condition, the task was described as predictive of intelligence. In the control condition, it was described as a neutral pattern recognition task.
+
+### Number of groups
+
+- [x] Two  
+
+There were two groups: DIQ condition and control condition.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random  
+
+Participants were randomly assigned to condition.
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not explicitly state whether allocation was concealed.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+Both groups completed the same tasks, with only the description of the task differing between conditions.
+
+### Study design summary 
+
+This study used a between-subjects experimental design with random assignment to two conditions (DIQ vs control). All participants completed baseline and post-manipulation error monitoring tasks while EEG was recorded. The key manipulation was how the post-manipulation task was described (as diagnostic of intelligence or not).
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Implicit (please specify)
+
+While not explicitly stated, the focus on minority college students implies an aim to understand processes relevant to this population.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)
+
+The specific sampling methods are not described in detail.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The specific selection methods are not described.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)
+
+A planned sample size is not reported.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+Specific recruitment methods are not described.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)  
+
+Participants received course credit or $20 for participating.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)
+
+The consent process is not explicitly described.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+No additional details are provided.
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)  
+
+The final sample included 43 participants (35 Latino, 9 African American) for the main ERP analyses.
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+This information is not provided.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)  
+
+Participants were from the United States.
+
+### What ages are covered by the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Specific ages are not reported, but participants were undergraduate students.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Socioeconomic status is not reported.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Explicitly stated (please specify)  
+
+The sample included 35 Latino and 9 African American participants.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Explicitly stated (please specify)
+
+Participants had no disabilities that would impair task performance.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+Participants were permanent US residents.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+Without details on the sampling frame, representativeness cannot be determined.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+(a) To define the sample: Ethnicity, permanent US resident status, absence of disabilities
+(b) To measure aspects as findings: EEG data (ERN and Pe amplitudes), task performance (errors, reaction times), self-report measures of devaluing, discounting, perceived difficulty, and self-doubt
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Psychological test
+- [x] Other (please specify)
+
+EEG recording during cognitive task performance
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+EEG was recorded using 32 tin electrodes in a stretch-lycra cap. Participants completed Eriksen-Flankers tasks while EEG was recorded. Self-report measures of devaluing and discounting were collected in a pretest. Post-task questionnaires assessed perceived difficulty and self-doubt.
+
+### Who collected the data?
+
+- [x] Researcher
+
+A white male experimenter prepared participants for EEG recording.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors used established ERP analysis procedures, including baseline correction and artifact rejection. They also used previously validated scales for measuring devaluing and discounting.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors used well-established ERP components (ERN and Pe) as indices of error monitoring processes. They also used previously validated scales for measuring psychological disengagement.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] No (please specify)
+
+The experimenter was aware of the condition assignment as they delivered the task instructions.
+
+### Where were the data collected?
+
+- [x] Explicitly stated (please specify)
+
+Data were collected in a sound-dampened chamber at the University of Arizona.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+Participants completed the final questionnaire while still connected to the physiological equipment to take advantage of bogus pipeline effects for more accurate responding.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+Hierarchical regression analyses were used to test moderation effects. Repeated measures ANOVAs were used to establish general ERN and Pe effects.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+Hierarchical regression, repeated measures ANOVA, simple slopes analyses
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors used hierarchical regression to test for moderation effects of devaluing and discounting on the relationship between diagnosticity condition and ERP amplitudes. This approach allows for examination of interaction effects while controlling for baseline ERP activity.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not stated/unclear (please specify)
+
+The basis for data analysis (intention-to-treat vs. as-treated) is not explicitly stated.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors used established ERP analysis procedures and statistical methods. They also included baseline ERP activity as a covariate in their analyses to control for individual differences.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors examined both early (ERN) and later (Pe) components of error processing to provide a more comprehensive picture of performance monitoring processes.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors included baseline ERP activity as a covariate in their analyses to control for individual differences in ERP amplitudes.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors conducted simple slope analyses to interpret significant interaction effects.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+The authors note that the small sample size prevented examination of more complex interactions between devaluing and discounting.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented through text descriptions, statistical test results, and figures showing interaction effects.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+Key findings include:
+1. Devaluing moderated diagnosticity effects on ERN amplitudes, with valuing predicting larger ERNs in the diagnostic condition.
+2. Discounting moderated diagnosticity effects on Pe amplitudes, with an unexpected pattern of smaller Pes for discounters in the control condition.
+3. Devaluing predicted fewer errors and more post-error slowing in the diagnostic condition.
+4. Discounting predicted greater perceived difficulty and self-doubt in the diagnostic condition.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] No
+
+Confidence intervals were not reported.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+The data reporting appears comprehensive.
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all key variables mentioned in their hypotheses and research questions.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+Data storage information is not provided.
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that devaluing and discounting have distinct implications for performance monitoring processes. Devaluing relates to early-stage motivational processes (ERN), while discounting relates more to later evaluative processes (Pe) and subjective construals of the task. They suggest that valuing academics leads to heightened vigilance for errors under stereotype threat, while discounting may lead to greater subjective threat from errors.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide a thorough background on stereotype threat, psychological disengagement, and performance monitoring processes.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The study aims and hypotheses are clearly stated.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+While some information is provided, details on sampling and recruitment methods are limited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The EEG recording procedures and task details are well-described.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The statistical analyses are clearly described.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The methods and analyses are described in sufficient detail to allow replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all key variables and hypotheses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+No ethical concerns are apparent from the report.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication that students or parents were involved in the study design or conduct.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide a clear rationale for examining neural indices of error monitoring in relation to psychological disengagement and stereotype threat.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The experimental design with EEG measurement was appropriate for examining how psychological disengagement relates to neural indices of error monitoring under stereotype threat conditions.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The inclusion of a baseline task and use of baseline ERP activity as a covariate helps control for individual differences. However, the lack of counterbalancing of task order (baseline always before manipulation) could introduce order effects.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may generalize to Latino and African American college students in the United States. However, the small sample size and lack of information about sampling methods limit generalizability.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods and analyses to address its research questions. However, the small sample size, lack of detail on sampling methods, and some unexpected findings (e.g., Pe results) suggest medium trustworthiness.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors provide reasonable interpretations of their findings, acknowledging unexpected results and limitations. However, some conclusions (particularly regarding the Pe findings) are somewhat speculative given the unexpected pattern of results.
+
+
+# References
+
+
+
+::: {#refs custom-style="Bibliography"}
+:::

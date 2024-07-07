@@ -1,0 +1,566 @@
+---
+title             : "@jordanoPrimingPerformancerelatedConcerns2017"
+shorttitle        : "@jordanoPrimingPerformancerelatedConcerns2017"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h2.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Not applicable (whole study is focus of data extraction)  
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was informed by research on stereotype threat, mind-wandering, and the "control failures x current concerns" framework of mind-wandering. It aimed to examine how priming performance-related concerns through stereotype threat affects mind-wandering and task performance.
+
+### Do authors report how the study was funded?
+
+- [x] Not stated/unclear (please specify)  
+
+The authors do not report how the study was funded.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on the effects of stereotype threat on mind-wandering (particularly task-related interference) and task performance in an academic context.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is female undergraduate students.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+
+The mean age of participants was 19.10 years (SD = 1.24) in Study 1 and 19.25 years (SD = 1.12) in Study 2.
+
+### What is the sex of the population focus/foci?
+
+- [x] Female only  
+
+The study focused exclusively on female participants.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+The study was conducted with undergraduate students at a university.
+
+### In Which country or countries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in the United States, at the University of North Carolina at Greensboro.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examined the effects of priming math-gender stereotype threat on mind-wandering (particularly task-related interference) and math task performance in female undergraduates.
+
+### What are the study research questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The study hypothesized that:
+1. Priming stereotype threat would increase task-related interference (TRI)
+2. Priming stereotype threat would decrease task performance
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study measured:
+- Mind-wandering (on-task thoughts, task-unrelated thoughts, task-related interference)
+- Math verification accuracy 
+- Letter recall accuracy
+- Self-reported stress, fatigue, mood, motivation, and perceived task difficulty
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study examined participants at a single time point.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Only after  
+
+Measurements were taken during and after the experimental task.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+Participants were allocated to either a stereotype threat condition or a control condition.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The stereotype threat group was told the task measured "quantitative ability" and had revealed gender differences, while the control group was told it measured "memory ability" and was gender-fair. The stereotype threat group had a male experimenter, while the control group had a female experimenter.
+
+### Number of groups
+
+- [x] Two  
+
+There were two groups: stereotype threat and control.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not explicitly state if assignment to conditions was randomized.
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] No (please specify)  
+
+The allocation was not concealed, as participants were explicitly told different information about the task based on their condition.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [ ] Yes
+- [x] No
+- [ ] Can't tell
+
+The groups received different instructions and had experimenters of different genders.
+
+### Study design summary 
+
+This was an experimental study with two groups (stereotype threat and control) of female undergraduate participants. The stereotype threat group was primed for math-gender stereotype threat, while the control group was not. Both groups completed the same experimental task (OSPAN) with embedded thought probes to measure mind-wandering.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Not stated/unclear (please specify)
+
+The authors do not explicitly state if they are trying to produce representative findings.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)
+
+The sampling frame and identification methods are not clearly stated.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The specific selection methods are not described.
+
+### Planned sample size
+
+- [x] Explicitly stated (please specify)
+
+The planned sample size was 60 female participants (30 per condition) in each study.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The recruitment methods are not described.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)
+
+Participants received course credit for participating.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)
+
+The consent process is not described.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)
+
+60 female undergraduate students participated in each study (120 total).
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+This information is not provided.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)
+
+The participants were from the United States, attending the University of North Carolina at Greensboro.
+
+### What ages are covered by the actual sample?
+
+- [x] 17 to 20
+
+The mean age was 19.10 years (SD = 1.24) in Study 1 and 19.25 years (SD = 1.12) in Study 2.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Socio-economic status is not reported.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Ethnicity information is not provided.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+No information is provided about special educational needs.
+
+### Is there any other useful information about the study participants?
+
+- [x] Not stated/unclear (please specify)
+
+No other relevant information about participants is provided.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Not applicable (no sampling frame)
+
+A sampling frame is not described.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main types of data collected were:
+(b) To measure aspects of the sample as findings:
+- Mind-wandering data from thought probes during the OSPAN task
+- Math verification accuracy on the OSPAN
+- Letter recall accuracy on the OSPAN
+- Post-task questionnaires on stress, fatigue, mood, motivation, and perceived difficulty
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Self-completion report or diary
+- [x] Psychological test
+
+Participants completed the OSPAN task with embedded thought probes and post-task questionnaires.
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+The OSPAN task was used with embedded thought probes asking participants to categorize their thoughts. Post-task questionnaires included the DSSQ, PANAS, and questions on perceived stress, fatigue, and difficulty.
+
+### Who collected the data?
+
+- [x] Researcher
+
+The experimenters collected the data.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors used established measures like the OSPAN, DSSQ, and PANAS. They also compared online thought probes to retrospective measures.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors cite previous research validating the measures used, such as the OSPAN and thought probes.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] No (please specify)
+
+The experimenters were aware of the condition participants were in, as they delivered different instructions based on condition.
+
+### Where were the data collected?
+
+- [x] Unclear/not stated (please specify)
+
+The specific location of data collection is not stated, but it was likely in a laboratory setting at the university.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+The study used online thought probes during the task to measure mind-wandering, rather than relying solely on retrospective measures.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+The authors used ANOVAs to compare mind-wandering and task performance between conditions.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+ANOVAs were used to analyze differences between conditions in mind-wandering and task performance.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors do not explicitly justify their choice of analysis methods.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not applicable (not an evaluation study with prospective allocation)
+
+This was not an evaluation study with prospective allocation.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors do not explicitly describe addressing reliability of data analysis.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors do not explicitly describe addressing validity of data analysis.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors do not explicitly describe strategies to control for confounding variables.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors compared online thought probe data to retrospective questionnaire data on mind-wandering.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+No other relevant analytic or statistical issues were noted.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented in text, tables, and figures showing proportions of different thought types and task performance scores.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+In both studies, participants in the stereotype threat condition reported more task-related interference than controls. In Study 2, which used a more challenging task, stereotype threat participants also had lower math accuracy than controls.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [ ] Yes
+   - [x] No
+   - [ ] Can't tell
+
+Confidence intervals were not reported for the main findings.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all main variables mentioned in their hypotheses and research questions.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that priming performance-related concerns through stereotype threat increases task-related interference and can impair task performance. They argue this supports the "control failures x current concerns" framework of mind-wandering.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide adequate context about stereotype threat and mind-wandering research.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims and hypotheses are clearly stated.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+While the sample size and demographics are described, there is limited information on how participants were identified and recruited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The OSPAN task, thought probes, and questionnaires are described in detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] No (please specify)
+
+While the general analytic approach is mentioned, more detail could be provided on specific analyses.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The key methods and measures are described in sufficient detail to allow replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all main variables mentioned in their hypotheses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+No major ethical concerns are apparent.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication that students or parents were involved in the study design or conduct.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide justification for their approach based on previous research and theory.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The experimental design was appropriate for testing the effects of stereotype threat on mind-wandering and performance.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+While the experimental design controls for some sources of bias, potential confounds like experimenter gender were not fully controlled.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may generalize to female undergraduate students in similar cultural contexts, but generalizability to other populations is limited.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods and measures, but has some limitations in sampling and analysis reporting.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The conclusions are generally justified by the findings, but some interpretations could be more cautious.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::
