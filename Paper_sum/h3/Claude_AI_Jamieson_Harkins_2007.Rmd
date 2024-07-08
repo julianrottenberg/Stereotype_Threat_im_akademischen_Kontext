@@ -1,0 +1,676 @@
+---
+title             : "@jamiesonMereEffortStereotype2007"
+shorttitle        : "@jamiesonMereEffortStereotype2007"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h3.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+
+- [x] Specific focus of this data extraction (please specify)  
+
+This data extraction focuses specifically on the aspects of the study related to working memory performance under stereotype threat conditions, as relevant to hypothesis 3 of the preregistration.
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was explicitly linked to existing research on stereotype threat and working memory interference. The authors cite previous work by Schmader and Johns (2003) proposing that stereotype threat impairs working memory capacity.
+
+### Do authors report how the study was funded?
+
+- [x] Not stated/unclear (please specify)  
+
+The authors do not report how the study was funded.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on examining the processes underlying stereotype threat effects on performance, specifically comparing a working memory interference account with a "mere effort" account.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is on female college students who may experience stereotype threat related to math and spatial abilities.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+- [x] 21 and over  
+
+The participants were college students, likely falling in the 17-20 and 21+ age ranges.
+
+### What is the sex of the population focus/foci?
+
+- [x] Female only  
+
+The study focused specifically on female participants.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+The study was conducted with undergraduate students at a university.
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in the United States at Northeastern University.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examines stereotype threat effects on performance of an antisaccade task, comparing explanations based on working memory interference versus increased motivation ("mere effort"). It uses manipulations of stereotype threat and cognitive load to test these competing accounts.
+
+### What are the study reserach questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The key research questions are:
+1. How does stereotype threat impact neural activation patterns and cognitive processes in academic settings?
+2. What are the specific neural and cognitive mechanisms through which stereotype threat influences academic performance?
+
+The study tests competing hypotheses from the working memory interference account versus the mere effort account.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+Key variables examined include:
+- Stereotype threat (manipulated)
+- Cognitive load (manipulated in Experiment 4)
+- Antisaccade task performance (accuracy, reaction time)
+- Eye movements (reflexive saccades, corrective saccades, correct saccades)
+- Working memory capacity
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study used a cross-sectional design examining performance at a single time point.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Only after  
+
+Outcome measures were taken only after the stereotype threat manipulation.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+Participants were prospectively allocated to stereotype threat or control conditions.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The groups differed based on whether they received the stereotype threat manipulation or control instructions.
+
+### Number of groups
+
+- [x] Two  
+
+There were two main groups: stereotype threat and control.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random  
+
+Participants were randomly assigned to conditions.
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)  
+
+The authors do not explicitly state whether allocation was concealed.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+Apart from the stereotype threat manipulation, all participants completed the same tasks under the same conditions.
+
+### Study design summary 
+
+This study used a between-subjects experimental design with random assignment to stereotype threat or control conditions. The key dependent measures were performance on an antisaccade task and related eye movement measures. In Experiment 4, cognitive load was manipulated as an additional factor.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Not stated/unclear (please specify)
+
+The authors do not explicitly state that they are aiming for representative findings, but seem focused on testing theoretical mechanisms.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)
+
+The sampling frame and recruitment methods are not clearly specified, beyond stating that participants were undergraduate students.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The specific selection methods are not reported.
+
+### Planned sample size
+
+- [x] Explicitly stated (please specify)
+
+Sample sizes are explicitly stated for each experiment: 
+Experiment 1: 80 participants
+Experiment 2: 36 participants
+Experiment 3: 36 participants 
+Experiment 4: 72 participants
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+Specific recruitment methods are not reported.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)
+
+Participants received partial course credit for participating.
+
+### Was consent sought?
+
+- [x] Participant consent sought
+
+The authors state that written consent was obtained from participants.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+No additional relevant details are provided.
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)
+
+Experiment 1: 80 participants (40 men, 40 women)
+Experiment 2: 36 female participants
+Experiment 3: 36 female participants
+Experiment 4: 72 female participants
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+The proportion of selected participants who actually participated is not reported.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)
+
+Participants were from the United States, specifically students at Northeastern University.
+
+### What ages are covered by the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The specific ages are not reported, but participants were undergraduate students.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Socio-economic status of participants is not reported.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Ethnicity of participants is not reported.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+No information is provided about special educational needs.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+All participants reported normal or corrected-to-normal vision.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+Without more details on the sampling frame and recruitment methods, it is unclear how representative the sample was.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main types of data collected were:
+(a) To define the sample: Gender, vision status
+(b) As findings: Antisaccade task performance (accuracy, reaction time), eye movement measures, manipulation check responses
+
+### Which methods were used to collect the data?
+
+- [x] Practical test
+- [x] Self-completion questionnaire
+
+The study used an antisaccade task with eye tracking (practical test) and questionnaires for manipulation checks.
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+The antisaccade task and eye tracking methods are described in detail. Participants completed the task on a computer while their eye movements were tracked. Questionnaires were used for manipulation checks.
+
+### Who collected the data?
+
+- [x] Researcher
+
+The data appears to have been collected by the researchers, though this is not explicitly stated.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors describe using filters and exclusion criteria for the eye tracking data to ensure reliability.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors cite previous research validating the antisaccade task as a measure of working memory capacity and inhibitory control.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] No (please specify)
+
+The experimenter was present during the task and was aware of participant condition.
+
+### Where were the data collected?
+
+- [x] Explicitly stated (please specify)
+
+Data were collected in a laboratory setting at Northeastern University.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+Eye movements were recorded using an infrared oculometer.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+The data were analyzed using analysis of variance (ANOVA) and planned contrasts.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+The primary statistical methods were ANOVA and planned contrasts.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors state that ANOVA is appropriate for examining differences between experimental conditions on the outcome measures.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] 'Intention to intervene'
+
+The analysis appears to be based on original group allocation.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors report using established data filtering and exclusion criteria for the eye tracking data.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors compare their findings to previous research using similar methods to support validity.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors used random assignment to conditions to control for potential confounds.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors conduct multiple experiments to test competing explanations and rule out alternative interpretations.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+No major issues noted. The analyses appear appropriate for the study design.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented through text descriptions, statistical test results, and figures showing key findings.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+Key findings include:
+- Stereotype threat led to more reflexive saccades but faster corrective and correct saccades
+- Under cognitive load, stereotype threat impaired performance
+- Results support a "mere effort" account over working memory interference
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] No
+
+The authors do not report confidence intervals for the effects.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+The data appear to be reported thoroughly and appropriately.
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all key variables related to antisaccade performance and eye movements as specified in their research questions.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+The authors do not provide information on data storage/availability.
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that their findings support a "mere effort" account of stereotype threat effects rather than working memory interference. They argue stereotype threat increases motivation, potentiating prepotent responses, but also allows for faster correction when given sufficient time.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide adequate context, describing relevant background on stereotype threat and theories of working memory.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims to test competing accounts of stereotype threat effects are clearly stated.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+Limited information is provided on sampling and recruitment methods.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The antisaccade task and eye tracking methods are described in detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The ANOVA and contrast analyses are adequately described.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The methods are described in sufficient detail to allow replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report results for all key measures and conditions.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+No major ethical concerns are apparent. Consent was obtained from participants.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication of student/parent involvement in the study design.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide adequate justification for their methods based on previous research.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The experimental design with eye tracking was appropriate for examining the processes underlying stereotype threat effects.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A lot (please specify)
+
+The use of multiple experiments and eye tracking provides strong evidence for the authors' conclusions, ruling out many alternative explanations.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may generalize to similar populations of female college students, but broader generalizability is limited by the specific sample and task used.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods and analyses, but is limited by lack of detail on sampling and narrow participant demographics.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors provide reasonable justification for their conclusions, but some limitations in generalizability remain.
+
+# @wellsNewcastleottawaScaleNOS2014
+
+## **CASE CONTROL STUDIES**
+
+This section is not applicable as the study is not a case-control design.
+
+## **COHORT STUDIES**
+
+This section is not applicable as the study is not a cohort design.
+
+# @universityofglasgowCriticalAppraisalChecklistn.d.nodate
+
+## DOES THIS REVIEW ADDRESS A CLEAR QUESTION?
+
+### Did the review address a clearly focussed issue?
+- Was there enough information on:
+  - The population studied
+  - The intervention given
+  - The outcomes considered
+- [x] Yes
+
+The study clearly focused on examining stereotype threat effects in female college students, using an antisaccade task intervention, and measuring performance and eye movement outcomes.
+
+### Did the authors look for the appropriate sort of papers?
+- The 'best sort of studies' would:
+  - Address the review's question
+  - Have an appropriate study design
+- [x] Can't tell
+
+This is not a review paper, so this question is not directly applicable.
+
+## ARE THE RESULTS OF THIS REVIEW VALID?
+
+### Do you think the important, relevant studies were included?
+- Look for:
+  - Which bibliographic databases were used
+  - Follow up from reference lists
+  - Personal contact with experts
+  - Search for unpublished as well as published studies
+  - Search for non-English language studies
+- [x] Can't tell
+
+This is not a review paper, so this question is not directly applicable.
+
+### Did the review's authors do enough to assess the quality of the included studies?
+- The authors need to consider the rigour of the studies they have identified. Lack of rigour may affect the studies results.
+- [x] Can't tell
+
+This is not a review paper, so this question is not directly applicable.
+
+### If the results of the review have been combined, was it reasonable to do so?
+- Consider whether:
+  - The results were similar from study to study
+  - The results of all the included studies are clearly displayed
+  - The results of the different studies are similar
+  - The reasons for any variations are discussed
+- [x] Can't tell
+
+This is not a review paper, so this question is not directly applicable.
+
+## WHAT ARE THE RESULTS?
+
+### What is the overall result of the review?
+- Consider:
+  - If you are clear about the review's 'bottom line' results
+  - What these are (numerically if appropriate)
+  - How were the results expressed (NNT, odds ratio, etc)
+
+The overall result of this experimental study (not a review) is that stereotype threat effects on antisaccade task performance are better explained by a "mere effort" account than a working memory interference account. This is supported by findings of increased reflexive saccades but faster corrective and correct saccades under stereotype threat, and impaired performance under cognitive load.
+
+### How precise are the results?
+- Are the results presented with confidence intervals?
+- [x] No
+
+The results are presented with p-values and effect sizes (Cohen's d), but confidence intervals are not reported.
+
+## WILL THE RESULTS HELP LOCALLY?
+
+### Can the results be applied to the local population?
+- Consider whether:
+  - The patients covered by the review could be sufficiently different from your population to cause concern
+  - Your local setting is likely to differ much from that of the review
+- [x] Can't tell
+
+The results might apply to similar populations of female college students, but generalizability to other populations or settings is unclear.
+
+### Were all important outcomes considered?
+- [x] Yes
+
+The study considered important outcomes related to antisaccade task performance and eye movements, which are relevant to the research questions.
+
+### Are the benefits worth the harms and costs?
+- Even if this is not addressed by the review, what do you think?
+- [x] Yes
+
+The study appears to have minimal risks for participants and provides valuable insights into stereotype threat mechanisms, making the benefits likely worth the costs.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

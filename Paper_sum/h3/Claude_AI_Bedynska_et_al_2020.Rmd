@@ -1,0 +1,517 @@
+---
+title             : "@bedynskaStereotypeThreatLinked2020"
+shorttitle        : "@bedynskaStereotypeThreatLinked2020"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h3.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+
+- [x] Specific focus of this data extraction (please specify)  
+
+This data extraction focuses on the components of the study related to stereotype threat, working memory, and language achievement in boys, which are relevant to testing hypothesis 3 from the preregistration.
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was explicitly linked to existing research on stereotype threat, working memory, and achievement. The authors cite numerous previous studies on these topics and build upon prior work examining stereotype threat effects in academic settings.
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)  
+
+The study was funded by the European Social Fund (Human Capital Operational Programme 2007–2013, Priority III High quality of the education system).
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on stereotype threat, working memory, intellectual helplessness, and language achievement in adolescent boys.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is adolescent boys in secondary school.
+
+### What is the relevant age group? 
+
+- [x] 11 - 16  
+
+The sample included boys aged 14-16 years.
+
+### What is the sex of the population focus/foci?
+
+- [x] Male only  
+
+The study focused only on male students.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Secondary school  
+
+The study was conducted with students from secondary schools.
+
+### In Which country or countries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in Poland.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examines how chronic stereotype threat relates to language achievement and domain identification in adolescent boys, with working memory and intellectual helplessness as potential mediating factors. It also considers gender identification as a moderating variable.
+
+### What are the study research questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The authors hypothesized that:
+1) Chronic stereotype threat would be associated with lower language achievement and lower domain identification in boys.
+2) Working memory and intellectual helplessness would mediate the relationship between stereotype threat and the outcome variables.
+3) The relationships would be stronger for boys who highly identify with their gender.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The key variables measured were:
+- Chronic stereotype threat
+- Working memory capacity
+- Intellectual helplessness 
+- Language achievement (GPA)
+- Domain identification
+- Gender identification
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study collected data at a single time point.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Not applicable (not an evaluation)  
+
+This was not an intervention study.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
+
+The study compared boys with high vs. low levels of gender identification, based on a median split.
+
+### How do the groups differ?
+
+- [x] Explicitly stated (please specify)  
+
+The groups differed in their level of gender identification (high vs. low).
+
+### Number of groups
+
+- [x] Two  
+
+The study compared two groups - boys with high vs. low gender identification.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Not applicable (not more than one group)  
+
+There was no randomization or intervention in this observational study.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Explicitly stated (please specify)
+
+The authors used a nationwide sample selected through stratified random sampling to produce findings representative of Polish secondary school boys.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Explicitly stated (please specify)
+
+The sampling frame included secondary schools in Poland. Schools were randomly selected within strata based on region and school location (rural, small city, medium city).
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Explicitly stated (please specify)
+
+Within selected schools, 1-2 classes from each grade level were randomly selected. All boys in the selected classes were invited to participate.
+
+### Planned sample size
+
+- [x] Explicitly stated (please specify)
+
+The initial sample included 635 male youth from 24 secondary schools.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Explicitly stated (please specify)
+
+All boys in the selected classes were invited to participate in the study, which was presented as a pilot study of an online educational game.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)
+
+Boys did not receive any compensation for participation.
+
+### Was consent sought?
+
+- [x] Participant consent sought
+- [x] Parental consent sought
+
+Both parental and participant consent was obtained.
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)
+
+The final sample consisted of 319 boys.
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+The exact proportion is not clearly stated, though the authors note about 5% of selected students were absent during data collection.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)
+
+The sample was from Poland.
+
+### What ages are covered by the actual sample?
+
+- [x] 11 to 16
+
+The sample included boys aged 14-16 years.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Socioeconomic status of participants is not reported.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+Ethnicity of participants is not reported.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+No information is provided about special educational needs of participants.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was a cross-sectional study.
+
+### If the study involves following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was a cross-sectional study.
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was a cross-sectional study.
+
+## Methods - Data collection
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Psychological test
+- [x] School/college records (e.g. attendance records etc)
+
+The study used self-report questionnaires, a working memory test, and school records of grades.
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+The authors provide details on the measures used:
+- 7-item chronic stereotype threat scale 
+- 9-item intellectual helplessness scale
+- Single-item measures of gender identity and domain identification
+- Functional aspects of working memory test
+- Grade point average from school records
+
+### Who collected the data?
+
+- [x] Not stated/unclear
+
+The paper does not explicitly state who collected the data.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+The authors report Cronbach's alpha values for the chronic stereotype threat scale (α = .88) and intellectual helplessness scale (α = .90).
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+The authors conducted confirmatory factor analysis to assess the construct validity of the chronic stereotype threat scale.
+
+### Where were the data collected?
+
+- [x] Explicitly stated (please specify)
+
+Data were collected at the participants' schools during regular school hours.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+The authors used structural equation modeling with maximum likelihood robust estimation.
+
+### Which statistical methods, if any, were used in the analysis?
+
+The main analysis used structural equation modeling. The authors also report using confirmatory factor analysis and calculating descriptive statistics and correlations.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+The authors state they used structural equation modeling to test their hypothesized mediational model.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors used robust estimation methods and report confidence intervals for indirect effects.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors tested alternative models, including a reversed model, to assess the validity of their proposed mediational model.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors used a complex sampling approach to account for the clustered nature of the data (students nested within classes).
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+The results are presented through a combination of descriptive statistics in tables, a path diagram of the structural equation model, and reporting of standardized path coefficients and confidence intervals in the text.
+
+### What are the results of the study as reported by authors?
+
+The key findings relevant to H3 include:
+- Working memory mediated the relationship between stereotype threat and language achievement (γ = 0.45, 95% CI [0.34, 0.55])
+- Intellectual helplessness mediated the relationships between stereotype threat and both achievement (γ = -0.13, 95% CI [-0.21, -0.06]) and domain identification (γ = -0.13, 95% CI [-0.22, -0.04])
+- These effects were only significant for boys with high gender identification
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report results for all variables specified in their research questions and hypotheses.
+
+### What do the author(s) conclude about the findings of the study?
+
+The authors conclude that chronic stereotype threat is associated with lower language achievement and domain identification in boys who highly identify with their gender. This relationship is mediated by decreased working memory capacity and increased intellectual helplessness.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide adequate context, describing the theoretical background, prior research, and rationale for the study.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims and hypotheses of the study are clearly stated.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] Yes (please specify)
+
+The sampling and recruitment procedures are described in detail.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The data collection methods and measures are adequately described.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The authors provide a clear description of their analytical approach using structural equation modeling.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)
+
+The methods are described in sufficient detail to allow replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all variables and relationships specified in their aims and hypotheses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+The authors obtained appropriate consent and followed ethical guidelines.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication that students or parents were involved in the study design or conduct beyond providing consent.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide a clear rationale for their study design and methods based on prior research and theory.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The cross-sectional design with structural equation modeling was appropriate for examining the proposed mediational relationships.
+
+### Have sufficient attempts been made to establish the repeatability or reliability of data collection methods or tools?
+
+- [x] Yes (please specify)
+
+The authors report reliability coefficients for their main measures.
+
+### Have sufficient attempts been made to establish the validity or trustworthiness of data collection tools and methods?
+
+- [x] Yes (please specify)
+
+The authors conducted confirmatory factor analysis to assess construct validity of their stereotype threat measure.
+
+### Have sufficient attempts been made to establish the repeatability or reliability of data analysis?
+
+- [x] Yes (please specify)
+
+The authors used robust estimation methods and report confidence intervals.
+
+### Have sufficient attempts been made to establish the validity or trustworthiness of data analysis?
+
+- [x] Yes (please specify)
+
+The authors tested alternative models to validate their proposed mediational model.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+While the authors used appropriate methods, the cross-sectional design limits causal inferences. The authors acknowledge this limitation.
+
+### How generalisable are the study results?
+
+The results may be generalizable to adolescent boys in Poland, but caution should be used in generalizing to other countries or cultures without further research.
+
+### In light of the above, do the reviewers differ from the authors over the findings or conclusions of the study?
+
+No, the reviewers' interpretation aligns with the authors' conclusions.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] High trustworthiness
+
+The authors provide a thorough discussion of their findings in relation to prior research and theory, acknowledging limitations and suggesting directions for future research.
+
+### Weight of evidence A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] High trustworthiness (please specify)
+
+The study used appropriate methods, a representative sample, and validated measures. The authors thoroughly report their procedures and results, allowing for replication. While the cross-sectional design limits causal inferences, the findings can be trusted as a robust examination of the relationships between the studied variables.
+
+### Weight of evidence B: Appropriateness of research design and analysis for addressing the question, or sub-questions, of this specific systematic review.
+
+- [x] High
+
+The study design and analysis are highly appropriate for addressing the review question about the relationship between stereotype threat and working memory in academic achievement (H3 in the preregistration).
+
+### Weight of evidence C: Relevance of particular focus of the study (including conceptual focus, context, sample and measures) for addressing the question of this specific systematic review
+
+- [x] High
+
+The study's focus on stereotype threat, working memory, and language achievement in adolescent boys is highly relevant to addressing H3 in the preregistration.
+
+### Weight of evidence D: Overall weight of evidence
+
+- [x] High
+
+Taking into account the methodological quality, appropriateness of design, and relevance, this study provides strong evidence for addressing the review question.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

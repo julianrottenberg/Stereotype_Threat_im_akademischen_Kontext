@@ -1,0 +1,530 @@
+---
+title             : "@johnsStereotypeThreatExecutive2008"
+shorttitle        : "@johnsStereotypeThreatExecutive2008"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h3.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Specific focus of this data extraction (please specify)  
+
+This data extraction focuses specifically on Study 3 of the paper, which is most relevant to testing hypothesis 3 from the preregistration.
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was informed by previous research on stereotype threat, working memory, and emotion regulation. Specifically, it builds on prior work showing that stereotype threat impairs working memory (Schmader & Johns, 2003) and that emotion regulation can deplete cognitive resources (Richards & Gross, 2000).
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)  
+
+The research was supported in part by National Institute of Mental Health Grant 1R01MH071749 awarded to Toni Schmader.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on stereotype threat, working memory, emotion regulation, and math performance among women.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is on female college students.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+- [x] 21 and over  
+
+### What is the sex of the population focus/foci?
+
+- [x] Female only  
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+### In Which country or countries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in the United States at a medium-sized American university.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study is concerned with how stereotype threat affects women's math performance by depleting working memory resources, and how reappraising anxiety as irrelevant to performance can buffer against these negative effects.
+
+### What are the study research questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The primary hypothesis was that women under stereotype threat who were not given any reappraisal information would show lower working memory and math performance compared to women in a non-threat control condition and women under threat who were told to reappraise anxiety as irrelevant to performance.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study measures working memory capacity, math test performance, and self-reported anxiety.
+
+### Study timing
+
+- [x] Cross-sectional  
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Only after  
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The groups differ based on whether they were exposed to stereotype threat and whether they received instructions to reappraise anxiety. There were three conditions: nonthreat control, stereotype threat only, and stereotype threat plus anxiety reappraisal.
+
+### Number of groups
+
+- [x] Three  
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random  
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not explicitly state whether allocation was concealed.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [ ] Yes
+- [ ] No
+- [x] Can't tell
+
+The paper does not provide enough information to determine if all groups were treated equally apart from the experimental manipulation.
+
+### Study design summary 
+
+This was an experimental study with random assignment to one of three conditions: nonthreat control, stereotype threat only, or stereotype threat plus anxiety reappraisal. The primary dependent measures were working memory capacity and math test performance.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Implicit (please specify)  
+
+While not explicitly stated, the authors seem to be aiming for findings representative of female college students in general.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Explicitly stated (please specify)  
+
+Participants were recruited if they reported having knowledge of the stereotype about women's math ability and being at or above the scale midpoint on a measure of math identification.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)  
+
+The specific sampling method is not clearly stated beyond the recruitment criteria.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)  
+
+A planned sample size is not reported.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)  
+
+The specific recruitment methods are not described.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)  
+
+Participants completed the study for course credit.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)  
+
+The consent process is not described in the paper.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)  
+
+The final sample included 58 women.
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)  
+
+This information is not provided.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)  
+
+The participants were from the United States.
+
+### What ages are covered by the actual sample?
+
+- [x] Not stated/unclear (please specify)  
+
+The specific ages are not reported, but the sample consisted of university students.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)  
+
+This information is not provided.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Explicitly stated (please specify)  
+
+The sample consisted of Caucasian women.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)  
+
+This information is not provided.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+Participants were recruited if they reported being at or above the scale midpoint on a measure of math identification.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [ ] Details
+
+(a) To define the sample: Knowledge of the stereotype about women's math ability and math identification were used.
+
+(b) To measure aspects of the sample: Working memory capacity, math test performance, and self-reported anxiety were measured.
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Psychological test
+- [x] Other documentation
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)  
+
+Working memory was measured using the reading span task. Math performance was measured using 30 multiple-choice word problems from the GRE quantitative section. Self-reported anxiety was measured using a brief questionnaire.
+
+### Who collected the data?
+
+- [x] Researcher
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [ ] Details
+
+The authors do not explicitly address reliability of the measures.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [ ] Details
+
+The authors do not explicitly address validity of the measures, though they use established tasks like the reading span task and GRE problems.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not specify if there was concealment from those measuring outcomes.
+
+### Where were the data collected?
+
+- [x] Implicit (please specify)  
+
+The data appear to have been collected in a laboratory setting at the university, though this is not explicitly stated.
+
+### Are there other important features of data collection?
+
+- [ ] Details
+
+No other important features are described.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)  
+
+The primary analyses used orthogonal contrasts to test the specific hypotheses.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [ ] Details
+
+ANOVAs, planned contrasts, and mediation analyses using the bootstrap method were conducted.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [ ] Details
+
+The authors do not provide an explicit rationale for their analysis methods.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not stated/unclear (please specify)
+
+The basis for data analysis is not clearly specified.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [ ] Details
+
+The authors do not explicitly address reliability of the data analysis.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [ ] Details
+
+The authors do not explicitly address validity of the data analysis.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [ ] Details
+
+The authors do not explicitly describe strategies to control for confounding variables.
+
+### Please describe any other important features of the analysis.
+
+- [ ] Details
+
+No other important features of the analysis are described.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [ ] Details
+
+There are no other notable analytic or statistical issues to comment on.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [ ] Details
+
+Results are presented in text and in a table showing means and standard deviations for the primary dependent measures.
+
+### What are the results of the study as reported by authors?
+
+- [ ] Details
+
+The key results were:
+- Women in the stereotype threat only condition recalled fewer words on the working memory task compared to the control and reappraisal conditions.
+- Women in the stereotype threat only condition answered fewer math problems correctly compared to the control and reappraisal conditions.
+- The reappraisal and control conditions did not differ significantly on working memory or math performance.
+- There were no differences in self-reported anxiety between conditions.
+- Mediation analyses suggested working memory mediated the effect of the manipulation on math performance.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [ ] Yes
+   - [x] No
+   - [ ] Can't tell
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all key variables specified in their aims: working memory, math performance, and anxiety.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+### What do the author(s) conclude about the findings of the study?
+
+- [ ] Details
+
+The authors conclude that reappraising anxiety as irrelevant to performance can buffer against the negative effects of stereotype threat on working memory and math performance. They suggest this occurs by reducing efforts to suppress anxiety, which otherwise deplete executive resources.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The theoretical background and rationale for the study are well described.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims and hypotheses are clearly stated.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+Some key details about the sample and recruitment are not provided, such as specific ages and recruitment methods.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The key measures and tasks are described adequately.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The primary analyses are described, though more detail could have been provided on some aspects.
+
+### Is the study replicable from this report?
+
+- [x] No (please specify)
+
+Some key methodological details are missing that would be needed for exact replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors appear to report on all key measures and analyses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+No obvious ethical concerns are apparent.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication of student/parent involvement in the design or conduct.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide adequate theoretical and empirical justification for their approach.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The experimental design was appropriate for testing the causal hypotheses.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The random assignment and experimental control help rule out some alternative explanations, but there are still potential confounds and demand characteristics that are not fully addressed.
+
+### How generalisable are the study results?
+
+- [ ] Details
+
+The results may generalize to female college students in the U.S., but generalizability to other populations is unclear.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods overall, but some limitations in sample details and potential confounds reduce trustworthiness somewhat.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The conclusions seem reasonably justified by the data, though some caution is warranted due to methodological limitations noted above.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

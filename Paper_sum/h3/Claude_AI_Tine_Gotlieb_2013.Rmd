@@ -1,0 +1,658 @@
+---
+title             : "@tineGenderRaceIncomebased2013"
+shorttitle        : "@tineGenderRaceIncomebased2013"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h3.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+
+- [x] Specific focus of this data extraction (please specify)  
+
+This data extraction focuses specifically on the working memory aspects of the study, related to hypothesis 3 from the preregistration about stereotype threat effects on working memory.
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was explicitly linked to existing research on stereotype threat effects, including prior work showing stereotype threat can reduce working memory capacity (e.g. Schmader & Johns 2003, Rydell & Boucher 2010).
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)  
+
+The research was supported by a Kaminsky Family Fund award and the Paul K. Richter and Evalyn E. Cook Richter Memorial Fund.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on stereotype threat effects on math performance and working memory function, comparing gender-, race-, and income-based stereotype threat as well as multiple minority stereotype threat.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is college students of varying gender, race, and income levels.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+- [x] 21 and over  
+
+Participants were undergraduate college students aged 18-26.
+
+### What is the sex of the population focus/foci?
+
+- [x] Mixed sex  
+
+The study included both male and female participants.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+The study was conducted with undergraduate students at a college.
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in the United States.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examined stereotype threat effects on working memory function, comparing effects based on gender, race, income level, and multiple stigmatized identities. It used a pre-test/post-test design with a stereotype threat prime in between.
+
+### What are the study reserach questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The study aimed to:
+1) Compare the relative impact of gender-, race-, and income-based stereotype threat effects
+2) Determine if individuals with multiple stigmatized identities experience larger stereotype threat effects than those with one stigmatized identity
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study measured:
+- Working memory function (pre- and post-test)
+- Math performance (pre- and post-test)
+- Number of stigmatized aspects of identity (gender, race, income)
+- Self-reported effort
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study examined participants at a single time point, with pre- and post-tests administered in one session.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Before and after  
+
+Working memory was measured both before and after the stereotype threat prime.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] No prospective allocation but use of pre-existing differences to create comparison groups (e.g. receiving different interventions, or characterised by different levels of a variable such as social class)  
+
+Groups were based on pre-existing demographic differences (gender, race, income level).
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+Groups differed based on:
+- Gender (male vs. female)
+- Race (White vs. racial/ethnic minority)
+- Income level (low, middle, high)
+- Number of stigmatized aspects of identity (0 to 3)
+
+### Number of groups
+
+- [x] Four or more (please specify)  
+
+There were multiple group comparisons based on gender (2), race (2), income (3), and number of stigmatized identities (4).
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Not applicate (no prospective allocation)  
+
+Participants were not allocated to groups - groupings were based on pre-existing characteristics.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+All participants went through the same experimental procedure.
+
+### Study design summary 
+
+This was a cross-sectional study comparing stereotype threat effects on working memory across different demographic groups. All participants completed pre-tests, received a stereotype threat prime, and then completed post-tests. Groups were based on pre-existing characteristics (gender, race, income level) rather than random assignment.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Implicit (please specify)  
+
+The authors do not explicitly state they are trying to produce representative findings, but they use a diverse sample of college students to examine effects across different demographic groups.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)
+
+The specific sampling methods are not described in the paper.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The participant selection methods are not described in detail.
+
+### Planned sample size
+
+- [x] Explicitly stated (please specify)  
+
+The authors state they used power analyses to determine an appropriate sample size, resulting in 71 participants.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The recruitment methods are not described in the paper.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not mention if any recruitment incentives were provided.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)
+
+The consent process is not described in the paper.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+No other relevant details are provided about recruitment or consent.
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)  
+
+The total sample was 71 undergraduate college students.
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on the proportion of those selected who participated.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Not stated/unclear (please specify)
+
+The specific countries of origin for participants are not stated, though the study was conducted in the US.
+
+### What ages are covered by the actual sample?
+
+- [x] 17 to 20
+- [x] 21 and over
+
+Participants were aged 18-26 years old.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Explicitly stated (please specify)  
+
+Participants were categorized as low-income (<$45,000/year), middle-income ($45,000-$84,999/year), or high-income (>$85,000/year) based on family income.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Explicitly stated (please specify)  
+
+The sample included 47 White participants and 24 racial/ethnic minority participants (17 Black/African American, 7 Hispanic/Latino).
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+No information is provided about special educational needs of the sample.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+The mean SAT math score was 694 out of 800. No participants scored below 450.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+The representativeness of the sample is unclear as the sampling frame is not described.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was not a longitudinal study.
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main data collected were:
+a) To define the sample: gender, race, family income level
+b) As findings: working memory pre-test and post-test scores, math pre-test and post-test scores, self-reported effort
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Psychological test
+
+Participants completed questionnaires on demographics and effort. They also completed working memory and math tests.
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)  
+
+Working memory was measured using an adaptation of the Automated Working Memory Assessment backward digit string task. Math performance was measured using GRE quantitative practice questions. Demographics and effort were measured via questionnaire.
+
+### Who collected the data?
+
+- [x] Researcher
+
+The experimenter was described as a White female researcher.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors note the math questions were divided into pre- and post-tests of equal difficulty based on national performance norms.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The working memory task was adapted from an established measure (Automated Working Memory Assessment). The math questions were from standardized GRE practice materials.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] No (please specify)
+
+The experimenter was aware of the study design and hypotheses.
+
+### Where were the data collected?
+
+- [x] Implicit (please specify)  
+
+The data appear to have been collected in a laboratory setting at the college, though this is not explicitly stated.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+Participants completed pre-tests, then heard a stereotype threat prime, then completed post-tests.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)  
+
+The primary analyses were ANCOVAs comparing post-test scores with pre-test scores as covariates.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+ANCOVAs, t-tests, and ANOVAs were used to analyze the data.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors state they used ANCOVA to test for stereotype threat effects by comparing post-test scores while controlling for pre-test scores.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not applicable (not an evaluation study with prospective allocation)
+
+This was not an evaluation study with prospective allocation.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors do not explicitly discuss reliability of the data analysis.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors do not explicitly discuss validity of the data analysis.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors used pre-test scores as covariates in the analyses to control for baseline differences.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors conducted separate analyses for gender, race, income level, and number of stigmatized identities.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+No other major analytic issues were noted.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented through text descriptions of statistical findings and figures showing mean scores.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+Key results related to working memory:
+- Gender-based stereotype threat effects were found (males improved more than females from pre- to post-test)
+- Race-based stereotype threat effects were found (White students improved more than racial minority students)
+- Income-based stereotype threat effects were found (low-income students performed worse on post-test while others improved)
+- Multiple minority stereotype threat effects were found (those with 3 stigmatized identities performed worse on post-test while others improved)
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] No
+
+Confidence intervals were not reported for the effects.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] Yes (please specify)
+
+Exact statistics (e.g. F values, p values) are not consistently reported for all analyses.
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report results for all key variables related to stereotype threat effects on working memory and math performance.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+The authors do not provide information on data storage/availability.
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude there are stereotype threat effects on working memory based on gender, race, and income. They also found evidence for multiple minority stereotype threat effects. Income-based effects were the strongest overall.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide adequate context on stereotype threat theory and prior research.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims to compare different types of stereotype threat and examine multiple minority effects are clearly stated.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+Details on sampling and recruitment procedures are limited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The working memory and math tasks are described in sufficient detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The ANCOVA approach is adequately explained.
+
+### Is the study replicable from this report?
+
+- [x] No (please specify)
+
+Some key details on sampling and procedures are missing that would be needed for replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+Results appear to be reported for all key analyses and variables.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] Yes, some concerns (please specify)
+
+The consent process is not described, which raises some ethical concerns.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no indication of student/parent involvement in the study design.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide adequate rationale for examining multiple types of stereotype threat.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The pre-test/post-test design with a stereotype threat prime was appropriate for examining stereotype threat effects.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The use of pre-test scores as covariates helps control for some baseline differences, but other potential confounds (e.g. SAT scores) were not controlled for in the analyses, which could lead to alternative explanations.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may be generalizable to college students at selective institutions in the US, but generalizability to other populations is limited due to the specific sample characteristics.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods to address the research questions, but has some limitations in sampling and recruitment details. The findings can be trusted with moderate confidence.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors provide reasonable justification for their conclusions based on the data, but some conclusions may be overstated given the study limitations.
+
+## **COHORT STUDIES**
+
+This section is not applicable as this was not a cohort study.
+
+## DOES THIS REVIEW ADDRESS A CLEAR QUESTION?
+
+### Did the review address a clearly focussed issue?
+- Was there enough information on:
+  - The population studied
+  - The intervention given
+  - The outcomes considered
+- [x] Yes
+
+The study clearly focused on stereotype threat effects on working memory in college students, examining effects of gender, race, income, and multiple stigmatized identities.
+
+### Did the authors look for the appropriate sort of papers?
+- The 'best sort of studies' would:
+  - Address the review's question
+  - Have an appropriate study design
+- [x] Can't tell
+
+This question is not applicable as this is a primary study, not a review.
+
+## ARE THE RESULTS OF THIS REVIEW VALID?
+
+### Do you think the important, relevant studies were included?
+- Look for:
+  - Which bibliographic databases were used
+  - Follow up from reference lists
+  - Personal contact with experts
+  - Search for unpublished as well as published studies
+  - Search for non-English language studies
+- [x] Can't tell
+
+This question is not applicable as this is a primary study, not a review.
+
+### Did the review's authors do enough to assess the quality of the included studies?
+- The authors need to consider the rigour of the studies they have identified. Lack of rigour may affect the studies results.
+- [x] Can't tell
+
+This question is not applicable as this is a primary study, not a review.
+
+### If the results of the review have been combined, was it reasonable to do so?
+- Consider whether:
+  - The results were similar from study to study
+  - The results of all the included studies are clearly displayed
+  - The results of the different studies are similar
+  - The reasons for any variations are discussed
+- [x] Can't tell
+
+This question is not applicable as this is a primary study, not a review.
+
+## WHAT ARE THE RESULTS?
+
+### What is the overall result of the review?
+- Consider:
+  - If you are clear about the review's 'bottom line' results
+  - What these are (numerically if appropriate)
+  - How were the results expressed (NNT, odds ratio, etc)
+
+The overall results show stereotype threat effects on working memory based on gender, race, and income, with income-based effects being the strongest. Multiple minority stereotype threat effects were also observed.
+
+### How precise are the results?
+- Are the results presented with confidence intervals?
+- [x] No
+
+Confidence intervals were not reported for the results.
+
+## WILL THE RESULTS HELP LOCALLY?
+
+### Can the results be applied to the local population?
+- Consider whether:
+  - The patients covered by the review could be sufficiently different from your population to cause concern
+  - Your local setting is likely to differ much from that of the review
+- [x] Can't tell
+
+The applicability to local populations would depend on how similar they are to the college student sample in this study.
+
+### Were all important outcomes considered?
+- [x] Yes
+
+The study considered both working memory and math performance outcomes, which are important for understanding stereotype threat effects.
+
+### Are the benefits worth the harms and costs?
+- Even if this is not addressed by the review, what do you think?
+- [x] Can't tell
+
+The study does not discuss potential harms or costs of the research. The benefits of understanding stereotype threat effects could potentially outweigh minimal risks to participants, but this is not explicitly addressed.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

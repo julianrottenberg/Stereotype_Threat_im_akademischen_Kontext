@@ -1,0 +1,591 @@
+---
+title             : "@rydellMultipleSocialIdentities2009"
+shorttitle        : "@rydellMultipleSocialIdentities2009"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h3.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+
+- [x] Specific focus of this data extraction (please specify)  
+
+This data extraction focuses specifically on the aspects of the study related to working memory impairment under stereotype threat conditions, which is relevant to hypothesis H3 of the preregistration.
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was explicitly linked to existing research on stereotype threat, working memory, and multiple social identities. The authors cite numerous previous studies on these topics and use them to inform their hypotheses and study design.
+
+### Do authors report how the study was funded?
+
+- [x] Explicitly stated (please specify)  
+
+The authors state that "This research was supported by National Science Foundation (NSF) Grant BCS 0601148, Institute of Education Sciences Grant R305H050004, NSF CAREER Grant DRL-0746970, and by the Lewis Endowed Professorship."
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on how activating multiple social identities with conflicting stereotypes about math ability affects stereotype threat and math performance in women. It examines the cognitive processes underlying these effects, particularly working memory.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is female college students.
+
+### What is the relevant age group? 
+
+- [x] 17 - 20  
+- [x] 21 and over  
+
+The study focused on female undergraduate students, who typically fall in the 17-22 age range.
+
+### What is the sex of the population focus/foci?
+
+- [x] Female only  
+
+The study focused exclusively on female participants.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Higher education institution  
+
+The study was conducted with undergraduate students at universities.
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in the United States, specifically at the University of Missouri and Indiana University.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examines how activating multiple social identities (woman and college student) with conflicting stereotypes about math ability affects stereotype threat and math performance in women. It investigates the cognitive processes underlying these effects, particularly focusing on working memory capacity and social identity accessibility.
+
+### What are the study reserach questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The authors explicitly state several hypotheses, including:
+
+1. Presenting both positive (college student) and negative (female) stereotypes about math ability would eliminate stereotype threat effects on math performance.
+
+2. This effect would be mediated by greater accessibility of the college student identity relative to the female identity.
+
+3. Working memory capacity would be reduced in the gender identity condition but not in the multiple identities condition, mediating the effects on math performance.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study measures:
+- Math performance
+- Working memory capacity
+- Accessibility of social identities (female and college student)
+- Stereotype threat manipulation (through instructions about gender and college student stereotypes)
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study used a cross-sectional design, measuring outcomes at a single time point for each participant.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Only after  
+
+Measurements of math performance, working memory, and identity accessibility were made after the stereotype threat manipulations.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+Participants were randomly assigned to experimental conditions manipulating the availability of gender and college student stereotypes.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The groups differed in the stereotype information they received:
+1. Control (no stereotypes)
+2. College identity (positive college student stereotype)
+3. Gender identity (negative female stereotype)
+4. Multiple identities (both positive college and negative female stereotypes)
+
+### Number of groups
+
+- [x] Four or more (please specify)  
+
+There were four groups as described above.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random  
+
+Participants were randomly assigned to experimental conditions.
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not explicitly state whether allocation was concealed, though it appears likely given the experimental design.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+All groups completed the same math test and working memory tasks, differing only in the stereotype information they received.
+
+### Study design summary 
+
+This study used a 2 (college student stereotype: present, absent) x 2 (gender stereotype: present, absent) between-subjects factorial design. Female undergraduate students were randomly assigned to one of four conditions manipulating the availability of positive (college student) and negative (female) stereotypes about math ability. Participants completed measures of math performance, working memory capacity, and social identity accessibility.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Implicit (please specify)  
+
+While not explicitly stated, the authors seem to be aiming for findings representative of female college students in general, as evidenced by their sampling from multiple universities and their discussion of broad implications.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)  
+
+The specific methods for identifying and recruiting participants are not clearly stated in the paper.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)  
+
+The specific selection methods are not clearly stated, though it appears participants were recruited from undergraduate psychology courses.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)  
+
+The planned sample size is not explicitly stated in the paper.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)  
+
+The specific recruitment methods are not clearly stated in the paper.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Explicitly stated (please specify)  
+
+Participants received research credit for participating in the study.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not explicitly mention obtaining consent, though it is likely that standard ethical procedures were followed.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)  
+
+Experiment 3, which is most relevant to H3, had 57 female undergraduate participants.
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)  
+
+This information is not provided in the paper.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)  
+
+Participants were from the United States, specifically undergraduate students at the University of Missouri.
+
+### What ages are covered by the actual sample?
+
+- [x] Not stated/unclear (please specify)  
+
+The exact age range is not stated, but participants were undergraduate students, typically ranging from 18-22 years old.
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)  
+
+This information is not provided in the paper.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)  
+
+This information is not provided in the paper.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)  
+
+This information is not provided in the paper.
+
+### Is there any other useful information about the study participants?
+
+- [x] Not stated/unclear (please specify)  
+
+No additional relevant information about the participants is provided.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)  
+
+There is insufficient information provided to assess the representativeness of the sample.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)  
+
+This was a cross-sectional study, not a longitudinal one.
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)  
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)  
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main types of data collected were:
+(a) To define the sample: Gender (all participants were female)
+(b) To measure aspects of the sample as findings: Math performance scores, working memory capacity (number of words recalled), and response times for identity accessibility task.
+
+### Which methods were used to collect the data?
+
+- [x] Self-completion questionnaire
+- [x] Psychological test  
+
+Participants completed math problems, a working memory task, and a social identity accessibility task.
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)  
+
+The paper provides details on the math test (10 difficult problems), working memory task (vowel counting and word recall), and social identity accessibility task (me/not me categorization of words).
+
+### Who collected the data?
+
+- [x] Not stated/unclear  
+
+The paper does not specify who collected the data.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors used established measures from previous research, such as the working memory task from Schmader and Johns (2003).
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors cite previous research validating the measures used, such as the working memory task and math problems.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not explicitly state whether there was concealment from those measuring outcomes.
+
+### Where were the data collected?
+
+- [x] Explicitly stated (please specify)  
+
+Data were collected in private rooms with computers at the University of Missouri.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+Participants completed tasks on computers in private rooms.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)  
+
+The authors used ANOVAs to analyze math performance and working memory capacity across conditions. They also conducted mediational analyses using multiple regression.
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+The study used ANOVAs, multiple regression, and Sobel tests for mediation analyses.
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors state that their analyses are designed to test their hypotheses about the effects of multiple identities on stereotype threat and the mediating roles of identity accessibility and working memory.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] 'Intention to intervene'  
+
+Analyses were based on the conditions participants were assigned to, regardless of their responses to the manipulations.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors report using established statistical methods and criteria for their analyses.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors use multiple measures and mediational analyses to establish the validity of their findings.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors use random assignment to conditions to control for potential confounds.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors conduct mediational analyses to examine the processes underlying their effects.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+The authors use appropriate statistical methods for their research questions and design.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented in text, tables, and figures, including means, standard deviations, F-values, and mediational analyses.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+Key findings include:
+1. Stereotype threat effects on math performance were eliminated when both positive (college student) and negative (female) stereotypes were presented.
+2. This effect was mediated by greater accessibility of the college student identity relative to the female identity.
+3. Working memory capacity was reduced in the gender identity condition but not in the multiple identities condition, mediating the effects on math performance.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] No
+
+The study reports p-values and effect sizes (partial eta-squared) but does not report confidence intervals.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)  
+
+The authors report on all key variables mentioned in their hypotheses, including math performance, working memory capacity, and identity accessibility.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that presenting both positive and negative stereotypes about math ability eliminates stereotype threat effects by increasing the accessibility of the positive identity (college student) relative to the negative identity (female). This preserves working memory capacity and maintains math performance.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)  
+
+The authors provide a thorough background on stereotype threat research and clearly explain the rationale for their study.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)  
+
+The aims and hypotheses of the study are clearly stated in the introduction.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)  
+
+While the sample size and basic characteristics are reported, there is limited information on how participants were identified and recruited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)  
+
+The methods for collecting data on math performance, working memory, and identity accessibility are described in detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)  
+
+The statistical analyses used are clearly described, including ANOVAs and mediational analyses.
+
+### Is the study replicable from this report?
+
+- [x] Yes (please specify)  
+
+The methods and measures are described in sufficient detail to allow replication.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)  
+
+The authors report on all variables and analyses mentioned in their hypotheses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] No concerns
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)  
+
+There is no indication that students or parents were involved in the design or conduct of the study beyond participation.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)  
+
+The authors provide a clear rationale for their study design based on previous research and theoretical considerations.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A lot (please specify)  
+
+The use of random assignment to conditions and established measures helps rule out alternative explanations. The mediational analyses also strengthen the causal claims.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may be generalizable to female college students in the United States. However, generalizability to other populations (e.g., non-college women, women in other countries) is unclear and would require further research.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)  
+
+The study uses appropriate methods and analyses to address its research questions. However, the lack of information about participant recruitment and characteristics, as well as the absence of confidence intervals, slightly reduce its trustworthiness.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness  
+
+The authors provide a thorough discussion of their findings in relation to their hypotheses and previous research. However, they could have been more explicit about limitations and potential alternative explanations.
+
+# @wellsNewcastleottawaScaleNOS2014
+
+## **CASE CONTROL STUDIES**
+
+This section is not applicable as the study is not a case-control design.
+
+## **COHORT STUDIES**
+
+This section is not applicable as the study is not a cohort design.
+
+# @universityofglasgowCriticalAppraisalChecklistn.d.nodate
+
+## DOES THIS REVIEW ADDRESS A CLEAR QUESTION?
+
+This section is not applicable as this is a primary research study, not a systematic review.
+
+## ARE THE RESULTS OF THIS REVIEW VALID?
+
+This section is not applicable as this is a primary research study, not a systematic review.
+
+## WHAT ARE THE RESULTS?
+
+This section is not applicable as this is a primary research study, not a systematic review.
+
+## WILL THE RESULTS HELP LOCALLY?
+
+This section is not applicable as this is a primary research study, not a systematic review.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::

@@ -1,0 +1,661 @@
+---
+title             : "@chanWorkingMemoryModerates2014"
+shorttitle        : "@chanWorkingMemoryModerates2014"
+
+
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["../files/Describing_studies.bib", "h3.bib"]
+
+floatsintext      : no
+linenumbers       : no 
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+classoption       : "doc, a4paper"
+output            : papaja::apa6_pdf
+
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+library(RefManageR)
+library(kableExtra)
+r_refs("r-references.bib")
+```
+
+# @eppi-centreReviewGuidelinesExtracting2003 & @criticalappraisalskillsprogrammeCASPSystematicReview2018
+
+### If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here
+ 
+- [x] Not applicable (whole study is focus of data extraction)  
+
+## Study aim(s) and rationale
+
+### Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?
+
+- [x] Explicitly stated (please specify)  
+
+The study was informed by previous research on stereotype threat effects and working memory as a mediator of stereotype threat. The authors cite relevant literature on stereotype threat in mathematics for women and girls across different countries, as well as research on working memory as a mediator and potential moderator of stereotype threat effects.
+
+### Do authors report how the study was funded?
+
+- [x] Not stated/unclear (please specify)  
+
+The authors do not provide any information about funding for this study.
+
+## Study research question(s) and its policy or practice focus
+
+### What is/are the topic focus/foci of the study?
+
+The study focuses on stereotype threat effects for female adolescents in mathematics, and working memory capacity as a potential moderator of these effects.
+
+### What is/are the population focus/foci of the study?
+
+The population focus is adolescents in Hong Kong.
+
+### What is the relevant age group? 
+
+- [x] 11 - 16  
+
+The participants were Year 10 students with a mean age of 15.54 years.
+
+### What is the sex of the population focus/foci?
+
+- [x] Mixed sex  
+
+The study included both male and female adolescents.
+
+### What is/are the educational setting(s) of the study?
+
+- [x] Secondary school  
+
+Participants were recruited from a secondary school in Hong Kong.
+
+### In Which country or cuntries was the study carried out?
+
+- [x] Explicitly stated (please specify)  
+
+The study was carried out in Hong Kong.
+
+### Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned
+
+The study examines stereotype threat effects on mathematics performance for female adolescents in Hong Kong. It also investigates working memory capacity as a potential moderator of these effects.
+
+### What are the study reserach questions and/or hypotheses?
+
+- [x] Explicitly stated (please specify)  
+
+The authors hypothesized:
+1. Female adolescents in the threat condition would underperform compared to female adolescents in the control condition and male adolescents in the threat condition.
+2. High working memory females in the threat condition would outperform low working memory females in the threat condition. 
+3. No difference was expected between low and high working memory females in the control condition, and no difference between low and high working memory males in either condition.
+
+## Methods - Design
+
+### Which variables or concepts, if any, does the study aim to measure or examine?
+
+- [x] Explicitly stated (please specify)  
+
+The study measured:
+- Working memory capacity
+- Mathematics performance
+- Gender
+- Stereotype threat condition (threat vs control)
+
+### Study timing
+
+- [x] Cross-sectional  
+
+The study collected data at a single time point.
+
+### If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?
+
+- [x] Only after  
+
+Mathematics performance was measured after the stereotype threat manipulation.
+
+## Methods - Groups
+
+### If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.
+
+- [x] Prospecitive allocation into more than one group (e.g. allocation to different interventions, or allocation to intervention and control groups)  
+
+Participants were randomly allocated to either the stereotype threat or control condition.
+
+### How do the groups differ?
+
+- [x] Explicityly stated (please specify)  
+
+The groups differed in the instructions given before the mathematics test. The threat condition was told that gender can affect mathematics ability and that scores for males and females would be compared. The control condition was told the study aimed to examine the reliability of the mathematics test.
+
+### Number of groups
+
+- [x] Two  
+
+There were two experimental groups: stereotype threat condition and control condition.
+
+### Was the assignment of participants to interventions randomised?
+
+- [x] Random  
+
+Participants were randomly allocated to either the threat or control condition.
+
+### Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?
+
+- [x] Not stated/unclear (please specify)  
+
+The paper does not provide information on whether the allocation sequence was concealed.
+
+### Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?
+
+- [x] Yes
+
+Both groups completed the same working memory task and mathematics test. The only difference was in the instructions given before the mathematics test.
+
+### Study design summary 
+
+This was an experimental study with random allocation of participants to either a stereotype threat or control condition. All participants completed a working memory task followed by a mathematics test. The key manipulation was in the instructions given before the mathematics test, which either invoked stereotype threat or not. The study examined the effects of stereotype threat and working memory capacity on mathematics performance.
+
+## Methods - Sampling strategy
+
+### Are the authors trying to produce findings that are representative of a given population? 
+
+- [x] Not stated/unclear (please specify)
+
+The authors do not explicitly state whether they are trying to produce representative findings. They recruited from a single secondary school in Hong Kong.
+
+### Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide details on how participants were identified or the sampling frame used.
+
+### Which methods does the study use to select people or groups of people (from the sampling frame)?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide details on the specific methods used to select participants.
+
+### Planned sample size
+
+- [x] Not stated/unclear (please specify)
+
+The authors do not report a planned sample size or power analysis.
+
+## Methods - Recruitment and consent
+
+### Which methods are used to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide details on recruitment methods.
+
+### Were any incentives provided to recruit people into the study?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not mention any incentives for participation.
+
+### Was consent sought?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on the consent process.
+
+### Are there any other details relevant to recruitment and consent?
+
+- [x] No
+
+No additional details are provided about recruitment or consent procedures.
+
+## Methods - Actual sample
+
+### What was the total number of participants in the study (the actual sample)?
+
+- [x] Explicitly stated (please specify)
+
+The total sample size was 70 participants (33 male, 37 female).
+
+### What is the proportion of those selected for the study who actually participated in the study? 
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on the number of students approached or selected versus those who participated.
+
+### Which country/countries are the individuals in the actual sample from?
+
+- [x] Explicitly stated (please specify)
+
+All participants were from Hong Kong.
+
+### What ages are covered by the actual sample?
+
+- [x] 11 to 16
+
+The mean age of participants was 15.54 years (SD = 0.58).
+
+### What is the socio-economic status of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on the socio-economic status of participants.
+
+### What is the ethnicity of the individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on the ethnicity of participants.
+
+### What is known about the special educational needs of individuals within the actual sample?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on any special educational needs of participants.
+
+### Is there any other useful information about the study participants?
+
+- [x] Explicitly stated (please specify no/s.)
+
+All participants were studying mathematics and had passed their previous school mathematics test.
+
+### How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame? 
+
+- [x] Unclear (please specify)
+
+As details of the sampling frame and selection methods are not provided, it is unclear how representative the sample is.
+
+### If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was a cross-sectional study conducted at a single time point.
+
+### For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was a cross-sectional study conducted at a single time point.
+
+### If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?
+
+- [x] Not applicable (not following samples prospectively over time)
+
+This was a cross-sectional study conducted at a single time point.
+
+## Methods - Data collection
+
+### Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?
+
+- [x] Details
+
+The main types of data collected were:
+a) Working memory scores (used to measure aspects of the sample)
+b) Mathematics test scores (used as the main outcome measure)
+c) Demographic information including gender and age (used to define the sample and as an independent variable)
+
+### Which methods were used to collect the data?
+
+- [x] Psychological test
+- [x] Self-completion questionnaire
+
+Working memory was assessed using a modified version of the reading span task. Mathematics performance was measured using a multiple-choice test. Demographic information was collected via questionnaire.
+
+### Details of data collection methods or tool(s).
+
+- [x] Explicitly stated (please specify)
+
+Working memory was assessed using a modified version of the reading span task (Robert et al., 2009). The task involved 56 sentences randomly distributed into 16 trials, with participants judging whether sentences made sense and memorizing letters.
+
+The mathematics test consisted of 21 multiple-choice questions extracted from an English-language version of a Hong Kong Certificate of Education Examination past paper.
+
+### Who collected the data?
+
+- [x] Not stated/unclear
+
+The paper does not specify who collected the data.
+
+### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
+
+- [x] Details
+
+The authors do not explicitly discuss reliability of their measures. However, they note that the working memory scores were comparable to those found in previous research (Robert et al., 2009), suggesting some reliability.
+
+### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
+
+- [x] Details
+
+The authors do not explicitly discuss validity. However, they used established measures (modified reading span task for working memory, past exam questions for mathematics performance) which suggests some content validity.
+
+### Was there concealment of study allocation or other key factors from those carrying out measurement of outcome – if relevant?
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not provide information on whether those administering or scoring the tests were blind to condition.
+
+### Where were the data collected?
+
+- [x] Explicitly stated (please specify)
+
+Data were collected in two separate classrooms at the participants' school.
+
+### Are there other important features of data collection?
+
+- [x] Details
+
+The working memory task was presented on a screen at the front of the classroom. The mathematics test was timed for 20 minutes and calculators were not allowed.
+
+## Methods - Data analysis
+
+### Which methods were used to analyse the data?
+
+- [x] Explicitly stated (please specify)
+
+The main analyses used were:
+1. ANOVA to examine stereotype threat effects on mathematics performance
+2. Moderated regression to test working memory as a moderator of stereotype threat effects
+
+### Which statistical methods, if any, were used in the analysis?
+
+- [x] Details
+
+The statistical methods used included:
+- 2x2 ANOVA (gender x condition)
+- Moderated regression
+- Simple slopes analysis
+
+### What rationale do the authors give for the methods of analysis for the study?
+
+- [x] Details
+
+The authors do not provide an explicit rationale for their choice of analysis methods. However, the methods used (ANOVA, moderated regression) are appropriate for testing their hypotheses about group differences and moderation effects.
+
+### For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.
+
+- [x] Not stated/unclear (please specify)
+
+The paper does not explicitly state whether analysis was done on an intention-to-treat or per-protocol basis.
+
+### Do the authors describe any ways they have addressed the reliability of data analysis?
+
+- [x] Details
+
+The authors do not explicitly discuss reliability of their data analysis.
+
+### Do the authors describe any ways they have addressed the validity of data analysis?
+
+- [x] Details
+
+The authors do not explicitly discuss validity of their data analysis.
+
+### Do the authors describe strategies used in the analysis to control for bias from confounding variables?
+
+- [x] Details
+
+The authors used random allocation to conditions to control for potential confounding variables. They also examined the effects of working memory capacity as a potential moderating variable.
+
+### Please describe any other important features of the analysis.
+
+- [x] Details
+
+The authors conducted separate analyses for the threat and control conditions to examine the moderating effect of working memory, based on their a priori hypotheses.
+
+### Please comment on any other analytic or statistical issues if relevant.
+
+- [x] Details
+
+No other major analytic or statistical issues were noted.
+
+## Results and Conclusions
+
+### How are the results of the study presented?
+
+- [x] Details
+
+Results are presented through text descriptions of statistical findings, including test statistics, p-values, and effect sizes. Figures are used to illustrate the interactions between gender and working memory in both conditions.
+
+### What are the results of the study as reported by authors?
+
+- [x] Details
+
+Key results include:
+1. Stereotype threat effects were observed: females in the threat condition underperformed compared to females in the control condition and males in the threat condition.
+2. Working memory moderated the stereotype threat effect: in the threat condition, working memory positively predicted performance for female adolescents, but not for males.
+3. In the control condition, there was no significant effect of working memory for either gender.
+
+### Was the precision of the estimate of the intervention or treatment effect reported?
+   - CONSIDER:
+     - Were confidence intervals (CIs) reported?
+   - [x] No
+
+The authors report p-values and effect sizes (η2p) but do not report confidence intervals.
+
+### Are there any obvious shortcomings in the reporting of the data?
+
+- [x] No
+
+The reporting of data appears adequate for the analyses conducted.
+
+### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
+
+- [x] Yes (please specify)
+
+The authors report on all variables specified in their aims and hypotheses: stereotype threat effects, gender differences in mathematics performance, and the moderating role of working memory.
+
+### Do the authors state where the full original data are stored?
+
+- [x] No
+
+The authors do not provide information on data storage or availability.
+
+### What do the author(s) conclude about the findings of the study?
+
+- [x] Details
+
+The authors conclude that:
+1. Stereotype threat effects were established for female adolescents in Hong Kong taking a mathematics test.
+2. Working memory moderates stereotype threat effects, with low working memory females experiencing stereotype threat while high working memory females were protected.
+3. These findings have implications for understanding the link between stereotype threat and choking under pressure, and suggest possible mechanisms (thought suppression or automatic stereotype activation) for the moderating role of working memory.
+
+## Quality of the study - Reporting 
+
+### Is the context of the study adequately described?
+
+- [x] Yes (please specify)
+
+The authors provide adequate context, describing the background of stereotype threat research, previous findings on working memory as a mediator, and the rationale for examining these effects in Hong Kong adolescents.
+
+### Are the aims of the study clearly reported?
+
+- [x] Yes (please specify)
+
+The aims and hypotheses of the study are clearly stated in the introduction.
+
+### Is there an adequate description of the sample used in the study and how the sample was identified and recruited?
+
+- [x] No (please specify)
+
+While basic demographic information is provided, there is limited information on how the sample was identified and recruited.
+
+### Is there an adequate description of the methods used in the study to collect data?
+
+- [x] Yes (please specify)
+
+The methods for collecting working memory and mathematics performance data are described in sufficient detail.
+
+### Is there an adequate description of the methods of data analysis?
+
+- [x] Yes (please specify)
+
+The statistical analyses used (ANOVA, moderated regression) are adequately described.
+
+### Is the study replicable from this report?
+
+- [x] No (please specify)
+
+While many aspects of the study are well-described, the lack of detail on sampling and recruitment procedures, as well as the exact content of the mathematics test, would make exact replication difficult.
+
+### Do the authors avoid selective reporting bias?
+
+- [x] Yes (please specify)
+
+The authors report on all variables and analyses mentioned in their aims and hypotheses.
+
+## Quality of the study - Methods and data
+
+### Are there ethical concerns about the way the study was done?
+
+- [x] Yes, some concerns (please specify)
+
+The paper does not mention obtaining informed consent or ethical approval, which raises some concerns.
+
+### Were students and/or parents appropriately involved in the design or conduct of the study?
+
+- [x] No (please specify)
+
+There is no mention of student or parent involvement in the design or conduct of the study.
+
+### Is there sufficient justification for why the study was done the way it was?
+
+- [x] Yes (please specify)
+
+The authors provide justification for examining stereotype threat in Hong Kong adolescents and for investigating working memory as a moderator, based on previous research and gaps in the literature.
+
+### Was the choice of research design appropriate for addressing the research question(s) posed?
+
+- [x] Yes (please specify)
+
+The experimental design with random allocation to conditions is appropriate for examining the effects of stereotype threat and the moderating role of working memory.
+
+### To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?
+
+- [x] A little (please specify)
+
+The random allocation to conditions helps control for some potential confounds. However, the lack of information on blinding and the single-session design may introduce some potential for bias.
+
+### How generalisable are the study results?
+
+- [x] Details
+
+The results may be generalizable to adolescents in Hong Kong, but caution should be taken in generalizing to other cultural contexts or age groups. The sample from a single school also limits generalizability.
+
+### Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?
+
+- [x] Medium trustworthiness (please specify)
+
+The study uses appropriate methods and analyses to address its research questions. However, limitations in sampling information, lack of details on ethical procedures, and potential issues with generalizability reduce the overall trustworthiness to medium.
+
+### Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?
+
+- [x] Medium trustworthiness
+
+The authors' conclusions are generally well-supported by their findings. However, some of the broader implications suggested (e.g., about thought suppression or automatic stereotype activation) go somewhat beyond the direct evidence provided by the study.
+
+# @wellsNewcastleottawaScaleNOS2014
+
+This scale is not applicable as the study is not a case-control or cohort study.
+
+# @universityofglasgowCriticalAppraisalChecklistn.d.nodate
+
+## DOES THIS REVIEW ADDRESS A CLEAR QUESTION?
+
+This checklist is not directly applicable as the paper is a primary experimental study, not a systematic review. However, I will adapt and answer relevant questions:
+
+### Did the review address a clearly focussed issue?
+- Was there enough information on:
+  - The population studied
+  - The intervention given
+  - The outcomes considered
+- [x] Yes
+
+The study addressed a clear issue: the effects of stereotype threat on mathematics performance in Hong Kong adolescents, and the moderating role of working memory.
+
+### Did the authors look for the appropriate sort of papers?
+- The 'best sort of studies' would:
+  - Address the review's question
+  - Have an appropriate study design
+- [x] Not applicable
+
+This is not a review paper.
+
+## ARE THE RESULTS OF THIS REVIEW VALID?
+
+### Do you think the important, relevant studies were included?
+
+- [x] Not applicable
+
+This is not a review paper.
+
+### Did the review's authors do enough to assess the quality of the included studies?
+
+- [x] Not applicable
+
+This is not a review paper.
+
+### If the results of the review have been combined, was it reasonable to do so?
+
+- [x] Not applicable
+
+This is not a review paper.
+
+## WHAT ARE THE RESULTS?
+
+### What is the overall result of the review?
+
+The main results of this experimental study are:
+1. Stereotype threat effects were observed for female adolescents in mathematics performance.
+2. Working memory capacity moderated the stereotype threat effect, with high working memory females showing protection against the effect.
+
+### How precise are the results?
+
+- [x] Can't tell
+
+The authors report p-values and effect sizes, but do not provide confidence intervals, making it difficult to assess the precision of the results.
+
+## WILL THE RESULTS HELP LOCALLY?
+
+### Can the results be applied to the local population?
+
+- [x] Can't tell
+
+While the results may be applicable to Hong Kong adolescents, caution should be taken in applying them to other populations without further research.
+
+### Were all important outcomes considered?
+
+- [x] Yes
+
+The study considered mathematics performance as the main outcome, which is appropriate for the research question.
+
+### Are the benefits worth the harms and costs?
+
+- [x] Can't tell
+
+The paper does not provide information on potential harms or costs associated with the study, making it difficult to assess this balance.
+
+
+# References
+
+
+::: {#refs custom-style="Bibliography"}
+:::
