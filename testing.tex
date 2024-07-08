@@ -224,24 +224,26 @@ Correspondence concerning this article should be addressed to First Author, Post
 
 \begin{lltable}
 
-\small{
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} Note: Some column headers span multiple lines for better readability.}
+\end{TableNotes}
 
-\begin{longtable}{>{\centering\arraybackslash}p{2.5cm}>{\centering\arraybackslash}p{2.5cm}>{\centering\arraybackslash}p{2.5cm}>{\centering\arraybackslash}p{2.5cm}>{\centering\arraybackslash}p{3.5cm}>{\centering\arraybackslash}p{3.5cm}>{\centering\arraybackslash}p{3.5cm}}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\begin{longtable}{m{1.5cm}m{3cm}m{2.5cm}m{3cm}m{3cm}m{3cm}m{3.5cm}m{1.5cm}}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
 \caption{\label{tab:unnamed-chunk-1}Overview of the Included Papers for Hypothesis 1}\\
 \toprule
-Citation & \multicolumn{1}{c}{Study Design} & \multicolumn{1}{c}{Population} & \multicolumn{1}{c}{Methods} & \multicolumn{1}{c}{Key Findings} & \multicolumn{1}{c}{Neural Regions} & \multicolumn{1}{c}{Academic Performance}\\
+Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
 \midrule
 \endfirsthead
 \caption*{\normalfont{Table \ref{tab:unnamed-chunk-1} continued}}\\
 \toprule
-Citation & \multicolumn{1}{c}{Study Design} & \multicolumn{1}{c}{Population} & \multicolumn{1}{c}{Methods} & \multicolumn{1}{c}{Key Findings} & \multicolumn{1}{c}{Neural Regions} & \multicolumn{1}{c}{Academic Performance}\\
+Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
 \midrule
 \endhead
-Beilock et al. (2007) & Experimental & 100 college students, mixed gender & Behavioral tasks, fMRI & Stereotype threat impairs working memory efficiency & Prefrontal cortex, phonological loop & Reduced performance on cognitive tasks under threat\\
+Beilock et al. (2007) & Experimental & 100 college students, mixed gender & Behavioral tasks, fMRI & Stereotype threat impairs working memory efficiency & Prefrontal cortex, phonological loop & Reduced performance on cognitive tasks under threat & yes\\
 \bottomrule
+\addlinespace
+\insertTableNotes
 \end{longtable}
-
-}
 
 \end{lltable}
 
@@ -281,7 +283,7 @@ Hypothesis 1 & SELECT * FROM papers WHERE hypothesis = 1\\
 
 \subsection{Data analysis}\label{data-analysis}
 
-We used R (Version 4.4.1; R Core Team, 2024) and the R-packages \emph{bib2df} (Version 1.1.2.0; Ottolinger, 2024), \emph{dplyr} (Version 1.1.4; Wickham et al., 2023), \emph{kableExtra} (Version 1.4.0; Zhu, 2024), \emph{metagear} (Version 0.7; Lajeunesse, 2016), \emph{papaja} (Version 0.1.2.9000; Aust \& Barth, 2022), \emph{PRISMAstatement} (Version 1.1.1; Jack O. Wasey, 2019), \emph{RefManageR} (Version 1.4.0; McLean, 2017), \emph{remotes} (Version 2.5.0; Csárdi et al., 2024), \emph{revtools} (Version 0.4.1; Westgate, 2019), \emph{shiny} (Version 1.8.1.1; Chang et al., 2024), \emph{tibble} (Version 3.2.1; Müller \& Wickham, 2023), and \emph{tinylabels} (Version 0.2.4; Barth, 2023) for all our analyses.
+We used R (Version 4.4.1; R Core Team, 2024) and the R-packages \emph{citr} (Version 0.3.2; Aust, 2019), \emph{kableExtra} (Version 1.4.0; Zhu, 2024), \emph{papaja} (Version 0.1.2.9000; Aust \& Barth, 2023), \emph{RefManageR} (Version 1.4.0; McLean, 2017), \emph{rmarkdown} (Version 2.27; Xie et al., 2018, 2020), and \emph{tinylabels} (Version 0.2.4; Barth, 2023) for all our analyses.
 
 \section{Results}\label{results}
 
@@ -293,41 +295,26 @@ We used R (Version 4.4.1; R Core Team, 2024) and the R-packages \emph{bib2df} (V
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-R-citr}
+Aust, F. (2019). \emph{Citr: 'RStudio' add-in to insert markdown citations}. \url{https://github.com/crsh/citr}
+
 \bibitem[\citeproctext]{ref-R-papaja}
-Aust, F., \& Barth, M. (2022). \emph{{papaja}: {Prepare} reproducible {APA} journal articles with {R Markdown}}. \url{https://github.com/crsh/papaja}
+Aust, F., \& Barth, M. (2023). \emph{{papaja}: {Prepare} reproducible {APA} journal articles with {R Markdown}}. \url{https://github.com/crsh/papaja}
 
 \bibitem[\citeproctext]{ref-R-tinylabels}
 Barth, M. (2023). \emph{{tinylabels}: Lightweight variable labels}. \url{https://cran.r-project.org/package=tinylabels}
 
-\bibitem[\citeproctext]{ref-R-shiny}
-Chang, W., Cheng, J., Allaire, J., Sievert, C., Schloerke, B., Xie, Y., Allen, J., McPherson, J., Dipert, A., \& Borges, B. (2024). \emph{Shiny: Web application framework for r}. \url{https://CRAN.R-project.org/package=shiny}
-
-\bibitem[\citeproctext]{ref-R-remotes}
-Csárdi, G., Hester, J., Wickham, H., Chang, W., Morgan, M., \& Tenenbaum, D. (2024). \emph{Remotes: R package installation from remote repositories, including 'GitHub'}. \url{https://CRAN.R-project.org/package=remotes}
-
-\bibitem[\citeproctext]{ref-R-PRISMAstatement}
-Jack O. Wasey. (2019). \emph{PRISMAstatement: Plot flow charts according to the "PRISMA" statement}. \url{https://CRAN.R-project.org/package=PRISMAstatement}
-
-\bibitem[\citeproctext]{ref-R-metagear}
-Lajeunesse, M. J. (2016). Facilitating systematic reviews, data extraction, and meta-analysis with the metagear package for r. \emph{Methods in Ecology and Evolution}, \emph{7}, 323--330.
-
 \bibitem[\citeproctext]{ref-R-RefManageR}
 McLean, M. W. (2017). RefManageR: Import and manage BibTeX and BibLaTeX references in r. \emph{The Journal of Open Source Software}. \url{https://doi.org/10.21105/joss.00338}
-
-\bibitem[\citeproctext]{ref-R-tibble}
-Müller, K., \& Wickham, H. (2023). \emph{Tibble: Simple data frames}. \url{https://CRAN.R-project.org/package=tibble}
-
-\bibitem[\citeproctext]{ref-R-bib2df}
-Ottolinger, P. (2024). \emph{bib2df: Parse a BibTeX file to a data frame}. \url{https://CRAN.R-project.org/package=bib2df}
 
 \bibitem[\citeproctext]{ref-R-base}
 R Core Team. (2024). \emph{R: A language and environment for statistical computing}. R Foundation for Statistical Computing. \url{https://www.R-project.org/}
 
-\bibitem[\citeproctext]{ref-R-revtools}
-Westgate, M. J. (2019). Revtools: An r package to support article screening for evidence synthesis. \emph{Research Synthesis Methods}. \url{https://doi.org/10.1002/jrsm.1374}
+\bibitem[\citeproctext]{ref-R-rmarkdown_a}
+Xie, Y., Allaire, J. J., \& Grolemund, G. (2018). \emph{R markdown: The definitive guide}. Chapman; Hall/CRC. \url{https://bookdown.org/yihui/rmarkdown}
 
-\bibitem[\citeproctext]{ref-R-dplyr}
-Wickham, H., François, R., Henry, L., Müller, K., \& Vaughan, D. (2023). \emph{Dplyr: A grammar of data manipulation}. \url{https://CRAN.R-project.org/package=dplyr}
+\bibitem[\citeproctext]{ref-R-rmarkdown_b}
+Xie, Y., Dervieux, C., \& Riederer, E. (2020). \emph{R markdown cookbook}. Chapman; Hall/CRC. \url{https://bookdown.org/yihui/rmarkdown-cookbook}
 
 \bibitem[\citeproctext]{ref-R-kableExtra}
 Zhu, H. (2024). \emph{kableExtra: Construct complex table with 'kable' and pipe syntax}. \url{https://CRAN.R-project.org/package=kableExtra}

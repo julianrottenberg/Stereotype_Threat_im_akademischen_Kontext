@@ -113,9 +113,6 @@ Claude AI 3.5 Sonnet was used to generate descriptions of the papers used in thi
 The process here was as follows: First the template was manually filled out by a human, after this process was completed for every paper, a second template was created, the contents of which were filled out by AI and then, later, used in conjunction with the manually created templates. When the different templates differed from one another the primary source (i.e. the paper the template was based on) was checked again. Both, the human-generated as well as the AI-generated templates can be found on the GitHub repository - the AI generated summaries have been marked as such, beginning with "Claude_Ai_" in their file name.  
 To clarify, AI was not used to generate any of the text in this review, it was used as a tool to gather a better understanding and overview of the papers involved. The process of having a human and AI created summary of each paper was chosen to gather an extra layer of security regarding the contents of each paper as well as to counteract possible oversights.  
 
-## Identification of relevant papers  
-
-Papers were selected following the criteria outlined in the preregistration:  
 
 ### Databases, search queries and inclusion/exclusion criteria
 
@@ -126,9 +123,9 @@ Within Web of Science the included document types were "Article", "Other", or "C
 Furthermore, the database "Preprint Citation Index" was excluded.  
 In EBSCOhost, "Apply equivalent subjects" was applied as an Expander, while "Peer Reviewed", "Document Type\*", and "Publication Type\*" were used as Limiters.  
 In Google Scholar, the following was added at the end of the search query: "AND "empirical study" AND "peer-reviewed" -books -meta-analysis)".  
-These extra filters were applied in accordance with the inclusion and exclusion criteria outlined in the preregistration. No other changes were made to the search queries. An overview of the search queries can be found in Table 1.
+These extra filters were applied in accordance with the inclusion and exclusion criteria outlined in the preregistration. No other changes were made to the search queries. An overview of the search queries can be found in Table \ref{tab:query_table}.
 
-```{r include = TRUE}
+```{r query_table, include = TRUE}
 
 query_table <- data.frame(
   Hypothesis = character(),
@@ -174,32 +171,30 @@ The criteria "Stereotype Threat", which required studies to "explicitly examine,
 ### Screening
 
 The screening process was done using the software Rayyan [@ouzzaniRayyanWebMobile2016]. All results were imported onto the platform. 
-The total amount of papers found was 599 ($n_{\text{EBSCOhost}} = 105$, $n_{\text{Google Scholar}} = 48$, $n_{\text{PSYNDEX}} = 5$, $n_{\text{ResearchRabbit}} = 4$, $n_{\text{Web of Science}} = 437$). Out of these 83 were duplicates (88 were automatically detected by Rayyan, however, 5 were false positives), leaving 516 papers to be screened. During the first screening another 440 papers were excluded. 
+The total amount of papers found was 599 ($N=599$, $n_{\text{EBSCOhost}} = 105$, $n_{\text{Google Scholar}} = 48$, $n_{\text{PSYNDEX}} = 5$, $n_{\text{ResearchRabbit}} = 4$, $n_{\text{Web of Science}} = 437$). Out of these 83 were duplicates (88 were automatically detected by Rayyan, however, 5 were false positives), leaving 516 papers to be screened. During the first screening another 440 papers were excluded. 
 Papers which were excluded did not fit the inclusion criteria, most prominently, they either did not focus on stereotype threat, had the wrong population (e.g., older adults), did not fit the publication type requirements, or did not measure the outcomes of interest - this was assessed using the title, keywords, and abstract. If neither the title, nor the keywords or abstract mentioned enough information to make a decision, the paper was marked as 'maybe. 
 An example for hypothesis 3 would be, a paper measured working memory but just referred to "the participants" in the abstract, without clarifying that they fit the definition of the academic context. After this first screening, 76 papers remained for the second screening.
-This second screening was done by looking into the full-text of each paper, here another 44 papers were excluded for the following reasons: wrong focus ($n = 30$), wrong population ($n = 7$), wrong study design ($n = 5$), wrong publication type ($n = 2$) - an overview of this can be found in the PRISMA flowchart in Figure \ref{fig:prisma}
+This second screening was done by looking into the full-text of each paper, here another 44 papers were excluded for the following reasons: wrong focus ($n = 30$), wrong population ($n = 7$), wrong study design ($n = 5$), wrong publication type ($n = 2$) - an overview of this can be found in the PRISMA flowchart in Figure \ref{fig:prisma}.
+In the end, 32 papers were included in this review, $n = 8$ for hypothesis 1, $n = 9$ for hypothesis 2, and $n = 19$ for hypothesis 3 - some were used for multiple hypotheses. Out of the 516 papers, 319 were excluded for 'wrong focus', 57 for 'wrong population', 14 for 'wrong study design', 12 for wrong publication type, 2 for 'foreign language', and 1 for 'wrong study duration' (some papers were excluded for multiple reasons). A full list of all papers found and excluded can be found in the GitHub repository.  
+A template was created to summarise each paper, with two versions completed: one by the author and one by Claude AI. 
+The template was a mixture of the following checklists: CASP systematic review checklist [@criticalappraisalskillsprogrammeCASPSystematicReview2018], Review guidelines for extracting data and quality assessing primary studies in educational research [@eppi-centreReviewGuidelinesExtracting2003], Critical appraisal checklist for a systematic review [@universityofglasgowCriticalAppraisalChecklistn.d.nodate], and the Newcastle-Ottawa scale (NOS) for assessing the quality of nonrandomised studies in meta-analyses [@wellsNewcastleottawaScaleNOS2014], which are used to describe studies and assess their quality.
+Redundant and irrelevant items were eliminated, and the remaining questions were consolidated into a single template.
+This approach provided a comprehensive overview of the final papers.
+Based on these summaries, the papers were analysed and the results are presented in the following sections.  
 
 ```{r prisma, fig.cap = "PRISMA flowchart of the screening process."}
 
 knitr::include_graphics("files/prisma.pdf")
 ```
 
-## R and RStudio
+## RStudio and R packages
 
-The following R packages were used to create this review: `r cite_r("r-references.bib")`
-
-
+The following R packages were used to create this review: `r cite_r("r-references.bib")`.  
  
-## Participants
-
-## Material
-
-## Procedure
-
-## Data analysis
-
-
 # Results
+
+
+
 
 # Discussion
 

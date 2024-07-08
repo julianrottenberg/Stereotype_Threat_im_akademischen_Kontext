@@ -73,54 +73,50 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 
 ```{r include = TRUE, results = "asis"}
 # Create the data frame with the necessary columns
-overview_table <- data.frame(
+new_table <- data.frame(
   Citation = character(),
   Study_Design = character(),
   Population = character(),
-  Methods = character(),
-  Key_Findings = character(),
-  Neural_Regions_Networks = character(),
-  Impact_on_Academic_Performance = character(),
+  Questions = character(),
+  Variables = character(),
+  data_analysis = character(),
+  results = character(),
+  review = character(),
   stringsAsFactors = FALSE
 )
 
-colnames(overview_table) <- c(
-  "Citation",
-  "Study Design",
-  "Population",
-  "Methods",
-  "Key Findings",
-  "Neural Regions",
-  "Academic Performance"
-)
 # Example entry for manual filling (you will need to fill these with the actual data)
-overview_table[1, ] <- c(
+new_table[1, ] <- c(
   "Beilock et al. (2007)",
   "Experimental",
   "100 college students, mixed gender",
   "Behavioral tasks, fMRI",
   "Stereotype threat impairs working memory efficiency",
   "Prefrontal cortex, phonological loop",
-  "Reduced performance on cognitive tasks under threat"
+  "Reduced performance on cognitive tasks under threat",
+  "yes"
 )
-
-# Adjust column widths to fit within the available width of 27cm
-column_widths <- c("2.5cm", "2.5cm", "2.5cm", "2.5cm", "3.5cm", "3.5cm", "3.5cm")
-
-# Construct the align string with centered column headers
-align_string <- paste0(">{\\centering\\arraybackslash}p{", column_widths, "}")
 
 # Create the apa_table object
 apa_table(
-  overview_table,
+  new_table,
   caption = "Overview of the Included Papers for Hypothesis 1",
-  escape = TRUE,
   longtable = TRUE,
+  escape = FALSE,
   landscape = TRUE,
-  align = align_string,
-  small = T,
+  col.names = c(
+    "Citation",
+    "Study Design",
+    "Population",
+    "Research Questions",
+    "Variables",
+    "Methods of Data Analysis",
+    "Results",
+    "Hypothesis confirmed"
+  ),
+  align = c("m{1.5cm}", "m{3cm}", "m{2.5cm}", "m{3cm}", "m{3cm}", "m{3cm}", "m{3.5cm}", "m{1.5cm}"),
+  note = "Note: Some column headers span multiple lines for better readability."
 )
-
 ```
 
 
