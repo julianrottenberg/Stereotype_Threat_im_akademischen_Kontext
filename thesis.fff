@@ -1,0 +1,7 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\includegraphics{files/prisma.pdf}
+\caption{\label{fig:prisma}PRISMA flowchart of the screening process.}
+\end{figure*}

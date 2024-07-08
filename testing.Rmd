@@ -104,7 +104,6 @@ overview_table[1, ] <- c(
   "Reduced performance on cognitive tasks under threat"
 )
 
-
 # Adjust column widths to fit within the available width of 27cm
 column_widths <- c("2.5cm", "2.5cm", "2.5cm", "2.5cm", "3.5cm", "3.5cm", "3.5cm")
 
@@ -132,6 +131,29 @@ We report how we determined our sample size, all data exclusions (if any), all m
 
 ## Material
 
+```{r include = TRUE, results = "asis"}
+
+query_table <- data.frame(
+     Hypothesis = character(),
+     Query = character()
+)
+
+colnames(query_table) <- c(
+     "Hypothesis",
+     "Query"
+)
+
+query_table[1, ] <- c(
+     "Hypothesis 1",
+     "SELECT * FROM papers WHERE hypothesis = 1"
+)
+
+apa_table(query_table,
+          escape = TRUE,
+          small = T
+          )
+
+```
 ## Procedure
 
 ## Data analysis

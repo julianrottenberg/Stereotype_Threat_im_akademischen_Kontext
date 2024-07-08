@@ -1,0 +1,34 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[tbp]
+
+\begin{center}
+\begin{threeparttable}
+
+\caption{\label{tab:unnamed-chunk-1}Search queries used for the systematic literature review.}
+
+\begin{tabular}{m{4cm}m{12cm}}
+\toprule
+Hypothesis & \multicolumn{1}{c}{Search Query}\\
+\midrule
+H1 & ("stereotype threat") AND
+(neural OR neuroimaging OR "functional magnetic resonance imaging" OR fMRI OR electroencephalo* OR EEG OR ERP OR "brain activation" OR amygdala OR "prefrontal cortex" OR "default mode network" OR "salience network") AND
+(academ* OR education* OR stud* OR learn* OR perform* OR school OR university OR college)\\
+H2 & ("stereotype threat") AND
+("cognitive control" OR "executive function" OR "executive function network" OR "cognitive control network" OR "brain activation" OR "brain activation patterns" OR "cognitive tasks" OR "executive tasks" OR "cognitive assessment" OR "executive assessment") AND
+(academ* OR education* OR stud* OR learn* OR perform* OR school OR university OR college)\\
+H3 & ("stereotype threat") AND
+("working memory*" OR "processing speed" OR accuracy) AND
+(academ* OR education* OR stud* OR learn* OR perform* OR school OR university OR college)\\
+\bottomrule
+\addlinespace
+\end{tabular}
+
+\begin{tablenotes}[para]
+\normalsize{\textit{Note.} The search queries were used in the databases Web of Science, Google Scholar, PSYNDEX, ResearchRabbit, and EBSCOhost. The permalinks to each search used can be found within the GitHub repository.}
+\end{tablenotes}
+
+\end{threeparttable}
+\end{center}
+
+\end{table*}

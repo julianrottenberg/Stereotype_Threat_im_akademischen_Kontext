@@ -253,11 +253,35 @@ We report how we determined our sample size, all data exclusions (if any), all m
 
 \subsection{Material}\label{material}
 
+\begin{table}[tbp]
+
+\begin{center}
+\begin{threeparttable}
+
+\caption{\label{tab:unnamed-chunk-2}}
+
+\small{
+
+\begin{tabular}{ll}
+\toprule
+Hypothesis & \multicolumn{1}{c}{Query}\\
+\midrule
+Hypothesis 1 & SELECT * FROM papers WHERE hypothesis = 1\\
+\bottomrule
+\end{tabular}
+
+}
+
+\end{threeparttable}
+\end{center}
+
+\end{table}
+
 \subsection{Procedure}\label{procedure}
 
 \subsection{Data analysis}\label{data-analysis}
 
-We used R (Version 4.4.1; R Core Team, 2024) and the R-packages \emph{bib2df} (Version 1.1.2.0; Ottolinger, 2024), \emph{dplyr} (Version 1.1.4; Wickham et al., 2023), \emph{kableExtra} (Version 1.4.0; Zhu, 2024), \emph{metagear} (Version 0.7; Lajeunesse, 2016), \emph{papaja} (Version 0.1.2.9000; Aust \& Barth, 2022), \emph{RefManageR} (Version 1.4.0; McLean, 2017), \emph{remotes} (Version 2.5.0; Csárdi et al., 2024), \emph{revtools} (Version 0.4.1; Westgate, 2019), \emph{shiny} (Version 1.8.1.1; Chang et al., 2024), \emph{tibble} (Version 3.2.1; Müller \& Wickham, 2023), and \emph{tinylabels} (Version 0.2.4; Barth, 2023) for all our analyses.
+We used R (Version 4.4.1; R Core Team, 2024) and the R-packages \emph{bib2df} (Version 1.1.2.0; Ottolinger, 2024), \emph{dplyr} (Version 1.1.4; Wickham et al., 2023), \emph{kableExtra} (Version 1.4.0; Zhu, 2024), \emph{metagear} (Version 0.7; Lajeunesse, 2016), \emph{papaja} (Version 0.1.2.9000; Aust \& Barth, 2022), \emph{PRISMAstatement} (Version 1.1.1; Jack O. Wasey, 2019), \emph{RefManageR} (Version 1.4.0; McLean, 2017), \emph{remotes} (Version 2.5.0; Csárdi et al., 2024), \emph{revtools} (Version 0.4.1; Westgate, 2019), \emph{shiny} (Version 1.8.1.1; Chang et al., 2024), \emph{tibble} (Version 3.2.1; Müller \& Wickham, 2023), and \emph{tinylabels} (Version 0.2.4; Barth, 2023) for all our analyses.
 
 \section{Results}\label{results}
 
@@ -280,6 +304,9 @@ Chang, W., Cheng, J., Allaire, J., Sievert, C., Schloerke, B., Xie, Y., Allen, J
 
 \bibitem[\citeproctext]{ref-R-remotes}
 Csárdi, G., Hester, J., Wickham, H., Chang, W., Morgan, M., \& Tenenbaum, D. (2024). \emph{Remotes: R package installation from remote repositories, including 'GitHub'}. \url{https://CRAN.R-project.org/package=remotes}
+
+\bibitem[\citeproctext]{ref-R-PRISMAstatement}
+Jack O. Wasey. (2019). \emph{PRISMAstatement: Plot flow charts according to the "PRISMA" statement}. \url{https://CRAN.R-project.org/package=PRISMAstatement}
 
 \bibitem[\citeproctext]{ref-R-metagear}
 Lajeunesse, M. J. (2016). Facilitating systematic reviews, data extraction, and meta-analysis with the metagear package for r. \emph{Methods in Ecology and Evolution}, \emph{7}, 323--330.

@@ -1,0 +1,212 @@
+---
+title             : "The title"
+shorttitle        : "Title"
+
+author: 
+  - name          : "First Author"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Postal address"
+    email         : "my@email.com"
+    role: # Contributorship roles (e.g., CRediT, https://credit.niso.org/)
+      - "Conceptualization"
+      - "Writing - Original Draft Preparation"
+      - "Writing - Review & Editing"
+  - name          : "Ernst-August Doelle"
+    affiliation   : "1,2"
+    role:
+      - "Writing - Review & Editing"
+      - "Supervision"
+
+affiliation:
+  - id            : "1"
+    institution   : "Wilhelm-Wundt-University"
+  - id            : "2"
+    institution   : "Konstanz Business School"
+
+note: "\\clearpage"
+
+authornote: |
+  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
+
+  Enter author note here.
+
+abstract: |
+  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline.
+  Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
+  One sentence clearly stating the **general problem** being addressed by  this particular study.
+  One sentence summarizing the main result (with the words "**here we show**" or their equivalent).
+  Two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge.
+  One or two sentences to put the results into a more **general context**.
+  Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline.
+  
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["r-references.bib", "files/references.bib"]
+
+floatsintext      : no
+linenumbers       : no
+draft             : no
+mask              : no
+
+figurelist        : yes
+tablelist         : yes
+footnotelist      : no
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+    \setlength{\cslhangindent}{0.5in}
+    \usepackage{fancyhdr} 
+    \pagestyle{fancy}   
+    \fancyhf{} 
+    \fancyhead[R]{\thepage} 
+    \renewcommand{\headrulewidth}{0pt}
+    \thispagestyle{fancy}
+    \duedate{07.08.2023}
+    \course{Modul 6b: Empirisch-Experimentelles Praktikum}
+    \professor{Dr. Sarina Schäfer}
+
+
+csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+documentclass     : "apa7"
+output            : papaja::apa6_pdf
+classoption       : "stu"
+language          : "en-GB"
+---
+
+
+```{r setup, include = FALSE}
+library("papaja")
+library("citr")
+library("rmarkdown")
+r_refs("r-references.bib")
+```
+
+
+# Methods
+
+## Preregistration and version control
+
+The hypotheses, the inclusion/exclusion criteria, used databases, search queries and the basic theoretical foundation of this systematic literature review are preregistered and can be found on Moodle or in the GitHub repository.  
+As suggested by @lakensImprovingYourStatistical2022 (Chapter 14), the present systemic literature used a GitHub repository to store all data and files. The repository is available at: https://github.com/julianrottenberg/Stereotype_Threat_im_akademischen_Kontext  
+This approach allows for more transparency and reproducibility as well as accountability.  
+
+## Artificial Intelligence (AI)
+
+It should be acknowledged that artificial intelligence has been used as an aid in this review - namely, Anthropic's Claude AI 3.5 Sonnet [@anthropicClaudeAiSonnet2024] and GitHub's Copilot [@githubGitHubCopilot2024], the latter was directly integrated into RStudio Server [@positteamRStudioIntegratedDevelopment2024]. The chats that directly influenced this review are all available on the GitHub repository.
+For Github Copilot the autocomplete-style suggestions were used.  
+Claude AI 3.5 Sonnet was used to generate descriptions of the papers used in this review - based on a template. 
+The process here was as follows: First the template was manually filled out by a human, after this process was completed for every paper, a second template was created, the contents of which were filled out by AI and then, later, used in conjunction with the manually created templates. When the different templates differed from one another the primary source (i.e. the paper the template was based on) was checked again. Both, the human-generated as well as the AI-generated templates can be found on the GitHub repository - the AI generated summaries have been marked as such, beginning with "Claude_Ai_" in their file name.  
+To clarify, AI was not used to generate any of the text in this review, it was used as a tool to gather a better understanding and overview of the papers involved. The process of having a human and AI created summary of each paper was chosen to gather an extra layer of security regarding the contents of each paper as well as to counteract possible oversights.  
+
+## Identification of relevant papers  
+
+Papers were selected following the criteria outlined in the preregistration:  
+
+### Databases, search queries and inclusion/exclusion criteria
+
+The databases used were Web of Science, Google Scholar, PSYNDEX, ResearchRabbit and EBSCOhost Within EBSCOhost, the databases  APA PsycArticles, APA PsycInfo, Psychology and Behavioral Sciences Collection, PSYNDEX Literature with PSYNDEX Tests, Education Source Ultimate, and Academic Search Ultimate were searched.  
+Furthermore, the snowball method was utilised to find additional papers - however, this approach did not deliver any additional papers, the same applies to ResearchRabbit.  
+The permalinks to each search used can also be found within the GitHub repository.  
+Within Web of Science the included document types were "Article", "Other", or "Clinical Trail"; the excluded document types were "Book", "Meeting", "Editorial Material", or "Review Article".
+Furthermore, the database "Preprint Citation Index" was excluded.  
+In EBSCOhost, "Apply equivalent subjects" was applied as an Expander, while "Peer Reviewed", "Document Type\*", and "Publication Type\*" were used as Limiters.  
+In Google Scholar, the following was added at the end of the search query: "AND "empirical study" AND "peer-reviewed" -books -meta-analysis)".  
+These extra filters were applied in accordance with the inclusion and exclusion criteria outlined in the preregistration. No other changes were made to the search queries. An overview of the search queries can be found in Table 1.
+
+```{r include = TRUE}
+
+query_table <- data.frame(
+  Hypothesis = character(),
+  Query = character(),
+  stringsAsFactors = FALSE
+)
+
+colnames(query_table) <- c("Hypothesis", "Search Query")
+
+query_table[1, ] <- c(
+  "H1",
+  '("stereotype threat") AND 
+(neural OR neuroimaging OR "functional magnetic resonance imaging" OR fMRI OR electroencephalo* OR EEG OR ERP OR "brain activation" OR amygdala OR "prefrontal cortex" OR "default mode network" OR "salience network") AND
+(academ* OR education* OR stud* OR learn* OR perform* OR school OR university OR college)'
+)
+
+query_table[2, ] <- c(
+  "H2",
+  '("stereotype threat") AND 
+("cognitive control" OR "executive function" OR "executive function network" OR "cognitive control network" OR "brain activation" OR "brain activation patterns" OR "cognitive tasks" OR "executive tasks" OR "cognitive assessment" OR "executive assessment") AND 
+(academ* OR education* OR stud* OR learn* OR perform* OR school OR university OR college)'
+)
+
+query_table[3, ] <- c(
+  "H3",
+  '("stereotype threat") AND 
+("working memory*" OR "processing speed" OR accuracy) AND 
+(academ* OR education* OR stud* OR learn* OR perform* OR school OR university OR college)'
+)
+
+apa_table(query_table, 
+          caption = "Search queries used for the systematic literature review.",
+          note = "The search queries were used in the databases Web of Science, Google Scholar, PSYNDEX, ResearchRabbit, and EBSCOhost. The permalinks to each search used can be found within the GitHub repository.",
+          escape = TRUE,
+          align = c("m{4cm}", "m{12cm}"),
+)
+
+```
+
+The inclusion and exclusion criteria specified in the preregistration were applied to each paper. 
+The criteria "Stereotype Threat", which required studies to "explicitly examine, manipulate, or measure stereotype threat as a key study variable or factor" was enforced on a lot of papers and resulted in their exclusion - even when they were otherwise relevant (more on this in the discussion section), same applies to the "Outcomes" criteria, which required studies to report "at least one of the following: 1. Neural activation patterns/brain imaging data; 2. Cognitive processes (e.g., working memory, cognitive control/executive functions)" also resulted in the exclusion of papers which indirectly measured these outcomes but/or did not specifically focus on "working memory" for example - as an example: a paper might have used a test that is known to measure working memory but did not mention "working memory" within its abstract, methods or results section, so it was excluded.  
+
+### Screening
+
+The screening process was done using the software Rayyan [@ouzzaniRayyanWebMobile2016]. All results were imported onto the platform. 
+The total amount of papers found was 599 ($n_{\text{EBSCOhost}} = 105$, $n_{\text{Google Scholar}} = 48$, $n_{\text{PSYNDEX}} = 5$, $n_{\text{ResearchRabbit}} = 4$, $n_{\text{Web of Science}} = 437$). Out of these 83 were duplicates (88 were automatically detected by Rayyan, however, 5 were false positives), leaving 516 papers to be screened. During the first screening another 440 papers were excluded. 
+Papers which were excluded did not fit the inclusion criteria, most prominently, they either did not focus on stereotype threat, had the wrong population (e.g., older adults), did not fit the publication type requirements, or did not measure the outcomes of interest - this was assessed using the title, keywords, and abstract. If neither the title, nor the keywords or abstract mentioned enough information to make a decision, the paper was marked as 'maybe. 
+An example for hypothesis 3 would be, a paper measured working memory but just referred to "the participants" in the abstract, without clarifying that they fit the definition of the academic context. After this first screening, 76 papers remained for the second screening.
+This second screening was done by looking into the full-text of each paper, here another 44 papers were excluded for the following reasons: wrong focus ($n = 30$), wrong population ($n = 7$), wrong study design ($n = 5$), wrong publication type ($n = 2$) - an overview of this can be found in the PRISMA flowchart in Figure \ref{fig:prisma}
+
+```{r prisma, fig.cap = "PRISMA flowchart of the screening process."}
+
+knitr::include_graphics("files/prisma.pdf")
+```
+
+## R and RStudio
+
+The following R packages were used to create this review: `r cite_r("r-references.bib")`
+
+
+ 
+## Participants
+
+## Material
+
+## Procedure
+
+## Data analysis
+
+
+# Results
+
+# Discussion
+
+
+\newpage
+
+# References
+
+::: {#refs custom-style="Bibliography"}
+:::
