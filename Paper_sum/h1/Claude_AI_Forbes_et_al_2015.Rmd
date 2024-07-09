@@ -336,7 +336,7 @@ The paper mentions that a white male experimenter prepped participants for EEG r
 
 - [x] Details
 
-The authors used standardized EEG recording procedures and a previously established probabilistic learning task (Frank et al., 2004). They also used multiple items to assess self-doubt (α = 0.79).
+The authors used standardized EEG recording procedures and a previously established probabilistic learning task (Frank et al., 2004). They also used multiple items to assess self-doubt ($\alpha$ = 0.79).
 
 ### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
 

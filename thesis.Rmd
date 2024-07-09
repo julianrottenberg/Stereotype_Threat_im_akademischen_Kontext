@@ -78,7 +78,7 @@ header-includes:
     \thispagestyle{fancy}
     \duedate{07.08.2023}
     \course{Modul 6b: Empirisch-Experimentelles Praktikum}
-    \professor{Dr. Sarina Schäfer}
+    \professor{Dr. }
 
 
 csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
@@ -250,8 +250,8 @@ It is concluded that low-demand problems do not suffer under stereotype threat, 
 #### Experiment 4
 All thirty ($N = 30$) women were tasked to solve horizontal and vertical MA under stereotype threat.
 Procedure was similar to Experiment 3A, albeit, with a bigger practice block, and the repetition of some problems.
-The independent variables consisted of Block (baseline vs. stereotype threat), Problem Repetition (no repeat vs. multiple repeat), and Problem Working Memory demand (low vs. high), while the dependent variables did not differ from Experiment 1.  
-The significant $\text{Block } \times \text{ Problem Repetition } \times \text{ Problem Working Memory demand }$ interaction, *F*(1, 29) = 6.13, *p* < `r apa_p(.02)`, $\eta^{2}_{p}$ = `r apa_num(.17)`, was further analysed by differentiating between multi- and no=repeat problems.  
+The independent variables consisted of Block (baseline vs. stereotype threat), Problem Repetition (no repeat vs. multiple repeat), and Problem Working Memory demand (low vs. high), while the dependent variables did not differ from Experiment 1.
+The significant $\text{Block } \times \text{ Problem Repetition } \times$ $\text{ Problem Working Memory demand }$ interaction, *F*(1, 29) = 6.13, *p* < `r apa_p(.02)`, $\eta^{2}_{p}$ = `r apa_num(.17)`, was further analysed by differentiating between multi- and no=repeat problems.  
 For the multi-repeat problems no significant interaction was to be found (*F* < 1), meanwhile a significant effect was found for the no-repeat problems, *F*(1,29) = 11.11, *p* < `r apa_num(.01)`, $\eta^{2}_{p}$ = `r apa_num(.28)`.
 While the accuracy, again, significantly decreased from the baseline (*M* = `r apa_num(65)`%, *SE* = 3.9%) to the stereotype threat block (*M* = `r apa_num(65)`%, *SE* = 5.9%; CI [`r apa_num(52.8)`% - `r apa_num(77.2)`%]; *d* = `r apa_num(.70)`) in high-demand problems, within the no-repeat condition, no significant effect was found for the low-demand problems (baseline: *M* = `r apa_num(95.0)`%, *SE* = `r apa_num(1.5)`%, stereotype threat: *M* = `r apa_num(94.8)`%, *SE* = `r apa_num(2.8)`%).
 For the RTs, problem demand, *F*(1,26) = 144.14, *p* < `r apa_p(.01)`, $\eta^{2}_{p}$ = `r apa_num(.85)`, influenced the RTs more than problem repetition,*F*(1,26) = 139.94, *p* < `r apa_p(.01)`, $\eta^{2}_{p}$ = `r apa_num(.84)`, both showing main effects.  
@@ -297,8 +297,39 @@ A higher cortical activation (*M* = `r apa_num(0.07)`, *SD* = `r apa_num(0.03)`)
 An inverse indication for neural efficiency was found in the correlation of figure intelligence and TRP.
 While the researchers were able to find a negative IQ-brain activation relationship in both girls and boys under no-threat, the same cannot be said for the threat condition, where no significant correlations were found for either sex.
 Thus, neural efficiency was only found in the no-threat condition for boys.  
-H1 is not confirmed by this paper, as the only significant effect under stereotype threat was an increase in cortical activation, which are regions of the cerebral cortex or cerebellar cortex [@americanpsychologicalassociationCorticalActivation2018].
+H1 is not confirmed by this paper, as the only significant effect under stereotype threat was an increase in cortical activation, which are regions of the cerebral cortex or cerebellar cortex [@americanpsychologicalassociationCorticalActivation2018].  
 
+### @forbesSpontaneousDefaultMode2015
+
+In their paper, @forbesSpontaneousDefaultMode2015 looked into negative subject appraisals under stereotype threat and effect on the default mode network (DMN), specifically individual differences in neural networks that moderate the effect perceived performance of stereotype threat. 
+The researchers hypothesised that for minorities, the greater DMN phase-locking is at rest, the less the stereotype threat will affect their performance perceptions, compared to Whites.  
+The final sample consisted of 58 ($N = 58$) participants, 25 (11 female) of which were White, the other 33 (22 female) were minorities.
+The experiment began with preparations for the EEG recording, followed by a resting state EEG, and a stereotype threat manipulation - all participants received the same manipulation. 
+Afterwards, participants tried to solve a probabilistic learning task which was manipulated to evoke similar amounts of correct or wrong feedback.
+For the stereotype manipulation, participants were told, more intelligent individuals were able to learn the relations in a shorter time frame, in the probabilistic learning task, thus the task was able to predict their intelligence.
+In between the stereotype threat manipulation and the probabilistic learning task, participants filled out a demographic questionnaire which included a question about their race, to further manipulate stereotype threat.
+After finishing the task, participants completed a error estimates, as well as self-doubt questionnaires, and a manipulation check.  
+For the EEG, 32 tin electrodes were placed on the scalp using a stretch-lycra cap. 
+Besides ethnicity (Minority vs. White), the independent variables consisted of the phase-locking between the left lateral parietal cortex (LLPC) and precuneus/posterior cingulate cortex (P/PCC), and the phase-locking between LLPC and the medial prefrontal cortex (MPFC), each at the frequency bands alpha (8-12 Hz) and theta (4-8 Hz), these will also be referred to as DMN phase-locking, if the need to differentiate between them is not given.
+In short, ethnicity, LLPC-P/PCC phase-locking (alpha and theta), and LLPC-MPFC phase-locking (alpha and theta) formed the independent variables.
+Error estimates and self-doubt were used as dependent variables.  
+Minorities and Whites performance on learning rates, error overestimation, self-doubt were similar, this was analysed using a independent samples *t*-test on learning performance, error estimates, doubt, and stereotype threat manipulation check (all *p*s > `r apa_p(0.05)`). 
+However, the stereotype threat manipulation was successful, as indicated by the heightened assumption minorities (*M* = `r apa_num(3.08)`, *SD* = `r apa_num(1.11)`) elicited about the researchers expectations about their performance, *t*(86) = -`r apa_num(2.48)`, *p* < `r apa_p(0.02)`, compared to Whites (*M* = `r apa_num(3.6)`, *SD* = `r apa_num(0.77)`).
+Despite not being significant (*p* = `r apa_p(0.20)`), minorities overestimated their errors, showing greater self-doubt, compared to Whites.
+Using regression models, DMN phase-locking during the learning phase was inspected, resulting in no significant effects (*p*s > `r apa_p(0.50)`).
+The relationship between LLPC-P/PCC phase-locking in the theta band and error estimations showed a tendency to overestimate errors was not related to ethnicity (*p* = `r apa_p(0.957)`), a main effect was found for LLPC-P/PCC theta phase locking (*b*=-`r apa_num(195.29)`, $\beta$=-`r apa_num(0.37)`, *SE*=`r apa_num(81.13)`, *p* = `r apa_p(0.021)`), which was then moderated by a significant interaction (*b*=`r apa_num(350.13)`, $\beta$=`r apa_num(0.37)`, *SE*=`r apa_num(147.26)`, *p* = `r apa_p(0.021)`).
+No significant relationships were found between error estimation and LLPC-P/PCC phase locking, in either alpha or theta bands, for neither ethnic group (*p*s > `r apa_p(0.30)`).
+For self-doubt, the phase-locking between LLPC-P/PCC in the alpha and theta band, did not result in a significant relationship (*p*s > `r apa_p(0.40)`).
+For LLPC-MPFC phase-locking and doubt, the researchers were able to effect in the alpha (*b*=-`r apa_num(3.79)`, $\beta$=-`r apa_num(0.12)`, *SE*=`r apa_num(1.28)`, *p* = `r apa_p(0.005)` and theta bands (*b*=-`r apa_num(4.41)`, $\beta$=-`r apa_num(0.09)`, *SE*=`r apa_num(1.95)`, *p* = `r apa_p(0.028)`).
+LLPC-MPFC phase locking did not interact significantly with ethnicity (*p* > `r apa_p(0.20)`).
+Among minorities, a correlation between LLPC-MPFC theta phase-locking and self-doubt was found to be significant (*r*=-`r apa_num(0.54)`, *p* < `r apa_p(0.01)`), while the same cannot be said for Whites (*r*=-`r apa_num(0.04)`).
+Moreover, the authors were able to find a significantly greater relationship between these variables for minorities compared to Whites (*z*=-`r apa_num(2.0)`, *p*<`r apa_p(0.05)`, two-tailed).  
+@forbesSpontaneousDefaultMode2015 conclude that phase-locking between DMN regions might help individuals under stereotype threat to mitigate the negative effects of the threat, perhaps by reducing the amount of self-doubt they experience.
+H1 is supported by this paper.
+
+### @forbesRoleDevaluingDiscounting2008
+
+@forbesRoleDevaluingDiscounting2008 investigated psychological disengagement among minority students under stereotype threat, using cognitive neuroscience methodology.
 
 
 # Discussion
