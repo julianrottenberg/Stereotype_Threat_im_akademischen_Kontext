@@ -193,9 +193,111 @@ The following R packages were used to create this review: `r cite_r("r-reference
  
 # Results
 
-## Hypothesis 1
+## Results Hypothesis 1: Stereotype threat induces variations in neutral activation across different brain areas and networks, potentially influencing academic performance.  
+
+### @beilockStereotypeThreatWorking2007  
+
+In their paper, @beilockStereotypeThreatWorking2007 focussed on stereotypes effects on working memory, specifically, which parts of working memory are affected by stereotype threat and when these effects linger on and influence performance on unrelated tasks.
+To investigate this, they focussed on maths stereotype threat, their population consisted of female college students in the United States.
+Their paper describes five experiments, all of which used a cross-sectional design.
+Experiment 1, 3 (both A and B), and Experiment 5, consisted of two groups each, with 'stereotype threat' vs. 'no stereotype threat', 'horizontal vs. vertical modular arithmetic (MA) conditions', and 'spatial two-back vs. verbal two-back task', respectively, each with random allocation.
+Experiment 2 and 4 consisted of one group each. 
+Since neither Experiment 2 nor 3B were relevant to the hypotheses for this review, they will not be discussed further.
+Across all experiments, participants were female undergraduate students.  
+
+#### Modular Arithmetic (MA) task  
+The MA task was used to measure maths performance.
+Participants were asked to judge the validity of equations, like $60 = 19 mod(4)$, which would result in $false$. 
+These equations were either displayed vertically or horizontally and consisted of varying difficulty, thus differed in working memory demand.
+Using this type of task allowed the researchers to measure the effect stereotype threat had on working memory.  
+
+#### Two-back task  
+Participants were given a stimuli and had to decide whether or not the given stimuli matched the one presented two trials before.
+The stimuli in use were a cluster of identical letters (e.g., *cs*, *ns*) and one of six different spatial locations in an ellipse.
+The two-back task was split into a verbal (letters) or spatial (locations) version, participants were randomly assigned to one of these versions.    
 
 
+#### Experiment 1
+$N = 31$ women, of equal self-reported maths skill participated in this experiment, $n_{\text{stereotype threat}} = 14$, $n_{\text{no stereotype threat}} = 17$.
+Firstly, participants were introduced to the MA task, and were then asked to solve 12 practice problems, these differed in demand but only consisted of horizontal problems.
+Afterwards, 24 problems were performed by each participant over two blocks, with the first one serving as a baseline and the second as the posttest. 
+Stereotype threat manipulation was performed in between these blocks via text on a computer screen.
+An adaptation of the stereotype threat manipulation used by @aronsonWhenWhiteMen1999 was used by displaying the text on a computer screen.
+Maths accuracy and reaction time were measured as dependent variables, while Group (stereotype threat vs. control), Problem working memory demand (low vs. high), and Block (baseline vs. posttest) functioned as independent variables.  
+Within the stereotype threat condition $\text{Group } \times \text{ Block } \times \text{ Problem Demand }$, *F*(1,29) = 11.18, *p* < `r apa_p(0.01)`, $\eta^{2}_{p}$ = `r apa_num(.28)`, resulted in a significant interaction effect for accuracy.
+Further, $\text{Group } \times \text{ Block } \times \text{ Problem Demand }$, on reaction time, showed main effect of block, and problem demand; *F*(1,29) = 8.33, *p* < `r apa_p(0.01)`, $\eta^{2}_{p}$ = `r apa_num(.22)`, and *F*(1,29) = 754.5, *p* < `r apa_p(0.01)`, $\eta^{2}_{p}$ = `r apa_num(.96)`, respectively.
+Thus, individuals were able to increase their speed over time and the more demanding a problem was, the longer it took to solve it.
+A comparison of the accuracy between the baseline and posttest within the stereotype threat condition showed no difference in terms of accuracy for low-demand problems, while, for high-demand problems, a significant decrease in accuracy between the posttest (*M* = 79.3%, *SE* = 4.6%) and baseline (*M* = 89.1%, *SE* = 3.8%) was found; CI [`r apa_num(81)`% - `r apa_num(97)`%]; *d* = `r apa_num(.61)`.  
+@beilockStereotypeThreatWorking2007 conclude that only high- but not low-demand problems affect working memory under stereotype threat. 
+
+#### Experiment 3A
+
+Here, a sample of thirty-three ($N = 33$) women performed, both, vertical and horizontal MA tasks.
+Similar to Experiment 1 they were introduced to the subject with a practice block, followed by a baseline block and a posttest block. 
+This time, all participants received the stereotype threat manipulation in between the last two blocks but were randomly assigned to either the vertical or horizontal problem condition.
+Afterwards, they were given questionnaires to assess their thought during the stereotype threat manipulation, their perceived importance of task performance, and their state anxiety following stereotype threat. 
+The independent variables consisted of Block (baseline vs. stereotype threat), Problem working memory demand (low vs. high), and Problem orientation (horiztonal vs. vertical), while the dependent variables were maths problem accuracy, reaction times, and self-reported thoughts/worries.
+Neither the perceived importance of performing well (vertical: *M* = 4.67, *SE* = `r apa_num(0.35)`; horizontal: *M* = 5.27, *SE* = `r apa_num(0.37)`) nor state anxiety differed between the groups (vertical: *M* = `r apa_num(33.22)`, *SE* = 1.6; horizontal: *M* = `r apa_num(37.00)`, *SE* = 2.7), *F*(1,31) = 1.53, *p* = `r apa_p(.22)`.
+Thoughts/worries were split into four categories, most common were thoughts about the performance monitoring (34.9%), followed by thoughts related about the processes involved in solving the problems (32.4%), unrelated thoughts made up 18.3% and, lastly, 14.5% of the thoughts related to the stereotype threat manipulation.
+Again, no significant difference between the groups was found (Categories 1, 3, and 4: *F* < 1; Category 2: *F*(1,31) = 2.17, *p* = `r apa_p(.15)`.)  
+For the MA problems, a three-way interaction between the independent variables was found, *F*(1,31) = 4.12, *p* = `r apa_p(.05)`, $\eta^{2}_{p}$ = `r apa_num(.12)`.  
+Similar to Experiment 1, a significant $\text{Block } \times \text{Problem Demand }$ interaction was found but only for horizontal problems, *F*(1,14) = 7.70, *p* < `r apa_p(.02)`, $\eta^{2}_{p}$ = `r apa_num(.36)`.
+Accuracy suffered significantly from the baseline (*M* = 91.7%, *SE* = 3.6%) to the stereotype threat (*M* = 81.2%, SE = 4.6%) block; CI [`r apa_num(84)`% - `r apa_num(99.3)`%]; *d* = `r apa_num(.64)`. 
+The three-way ANOVA for, RTs revealed that high-demand problems were slower, compared to low-demand problems; vertical: *F*(1,17) = 306.32, *p* < `r apa_p(.01)`, $\eta^{2}_{p}$ = `r apa_num(.95)`; horizontal: *F*(1,14) = 11.04, *p* < `r apa_p(.01)`, $\eta^{2}_{p}$ = `r apa_num(.44)`.
+This effect was not significant for horizontal problems and revealed a main effect for vertical problems.  
+It is concluded that low-demand problems do not suffer under stereotype threat, however, the working memory is impaired for high-demand problems resulting in a decrease in accuracy (only for horizontal problems) and an increase in reaction time.  
+
+#### Experiment 4
+All thirty ($N = 30$) women were tasked to solve horizontal and vertical MA under stereotype threat.
+Procedure was similar to Experiment 3A, albeit, with a bigger practice block, and the repetition of some problems.
+The independent variables consisted of Block (baseline vs. stereotype threat), Problem Repetition (no repeat vs. multiple repeat), and Problem Working Memory demand (low vs. high), while the dependent variables did not differ from Experiment 1.  
+The significant $\text{Block } \times \text{ Problem Repetition } \times \text{ Problem Working Memory demand }$ interaction, *F*(1, 29) = 6.13, *p* < `r apa_p(.02)`, $\eta^{2}_{p}$ = `r apa_num(.17)`, was further analysed by differentiating between multi- and no=repeat problems.  
+For the multi-repeat problems no significant interaction was to be found (*F* < 1), meanwhile a significant effect was found for the no-repeat problems, *F*(1,29) = 11.11, *p* < `r apa_num(.01)`, $\eta^{2}_{p}$ = `r apa_num(.28)`.
+While the accuracy, again, significantly decreased from the baseline (*M* = `r apa_num(65)`%, *SE* = 3.9%) to the stereotype threat block (*M* = `r apa_num(65)`%, *SE* = 5.9%; CI [`r apa_num(52.8)`% - `r apa_num(77.2)`%]; *d* = `r apa_num(.70)`) in high-demand problems, within the no-repeat condition, no significant effect was found for the low-demand problems (baseline: *M* = `r apa_num(95.0)`%, *SE* = `r apa_num(1.5)`%, stereotype threat: *M* = `r apa_num(94.8)`%, *SE* = `r apa_num(2.8)`%).
+For the RTs, problem demand, *F*(1,26) = 144.14, *p* < `r apa_p(.01)`, $\eta^{2}_{p}$ = `r apa_num(.85)`, influenced the RTs more than problem repetition,*F*(1,26) = 139.94, *p* < `r apa_p(.01)`, $\eta^{2}_{p}$ = `r apa_num(.84)`, both showing main effects.  
+Based on these results, the authors conclude that practised, horizontal problems do not rely on working memory heavily, evidenced by them not being affected by stereotype threat.
+The opposite is true for no-repeat problems, which did suffer under stereotype threat, given that they were of high verbal working memory demand.  
+
+#### Experiment 5  
+The last experiment was preceded by a pilot test to establish whether the two-back tasks were of equal difficulty.
+This pilot test was done with $N = 27$ women, without any stereotype threat manipulation, the procedure is similar to the main experiment, thus will not be discussed further.  
+The main experiment consisted of thirty-three ($N = 33$) women.
+Upon arrival participants completed a two-back practise task, after changing computers, they practised the MA task.
+Afterwards, the stereotype threat manipulation was performed, followed by twenty high-demand horizontal problems.
+In the next step, participants went back to the first computer to complete 100 trails of the same version of the two-back task that was practised before.  
+Condition (stereotype threat vs. control; control being the pilot test) and Two-back task type (verbal vs. spatial) functioned as independent variables, while the dependent variables were accuracy and reaction time, each for, both, the maths problem and the two-back task.  
+Comparing the MA results with the previous experiments results for the same type of task (horizontal, high-demand), showed that the stereotype threat significantly inhibited performance (*M* = `r apa_num(82.2)`%, *SE* = `r apa_num(2.0)`%), while the same cannot be said for the no-threat conditions (*M* = `r apa_num(91.5)`%, *SE* = `r apa_num(1.5)`%).  
+For the two-back task, RTs between spatial (*M* = 895 ms, *SE* = 49 ms) and verbal (*M* = 1087 ms, *SE* = 59 ms) task differed significantly, *F*(1,31) = 6.133, *p* < `r apa_p(.02)`, $\eta^{2}_{p}$ = `r apa_num(.17)` while the difference in accuracy did not reach significance (verbal: *M* = `r apa_num(87.3)`%, *SE* = `r apa_num(1.7)`%; spatial: *M* = `r apa_num(89.0)`%, *SE* = `r apa_num(1.5)`%, *F* < 1).
+Comparing the performance of the stereotype threat condition with the control (pilot test), showed an interaction between $\text{Task } \times \text{ Experiment }$ for RT, *F*(1,56) = 4.38, *p* < `r apa_p(.05)`, $\eta^{2}_{p}$ = `r apa_num(.07)`.
+Without stereotype threat, no significant differences in performance between thee verbal and spatial two-back tasks were found, however, under stereotype threat the verbal task was significantly slower than the spatial task.  
+Contrary to the previous Experiments, Experiment 5 additionally aimed to investigate whether stereotype threat has a spill over effect on unrelated tasks.
+Since these results are not relevant to the hypotheses of this review, they will not be discussed in detail.
+Using multiple regression analyses the authors found that the stereotype threat did indeed spill over to the two-back task, however, only for the verbal task.  
+According to the authors, the results of the different Experiments in this paper, show stereotype threats effect on working memory, they mention that "especially the phonological aspects" are affected.
+Stereotype threat's effect onto task-related worries as well as thoughts serve as further indications for this conclusion.
+Further, it is concluded that stereotype threat likely affects multiple aspects of working memory. 
+A combination of phonological loop and central executive functioning is suggested to be affected by stereotype threat.  
+H1 is partially confirmed by this paper, central executive functioning is assumed to involve the prefrontal cortex, however, this is not the only area affected. 
+The phonological loop is associated with BA4, BA49, and (approximately) BA44 and BA 45.
+
+### @dunstSexDifferencesNeural2013
+
+In a $2 \text{ (sex: male vs. female) } \times 2 \text{ (stereotype exposure: stereotype threat vs. no stereotype threat) }$ cross-sectional between-subjects design, a mixed-sex sample of secondary school students in Austria, was used to investigate the effects of stereotype threat on neural efficiency as well as sex differences in visuo-spatial task performance.
+The dependent variables consisted of task performance (accuracy and reaction time), brain activation (task-related-power changes), and neural efficiency (correlation between figural intelligence and brain activation); sex, stereotype exposure, and figural intelligence functioned as independent variables.
+Task-related-power (TRP) changes were measured using an EEG, specifically the upper alpha band (10-12 Hz) were examined.  
+The final sample consisted of 58 participants ($N = 58$; 26 girls, 32 boys).
+Participants were randomly assigned to either the stereotype threat or control conditions, additionally, they were IQ-matched between experimental groups.  
+Firstly, participants were set up with the EEG, 33 electrodes were placed, following the international 10-20 system. 
+Afterwards, the stereotype threat manipulation was performed using a message claiming boys to be better on the subsequent task, in the no-threat condition the message was neutral, stating that sex differences did not exist.
+The experimental task followed and consisted of Shepard-Metzler figures, here, figures were presented in a 3D presentation mode, participants had to decide whether the figures were identical or mirroed, to do so, the figures had to be rotated mentally.
+Previous studies successfully used a similar manipulation in the past.  
+None of the behavioural analyses were significant, since they do not relate to this reviews hypotheses, they will not be discussed further.
+The TRP changes were analysed, a main effect for Stereotype Exposure (*F*(1,54) = 3.93, *p* = `r apa_p(.05)`, $\text{partial }\eta^{2}$ = `r apa_num(.07)`) was found using a four-way ANOVA, with the between-subjects factors of Stereotype Exposure, and Sex and the within-subjects factors of Hemisphere and Area.
+A higher cortical activation (*M* = `r apa_num(0.07)`, *SD* = `r apa_num(0.03)`) was found in the stereotype threat condition compared to the control condition (*M* = -`r apa_num(0.03)`, *SD* = `r apa_num(0.03)`). 
+An inverse indication for neural efficiency was found in the correlation of figure intelligence and TRP.
+While the researchers were able to find a negative IQ-brain activation relationship in both girls and boys under no-threat, the same cannot be said for the threat condition, where no significant correlations were found for either sex.
+Thus, neural efficiency was only found in the no-threat condition for boys.  
+H1 is not confirmed by this paper, as the only significant effect under stereotype threat was an increase in cortical activation, which are regions of the cerebral cortex or cerebellar cortex [@americanpsychologicalassociationCorticalActivation2018].
 
 
 
