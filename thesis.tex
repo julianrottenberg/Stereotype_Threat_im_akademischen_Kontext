@@ -273,7 +273,7 @@ Claude AI 3.5 Sonnet was used to generate descriptions of the papers used in thi
 The process here was as follows: First the template was manually filled out by a human, after this process was completed for every paper, a second template was created, the contents of which were filled out by AI and then, later, used in conjunction with the manually created templates. When the different templates differed from one another the primary source (i.e.~the paper the template was based on) was checked again. Both, the human-generated as well as the AI-generated templates can be found on the GitHub repository - the AI generated summaries have been marked as such, beginning with ``Claude\_Ai\_'' in their file name.\\
 To clarify, AI was not used to generate any of the text in this review, it was used as a tool to gather a better understanding and overview of the papers involved. The process of having a human and AI created summary of each paper was chosen to gather an extra layer of security regarding the contents of each paper as well as to counteract possible oversights.
 
-\subsubsection{Databases, search queries and inclusion/exclusion criteria}\label{databases-search-queries-and-inclusionexclusion-criteria}
+\subsection{Databases, search queries and inclusion/exclusion criteria}\label{databases-search-queries-and-inclusionexclusion-criteria}
 
 The databases used were Web of Science, Google Scholar, PSYNDEX, ResearchRabbit and EBSCOhost Within EBSCOhost, the databases APA PsycArticles, APA PsycInfo, Psychology and Behavioral Sciences Collection, PSYNDEX Literature with PSYNDEX Tests, Education Source Ultimate, and Academic Search Ultimate were searched.\\
 Furthermore, the snowball method was utilised to find additional papers - however, this approach did not deliver any additional papers, the same applies to ResearchRabbit.\\
@@ -320,14 +320,14 @@ H3 & ("stereotype threat") AND
 The inclusion and exclusion criteria specified in the preregistration were applied to each paper.
 The criteria ``Stereotype Threat'', which required studies to ``explicitly examine, manipulate, or measure stereotype threat as a key study variable or factor'' was enforced on a lot of papers and resulted in their exclusion - even when they were otherwise relevant (more on this in the discussion section), same applies to the ``Outcomes'' criteria, which required studies to report ``at least one of the following: 1. Neural activation patterns/brain imaging data; 2. Cognitive processes (e.g., working memory, cognitive control/executive functions)'' also resulted in the exclusion of papers which indirectly measured these outcomes but/or did not specifically focus on ``working memory'' for example - as an example: a paper might have used a test that is known to measure working memory but did not mention ``working memory'' within its abstract, methods or results section, so it was excluded.
 
-\subsubsection{Screening}\label{screening}
+\subsection{Screening and paper details}\label{screening-and-paper-details}
 
 The screening process was done using the software Rayyan (Ouzzani et al., 2016). All results were imported onto the platform.
 The total amount of papers found was 599 (\(N=599\), \(n_{\text{EBSCOhost}} = 105\), \(n_{\text{Google Scholar}} = 48\), \(n_{\text{PSYNDEX}} = 5\), \(n_{\text{ResearchRabbit}} = 4\), \(n_{\text{Web of Science}} = 437\)). Out of these 83 were duplicates (88 were automatically detected by Rayyan, however, 5 were false positives), leaving 516 papers to be screened. During the first screening another 440 papers were excluded.
 Papers which were excluded did not fit the inclusion criteria, most prominently, they either did not focus on stereotype threat, had the wrong population (e.g., older adults), did not fit the publication type requirements, or did not measure the outcomes of interest - this was assessed using the title, keywords, and abstract. If neither the title, nor the keywords or abstract mentioned enough information to make a decision, the paper was marked as `maybe.
 An example for hypothesis 3 would be, a paper measured working memory but just referred to ``the participants'' in the abstract, without clarifying that they fit the definition of the academic context. After this first screening, 76 papers remained for the second screening.
-This second screening was done by looking into the full-text of each paper, here another 44 papers were excluded for the following reasons: wrong focus (\(n = 30\)), wrong population (\(n = 7\)), wrong study design (\(n = 5\)), wrong publication type (\(n = 2\)) - an overview of this can be found in the PRISMA flowchart in Figure \ref{fig:prisma}.
-In the end, 32 papers were included in this review, \(n = 8\) for hypothesis 1, \(n = 9\) for hypothesis 2, and \(n = 19\) for hypothesis 3 - some were used for multiple hypotheses. Out of the 516 papers, 319 were excluded for 'wrong focus', 57 for `wrong population', 14 for `wrong study design', 12 for wrong publication type, 2 for `foreign language', and 1 for `wrong study duration' (some papers were excluded for multiple reasons). A full list of all papers found and excluded can be found in the GitHub repository.\\
+This second screening was done by looking into the full-text of each paper, here another 44 papers were excluded for the following reasons: wrong focus (\(n = 29\)), wrong population (\(n = 7\)), wrong study design (\(n = 5\)), wrong publication type (\(n = 2\)) - an overview of this can be found in the PRISMA flowchart in Figure \ref{fig:prisma}.
+In the end, 32 papers were included in this review, \(n = 8\) for hypothesis 1, \(n = 9\) for hypothesis 2, and \(n = 19\) for hypothesis 3 - some were used for multiple hypotheses. Out of the 516 papers, 319 were excluded for 'wrong focus', 56 for `wrong population', 14 for `wrong study design', 12 for wrong publication type, 2 for `foreign language', and 1 for `wrong study duration' (some papers were excluded for multiple reasons). A full list of all papers found and excluded can be found in the GitHub repository.\\
 A template was created to summarise each paper, with two versions completed: one by the author and one by Claude AI.
 The template was a mixture of the following checklists: CASP systematic review checklist (Critical Appraisal Skills Programme, 2018), Review guidelines for extracting data and quality assessing primary studies in educational research (EPPI-Centre, 2003), Critical appraisal checklist for a systematic review (University of Glasgow, n.d.), and the Newcastle-Ottawa scale (NOS) for assessing the quality of nonrandomised studies in meta-analyses (Wells et al., 2014), which are used to describe studies and assess their quality.
 Redundant and irrelevant items were eliminated, and the remaining questions were consolidated into a single template.
@@ -637,6 +637,14 @@ Further, an interaction was found to be significant between test and condition i
 Here, a the mean RSDC \emph{z}-values were only higher in the stereotype threat condition in the right superior parietal gyrus (SPG; F(1,45)=8.45, \emph{p}\textless.006), left precuneus (F(1,45)=8.43, \emph{p}\textless.006), left MOG (F(1,45)=7.52, \emph{p}=.009), and right angular gyrus (AG; F(1,45)=8.98, \emph{p}=.004).
 For the left cerebellum (F(1,45)=8.48, \emph{p}=.006) and left hippocampus (F(1,45)=7.85, \emph{p}=.007) they were lower under threat, compared to the control group.
 Yet, no significant correlation was to be found between any of these regions RSDCs and the MC score.
+A mixed-effect analysis for the weighted graph, revealed both, interactions (between test and condition) and main effects.
+While main effects were found for the left hippocampus, left MCG, right cerebellum, and left PCG, interactions were found for the left cerebellum anterior lobe, left precuneus, left MCG, right SPG, and right AG.
+Again, not all of these regions had higher RSDC \emph{z}-values under stereotype threat, compared to the control group.
+Out of the regions that showed a main effect, MCG had increased RSDC \emph{z}-values under stereotype threat, \emph{F}(1,45)=4.85, \emph{p} = .033.
+Looking at the regions that showed an interaction, RSDC \emph{z}-values were increased under stereotype threat for, the right SPG (F(1,45)=7.59, \emph{p}\textless.008), left precuneus (F(1,45)=8.90, \emph{p}\textless.005), left MOG (F(1,45)=7.57, \emph{p}=.009), and AG (F(1,45)=9.20, \emph{p}=.004).
+For interactions, lower RSDC \emph{z}-values under stereotype threat were only found for the left cerebellum (F(1,45)=4.23, \emph{p}=.046).
+Again, no significant correlation was to be found between any of these regions RSDCs and the MC score.
+H1 is partially supported by this paper, increases in the DMN (associated areas) were found as well as neural activation. However, it is unclear whether performance did suffer as a result of stereotype threat and further, while the ACC and prefrontal cortex are mentioned in the researchers hypothesis, they are not mentioned in the results.
 
 \section{Discussion}\label{discussion}
 
@@ -647,7 +655,7 @@ Yet, no significant correlation was to be found between any of these regions RSD
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
 \bibitem[\citeproctext]{ref-americanpsychologicalassociationCorticalActivation2018}
-American Psychological Association. (2018). Cortical activation {[}Dictionary{]}. In \emph{APA dictionary of psychology}. https://dictionary.apa.org/.
+American Psychological Association. (2018). Cortical activation {[}Dictionary{]}. In \emph{APA dictionary of psychology}. https://dictionary.apa.org/cortical-activation.
 
 \bibitem[\citeproctext]{ref-anthropicClaudeAiSonnet2024}
 Anthropic. (2024). \emph{Claude {Ai} 3.5 {Sonnet}}. https://claude.ai/.
@@ -665,37 +673,37 @@ Aust, F., \& Barth, M. (2023). \emph{{papaja}: {Prepare} reproducible {APA} jour
 Barth, M. (2023). \emph{{tinylabels}: Lightweight variable labels}. \url{https://cran.r-project.org/package=tinylabels}
 
 \bibitem[\citeproctext]{ref-beilockStereotypeThreatWorking2007}
-Beilock, S. L., Rydell, R. J., \& McConnell, A. R. (2007). Stereotype threat and working memory: {Mechanisms}, alleviation, and spillover. \emph{Journal of Experimental Psychology: General}, \emph{136}(2), 256--276. \url{https://doi.org/10.1037/0096-3445.136.2.256}
+\textsuperscript{*} Beilock, S. L., Rydell, R. J., \& McConnell, A. R. (2007). Stereotype threat and working memory: {Mechanisms}, alleviation, and spillover. \emph{Journal of Experimental Psychology: General}, \emph{136}(2), 256--276. \url{https://doi.org/10.1037/0096-3445.136.2.256}
 
 \bibitem[\citeproctext]{ref-criticalappraisalskillsprogrammeCASPSystematicReview2018}
 Critical Appraisal Skills Programme. (2018). {CASP Systematic Review Checklist} {[}Organization{]}. In \emph{CASP - Critical Appraisal Skills Programme}. https://casp-uk.net/casp-tools-checklists/.
 
 \bibitem[\citeproctext]{ref-dunstSexDifferencesNeural2013}
-Dunst, B., Benedek, M., Bergner, S., Athenstaedt, U., \& Neubauer, A. C. (2013). Sex differences in neural efficiency: {Are} they due to the stereotype threat effect? \emph{Personality and Individual Differences}, \emph{55}(7), 744--749. \url{https://doi.org/10.1016/j.paid.2013.06.007}
+\textsuperscript{*} Dunst, B., Benedek, M., Bergner, S., Athenstaedt, U., \& Neubauer, A. C. (2013). Sex differences in neural efficiency: {Are} they due to the stereotype threat effect? \emph{Personality and Individual Differences}, \emph{55}(7), 744--749. \url{https://doi.org/10.1016/j.paid.2013.06.007}
 
 \bibitem[\citeproctext]{ref-eppi-centreReviewGuidelinesExtracting2003}
 EPPI-Centre. (2003). \emph{Review guidelines for extracting data and quality assessing primary studies in educational research} (Guidelines Version 0.9.7). Social Science Research Unit.
 
 \bibitem[\citeproctext]{ref-forbesSpontaneousDefaultMode2015}
-Forbes, C. E., Leitner, J. B., Duran-Jordan, K., Magerman, A. B., Schmader, T., \& Allen, J. J. B. (2015). Spontaneous default mode network phase-locking moderates performance perceptions under stereotype threat. \emph{Social Cognitive and Affective Neuroscience}, \emph{10}(7), 994--1002. \url{https://doi.org/10.1093/scan/nsu145}
+\textsuperscript{*} Forbes, C. E., Leitner, J. B., Duran-Jordan, K., Magerman, A. B., Schmader, T., \& Allen, J. J. B. (2015). Spontaneous default mode network phase-locking moderates performance perceptions under stereotype threat. \emph{Social Cognitive and Affective Neuroscience}, \emph{10}(7), 994--1002. \url{https://doi.org/10.1093/scan/nsu145}
 
 \bibitem[\citeproctext]{ref-forbesRoleDevaluingDiscounting2008}
-Forbes, C. E., Schmader, T., \& Allen, J. J. B. (2008). The role of devaluing and discounting in performance monitoring: A neurophysiological study of minorities under threat. \emph{Social Cognitive and Affective Neuroscience}, \emph{3}(3), 253--261. \url{https://doi.org/10.1093/scan/nsn012}
+\textsuperscript{*} Forbes, C. E., Schmader, T., \& Allen, J. J. B. (2008). The role of devaluing and discounting in performance monitoring: A neurophysiological study of minorities under threat. \emph{Social Cognitive and Affective Neuroscience}, \emph{3}(3), 253--261. \url{https://doi.org/10.1093/scan/nsn012}
 
 \bibitem[\citeproctext]{ref-githubGitHubCopilot2024}
 GitHub, \& OpenAi. (2024). \emph{{GitHub Copilot}}. copilot.github.com.
 
 \bibitem[\citeproctext]{ref-jonczykHowStereotypeThreat2022}
-Jończyk, R., Dickson, D. S., Bel-Bahar, T. S., Kremer, G. E., Siddique, Z., \& Van Hell, J. G. (2022). How stereotype threat affects the brain dynamics of creative thinking in female students. \emph{Neuropsychologia}, \emph{173}, 108306. \url{https://doi.org/10.1016/j.neuropsychologia.2022.108306}
+\textsuperscript{*} Jończyk, R., Dickson, D. S., Bel-Bahar, T. S., Kremer, G. E., Siddique, Z., \& Van Hell, J. G. (2022). How stereotype threat affects the brain dynamics of creative thinking in female students. \emph{Neuropsychologia}, \emph{173}, 108306. \url{https://doi.org/10.1016/j.neuropsychologia.2022.108306}
 
 \bibitem[\citeproctext]{ref-krendlNegativeConsequencesThreat2008}
-Krendl, A. C., Richeson, J. A., Kelley, W. M., \& Heatherton, T. F. (2008). The negative consequences of threat: A functional magnetic resonance imaging investigation of the neural mechanisms underlying women's underperformance in math. \emph{Psychological Science}, \emph{19}(2), 168--175. \url{https://doi.org/10.1111/j.1467-9280.2008.02063.x}
+\textsuperscript{*} Krendl, A. C., Richeson, J. A., Kelley, W. M., \& Heatherton, T. F. (2008). The negative consequences of threat: A functional magnetic resonance imaging investigation of the neural mechanisms underlying women's underperformance in math. \emph{Psychological Science}, \emph{19}(2), 168--175. \url{https://doi.org/10.1111/j.1467-9280.2008.02063.x}
 
 \bibitem[\citeproctext]{ref-lakensImprovingYourStatistical2022}
 Lakens, D. (2022). \emph{Improving {Your Statistical Inferences}}. Zenodo. \url{https://doi.org/10.5281/ZENODO.6409077}
 
 \bibitem[\citeproctext]{ref-mangelsEmotionBlocksPath2012}
-Mangels, J. A., Good, C., Whiteman, R. C., Maniscalco, B., \& Dweck, C. S. (2012). Emotion blocks the path to learning under stereotype threat. \emph{Social Cognitive and Affective Neuroscience}, \emph{7}(2), 230--241. \url{https://doi.org/10.1093/scan/nsq100}
+\textsuperscript{*} Mangels, J. A., Good, C., Whiteman, R. C., Maniscalco, B., \& Dweck, C. S. (2012). Emotion blocks the path to learning under stereotype threat. \emph{Social Cognitive and Affective Neuroscience}, \emph{7}(2), 230--241. \url{https://doi.org/10.1093/scan/nsq100}
 
 \bibitem[\citeproctext]{ref-R-RefManageR}
 McLean, M. W. (2017). RefManageR: Import and manage BibTeX and BibLaTeX references in r. \emph{The Journal of Open Source Software}. \url{https://doi.org/10.21105/joss.00338}
@@ -716,7 +724,7 @@ University of Glasgow. (n.d.). \emph{Critical appraisal checklist for a systemat
 Wells, G., Shea, B., O'Connell, D., Robertson, J., Welch, V., Losos, M., \& Tugwell, P. (2014). The newcastle-ottawa scale ({NOS}) for assessing the quality of nonrandomised studies in meta-analyses. \emph{Ottawa Health Research Institute Web Site}, \emph{7}.
 
 \bibitem[\citeproctext]{ref-wuDegreeCentralityBrain2021}
-Wu, X., \& Zhao, Y. (2021). Degree centrality of a brain network is altered by stereotype threat: {Evidences} from a resting-state functional magnetic resonance imaging study. \emph{Frontiers in Psychology}, \emph{12}, 705363. \url{https://doi.org/10.3389/fpsyg.2021.705363}
+\textsuperscript{*} Wu, X., \& Zhao, Y. (2021). Degree centrality of a brain network is altered by stereotype threat: {Evidences} from a resting-state functional magnetic resonance imaging study. \emph{Frontiers in Psychology}, \emph{12}, 705363. \url{https://doi.org/10.3389/fpsyg.2021.705363}
 
 \bibitem[\citeproctext]{ref-R-rmarkdown_a}
 Xie, Y., Allaire, J. J., \& Grolemund, G. (2018). \emph{R markdown: The definitive guide}. Chapman; Hall/CRC. \url{https://bookdown.org/yihui/rmarkdown}

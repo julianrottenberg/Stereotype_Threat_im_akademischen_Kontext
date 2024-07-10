@@ -46,6 +46,9 @@ keywords          : "keywords"
 wordcount         : "X"
 
 bibliography      : ["r-references.bib", "files/references.bib"]
+annotate_references: yes
+nocite            : |
+  @R-base
 
 floatsintext      : no
 linenumbers       : no
@@ -81,7 +84,7 @@ header-includes:
     \professor{Dr. }
 
 
-csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
+csl               : "`r system.file('rmd', 'apa7-annotated.csl', package = 'papaja')`"
 documentclass     : "apa7"
 output            : papaja::apa6_pdf
 classoption       : "stu"
@@ -95,7 +98,6 @@ library("citr")
 library("rmarkdown")
 r_refs("r-references.bib")
 ```
-
 
 # Methods
 
@@ -114,7 +116,7 @@ The process here was as follows: First the template was manually filled out by a
 To clarify, AI was not used to generate any of the text in this review, it was used as a tool to gather a better understanding and overview of the papers involved. The process of having a human and AI created summary of each paper was chosen to gather an extra layer of security regarding the contents of each paper as well as to counteract possible oversights.  
 
 
-### Databases, search queries and inclusion/exclusion criteria
+## Databases, search queries and inclusion/exclusion criteria
 
 The databases used were Web of Science, Google Scholar, PSYNDEX, ResearchRabbit and EBSCOhost Within EBSCOhost, the databases  APA PsycArticles, APA PsycInfo, Psychology and Behavioral Sciences Collection, PSYNDEX Literature with PSYNDEX Tests, Education Source Ultimate, and Academic Search Ultimate were searched.  
 Furthermore, the snowball method was utilised to find additional papers - however, this approach did not deliver any additional papers, the same applies to ResearchRabbit.  
@@ -168,14 +170,14 @@ apa_table(query_table,
 The inclusion and exclusion criteria specified in the preregistration were applied to each paper. 
 The criteria "Stereotype Threat", which required studies to "explicitly examine, manipulate, or measure stereotype threat as a key study variable or factor" was enforced on a lot of papers and resulted in their exclusion - even when they were otherwise relevant (more on this in the discussion section), same applies to the "Outcomes" criteria, which required studies to report "at least one of the following: 1. Neural activation patterns/brain imaging data; 2. Cognitive processes (e.g., working memory, cognitive control/executive functions)" also resulted in the exclusion of papers which indirectly measured these outcomes but/or did not specifically focus on "working memory" for example - as an example: a paper might have used a test that is known to measure working memory but did not mention "working memory" within its abstract, methods or results section, so it was excluded.  
 
-### Screening
+## Screening and paper details
 
 The screening process was done using the software Rayyan [@ouzzaniRayyanWebMobile2016]. All results were imported onto the platform. 
 The total amount of papers found was 599 ($N=599$, $n_{\text{EBSCOhost}} = 105$, $n_{\text{Google Scholar}} = 48$, $n_{\text{PSYNDEX}} = 5$, $n_{\text{ResearchRabbit}} = 4$, $n_{\text{Web of Science}} = 437$). Out of these 83 were duplicates (88 were automatically detected by Rayyan, however, 5 were false positives), leaving 516 papers to be screened. During the first screening another 440 papers were excluded. 
 Papers which were excluded did not fit the inclusion criteria, most prominently, they either did not focus on stereotype threat, had the wrong population (e.g., older adults), did not fit the publication type requirements, or did not measure the outcomes of interest - this was assessed using the title, keywords, and abstract. If neither the title, nor the keywords or abstract mentioned enough information to make a decision, the paper was marked as 'maybe. 
 An example for hypothesis 3 would be, a paper measured working memory but just referred to "the participants" in the abstract, without clarifying that they fit the definition of the academic context. After this first screening, 76 papers remained for the second screening.
-This second screening was done by looking into the full-text of each paper, here another 44 papers were excluded for the following reasons: wrong focus ($n = 30$), wrong population ($n = 7$), wrong study design ($n = 5$), wrong publication type ($n = 2$) - an overview of this can be found in the PRISMA flowchart in Figure \ref{fig:prisma}.
-In the end, 32 papers were included in this review, $n = 8$ for hypothesis 1, $n = 9$ for hypothesis 2, and $n = 19$ for hypothesis 3 - some were used for multiple hypotheses. Out of the 516 papers, 319 were excluded for 'wrong focus', 57 for 'wrong population', 14 for 'wrong study design', 12 for wrong publication type, 2 for 'foreign language', and 1 for 'wrong study duration' (some papers were excluded for multiple reasons). A full list of all papers found and excluded can be found in the GitHub repository.  
+This second screening was done by looking into the full-text of each paper, here another 44 papers were excluded for the following reasons: wrong focus ($n = 29$), wrong population ($n = 7$), wrong study design ($n = 5$), wrong publication type ($n = 2$) - an overview of this can be found in the PRISMA flowchart in Figure \ref{fig:prisma}.
+In the end, 32 papers were included in this review, $n = 8$ for hypothesis 1, $n = 9$ for hypothesis 2, and $n = 19$ for hypothesis 3 - some were used for multiple hypotheses. Out of the 516 papers, 319 were excluded for 'wrong focus', 56 for 'wrong population', 14 for 'wrong study design', 12 for wrong publication type, 2 for 'foreign language', and 1 for 'wrong study duration' (some papers were excluded for multiple reasons). A full list of all papers found and excluded can be found in the GitHub repository.  
 A template was created to summarise each paper, with two versions completed: one by the author and one by Claude AI. 
 The template was a mixture of the following checklists: CASP systematic review checklist [@criticalappraisalskillsprogrammeCASPSystematicReview2018], Review guidelines for extracting data and quality assessing primary studies in educational research [@eppi-centreReviewGuidelinesExtracting2003], Critical appraisal checklist for a systematic review [@universityofglasgowCriticalAppraisalChecklistn.d.nodate], and the Newcastle-Ottawa scale (NOS) for assessing the quality of nonrandomised studies in meta-analyses [@wellsNewcastleottawaScaleNOS2014], which are used to describe studies and assess their quality.
 Redundant and irrelevant items were eliminated, and the remaining questions were consolidated into a single template.
@@ -485,7 +487,7 @@ While main effects were found for the left hippocampus, left MCG, right cerebell
 Again, not all of these regions had higher RSDC *z*-values under stereotype threat, compared to the control group.
 Out of the regions that showed a main effect, MCG had increased RSDC *z*-values under stereotype threat, *F*(1,45)=`r apa_num(4.854)`, *p* = `r apa_p(0.033)`.
 Looking at the regions that showed an interaction, RSDC *z*-values were increased under stereotype threat for, the right SPG (F(1,45)=`r apa_num(7.594)`, *p*<`r apa_p(0.008)`), left precuneus (F(1,45)=`r apa_num(8.900)`, *p*<`r apa_p(0.005)`), left MOG (F(1,45)=`r apa_num(7.571)`, *p*=`r apa_p(0.009)`), and AG (F(1,45)=`r apa_num(9.199)`, *p*=`r apa_p(0.004)`).
-For interactions, lower RSDC *z*-values under stereotype threat were only found for the left cerebellum (F(1,45)=`r apa_num(4.228`, *p*=`r apa_p(0.046)`).
+For interactions, lower RSDC *z*-values under stereotype threat were only found for the left cerebellum (F(1,45)=`r apa_num(4.228)`, *p*=`r apa_p(0.046)`).
 Again, no significant correlation was to be found between any of these regions RSDCs and the MC score.
 H1 is partially supported by this paper, increases in the DMN (associated areas) were found as well as neural activation. However, it is unclear whether performance did suffer as a result of stereotype threat and further, while the ACC and prefrontal cortex are mentioned in the researchers hypothesis, they are not mentioned in the results.
 
