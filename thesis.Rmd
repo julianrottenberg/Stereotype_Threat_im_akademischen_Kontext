@@ -363,6 +363,39 @@ H1 is partially being confirmed by this paper, as neural activation was found du
 
 ### @jonczykHowStereotypeThreat2022
 
+In their study @jonczykHowStereotypeThreat2022 used EEG measurements in combination with behavioural performance tasks to investigate stereotype threats effects on creative thinking.
+The researchers hypothesise, that a measurable decrease in alpha can be expected under stereotype threat, if it affects creative in a negative way.
+On the other hand, an increase in alpha power in combination with increased creative thinking, can be expected if stereotype threat does not discourage but rather motivates individuals.
+Additionally, a positive correlation is expected between elevated creative thinking and heightened alpha power.  
+The study design was cross-sectional with one group, thus every participant received the stereotype threat manipulation.
+Measurements were taken before and after threat manipulation, forming the independent variables, while creative thinking and alpha power formed the dependent variables.
+Alpha power was measured using an elastic cap with 31 active Ag/AgCl (silver/silver chloride) electrodes.
+Task related power (TRP) was calculated in the lower (8-10 Hz) and upper (10-12 Hz) alpha bands before and after the stereotype threat manipulation.  
+The final sample consisted of twenty-three ($N=23$) female undergraduates from an American university.
+Beginning with a demographics questionnaire, participants were then prepared for the EEG during which they completed further questionnaires.
+A resting-state EEG was recorded followed by practice trails of the Alternative Uses task (AUT) and Utopian Situations task (UST).
+While in the AUT participants have to come up with new or unorthodox uses for everyday objects, in the UST were given scenarios and had to come up with creative solutions.
+To measure originality, participants answers were evaluated, on a 5-point scale, by five independent and trained judges; creative fluency was measured by the number of answers given.
+Following the practice, the first block of experimental tasks for the AUT and UST were completed.
+Stereotype threat was manipulated after one block of AUT and UST, using a text modelled after previous studies.
+Here, the participants were told that women usually perform worse on the tasks, and thus, the participants should try their best on the following block.
+After the manipulation, the second block of AUT and UST were completed, followed by another resting-state EEG recording.
+Finally, participants completed the Stereotype Vulnerability Scale (SVS) as well as the self-efficacy scale and the Big Five Inventory.  
+Since the results of originality and fluency are not the primary focus of this reviews hypothesis, they will not be discussed in detail, same goes for the self-efficacy, SVS and Big Five Inventory results.
+Neither idea fluency nor idea originality did differ significantly between pre- and post-threat measures, also, no significant correlations were found between fluency/originality and self-efficacy, SVS, or Big Five Inventory.
+EEG results were calculated using a 2 (pre- vs. post-threat; i.e., no stereotype threat vs. stereotype threat) $\times$ 2 (hemisphere: left vs. right) $\times$ 6 (area: anteriofrontal, fronto-central, centrotemporal, centro-parietal, parietal, parieto-occipital) $\times$ 2 (block half: first half vs. second half) within-subject repeated measures ANOVA.
+A main effect of threat was found in the lower alpha range (8-10 Hz), *F*(1,21)=`r apa_num(19.41)`, *p*<`r apa_p(.001)`, $\hat{\eta}^{2}_{G}$=`r apa_num(.051)`, 90% CI `r apa_confint(.000,.260)`, with greater alpha Event-Related Synchronisation (ERS) after the administration of stereotype threat ($M_{\text{post-threat}}$=`r apa_num(10.00)`, 95% CI `r apa_confint(-4.38,24.39)`).
+For hemisphere a main effect was found, with greater ERS  in the right hemisphere, *F*(1,21)=`r apa_num(9.20)`, *p*<`r apa_p(.006)`, $\hat{\eta}^{2}_{G}$=`r apa_num(.021)`, 90% CI `r apa_confint(.000,.201)`.
+Higher ERS in the right hemisphere was found for frontocentral ($M_{\text{right}}$=`r apa_num(7.88)`, 95% CI `r apa_confint(-7.15,22.92)`; $M_{\text{left}}$=-`r apa_num(4.51)`, 95% CI `r apa_confint(-19.55,10.52)`), centrotemporal ($M_{\text{right}}$=`r apa_num(6.76)`, 95% CI `r apa_confint(-8.28,21.79)`; $M_{\text{left}}$=-`r apa_num(12.07)`, 95% CI `r apa_confint(-27.11,2.96)`), centroparietal ($M_{\text{right}}$=`r apa_num(9.26)`, 95% CI `r apa_confint(-5.78,24.30)`; $M_{\text{left}}$=-`r apa_num(5.12)`, 95% CI `r apa_confint(-20.16,9.92)`), and parietal regions ($M_{\text{right}}$=`r apa_num(8.08)`, 95% CI `r apa_confint(-6.96,23.11)`; $M_{\text{left}}$=-`r apa_num(6.08)`, 95% CI `r apa_confint(-21.12,8.95)`), in an interaction between area and hemisphere, *F*(2.74,57.61)=`r apa_num(3.15)`, *p*=`r apa_p(.036)`, $\hat{\eta}^{2}_{G}$=`r apa_num(.004)`, 90% CI `r apa_confint(.000,.000)`.
+Similarly, a main effect was observed in the upper alpha band, *F*(1,21)=`r apa_num(15.42)`, *p*<`r apa_p(.001)`, $\hat{\eta}^{2}_{G}$=`r apa_num(.053)`, 90% CI `r apa_confint(.000,.263)`, along with a hemispheric difference, *F*(1,21)=`r apa_num(11.43)`, *p*<`r apa_p(.003)`, $\hat{\eta}^{2}_{G}$=`r apa_num(.022)`, 90% CI `r apa_confint(.000,.203)`.
+The area-by-hemisphere interaction also indicated greater ERS in the right hemisphere across various regions, *F*(2.66,55.86)=`r apa_num(4.06)`, *p*=`r apa_p(.014)`, $\hat{\eta}^{2}_{G}$=`r apa_num(.005)`, 90% CI `r apa_confint(.000,.000)`, namely centrotemporal ($M_{\text{right}}$=`r apa_num(0.25)`, 95% CI `r apa_confint(-14.51,15.00)`; $M_{\text{left}}$=-`r apa_num(19.35)`, 95% CI `r apa_confint(-34.10,-4.60)`), centroparietal ($M_{\text{right}}$=`r apa_num(6.20)`, 95% CI `r apa_confint(-8.56,20.95)`; $M_{\text{left}}$=-`r apa_num(9.21)`, 95% CI `r apa_confint(-23.97,5.54)`), and parietal regions ($M_{\text{right}}$=`r apa_num(9.05)`, 95% CI `r apa_confint(-5.71,23.80)`; $M_{\text{left}}$=-`r apa_num(8.90)`, 95% CI `r apa_confint(-23.65,5.85)`).
+Furthermore, a significant threat-by-block interaction suggested increased alpha power immediately after the threat, *F*(1,21)=`r apa_num(4.34)`, *p*=`r apa_p(.050)`, $\hat{\eta}^{2}_{G}$=`r apa_num(.009)`, 90% CI `r apa_confint(.000,.160)`.
+Put together, these results suggest that stereotype threat leads to increases in neural activity, particularly the regions associated with executive function and attention.
+Additional correlation analyses revealed no significant relationship between ideation fluency and alpha power, in neither the lower or upper range.
+Similar findings were reported between idea originality and alpha power in both ranges (upper and lower bands).
+H1 is partially supported by this paper, while stereotype threat did result in increased neural activity, the paper did not explicitly investigate stereotype effects on any of the mentioned areas. However, parts that are associated with the DMN were affected. Furthermore, performance was not found to be inhibited to a significant degree under stereotype threat.
+
+### @krendlNegativeConsequencesThreat2008  
 
 
 # Discussion
