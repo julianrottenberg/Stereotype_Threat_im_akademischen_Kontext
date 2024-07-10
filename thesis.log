@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  11 JUL 2024 01:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  11 JUL 2024 01:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,7 +1102,7 @@ Overfull \hbox (9.48906pt too wide) in paragraph at lines 7--32
 
 
 ] (./thesis.fff
-<files/prisma.pdf, id=237, 600.2425pt x 650.43pt>
+<files/prisma.pdf, id=239, 600.2425pt x 650.43pt>
 File: files/prisma.pdf Graphic file (type pdf)
 <use files/prisma.pdf>
 Package pdftex.def Info: files/prisma.pdf  used on input line 5.
@@ -1118,18 +1118,18 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29273 strings out of 475544
- 537538 string characters out of 5777454
- 1938905 words of memory out of 5000000
- 51114 multiletter control sequences out of 15000+600000
+ 29275 strings out of 475544
+ 537621 string characters out of 5777454
+ 1937905 words of memory out of 5000000
+ 51115 multiletter control sequences out of 15000+600000
  640173 words of font info for 180 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,12n,107p,1928b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on thesis.pdf (33 pages, 293481 bytes).
+Output written on thesis.pdf (33 pages, 294152 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 315 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 317 compressed objects within 4 object streams
+ 94 named destinations out of 1000 (max. 500000)
  41122 words of extra memory for PDF output out of 42996 (max. 10000000)
 
