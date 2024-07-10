@@ -109,7 +109,7 @@ This approach allows for more transparency and reproducibility as well as accoun
 
 It should be acknowledged that artificial intelligence has been used as an aid in this review - namely, Anthropic's Claude AI 3.5 Sonnet [@anthropicClaudeAiSonnet2024] and GitHub's Copilot [@githubGitHubCopilot2024], the latter was directly integrated into RStudio Server [@positteamRStudioIntegratedDevelopment2024]. The chats that directly influenced this review are all available on the GitHub repository.
 For Github Copilot the autocomplete-style suggestions were used.  
-Claude AI 3.5 Sonnet was used to generate descriptions of the papers used in this review - based on a template. 
+Claude AI 3.5 Sonnet was used to generate descriptions of the papers used in this review - based on a template, further, follow up questions were asked to clear up uncertainties.
 The process here was as follows: First the template was manually filled out by a human, after this process was completed for every paper, a second template was created, the contents of which were filled out by AI and then, later, used in conjunction with the manually created templates. When the different templates differed from one another the primary source (i.e. the paper the template was based on) was checked again. Both, the human-generated as well as the AI-generated templates can be found on the GitHub repository - the AI generated summaries have been marked as such, beginning with "Claude_Ai_" in their file name.  
 To clarify, AI was not used to generate any of the text in this review, it was used as a tool to gather a better understanding and overview of the papers involved. The process of having a human and AI created summary of each paper was chosen to gather an extra layer of security regarding the contents of each paper as well as to counteract possible oversights.  
 
@@ -397,6 +397,97 @@ H1 is partially supported by this paper, while stereotype threat did result in i
 
 ### @krendlNegativeConsequencesThreat2008  
 
+@krendlNegativeConsequencesThreat2008 used functional magnetic resonance imaging (fMRI) to investigate underlying neural processes of stereotype threat, specifically women under maths stereotype threat.
+Twenty-eight ($N=28$) female undergraduates were randomly assigned to either a stereotype threat or a control condition, with 14 women in each group.
+All participants were highly identified with maths.
+After receiving basic instructions for the upcoming task, participants were put into the fMRI scanner.
+While inside the scanner, further instructions were given using a computer.
+First of a baseline measurement was taking using latter trails, followed by a neutral version of the Implicit Association Test (IAT).
+Afterwards, participants had to solve 50 difficult maths problems (first set) using basic arithmetic (e.g., 'Is $3 \times 89+9-7^2 = 29$?), or modular arithmetic (e.g., $50=29(\mod{4})$).
+Stereotype threat was manipulated after the first set, by telling participants that the research had shown gender differences in maths ability, thus, the following task was to measure "maths attitudes" - this manipulation has also been used in previous studies.
+Additionally, participants in the threat condition completed another IAT, this time regarding maths/arts.
+Meanwhile, in the control condition, were told that the following task would assess their "political attitudes", they completed a liberal/conservative IAT.
+After the second IAT, participants completed another set (second set) of maths problems, all while in the scanner.  
+Neural activation patterns and maths performance (measured by accuracy i.e., amount of correct maths items; reaction time on maths problems) were used as dependent variables, stereotype threat condition (threat vs. control) and time of measurements (Time 1: pre-manipulation vs. Time 2: post-manipulation) functioned as independent variables.
+An ANOVA on performance, using time (Time 1 vs. Time 2) as a within-subjects variables and condition (threat vs. control) as a between-subjects variable, revealed a significant interaction, *F*(1,26)=`r apa_num(11.41)`, *p*<`r apa_p(.005)`, $\eta^{2}_{p}$=`r apa_num(.31)`, however, no main effect of either time or condition.
+Further t-tests showed that individuals under stereotype threat performed slightly worse over time, *t*(13)=`r apa_num(1.98)`, *p* = `r apa_p(.07)`), while the opposite was true for the control group (*t*(13)=`r apa_num(2.81)`, *p* < `r apa_p(.02)`), the latter showing a significant improvement.
+Using a mixed-model ANOVA on reaction times to analyse performance, a main effect of time, *F*(1,26)=`r apa_num(6.21)`, *p*<`r apa_p(.02)`, $\eta^{2}_{p}$=`r apa_num(.19)`, but not condition, $F<1$, was found, neither was an interaction, *F*(1,26)=`r apa_num(1.21)`, *p*=`r apa_p(.28)`.
+The results of the fMRI analyses revealed distinct neural activation patterns between control and threat conditions, during the second set of maths problems.
+While increased activation was found in several left-lateralized regions, including the inferior prefrontal cortex (Brodmann area, BA 47), the left inferior parietal cortex (BA 40), and the bilateral angular gyrus (BA 39) for the control group, the threatened group showed heightened activity in the ventral anterior cingulate cortex (vACC; BA 32/10) during the second test.
+To further inspect these regions-of-interest (ROIs), a ANOVA, for each ROI, was conducted, using 2 (condition) $\times$ 2 (time) as factors.
+These ANOVAs identified significant interactions for BA 47, *F*(1,26)=`r apa_num(7.35)`, *p* < `r apa_p(.02)`, and a trend for BA 40, *F*(1,26)=`r apa_num(2.93)`, *p* < `r apa_p(.1)`.
+Over time participants under threat did not show the same increased activation, as control participants did, for BA 47, BA 40, and BA 39, which resulted in the two-way interactions.
+However, threatened participants did show increased vACC activation over time, *t*(13)=`r apa_num(5.64)`, *p*<`r apa_p(.001)`, compared to controls, resulting in a significant interaction, *F*(1,26)=`r apa_num(5.97)`, *p*=`r apa_p(.02)`.
+A significant three-way interaction was found for BA 47, *F*(1,26)=`r apa_num(13.94)`, *p*<`r apa_p(.005)`, left BA 40, *F*(1,26)=`r apa_num(10.99)`, *p*<`r apa_p(.005)`, left BA 39 *F*(1,26)=`r apa_num(11.31)`, *p*<`r apa_p(.005)`, and right BA 39, *F*(1,26)=`r apa_num(13.39)`, *p*<`r apa_p(.005)`, when using a 2 $\times$ 2 $\times$ 2 ANOVA (time; condition; region: vACC vs. each cognitive region).
+Double dissociation is indicated by these results; cognitive regions (left inferior frontal, left parietal, and bilateral angular gyrus) showed increased activity in controls but not threatened participants, however, heightened activation, for threatened individuals, but not controls, was found in the affective region (vACC).
+Regarding H1, neural activation across different brain areas and networks, was found in this study, furthermore, heightened activation of vACC, which is part of the DMN, further support it. 
+However, BA47 is part of the prefrontal cortex and BA40, as well as BA39 are part of the DMN, all three areas only showed increased activation in the control group, not the threatened group, thus more evidence against H1 is found in this paper. 
+These findings do point out a significant flaw in H1, more on that in the discussion section.
+
+### @mangelsEmotionBlocksPath2012
+
+Using EEG measurements, @mangelsEmotionBlocksPath2012 investigated emotional responses to negative feedback and learning for females under maths stereotype threat.
+Analysing three different event-related potentials (ERPs), the researchers hypothesised that the anterior P3 (P3a) and medial frontal feedback-related negativity (FRN) would indicate initial responses to the positivity or negativity of feedback under stereotype threat. 
+Furthermore, how emotional arousal is managed will be reflected in the posteriorly-maximal late positive potential (LPP).
+The study design was prospective, stretching over three days.
+Sixty-eight ($N=68$) participants were included in the final sample, 36 of which in the non-threat condition, and the remaining 32 in the stereotype threat condition.
+On day one, participants completed pre-measures regarding their gender, maths identification, and perception of environmental stereotype threat (PEST).
+On the second day, participants were prepared for the EEG, after completing further questionnaires, regarding their mood and maths confidence.
+Stereotype threat manipulation, then followed, after an introduction to the maths task.
+On day three, after circa 24 hours of resting, participants were retested on similar maths problems to the day before, this time without the EEG.
+Finally, a manipulation check was performed, and participants were asked about their maths SAT score.
+The maths task consisted of multiple-choice Graduate Record Examination (GRE) maths problems.
+Feedback was provided after each problem, further, participants were able to use an interactive maths tutor to explain the correct solution - this tutor was only present on day 2.
+Following previous studies, stereotype threat was manipulated in a similar way, instructions were displayed on the screen, while simultaneously being read out loud by a male voice.
+Within these instructions, participants in the stereotype threat condition were told that maths intelligence and ability were to be tested and compared with others in the following task, additionally participants were asked to indicate their gender.
+Contrary to this, participants in the control condition were told that the task would asses problem-solving abilities, and that comparisons would not be made.
+To record the EEG, 64 Ag/AgCl electrodes were placed on the scalp.
+Stereotype threat vs. no stereotype threat formed the independent variable, maths performance (first-test vs. retest accuracy), ERP responses to feedback (P3a, FRN, LPP), use of the tutor (proportion of tutor uses, i.e., how often the tutor was used out of the possible uses vs. depth of exploration, i.e., the proportion of clicks and steps taken in the tutor, out of all the possible tutor clicks), and learning success (error correction on retest) were used as dependent variables. 
+Maths SAT scores were used as a control variable, while analysing ERPs and retest performance another control variable was used, first-test performance.  
+While a significant difference was not to be found under stereotype threat between better and poorer learners, regarding maths identification, better learners in the no-threat condition reported slightly higher maths identification (*p* < `r apa_p(0.09)`). 
+Under stereotype threat, individuals with higher maths identification suffered more, while better learners under stereotype threat showed significantly lower maths identification, compared to the control group (*p* < `r apa_p(0.04)`).
+These results explain the significant interaction between stereotype threat and maths identification, *F*(1,64)=`r apa_num(3.9)`, *p* < `r apa_p(0.05)`.
+The stereotype threat condition performed worse on the initial maths test, resulting in a main effect of stereotype threat, *F*(1,64)=`r apa_num(4.3)`, *p* < `r apa_p(0.05)`.
+No effect was found of stereotype threat on either overall retest performance, or error correction, *p*s > `r apa_p(0.8)`.
+ERP analyses revealed significant deviations from baseline (correct feedback) for FRN, *t*(78)=-`r apa_num(2.79)`, *p* < `r apa_p(0.01)`, and P3a, *t*(78)=`r apa_num(2.3)`, *p* < `r apa_p(0.05)`, these were not significantly influenced by stereotype threat or learning success, *p*s > `r apa_p(0.3)`.
+While LPP and learning success were closely linked in both conditions, this was effect was more pronounced in the stereotype threat condition.
+Significant differences were found between better and poorer learners on LPP, resulting in a main effect of learning, *F*(1,63)=`r apa_num(4.1)`, *p* < `r apa_p(0.05)`.
+Since the results on tutor use and depth of exploration are not relevant to the hypotheses of this review, they will not be detailed; although analyses showed no difference on tutor depth of exploration between conditions, they also suggest that, under stereotype threat, better learners extracted more information from the tutor than poorer learners.
+Using structural equation modelling of retest success (SEM), emotional and cognitive interactions that influenced learning under stereotype threat, were explored.
+Emotional responses to negative feedback significantly impacted learning, further, disengagement from tutor exploration was found to a higher degree in participants who showed greater initial detection of negative feedback, this was indicated using differences in FRN.
+If participants had trouble to regulate their attention and arousal in response to negative feedback, they were less likely to benefit from the tutor, this was indicated by differences in LPP. 
+Relating these results to H1, only neural activation is supported by this paper, as the results of the affected areas are more vague, partially due to the ERPs not being significantly influenced by stereotype threat, and partially because it is not possible to link LPP, FRN, and P3a to the suggested brain areas/networks, if so, only to a small degree.  
+
+### @wuDegreeCentralityBrain2021
+
+@wuDegreeCentralityBrain2021 looked into the effects of maths stereotype threat using resting-state fMRI (RS-fMRI) and degree centrality (DC) analysis.
+While DC is a method to analyse the strength and connectivity of nodes inside a network, RSDC is a method to analyse the connectivity (i.e., strength and amount of connections) of different regions (nodes) in the brain during its resting state.
+The researchers hypothesised that under stereotype threat, degree centrality of the hippocampus would be reduced, while the degree centrality of regions associated with social emotion regulation as well as self-memory related regions would be increased.  
+Forty-eight female undergraduates, from a Chinese university, were randomly assigned to either the stereotype threat or control condition, forming the independent variable.
+RSDC of different brain regions and the manipulation check (MC) score were used as dependent variables.  
+Upon arrival, participants got instructions and were then prepared for the fMRI scan.
+Inside the scanner the RS-fMRI pre-test was recorded, followed by the stereotype threat manipulation.
+Afterwards, another resting period, while examples of the upcoming maths problems were presented, and the post-test RS-fMRI scanning was done.
+Finally, participants were told to complete the MC inside the scanner as well as the maths problems^[The description of hte procedure (and later on the conclusion) is very ambiguous, thus, it is unclear whether the participant actually completed the maths problems at all.]  
+Stereotype threat manipulation was done by claiming that women are inferior at maths across the world, meanwhile, the control group read a text about mountain peaks.
+A three maths problem test was used to measure maths performance. 
+Here, participants were asked to solve maths problems, in which out of three numbers they had to calculate whether the last one was dividable from the difference of the first two.
+The manipulation check was done using the participants agreement with a statement about the experimenter's expectations of their maths performance, on a 7-point scale.  
+The results of the manipulation check indicate that the manipulation was successful, participants under threat scored significantly higher than the control group, *t*(46)=`r apa_num(2.46)`, *p* < `r apa_p(0.0017)`; $M_{\text{ST}}$=`r apa_num(4.52)`, $SD_{\text{ST}}$=`r apa_num(1.58)`; $M_{\text{C}}$=`r apa_num(3.47)`, $SD_{\text{C}}$=`r apa_num(1.31)`.
+Significant main effects were found for the hippocampus, middle cingulate gyrus (MCG), right cerebellum, and left precentral gyrus (PCG), using a 2 (test: pre- vs post-test) $\times$ 2 (condition: stereotype threat vs. control) mixed-effect analysis for the binary graph.
+However, out of these MCG had increased RSDC *z*-values under stereotype threat, compared to the control, *F*(1,45)=`r apa_num(4.883)`, *p* = `r apa_p(0.032)`.
+Further, an interaction was found to be significant between test and condition in the left cerebellum anterior lobe, left hippocampus, left precuneus, and left middle occipital gyrus (MOC).
+Here, a the mean RSDC *z*-values were only higher in the stereotype threat condition in the right superior parietal gyrus (SPG; F(1,45)=`r apa_num(8.453)`, *p*<`r apa_p(0.006)`), left precuneus (F(1,45)=`r apa_num(8.426)`, *p*<`r apa_p(0.006)`), left MOG (F(1,45)=`r apa_num(7.522)`, *p*=`r apa_p(0.009)`), and right angular gyrus (AG; F(1,45)=`r apa_num(8.976)`, *p*=`r apa_p(0.004)`).
+For the left cerebellum (F(1,45)=`r apa_num(8.484)`, *p*=`r apa_p(0.006)`) and left hippocampus (F(1,45)=`r apa_num(7.851)`, *p*=`r apa_p(0.007)`) they were lower under threat, compared to the control group.
+Yet, no significant correlation was to be found between any of these regions RSDCs and the MC score.
+A mixed-effect analysis for the weighted graph, revealed both, interactions (between test and condition) and main effects.
+While main effects were found for the left hippocampus, left MCG, right cerebellum, and left PCG, interactions were found for the left cerebellum anterior lobe, left precuneus, left MCG, right SPG, and right AG.
+Again, not all of these regions had higher RSDC *z*-values under stereotype threat, compared to the control group.
+Out of the regions that showed a main effect, MCG had increased RSDC *z*-values under stereotype threat, *F*(1,45)=`r apa_num(4.854)`, *p* = `r apa_p(0.033)`.
+Looking at the regions that showed an interaction, RSDC *z*-values were increased under stereotype threat for, the right SPG (F(1,45)=`r apa_num(7.594)`, *p*<`r apa_p(0.008)`), left precuneus (F(1,45)=`r apa_num(8.900)`, *p*<`r apa_p(0.005)`), left MOG (F(1,45)=`r apa_num(7.571)`, *p*=`r apa_p(0.009)`), and AG (F(1,45)=`r apa_num(9.199)`, *p*=`r apa_p(0.004)`).
+For interactions, lower RSDC *z*-values under stereotype threat were only found for the left cerebellum (F(1,45)=`r apa_num(4.228`, *p*=`r apa_p(0.046)`).
+Again, no significant correlation was to be found between any of these regions RSDCs and the MC score.
+H1 is partially supported by this paper, increases in the DMN (associated areas) were found as well as neural activation. However, it is unclear whether performance did suffer as a result of stereotype threat and further, while the ACC and prefrontal cortex are mentioned in the researchers hypothesis, they are not mentioned in the results.
 
 # Discussion
 
