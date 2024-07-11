@@ -195,7 +195,7 @@ The following R packages were used to create this review: `r cite_r("r-reference
  
 # Results
 
-## Results Hypothesis 1: Stereotype threat induces variations in neutral activation across different brain areas and networks, potentially influencing academic performance.  
+## Results Hypothesis 1: Stereotype threat induces variations in neutral activation across different brain areas and networks, potentially influencing academic performance. These may include the amygdala, the prefrontal cortex, the default mode network, and the salience network.
 
 ### @beilockStereotypeThreatWorking2007  
 
@@ -490,6 +490,30 @@ Looking at the regions that showed an interaction, RSDC *z*-values were increase
 For interactions, lower RSDC *z*-values under stereotype threat were only found for the left cerebellum (F(1,45)=`r apa_num(4.228)`, *p*=`r apa_p(0.046)`).
 Again, no significant correlation was to be found between any of these regions RSDCs and the MC score.
 H1 is partially supported by this paper, increases in the DMN (associated areas) were found as well as neural activation. However, it is unclear whether performance did suffer as a result of stereotype threat and further, while the ACC and prefrontal cortex are mentioned in the researchers hypothesis, they are not mentioned in the results.
+
+## Results Hypothesis 2: Individuals under stereotype threat will experience a temporary decline in cognitive control (as measured through brain activation patterns in the cognitive control network, executive function network, or through performance on behavioural tasks and questionnaires). This decline will lead to poorer academic performance compared to individuals not experiencing stereotype threat.  
+
+### @guardabassiWeightStatusWeight2020
+
+@guardabassiWeightStatusWeight2020 compared weight stereotype threat related working memory impairments between obese and overweight children.
+It was hypothesised that BMI and working memory were negatively, whether this effect was increased by stereotype threat, and whether this effect can be moderated by endorsement.
+The study design was cross-sectional, with Body Mass Index (BMI), stereotype threat condition (threat vs. control), personal endorsement of obesity-related stereotypes (stereotype endorsement), and weight-based teasing, as independent variables, working memory performance (*N*-back task performance) was used as the dependent variable.
+The Body Mass Index was adjusted to sex- and age, resulting in the *z*BMI.
+Working memory was tested with the *N*-back task, here participants need to indicate whether the current stimulus matches the one presented n trials before, this study used three levels (N0: beginning of the task; N1: preceding position; N2: two preceding positions).
+The Perception of Teasing Scale (POTS) measured weight-based teasing, why the Obesity Stigmatisation Questionnaire measured stereotype endorsement - these were administered during the initial screening phase.
+Stereotype threat was manipulated by claiming that the *N*-back task was a sensitive measure of intelligence, in the control condition, it was described as a computer game.  
+The final sample consisted of 176 primary school children, 106 of which were boys ($M_{\text{age}}$=116.07 months, *SD*=`r apa_num(10.43)`).
+The sample was randomly assigned to their the stereotype threat or control condition, $n=86$ and $n=90$, respectively.
+Upon arrival, height and weight were measured, followed by the *N*-back task, which began with a practice trail, and then three blocks per level of difficult.
+While no correlation was found between *z*BMI and endorsement of stereotypes (*p* = `r apa_p(.830)`), participants reported to have experienced more teasing at higher *z*BMI levels, *p* < `r apa_p(.001)`.
+Using a linear mixed-effects models, with condition, *z*BMI, and the condition $\times$ *z*BMI interaction as fixed and between-subjects factors, and *N*-back task difficulty as a within-subjects factor, a significant main effect was only found for *N*-back difficulty, F(2,198.70)=`r apa_num(43.43)`, *p*<`r apa_p(.001)`, *z*BMI, F(1,153.07)=`r apa_num(5.46)`, *p*=`r apa_p(.021)`, and their interaction, F(1,153.07)=`r apa_num(5.07)`, *p*=`r apa_p(.026)`.
+Neither the three-way interaction (p=`r apa_p(.548)`), nor the two way interactions (*N*-back levels $\times$ *z*BMI, *p*=`r apa_p(.340)` and *N*-back levels $\times$ condition, *p*=`r apa_p(.236)`) were significant.
+In the control condition, no relation between *z*BMI and working memory was to be found, however, under stereotype threat, *z*BMI scores negatively correlated with working memory.
+Including interactions between *z*BMI, condition, and stigma experiences ($\Delta$AIC=`r apa_num(42.706)`, $\Delta$BIC=`r apa_num(42.618)`^[Akaike information criterion (AIC), Bayesian information criterion (BIC)]) and interactions between *z*BMI, condition, and stereotype endorsement ($\Delta$AIC=`r apa_num(21.032)`, $\Delta$BIC=`r apa_num(20.094)`), led to a notable decline in fit indices.
+H2 is partially supported by this paper, while stereotype threat did decrease *N*-back task performance, it cannot be divided which parts of working memory were affected, since the *N*-back task does involve multiple parts of working memory.
+
+### @hirnsteinGenderstereotypingCognitiveSex2014
+
 
 # Discussion
 

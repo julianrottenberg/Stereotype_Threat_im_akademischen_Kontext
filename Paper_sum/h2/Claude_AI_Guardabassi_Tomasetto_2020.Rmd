@@ -328,7 +328,7 @@ The paper does not specify who collected the data.
 
 - [x] Details
 
-The authors report Cronbach's alpha (α = .84) for the POTS scale, indicating good internal consistency reliability.
+The authors report Cronbach's alpha ($\alpha$ = .84) for the POTS scale, indicating good internal consistency reliability.
 
 ### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
 
