@@ -50,7 +50,7 @@ annotate_references: yes
 nocite            : |
   @R-base
 
-floatsintext      : no
+floatsintext      : yes
 linenumbers       : no
 draft             : no
 mask              : no
@@ -513,6 +513,54 @@ Including interactions between *z*BMI, condition, and stigma experiences ($\Delt
 H2 is partially supported by this paper, while stereotype threat did decrease *N*-back task performance, it cannot be divided which parts of working memory were affected, since the *N*-back task does involve multiple parts of working memory.
 
 ### @hirnsteinGenderstereotypingCognitiveSex2014
+
+@hirnsteinGenderstereotypingCognitiveSex2014 investigated the relationship Testosterone (T) might have on cognitive abilities and stereotype threat, further, it was tested whether group sex allocation would influence the results.
+The researchers hypothesised that sex differences are more pronounced under stereotype threat, moreover, that this effect would be amplified in mixed-sex groups.
+Additionally, it was hypothesised that increased T would be associated with better cognitive performance, and that a positive correlation between T, cognitive performance and stereotype threat would be found.
+Since only the impairment of cognitive performance under stereotype threat is relevant to this review, the other results will just be mentioned in passing.  
+To test these hypotheses, a final sample of 136 participants ($n_{\text{male}}=66$, $n_{\text{female}}=70$) were tested in a 2 (stereotype threat vs. control) $\times$ 2 (mixed vs. same sex) $\times$ 2 (male vs. female) factorial design, which formed the independent variables.
+Cognitive performance (tested using mental rotation, verbal fluency, and perceptual speed tests) alongside testosterone levels, were used as dependent variables.
+Using a gender-stereotype questionnaire, consisting of 16 items, participants had to rate the probability that a person in a given scenario was either male or female.
+This questionnaire also served as the stereotype threat manipulation,     participants in the control group received a gender neutral questionnaire (deciding between 'Northern American' or 'European', instead of 'male/female').
+This approach to manipulate stereotype threat has been used in previous studies.
+This questionnaire was done once before and another time after the cognitive tests, however, in the second round, every participant received the gender stereotype questionnaire.
+Cognitive abilities were tested using the Redrawn Vandenberg and Kuse Mental Rotation Test (Version A; MRT-3D), the Mirror Pictures (MP-2D) test, the Word Fluency Test (WF), the 4-Word Sentences Test (4W), and the Perceptual Speed Test (PS).
+Saliva samples were taken to measure testosterone levels.  
+Analysing the gender stereotypes, consistent results were found, with a clear indication that the stereotype threat manipulation was successful.
+In 2 (Sex) $\times$ 2 (Condition) $\times$ 2 (Group sex composition: Same- vs. Mixed-Sex) ANOVAs, each cognitive test was analysed separately.
+The MRT-3D showed a significant main effect of Sex, with men performing better than women, *F*(1,128)=`r apa_num(10.97)`, *p*=`r apa_p(.001)`, $\eta^{2}$=`r apa_num(.08)`, *d*=`r apa_num(0.57)`, while Condition showed a significant main effect in the MP-2D, *F*(1,128)=`r apa_num(4.70)`, *p*=`r apa_p(.032)`, $\eta^{2}$=`r apa_num(.04)`.
+For verbal fluency, interactions were found between Condition and Group Sex Composition, in both, the WF, *F*(1,128)=`r apa_num(4.49)`, *p*=`r apa_p(.036)`, $\eta^{2}$=`r apa_num(.03)`,and the 4W, *F*(1,128)=`r apa_num(6.30)`, *p*=`r apa_p(.013)`, $\eta^{2}$=`r apa_num(.05)`).
+Between Sex $\times$ Condition, another interaction was found, in the 4W, *F*(1,128)=`r apa_num(6.77)`, *p*=`r apa_p(.011)`, $\eta^{2}$=`r apa_num(.05)`.
+Further, Sex, *F*(1,128)=`r apa_num(9.25)`, *p*=`r apa_p(.003)`, $\eta^{2}$=`r apa_num(.07)`, *d*=`r apa_num(0.53)`, revealed a significant main effect for WF.
+Also, in the 4W, Condition showed a significant main effect, *F*(1,128)=`r apa_num(4.67)`, *p*=`r apa_p(.033)`, $\eta^{2}$=`r apa_num(.04)`.
+PS also showed the significant Condition and Group Sex Composition interaction, *F*(1,128)=`r apa_num(6.89)`, *p*=`r apa_p(.009)`, $\eta^{2}$=`r apa_num(.05)`.
+Condition, again showed a significant main effect, this time in the PS, *F*(1,128)=`r apa_num(12.65)`, *p*=`r apa_p(.001)`, $\eta^{2}$=`r apa_num(.09)`.
+A significant three way interaction (Condition $\times$ Group Sex Composition $\times$ Sex), was not found in any of the cognitive tests.
+T levels were higher in men, compared to women, this difference was significant.  
+H2 is weakly but partially being supported, since individuals under stereotype threat performed worse on the 4W (but not WF) and perceptual speed tests, which measure cognitive control among other things.
+
+### @jordanoPrimingPerformancerelatedConcerns2017
+
+In this study, the researchers investigated the effects of stereotype threat on both, cognitive performance and task-related mind-wandering.
+Two experiments were conducted, using similar methods and procedure, with the second experiment using a more difficult version of the Operation Span Task.
+In both experiments sixty female undergraduates were randomly assigned to either a stereotype threat or control condition, forming the independent variable, while mind-wandering - measured using Task-Unrelated Thoughts (TUTs) and Task-Related Inference (TRI) probes -, task performance (on the OSPAN), and self-reported measures (i.e., emotional states, cognitive load/perceived difficulty, experience of mind-wandering), were used as dependent variables.
+Stereotype threat manipulation was done by telling participants that the OSPAN task showed gender differences and was a measure of "quantitative ability".
+The experiments began with the stereotype threat manipulation, followed by a modified Gender-Science Implicit Associations Task (IAT), and the OSPAN task, which was then followed by the post-task surveys.
+Mind-wandering was assessed during the OSPAN task.  
+In the first experiment, it was found that participants under stereotype threat reported significantly more TRI (*M*=`r apa_num(0.210)`, *SE*=`r apa_num(0.026)`) compared to the control group (*M*=`r apa_num(0.127)`, *SE*=`r apa_num(0.023)`), *F*(1,58)=`r apa_num(5.669)`, *p*=`r apa_p(0.021)`, *d*=`r apa_num(0.636)`. 
+These thoughts also resolved significantly more around task strategy and approach in the stereotype threat condition (*M*=`r apa_num(0.097)`, *SE*=`r apa_num(0.023)`), compared to the control group (*M*=`r apa_num(0.040)`, *SE*=`r apa_num(0.010)`), *F*(1,58)=`r apa_num(5.158)`, *p*=`r apa_p(0.027)`, *d*=`r apa_num(0.571)`).
+Neither maths verification accuracy, *F*(1,58)=`r apa_num(1.801)`, *p*=`r apa_p(0.185)`, nor letter recall accuracy, *F*(1,58)=`r apa_num(0.243)`, *p*=`r apa_p(0.624)`, were worse under stereotype threat, compared to the control group.
+In the second experiment, the same pattern was found, with participants under stereotype threat reporting significantly more TRI (*M*=`r apa_num(0.161)`, *SE*=`r apa_num(0.035)`) compared to the control group (*M*=`r apa_num(0.080)`, *SE*=`r apa_num(0.032)`), *F*(1,58)=`r apa_num(5.527)`, *p*=`r apa_p(0.022)`, *d*=`r apa_num(0.423)`.
+Contrary to Experiment 1, evaluation related TRIs did not reach significance.
+This time, maths verification accuracy was worse under stereotype threat, *F*(1,58)=`r apa_num(12.11)`, *p*=`r apa_p(0.001)`, *d*=`r apa_num(0.164)`, while, again, no differences in letter recall accuracy were found.  
+H2 is partially confirmed. While cognitive control did suffer under stereotype threat, as evidenced by increased mind-wandering (TRI), regardless of task difficulty, task performance only worsened in the more difficult maths component of the OSPAN task.
+
+### @krendlNegativeConsequencesThreat2008
+
+The experiment has already been reported in the H1 section.
+H2 is supported, due to decreased accuracy under stereotype threat, as well as neural activation patterns (vACC, DLPFC, IFG, BA47, BA40).
+
+### @linEffectStereotypeThreat2023
 
 
 # Discussion

@@ -424,7 +424,7 @@ The authors do not explicitly describe strategies to control for confounding var
 
 - [x] Details
 
-The authors used Bonferroni adjustment for post-hoc tests and report effect sizes (partial η2 and Cohen's d).
+The authors used Bonferroni adjustment for post-hoc tests and report effect sizes (partial n2 and Cohen's d).
 
 ### Please comment on any other analytic or statistical issues if relevant.
 
