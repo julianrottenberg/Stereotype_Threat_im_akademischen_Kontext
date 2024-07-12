@@ -491,7 +491,7 @@ For interactions, lower RSDC *z*-values under stereotype threat were only found 
 Again, no significant correlation was to be found between any of these regions RSDCs and the MC score.
 H1 is partially supported by this paper, increases in the DMN (associated areas) were found as well as neural activation. However, it is unclear whether performance did suffer as a result of stereotype threat and further, while the ACC and prefrontal cortex are mentioned in the researchers hypothesis, they are not mentioned in the results.
 
-## Results Hypothesis 2: Individuals under stereotype threat will experience a temporary decline in cognitive control (as measured through brain activation patterns in the cognitive control network, executive function network, or through performance on behavioural tasks and questionnaires). This decline will lead to poorer academic performance compared to individuals not experiencing stereotype threat.  
+## Hypothesis 2: Individuals under stereotype threat will experience a temporary decline in cognitive control (as measured through brain activation patterns in the cognitive control network, executive function network, or through performance on behavioural tasks and questionnaires). This decline will lead to poorer academic performance compared to individuals not experiencing stereotype threat.  
 
 ### @guardabassiWeightStatusWeight2020
 
@@ -561,6 +561,57 @@ The experiment has already been reported in the H1 section.
 H2 is supported, due to decreased accuracy under stereotype threat, as well as neural activation patterns (vACC, DLPFC, IFG, BA47, BA40).
 
 ### @linEffectStereotypeThreat2023
+
+To looking into the mediating role of executive function on stereotype threat, @linEffectStereotypeThreat2023 hypothesised that under threat, females performance on spatial perspective-taking tasks would decrease, further, they investigated the underlying mechanisms of gender stereotype threat, and tested, whether or not lessening inhibition would alleviate the effects of stereotype threat.  
+Over two experiments they tested these hypotheses in a cross-sectional design, with stereotype threat (threat vs. control) serving as the independent variable, while spatial perspective-taking performance and executive function performance (inhibition, updating, shifting) - the latter only in Experiment 2 - were used as dependent variables, further gender identification functioned as a covariate.
+Seventy six undergraduates ($M_{/text{age}}$=18.36 years, *SD*=`r apa_num(1.17)`) first completed a demographics questionnaire as well as a gender identification scale, after which the random assignment to either condition (threat vs. control) followed.
+Stereotype threat was manipulated by having participants read a brief report, highlighting gender differences in spatial ability.
+Afterwards, they completed the spatial perspective-taking test, followed by a manipulation check.  
+The stereotype threat manipulation was successful, as indicated by participants under threat (*M*=`r apa_num(2.89)`, *SD*=`r apa_num(1.29)`) scoring significantly higher compared to the control (*M*=`r apa_num(2.21)`, *SD*=`r apa_num(.98)`), *t*(74)=-`r apa_num(2.61)`, *p*=`r apa_p(.011)`, *d*=`r apa_num(.60)`.
+Using a single factor (condition) ANCOVA, a significant decrease in performance was found for the threat group, *F*(1,74)=`r apa_num(10.06)`, *p*=`r apa_p(.002)`, $\eta^{2}$=`r apa_num(.12)`).  
+In Experiment 2, another seventy-seven undergraduates ($M_{/text{age}}$=18.53 years) were again randomly assigned to either condition.
+The procedure was similar to Experiment 1, with the addition of executive function tests being added after the stereotype threat manipulation.
+The Stroop task was used to measure inhibition, while the local-global task was used to measure shifting, and updating was being measured by the keep track task.  
+Again, the manipulation check showed significantly higher scores for individuals under threat (*M*=`r apa_num(3.57)`, *SD*=`r apa_num(1.41)`), compared to the control group (*M*=`r apa_num(2.70)`, *SD*=`r apa_num(1.14)`), *t*(75)=-`r apa_num(2.93)`, *p*=`r apa_p(.004)`, *d*=`r apa_num(.69)`.
+The effect of stereotype threat was significant for inhibition and updating, *F*(1,75)=`r apa_num(11.40)`, *p*=`r apa_p(.001)`, $\eta^{2}$=`r apa_num(.13)`), and *F*(1,75)=`r apa_num(5.54)`, *p*=`r apa_p(.021)`, $\eta^{2}$=`r apa_num(.07)`), respectively, while shifting was not affected in a significant manner, *F*(1,75)=`r apa_num(0.30)`, *p*=`r apa_p(.613)`, $\eta^2$=`r apa_num(.003)`.
+Similar to Experiment 1, females under threat performed worse on the spatial perspective-taking task, compared to the control group, *F*(1,75)=`r apa_num(14.28)`, *p*=`r apa_p(.000)`, $\eta^{2}$=`r apa_num(.16)`).
+After a significant positive correlation between inhibition and spatial perspective-taking was found, the researchers analysed the mediating role of inhibition, which showed only a significant mediating effect for inhibition (but not updating), $\text{indirect effect}$ = `r apa_num(.44)`, $\text{BootSE}$=`r apa_num(0.15)`, 95% $\text{BootCI}$ `r apa_confint(0.1798,0.7587)`.
+Further, between spatial perspective-taking and stereotype threat, a significant direct effect was found, $\text{direct effect}$ = `r apa_num(.38)`, *SE*=`r apa_num(.18)`, *t*=`r apa_num(2.06)` 95% $\text{CI}$ `r apa_confint(0.0128,0.7460)`, also, significant negative effects of stereotype threat on inhibition (*b*=-`r apa_num(.73)`, *SE*=`r apa_num(0.22)`, *t*=-`r apa_num(3.38)` CI `r apa_confint(-1.5114, -0.2979)`) and updating (*b*=-`r apa_num(.52)`, *SE*=`r apa_num(0.22)`, *t*=-`r apa_num(2.35)`, 95% CI `r apa_confint(-0.9608, -0.0800)`) were found.
+These results indicate that spatial perspective taking is negatively influenced by stereotype threat and inhibition, with the former directly, and the latter indirectly affecting performance.  
+H2 is partially supported by this paper, as cognitive control (updating and inhibition) and performance did suffer under stereotype threat, however, shifting did not reach significance.  
+
+### @rydellStereotypeThreatExecutive2014  
+
+@rydellStereotypeThreatExecutive2014 hypothesised that, while shifting would not be mediated by stereotype threat, inhibition and updating would be.
+The independent variable was condition (stereotype threat vs. control), while maths performance, executive function (inhibition: Stroop task/antisaccade, updating: letter-memory task/keep track task, shifting: number-letter task/colour-shape task), and risk-taking behaviour functioned as dependent variables, with the last one only being included in Experiment 3, there before the maths task.
+Experiment 1 used the Stroop, letter-memory, and number-letter tasks, while Experiment 2 used the Stroop, keep track, and colour-shape tasks, Experiment 3 was similar to Experiment 2 but swapped the Stroop for the antisaccade task.
+While Experiment 1 used MA problems as a maths test, Experiment 2 and 3 used GRE word problems.  
+In the first experiment, 168 ($n_{\text{female}}$=75, $n_{\text{male}}$=93) undergraduates were randomly assigned to either condition.
+After an introduction into the maths task, participants received the stereotype threat manipulation, followed by the executive function tasks, and the maths test, after which they indicated their gender - this procedure was used for all three experiments, with the tasks being adjusted accordingly.
+Stereotype threat was manipulated by claiming that the research was to determine why women usually perform worse at maths than men.  
+Between updating and inhibition a significant correlation was found, *r*=`r apa_num(.21)`, *p*=`r apa_p(.0006)`, while no other correlations between executive functions were significant.
+Using a 2 (Gender) $\times$ 2 (Condition) ANOVA on each executive function task, inhibition showed a significant two-way interaction, *F*(1,164)=`r apa_num(5.73)`, *p*=`r apa_p(.018)`, $\eta^{2}_{\text{p}}$=`r apa_num(.034)`), with only womens' inhibition suffering under threat, *F*(1,164)=`r apa_num(7.95)`, *p*=`r apa_p(.005)`, $\eta^{2}_{\text{p}}$=`r apa_num(.046)`).
+The same pattern was found for updating, *F*(1,164)=`r apa_num(15.24)`, *p*<`r apa_p(.001)`, $\eta^{2}_{\text{p}}$=`r apa_num(.085)`), and *F*(1,164)=`r apa_num(20.89)`, *p*<`r apa_p(.001)`, $\eta^{2}_{\text{p}}$=`r apa_num(.113)`, respectively.
+Shifting showed no significant results.
+However, analysing accuracy and reaction time, for the maths test, to a 2 (Gender) $\times$ 2 (Condition) ANOVA, the same two-way interaction, *F*(1,164)=`r apa_num(15.95)`, *p*<`r apa_p(.001)`, $\eta^{2}_{\text{p}}$=`r apa_num(.089)` and performance decrease under threat was found, for accuracy, *F*(1,164)=`r apa_num(20.22)`, *p*<`r apa_p(.001)`, $\eta^{2}_{\text{p}}$=`r apa_num(.110)`, while reaction time reaching a marginally significant main effect of gender, *F*(1,164)=`r apa_num(3.59)`, *p*=`r apa_p(.060)`, $\eta^{2}_{\text{p}}$=`r apa_num(.21)`.
+Further analyses showed that neither shifting nor inhibition mediated the effect of stereotype threat on maths performance, while updating did.  
+Experiment 2 used a sample of ninety female undergraduate.
+The correlation analysis between executive functions in Experiment 2 revealed only a marginally significant one between inhibition and updating, *r*=`r apa_num(.20)`, *p*=`r apa_p(.063)`.
+For executive functions, shifting did not seem to affect performance, *t*(88)=`r apa_num(0.81)`, *p*=`r apa_p(.42)`, *d*=`r apa_num(.17)`, while inhibition, *t*(88)=-`r apa_num(2.09)`, *p*=`r apa_p(.04)`, *d*=`r apa_num(.44)` and updating, *t*(88)=-`r apa_num(3.07)`, *p*=`r apa_p(.003)`, *d*=-`r apa_num(.65)` did.
+Regarding maths performance, under threat, accuracy, *t*(88)=-`r apa_num(3.15)`, *p*=`r apa_p(.002)`, *d*=-`r apa_num(.66)` and the correct item count, *t*(88)=-`r apa_num(5.15)`, *p*<`r apa_p(.001)`, *d*=-`r apa_num(1.09)` were impaired, while the amount of problems attempted was not, *t*(88)=`r apa_num(1.25)`, *p*=`r apa_p(.22)`, *d*=-`r apa_num(.26)`.
+Mediation analyses suggest that updating mediated the effect of stereotype threat.  
+In Experiment 3 a sample of eighty-two female undergraduates participated.
+Again, stereotype threat was manipulated successfully, *t*(79)=`r apa_num(4.56)`, *p*<`r apa_p(.001)`, *d*=`r apa_num(1.01)`.
+None of the correlation between executive functions were significant.
+Inhibition, *t*(79)=-`r apa_num(2.34)`, *p*=`r apa_p(.02)`, *d*=-`r apa_num(.50)`, and updating, *t*(79)=-`r apa_num(2.29)`, *p*=`r apa_p(.03)`, *d*=-`r apa_num(.50)`, were significantly affected by stereotype threat, while shifting was not, *t*(79)=-`r apa_num(0.87)`, *p*=`r apa_p(.39)`, *d*=-`r apa_num(.20)`.
+The results for maths performance were similar to Experiment 2, with accuracy, *t*(79)=-`r apa_num(3.28)`, *p*=`r apa_p(.01)`, *d*=-`r apa_num(.704)`, and the correct item count, *t*(79)=-`r apa_num(2.14)`, *p*=`r apa_p(.035)`, *d*=-`r apa_num(.48)` being impaired, while the amount of problems attempted was not, *t*(79)=`r apa_num(.50)`, *p*=`r apa_p(.62)`, *d*=`r apa_num(.11)`.
+Under threat, women were more likely to take risks, *t*(79)=`r apa_num(2.54)`, *p*=`r apa_p(.01)`, *d*=`r apa_num(.57)`, however, no correlation between it and maths performance was found. 
+The mediation analyses for maths performance are similar to Experiment 2, while investigating a possible mediator for risk taking revealed a significant indirect path from stereotype threat towards inhibition and thus more risk taking.  
+The paper more so supports H2 than it does not. Shifting repeatedly did not reach significance, while the other executive functions did.  
+
+### @stahlRolePreventionFocus2012
+
+
 
 
 # Discussion

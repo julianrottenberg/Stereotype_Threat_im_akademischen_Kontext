@@ -346,7 +346,7 @@ The paper does not specify who collected the data.
 
 - [x] Details
 
-The authors report Cronbach's alpha for the gender identification scale (α = .71) and the manipulation check scale (α = .72 in Experiment 1, α = .66 in Experiment 2).
+The authors report Cronbach's alpha for the gender identification scale ($\alpha$ = .71) and the manipulation check scale ($\alpha$ = .72 in Experiment 1, $\alpha$ = .66 in Experiment 2).
 
 ### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
 
