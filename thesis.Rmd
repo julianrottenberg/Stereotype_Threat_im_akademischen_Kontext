@@ -666,6 +666,20 @@ H2 is not supported by this paper, more so, it provides evidence against it.
 
 ### @bedynskaStereotypeThreatLinked2020
 
+@bedynskaStereotypeThreatLinked2020 hypothesised that language achievement and domain identification are related to chronic stereotype threat.
+Further, they expected that, both, working memory and intellectual helplessness, mediate the relationship between stereotype threat and language achievement, this relationship is thought to be moderated by gender identification.  
+Chronic stereotype threat was used as the independent, language achievement and domain identification as dependent variables, further, working memory and intellectual helplessness were mediators and gender identification was a moderator.  
+319 male secondary school students participated in the study. 
+After a short introduction about the general subject of the experiment, participants completed a working memory capacity test (counting span task, set switching task, and spatial location memory task), followed by questionnaires, with the stereotype threat scale being at last.
+Chronic stereotype threat in language was measured using items from a previous study, language achievement was measured using the GPA in language arts, the Intellectual Helplessness Scale measured intellectual helplessness, and gender identity as well as domain identification were each rated on a 6-point Likert type scale, with higher numbers indicating higher identification.  
+The sample had an overall moderate level of stereotype threat also only a slight correlation between stereotype threat and intellectual helplessness, and working memory (*r*=`r apa_num(.32)`) was found.
+Stereotype threat did negatively impact working memory capacity, with the latter mediating the relationship between stereotype threat and language achievement, *b*=`r apa_num(2.81)`, $\beta$=`r apa_num(0.45)`, *SE*=`r apa_num(0.06)`, *p*<`r apa_p(.001)`, 95% CI `r apa_confint(0.338,0.553)`.
+Higher gender identification moderated the effect of stereotype threat on working memory, *b*=-`r apa_num(0.01)`, $\beta$=-`r apa_num(0.39)`, *SE*=`r apa_num(0.07)`, *p*<`r apa_p(.001)`, 95% CI `r apa_confint(-0.515,-0.261)`, lowering performance.
+Language achievement was indirectly affected by stereotype threat, through impaired working memory and intellectual helplessness, $\beta$=-`r apa_num(0.08)`, *SE*=`r apa_num(0.03)`, *p*<`r apa_p(.001)`, 95% CI `r apa_confint(-0.14,-0.003)`, and *b*=-`r apa_num(0.26)`, $\beta$=-`r apa_num(0.13)`, *SE*=`r apa_num(0.04)`, *p*<`r apa_p(.001)`, 95% CI `r apa_confint(-0.212,-0.055)`, respectively.  
+H3 is supported by this paper, however it should be noted that it was chronic stereotype threat that was investigated and that the level of threat was only moderate.  
+
+### @bedynskaChronicStereotypeThreat2018
+
 # Discussion
 
 

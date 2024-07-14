@@ -302,7 +302,7 @@ The paper does not explicitly state who collected the data.
 
 ### Do the authors describe any ways they addressed the reliability of their data collection tools/methods?
 
-The authors report Cronbach's alpha values for the chronic stereotype threat scale (α = .88) and intellectual helplessness scale (α = .90).
+The authors report Cronbach's alpha values for the chronic stereotype threat scale ($\alpha$ = .88) and intellectual helplessness scale ($\alpha$ = .90).
 
 ### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
 
@@ -357,8 +357,8 @@ The results are presented through a combination of descriptive statistics in tab
 ### What are the results of the study as reported by authors?
 
 The key findings relevant to H3 include:
-- Working memory mediated the relationship between stereotype threat and language achievement (γ = 0.45, 95% CI [0.34, 0.55])
-- Intellectual helplessness mediated the relationships between stereotype threat and both achievement (γ = -0.13, 95% CI [-0.21, -0.06]) and domain identification (γ = -0.13, 95% CI [-0.22, -0.04])
+- Working memory mediated the relationship between stereotype threat and language achievement ($\gamma$ = 0.45, 95% CI [0.34, 0.55])
+- Intellectual helplessness mediated the relationships between stereotype threat and both achievement ($\gamma$ = -0.13, 95% CI [-0.21, -0.06]) and domain identification ($\gamma$ = -0.13, 95% CI [-0.22, -0.04])
 - These effects were only significant for boys with high gender identification
 
 ### Do the authors report on all variables they aimed to study as specified in their aims/research questions?
