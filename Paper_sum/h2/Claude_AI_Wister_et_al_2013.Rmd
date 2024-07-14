@@ -334,7 +334,7 @@ The authors do not specify who collected the data.
 
 - [x] Details
 
-The authors report acceptable levels of internal reliability for the MAQ subscales used (Debilitation, α = 0.75; Bothersome, α = 0.75).
+The authors report acceptable levels of internal reliability for the MAQ subscales used (Debilitation, $\alpha$= 0.75; Bothersome, $\alpha$ = 0.75).
 
 ### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
 

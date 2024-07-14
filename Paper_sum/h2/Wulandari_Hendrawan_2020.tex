@@ -1,0 +1,2221 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  doc, a4paper]{apa7}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{english}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\centering\begin{threeparttable}}
+%   {\end{threeparttable}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\centering\begin{ThreePartTable}}{\end{ThreePartTable}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% Overwrite redefinition of paragraph and subparagraph by the default LaTeX template
+% See https://github.com/crsh/papaja/issues/292
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\itshape\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\makeatletter
+\usepackage{etoolbox}
+\patchcmd{\maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\patchcmd{\maketitle}
+  {\section{\protect\normalfont{\@title}}}
+  {\section*{\protect\normalfont{\@title}}}
+  {}{\typeout{Failed to patch title.}}
+\makeatother
+
+\usepackage{xpatch}
+\makeatletter
+\xapptocmd\appendix
+  {\xapptocmd\section
+    {\addcontentsline{toc}{section}{\appendixname\ifoneappendix\else~\theappendix\fi\\: #1}}
+    {}{\InnerPatchFailed}%
+  }
+{}{\PatchFailed}
+\keywords{keywords\newline\indent Word count: X}
+\usepackage{csquotes}
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Wulandari and Hendrawan (2020)},
+  pdflang={en-EN},
+  pdfkeywords={keywords},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Wulandari and Hendrawan (2020)}
+\author{\phantom{0}}
+\date{}
+
+
+\shorttitle{Wulandari and Hendrawan (2020)}
+
+\affiliation{\phantom{0}}
+
+\begin{document}
+\maketitle
+
+\section{EPPI-Centre (2003) \& Critical Appraisal Skills Programme (2018)}\label{eppi-centrereviewguidelinesextracting2003-criticalappraisalskillsprogrammecaspsystematicreview2018}
+
+\subsubsection{If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here}\label{if-the-study-has-a-broad-focus-and-this-data-extraction-focuses-on-just-one-component-of-the-study-please-specify-this-here}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (whole study is focus of data extraction)\\
+\item[$\square$]
+  Specific focus of this data extraction (please specify)
+\end{itemize}
+
+\subsection{Study aim(s) and rationale}\label{study-aims-and-rationale}
+
+\subsubsection{Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?}\label{was-the-study-informed-by-or-linked-to-an-existing-body-of-empirical-andor-theoretical-research}
+
+\emph{Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.}
+
+\begin{itemize}
+\item[$\boxtimes$]
+  Explicitly stated (please specify)\\
+\item[$\square$]
+  Implicit (please specify)\\
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  Gender stereotype threat
+\item
+  Stereotype threat situations favouring women
+\item
+  self-efficiency beliefs
+\item
+  clustering and switching
+\end{itemize}
+
+\subsubsection{Do authors report how the study was funded?}\label{do-authors-report-how-the-study-was-funded}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Explicitly stated (please specify)\\
+\item[$\square$]
+  Implicit (please specify)\\
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsection{Study research question(s) and its policy or practice focus}\label{study-research-questions-and-its-policy-or-practice-focus}
+
+\subsubsection{What is/are the topic focus/foci of the study?}\label{what-isare-the-topic-focusfoci-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item
+  letter fluency performance and strategy in stereotype threat situations using different gender stereotypes
+\end{itemize}
+
+\subsubsection{What is/are the population focus/foci of the study?}\label{what-isare-the-population-focusfoci-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item
+  men and women
+\end{itemize}
+
+\subsubsection{What is the relevant age group?}\label{what-is-the-relevant-age-group}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicate (focus not learners)\\
+\item[$\square$]
+  0 - 4\\
+\item[$\square$]
+  5 - 10\\
+\item[$\square$]
+  11 - 16\\
+\item[$\square$]
+  17 - 20\\
+\item[$\square$]
+  21 and over\\
+\item[$\boxtimes$]
+  Not stated/unclear
+\end{itemize}
+
+\subsubsection{What is the sex of the population focus/foci?}\label{what-is-the-sex-of-the-population-focusfoci}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicate (focus not learners)\\
+\item[$\square$]
+  Female only\\
+\item[$\square$]
+  Male only\\
+\item[$\boxtimes$]
+  Mixed sex\\
+\item[$\square$]
+  Not stated/unclear
+\end{itemize}
+
+\subsubsection{What is/are the educational setting(s) of the study?}\label{what-isare-the-educational-settings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Community centre\\
+\item[$\square$]
+  Correctional institution\\
+\item[$\square$]
+  Government department\\
+\item[$\boxtimes$]
+  Higher education institution\\
+\item[$\square$]
+  Home\\
+\item[$\square$]
+  Independent school\\
+\item[$\square$]
+  Local education authority\\
+\item[$\square$]
+  Nursery school\\
+\item[$\square$]
+  Other early years setting\\
+\item[$\square$]
+  Post-compulsory education institution\\
+\item[$\square$]
+  Primary school\\
+\item[$\square$]
+  Residential school\\
+\item[$\square$]
+  Secondary school\\
+\item[$\square$]
+  Special needs school\\
+\item[$\square$]
+  Workplace\\
+\item[$\square$]
+  Other educational setting
+\end{itemize}
+
+\subsubsection{In Which country or cuntries was the study carried out?}\label{in-which-country-or-cuntries-was-the-study-carried-out}
+
+\begin{itemize}
+\item[$\boxtimes$]
+  Explicitly stated (please specify)\\
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  Indonesia
+\end{itemize}
+
+\subsubsection{Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned}\label{please-describe-in-more-detail-the-specific-phenomena-factors-services-or-interventions-with-which-the-study-is-concerned}
+
+\subsubsection{What are the study reserach questions and/or hypotheses?}\label{what-are-the-study-reserach-questions-andor-hypotheses}
+
+\emph{Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.}
+
+\begin{itemize}
+\item[$\boxtimes$]
+  Explicitly stated (please specify)\\
+\item[$\square$]
+  Implicit (please specify)\\
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  This study aimed to address how different gender stereotype threat-activation cues and different levels of task difficulty would affect men and women on letter fluency task performances in the aspects of number of correct words, errors, clustering, and switching.
+\item
+  We hypothesized that different types of gender-stereotype activation cue would affect male and female performance differently, and increasing difficulty levels will decrease their letter fluency performance.
+\end{itemize}
+
+\subsection{Methods - Design}\label{methods---design}
+
+\subsubsection{Which variables or concepts, if any, does the study aim to measure or examine?}\label{which-variables-or-concepts-if-any-does-the-study-aim-to-measure-or-examine}
+
+\begin{itemize}
+\item[$\boxtimes$]
+  Explicitly stated (please specify)\\
+\item[$\square$]
+  Implicit (please specify)\\
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  Task difficulty
+\item
+  Stereotype threat activation
+\item
+  Letter fluency performance
+  -\textgreater{} switching
+  -\textgreater{} clustering
+  -\textgreater{} errors
+  -\textgreater{} number of correct words
+\end{itemize}
+
+\subsubsection{Study timing}\label{study-timing}
+
+\emph{Please indicate all that apply and give further details where possible.}
+
+\emph{If the study examines one or more samples, but each at only one point in time it is cross-sectional.}\\
+\emph{If the study examines the same samples, but as they have changed over time, it is retrospective, provided that the interest is in starting at one timepoint and looking backwards over time.}\\
+\emph{If the study examines the same samples as they have changed over time and if data are collected forward over time, it is prospective provided that the interest is in starting at one timepoint and looking forward in time.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Cross-sectional\\
+\item[$\square$]
+  Retrospective\\
+\item[$\square$]
+  Prospective\\
+\item[$\square$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?}\label{if-the-study-is-an-evaluation-when-were-measurements-of-the-variables-used-for-outcome-made-in-relation-to-the-intervention}
+
+\emph{If at least one of the outcome variables is measured both before and after the intervention, please use the before and after category.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (not an evaluation)\\
+\item[$\boxtimes$]
+  Before and after\\
+\item[$\square$]
+  Only after\\
+\item[$\square$]
+  Other (please specify)\\
+\item[$\square$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsection{Methods - Groups}\label{methods---groups}
+
+\subsubsection{If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.}\label{if-comparisons-are-being-made-between-two-or-more-groups-please-specify-the-basis-of-any-divisions-made-for-making-these-comparisons.}
+
+\emph{Please give further details where possible.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (not more than one group)\\
+\item[$\boxtimes$]
+  Prospecitive allocation into more than one group (e.g.~allocation to different interventions, or allocation to intervention and control groups)\\
+\item[$\square$]
+  No prospective allocation but use of pre-existing differences to create comparison groups (e.g.~receiving different interventions, or characterised by different levels of a variable such as social class)\\
+\item[$\square$]
+  Other (please specify)\\
+\item[$\square$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{How do the groups differ?}\label{how-do-the-groups-differ}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (not more than one group)\\
+\item[$\boxtimes$]
+  Explicityly stated (please specify)\\
+\item[$\square$]
+  Implicit (please specify)\\
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  Stereotype-activation
+  -\textgreater{} blatant vs moderately explicit vs sublte vs no activation
+\end{itemize}
+
+\subsubsection{Number of groups}\label{number-of-groups}
+
+\emph{For instance, in studies in which comparisons are made between groups, this may be the number of groups into which the dataset is divided for analysis (e.g.~social class, or form size), or the number of groups allocated to, or receiving, an intervention.}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (not more than one group)\\
+\item[$\square$]
+  One\\
+\item[$\square$]
+  Two\\
+\item[$\square$]
+  Three\\
+\item[$\boxtimes$]
+  Four or more (please specify)\\
+\item[$\square$]
+  Other/unclear (please specify)
+\item
+  4, see above
+\end{itemize}
+
+\subsubsection{Was the assignment of participants to interventions randomised?}\label{was-the-assignment-of-participants-to-interventions-randomised}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (not more than one group)\\
+\item[$\square$]
+  Not applicate (no prospective allocation)\\
+\item[$\boxtimes$]
+  Random\\
+\item[$\square$]
+  Quasi-random\\
+\item[$\square$]
+  Non-random\\
+\item[$\square$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?}\label{where-there-was-prospective-allocation-to-more-than-one-group-was-the-allocation-sequence-concealed-from-participants-and-those-enrolling-them-until-after-enrolment}
+
+\emph{Bias can be introduced, consciously or otherwise, if the allocation of pupils or classes or schools to a programme or intervention is made in the knowledge of key characteristics of those allocated. For example: children with more serious reading difficulty might be seen as in greater need and might be more likely to be allocated to the `new' programme, or the opposite might happen. Either would introduce bias.}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (not more than one group)\\
+\item[$\square$]
+  Not applicable (no prospective allocation)\\
+\item[$\boxtimes$]
+  Yes (please specify)\\
+\item[$\square$]
+  No (please specify)\\
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  was a single-blind study
+\end{itemize}
+
+\subsubsection{Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?}\label{apart-from-the-experimental-intervention-did-each-study-group-receive-the-same-level-of-care-that-is-were-they-treated-equally}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes
+\item[$\square$]
+  No
+\item[$\square$]
+  Can't tell
+\end{itemize}
+
+\subsubsection{Study design summary}\label{study-design-summary}
+
+\emph{In addition to answering the questions in this section, describe the study design in your own words. You may want to draw upon and elaborate the answers you have already given.}
+
+\emph{Procedures}:
+1. pre-recorded stereotype activation cues
+2. pre-recorded letter fluency test
+-\textgreater{} consisted of 3 parts: test instructions, sample item, and test items
+-\textgreater{} experimenter took notes of the words generated
+3. gender-stereotype questionnaire
+4. self-rating
+
+\subsection{Methods - Sampling strategy}\label{methods---sampling-strategy}
+
+\subsubsection{Are the authors trying to produce findings that are representative of a given population?}\label{are-the-authors-trying-to-produce-findings-that-are-representative-of-a-given-population}
+
+\emph{Please write in authors' description. If authors do not specify please indicate reviewers' interpretation.}
+
+\begin{itemize}
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  individuals under gender-stereotype threat
+\end{itemize}
+
+\subsubsection{Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?}\label{which-methods-does-the-study-use-to-identify-people-or-groups-of-people-to-sample-from-and-what-is-the-sampling-frame}
+
+\emph{e.g.~telephone directory, electoral register, postcode, school listing, etc. There may be two stages -- e.g.~first sampling schools and then classes or pupils within them.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (please specify)
+\item[$\square$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{Which methods does the study use to select people or groups of people (from the sampling frame)?}\label{which-methods-does-the-study-use-to-select-people-or-groups-of-people-from-the-sampling-frame}
+
+\emph{e.g.~selecting people at random, systematically - selecting for example every 5th person, purposively in order to reach a quota for a given characteristic.}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (no sampling frame)
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  Participants were excluded from this study if they did not speak Bahasa as their first language for daily communication, had a history of trauma and/or surgical operation related to the brain and central nervous system, suffered from neurological and psychiatric disorders, had a history of substance and/or alcohol abuse, or were left-handed or ambidextrous.
+\item
+  Given that letter flfuency is a neuropsychological test, these criteria were applied to ensure that language barrier and neurological or psychicatric conditons did not affect participants' letter fluency performance.
+\end{itemize}
+
+\subsubsection{Planned sample size}\label{planned-sample-size}
+
+\emph{If more than one group please give details for each group separately.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (please specify)
+\item[$\square$]
+  Explicitly stated (please specify)
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsection{Methods - Recruitment and consent}\label{methods---recruitment-and-consent}
+
+\subsubsection{Which methods are used to recruit people into the study?}\label{which-methods-are-used-to-recruit-people-into-the-study}
+
+\emph{e.g.~letters of invitation, telephone contact, face-to-face contact.}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (please specify)
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  undergraduate students from a state university in Depok, Indonesia.
+\end{itemize}
+
+\subsubsection{Were any incentives provided to recruit people into the study?}\label{were-any-incentives-provided-to-recruit-people-into-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (please specify)
+\item[$\square$]
+  Explicitly stated (please specify)
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{Was consent sought?}\label{was-consent-sought}
+
+\emph{Please comment on the quality of consent if relevant.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (please specify)
+\item[$\boxtimes$]
+  Participant consent sought
+\item[$\square$]
+  Parental consent sought
+\item[$\square$]
+  Other consent sought
+\item[$\square$]
+  Consent not sought
+\item[$\square$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{Are there any other details relevant to recruitment and consent?}\label{are-there-any-other-details-relevant-to-recruitment-and-consent}
+
+\begin{itemize}
+\item[$\square$]
+  No
+\item[$\boxtimes$]
+  Yes (please specify)
+\item
+  The experimental procedure was carried out in accordance with the Declaration of Helsinki.
+\end{itemize}
+
+\subsection{Methods - Actual sample}\label{methods---actual-sample}
+
+\subsubsection{What was the total number of participants in the study (the actual sample)?}\label{what-was-the-total-number-of-participants-in-the-study-the-actual-sample}
+
+\emph{If more than one group is being compared please give numbers for each group.}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  168 undergraduate students (91 female)
+\end{itemize}
+
+\subsubsection{What is the proportion of those selected for the study who actually participated in the study?}\label{what-is-the-proportion-of-those-selected-for-the-study-who-actually-participated-in-the-study}
+
+\emph{Please specify numbers and percentages if possible.}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  168 students were selected, 168 participated (100\%)
+\end{itemize}
+
+\subsubsection{Which country/countries are the individuals in the actual sample from?}\label{which-countrycountries-are-the-individuals-in-the-actual-sample-from}
+
+\emph{If UK, please distinguish between England, Scotland, N. Ireland, and Wales if possible. If from different countries, please give numbers for each. If more than one group is being compared, please describe for each group.}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\square$]
+  Explicitly stated (please specify)
+\item[$\boxtimes$]
+  Implicit (please specify)
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  Indonesia
+\end{itemize}
+
+\subsubsection{What ages are covered by the actual sample?}\label{what-ages-are-covered-by-the-actual-sample}
+
+\emph{Please give the numbers of the sample that fall within each of the given categories. If necessary, refer to a page number in the report (e.g.~for a useful table). If more than one group is being compared, please describe for each group. If follow-up study, age at entry to the study.}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\square$]
+  0 to 4
+\item[$\square$]
+  5 to 10
+\item[$\square$]
+  11 to 16
+\item[$\square$]
+  17 to 20
+\item[$\square$]
+  21 and over
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\item
+  undergraduates
+\end{itemize}
+
+\subsubsection{What is the socio-economic status of the individuals within the actual sample?}\label{what-is-the-socio-economic-status-of-the-individuals-within-the-actual-sample}
+
+\emph{If more than one group is being compared, please describe for each group.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\square$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{What is the ethnicity of the individuals within the actual sample?}\label{what-is-the-ethnicity-of-the-individuals-within-the-actual-sample}
+
+\emph{If more than one group is being compared, please describe for each group.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\square$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{What is known about the special educational needs of individuals within the actual sample?}\label{what-is-known-about-the-special-educational-needs-of-individuals-within-the-actual-sample}
+
+\emph{e.g.~specific learning, physical, emotional, behavioural, intellectual difficulties.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\square$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{Is there any other useful information about the study participants?}\label{is-there-any-other-useful-information-about-the-study-participants}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\square$]
+  Explicitly stated (please specify no/s.)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame?}\label{how-representative-was-the-achieved-sample-as-recruited-at-the-start-of-the-study-in-relation-to-the-aims-of-the-sampling-frame}
+
+\emph{Please specify basis for your decision.}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\square$]
+  Not applicable (no sampling frame)
+\item[$\square$]
+  High (please specify)
+\item[$\boxtimes$]
+  Medium (please specify)
+\item[$\square$]
+  Low (please specify)
+\item[$\square$]
+  Unclear (please specify)
+\item
+  it is a homogeneous group, as intended by the study design
+\item
+  the age is not stated
+\end{itemize}
+
+\subsubsection{If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?}\label{if-the-study-involves-studying-samples-prospectively-over-time-what-proportion-of-the-sample-dropped-out-over-the-course-of-the-study}
+
+\emph{If the study involves more than one group, please give drop-out rates for each group separately. If necessary, refer to a page number in the report (e.g.~for a useful table).}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\item[$\square$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\square$]
+  Not stated/unclear
+\end{itemize}
+
+\subsubsection{For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?}\label{for-studies-that-involve-following-samples-prospectively-over-time-do-the-authors-provide-any-information-on-whether-andor-how-those-who-dropped-out-of-the-study-differ-from-those-who-remained-in-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\item[$\square$]
+  Not applicable (no drop outs)
+\item[$\square$]
+  Yes (please specify)
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsubsection{If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?}\label{if-the-study-involves-following-samples-prospectively-over-time-do-authors-provide-baseline-values-of-key-variables-such-as-those-being-used-as-outcomes-and-relevant-socio-demographic-variables}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (e.g.~study of policies, documents, etc)
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\item[$\square$]
+  Yes (please specify)
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsection{Methods - Data collection}\label{methods---data-collection}
+
+\subsubsection{Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?}\label{please-describe-the-main-types-of-data-collected-and-specify-if-they-were-used-a-to-define-the-sample-b-to-measure-aspects-of-the-sample-as-findings-of-the-study}
+
+\begin{itemize}
+\item[$\square$]
+  Details
+\item
+  Gender stereotype-activation cues -\textgreater{} b
+\item
+  Letter fluency performance -\textgreater{} b
+\item
+  Gender-stereotype questionnaire -\textgreater{} b
+\item
+  Self-rating -\textgreater{} b
+\item
+  manipulation check -\textgreater{} b
+\end{itemize}
+
+\subsubsection{Which methods were used to collect the data?}\label{which-methods-were-used-to-collect-the-data}
+
+\emph{Please indicate all that apply and give further detail where possible.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Curriculum-based assessment
+\item[$\square$]
+  Focus group
+\item[$\square$]
+  Group interview
+\item[$\square$]
+  One to one interview (face to face or by phone)
+\item[$\square$]
+  Observation
+\item[$\square$]
+  Self-completion questionnaire
+\item[$\square$]
+  Self-completion report or diary
+\item[$\square$]
+  Exams
+\item[$\square$]
+  Clinical test
+\item[$\square$]
+  Practical test
+\item[$\square$]
+  Psychological test
+\item[$\square$]
+  Hypothetical scenario including vignettes
+\item[$\square$]
+  School/college records (e.g.~attendance records etc)
+\item[$\square$]
+  Secondary data such as publicly available statistics
+\item[$\square$]
+  Other documentation
+\item[$\square$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{Details of data collection methods or tool(s).}\label{details-of-data-collection-methods-or-tools.}
+
+\emph{Please provide details including names for all tools used to collect data and examples of any questions/items given. Also please state whether source is cited in the report.}
+
+\begin{itemize}
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\square$]
+  Not stated/unclear (please specify)
+\item
+  manipulation check: questionnaire asking whether the recorded instruction for activating gender stereotype threat was perceived as having a different degree of stereotype across the three manipulation groups (blatant, moderately explicit, subtle) and a control group.
+\item
+  self rating: translated from Hausmann et al (2009); ``To what extent does the following item describe you? I can generate many words beginning with the same letter within one minute''. On a 7-point scale, the participant was asked how applicable that statement was to them, with `1' being `not descriptive at all and '7' indicating `highly descriptive'
+\item
+  Gender-stereotype questionnaire: Translated into Bahasa from gender-stereotype questionnaire by Hausmann et al.~(2009), permission was obtained. Only used one item that refers to verbal fluency.
+\item
+  Letter Fluency Test: K, R, W; each letter represents easy, moderate, and hard level of difficulty (Hendrawan \& Hatta, 2010; Hendrawan et al., 2015).
+\item
+  Gender stereotype-activation cues: pre recorded using Audacity. Adapted from Nguyen and Ryan (2009) and Hirnstein et al, (2012)
+\end{itemize}
+
+\subsubsection{Who collected the data?}\label{who-collected-the-data}
+
+\emph{Please indicate all that apply and give further detail where possible.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Researcher
+\item[$\square$]
+  Head teacher/Senior management
+\item[$\square$]
+  Teaching or other staff
+\item[$\square$]
+  Parents
+\item[$\square$]
+  Pupils/students
+\item[$\square$]
+  Governors
+\item[$\square$]
+  LEA/Government officials
+\item[$\square$]
+  Other education practitioner
+\item[$\square$]
+  Other (please specify)
+\item[$\square$]
+  Not stated/unclear
+\end{itemize}
+
+\subsubsection{Do the authors describe any ways they addressed the reliability of their data collection tools/methods?}\label{do-the-authors-describe-any-ways-they-addressed-the-reliability-of-their-data-collection-toolsmethods}
+
+\emph{e.g.~test-retest methods (Where more than one tool was employed please provide details for each.)}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Details
+\end{itemize}
+
+\subsubsection{Do the authors describe any ways they have addressed the validity of their data collection tools/methods?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-validity-of-their-data-collection-toolsmethods}
+
+\emph{e.g.~mention previous validation of tools, published version of tools, involvement of target population in development of tools. (Where more than one tool was employed please provide details for each.)}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Details
+\end{itemize}
+
+\subsubsection{Was there concealment of study allocation or other key factors from those carrying out measurement of outcome -- if relevant?}\label{was-there-concealment-of-study-allocation-or-other-key-factors-from-those-carrying-out-measurement-of-outcome-if-relevant}
+
+\emph{Not applicable -- e.g.~analysis of existing data, qualitative study. No -- e.g.~assessment of reading progress for dyslexic pupils done by teacher who provided intervention. Yes -- e.g.~researcher assessing pupil knowledge of drugs - unaware of pupil allocation.}
+
+\begin{itemize}
+\item[$\square$]
+  Not applicable (please say why)
+\item[$\square$]
+  Yes (please specify)
+\item[$\boxtimes$]
+  No (please specify)
+\item
+  was a single blind design
+\end{itemize}
+
+\subsubsection{Where were the data collected?}\label{where-were-the-data-collected}
+
+\emph{e.g.~school, home.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\square$]
+  Unclear/not stated (please specify)
+\end{itemize}
+
+\subsubsection{Are there other important features of data collection?}\label{are-there-other-important-features-of-data-collection}
+
+\emph{e.g.~use of video or audio tape; ethical issues such as confidentiality etc.}
+
+\begin{itemize}
+\item[$\square$]
+  Details
+\item
+  the experimenter noted the words generated in the Letter Fluency Test
+\end{itemize}
+
+\subsection{Methods - Data analysis}\label{methods---data-analysis}
+
+\subsubsection{Which methods were used to analyse the data?}\label{which-methods-were-used-to-analyse-the-data}
+
+\emph{Please give details e.g.~for in-depth interviews, how were the data handled? Details of statistical analysis can be given next.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Explicitly stated (please specify)
+\item[$\square$]
+  Implicit (please specify)
+\item[$\square$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{Which statistical methods, if any, were used in the analysis?}\label{which-statistical-methods-if-any-were-used-in-the-analysis}
+
+\begin{itemize}
+\item[$\square$]
+  Details
+\item
+  Manipulation check: Kruskal-Wallis Test
+\item
+  Kolmogorov-Smirnov Test: manipulation across gender
+\item
+  effect of activation types, gender, and level of task difficulty on letter fluency performance, number of correct words and error from each letter on the letter fluency test were subjected to 4 x 3 x 2 mixed anova.
+\item
+  The total correct words, total errors, mean cluster size, and number of switches from the letter fluency test were subjected to a 4 x 2 ANOVA to examine the effect of activation types and gender on letter fluency overall performance and its component processes
+\item
+  One sample t-test was performed on the probability estimate from the male column of the gender-stereotype questionnaire to examine whether the probability estimation was significantly different from a value of 50 (an indication of neutral appraisal)
+\item
+  One sample t-test was also performed on the self-rating score to examine whether the score was significantly different from a value of 4 (an indication neutral appraisal of their performance)
+\item
+  To further examine whether gender stereotype and performance appraisal varied across activation type and gender, probability estimates from the gender-stereotype questionnaire and scores from self-rating were subjected to 4 x 2 ANOVA
+\item
+  Pearson correlations were performed on the scores from the letter fluency test (number of correct words, number of errors, mean cluster size, number of switches), gender-stereotype questionnaire, and self-rating to examine whether the scores from these instruments correlated with each other.
+\end{itemize}
+
+\subsubsection{What rationale do the authors give for the methods of analysis for the study?}\label{what-rationale-do-the-authors-give-for-the-methods-of-analysis-for-the-study}
+
+\emph{e.g.~for their methods of sampling, data collection, or analysis.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Details
+\end{itemize}
+
+\subsubsection{For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.}\label{for-evaluation-studies-that-use-prospective-allocation-please-specify-the-basis-on-which-data-analysis-was-carried-out.}
+
+\emph{`Intention to intervene' means that data were analysed on the basis of the original number of participants as recruited into the different groups. `Intervention received' means data were analysed on the basis of the number of participants actually receiving the intervention.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Not applicable (not an evaluation study with prospective allocation)
+\item[$\square$]
+  `Intention to intervene'
+\item[$\square$]
+  `Intervention received'
+\item[$\square$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+\subsubsection{Do the authors describe any ways they have addressed the reliability of data analysis?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-reliability-of-data-analysis}
+
+\emph{e.g.~using more than one researcher to analyse data, looking for negative cases.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Details
+\end{itemize}
+
+\subsubsection{Do the authors describe any ways they have addressed the validity of data analysis?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-validity-of-data-analysis}
+
+\emph{e.g.~internal or external consistency; checking results with participants.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Details
+\end{itemize}
+
+\subsubsection{Do the authors describe strategies used in the analysis to control for bias from confounding variables?}\label{do-the-authors-describe-strategies-used-in-the-analysis-to-control-for-bias-from-confounding-variables}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Details
+\end{itemize}
+
+\subsubsection{Please describe any other important features of the analysis.}\label{please-describe-any-other-important-features-of-the-analysis.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Details
+\end{itemize}
+
+\subsubsection{Please comment on any other analytic or statistical issues if relevant.}\label{please-comment-on-any-other-analytic-or-statistical-issues-if-relevant.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Details
+\end{itemize}
+
+\subsection{Results and Conclusions}\label{results-and-conclusions}
+
+\subsubsection{How are the results of the study presented?}\label{how-are-the-results-of-the-study-presented}
+
+\emph{e.g.~as quotations/figures within text, in tables, appendices.}
+
+\begin{itemize}
+\item[$\square$]
+  Details
+\item
+  figures
+\item
+  in text
+\item
+  table
+\end{itemize}
+
+\subsubsection{What are the results of the study as reported by authors?}\label{what-are-the-results-of-the-study-as-reported-by-authors}
+
+\emph{Please give details and refer to page numbers in the report(s) of the study where necessary (e.g.~for key tables).}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Details
+\end{itemize}
+
+\emph{Manipulation check}:
+- median score from the male column on the manipulation check showed a gradual increase across the four stereotype threat activation groups, with the lowest mean produced by the blatant group, followed by the moderately explicit, subtle and control group.
+- Median score from the male column on manipulation check showed a comparable value between the 2 gender groups.
+- Instruction was significantly different across activation groups, but not significantly different across gender
+- Pairwise comparisons with adjusted p-values showed that there were significant differences in the score from the male column between the blatant activation group compared to the rest.
+
+\emph{Letter Fluency Test}:
+- Analysis of correct words showed that the level of task difficulty was the only variable with a significant effect on the letter fluency performance, as the difficulty increased the number of correct words decreased.
+- Neither gender stereotype-threat activation nor gender showed a significant effect and no interaction effect existed between the three variables.
+- When number of error words for each letter stimulus was entered as a dependent variable, analysis showed that gender-stereotype threat, gender, or task difficulty had no significant effect.
+- Analysis of mean cluster size showed that gender had a significant effect on mean cluster size, with male participants having higher mean value than female participants
+- Gender stereotype-threat activation did not have a significant effect on mean cluster size
+- Analysis of the number of switches showed that neither gender nor gender stereotype-threat activation had a significant effect on the number of switches.
+
+\emph{Gender-stereotype Questionnaire and Self-rating}:
+- The mean probability estimate from the male column across all participants was M = 46.16 (SD = 12.74) and differed significantly from a value of 50, t(167) = -3.91, p \textless{} 0.0d, d = 0.30, indicating that in general, participants held a gender stereotype favouring women.
+- The mean probability estimates from male and female participants were also calculated separately.
+- The mean probability estimate from men indicated that men believed that the hypothetical person with the letter fluency ability was more likely to be a woman.
+- In other words, they believed that letter fluency task was more likely to have a gender-stereotype favouring women.
+- The mean probability estimate from women indicated that women did not believe a gender stereotype favouring women existed in the letter fluency task.
+- In other words, women believed that letter fluency task was more likely to be gender-neutral
+- The 4 x 2 ANOVA for the probability estimate showed that there was a significant effect of gender, but there was no significant effect of stereotype threat-activation type.
+- Even though in general participants rated themselves lower than the average score, one sample t-test showed that the overall self-rating score and gender-based self-rating scores (men and women scores calculated separately) did not differ significantly from a value of 4, which was the average score.
+- The 4 x 2 ANOVA for the self-rating score showed that gender stereotype activation type and gender had no significant effects.
+
+\emph{Correlations between Total Correct Words, Total Errors, Mean Cluster Size, Number of Switches, Gender-stereotype Score, and Self-rating Score}:
+- Significant positive correlations were obtained between total correct words and number of switches, total correct words and the self-rating score, total errors and the gender-stereotype score, total errors and the self-rating, mean cluster size and number of switches, and number of switches and the self-rating score.
+
+\subsubsection{Was the precision of the estimate of the intervention or treatment effect reported?}\label{was-the-precision-of-the-estimate-of-the-intervention-or-treatment-effect-reported}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSIDER:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Were confidence intervals (CIs) reported?
+  \end{itemize}
+\item[$\square$]
+  Yes
+\item[$\boxtimes$]
+  No
+\item[$\square$]
+  Can't tell
+\end{itemize}
+
+\subsubsection{Are there any obvious shortcomings in the reporting of the data?}\label{are-there-any-obvious-shortcomings-in-the-reporting-of-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Yes (please specify)
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+\subsubsection{Do the authors report on all variables they aimed to study as specified in their aims/research questions?}\label{do-the-authors-report-on-all-variables-they-aimed-to-study-as-specified-in-their-aimsresearch-questions}
+
+\emph{This excludes variables just used to describe the sample.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsubsection{Do the authors state where the full original data are stored?}\label{do-the-authors-state-where-the-full-original-data-are-stored}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Yes (please specify)
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+\subsubsection{What do the author(s) conclude about the findings of the study?}\label{what-do-the-authors-conclude-about-the-findings-of-the-study}
+
+\emph{Please give details and refer to page numbers in the report of the study where necessary.}
+
+\begin{itemize}
+\item[$\square$]
+  Details
+\item
+  Overall, this study found that, although the results of the gender stereotype questionnaire showed that the participants held certain beliefs about the presence of a gender stereotype in the letter fluency test, participants' actual performance was not affected by the stereotype threat.
+\item
+  This result was still the case even when we accounted for the variation in the stereotype threat activation cues and the level of task difficulty.
+\item
+  Regarding the variations in the threat activation, our analysis of the manipulation check showed that participants perceived that the cues that activated the gender stereotype threat were gradually increased in terms of emphasizing women's superiority.
+\item
+  In terms of task difficulty, the analysis showed that the level of task difficulty affected the production of the correct words but did not affect the errors for each letter stimulus.
+\item
+  Even after the cognitive demand of the test was manipulated the participants' performance under the stereotype threat was not affected.
+\item
+  It was found that the participants' performance in this test was related to their self-rating, which measured their perception about how well they performed on the letter fluency test.
+\item
+  The scores from the participants' self-ratings accurately reflected the participants' actual performance on the letter fluency test.
+\item
+  When the variations in gender and stereotype-threat activation were considered, the scores from the participants' self-ratings showed that these scores were not affected by the variations in gender and stereotype-threat activation cues.
+\item
+  Collectively, our results showed that neither the participants' perceptions about women's superiority in relation to the activation cues nor their beliefs about the gender stereotypes attached to the task necessarily caused differing performances among the participants during the letter fluency test.
+\item
+  The participant's own judgement about their ability was more important for their performance than the above mentioned factors.
+\item
+  This study also examined the effect of gender-stereotype threat on clustering and switching as the underlying cognitive processes of the letter fluency test.
+\item
+  We found that clustering and switching were not affected by the gender-stereotype threat.
+\item
+  Based on our findings, we propose that self-efficacy, educational level, and individual moderators may explain on why gender-stereotype threat did not affect letter fluency performance even when the task difficulty had been increased.\\
+\item
+  We argue that this positive belief (referring to the self-rating scores) enabled participants to block the negative influence and simultaneously enabled them to employ more efficient cognitive strategies to sustain their performance even when the test became more demanding for their working memory due to increased level difficulty.
+\item
+  Another important aspect is the participants' educational level as a university student. According to Andreoletti and Lachmann (2004), level of education buffers the effect of the gender-stereotype threat on cognitive performance.
+\end{itemize}
+
+Our findings contribute to the body of literature on stereotype threat by showing that belief about one's ability, namely, selfefficacy, is an important buffer to the effect of a gender-stereotype threat on both overall performance and underlying cognitive process of the letter fluency task. Other personal characteristics that also need to be considered are educational level, stigma consciousness, domain identification, and group identification. Taken together, our findings suggested the importance of taking into account psychological factors that determine variation in individuals' susceptibility in studying the highly situational phenomenon of stereotype threat.
+
+\subsection{Quality of the study - Reporting}\label{quality-of-the-study---reporting}
+
+\subsubsection{Is the context of the study adequately described?}\label{is-the-context-of-the-study-adequately-described}
+
+\emph{Consider your answer to questions: Why was this study done at this point in time, in those contexts and with those people or institutions? (Section B question 2) Was the study informed by or linked to an existing body of empirical and/or theoretical research? (Section B question 3) Which of the following groups were consulted in working out the aims to be addressed in the study? (Section B question 4) Do the authors report how the study was funded? (Section B question 5) When was the study carried out? (Section B question 6)}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\item[$\square$]
+  No (please specify)
+\end{itemize}
+
+\subsubsection{Are the aims of the study clearly reported?}\label{are-the-aims-of-the-study-clearly-reported}
+
+\emph{Consider your answer to questions: What are the broad aims of the study? (Section B question 1) What are the study research questions and/or hypotheses? (Section C question 10)}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\item[$\square$]
+  No (please specify)
+\end{itemize}
+
+\subsubsection{Is there an adequate description of the sample used in the study and how the sample was identified and recruited?}\label{is-there-an-adequate-description-of-the-sample-used-in-the-study-and-how-the-sample-was-identified-and-recruited}
+
+\emph{Consider your answer to all questions in Methods on `Sampling Strategy', `Recruitment and Consent', and `Actual Sample'.}
+
+\begin{itemize}
+\item[$\square$]
+  Yes (please specify)
+\item[$\boxtimes$]
+  No (please specify)
+\item
+  no age ranges etc.
+\end{itemize}
+
+\subsubsection{Is there an adequate description of the methods used in the study to collect data?}\label{is-there-an-adequate-description-of-the-methods-used-in-the-study-to-collect-data}
+
+\emph{Consider your answer to the following questions in Section I: Which methods were used to collect the data? Details of data collection methods or tools Who collected the data? Do the authors describe the setting where the data were collected? Are there other important features of the data collection procedures?}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\item[$\square$]
+  No (please specify)
+\end{itemize}
+
+\subsubsection{Is there an adequate description of the methods of data analysis?}\label{is-there-an-adequate-description-of-the-methods-of-data-analysis}
+
+\emph{Consider your answer to the following questions in Section J: Which methods were used to analyse the data? What statistical methods, if any, were used in the analysis? Who carried out the data analysis?}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\item[$\square$]
+  No (please specify)
+\end{itemize}
+
+\subsubsection{Is the study replicable from this report?}\label{is-the-study-replicable-from-this-report}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\item[$\square$]
+  No (please specify)
+\end{itemize}
+
+\subsubsection{Do the authors avoid selective reporting bias?}\label{do-the-authors-avoid-selective-reporting-bias}
+
+\emph{(e.g.~do they report on all variables they aimed to study as specified in their aims/research questions?)}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\item[$\square$]
+  No (please specify)
+\end{itemize}
+
+\subsection{Quality of the study - Methods and data}\label{quality-of-the-study---methods-and-data}
+
+\subsubsection{Are there ethical concerns about the way the study was done?}\label{are-there-ethical-concerns-about-the-way-the-study-was-done}
+
+\emph{Consider consent, funding, privacy, etc.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Yes, some concerns (please specify)
+\item[$\boxtimes$]
+  No concerns
+\end{itemize}
+
+\subsubsection{Were students and/or parents appropriately involved in the design or conduct of the study?}\label{were-students-andor-parents-appropriately-involved-in-the-design-or-conduct-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes, a lot (please specify)
+\item[$\square$]
+  Yes, a little (please specify)
+\item[$\square$]
+  No (please specify)
+\end{itemize}
+
+\subsubsection{Is there sufficient justification for why the study was done the way it was?}\label{is-there-sufficient-justification-for-why-the-study-was-done-the-way-it-was}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\item[$\square$]
+  No (please specify)
+\end{itemize}
+
+\subsubsection{Was the choice of research design appropriate for addressing the research question(s) posed?}\label{was-the-choice-of-research-design-appropriate-for-addressing-the-research-questions-posed}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\item[$\square$]
+  No (please specify)
+\end{itemize}
+
+\subsubsection{To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?}\label{to-what-extent-are-the-research-design-and-methods-employed-able-to-rule-out-any-other-sources-of-errorbias-which-would-lead-to-alternative-explanations-for-the-findings-of-the-study}
+
+\emph{e.g.~(1) In an evaluation, was the process by which participants were allocated to or otherwise received the factor being evaluated concealed and not predictable in advance? If not, were sufficient substitute procedures employed with adequate rigour to rule out any alternative explanations of the findings which arise as a result? e.g.~(2) Was the attrition rate low and if applicable similar between different groups?}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  A lot (please specify)
+\item[$\boxtimes$]
+  A little (please specify)
+\item[$\square$]
+  Not at all (please specify)
+\end{itemize}
+
+\subsubsection{How generalisable are the study results?}\label{how-generalisable-are-the-study-results}
+
+\begin{itemize}
+\item[$\square$]
+  Details
+\item
+  not a lot
+\end{itemize}
+
+\subsubsection{Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?}\label{weight-of-evidence---a-taking-account-of-all-quality-assessment-issues-can-the-study-findings-be-trusted-in-answering-the-study-questions}
+
+\emph{In some studies it is difficult to distinguish between the findings of the study and the conclusions. In those cases please code the trustworthiness of this combined results/conclusion.\textbf{ Please remember to complete the weight of evidence questions B-D which are in your review specific data extraction guidelines. }}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  High trustworthiness (please specify)
+\item[$\square$]
+  Medium trustworthiness (please specify)
+\item[$\boxtimes$]
+  Low trustworthiness (please specify)
+\end{itemize}
+
+\subsubsection{Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?}\label{have-sufficient-attempts-been-made-to-justify-the-conclusions-drawn-from-the-findings-so-that-the-conclusions-are-trustworthy}
+
+\begin{itemize}
+\item[$\boxtimes$]
+  Not applicable (results and conclusions inseparable)
+\item[$\square$]
+  High trustworthiness
+\item[$\square$]
+  Medium trustworthiness
+\item[$\square$]
+  Low trustworthiness
+\item
+  The conclusions drawn do not make a lot of sense.
+\item
+  Beliefs about the performance were not triggered until after the letter fluency test.
+\item
+  Furthermore, using the education level as a buffer of the effect of gender-stereotype threat might be in line with a single paper by Andreoletti and Lachman (2004), however, the vast majority of research is on gender-based stereotypes (e.g.~women are bad at math), and done in a university setting with undergraduate students.
+\item
+  A more reasonable explanation would be that the participants were not aware of the stereotype that was being activated. As in, it is a more common stereotype to say ``women are bad at math'' than to say ``women are better at verbal fluency''. Furthermore, maybe Indonesian students' gender-stereotypes are not comparable with the classic ``western examples''.
+\item
+  Also, the study did not mention the majors the students were in, their explanation that a different identity might be activated, might be in line with the participants' major. As in, a literature major would be more relevant than the gender, thus protecting the participant from the stereotype threat.
+\item
+  Furthermore, the age of the participants was not mentioned, verbal fluency might be more correlated with age than other stereotypes - as in, older people are more likely to have a better verbal fluency than younger people. Additionally, the gender identification might be more ``fragile'' if the participants were to be younger, e.g.~in their late teens, compared to their mid twenties.
+\end{itemize}
+
+\section{Wells et al. (2014)}\label{wellsnewcastleottawascalenos2014}
+
+\subsection{\texorpdfstring{\textbf{CASE CONTROL STUDIES}}{CASE CONTROL STUDIES}}\label{case-control-studies}
+
+\textbf{Note:} A study can be awarded a maximum of one star for each numbered item within the Selection and Exposure categories. A maximum of two stars can be given for Comparability.
+
+\subsection{Selection}\label{selection}
+
+\subsubsection{Is the case definition adequate?}\label{is-the-case-definition-adequate}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    yes, with independent validation
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    yes, e.g., record linkage or based on self reports
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    no description
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Representativeness of the cases}\label{representativeness-of-the-cases}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    consecutive or obviously representative series of cases *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    potential for selection biases or not stated
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Selection of Controls}\label{selection-of-controls}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    community controls *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    hospital controls
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    no description
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Definition of Controls}\label{definition-of-controls}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    no history of disease (endpoint) *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    no description of source
+  \end{enumerate}
+\end{itemize}
+
+\subsection{Comparability}\label{comparability}
+
+\subsubsection{Comparability of cases and controls on the basis of the design or analysis}\label{comparability-of-cases-and-controls-on-the-basis-of-the-design-or-analysis}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    study controls for \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (Select the most important factor.) *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    study controls for any additional factor * (This criterion could be modified to indicate specific control for a second important factor.)
+  \end{enumerate}
+\end{itemize}
+
+\subsection{Exposure}\label{exposure}
+
+\subsubsection{Ascertainment of exposure}\label{ascertainment-of-exposure}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    secure record (e.g., surgical records) *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    structured interview where blind to case/control status *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    interview not blinded to case/control status
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{3}
+  \tightlist
+  \item
+    written self report or medical record only
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{4}
+  \tightlist
+  \item
+    no description
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Same method of ascertainment for cases and controls}\label{same-method-of-ascertainment-for-cases-and-controls}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    yes *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    no
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Non-Response rate}\label{non-response-rate}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    same rate for both groups *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    non respondents described
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    rate different and no designation
+  \end{enumerate}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{\texorpdfstring{\textbf{COHORT STUDIES}}{COHORT STUDIES}}\label{cohort-studies}
+
+\textbf{Note:} A study can be awarded a maximum of one star for each numbered item within the Selection and Outcome categories. A maximum of two stars can be given for Comparability.
+
+\subsection{Selection}\label{selection-1}
+
+\subsubsection{Representativeness of the exposed cohort}\label{representativeness-of-the-exposed-cohort}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    truly representative of the average \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (describe) in the community *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    somewhat representative of the average \_\_\_\_\_\_\_\_\_\_\_\_\_\_ in the community *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    selected group of users, e.g., nurses, volunteers
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{3}
+  \tightlist
+  \item
+    no description of the derivation of the cohort
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Selection of the non exposed cohort}\label{selection-of-the-non-exposed-cohort}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    drawn from the same community as the exposed cohort *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    drawn from a different source
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    no description of the derivation of the non exposed cohort
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Ascertainment of exposure}\label{ascertainment-of-exposure-1}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    secure record (e.g., surgical records) *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    structured interview *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    written self report
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{3}
+  \tightlist
+  \item
+    no description
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Demonstration that outcome of interest was not present at start of study}\label{demonstration-that-outcome-of-interest-was-not-present-at-start-of-study}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    yes *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    no
+  \end{enumerate}
+\end{itemize}
+
+\subsection{Comparability}\label{comparability-1}
+
+\subsubsection{Comparability of cohorts on the basis of the design or analysis}\label{comparability-of-cohorts-on-the-basis-of-the-design-or-analysis}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    study controls for \_\_\_\_\_\_\_\_\_\_\_\_\_ (select the most important factor) *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    study controls for any additional factor * (This criterion could be modified to indicate specific control for a second important factor.)
+  \end{enumerate}
+\end{itemize}
+
+\subsection{Outcome}\label{outcome}
+
+\subsubsection{Assessment of outcome}\label{assessment-of-outcome}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    independent blind assessment *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    record linkage *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    self report
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{3}
+  \tightlist
+  \item
+    no description
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Was follow-up long enough for outcomes to occur}\label{was-follow-up-long-enough-for-outcomes-to-occur}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    yes (select an adequate follow up period for outcome of interest) *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    no
+  \end{enumerate}
+\end{itemize}
+
+\subsubsection{Adequacy of follow up of cohorts}\label{adequacy-of-follow-up-of-cohorts}
+
+\begin{itemize}
+\tightlist
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \tightlist
+  \item
+    complete follow up - all subjects accounted for *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    subjects lost to follow up unlikely to introduce bias - small number lost - \textgreater{} \_\_\_\_ \% (select an adequate \%) follow up, or description provided of those lost) *
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    follow up rate \textless{} \_\_\_\_\% (select an adequate \%) and no description of those lost
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\alph{enumi})}
+  \setcounter{enumi}{3}
+  \tightlist
+  \item
+    no statement
+  \end{enumerate}
+\end{itemize}
+
+\section{University of Glasgow (n.d.)}\label{universityofglasgowcriticalappraisalchecklistn.d.nodate}
+
+\subsection{DOES THIS REVIEW ADDRESS A CLEAR QUESTION?}\label{does-this-review-address-a-clear-question}
+
+\subsubsection{Did the review address a clearly focussed issue?}\label{did-the-review-address-a-clearly-focussed-issue}
+
+\begin{itemize}
+\tightlist
+\item
+  Was there enough information on:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The population studied
+  \item
+    The intervention given
+  \item
+    The outcomes considered
+  \end{itemize}
+\item[$\square$]
+  Yes
+\item[$\square$]
+  Can't tell
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsubsection{Did the authors look for the appropriate sort of papers?}\label{did-the-authors-look-for-the-appropriate-sort-of-papers}
+
+\begin{itemize}
+\tightlist
+\item
+  The `best sort of studies' would:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Address the review's question
+  \item
+    Have an appropriate study design
+  \end{itemize}
+\item[$\square$]
+  Yes
+\item[$\square$]
+  Can't tell
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsection{ARE THE RESULTS OF THIS REVIEW VALID?}\label{are-the-results-of-this-review-valid}
+
+\subsubsection{Do you think the important, relevant studies were included?}\label{do-you-think-the-important-relevant-studies-were-included}
+
+\begin{itemize}
+\tightlist
+\item
+  Look for:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Which bibliographic databases were used
+  \item
+    Follow up from reference lists
+  \item
+    Personal contact with experts
+  \item
+    Search for unpublished as well as published studies
+  \item
+    Search for non-English language studies
+  \end{itemize}
+\item[$\square$]
+  Yes
+\item[$\square$]
+  Can't tell
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsubsection{Did the review's authors do enough to assess the quality of the included studies?}\label{did-the-reviews-authors-do-enough-to-assess-the-quality-of-the-included-studies}
+
+\begin{itemize}
+\tightlist
+\item
+  The authors need to consider the rigour of the studies they have identified. Lack of rigour may affect the studies results.
+\item[$\square$]
+  Yes
+\item[$\square$]
+  Can't tell
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsubsection{If the results of the review have been combined, was it reasonable to do so?}\label{if-the-results-of-the-review-have-been-combined-was-it-reasonable-to-do-so}
+
+\begin{itemize}
+\tightlist
+\item
+  Consider whether:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The results were similar from study to study
+  \item
+    The results of all the included studies are clearly displayed
+  \item
+    The results of the different studies are similar
+  \item
+    The reasons for any variations are discussed
+  \end{itemize}
+\item[$\square$]
+  Yes
+\item[$\square$]
+  Can't tell
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsection{WHAT ARE THE RESULTS?}\label{what-are-the-results}
+
+\subsubsection{What is the overall result of the review?}\label{what-is-the-overall-result-of-the-review}
+
+\begin{itemize}
+\tightlist
+\item
+  Consider:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If you are clear about the review's `bottom line' results
+  \item
+    What these are (numerically if appropriate)
+  \item
+    How were the results expressed (NNT, odds ratio, etc)
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{How precise are the results?}\label{how-precise-are-the-results}
+
+\begin{itemize}
+\tightlist
+\item
+  Are the results presented with confidence intervals?
+\item[$\square$]
+  Yes
+\item[$\square$]
+  Can't tell
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsection{WILL THE RESULTS HELP LOCALLY?}\label{will-the-results-help-locally}
+
+\subsubsection{Can the results be applied to the local population?}\label{can-the-results-be-applied-to-the-local-population}
+
+\begin{itemize}
+\tightlist
+\item
+  Consider whether:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The patients covered by the review could be sufficiently different from your population to cause concern
+  \item
+    Your local setting is likely to differ much from that of the review
+  \end{itemize}
+\item[$\square$]
+  Yes
+\item[$\square$]
+  Can't tell
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsubsection{Were all important outcomes considered?}\label{were-all-important-outcomes-considered}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Yes
+\item[$\square$]
+  Can't tell
+\item[$\square$]
+  No
+\end{itemize}
+
+\subsubsection{Are the benefits worth the harms and costs?}\label{are-the-benefits-worth-the-harms-and-costs}
+
+\begin{itemize}
+\tightlist
+\item
+  Even if this is not addressed by the review, what do you think?
+\item[$\square$]
+  Yes
+\item[$\square$]
+  Can't tell
+\item[$\square$]
+  No
+\end{itemize}
+
+\section{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-criticalappraisalskillsprogrammeCASPSystematicReview2018}
+Critical Appraisal Skills Programme. (2018). {CASP Systematic Review Checklist} {[}Organization{]}. In \emph{CASP - Critical Appraisal Skills Programme}. https://casp-uk.net/casp-tools-checklists/.
+
+\bibitem[\citeproctext]{ref-eppi-centreReviewGuidelinesExtracting2003}
+EPPI-Centre. (2003). \emph{Review guidelines for extracting data and quality assessing primary studies in educational research} (Guidelines Version 0.9.7). Social Science Research Unit.
+
+\bibitem[\citeproctext]{ref-universityofglasgowCriticalAppraisalChecklistn.d.nodate}
+University of Glasgow. (n.d.). \emph{Critical appraisal checklist for a systematic review} {[}Checklist{]}. Department of General Practice, University of Glasgow.
+
+\bibitem[\citeproctext]{ref-wellsNewcastleottawaScaleNOS2014}
+Wells, G., Shea, B., O'Connell, D., Robertson, J., Welch, V., Losos, M., \& Tugwell, P. (2014). The newcastle-ottawa scale ({NOS}) for assessing the quality of nonrandomised studies in meta-analyses. \emph{Ottawa Health Research Institute Web Site}, \emph{7}.
+
+\bibitem[\citeproctext]{ref-wulandariTrustYourAbilities2020}
+Wulandari, S. W., \& Hendrawan, D. (2020). Trust your abilities more than the stereotype: {Effect} of gender-stereotype threat and task difficulty on word production, clustering, and switching in letter fluency. \emph{Pertanika Journal of Social Sciences and Humanities}, \emph{28}(4), 2567--2588. \url{https://doi.org/10.47836/pjssh.28.4.05}
+
+\end{CSLReferences}
+
+
+\end{document}

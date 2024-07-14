@@ -611,8 +611,60 @@ The paper more so supports H2 than it does not. Shifting repeatedly did not reac
 
 ### @stahlRolePreventionFocus2012
 
+@stahlRolePreventionFocus2012 hypothesised that while cognitive control would initially increase under stereotype threat due to an immediate surge of prevention focus, this increase would be temporary and result in a depletion of resources, leading to decreased performance over time. 
+If stereotype threat is triggered under a promotion focus, cognitive control would not be impaired.  
+The independent variables consisted of condition (stereotype threat vs. no threat), regulatory focus (prevention focus vs. promotion focus vs. no focus) and task order (maths task first vs. maths task last), however, only Experiment 3 included maths task order, and only Experiment 2 included the no focus condition, further, Experiment 1 consisted of only condition as an independent variable.
+The dependent variables were cognitive control capacity (measured by a Stroop task) and maths performance (accuracy/response time on an MA task), with the latter only being included in Experiment 3 and the former only in Experiment 1 and 2.
+Stereotype threat, in the first two experiments, was manipulated by claiming social science students performed worse on the following task, than students of other sciences, further it was claimed that these group differences were of interest.
+In Experiment 3, maths gender differences were pointed out, in addition to the study goal being presented as a measure of differences in maths ability and performance, to manipulate stereotype threat.
+While regulatory focus in Experiment 2 was manipulated by having participants write either about their expected achievements in this study (prevention focus) or what they hoped to achieve in the present study (promotion focus), in Experiment 3, a maze task was used to manipulate regulatory focus.  
+Sixty-three social science students ($n_{\text{female}}$=50, $n_{\text{male}}$=13, $M_{\text{age}}$=22 years) participated in Experiment 1, one hundred eight social science students ($n_{\text{female}}$=82, $n_{\text{male}}$=26, $M_{\text{age}}$=19 years) in Experiment 2, and one hundred sixty-four female students ($M_{\text{age}}=19 years$) in Experiment 3.
+Experiment 1 began with students filling out a demographics questionnaire (including gender and study major), followed by information about the studys' goal, the stereotype threat manipulation, as well as a simplified Stroop task to measure the current cognitive capacity and the actual Stroop task itself.
+ANOVAs showed a significant effect of stereotype threat on Stroop inference, *F*(1,61)=`r apa_num(8.69)`, *p*=`r apa_p(.004)`, $\eta^{2}_{\text{p}}$=`r apa_num(.13)`, this effect was not due to a speed-accuracy trade-off.  
+The procedure in Experiment 2 differed in two aspects, firstly, after the threat manipulation, regulatory focus was manipulated, and secondly, after the final Stroop task, a manipulation check was performed.
+A main effect of threat was found, *F*(1,102)=`r apa_num(8.91)`, *p*=`r apa_p(.004)`, $\eta^{2}_{\text{p}}$=`r apa_num(.08)`, using a 2 (condition) $\times$ 3 (regulatory focus) ANOVA.
+Further, Experiment 1's results for the Stroop task, were replicated,*F*(1, 101)=`r apa_num(2.80)`, *p*<`r apa_num(.10)`, $\eta^{2}_{\text{p}}$=`r apa_num(.03)`, and an interaction on Stroop inferences using a 2 $\times$ 3 ANOVA were found, *F*(2,101)=`r apa_num(3.07)`, *p*=`r apa_p(.05)`, $\eta^{2}_{\text{p}}$=`r apa_num(.06)`).
+The Stroop inference was only significant under threat, in the prevention condition, *F*(1,101)=`r apa_num(3.6)`, *p*=`r apa_p(.24)`, $\eta^{2}_{\text{p}}$=`r apa_num(.01)`.  
+Experiment 3, began with a baseline measure of typing skills, followed by the stereotype threat manipulation, the regulatory focus manipulation, and either the maths task or typing test (depending on the condition).
+Here, the 2 (condition) $\times$ 2 (regulatory focus) $\times$ 2 (maths task order) interaction was found to be significant on maths performance (% of correct responses), *F*(1,150)=`r apa_num(13.30)`, *p*<`r apa_p(.001)`, $\eta^{2}_{\text{p}}$=`r apa_num(.08)`.
+Furthermore, only in the prevention focus condition, when the maths task came first, individuals under threat (vs. control) were found to perform better, *t*(150)=`r apa_num(3.02)`, *p*=`r apa_p(.003)`.
+In the promotion group, performance did not differ between threat and control, *t*(150)=-`r apa_num(1.28)`, *p*=`r apa_p(.20)`.
+If the maths task was done last, the results in the promotion focus condition were similar, *t*(150)=`r apa_num(1.26)`, *p*=`r apa_p(.21)`, while in the prevention focus condition, the results were reversed, *t*(150)=-`r apa_num(1.71)`, *p*=`r apa_p(.09)`, with a slight decrease in performance under threat (compared to control).
+For maths performance, measured as response times, the same three-way interaction was significant, *F*(1,152)=`r apa_num(4.69)`, *p*=`r apa_p(.03)`, $\eta^{2}_{\text{p}}$=`r apa_num(.03)`.
+For the maths first condition, again, prevention focus results in better performance under threat, compared to control, while promotion focus did not.
+In the maths last condition, the two-way interaction was marginally significant, *F*(1,152)=`r apa_num(3.11)`, *p*=`r apa_p(.08)`, $\eta^{2}_{\text{p}}$=`r apa_num(.02)`).
+The results for typing speed did not result in any significant effects for threat or regulatory focus.  
+H2 is mostly supported by this paper, albeit, only under prevention focus - and here also only after the initial temporary increase in cognitive control (Experiment 3).
 
+### @wisterMentioningMenstruationStereotype2013
 
+@wisterMentioningMenstruationStereotype2013 hypothesised that menstruation stereotype threat would impair performance on cognitive tasks, this effect would be amplified if women believed menstruation to be a hindrance to their cognitive abilities.
+However, if menstruation was primed as a positive influence, cognitive performance would not be impaired.
+Further, menstruation threat can be triggered by mentioning menstruation before a cognitive task, and its effect would be stronger the closer women are to their menstruation.  
+Ninety-two female undergraduates were randomly assigned into four groups, 2 stereotype threat (menstruation threat vs. no threat) $\times$ 2 menstruation prime (positive vs. no positive prime), forming the independent variables, while cognitive performance (measured by a Stroop test and SAT-like maths test) and menstrual attitudes (measured by Menstrual Attitude Questionnaire; MAQ) were used as dependent variables.
+Stereotype threat was manipulated by the completion of the Menstruation History survey, asking participants to provide descriptive information about their menstrual cycle, the priming was done using a short text noting the positive effects of menstruation on cognitive abilities.  
+In the threat condition the Menstruation History survey was completed before the cognitive tasks, while for the control, this order was reversed.
+The positive prime, if applicable, was also presented before the cognitive tasks.
+The experiment ended for everyone with the completion of the Menstrual Attitudes Questionnaire.  
+While a main effect of threat on Stroop performance was found, Lambda=`r apa_num(.874)`, *F*(1,68)=`r apa_num(4.909)`, *p*<`r apa_p(.01)`, the same was not true for maths performance, *F*(1,69)=`r apa_num(0.021)`, *p*>`r apa_p(.05)`, the effect of positive prime on either task, Lambda=`r apa_num(.988)`, *F*(1,68)=`r apa_num(0.422)`, *p*>`r apa_p(.05)`, or their interaction, Lambda=`r apa_num(0.990)`, *F*(2,68)=`r apa_num(0.343)`, *p*>`r apa_p(.05)`, all of which did not reach significance.
+However, participants under threat were able to complete less items correctly, *F*(1,69)=`r apa_num(9.48)`, *p*<`r apa_num(.01)`, and a correlation between closeness to menstruation and both, Stroop performance, *r*=-`r apa_num(0.557)`, *p*=`r apa_p(.011)`, and positive prime effectiveness, *r*=-`r apa_num(0.460)`, *p*=`r apa_p(.61)` were found, with individuals in the No Menstruation Threat/No Positive Prime condition performing best and those in the Menstruation Threat/Positive Prime condition performing worst.  
+H2 is partially supported by this paper, cognitive performance under threat did only suffer if measured on the Stroop task, further, the prime also influenced performance.  
+
+### @wulandariTrustYourAbilities2020
+
+@wulandariTrustYourAbilities2020 hypothesised that how gender-stereotype threat is being activated, affects performance differently, depending on gender and task difficulty.
+Participants were randomly assigned to one of four groups, differing in the gender-stereotype threat activation (blatant vs. moderately explicit vs. subtle vs. control), forming the independent variables, alongside gender (male vs. female) and task difficulty (easy vs. medium vs. hard), while letter fluency performance (number of correct words/errors) and cognitive processes (clusterings/switching) were used as dependent variables.
+The sample consisted of 168 undergraduates ($n_{\text{female}}$=91), which, after the stereotype threat manipulation, completed the letter fluency test (instruction, practice, test), followed by a gender-stereotype questionnaire, manipulation check and self-rating. 
+A pre-recorded audio was used to manipulate stereotype threat, in all threat conditions the following task was explained to measure language ability, while in the control condition, it was claimed that processes of gender problem solving were being measured. 
+Additionally, the blatant condition was being told that women performed higher on the upcoming task, while the moderately explicit condition was told that gender differences existed in the task.  
+Despite the manipulation check indicating that threat was perceived, no significant effects were found for either stereotype threat or gender on letter fluency, regardless of task difficulty.
+Moreover, no significant effect was found for switching, neither for gender, nor for threat, for cluster size, only a significant effect of gender was found, *F*(1,159)=`r apa_num(4.123)`, *p*<`r apa_p(0.05)`, $\eta^{2}_{\text{p}}$=`r apa_num(0.025)`, with males scoring higher than females.
+Also, positive correlations between total errors and gender-stereotype score, *r*=`r apa_num(0.222)`, *p*<`r apa_p(0.01)`, were found, with gender-stereotype score being the result of the gender-stereotype questionnaire.  
+H2 is not supported by this paper, more so, it provides evidence against it.
+
+## H3: Students' working memory performance is impaired under conditions of stereotype threat in academic settings. This impairment manifests through a reduction in working memory capacity, processing speed and accuracy.
+
+### @bedynskaStereotypeThreatLinked2020
 
 # Discussion
 

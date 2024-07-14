@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  13 JUL 2024 00:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  14 JUL 2024 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1124,6 +1124,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [37]
+Underfull \vbox (badness 7433) has occurred while \output is active []
+
+
 
 [38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1131,9 +1134,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [39]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1141,26 +1141,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[42] AED endfloat: Processing end Figures and Tables (./thesis.aux)
+
+
+[42]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[43]
+
+[44] AED endfloat: Processing end Figures and Tables (./thesis.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29371 strings out of 475544
- 539876 string characters out of 5777454
+ 29378 strings out of 475544
+ 540050 string characters out of 5777454
  1938905 words of memory out of 5000000
- 51181 multiletter control sequences out of 15000+600000
+ 51184 multiletter control sequences out of 15000+600000
  640573 words of font info for 184 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,12n,107p,4377b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on thesis.pdf (42 pages, 321619 bytes).
+Output written on thesis.pdf (44 pages, 327386 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 118 named destinations out of 1000 (max. 500000)
- 41186 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 488 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 41194 words of extra memory for PDF output out of 42996 (max. 10000000)
 
