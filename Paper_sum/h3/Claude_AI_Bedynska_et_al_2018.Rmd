@@ -322,7 +322,7 @@ The study used:
 
 - [x] Details
 
-The authors report Cronbach's alpha for the Intellectual Helplessness Scale (α = 0.80) and the Chronic Stereotype Threat Scale (α = 0.89).
+The authors report Cronbach's alpha for the Intellectual Helplessness Scale ($\alpha$ = 0.80) and the Chronic Stereotype Threat Scale ($\alpha$ = 0.89).
 
 ### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
 

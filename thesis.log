@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  14 JUL 2024 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  14 JUL 2024 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -807,24 +807,24 @@ Package csquotes Info: Redefining alias 'default' -> 'british'.
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 259.
+LaTeX Font Info:    ... okay on input line 259.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 259.
+LaTeX Font Info:    ... okay on input line 259.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 259.
+LaTeX Font Info:    ... okay on input line 259.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 259.
+LaTeX Font Info:    ... okay on input line 259.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 259.
+LaTeX Font Info:    ... okay on input line 259.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 259.
+LaTeX Font Info:    ... okay on input line 259.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 259.
+LaTeX Font Info:    ... okay on input line 259.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 259.
+LaTeX Font Info:    ... okay on input line 259.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 259.
+LaTeX Font Info:    ... okay on input line 259.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -884,7 +884,7 @@ Package grfext Info: Graphics extension search list:
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 257.
+Package hyperref Info: Link coloring OFF on input line 259.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/apa7/config/APA7british.txt
 File: APA7british.txt 2020/12/02 v1.02 apa7 configuration for British English
 )
@@ -895,54 +895,54 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 257.
-Package microtype Info: Applying patch `item' on input line 257.
-Package microtype Info: Applying patch `toc' on input line 257.
-Package microtype Info: Applying patch `eqnum' on input line 257.
-Package microtype Info: Applying patch `footnote' on input line 257.
-Package microtype Info: Applying patch `verbatim' on input line 257.
+LaTeX Info: Redefining \microtypecontext on input line 259.
+Package microtype Info: Applying patch `item' on input line 259.
+Package microtype Info: Applying patch `toc' on input line 259.
+Package microtype Info: Applying patch `eqnum' on input line 259.
+Package microtype Info: Applying patch `footnote' on input line 259.
+Package microtype Info: Applying patch `verbatim' on input line 259.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 257.
+LaTeX Info: Redefining \showhyphens on input line 259.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 258.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 260.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 258.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 260.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 258.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 260.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 258.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 260.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 258.
+(Font)              <12> on input line 260.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 258.
+(Font)              <8> on input line 260.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 258.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 258.
+(Font)              <6> on input line 260.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 260.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/home/julian/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 258.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 260.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/home/julian/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -962,7 +962,7 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 [3]
 
 [4]
-Overfull \hbox (9.48906pt too wide) in paragraph at lines 291--316
+Overfull \hbox (9.48906pt too wide) in paragraph at lines 293--318
  [] 
  []
 
@@ -979,10 +979,10 @@ Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 [7{/home/julian/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/home/julian/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-<files/prisma.pdf, id=58, 600.2425pt x 650.43pt>
+<files/prisma.pdf, id=59, 600.2425pt x 650.43pt>
 File: files/prisma.pdf Graphic file (type pdf)
 <use files/prisma.pdf>
-Package pdftex.def Info: files/prisma.pdf  used on input line 339.
+Package pdftex.def Info: files/prisma.pdf  used on input line 341.
 (pdftex.def)             Requested size: 469.77176pt x 509.05034pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1019,7 +1019,7 @@ Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 [15]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1029,12 +1029,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [17]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
@@ -1064,7 +1064,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [24]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1080,41 +1080,44 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [27]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 628.
+(Font)              <10> on input line 634.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 628.
+(Font)              <7> on input line 634.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 628.
+(Font)              <5> on input line 634.
+
+Underfull \vbox (badness 7433) has occurred while \output is active []
+
 
 
 [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4072) has occurred while \output is active []
 
 
 
 [29]
 
 [30]
-
-[31]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+[31]
+
 [32]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [33]
-
-[34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+[34]
+
 [35]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1124,53 +1127,80 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [37]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [38]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
 [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
 [41]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
 [42]
+
+[43]
+Underfull \vbox (badness 7433) has occurred while \output is active []
+
+
+
+[44]
+
+[45]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[43]
+[46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[44] AED endfloat: Processing end Figures and Tables (./thesis.aux)
+
+
+[47]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[48]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[49]
+
+[50] AED endfloat: Processing end Figures and Tables (./thesis.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29378 strings out of 475544
- 540050 string characters out of 5777454
+ 29415 strings out of 475544
+ 540918 string characters out of 5777454
  1938905 words of memory out of 5000000
- 51184 multiletter control sequences out of 15000+600000
- 640573 words of font info for 184 fonts, out of 8000000 for 9000
+ 51198 multiletter control sequences out of 15000+600000
+ 641089 words of font info for 188 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,12n,107p,4377b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on thesis.pdf (44 pages, 327386 bytes).
+Output written on thesis.pdf (50 pages, 342337 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 412 compressed objects within 5 object streams
- 122 named destinations out of 1000 (max. 500000)
- 41194 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 461 compressed objects within 5 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 41234 words of extra memory for PDF output out of 42996 (max. 10000000)
 
