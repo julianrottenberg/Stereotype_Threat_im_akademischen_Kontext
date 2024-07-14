@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  14 JUL 2024 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  15 JUL 2024 01:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -985,9 +985,6 @@ File: files/prisma.pdf Graphic file (type pdf)
 Package pdftex.def Info: files/prisma.pdf  used on input line 341.
 (pdftex.def)             Requested size: 469.77176pt x 509.05034pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [8]
 
@@ -1019,7 +1016,7 @@ Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
@@ -1029,12 +1026,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
 [18]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1064,7 +1061,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
@@ -1086,12 +1083,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 634.
 
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
 
 [28]
-Underfull \vbox (badness 4072) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1103,21 +1097,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
 [33]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
 [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
@@ -1127,31 +1127,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 
 [38]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
-
-[39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[40]
+[39]
 Underfull \vbox (badness 7433) has occurred while \output is active []
+
+
+
+[40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [41]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [42]
+Underfull \vbox (badness 7433) has occurred while \output is active []
+
+
 
 [43]
 Underfull \vbox (badness 7433) has occurred while \output is active []
@@ -1166,9 +1169,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [46]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1181,26 +1181,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[50] AED endfloat: Processing end Figures and Tables (./thesis.aux)
+
+
+[50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[51]
+
+[52] AED endfloat: Processing end Figures and Tables (./thesis.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29415 strings out of 475544
- 540918 string characters out of 5777454
+ 29425 strings out of 475544
+ 541087 string characters out of 5777454
  1938905 words of memory out of 5000000
- 51198 multiletter control sequences out of 15000+600000
+ 51203 multiletter control sequences out of 15000+600000
  641089 words of font info for 188 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,12n,107p,4377b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on thesis.pdf (50 pages, 342337 bytes).
+Output written on thesis.pdf (52 pages, 347102 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
- 461 compressed objects within 5 object streams
- 137 named destinations out of 1000 (max. 500000)
- 41234 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 562 PDF objects out of 1000 (max. 8388607)
+ 478 compressed objects within 5 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 41250 words of extra memory for PDF output out of 42996 (max. 10000000)
 
