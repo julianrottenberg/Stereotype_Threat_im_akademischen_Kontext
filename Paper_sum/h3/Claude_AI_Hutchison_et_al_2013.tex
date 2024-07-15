@@ -1,0 +1,1053 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  doc, a4paper]{apa7}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{english}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\centering\begin{threeparttable}}
+%   {\end{threeparttable}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\centering\begin{ThreePartTable}}{\end{ThreePartTable}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% Overwrite redefinition of paragraph and subparagraph by the default LaTeX template
+% See https://github.com/crsh/papaja/issues/292
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\itshape\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\makeatletter
+\usepackage{etoolbox}
+\patchcmd{\maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\patchcmd{\maketitle}
+  {\section{\protect\normalfont{\@title}}}
+  {\section*{\protect\normalfont{\@title}}}
+  {}{\typeout{Failed to patch title.}}
+\makeatother
+
+\usepackage{xpatch}
+\makeatletter
+\xapptocmd\appendix
+  {\xapptocmd\section
+    {\addcontentsline{toc}{section}{\appendixname\ifoneappendix\else~\theappendix\fi\\: #1}}
+    {}{\InnerPatchFailed}%
+  }
+{}{\PatchFailed}
+\keywords{keywords\newline\indent Word count: X}
+\usepackage{csquotes}
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Hutchison et al. (2013)},
+  pdflang={en-EN},
+  pdfkeywords={keywords},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Hutchison et al. (2013)}
+\author{\phantom{0}}
+\date{}
+
+
+\shorttitle{Hutchison et al. (2013)}
+
+\affiliation{\phantom{0}}
+
+\begin{document}
+\maketitle
+
+\subsubsection{If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here}\label{if-the-study-has-a-broad-focus-and-this-data-extraction-focuses-on-just-one-component-of-the-study-please-specify-this-here}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Specific focus of this data extraction (please specify)
+\end{itemize}
+
+This extraction focuses on the aspects of the study relevant to working memory impairment under stereotype threat conditions, particularly related to hypothesis 3 of the preregistration.
+
+\subsection{Study aim(s) and rationale}\label{study-aims-and-rationale}
+
+\subsubsection{Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?}\label{was-the-study-informed-by-or-linked-to-an-existing-body-of-empirical-andor-theoretical-research}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study was explicitly informed by previous research on stereotype threat and working memory, including work by Schmader and Johns (2003) showing working memory depletion under stereotype threat, and Kane and Engle's (2003) dual-process framework for performance on conflict tasks.
+
+\subsubsection{Do authors report how the study was funded?}\label{do-authors-report-how-the-study-was-funded}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study was funded in part by Grant Number HRD-1036767 from the National Science Foundation awarded to the second author.
+
+\subsection{Study research question(s) and its policy or practice focus}\label{study-research-questions-and-its-policy-or-practice-focus}
+
+\subsubsection{What is/are the topic focus/foci of the study?}\label{what-isare-the-topic-focusfoci-of-the-study}
+
+The study focuses on how stereotype threat interferes with working memory, specifically examining goal maintenance and response competition processes using the Stroop task.
+
+\subsubsection{What is/are the population focus/foci of the study?}\label{what-isare-the-population-focusfoci-of-the-study}
+
+The population focus is male university students.
+
+\subsubsection{What is the relevant age group?}\label{what-is-the-relevant-age-group}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  21 and over
+\end{itemize}
+
+The mean age of participants was 21.2 years old.
+
+\subsubsection{What is the sex of the population focus/foci?}\label{what-is-the-sex-of-the-population-focusfoci}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Male only
+\end{itemize}
+
+The study focused exclusively on male participants.
+
+\subsubsection{What is/are the educational setting(s) of the study?}\label{what-isare-the-educational-settings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Higher education institution
+\end{itemize}
+
+The study was conducted at Montana State University.
+
+\subsubsection{In Which country or cuntries was the study carried out?}\label{in-which-country-or-cuntries-was-the-study-carried-out}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study was carried out in the United States, specifically at Montana State University.
+
+\subsubsection{Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned}\label{please-describe-in-more-detail-the-specific-phenomena-factors-services-or-interventions-with-which-the-study-is-concerned}
+
+The study examines how stereotype threat affects working memory processes, specifically goal maintenance and response competition, using the Stroop task. It manipulates stereotype threat by framing the task as measuring ``verbal skills of men and women'' vs.~general ``processing skills''.
+
+\subsubsection{What are the study reserach questions and/or hypotheses?}\label{what-are-the-study-reserach-questions-andor-hypotheses}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study aimed to test two main hypotheses:
+1. The distraction hypothesis: Stereotype threat would impair goal maintenance, leading to increased errors on mostly congruent Stroop trials.
+2. The response competition hypothesis: Stereotype threat would impair the ability to resolve response competition, leading to slower reaction times on mostly incongruent Stroop trials.
+
+\subsection{Methods - Design}\label{methods---design}
+
+\subsubsection{Which variables or concepts, if any, does the study aim to measure or examine?}\label{which-variables-or-concepts-if-any-does-the-study-aim-to-measure-or-examine}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study measured:
+- Working memory capacity (using the Operation Span task)
+- Stroop task performance (errors and reaction times)
+- Stereotype threat condition (threat vs.~control)
+- Stroop list type (mostly congruent vs.~mostly incongruent)
+
+\subsubsection{Study timing}\label{study-timing}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Cross-sectional
+\end{itemize}
+
+The study collected data from participants at a single time point.
+
+\subsubsection{If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?}\label{if-the-study-is-an-evaluation-when-were-measurements-of-the-variables-used-for-outcome-made-in-relation-to-the-intervention}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Only after
+\end{itemize}
+
+Stroop task performance was measured after the stereotype threat manipulation.
+
+\subsection{Methods - Groups}\label{methods---groups}
+
+\subsubsection{If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.}\label{if-comparisons-are-being-made-between-two-or-more-groups-please-specify-the-basis-of-any-divisions-made-for-making-these-comparisons.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Prospecitive allocation into more than one group (e.g.~allocation to different interventions, or allocation to intervention and control groups)
+\end{itemize}
+
+Participants were randomly assigned to either the stereotype threat or control condition, and to either the mostly congruent or mostly incongruent Stroop list condition.
+
+\subsubsection{How do the groups differ?}\label{how-do-the-groups-differ}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicityly stated (please specify)
+\end{itemize}
+
+The groups differed in:
+1. Stereotype threat condition: threat vs.~control
+2. Stroop list type: mostly congruent vs.~mostly incongruent
+
+\subsubsection{Number of groups}\label{number-of-groups}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Four or more (please specify)
+\end{itemize}
+
+There were four groups: 2 (stereotype threat vs.~control) x 2 (mostly congruent vs.~mostly incongruent list)
+
+\subsubsection{Was the assignment of participants to interventions randomised?}\label{was-the-assignment-of-participants-to-interventions-randomised}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Random
+\end{itemize}
+
+Participants were randomly assigned to conditions.
+
+\subsubsection{Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?}\label{where-there-was-prospective-allocation-to-more-than-one-group-was-the-allocation-sequence-concealed-from-participants-and-those-enrolling-them-until-after-enrolment}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The paper does not explicitly state whether allocation was concealed.
+
+\subsubsection{Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?}\label{apart-from-the-experimental-intervention-did-each-study-group-receive-the-same-level-of-care-that-is-were-they-treated-equally}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes
+\end{itemize}
+
+All participants completed the same tasks (Operation Span and Stroop), with the only differences being the experimental manipulations.
+
+\subsubsection{Study design summary}\label{study-design-summary}
+
+This study used a 2 (stereotype threat: threat vs.~control) x 2 (list type: mostly congruent vs.~mostly incongruent) between-subjects design. Participants first completed the Operation Span task to measure working memory capacity, then were randomly assigned to conditions for the Stroop task. The Stroop task was framed either as a measure of verbal skills (stereotype threat) or processing skills (control). Stroop performance (errors and reaction times) was measured as the primary outcome.
+
+\subsection{Methods - Sampling strategy}\label{methods---sampling-strategy}
+
+\subsubsection{Are the authors trying to produce findings that are representative of a given population?}\label{are-the-authors-trying-to-produce-findings-that-are-representative-of-a-given-population}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The authors do not explicitly state whether they are aiming for representativeness of a broader population.
+
+\subsubsection{Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?}\label{which-methods-does-the-study-use-to-identify-people-or-groups-of-people-to-sample-from-and-what-is-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The sampling frame and identification methods are not explicitly stated, though participants appear to be university students.
+
+\subsubsection{Which methods does the study use to select people or groups of people (from the sampling frame)?}\label{which-methods-does-the-study-use-to-select-people-or-groups-of-people-from-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The specific selection methods are not described in detail.
+
+\subsubsection{Planned sample size}\label{planned-sample-size}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The planned sample size is not explicitly stated.
+
+\subsection{Methods - Recruitment and consent}\label{methods---recruitment-and-consent}
+
+\subsubsection{Which methods are used to recruit people into the study?}\label{which-methods-are-used-to-recruit-people-into-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The specific recruitment methods are not described.
+
+\subsubsection{Were any incentives provided to recruit people into the study?}\label{were-any-incentives-provided-to-recruit-people-into-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+Participants received course credit for participating.
+
+\subsubsection{Was consent sought?}\label{was-consent-sought}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The consent process is not explicitly described in the paper.
+
+\subsubsection{Are there any other details relevant to recruitment and consent?}\label{are-there-any-other-details-relevant-to-recruitment-and-consent}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+No additional details about recruitment or consent are provided.
+
+\subsection{Methods - Actual sample}\label{methods---actual-sample}
+
+\subsubsection{What was the total number of participants in the study (the actual sample)?}\label{what-was-the-total-number-of-participants-in-the-study-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The total sample was 187 men, with 182 included in the final analyses after exclusions.
+
+\subsubsection{What is the proportion of those selected for the study who actually participated in the study?}\label{what-is-the-proportion-of-those-selected-for-the-study-who-actually-participated-in-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The proportion of those selected who participated is not reported.
+
+\subsubsection{Which country/countries are the individuals in the actual sample from?}\label{which-countrycountries-are-the-individuals-in-the-actual-sample-from}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The participants were from the United States, specifically students at Montana State University.
+
+\subsubsection{What ages are covered by the actual sample?}\label{what-ages-are-covered-by-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  21 and over
+\end{itemize}
+
+The mean age of participants was 21.2 years old.
+
+\subsubsection{What is the socio-economic status of the individuals within the actual sample?}\label{what-is-the-socio-economic-status-of-the-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+Socio-economic status of participants is not reported.
+
+\subsubsection{What is the ethnicity of the individuals within the actual sample?}\label{what-is-the-ethnicity-of-the-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+88.5\% of participants were Caucasian.
+
+\subsubsection{What is known about the special educational needs of individuals within the actual sample?}\label{what-is-known-about-the-special-educational-needs-of-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+No information is provided about special educational needs.
+
+\subsubsection{Is there any other useful information about the study participants?}\label{is-there-any-other-useful-information-about-the-study-participants}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+No additional relevant information about participants is provided.
+
+\subsubsection{How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame?}\label{how-representative-was-the-achieved-sample-as-recruited-at-the-start-of-the-study-in-relation-to-the-aims-of-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Unclear (please specify)
+\end{itemize}
+
+The representativeness of the sample is unclear, as the sampling frame is not explicitly described.
+
+\subsubsection{If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?}\label{if-the-study-involves-studying-samples-prospectively-over-time-what-proportion-of-the-sample-dropped-out-over-the-course-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\end{itemize}
+
+This was a cross-sectional study, not a longitudinal one.
+
+\subsubsection{For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?}\label{for-studies-that-involve-following-samples-prospectively-over-time-do-the-authors-provide-any-information-on-whether-andor-how-those-who-dropped-out-of-the-study-differ-from-those-who-remained-in-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\end{itemize}
+
+This was a cross-sectional study, not a longitudinal one.
+
+\subsubsection{If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?}\label{if-the-study-involves-following-samples-prospectively-over-time-do-authors-provide-baseline-values-of-key-variables-such-as-those-being-used-as-outcomes-and-relevant-socio-demographic-variables}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\end{itemize}
+
+This was a cross-sectional study, not a longitudinal one.
+
+\subsection{Methods - Data collection}\label{methods---data-collection}
+
+\subsubsection{Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?}\label{please-describe-the-main-types-of-data-collected-and-specify-if-they-were-used-a-to-define-the-sample-b-to-measure-aspects-of-the-sample-as-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The main types of data collected were:
+(a) To define the sample: Working memory capacity (Operation Span task)
+(b) As findings: Stroop task performance (errors and reaction times)
+
+\subsubsection{Which methods were used to collect the data?}\label{which-methods-were-used-to-collect-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Psychological test
+\item[$\boxtimes$]
+  Practical test
+\end{itemize}
+
+The study used the Operation Span task to measure working memory capacity and the Stroop task to measure performance under stereotype threat.
+
+\subsubsection{Details of data collection methods or tool(s).}\label{details-of-data-collection-methods-or-tools.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The Operation Span task was used to measure working memory capacity. The Stroop task was administered using E-prime software, with stimuli presented on a computer screen and responses recorded using a microphone and response box.
+
+\subsubsection{Who collected the data?}\label{who-collected-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Researcher
+\end{itemize}
+
+An experimenter sat next to participants during the Stroop task to code response errors.
+
+\subsubsection{Do the authors describe any ways they addressed the reliability of their data collection tools/methods?}\label{do-the-authors-describe-any-ways-they-addressed-the-reliability-of-their-data-collection-toolsmethods}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors cite previous research demonstrating the reliability of the Operation Span task (Unsworth et al., 2005).
+
+\subsubsection{Do the authors describe any ways they have addressed the validity of their data collection tools/methods?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-validity-of-their-data-collection-toolsmethods}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors cite previous research validating the Operation Span task and the Stroop task as measures of working memory capacity and attentional control, respectively.
+
+\subsubsection{Was there concealment of study allocation or other key factors from those carrying out measurement of outcome -- if relevant?}\label{was-there-concealment-of-study-allocation-or-other-key-factors-from-those-carrying-out-measurement-of-outcome-if-relevant}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+The experimenter coding Stroop responses was aware of the participant's condition.
+
+\subsubsection{Where were the data collected?}\label{where-were-the-data-collected}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+Data were collected at Montana State University.
+
+\subsubsection{Are there other important features of data collection?}\label{are-there-other-important-features-of-data-collection}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The Stroop task responses were recorded using a microphone and response box, with an experimenter coding errors in real-time.
+
+\subsection{Methods - Data analysis}\label{methods---data-analysis}
+
+\subsubsection{Which methods were used to analyse the data?}\label{which-methods-were-used-to-analyse-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The data were analyzed using multiple regression analyses.
+
+\subsubsection{Which statistical methods, if any, were used in the analysis?}\label{which-statistical-methods-if-any-were-used-in-the-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+Multiple regression analyses were used, including main effects, two-way interactions, and three-way interactions between stereotype threat condition, list congruency, and working memory capacity.
+
+\subsubsection{What rationale do the authors give for the methods of analysis for the study?}\label{what-rationale-do-the-authors-give-for-the-methods-of-analysis-for-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors chose regression analyses to examine the effects of stereotype threat, list congruency, and working memory capacity on Stroop performance, allowing for the testing of both main effects and interactions.
+
+\subsubsection{For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.}\label{for-evaluation-studies-that-use-prospective-allocation-please-specify-the-basis-on-which-data-analysis-was-carried-out.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  `Intention to intervene'
+\end{itemize}
+
+Analyses were conducted based on the conditions to which participants were assigned.
+
+\subsubsection{Do the authors describe any ways they have addressed the reliability of data analysis?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-reliability-of-data-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors used established statistical methods (regression analyses) and report detailed results, including beta values, t-values, and p-values.
+
+\subsubsection{Do the authors describe any ways they have addressed the validity of data analysis?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-validity-of-data-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors tested specific hypotheses derived from theory and previous research, using appropriate statistical methods to test these hypotheses.
+
+\subsubsection{Do the authors describe strategies used in the analysis to control for bias from confounding variables?}\label{do-the-authors-describe-strategies-used-in-the-analysis-to-control-for-bias-from-confounding-variables}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors included working memory capacity as a continuous variable in their analyses to control for individual differences in this trait.
+
+\subsubsection{Please describe any other important features of the analysis.}\label{please-describe-any-other-important-features-of-the-analysis.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors used the Van Selst and Jolicoeur (1994) outlier removal procedure for reaction time data.
+
+\subsubsection{Please comment on any other analytic or statistical issues if relevant.}\label{please-comment-on-any-other-analytic-or-statistical-issues-if-relevant.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+No other major analytic or statistical issues are apparent.
+
+\subsection{Results and Conclusions}\label{results-and-conclusions}
+
+\subsubsection{How are the results of the study presented?}\label{how-are-the-results-of-the-study-presented}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+Results are presented through text descriptions of statistical findings and a figure showing predicted values for the three-way interaction.
+
+\subsubsection{What are the results of the study as reported by authors?}\label{what-are-the-results-of-the-study-as-reported-by-authors}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The main findings were:
+1. Stereotype threat increased Stroop errors, particularly in the mostly congruent list condition.
+2. This effect was moderated by working memory capacity, with low-WMC individuals showing greater stereotype threat effects.
+3. No evidence was found for the response competition hypothesis (no effects on reaction times in the mostly incongruent condition).
+
+\subsubsection{Was the precision of the estimate of the intervention or treatment effect reported?}\label{was-the-precision-of-the-estimate-of-the-intervention-or-treatment-effect-reported}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes
+\end{itemize}
+
+The authors report beta values, t-values, and p-values for all main effects and interactions.
+
+\subsubsection{Are there any obvious shortcomings in the reporting of the data?}\label{are-there-any-obvious-shortcomings-in-the-reporting-of-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+The data appear to be reported comprehensively and clearly.
+
+\subsubsection{Do the authors report on all variables they aimed to study as specified in their aims/research questions?}\label{do-the-authors-report-on-all-variables-they-aimed-to-study-as-specified-in-their-aimsresearch-questions}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors report on all variables specified in their research questions, including stereotype threat effects, list congruency effects, and the moderating role of working memory capacity.
+
+\subsubsection{Do the authors state where the full original data are stored?}\label{do-the-authors-state-where-the-full-original-data-are-stored}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+The authors do not provide information about data storage.
+
+\subsubsection{What do the author(s) conclude about the findings of the study?}\label{what-do-the-authors-conclude-about-the-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors conclude that stereotype threat primarily impairs goal maintenance processes, particularly for individuals low in working memory capacity. They suggest that stereotype threat leads to distraction and mind-wandering, causing goal neglect and increased errors on incongruent trials in mostly congruent lists.
+
+\subsection{Quality of the study - Reporting}\label{quality-of-the-study---reporting}
+
+\subsubsection{Is the context of the study adequately described?}\label{is-the-context-of-the-study-adequately-described}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors provide a clear theoretical context, linking the study to previous research on stereotype threat and working memory.
+
+\subsubsection{Are the aims of the study clearly reported?}\label{are-the-aims-of-the-study-clearly-reported}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The aims of testing the distraction and response competition hypotheses are clearly stated.
+
+\subsubsection{Is there an adequate description of the sample used in the study and how the sample was identified and recruited?}\label{is-there-an-adequate-description-of-the-sample-used-in-the-study-and-how-the-sample-was-identified-and-recruited}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+While basic demographic information is provided, details about recruitment and sampling are limited.
+
+\subsubsection{Is there an adequate description of the methods used in the study to collect data?}\label{is-there-an-adequate-description-of-the-methods-used-in-the-study-to-collect-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The Operation Span and Stroop tasks are described in detail, including stimuli, procedures, and data recording methods.
+
+\subsubsection{Is there an adequate description of the methods of data analysis?}\label{is-there-an-adequate-description-of-the-methods-of-data-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The regression analyses are clearly described, including the variables included and the types of effects tested.
+
+\subsubsection{Is the study replicable from this report?}\label{is-the-study-replicable-from-this-report}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The methods and analyses are described in sufficient detail to allow replication.
+
+\subsubsection{Do the authors avoid selective reporting bias?}\label{do-the-authors-avoid-selective-reporting-bias}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors report on all variables and hypotheses specified in their aims.
+
+\subsection{Quality of the study - Methods and data}\label{quality-of-the-study---methods-and-data}
+
+\subsubsection{Are there ethical concerns about the way the study was done?}\label{are-there-ethical-concerns-about-the-way-the-study-was-done}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No concerns
+\end{itemize}
+
+No ethical concerns are apparent from the reported methods.
+
+\subsubsection{Were students and/or parents appropriately involved in the design or conduct of the study?}\label{were-students-andor-parents-appropriately-involved-in-the-design-or-conduct-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+There is no mention of student or parent involvement in the study design or conduct.
+
+\subsubsection{Is there sufficient justification for why the study was done the way it was?}\label{is-there-sufficient-justification-for-why-the-study-was-done-the-way-it-was}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors provide a clear rationale for their study design, based on previous theory and research
+
+\subsubsection{Was the choice of research design appropriate for addressing the research question(s) posed?}\label{was-the-choice-of-research-design-appropriate-for-addressing-the-research-questions-posed}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The 2x2 experimental design with working memory capacity as a continuous variable was appropriate for testing the hypotheses about stereotype threat effects on goal maintenance and response competition processes.
+
+\subsubsection{To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?}\label{to-what-extent-are-the-research-design-and-methods-employed-able-to-rule-out-any-other-sources-of-errorbias-which-would-lead-to-alternative-explanations-for-the-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  A little (please specify)
+\end{itemize}
+
+The randomized design helps control for some sources of bias. However, the lack of a manipulation check for stereotype threat and the awareness of experimenters to condition assignments could introduce some bias.
+
+\subsubsection{How generalisable are the study results?}\label{how-generalisable-are-the-study-results}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The results may be generalizable to male university students in the United States. However, the predominantly Caucasian sample and the focus on a single stereotype (men's verbal abilities) limit broader generalizability.
+
+\subsubsection{Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?}\label{weight-of-evidence---a-taking-account-of-all-quality-assessment-issues-can-the-study-findings-be-trusted-in-answering-the-study-questions}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Medium trustworthiness (please specify)
+\end{itemize}
+
+The study uses established measures and appropriate analyses, but has some limitations in sampling and potential experimenter bias. The findings align with previous research, increasing confidence in the results.
+
+\subsubsection{Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?}\label{have-sufficient-attempts-been-made-to-justify-the-conclusions-drawn-from-the-findings-so-that-the-conclusions-are-trustworthy}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Medium trustworthiness
+\end{itemize}
+
+The authors provide a detailed discussion of their findings in relation to their hypotheses and previous research. However, some alternative explanations (e.g., the ``mere effort'' account) are not fully addressed.
+
+\subsection{\texorpdfstring{\textbf{COHORT STUDIES}}{COHORT STUDIES}}\label{cohort-studies}
+
+Not applicable - this is not a cohort study.
+
+\subsection{\texorpdfstring{\textbf{CASE CONTROL STUDIES}}{CASE CONTROL STUDIES}}\label{case-control-studies}
+
+Not applicable - this is not a case-control study.
+
+\section{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-hutchisonGoalsCanBe2013}
+Hutchison, K. A., Smith, J. L., \& Ferris, A. (2013). Goals can be threatened to extinction: {Using} the stroop task to clarify working memory depletion under stereotype threat. \emph{Social Psychological and Personality Science}, \emph{4}(1), 74--81. \url{https://doi.org/10.1177/1948550612440734}
+
+\end{CSLReferences}
+
+
+\end{document}

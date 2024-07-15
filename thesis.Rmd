@@ -716,7 +716,30 @@ In the Stereotype Threat/SART Related condition, commission errors were fewer (*
 While a significant effect for the mere effort contrast was found, Wilk's $\Lambda$ = `r apa_num(.657)`, *F*(4, 66) = `r apa_num(8.63)`, *p* < `r apa_p(.001)`, $\eta^{2}_{\text{p}}$ = `r apa_p(.343)`, the counter-hypothesis was not supported, Wilk's $\Lambda$ = `r apa_num(.993)`, *F*(4, 66) = `r apa_num(1.15)`, *p* = `r apa_p(.33)`, $\eta^{2}_{\text{p}}$ = `r apa_p(.065)`.  
 H3 is not supported by this paper, as the mere effort account was found to be the more likely explanation for the results.  
 
+### @guardabassiWeightStatusWeight2020   
 
+This paper was already discussed in the H2 section.
+H3 is supported by this paper, as *N*-back task performance was found to be impaired under stereotype threat.  
+
+@hutchisonGoalsCanBe2013  
+
+@hutchisonGoalsCanBe2013 hypothesised that mind-wandering would increase under threat and thus impair performance on the Stroop task (distraction hypothesis).
+Further, they hypothesised that participants performance under threat would mostly be in incongruent trial and less in congruent trials.
+They also pointed out that both hypotheses could be true.  
+Working memory capacity (measured by the OSPAN), list congruency (mostly congruent vs. mostly incongruent list), and stereotype threat condition (threat vs. control) were the independent variables, while Stroop task performance (error rates and reaction times) was the dependent variable.  
+One hundred eighty-seven men (*M* = 21.2 years old, 88.5% Caucasian) formed the sample.
+The experiment began with the OSPAN, after which they were assigned into one of four groups (stereotype threat $\times$ list congruency), followed by the stereotype threat manipulation, and the Stroop task.
+Stereotype threat was manipulated by claiming that the Stroop task measured gender differences in verbal skills and by having participants indicate their gender, this manipulation has been used in previous studies.  
+Analyses showed that neither Stroop performance on neutral items nor OSPAN scores differed between the four conditions.
+While the two-way interaction between stereotype threat and working memory capacity was moderate, $\beta$ = -`r apa_p(0.11)`, *t* = -`r apa_num(1.93)`, *p* = `r apa_p(.054)`, a main effect was found for stereotype threat, $\beta$ = `r apa_p(.12)`, *t* = `r apa_num(2.11)`, *p* < `r apa_p(.05)`, showing the Stroop effect to be larger under threat.
+Further, the interaction with list congruency was found to qualify this main effect, with mostly congruent lists, $\beta$ = `r apa_p(.24)`, *t* = `r apa_num(2.55)`, *p* < `r apa_p(.05)`, showing a greater Stroop effect under threat, than mostly incongruent lists, $\beta$ = -`r apa_p(.02)`, *t* = -`r apa_num(0.17)`, *p* = `r apa_p(.86)`, 
+The Stroop effect was a lot smaller in high working memory capacity  (*p* < `r apa_p(.86)` at 1 *SD* above the mean working memory capacity) participants, compared to low working memory capacity participants, this effect was found for both, the control and stereotype threat conditions.
+Building on this, the interaction between all independent variables was found to be significant, $\beta$ = -`r apa_p(.12)`, *t* = -`r apa_num(1.99)`, *p* < `r apa_p(.05)`.
+Reaction times on the Stroop task were also decreased under threat to a significant degree, $R^2$ = `r apa_p(.53)`, *F*(7, 174) = `r apa_num(28.95)`, *p* < `r apa_p(.001)`.  
+H3 is partially supported, a significant effect of threat on Stroop performance was only found for low working memory capacity individuals. 
+Further, working memory capacity might moderate the effect.  
+
+### @hutterWomenStereotypeThreat2019
 
 
 # Discussion
