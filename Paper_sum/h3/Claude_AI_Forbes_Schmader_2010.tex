@@ -1,0 +1,1120 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  doc, a4paper]{apa7}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{english}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\centering\begin{threeparttable}}
+%   {\end{threeparttable}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\centering\begin{ThreePartTable}}{\end{ThreePartTable}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% Overwrite redefinition of paragraph and subparagraph by the default LaTeX template
+% See https://github.com/crsh/papaja/issues/292
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\itshape\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\makeatletter
+\usepackage{etoolbox}
+\patchcmd{\maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\patchcmd{\maketitle}
+  {\section{\protect\normalfont{\@title}}}
+  {\section*{\protect\normalfont{\@title}}}
+  {}{\typeout{Failed to patch title.}}
+\makeatother
+
+\usepackage{xpatch}
+\makeatletter
+\xapptocmd\appendix
+  {\xapptocmd\section
+    {\addcontentsline{toc}{section}{\appendixname\ifoneappendix\else~\theappendix\fi\\: #1}}
+    {}{\InnerPatchFailed}%
+  }
+{}{\PatchFailed}
+\keywords{keywords\newline\indent Word count: X}
+\usepackage{csquotes}
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Forbes and Schmader (2010)},
+  pdflang={en-EN},
+  pdfkeywords={keywords},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Forbes and Schmader (2010)}
+\author{\phantom{0}}
+\date{}
+
+
+\shorttitle{Forbes and Schmader (2010)}
+
+\affiliation{\phantom{0}}
+
+\begin{document}
+\maketitle
+
+\section{EPPI-Centre (2003) \& Critical Appraisal Skills Programme (2018)}\label{eppi-centrereviewguidelinesextracting2003-criticalappraisalskillsprogrammecaspsystematicreview2018}
+
+\subsubsection{If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here}\label{if-the-study-has-a-broad-focus-and-this-data-extraction-focuses-on-just-one-component-of-the-study-please-specify-this-here}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (whole study is focus of data extraction)
+\end{itemize}
+
+\subsection{Study aim(s) and rationale}\label{study-aims-and-rationale}
+
+\subsubsection{Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?}\label{was-the-study-informed-by-or-linked-to-an-existing-body-of-empirical-andor-theoretical-research}
+
+\emph{Please write in authors' declaration if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study was explicitly informed by prior research on stereotype threat, attitudes, stereotypes, working memory, and motivation. The authors cite numerous studies and theories throughout the introduction to establish the rationale for their research questions.
+
+\subsubsection{Do authors report how the study was funded?}\label{do-authors-report-how-the-study-was-funded}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The research was supported by a Social and Behavioral Sciences Research Institute Dissertation Research Grant awarded to the first author, and National Institute of Mental Health Grant \#1R01MH071749 to the second author.
+
+\subsection{Study research question(s) and its policy or practice focus}\label{study-research-questions-and-its-policy-or-practice-focus}
+
+\subsubsection{What is/are the topic focus/foci of the study?}\label{what-isare-the-topic-focusfoci-of-the-study}
+
+The study focuses on the effects of retraining attitudes and stereotypes on motivation and cognitive capacity in stereotype threatening contexts, particularly for women in math domains.
+
+\subsubsection{What is/are the population focus/foci of the study?}\label{what-isare-the-population-focusfoci-of-the-study}
+
+The population focus is on women, particularly those who are moderately math-identified.
+
+\subsubsection{What is the relevant age group?}\label{what-is-the-relevant-age-group}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  17 - 20\\
+\item[$\boxtimes$]
+  21 and over
+\end{itemize}
+
+The participants were university students, likely ranging from late teens to early 20s.
+
+\subsubsection{What is the sex of the population focus/foci?}\label{what-is-the-sex-of-the-population-focusfoci}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Female only
+\end{itemize}
+
+The primary focus was on female participants, though some studies included male participants for comparison.
+
+\subsubsection{What is/are the educational setting(s) of the study?}\label{what-isare-the-educational-settings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Higher education institution
+\end{itemize}
+
+The study was conducted with university students.
+
+\subsubsection{In Which country or cuntries was the study carried out?}\label{in-which-country-or-cuntries-was-the-study-carried-out}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study was carried out in the United States.
+
+\subsubsection{Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned}\label{please-describe-in-more-detail-the-specific-phenomena-factors-services-or-interventions-with-which-the-study-is-concerned}
+
+The study examines the effects of retraining math attitudes and gender-math stereotypes on women's math motivation and working memory capacity in stereotype threatening contexts. It uses associative training tasks to modify attitudes and stereotypes, and measures outcomes through math choice tasks, working memory assessments, and math performance tests.
+
+\subsubsection{What are the study reserach questions and/or hypotheses?}\label{what-are-the-study-reserach-questions-andor-hypotheses}
+
+\emph{Research questions or hypotheses operationalise the aims of the study. Please write in authors' description if there is one. Elaborate if necessary, but indicate which aspects are reviewers' interpretation.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study tests several hypotheses, including:
+1. Retraining women to have a positive math attitude will increase their math motivation.
+2. The effects of attitude retraining on motivation will be enhanced when stereotypes are present.
+3. Retraining gender stereotypes about math will improve women's working memory capacity under stereotype threat.
+4. Stereotype retraining will improve math performance, mediated by increased working memory capacity.
+
+\subsection{Methods - Design}\label{methods---design}
+
+\subsubsection{Which variables or concepts, if any, does the study aim to measure or examine?}\label{which-variables-or-concepts-if-any-does-the-study-aim-to-measure-or-examine}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study measures:
+- Math motivation (time spent on math problems)
+- Working memory capacity
+- Math performance
+- Math attitudes
+- Gender-math stereotypes
+
+\subsubsection{Study timing}\label{study-timing}
+
+\emph{Please indicate all that apply and give further details where possible.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Prospective
+\end{itemize}
+
+The study used a two-session design, with training in session 1 and outcome measures in session 2, 24-30 hours later.
+
+\subsubsection{If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?}\label{if-the-study-is-an-evaluation-when-were-measurements-of-the-variables-used-for-outcome-made-in-relation-to-the-intervention}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Before and after
+\end{itemize}
+
+Outcome measures were taken 24-30 hours after the training intervention.
+
+\subsection{Methods - Groups}\label{methods---groups}
+
+\subsubsection{If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.}\label{if-comparisons-are-being-made-between-two-or-more-groups-please-specify-the-basis-of-any-divisions-made-for-making-these-comparisons.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Prospecitive allocation into more than one group (e.g.~allocation to different interventions, or allocation to intervention and control groups)
+\end{itemize}
+
+Participants were randomly assigned to different training conditions (attitude and/or stereotype retraining).
+
+\subsubsection{How do the groups differ?}\label{how-do-the-groups-differ}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicityly stated (please specify)
+\end{itemize}
+
+Groups differed based on the type of training received:
+- Attitude training: like math vs.~dislike math
+- Stereotype training: stereotype reinforcement vs.~counterstereotype retraining
+
+\subsubsection{Number of groups}\label{number-of-groups}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Four or more (please specify)
+\end{itemize}
+
+Study 3, which is most relevant to H3, had four groups in a 2x2 design (attitude training x stereotype training).
+
+\subsubsection{Was the assignment of participants to interventions randomised?}\label{was-the-assignment-of-participants-to-interventions-randomised}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Random
+\end{itemize}
+
+Participants were randomly assigned to training conditions.
+
+\subsubsection{Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?}\label{where-there-was-prospective-allocation-to-more-than-one-group-was-the-allocation-sequence-concealed-from-participants-and-those-enrolling-them-until-after-enrolment}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The training tasks were presented as categorization tasks related to memory, concealing the true purpose of the study.
+
+\subsubsection{Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?}\label{apart-from-the-experimental-intervention-did-each-study-group-receive-the-same-level-of-care-that-is-were-they-treated-equally}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes
+\end{itemize}
+
+All participants completed similar tasks, with only the specific training content differing between groups.
+
+\subsubsection{Study design summary}\label{study-design-summary}
+
+This study used a randomized experimental design with multiple between-subjects factors (attitude training, stereotype training, task description). Participants completed training tasks in session 1 and outcome measures in session 2. The design allowed for causal inferences about the effects of attitude and stereotype retraining on math motivation, working memory, and performance under stereotype threat conditions.
+
+\subsection{Methods - Sampling strategy}\label{methods---sampling-strategy}
+
+\subsubsection{Are the authors trying to produce findings that are representative of a given population?}\label{are-the-authors-trying-to-produce-findings-that-are-representative-of-a-given-population}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Implicit (please specify)
+\end{itemize}
+
+While not explicitly stated, the authors seem to be aiming for findings representative of moderately math-identified women in university settings.
+
+\subsubsection{Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?}\label{which-methods-does-the-study-use-to-identify-people-or-groups-of-people-to-sample-from-and-what-is-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+Participants were recruited from university mass testing sessions based on their responses to math identification questions.
+
+\subsubsection{Which methods does the study use to select people or groups of people (from the sampling frame)?}\label{which-methods-does-the-study-use-to-select-people-or-groups-of-people-from-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+Women were considered eligible if their average response to three math identification items was between 3.50 and 5.50 on a seven-point scale.
+
+\subsubsection{Planned sample size}\label{planned-sample-size}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The planned sample size is not explicitly stated for each study.
+
+\subsection{Methods - Recruitment and consent}\label{methods---recruitment-and-consent}
+
+\subsubsection{Which methods are used to recruit people into the study?}\label{which-methods-are-used-to-recruit-people-into-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The specific recruitment methods are not detailed, beyond using mass testing sessions to identify eligible participants.
+
+\subsubsection{Were any incentives provided to recruit people into the study?}\label{were-any-incentives-provided-to-recruit-people-into-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+Participants received course credit for their participation.
+
+\subsubsection{Was consent sought?}\label{was-consent-sought}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Participant consent sought
+\end{itemize}
+
+While not explicitly stated, it is standard practice to obtain informed consent in psychological research.
+
+\subsubsection{Are there any other details relevant to recruitment and consent?}\label{are-there-any-other-details-relevant-to-recruitment-and-consent}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+\subsection{Methods - Actual sample}\label{methods---actual-sample}
+
+\subsubsection{What was the total number of participants in the study (the actual sample)?}\label{what-was-the-total-number-of-participants-in-the-study-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+Study 3, which is most relevant to H3, had 120 participants included in the final analyses.
+
+\subsubsection{What is the proportion of those selected for the study who actually participated in the study?}\label{what-is-the-proportion-of-those-selected-for-the-study-who-actually-participated-in-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+This information is not provided in the paper.
+
+\subsubsection{Which country/countries are the individuals in the actual sample from?}\label{which-countrycountries-are-the-individuals-in-the-actual-sample-from}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The participants were from the United States.
+
+\subsubsection{What ages are covered by the actual sample?}\label{what-ages-are-covered-by-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The exact age range is not specified, but participants were university students.
+
+\subsubsection{What is the socio-economic status of the individuals within the actual sample?}\label{what-is-the-socio-economic-status-of-the-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+This information is not provided in the paper.
+
+\subsubsection{What is the ethnicity of the individuals within the actual sample?}\label{what-is-the-ethnicity-of-the-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+This information is not provided in the paper.
+
+\subsubsection{What is known about the special educational needs of individuals within the actual sample?}\label{what-is-known-about-the-special-educational-needs-of-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+This information is not provided in the paper.
+
+\subsubsection{Is there any other useful information about the study participants?}\label{is-there-any-other-useful-information-about-the-study-participants}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify no/s.)
+\end{itemize}
+
+Participants were moderately math-identified women, as determined by their responses to math identification questions in mass testing sessions.
+
+\subsubsection{How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame?}\label{how-representative-was-the-achieved-sample-as-recruited-at-the-start-of-the-study-in-relation-to-the-aims-of-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Unclear (please specify)
+\end{itemize}
+
+Without more information about the broader university population, it's unclear how representative the sample is.
+
+\subsubsection{If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?}\label{if-the-study-involves-studying-samples-prospectively-over-time-what-proportion-of-the-sample-dropped-out-over-the-course-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+In Study 3, 9 out of 129 participants (7\%) were excluded from analyses due to not following directions, correctly identifying the study purpose, or computer failure.
+
+\subsubsection{For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?}\label{for-studies-that-involve-following-samples-prospectively-over-time-do-the-authors-provide-any-information-on-whether-andor-how-those-who-dropped-out-of-the-study-differ-from-those-who-remained-in-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+\subsubsection{If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?}\label{if-the-study-involves-following-samples-prospectively-over-time-do-authors-provide-baseline-values-of-key-variables-such-as-those-being-used-as-outcomes-and-relevant-socio-demographic-variables}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+\subsection{Methods - Data collection}\label{methods---data-collection}
+
+\subsubsection{Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?}\label{please-describe-the-main-types-of-data-collected-and-specify-if-they-were-used-a-to-define-the-sample-b-to-measure-aspects-of-the-sample-as-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\tightlist
+\item
+  To define the sample: Math identification questions from mass testing sessions
+\item
+  To measure aspects of the sample as findings: Math motivation (time spent on math problems), working memory scores, math performance accuracy
+\end{enumerate}
+
+\subsubsection{Which methods were used to collect the data?}\label{which-methods-were-used-to-collect-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Self-completion questionnaire
+\item[$\boxtimes$]
+  Psychological test
+\item[$\boxtimes$]
+  Practical test
+\end{itemize}
+
+\subsubsection{Details of data collection methods or tool(s).}\label{details-of-data-collection-methods-or-tools.}
+
+\begin{itemize}
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\item
+  Math motivation: Choice task between math and verbal problems, measuring time spent on math
+\item
+  Working memory: Vowel counting version of the Reading Span Test
+\item
+  Math performance: Necessary Arithmetic Operations Test (NAOT)
+\item
+  Attitude and stereotype training: Modified versions of the Implicit Association Test (IAT)
+\end{itemize}
+
+\subsubsection{Who collected the data?}\label{who-collected-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Researcher
+\end{itemize}
+
+\subsubsection{Do the authors describe any ways they addressed the reliability of their data collection tools/methods?}\label{do-the-authors-describe-any-ways-they-addressed-the-reliability-of-their-data-collection-toolsmethods}
+
+The authors do not explicitly discuss reliability of their measures, but they use established tasks (e.g., Reading Span Test) and their own previously published measures (e.g., Schmader \& Johns, 2003).
+
+\subsubsection{Do the authors describe any ways they have addressed the validity of their data collection tools/methods?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-validity-of-their-data-collection-toolsmethods}
+
+The authors cite previous research using similar measures and tasks, implying construct validity. They also use multiple outcome measures to assess different aspects of performance under stereotype threat.
+
+\subsubsection{Was there concealment of study allocation or other key factors from those carrying out measurement of outcome -- if relevant?}\label{was-there-concealment-of-study-allocation-or-other-key-factors-from-those-carrying-out-measurement-of-outcome-if-relevant}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+Participants were unaware of the true purpose of the study and their condition assignment. The experimenters were female, but it's unclear if they were blind to condition.
+
+\subsubsection{Where were the data collected?}\label{where-were-the-data-collected}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Implicit (please specify)
+\end{itemize}
+
+Data were likely collected in university laboratory settings, though this is not explicitly stated.
+
+\subsubsection{Are there other important features of data collection?}\label{are-there-other-important-features-of-data-collection}
+
+No other important features are mentioned.
+
+\subsection{Methods - Data analysis}\label{methods---data-analysis}
+
+\subsubsection{Which methods were used to analyse the data?}\label{which-methods-were-used-to-analyse-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The primary analyses used ANOVAs and t-tests to compare outcomes between conditions. Regression analyses were used for mediation analyses.
+
+\subsubsection{Which statistical methods, if any, were used in the analysis?}\label{which-statistical-methods-if-any-were-used-in-the-analysis}
+
+ANOVAs, t-tests, regression analyses, Sobel tests for mediation
+
+\subsubsection{What rationale do the authors give for the methods of analysis for the study?}\label{what-rationale-do-the-authors-give-for-the-methods-of-analysis-for-the-study}
+
+The authors do not provide an explicit rationale for their choice of analytical methods, but the methods are standard for experimental designs in psychology.
+
+\subsubsection{For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.}\label{for-evaluation-studies-that-use-prospective-allocation-please-specify-the-basis-on-which-data-analysis-was-carried-out.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  `Intention to intervene'
+\end{itemize}
+
+Analyses were conducted on the full sample, excluding only those who failed to follow instructions or identified the study purpose.
+
+\subsubsection{Do the authors describe any ways they have addressed the reliability of data analysis?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-reliability-of-data-analysis}
+
+The authors do not explicitly discuss reliability of data analysis.
+
+\subsubsection{Do the authors describe any ways they have addressed the validity of data analysis?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-validity-of-data-analysis}
+
+The authors use multiple outcome measures and conduct mediation analyses to establish the validity of their findings.
+
+\subsubsection{Do the authors describe strategies used in the analysis to control for bias from confounding variables?}\label{do-the-authors-describe-strategies-used-in-the-analysis-to-control-for-bias-from-confounding-variables}
+
+The authors use random assignment to conditions to control for potential confounds.
+
+\subsubsection{Please describe any other important features of the analysis.}\label{please-describe-any-other-important-features-of-the-analysis.}
+
+The authors conduct supplementary analyses to examine the role of math identification in moderating effects.
+
+\subsubsection{Please comment on any other analytic or statistical issues if relevant.}\label{please-comment-on-any-other-analytic-or-statistical-issues-if-relevant.}
+
+No other major analytic issues are apparent.
+
+\subsection{Results and Conclusions}\label{results-and-conclusions}
+
+\subsubsection{How are the results of the study presented?}\label{how-are-the-results-of-the-study-presented}
+
+Results are presented through text descriptions, statistical test results, and figures showing mean differences between conditions.
+
+\subsubsection{What are the results of the study as reported by authors?}\label{what-are-the-results-of-the-study-as-reported-by-authors}
+
+For H3, the key results are:
+- Women trained to associate their gender with being good at math showed higher working memory capacity under stereotype threat compared to those who reinforced the stereotype.
+- This effect was only present when stereotype threat was induced.
+- The increased working memory capacity mediated improved math performance for women trained with the counterstereotype.
+
+\subsubsection{Was the precision of the estimate of the intervention or treatment effect reported?}\label{was-the-precision-of-the-estimate-of-the-intervention-or-treatment-effect-reported}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSIDER:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Were confidence intervals (CIs) reported?
+  \end{itemize}
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+The authors report effect sizes (\(\eta^2\)) but not confidence intervals.
+
+\subsubsection{Are there any obvious shortcomings in the reporting of the data?}\label{are-there-any-obvious-shortcomings-in-the-reporting-of-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+\subsubsection{Do the authors report on all variables they aimed to study as specified in their aims/research questions?}\label{do-the-authors-report-on-all-variables-they-aimed-to-study-as-specified-in-their-aimsresearch-questions}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors report results for all key variables: math motivation, working memory, and math performance.
+
+\subsubsection{Do the authors state where the full original data are stored?}\label{do-the-authors-state-where-the-full-original-data-are-stored}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+\subsubsection{What do the author(s) conclude about the findings of the study?}\label{what-do-the-authors-conclude-about-the-findings-of-the-study}
+
+The authors conclude that retraining gender stereotypes about math can improve women's working memory capacity and math performance under stereotype threat. They argue that stereotypes, rather than attitudes, are key to cognitive impairments due to stereotype threat.
+
+\subsection{Quality of the study - Reporting}\label{quality-of-the-study---reporting}
+
+\subsubsection{Is the context of the study adequately described?}\label{is-the-context-of-the-study-adequately-described}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors provide a thorough theoretical background and rationale for the study.
+
+\subsubsection{Are the aims of the study clearly reported?}\label{are-the-aims-of-the-study-clearly-reported}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The aims and hypotheses are clearly stated throughout the introduction.
+
+\subsubsection{Is there an adequate description of the sample used in the study and how the sample was identified and recruited?}\label{is-there-an-adequate-description-of-the-sample-used-in-the-study-and-how-the-sample-was-identified-and-recruited}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors describe their sampling criteria and recruitment methods, though some details (e.g., exact recruitment procedures) are lacking.
+
+\subsubsection{Is there an adequate description of the methods used in the study to collect data?}\label{is-there-an-adequate-description-of-the-methods-used-in-the-study-to-collect-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors provide detailed descriptions of their training tasks and outcome measures.
+
+\subsubsection{Is there an adequate description of the methods of data analysis?}\label{is-there-an-adequate-description-of-the-methods-of-data-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The analytical methods are described, though more detail on some aspects (e.g., handling of missing data) could be provided.
+
+\subsubsection{Is the study replicable from this report?}\label{is-the-study-replicable-from-this-report}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The methods are described in sufficient detail to allow replication.
+
+\subsubsection{Do the authors avoid selective reporting bias?}\label{do-the-authors-avoid-selective-reporting-bias}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors report results for all key variables and conditions.
+
+\subsection{Quality of the study - Methods and data}\label{quality-of-the-study---methods-and-data}
+
+\subsubsection{Are there ethical concerns about the way the study was done?}\label{are-there-ethical-concerns-about-the-way-the-study-was-done}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No concerns
+\end{itemize}
+
+\subsubsection{Were students and/or parents appropriately involved in the design or conduct of the study?}\label{were-students-andor-parents-appropriately-involved-in-the-design-or-conduct-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+There is no indication of student involvement in the study design.
+
+\subsubsection{Is there sufficient justification for why the study was done the way it was?}\label{is-there-sufficient-justification-for-why-the-study-was-done-the-way-it-was}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors provide a clear rationale for their study design based on prior research and theory.
+
+\subsubsection{Was the choice of research design appropriate for addressing the research question(s) posed?}\label{was-the-choice-of-research-design-appropriate-for-addressing-the-research-questions-posed}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The experimental design with random assignment to conditions is appropriate for testing causal effects of attitude and stereotype retraining.
+
+\subsubsection{To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?}\label{to-what-extent-are-the-research-design-and-methods-employed-able-to-rule-out-any-other-sources-of-errorbias-which-would-lead-to-alternative-explanations-for-the-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  A lot (please specify)
+\end{itemize}
+
+The experimental design with random assignment and use of established measures helps rule out many alternative explanations. The two-session design also minimizes demand characteristics and priming effects.
+
+\subsubsection{How generalisable are the study results?}\label{how-generalisable-are-the-study-results}
+
+The results may be generalizable to moderately math-identified women in university settings, but caution should be taken in generalizing to other populations or contexts.
+
+\subsubsection{Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?}\label{weight-of-evidence---a-taking-account-of-all-quality-assessment-issues-can-the-study-findings-be-trusted-in-answering-the-study-questions}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  High trustworthiness (please specify)
+\end{itemize}
+
+The study uses appropriate methods and measures, has a strong theoretical foundation, and employs rigorous experimental design. The findings are generally consistent across multiple studies.
+
+\subsubsection{Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?}\label{have-sufficient-attempts-been-made-to-justify-the-conclusions-drawn-from-the-findings-so-that-the-conclusions-are-trustworthy}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  High trustworthiness
+\end{itemize}
+
+The authors provide thorough discussion of their findings in relation to prior research and theory. They acknowledge limitations and suggest directions for future research.
+
+\section{Wells et al. (2014)}\label{wellsnewcastleottawascalenos2014}
+
+This section is not applicable as the study is not a case-control or cohort study.
+
+\section{University of Glasgow (n.d.)}\label{universityofglasgowcriticalappraisalchecklistn.d.nodate}
+
+\subsection{DOES THIS REVIEW ADDRESS A CLEAR QUESTION?}\label{does-this-review-address-a-clear-question}
+
+\subsubsection{Did the review address a clearly focussed issue?}\label{did-the-review-address-a-clearly-focussed-issue}
+
+\begin{itemize}
+\tightlist
+\item
+  Was there enough information on:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The population studied
+  \item
+    The intervention given
+  \item
+    The outcomes considered
+  \end{itemize}
+\item[$\boxtimes$]
+  Yes
+\end{itemize}
+
+The study clearly focuses on the effects of attitude and stereotype retraining on women's math motivation, working memory, and performance under stereotype threat.
+
+\subsubsection{Did the authors look for the appropriate sort of papers?}\label{did-the-authors-look-for-the-appropriate-sort-of-papers}
+
+\begin{itemize}
+\tightlist
+\item
+  The `best sort of studies' would:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Address the review's question
+  \item
+    Have an appropriate study design
+  \end{itemize}
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+This is not a review paper, so this question is not applicable.
+
+\subsection{ARE THE RESULTS OF THIS REVIEW VALID?}\label{are-the-results-of-this-review-valid}
+
+\subsubsection{Do you think the important, relevant studies were included?}\label{do-you-think-the-important-relevant-studies-were-included}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+This is not a review paper, so this question is not applicable.
+
+\subsubsection{Did the review's authors do enough to assess the quality of the included studies?}\label{did-the-reviews-authors-do-enough-to-assess-the-quality-of-the-included-studies}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+This is not a review paper, so this question is not applicable.
+
+\subsubsection{If the results of the review have been combined, was it reasonable to do so?}\label{if-the-results-of-the-review-have-been-combined-was-it-reasonable-to-do-so}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+This is not a review paper, so this question is not applicable.
+
+\subsection{WHAT ARE THE RESULTS?}\label{what-are-the-results}
+
+\subsubsection{What is the overall result of the review?}\label{what-is-the-overall-result-of-the-review}
+
+This is not a review paper. The overall results of this experimental study suggest that retraining gender stereotypes about math can improve women's working memory capacity and math performance under stereotype threat conditions.
+
+\subsubsection{How precise are the results?}\label{how-precise-are-the-results}
+
+\begin{itemize}
+\tightlist
+\item
+  Are the results presented with confidence intervals?
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+The results are presented with effect sizes (\(\eta^2\)) but not confidence intervals.
+
+\subsection{WILL THE RESULTS HELP LOCALLY?}\label{will-the-results-help-locally}
+
+\subsubsection{Can the results be applied to the local population?}\label{can-the-results-be-applied-to-the-local-population}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+The applicability to local populations would depend on the specific context and how similar it is to the university setting of this study.
+
+\subsubsection{Were all important outcomes considered?}\label{were-all-important-outcomes-considered}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes
+\end{itemize}
+
+The study considered multiple relevant outcomes: math motivation, working memory capacity, and math performance.
+
+\subsubsection{Are the benefits worth the harms and costs?}\label{are-the-benefits-worth-the-harms-and-costs}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes
+\end{itemize}
+
+The interventions used in this study (brief retraining tasks) are low-cost and low-risk, with potential benefits for reducing stereotype threat effects.
+
+\section{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-criticalappraisalskillsprogrammeCASPSystematicReview2018}
+Critical Appraisal Skills Programme. (2018). {CASP Systematic Review Checklist} {[}Organization{]}. In \emph{CASP - Critical Appraisal Skills Programme}. https://casp-uk.net/casp-tools-checklists/.
+
+\bibitem[\citeproctext]{ref-eppi-centreReviewGuidelinesExtracting2003}
+EPPI-Centre. (2003). \emph{Review guidelines for extracting data and quality assessing primary studies in educational research} (Guidelines Version 0.9.7). Social Science Research Unit.
+
+\bibitem[\citeproctext]{ref-forbesRetrainingAttitudesStereotypes2010}
+Forbes, C. E., \& Schmader, T. (2010). Retraining attitudes and stereotypes to affect motivation and cognitive capacity under stereotype threat. \emph{Journal of Personality and Social Psychology}, \emph{99}(5), 740--754. \url{https://doi.org/10.1037/a0020971}
+
+\bibitem[\citeproctext]{ref-universityofglasgowCriticalAppraisalChecklistn.d.nodate}
+University of Glasgow. (n.d.). \emph{Critical appraisal checklist for a systematic review} {[}Checklist{]}. Department of General Practice, University of Glasgow.
+
+\bibitem[\citeproctext]{ref-wellsNewcastleottawaScaleNOS2014}
+Wells, G., Shea, B., O'Connell, D., Robertson, J., Welch, V., Losos, M., \& Tugwell, P. (2014). The newcastle-ottawa scale ({NOS}) for assessing the quality of nonrandomised studies in meta-analyses. \emph{Ottawa Health Research Institute Web Site}, \emph{7}.
+
+\end{CSLReferences}
+
+
+\end{document}
