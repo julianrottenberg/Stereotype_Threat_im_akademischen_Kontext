@@ -1,0 +1,1060 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  doc, a4paper]{apa7}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{english}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\centering\begin{threeparttable}}
+%   {\end{threeparttable}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\centering\begin{ThreePartTable}}{\end{ThreePartTable}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% Overwrite redefinition of paragraph and subparagraph by the default LaTeX template
+% See https://github.com/crsh/papaja/issues/292
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\itshape\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\makeatletter
+\usepackage{etoolbox}
+\patchcmd{\maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\patchcmd{\maketitle}
+  {\section{\protect\normalfont{\@title}}}
+  {\section*{\protect\normalfont{\@title}}}
+  {}{\typeout{Failed to patch title.}}
+\makeatother
+
+\usepackage{xpatch}
+\makeatletter
+\xapptocmd\appendix
+  {\xapptocmd\section
+    {\addcontentsline{toc}{section}{\appendixname\ifoneappendix\else~\theappendix\fi\\: #1}}
+    {}{\InnerPatchFailed}%
+  }
+{}{\PatchFailed}
+\keywords{keywords\newline\indent Word count: X}
+\usepackage{csquotes}
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Schmader et al. (2009)},
+  pdflang={en-EN},
+  pdfkeywords={keywords},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Schmader et al. (2009)}
+\author{\phantom{0}}
+\date{}
+
+
+\shorttitle{Schmader et al. (2009)}
+
+\affiliation{\phantom{0}}
+
+\begin{document}
+\maketitle
+
+\subsubsection{If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here}\label{if-the-study-has-a-broad-focus-and-this-data-extraction-focuses-on-just-one-component-of-the-study-please-specify-this-here}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Specific focus of this data extraction (please specify)
+\end{itemize}
+
+This data extraction focuses specifically on Study 3 of the paper, which is most relevant to testing Hypothesis 3 from the preregistration about working memory impairment under stereotype threat.
+
+\subsection{Study aim(s) and rationale}\label{study-aims-and-rationale}
+
+\subsubsection{Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?}\label{was-the-study-informed-by-or-linked-to-an-existing-body-of-empirical-andor-theoretical-research}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study was informed by previous research on stereotype threat, including work showing that stereotype threat can lead to increased physiological arousal, anxiety, negative thoughts, and reduced cognitive resources. The authors cite and build on work by researchers such as Steele \& Aronson (1995), Schmader \& Johns (2003), and others.
+
+\subsubsection{Do authors report how the study was funded?}\label{do-authors-report-how-the-study-was-funded}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The research was supported by National Institute of Mental Health Grant 1R01MH071749 awarded to the first author.
+
+\subsection{Study research question(s) and its policy or practice focus}\label{study-research-questions-and-its-policy-or-practice-focus}
+
+\subsubsection{What is/are the topic focus/foci of the study?}\label{what-isare-the-topic-focusfoci-of-the-study}
+
+The study focuses on stereotype threat effects on women's math performance, examining how individual differences in emotion reappraisal tendencies interact with sympathetic activation to predict performance and self-doubt.
+
+\subsubsection{What is/are the population focus/foci of the study?}\label{what-isare-the-population-focusfoci-of-the-study}
+
+The population focus is female undergraduate students preparing to take the Graduate Record Examination (GRE).
+
+\subsubsection{What is the relevant age group?}\label{what-is-the-relevant-age-group}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  21 and over
+\end{itemize}
+
+The mean age of participants was 23 years (SD = 4).
+
+\subsubsection{What is the sex of the population focus/foci?}\label{what-is-the-sex-of-the-population-focusfoci}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Female only
+\end{itemize}
+
+The study focused exclusively on female participants.
+
+\subsubsection{What is/are the educational setting(s) of the study?}\label{what-isare-the-educational-settings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Higher education institution
+\end{itemize}
+
+The study was conducted with undergraduate students at a university.
+
+\subsubsection{In Which country or cuntries was the study carried out?}\label{in-which-country-or-cuntries-was-the-study-carried-out}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The specific country is not explicitly stated, but based on the authors' affiliations and participant demographics, it appears to have been conducted in the United States.
+
+\subsubsection{Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned}\label{please-describe-in-more-detail-the-specific-phenomena-factors-services-or-interventions-with-which-the-study-is-concerned}
+
+The study examines how individual differences in emotion reappraisal tendencies interact with sympathetic activation (measured via salivary alpha-amylase) to predict women's math performance and feelings of self-doubt on a practice GRE test under conditions of stereotype threat.
+
+\subsubsection{What are the study reserach questions and/or hypotheses?}\label{what-are-the-study-reserach-questions-andor-hypotheses}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The main hypothesis for Study 3 was that for women who experience heightened sympathetic activation when taking a practice GRE test, those low in reappraisal tendencies would perform more poorly on math problems and report more self-doubt about their math performance compared to those high in reappraisal tendencies. For those not experiencing heightened activation, reappraisal tendencies were not expected to relate to math performance.
+
+\subsection{Methods - Design}\label{methods---design}
+
+\subsubsection{Which variables or concepts, if any, does the study aim to measure or examine?}\label{which-variables-or-concepts-if-any-does-the-study-aim-to-measure-or-examine}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study measured:
+1. Math and verbal performance on practice GRE tests
+2. Sympathetic activation via salivary alpha-amylase (sAA)
+3. Emotion reappraisal tendencies
+4. Self-reported feelings of doubt during the tests
+
+\subsubsection{Study timing}\label{study-timing}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Cross-sectional
+\end{itemize}
+
+The study collected data at a single time point, with participants completing practice GRE tests and providing saliva samples.
+
+\subsubsection{If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?}\label{if-the-study-is-an-evaluation-when-were-measurements-of-the-variables-used-for-outcome-made-in-relation-to-the-intervention}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not an evaluation)
+\end{itemize}
+
+This was not an evaluation study with an intervention.
+
+\subsection{Methods - Groups}\label{methods---groups}
+
+\subsubsection{If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.}\label{if-comparisons-are-being-made-between-two-or-more-groups-please-specify-the-basis-of-any-divisions-made-for-making-these-comparisons.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No prospective allocation but use of pre-existing differences to create comparison groups (e.g.~receiving different interventions, or characterised by different levels of a variable such as social class)
+\end{itemize}
+
+Comparisons were made based on individual differences in emotion reappraisal tendencies and levels of sympathetic activation.
+
+\subsubsection{How do the groups differ?}\label{how-do-the-groups-differ}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Implicit (please specify)
+\end{itemize}
+
+Groups differed based on levels of emotion reappraisal tendencies (high vs.~low) and sympathetic activation (high vs.~low), though these were treated as continuous variables in the analyses.
+
+\subsubsection{Number of groups}\label{number-of-groups}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Other/unclear (please specify)
+\end{itemize}
+
+The study did not have distinct groups, but rather examined interactions between continuous variables.
+
+\subsubsection{Was the assignment of participants to interventions randomised?}\label{was-the-assignment-of-participants-to-interventions-randomised}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (no prospective allocation)
+\end{itemize}
+
+There was no assignment to interventions in this study.
+
+\subsubsection{Where there was prospective allocation to more than one group, was the allocation sequence concealed from participants and those enrolling them until after enrolment?}\label{where-there-was-prospective-allocation-to-more-than-one-group-was-the-allocation-sequence-concealed-from-participants-and-those-enrolling-them-until-after-enrolment}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (no prospective allocation)
+\end{itemize}
+
+There was no prospective allocation to groups in this study.
+
+\subsubsection{Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?}\label{apart-from-the-experimental-intervention-did-each-study-group-receive-the-same-level-of-care-that-is-were-they-treated-equally}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes
+\end{itemize}
+
+All participants went through the same procedures.
+
+\subsubsection{Study design summary}\label{study-design-summary}
+
+This was a cross-sectional study examining individual differences in emotion reappraisal tendencies and sympathetic activation as predictors of women's math performance and self-doubt under conditions of stereotype threat. Participants completed practice GRE math and verbal tests while providing saliva samples to measure sympathetic activation. The study used moderated regression analyses to test the interactions between reappraisal tendencies and sympathetic activation in predicting performance and self-doubt.
+
+\subsection{Methods - Sampling strategy}\label{methods---sampling-strategy}
+
+\subsubsection{Are the authors trying to produce findings that are representative of a given population?}\label{are-the-authors-trying-to-produce-findings-that-are-representative-of-a-given-population}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Implicit (please specify)
+\end{itemize}
+
+While not explicitly stated, the authors appear to be aiming for findings representative of female undergraduate students preparing for the GRE, particularly in relation to stereotype threat effects on math performance.
+
+\subsubsection{Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?}\label{which-methods-does-the-study-use-to-identify-people-or-groups-of-people-to-sample-from-and-what-is-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The specific methods used to identify and recruit participants are not clearly described in the paper.
+
+\subsubsection{Which methods does the study use to select people or groups of people (from the sampling frame)?}\label{which-methods-does-the-study-use-to-select-people-or-groups-of-people-from-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The specific selection methods are not described in detail. The paper only mentions that participants were screened for certain health conditions that could affect neuroendocrine concentrations.
+
+\subsubsection{Planned sample size}\label{planned-sample-size}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The planned sample size is not reported in the paper.
+
+\subsection{Methods - Recruitment and consent}\label{methods---recruitment-and-consent}
+
+\subsubsection{Which methods are used to recruit people into the study?}\label{which-methods-are-used-to-recruit-people-into-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The specific recruitment methods are not described in the paper.
+
+\subsubsection{Were any incentives provided to recruit people into the study?}\label{were-any-incentives-provided-to-recruit-people-into-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+Participants were compensated with \$15 and a GRE practice guide.
+
+\subsubsection{Was consent sought?}\label{was-consent-sought}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The paper does not explicitly mention obtaining consent from participants.
+
+\subsubsection{Are there any other details relevant to recruitment and consent?}\label{are-there-any-other-details-relevant-to-recruitment-and-consent}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+No additional details about recruitment or consent are provided.
+
+\subsection{Methods - Actual sample}\label{methods---actual-sample}
+
+\subsubsection{What was the total number of participants in the study (the actual sample)?}\label{what-was-the-total-number-of-participants-in-the-study-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The final sample consisted of 43 female undergraduates.
+
+\subsubsection{What is the proportion of those selected for the study who actually participated in the study?}\label{what-is-the-proportion-of-those-selected-for-the-study-who-actually-participated-in-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The paper does not provide information on how many participants were initially selected or approached compared to the final sample size.
+
+\subsubsection{Which country/countries are the individuals in the actual sample from?}\label{which-countrycountries-are-the-individuals-in-the-actual-sample-from}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Implicit (please specify)
+\end{itemize}
+
+While not explicitly stated, based on the authors' affiliations and participant demographics, it appears the sample was from the United States.
+
+\subsubsection{What ages are covered by the actual sample?}\label{what-ages-are-covered-by-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  21 and over
+\end{itemize}
+
+The mean age of participants was 23 years (SD = 4).
+
+\subsubsection{What is the socio-economic status of the individuals within the actual sample?}\label{what-is-the-socio-economic-status-of-the-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The socio-economic status of participants is not reported in the paper.
+
+\subsubsection{What is the ethnicity of the individuals within the actual sample?}\label{what-is-the-ethnicity-of-the-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The sample was 79\% Caucasian. The ethnicities of the remaining 21\% are not specified.
+
+\subsubsection{What is known about the special educational needs of individuals within the actual sample?}\label{what-is-known-about-the-special-educational-needs-of-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+No information is provided about special educational needs of the participants.
+
+\subsubsection{Is there any other useful information about the study participants?}\label{is-there-any-other-useful-information-about-the-study-participants}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify no/s.)
+\end{itemize}
+
+All participants were English-speaking female undergraduates who were preparing to take the GRE. They were screened for depression, anxiety, malaria, mononucleosis, or recent surgical procedures that could affect neuroendocrine concentrations.
+
+\subsubsection{How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame?}\label{how-representative-was-the-achieved-sample-as-recruited-at-the-start-of-the-study-in-relation-to-the-aims-of-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (no sampling frame)
+\end{itemize}
+
+There is not enough information provided about the sampling frame or recruitment process to assess representativeness.
+
+\subsubsection{If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?}\label{if-the-study-involves-studying-samples-prospectively-over-time-what-proportion-of-the-sample-dropped-out-over-the-course-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\end{itemize}
+
+This was a cross-sectional study and did not follow samples over time.
+
+\subsubsection{For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?}\label{for-studies-that-involve-following-samples-prospectively-over-time-do-the-authors-provide-any-information-on-whether-andor-how-those-who-dropped-out-of-the-study-differ-from-those-who-remained-in-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\end{itemize}
+
+This study did not follow samples over time.
+
+\subsubsection{If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?}\label{if-the-study-involves-following-samples-prospectively-over-time-do-authors-provide-baseline-values-of-key-variables-such-as-those-being-used-as-outcomes-and-relevant-socio-demographic-variables}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\end{itemize}
+
+This study did not follow samples over time.
+
+\subsection{Methods - Data collection}\label{methods---data-collection}
+
+\subsubsection{Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?}\label{please-describe-the-main-types-of-data-collected-and-specify-if-they-were-used-a-to-define-the-sample-b-to-measure-aspects-of-the-sample-as-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The main types of data collected were:
+(a) To define the sample: Demographics (age, gender, ethnicity)
+(b) To measure aspects of the sample as findings:
+- Math and verbal performance on practice GRE tests
+- Salivary alpha-amylase (sAA) as a measure of sympathetic activation
+- Self-reported emotion reappraisal tendencies
+- Self-reported feelings of doubt during the tests
+
+\subsubsection{Which methods were used to collect the data?}\label{which-methods-were-used-to-collect-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Self-completion questionnaire
+\item[$\boxtimes$]
+  Exams
+\item[$\boxtimes$]
+  Clinical test
+\end{itemize}
+
+Participants completed questionnaires, took practice GRE tests, and provided saliva samples.
+
+\subsubsection{Details of data collection methods or tool(s).}\label{details-of-data-collection-methods-or-tools.}
+
+\begin{itemize}
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\item
+  Practice GRE tests: Math and verbal subtests from ``Practice to Take the GRE General Test'' (10th ed.)
+\item
+  Reappraisal tendency: Gross and John's (2003) six-item reappraisal scale
+\item
+  Self-doubt: Six items rated on a 7-point scale
+\item
+  Salivary alpha-amylase: Collected using the spitting method (Navazesh, 1993) and analyzed using an enzyme kinetic method (\(\alpha\)-amylase EPS Sys; Roche Diagnostics)
+\end{itemize}
+
+\subsubsection{Who collected the data?}\label{who-collected-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear
+\end{itemize}
+
+The paper does not specify who collected the data.
+
+\subsubsection{Do the authors describe any ways they addressed the reliability of their data collection tools/methods?}\label{do-the-authors-describe-any-ways-they-addressed-the-reliability-of-their-data-collection-toolsmethods}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors report the internal consistency (Cronbach's alpha) for the reappraisal scale (\(\alpha\) = .89) and the self-doubt measures (\(\alpha\)s = .84 for quantitative section and .86 for verbal section).
+
+\subsubsection{Do the authors describe any ways they have addressed the validity of their data collection tools/methods?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-validity-of-their-data-collection-toolsmethods}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors used established measures (e.g., practice GRE tests, Gross and John's reappraisal scale) and validated methods for collecting and analyzing salivary alpha-amylase.
+
+\subsubsection{Was there concealment of study allocation or other key factors from those carrying out measurement of outcome -- if relevant?}\label{was-there-concealment-of-study-allocation-or-other-key-factors-from-those-carrying-out-measurement-of-outcome-if-relevant}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (please say why)
+\end{itemize}
+
+This study did not involve allocation to different conditions or interventions.
+
+\subsubsection{Where were the data collected?}\label{where-were-the-data-collected}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+Data were collected in a laboratory setting at the university.
+
+\subsubsection{Are there other important features of data collection?}\label{are-there-other-important-features-of-data-collection}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+Participants were instructed to refrain from smoking, physical exercise, and food for 2 hours before their participation to control for factors that might affect salivary alpha-amylase levels.
+
+\subsection{Methods - Data analysis}\label{methods---data-analysis}
+
+\subsubsection{Which methods were used to analyse the data?}\label{which-methods-were-used-to-analyse-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The main analyses used moderated regression analyses to test the interactions between reappraisal tendencies and sympathetic activation (sAA) in predicting math performance and self-reported doubt.
+
+\subsubsection{Which statistical methods, if any, were used in the analysis?}\label{which-statistical-methods-if-any-were-used-in-the-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The study used hierarchical regression analyses, including tests of simple slopes and simple effects to probe significant interactions.
+
+\subsubsection{What rationale do the authors give for the methods of analysis for the study?}\label{what-rationale-do-the-authors-give-for-the-methods-of-analysis-for-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors chose moderated regression analyses to test their hypotheses about how individual differences in reappraisal tendencies would interact with sympathetic activation to predict performance and self-doubt.
+
+\subsubsection{For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.}\label{for-evaluation-studies-that-use-prospective-allocation-please-specify-the-basis-on-which-data-analysis-was-carried-out.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not an evaluation study with prospective allocation)
+\end{itemize}
+
+This was not an evaluation study with prospective allocation.
+
+\subsubsection{Do the authors describe any ways they have addressed the reliability of data analysis?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-reliability-of-data-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors do not explicitly discuss reliability of data analysis, but they use established statistical methods and report standardized regression coefficients and p-values.
+
+\subsubsection{Do the authors describe any ways they have addressed the validity of data analysis?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-validity-of-data-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors conducted additional analyses to rule out alternative explanations, such as checking that reappraisal tendencies were not associated with sAA levels.
+
+\subsubsection{Do the authors describe strategies used in the analysis to control for bias from confounding variables?}\label{do-the-authors-describe-strategies-used-in-the-analysis-to-control-for-bias-from-confounding-variables}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors residualized sAA assessments for baseline levels taken on a non-test day to control for individual variation in sAA concentrations.
+
+\subsubsection{Please describe any other important features of the analysis.}\label{please-describe-any-other-important-features-of-the-analysis.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors examined effects separately for math and verbal subtests to show specificity to the stereotype-threatened domain (math).
+
+\subsubsection{Please comment on any other analytic or statistical issues if relevant.}\label{please-comment-on-any-other-analytic-or-statistical-issues-if-relevant.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors note that they collapsed across a reappraisal manipulation that was ineffective, controlling for it in their analyses.
+
+\subsection{Results and Conclusions}\label{results-and-conclusions}
+
+\subsubsection{How are the results of the study presented?}\label{how-are-the-results-of-the-study-presented}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+Results are presented through text descriptions of statistical findings, including regression coefficients and p-values. Two figures are also used to illustrate key interactions.
+
+\subsubsection{What are the results of the study as reported by authors?}\label{what-are-the-results-of-the-study-as-reported-by-authors}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The key findings were:
+1. For women high in math sAA, reappraisal tendencies predicted better math performance and lower self-reported doubt.
+2. For women low in math sAA, reappraisal tendencies were unrelated to performance or doubt.
+3. These effects were specific to math performance and were not observed for verbal performance.
+
+\subsubsection{Was the precision of the estimate of the intervention or treatment effect reported?}\label{was-the-precision-of-the-estimate-of-the-intervention-or-treatment-effect-reported}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSIDER:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Were confidence intervals (CIs) reported?
+  \end{itemize}
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+The study did not report confidence intervals for the effects.
+
+\subsubsection{Are there any obvious shortcomings in the reporting of the data?}\label{are-there-any-obvious-shortcomings-in-the-reporting-of-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The study does not report effect sizes or confidence intervals, which would have provided more information about the magnitude and precision of the observed effects.
+
+\subsubsection{Do the authors report on all variables they aimed to study as specified in their aims/research questions?}\label{do-the-authors-report-on-all-variables-they-aimed-to-study-as-specified-in-their-aimsresearch-questions}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors report on all key variables mentioned in their hypotheses, including math performance, self-reported doubt, sympathetic activation (sAA), and reappraisal tendencies.
+
+\subsubsection{Do the authors state where the full original data are stored?}\label{do-the-authors-state-where-the-full-original-data-are-stored}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+The paper does not mention where the original data are stored.
+
+\subsubsection{What do the author(s) conclude about the findings of the study?}\label{what-do-the-authors-conclude-about-the-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors conclude that individual differences in the tendency to reappraise negative emotions interact with sympathetic activation to predict women's math performance and feelings of self-doubt under stereotype threat. They suggest that positive reappraisal can do more than just reduce the effects of threat; it can actually fuel better performance when arousal is high.
+
+\subsection{Quality of the study - Reporting}\label{quality-of-the-study---reporting}
+
+\subsubsection{Is the context of the study adequately described?}\label{is-the-context-of-the-study-adequately-described}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors provide a thorough background on stereotype threat research and explain the rationale for examining metacognitive processes and emotion reappraisal in this context.
+
+\subsubsection{Are the aims of the study clearly reported?}\label{are-the-aims-of-the-study-clearly-reported}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The aims and hypotheses for Study 3 are clearly stated in the introduction to that study.
+
+\subsubsection{Is there an adequate description of the sample used in the study and how the sample was identified and recruited?}\label{is-there-an-adequate-description-of-the-sample-used-in-the-study-and-how-the-sample-was-identified-and-recruited}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+While basic demographic information is provided, there is limited information on how the sample was identified and recruited.
+
+\subsubsection{Is there an adequate description of the methods used in the study to collect data?}\label{is-there-an-adequate-description-of-the-methods-used-in-the-study-to-collect-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The methods for collecting data, including the practice GRE tests, saliva samples, and questionnaires, are described in sufficient detail.
+
+\subsubsection{Is there an adequate description of the methods of data analysis?}\label{is-there-an-adequate-description-of-the-methods-of-data-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The statistical analyses, including moderated regression analyses and simple slopes tests, are adequately described.
+
+\subsubsection{Is the study replicable from this report?}\label{is-the-study-replicable-from-this-report}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+While many aspects of the study are well-described, the lack of detail on recruitment procedures and some specifics of the measures used (e.g., full text of questionnaire items) would make exact replication challenging.
+
+\subsubsection{Do the authors avoid selective reporting bias?}\label{do-the-authors-avoid-selective-reporting-bias}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors report on all variables mentioned in their hypotheses and do not appear to selectively report only significant findings.
+
+\subsection{Quality of the study - Methods and data}\label{quality-of-the-study---methods-and-data}
+
+\subsubsection{Are there ethical concerns about the way the study was done?}\label{are-there-ethical-concerns-about-the-way-the-study-was-done}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No concerns
+\end{itemize}
+
+There are no obvious ethical concerns raised by the study procedures.
+
+\subsubsection{Were students and/or parents appropriately involved in the design or conduct of the study?}\label{were-students-andor-parents-appropriately-involved-in-the-design-or-conduct-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+There is no indication that students or parents were involved in the design or conduct of the study beyond participating.
+
+\subsubsection{Is there sufficient justification for why the study was done the way it was?}\label{is-there-sufficient-justification-for-why-the-study-was-done-the-way-it-was}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors provide a clear rationale for examining emotion reappraisal and sympathetic activation in the context of stereotype threat.
+
+\subsubsection{Was the choice of research design appropriate for addressing the research question(s) posed?}\label{was-the-choice-of-research-design-appropriate-for-addressing-the-research-questions-posed}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The cross-sectional design with individual difference measures was appropriate for examining how reappraisal tendencies interact with sympathetic activation to predict performance under stereotype threat.
+
+\subsubsection{To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?}\label{to-what-extent-are-the-research-design-and-methods-employed-able-to-rule-out-any-other-sources-of-errorbias-which-would-lead-to-alternative-explanations-for-the-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  A little (please specify)
+\end{itemize}
+
+The study controlled for baseline sAA levels and examined effects separately for math and verbal tests to show specificity. However, the correlational nature of the design limits causal inferences.
+
+\subsubsection{How generalisable are the study results?}\label{how-generalisable-are-the-study-results}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The results may generalize to female undergraduate students preparing for the GRE, particularly in math-related contexts where stereotype threat is likely. However, the sample was predominantly Caucasian, which may limit generalizability to more diverse populations.
+
+\subsubsection{Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?}\label{weight-of-evidence---a-taking-account-of-all-quality-assessment-issues-can-the-study-findings-be-trusted-in-answering-the-study-questions}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Medium trustworthiness (please specify)
+\end{itemize}
+
+The study uses established measures and appropriate analyses, but the correlational design and limited information on sampling limit the strength of conclusions that can be drawn.
+
+\subsubsection{Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?}\label{have-sufficient-attempts-been-made-to-justify-the-conclusions-drawn-from-the-findings-so-that-the-conclusions-are-trustworthy}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Medium trustworthiness
+\end{itemize}
+
+The authors' conclusions are generally in line with their findings, but they appropriately acknowledge limitations of their work and the need for further research.
+
+\section{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-schmaderMetacognitivePerspectiveCognitive2009}
+Schmader, T., Forbes, C. E., Shen Zhang, \& Berry Mendes, W. (2009). A metacognitive perspective on the cognitive deficits experienced in intellectually threatening environments. \emph{Personality and Social Psychology Bulletin}, \emph{35}(5), 584--596. \url{https://doi.org/10.1177/0146167208330450}
+
+\end{CSLReferences}
+
+
+\end{document}

@@ -330,7 +330,7 @@ Participants completed questionnaires, took practice GRE tests, and provided sal
 - Practice GRE tests: Math and verbal subtests from "Practice to Take the GRE General Test" (10th ed.)
 - Reappraisal tendency: Gross and John's (2003) six-item reappraisal scale
 - Self-doubt: Six items rated on a 7-point scale
-- Salivary alpha-amylase: Collected using the spitting method (Navazesh, 1993) and analyzed using an enzyme kinetic method (α-amylase EPS Sys; Roche Diagnostics)
+- Salivary alpha-amylase: Collected using the spitting method (Navazesh, 1993) and analyzed using an enzyme kinetic method ($\alpha$-amylase EPS Sys; Roche Diagnostics)
 
 ### Who collected the data?
 
@@ -342,7 +342,7 @@ The paper does not specify who collected the data.
 
 - [x] Details
 
-The authors report the internal consistency (Cronbach's alpha) for the reappraisal scale (α = .89) and the self-doubt measures (αs = .84 for quantitative section and .86 for verbal section).
+The authors report the internal consistency (Cronbach's alpha) for the reappraisal scale ($\alpha$ = .89) and the self-doubt measures ($\alpha$s = .84 for quantitative section and .86 for verbal section).
 
 ### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
 
