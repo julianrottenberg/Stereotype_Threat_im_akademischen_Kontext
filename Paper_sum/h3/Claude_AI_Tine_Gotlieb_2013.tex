@@ -1,0 +1,1240 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  doc, a4paper]{apa7}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{english}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\centering\begin{threeparttable}}
+%   {\end{threeparttable}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\centering\begin{ThreePartTable}}{\end{ThreePartTable}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% Overwrite redefinition of paragraph and subparagraph by the default LaTeX template
+% See https://github.com/crsh/papaja/issues/292
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\itshape\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\makeatletter
+\usepackage{etoolbox}
+\patchcmd{\maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\patchcmd{\maketitle}
+  {\section{\protect\normalfont{\@title}}}
+  {\section*{\protect\normalfont{\@title}}}
+  {}{\typeout{Failed to patch title.}}
+\makeatother
+
+\usepackage{xpatch}
+\makeatletter
+\xapptocmd\appendix
+  {\xapptocmd\section
+    {\addcontentsline{toc}{section}{\appendixname\ifoneappendix\else~\theappendix\fi\\: #1}}
+    {}{\InnerPatchFailed}%
+  }
+{}{\PatchFailed}
+\keywords{keywords\newline\indent Word count: X}
+\usepackage{csquotes}
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Tine and Gotlieb (2013)},
+  pdflang={en-EN},
+  pdfkeywords={keywords},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Tine and Gotlieb (2013)}
+\author{\phantom{0}}
+\date{}
+
+
+\shorttitle{Tine and Gotlieb (2013)}
+
+\affiliation{\phantom{0}}
+
+\begin{document}
+\maketitle
+
+\subsubsection{If the study has a broad focus and this data extraction focuses on just one component of the study, please specify this here}\label{if-the-study-has-a-broad-focus-and-this-data-extraction-focuses-on-just-one-component-of-the-study-please-specify-this-here}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Specific focus of this data extraction (please specify)
+\end{itemize}
+
+This data extraction focuses specifically on the working memory aspects of the study, related to hypothesis 3 from the preregistration about stereotype threat effects on working memory.
+
+\subsection{Study aim(s) and rationale}\label{study-aims-and-rationale}
+
+\subsubsection{Was the study informed by, or linked to, an existing body of empirical and/or theoretical research?}\label{was-the-study-informed-by-or-linked-to-an-existing-body-of-empirical-andor-theoretical-research}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study was explicitly linked to existing research on stereotype threat effects, including prior work showing stereotype threat can reduce working memory capacity (e.g.~Schmader \& Johns 2003, Rydell \& Boucher 2010).
+
+\subsubsection{Do authors report how the study was funded?}\label{do-authors-report-how-the-study-was-funded}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The research was supported by a Kaminsky Family Fund award and the Paul K. Richter and Evalyn E. Cook Richter Memorial Fund.
+
+\subsection{Study research question(s) and its policy or practice focus}\label{study-research-questions-and-its-policy-or-practice-focus}
+
+\subsubsection{What is/are the topic focus/foci of the study?}\label{what-isare-the-topic-focusfoci-of-the-study}
+
+The study focuses on stereotype threat effects on math performance and working memory function, comparing gender-, race-, and income-based stereotype threat as well as multiple minority stereotype threat.
+
+\subsubsection{What is/are the population focus/foci of the study?}\label{what-isare-the-population-focusfoci-of-the-study}
+
+The population focus is college students of varying gender, race, and income levels.
+
+\subsubsection{What is the relevant age group?}\label{what-is-the-relevant-age-group}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  17 - 20\\
+\item[$\boxtimes$]
+  21 and over
+\end{itemize}
+
+Participants were undergraduate college students aged 18-26.
+
+\subsubsection{What is the sex of the population focus/foci?}\label{what-is-the-sex-of-the-population-focusfoci}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Mixed sex
+\end{itemize}
+
+The study included both male and female participants.
+
+\subsubsection{What is/are the educational setting(s) of the study?}\label{what-isare-the-educational-settings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Higher education institution
+\end{itemize}
+
+The study was conducted with undergraduate students at a college.
+
+\subsubsection{In Which country or cuntries was the study carried out?}\label{in-which-country-or-cuntries-was-the-study-carried-out}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study was carried out in the United States.
+
+\subsubsection{Please describe in more detail the specific phenomena, factors, services, or interventions with which the study is concerned}\label{please-describe-in-more-detail-the-specific-phenomena-factors-services-or-interventions-with-which-the-study-is-concerned}
+
+The study examined stereotype threat effects on working memory function, comparing effects based on gender, race, income level, and multiple stigmatized identities. It used a pre-test/post-test design with a stereotype threat prime in between.
+
+\subsubsection{What are the study reserach questions and/or hypotheses?}\label{what-are-the-study-reserach-questions-andor-hypotheses}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study aimed to:
+1) Compare the relative impact of gender-, race-, and income-based stereotype threat effects
+2) Determine if individuals with multiple stigmatized identities experience larger stereotype threat effects than those with one stigmatized identity
+
+\subsection{Methods - Design}\label{methods---design}
+
+\subsubsection{Which variables or concepts, if any, does the study aim to measure or examine?}\label{which-variables-or-concepts-if-any-does-the-study-aim-to-measure-or-examine}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The study measured:
+- Working memory function (pre- and post-test)
+- Math performance (pre- and post-test)
+- Number of stigmatized aspects of identity (gender, race, income)
+- Self-reported effort
+
+\subsubsection{Study timing}\label{study-timing}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Cross-sectional
+\end{itemize}
+
+The study examined participants at a single time point, with pre- and post-tests administered in one session.
+
+\subsubsection{If the study is an evaluation, when were measurements of the variable(s) used for outcome made, in relation to the intervention?}\label{if-the-study-is-an-evaluation-when-were-measurements-of-the-variables-used-for-outcome-made-in-relation-to-the-intervention}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Before and after
+\end{itemize}
+
+Working memory was measured both before and after the stereotype threat prime.
+
+\subsection{Methods - Groups}\label{methods---groups}
+
+\subsubsection{If comparisons are being made between two or more groups, please specify the basis of any divisions made for making these comparisons.}\label{if-comparisons-are-being-made-between-two-or-more-groups-please-specify-the-basis-of-any-divisions-made-for-making-these-comparisons.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No prospective allocation but use of pre-existing differences to create comparison groups (e.g.~receiving different interventions, or characterised by different levels of a variable such as social class)
+\end{itemize}
+
+Groups were based on pre-existing demographic differences (gender, race, income level).
+
+\subsubsection{How do the groups differ?}\label{how-do-the-groups-differ}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicityly stated (please specify)
+\end{itemize}
+
+Groups differed based on:
+- Gender (male vs.~female)
+- Race (White vs.~racial/ethnic minority)
+- Income level (low, middle, high)
+- Number of stigmatized aspects of identity (0 to 3)
+
+\subsubsection{Number of groups}\label{number-of-groups}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Four or more (please specify)
+\end{itemize}
+
+There were multiple group comparisons based on gender (2), race (2), income (3), and number of stigmatized identities (4).
+
+\subsubsection{Was the assignment of participants to interventions randomised?}\label{was-the-assignment-of-participants-to-interventions-randomised}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicate (no prospective allocation)
+\end{itemize}
+
+Participants were not allocated to groups - groupings were based on pre-existing characteristics.
+
+\subsubsection{Apart from the experimental intervention, did each study group receive the same level of care (that is, were they treated equally)?}\label{apart-from-the-experimental-intervention-did-each-study-group-receive-the-same-level-of-care-that-is-were-they-treated-equally}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes
+\end{itemize}
+
+All participants went through the same experimental procedure.
+
+\subsubsection{Study design summary}\label{study-design-summary}
+
+This was a cross-sectional study comparing stereotype threat effects on working memory across different demographic groups. All participants completed pre-tests, received a stereotype threat prime, and then completed post-tests. Groups were based on pre-existing characteristics (gender, race, income level) rather than random assignment.
+
+\subsection{Methods - Sampling strategy}\label{methods---sampling-strategy}
+
+\subsubsection{Are the authors trying to produce findings that are representative of a given population?}\label{are-the-authors-trying-to-produce-findings-that-are-representative-of-a-given-population}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Implicit (please specify)
+\end{itemize}
+
+The authors do not explicitly state they are trying to produce representative findings, but they use a diverse sample of college students to examine effects across different demographic groups.
+
+\subsubsection{Which methods does the study use to identify people or groups of people to sample from and what is the sampling frame?}\label{which-methods-does-the-study-use-to-identify-people-or-groups-of-people-to-sample-from-and-what-is-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The specific sampling methods are not described in the paper.
+
+\subsubsection{Which methods does the study use to select people or groups of people (from the sampling frame)?}\label{which-methods-does-the-study-use-to-select-people-or-groups-of-people-from-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The participant selection methods are not described in detail.
+
+\subsubsection{Planned sample size}\label{planned-sample-size}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The authors state they used power analyses to determine an appropriate sample size, resulting in 71 participants.
+
+\subsection{Methods - Recruitment and consent}\label{methods---recruitment-and-consent}
+
+\subsubsection{Which methods are used to recruit people into the study?}\label{which-methods-are-used-to-recruit-people-into-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The recruitment methods are not described in the paper.
+
+\subsubsection{Were any incentives provided to recruit people into the study?}\label{were-any-incentives-provided-to-recruit-people-into-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The paper does not mention if any recruitment incentives were provided.
+
+\subsubsection{Was consent sought?}\label{was-consent-sought}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The consent process is not described in the paper.
+
+\subsubsection{Are there any other details relevant to recruitment and consent?}\label{are-there-any-other-details-relevant-to-recruitment-and-consent}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+No other relevant details are provided about recruitment or consent.
+
+\subsection{Methods - Actual sample}\label{methods---actual-sample}
+
+\subsubsection{What was the total number of participants in the study (the actual sample)?}\label{what-was-the-total-number-of-participants-in-the-study-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The total sample was 71 undergraduate college students.
+
+\subsubsection{What is the proportion of those selected for the study who actually participated in the study?}\label{what-is-the-proportion-of-those-selected-for-the-study-who-actually-participated-in-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The paper does not provide information on the proportion of those selected who participated.
+
+\subsubsection{Which country/countries are the individuals in the actual sample from?}\label{which-countrycountries-are-the-individuals-in-the-actual-sample-from}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+The specific countries of origin for participants are not stated, though the study was conducted in the US.
+
+\subsubsection{What ages are covered by the actual sample?}\label{what-ages-are-covered-by-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  17 to 20
+\item[$\boxtimes$]
+  21 and over
+\end{itemize}
+
+Participants were aged 18-26 years old.
+
+\subsubsection{What is the socio-economic status of the individuals within the actual sample?}\label{what-is-the-socio-economic-status-of-the-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+Participants were categorized as low-income (\textless\$45,000/year), middle-income (\$45,000-\$84,999/year), or high-income (\textgreater\$85,000/year) based on family income.
+
+\subsubsection{What is the ethnicity of the individuals within the actual sample?}\label{what-is-the-ethnicity-of-the-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The sample included 47 White participants and 24 racial/ethnic minority participants (17 Black/African American, 7 Hispanic/Latino).
+
+\subsubsection{What is known about the special educational needs of individuals within the actual sample?}\label{what-is-known-about-the-special-educational-needs-of-individuals-within-the-actual-sample}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not stated/unclear (please specify)
+\end{itemize}
+
+No information is provided about special educational needs of the sample.
+
+\subsubsection{Is there any other useful information about the study participants?}\label{is-there-any-other-useful-information-about-the-study-participants}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify no/s.)
+\end{itemize}
+
+The mean SAT math score was 694 out of 800. No participants scored below 450.
+
+\subsubsection{How representative was the achieved sample (as recruited at the start of the study) in relation to the aims of the sampling frame?}\label{how-representative-was-the-achieved-sample-as-recruited-at-the-start-of-the-study-in-relation-to-the-aims-of-the-sampling-frame}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Unclear (please specify)
+\end{itemize}
+
+The representativeness of the sample is unclear as the sampling frame is not described.
+
+\subsubsection{If the study involves studying samples prospectively over time, what proportion of the sample dropped out over the course of the study?}\label{if-the-study-involves-studying-samples-prospectively-over-time-what-proportion-of-the-sample-dropped-out-over-the-course-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\end{itemize}
+
+This was not a longitudinal study.
+
+\subsubsection{For studies that involve following samples prospectively over time, do the authors provide any information on whether and/or how those who dropped out of the study differ from those who remained in the study?}\label{for-studies-that-involve-following-samples-prospectively-over-time-do-the-authors-provide-any-information-on-whether-andor-how-those-who-dropped-out-of-the-study-differ-from-those-who-remained-in-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\end{itemize}
+
+This was not a longitudinal study.
+
+\subsubsection{If the study involves following samples prospectively over time, do authors provide baseline values of key variables such as those being used as outcomes and relevant socio-demographic variables?}\label{if-the-study-involves-following-samples-prospectively-over-time-do-authors-provide-baseline-values-of-key-variables-such-as-those-being-used-as-outcomes-and-relevant-socio-demographic-variables}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not following samples prospectively over time)
+\end{itemize}
+
+This was not a longitudinal study.
+
+\subsection{Methods - Data collection}\label{methods---data-collection}
+
+\subsubsection{Please describe the main types of data collected and specify if they were used (a) to define the sample; (b) to measure aspects of the sample as findings of the study?}\label{please-describe-the-main-types-of-data-collected-and-specify-if-they-were-used-a-to-define-the-sample-b-to-measure-aspects-of-the-sample-as-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The main data collected were:
+a) To define the sample: gender, race, family income level
+b) As findings: working memory pre-test and post-test scores, math pre-test and post-test scores, self-reported effort
+
+\subsubsection{Which methods were used to collect the data?}\label{which-methods-were-used-to-collect-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Self-completion questionnaire
+\item[$\boxtimes$]
+  Psychological test
+\end{itemize}
+
+Participants completed questionnaires on demographics and effort. They also completed working memory and math tests.
+
+\subsubsection{Details of data collection methods or tool(s).}\label{details-of-data-collection-methods-or-tools.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+Working memory was measured using an adaptation of the Automated Working Memory Assessment backward digit string task. Math performance was measured using GRE quantitative practice questions. Demographics and effort were measured via questionnaire.
+
+\subsubsection{Who collected the data?}\label{who-collected-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Researcher
+\end{itemize}
+
+The experimenter was described as a White female researcher.
+
+\subsubsection{Do the authors describe any ways they addressed the reliability of their data collection tools/methods?}\label{do-the-authors-describe-any-ways-they-addressed-the-reliability-of-their-data-collection-toolsmethods}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors note the math questions were divided into pre- and post-tests of equal difficulty based on national performance norms.
+
+\subsubsection{Do the authors describe any ways they have addressed the validity of their data collection tools/methods?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-validity-of-their-data-collection-toolsmethods}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The working memory task was adapted from an established measure (Automated Working Memory Assessment). The math questions were from standardized GRE practice materials.
+
+\subsubsection{Was there concealment of study allocation or other key factors from those carrying out measurement of outcome -- if relevant?}\label{was-there-concealment-of-study-allocation-or-other-key-factors-from-those-carrying-out-measurement-of-outcome-if-relevant}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+The experimenter was aware of the study design and hypotheses.
+
+\subsubsection{Where were the data collected?}\label{where-were-the-data-collected}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Implicit (please specify)
+\end{itemize}
+
+The data appear to have been collected in a laboratory setting at the college, though this is not explicitly stated.
+
+\subsubsection{Are there other important features of data collection?}\label{are-there-other-important-features-of-data-collection}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+Participants completed pre-tests, then heard a stereotype threat prime, then completed post-tests.
+
+\subsection{Methods - Data analysis}\label{methods---data-analysis}
+
+\subsubsection{Which methods were used to analyse the data?}\label{which-methods-were-used-to-analyse-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Explicitly stated (please specify)
+\end{itemize}
+
+The primary analyses were ANCOVAs comparing post-test scores with pre-test scores as covariates.
+
+\subsubsection{Which statistical methods, if any, were used in the analysis?}\label{which-statistical-methods-if-any-were-used-in-the-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+ANCOVAs, t-tests, and ANOVAs were used to analyze the data.
+
+\subsubsection{What rationale do the authors give for the methods of analysis for the study?}\label{what-rationale-do-the-authors-give-for-the-methods-of-analysis-for-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors state they used ANCOVA to test for stereotype threat effects by comparing post-test scores while controlling for pre-test scores.
+
+\subsubsection{For evaluation studies that use prospective allocation, please specify the basis on which data analysis was carried out.}\label{for-evaluation-studies-that-use-prospective-allocation-please-specify-the-basis-on-which-data-analysis-was-carried-out.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Not applicable (not an evaluation study with prospective allocation)
+\end{itemize}
+
+This was not an evaluation study with prospective allocation.
+
+\subsubsection{Do the authors describe any ways they have addressed the reliability of data analysis?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-reliability-of-data-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors do not explicitly discuss reliability of the data analysis.
+
+\subsubsection{Do the authors describe any ways they have addressed the validity of data analysis?}\label{do-the-authors-describe-any-ways-they-have-addressed-the-validity-of-data-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors do not explicitly discuss validity of the data analysis.
+
+\subsubsection{Do the authors describe strategies used in the analysis to control for bias from confounding variables?}\label{do-the-authors-describe-strategies-used-in-the-analysis-to-control-for-bias-from-confounding-variables}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors used pre-test scores as covariates in the analyses to control for baseline differences.
+
+\subsubsection{Please describe any other important features of the analysis.}\label{please-describe-any-other-important-features-of-the-analysis.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors conducted separate analyses for gender, race, income level, and number of stigmatized identities.
+
+\subsubsection{Please comment on any other analytic or statistical issues if relevant.}\label{please-comment-on-any-other-analytic-or-statistical-issues-if-relevant.}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+No other major analytic issues were noted.
+
+\subsection{Results and Conclusions}\label{results-and-conclusions}
+
+\subsubsection{How are the results of the study presented?}\label{how-are-the-results-of-the-study-presented}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+Results are presented through text descriptions of statistical findings and figures showing mean scores.
+
+\subsubsection{What are the results of the study as reported by authors?}\label{what-are-the-results-of-the-study-as-reported-by-authors}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+Key results related to working memory:
+- Gender-based stereotype threat effects were found (males improved more than females from pre- to post-test)
+- Race-based stereotype threat effects were found (White students improved more than racial minority students)
+- Income-based stereotype threat effects were found (low-income students performed worse on post-test while others improved)
+- Multiple minority stereotype threat effects were found (those with 3 stigmatized identities performed worse on post-test while others improved)
+
+\subsubsection{Was the precision of the estimate of the intervention or treatment effect reported?}\label{was-the-precision-of-the-estimate-of-the-intervention-or-treatment-effect-reported}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSIDER:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Were confidence intervals (CIs) reported?
+  \end{itemize}
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+Confidence intervals were not reported for the effects.
+
+\subsubsection{Are there any obvious shortcomings in the reporting of the data?}\label{are-there-any-obvious-shortcomings-in-the-reporting-of-the-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+Exact statistics (e.g.~F values, p values) are not consistently reported for all analyses.
+
+\subsubsection{Do the authors report on all variables they aimed to study as specified in their aims/research questions?}\label{do-the-authors-report-on-all-variables-they-aimed-to-study-as-specified-in-their-aimsresearch-questions}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors report results for all key variables related to stereotype threat effects on working memory and math performance.
+
+\subsubsection{Do the authors state where the full original data are stored?}\label{do-the-authors-state-where-the-full-original-data-are-stored}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+The authors do not provide information on data storage/availability.
+
+\subsubsection{What do the author(s) conclude about the findings of the study?}\label{what-do-the-authors-conclude-about-the-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The authors conclude there are stereotype threat effects on working memory based on gender, race, and income. They also found evidence for multiple minority stereotype threat effects. Income-based effects were the strongest overall.
+
+\subsection{Quality of the study - Reporting}\label{quality-of-the-study---reporting}
+
+\subsubsection{Is the context of the study adequately described?}\label{is-the-context-of-the-study-adequately-described}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors provide adequate context on stereotype threat theory and prior research.
+
+\subsubsection{Are the aims of the study clearly reported?}\label{are-the-aims-of-the-study-clearly-reported}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The aims to compare different types of stereotype threat and examine multiple minority effects are clearly stated.
+
+\subsubsection{Is there an adequate description of the sample used in the study and how the sample was identified and recruited?}\label{is-there-an-adequate-description-of-the-sample-used-in-the-study-and-how-the-sample-was-identified-and-recruited}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+Details on sampling and recruitment procedures are limited.
+
+\subsubsection{Is there an adequate description of the methods used in the study to collect data?}\label{is-there-an-adequate-description-of-the-methods-used-in-the-study-to-collect-data}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The working memory and math tasks are described in sufficient detail.
+
+\subsubsection{Is there an adequate description of the methods of data analysis?}\label{is-there-an-adequate-description-of-the-methods-of-data-analysis}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The ANCOVA approach is adequately explained.
+
+\subsubsection{Is the study replicable from this report?}\label{is-the-study-replicable-from-this-report}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+Some key details on sampling and procedures are missing that would be needed for replication.
+
+\subsubsection{Do the authors avoid selective reporting bias?}\label{do-the-authors-avoid-selective-reporting-bias}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+Results appear to be reported for all key analyses and variables.
+
+\subsection{Quality of the study - Methods and data}\label{quality-of-the-study---methods-and-data}
+
+\subsubsection{Are there ethical concerns about the way the study was done?}\label{are-there-ethical-concerns-about-the-way-the-study-was-done}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes, some concerns (please specify)
+\end{itemize}
+
+The consent process is not described, which raises some ethical concerns.
+
+\subsubsection{Were students and/or parents appropriately involved in the design or conduct of the study?}\label{were-students-andor-parents-appropriately-involved-in-the-design-or-conduct-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  No (please specify)
+\end{itemize}
+
+There is no indication of student/parent involvement in the study design.
+
+\subsubsection{Is there sufficient justification for why the study was done the way it was?}\label{is-there-sufficient-justification-for-why-the-study-was-done-the-way-it-was}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The authors provide adequate rationale for examining multiple types of stereotype threat.
+
+\subsubsection{Was the choice of research design appropriate for addressing the research question(s) posed?}\label{was-the-choice-of-research-design-appropriate-for-addressing-the-research-questions-posed}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes (please specify)
+\end{itemize}
+
+The pre-test/post-test design with a stereotype threat prime was appropriate for examining stereotype threat effects.
+
+\subsubsection{To what extent are the research design and methods employed able to rule out any other sources of error/bias which would lead to alternative explanations for the findings of the study?}\label{to-what-extent-are-the-research-design-and-methods-employed-able-to-rule-out-any-other-sources-of-errorbias-which-would-lead-to-alternative-explanations-for-the-findings-of-the-study}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  A little (please specify)
+\end{itemize}
+
+The use of pre-test scores as covariates helps control for some baseline differences, but other potential confounds (e.g.~SAT scores) were not controlled for in the analyses, which could lead to alternative explanations.
+
+\subsubsection{How generalisable are the study results?}\label{how-generalisable-are-the-study-results}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Details
+\end{itemize}
+
+The results may be generalizable to college students at selective institutions in the US, but generalizability to other populations is limited due to the specific sample characteristics.
+
+\subsubsection{Weight of evidence - A: Taking account of all quality assessment issues, can the study findings be trusted in answering the study question(s)?}\label{weight-of-evidence---a-taking-account-of-all-quality-assessment-issues-can-the-study-findings-be-trusted-in-answering-the-study-questions}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Medium trustworthiness (please specify)
+\end{itemize}
+
+The study uses appropriate methods to address the research questions, but has some limitations in sampling and recruitment details. The findings can be trusted with moderate confidence.
+
+\subsubsection{Have sufficient attempts been made to justify the conclusions drawn from the findings so that the conclusions are trustworthy?}\label{have-sufficient-attempts-been-made-to-justify-the-conclusions-drawn-from-the-findings-so-that-the-conclusions-are-trustworthy}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Medium trustworthiness
+\end{itemize}
+
+The authors provide reasonable justification for their conclusions based on the data, but some conclusions may be overstated given the study limitations.
+
+\subsection{\texorpdfstring{\textbf{COHORT STUDIES}}{COHORT STUDIES}}\label{cohort-studies}
+
+This section is not applicable as this was not a cohort study.
+
+\subsection{DOES THIS REVIEW ADDRESS A CLEAR QUESTION?}\label{does-this-review-address-a-clear-question}
+
+\subsubsection{Did the review address a clearly focussed issue?}\label{did-the-review-address-a-clearly-focussed-issue}
+
+\begin{itemize}
+\tightlist
+\item
+  Was there enough information on:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The population studied
+  \item
+    The intervention given
+  \item
+    The outcomes considered
+  \end{itemize}
+\item[$\boxtimes$]
+  Yes
+\end{itemize}
+
+The study clearly focused on stereotype threat effects on working memory in college students, examining effects of gender, race, income, and multiple stigmatized identities.
+
+\subsubsection{Did the authors look for the appropriate sort of papers?}\label{did-the-authors-look-for-the-appropriate-sort-of-papers}
+
+\begin{itemize}
+\tightlist
+\item
+  The `best sort of studies' would:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Address the review's question
+  \item
+    Have an appropriate study design
+  \end{itemize}
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+This question is not applicable as this is a primary study, not a review.
+
+\subsection{ARE THE RESULTS OF THIS REVIEW VALID?}\label{are-the-results-of-this-review-valid}
+
+\subsubsection{Do you think the important, relevant studies were included?}\label{do-you-think-the-important-relevant-studies-were-included}
+
+\begin{itemize}
+\tightlist
+\item
+  Look for:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Which bibliographic databases were used
+  \item
+    Follow up from reference lists
+  \item
+    Personal contact with experts
+  \item
+    Search for unpublished as well as published studies
+  \item
+    Search for non-English language studies
+  \end{itemize}
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+This question is not applicable as this is a primary study, not a review.
+
+\subsubsection{Did the review's authors do enough to assess the quality of the included studies?}\label{did-the-reviews-authors-do-enough-to-assess-the-quality-of-the-included-studies}
+
+\begin{itemize}
+\tightlist
+\item
+  The authors need to consider the rigour of the studies they have identified. Lack of rigour may affect the studies results.
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+This question is not applicable as this is a primary study, not a review.
+
+\subsubsection{If the results of the review have been combined, was it reasonable to do so?}\label{if-the-results-of-the-review-have-been-combined-was-it-reasonable-to-do-so}
+
+\begin{itemize}
+\tightlist
+\item
+  Consider whether:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The results were similar from study to study
+  \item
+    The results of all the included studies are clearly displayed
+  \item
+    The results of the different studies are similar
+  \item
+    The reasons for any variations are discussed
+  \end{itemize}
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+This question is not applicable as this is a primary study, not a review.
+
+\subsection{WHAT ARE THE RESULTS?}\label{what-are-the-results}
+
+\subsubsection{What is the overall result of the review?}\label{what-is-the-overall-result-of-the-review}
+
+\begin{itemize}
+\tightlist
+\item
+  Consider:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If you are clear about the review's `bottom line' results
+  \item
+    What these are (numerically if appropriate)
+  \item
+    How were the results expressed (NNT, odds ratio, etc)
+  \end{itemize}
+\end{itemize}
+
+The overall results show stereotype threat effects on working memory based on gender, race, and income, with income-based effects being the strongest. Multiple minority stereotype threat effects were also observed.
+
+\subsubsection{How precise are the results?}\label{how-precise-are-the-results}
+
+\begin{itemize}
+\tightlist
+\item
+  Are the results presented with confidence intervals?
+\item[$\boxtimes$]
+  No
+\end{itemize}
+
+Confidence intervals were not reported for the results.
+
+\subsection{WILL THE RESULTS HELP LOCALLY?}\label{will-the-results-help-locally}
+
+\subsubsection{Can the results be applied to the local population?}\label{can-the-results-be-applied-to-the-local-population}
+
+\begin{itemize}
+\tightlist
+\item
+  Consider whether:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The patients covered by the review could be sufficiently different from your population to cause concern
+  \item
+    Your local setting is likely to differ much from that of the review
+  \end{itemize}
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+The applicability to local populations would depend on how similar they are to the college student sample in this study.
+
+\subsubsection{Were all important outcomes considered?}\label{were-all-important-outcomes-considered}
+
+\begin{itemize}
+\tightlist
+\item[$\boxtimes$]
+  Yes
+\end{itemize}
+
+The study considered both working memory and math performance outcomes, which are important for understanding stereotype threat effects.
+
+\subsubsection{Are the benefits worth the harms and costs?}\label{are-the-benefits-worth-the-harms-and-costs}
+
+\begin{itemize}
+\tightlist
+\item
+  Even if this is not addressed by the review, what do you think?
+\item[$\boxtimes$]
+  Can't tell
+\end{itemize}
+
+The study does not discuss potential harms or costs of the research. The benefits of understanding stereotype threat effects could potentially outweigh minimal risks to participants, but this is not explicitly addressed.
+
+\section{References}\label{references}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-tineGenderRaceIncomebased2013}
+Tine, M., \& Gotlieb, R. (2013). Gender-, race-, and income-based stereotype threat: The effects of multiple stigmatized aspects of identity on math performance and working memory function. \emph{Social Psychology of Education}, \emph{16}(3), 353--376. \url{https://doi.org/10.1007/s11218-013-9224-8}
+
+\end{CSLReferences}
+
+
+\end{document}

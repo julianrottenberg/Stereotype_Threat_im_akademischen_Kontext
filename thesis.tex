@@ -328,8 +328,8 @@ The screening process was done using the software Rayyan (Ouzzani et al., 2016).
 The total amount of papers found was 600 (\(N = 600\), \(n_{\text{EBSCOhost}} = 105\), \(n_{\text{Google Scholar}} = 48\), \(n_{\text{PSYNDEX}} = 5\), \(n_{\text{ResearchRabbit}} = 5\), \(n_{\text{Web of Science}} = 437\)). Out of these 83 were duplicates (88 were automatically detected by Rayyan, however, 5 were false positives), leaving 517 papers to be screened. During the first screening another 440 papers were excluded.
 Papers which were excluded did not fit the inclusion criteria, most prominently, they either did not focus on stereotype threat, had the wrong population (e.g., older adults), did not fit the publication type requirements, or did not measure the outcomes of interest - this was assessed using the title, keywords, and abstract. If neither the title, nor the keywords or abstract mentioned enough information to make a decision, the paper was marked as `maybe.
 An example for hypothesis 3 would be, a paper measured working memory but just referred to ``the participants'' in the abstract, without clarifying that they fit the definition of the academic context. After this first screening, 77 papers remained for the second screening.
-This second screening was done by looking into the full-text of each paper, here another 48 papers were excluded for the following reasons: wrong focus (\(n = 29\)), wrong study design (\(n = 10\)), wrong population (\(n = 7\)), wrong publication type (\(n = 2\)) - an overview of this can be found in the PRISMA flowchart (Haddaway et al., 2022) in Figure \ref{fig:prisma}.
-In the end, 29 papers were included in this review, \(n = 8\) for hypothesis 1, \(n = 9\) for hypothesis 2, and \(n = 15\) for hypothesis 3 - some were used for multiple hypotheses. Out of the 517 papers, 381 were excluded for 'wrong focus', 73 for `wrong population', 43 for `wrong study design', 13 for wrong publication type, 4 for `foreign language', and 1 for `wrong study duration' (some papers were excluded for multiple reasons). A full list of all papers found and excluded can be found in the GitHub repository.\\
+This second screening was done by looking into the full-text of each paper, here another 49 papers were excluded for the following reasons: wrong focus (\(n = 30\)), wrong study design (\(n = 10\)), wrong population (\(n = 7\)), wrong publication type (\(n = 2\)) - an overview of this can be found in the PRISMA flowchart (Haddaway et al., 2022) in Figure \ref{fig:prisma}.
+In the end, 28 papers were included in this review, \(n = 8\) for hypothesis 1, \(n = 9\) for hypothesis 2, and \(n = 14\) for hypothesis 3 - some were used for multiple hypotheses. Out of the 517 papers, 382 were excluded for 'wrong focus', 73 for `wrong population', 43 for `wrong study design', 13 for wrong publication type, 4 for `foreign language', and 1 for `wrong study duration' (some papers were excluded for multiple reasons). A full list of all papers found and excluded can be found in the GitHub repository.\\
 A template was created to summarise each paper, with two versions completed: one by the author and one by Claude AI.
 The template was a mixture of the following checklists: CASP systematic review checklist (Critical Appraisal Skills Programme, 2018), Review guidelines for extracting data and quality assessing primary studies in educational research (EPPI-Centre, 2003), Critical appraisal checklist for a systematic review (University of Glasgow, n.d.), and the Newcastle-Ottawa scale (NOS) for assessing the quality of nonrandomised studies in meta-analyses (Wells et al., 2014), which are used to describe studies and assess their quality.
 Redundant and irrelevant items were eliminated, and the remaining questions were consolidated into a single template.
@@ -356,92 +356,60 @@ The following R packages were used to create this review: R (Version 4.4.1; R Co
 
 \subsubsection{Beilock et al. (2007)}\label{beilockstereotypethreatworking2007}
 
+As Experiment 2 and 3B were not relevant to the hypotheses for this review, thus they will not be discussed further.
 In their paper, Beilock et al. (2007) focussed on stereotypes effects on working memory, specifically, which parts of working memory are affected by stereotype threat and when these effects linger on and influence performance on unrelated tasks.
 To investigate this, they focussed on maths stereotype threat, their population consisted of female college students in the United States.
 Their paper describes five experiments, all of which used a cross-sectional design.
-Experiment 1, 3 (both A and B), and Experiment 5, consisted of two groups each, with `stereotype threat' vs.~`no stereotype threat', `horizontal vs.~vertical modular arithmetic (MA) conditions', and `spatial two-back vs.~verbal two-back task', respectively, each with random allocation.
-Experiments 2 and 4 consisted of one group each.
-Since neither Experiment 2 nor 3B were relevant to the hypotheses for this review, they will not be discussed further.
-Across all experiments, participants were female undergraduate students.
-
-\paragraph{Modular Arithmetic (MA) task}\label{modular-arithmetic-ma-task}
-
-The MA task was used to measure maths performance.
+Experiment 1, 3A , and Experiment 5, consisted of two groups each, with `stereotype threat' vs.~`no stereotype threat', `horizontal vs.~vertical modular arithmetic (MA) conditions', and `spatial two-back vs.~verbal two-back task', respectively, each with random allocation.
+Experiments 4 consisted of one group.
+Across all experiments, participants were female undergraduate students.\\
+Modular Arithmetic (MA) was used to assess maths performance.
 Participants were asked to judge the validity of equations, like \(60 = 19 mod(4)\), which would result in \(false\).
 These equations were either displayed vertically or horizontally and consisted of varying difficulty, thus differed in working memory demand.
-Using this type of task allowed the researchers to measure the effect stereotype threat had on working memory.
-
-\paragraph{Two-back task}\label{two-back-task}
-
+Using this type of task allowed the researchers to measure the effect stereotype threat had on working memory.\\
+Working memory was assessed using the \emph{2}-back version of the \emph{n}-back task.
 Participants were given a stimuli and had to decide whether or not the given stimuli matched the one presented two trials before.
-The stimuli in use were a cluster of identical letters (e.g., \emph{cs}, \emph{ns}) and one of six different spatial locations in an ellipse.
-The two-back task was split into a verbal (letters) or spatial (locations) version, participants were randomly assigned to one of these versions.
-
-\paragraph{Experiment 1}\label{experiment-1}
-
-\(N = 31\) women, of equal self-reported maths skill participated in this experiment, \(n_{\text{stereotype threat}} = 14\), \(n_{\text{no stereotype threat}} = 17\).
-Firstly, participants were introduced to the MA task, and were then asked to solve 12 practice problems, these differed in demand but only consisted of horizontal problems.
-Afterwards, 24 problems were performed by each participant over two blocks, with the first one serving as a baseline and the second as the posttest.
+The two-back task was split into a verbal (letters) or spatial (locations) version, participants were randomly assigned to one of these versions.\\
+In Experiment 1, \(N = 31\) women, participated (\(n_{\text{stereotype threat}} = 14\), \(n_{\text{no stereotype threat}} = 17\)).
+Firstly, participants were introduced to the MA task, and were then asked to solve 12 practice problems (all horizontal, varying in demand).
+Afterwards, 24 problems were performed by each participant over two blocks, with the first one serving as a baseline and the second as the post-test.
 Stereotype threat manipulation was performed in between these blocks via text on a computer screen.
 An adaptation of the stereotype threat manipulation used by Aronson et al. (1999) was used by displaying the text on a computer screen.
-Maths accuracy and reaction time were measured as dependent variables, while Group (stereotype threat vs.~control), Problem working memory demand (low vs.~high), and Block (baseline vs.~posttest) functioned as independent variables.\\
+Maths accuracy and reaction time were measured as dependent variables, while Group (stereotype threat vs.~control), problem working memory demand (low vs.~high), and block (baseline vs.~posttest) functioned as independent variables - the independent variables remained across all relevant experiments, except Experiment 5.\\
 Within the stereotype threat condition \(\text{Group } \times \text{ Block } \times \text{ Problem Demand }\), \emph{F}(1,29) = 11.18, \emph{p} \textless{} .010, \(\eta^{2}_{p}\) = .280, resulted in a significant interaction effect for accuracy.
-Further, \(\text{Group } \times \text{ Block } \times \text{ Problem Demand }\), on reaction time, showed main effect of block, and problem demand; \emph{F}(1,29) = 8.33, \emph{p} \textless{} .010, \(\eta^{2}_{p}\) = .220, and \emph{F}(1,29) = 754.5, \emph{p} \textless{} .010, \(\eta^{2}_{p}\) = .960, respectively.
-Thus, individuals were able to increase their speed over time and the more demanding a problem was, the longer it took to solve it.
-A comparison of the accuracy between the baseline and posttest within the stereotype threat condition showed no difference in terms of accuracy for low-demand problems, while, for high-demand problems, a significant decrease in accuracy between the posttest (\emph{M} = 79.3\%, \emph{SE} = 4.6\%) and baseline (\emph{M} = 89.1\%, \emph{SE} = 3.8\%) was found; CI {[}81.00\% - 97.00\%{]}; \emph{d} = 0.61.\\
-Beilock et al. (2007) conclude that only high- but not low-demand problems affect working memory under stereotype threat.
-
-\paragraph{Experiment 3A}\label{experiment-3a}
-
-Here, a sample of thirty-three (\(N = 33\)) women performed, both, vertical and horizontal MA tasks.
-Similar to Experiment 1 they were introduced to the subject with a practice block, followed by a baseline block and a posttest block.
-This time, all participants received the stereotype threat manipulation in between the last two blocks but were randomly assigned to either the vertical or horizontal problem condition.
-Afterwards, they were given questionnaires to assess their thought during the stereotype threat manipulation, their perceived importance of task performance, and their state anxiety following stereotype threat.
-The independent variables consisted of Block (baseline vs.~stereotype threat), Problem working memory demand (low vs.~high), and Problem orientation (horiztonal vs.~vertical), while the dependent variables were maths problem accuracy, reaction times, and self-reported thoughts/worries.
+Further, \(\text{Group } \times \text{ Block } \times \text{ Problem Demand }\), on reaction time, showed main effect of block, and problem demand, indicating that speed increased over time, and that high-demand problems took longer to solve.
+A comparison of the accuracy between the baseline and post-test within the stereotype threat condition showed no difference in terms of accuracy for low-demand problems, while, for high-demand problems, a significant decrease in accuracy between the posttest (\emph{M} = 79.3\%, \emph{SE} = 4.6\%) and baseline (\emph{M} = 89.1\%, \emph{SE} = 3.8\%) was found; CI {[}81.00\% - 97.00\%{]}; \emph{d} = 0.61.\\
+A sample of thirty-three (\(N = 33\)) women performed, both, vertical and horizontal MA tasks, in Experiment 3A.
+Procedure was similar to Experiment 1, however, all participant received the threat manipulation and were randomly assigned to either the vertical or horizontal problem condition, followed by a manipulation check and experience questionnaire.
+Dependent variables were similar to Experiment 1, with the addition of self-reported thoughts/worries.
 Neither the perceived importance of performing well (vertical: \emph{M} = 4.67, \emph{SE} = 0.35; horizontal: \emph{M} = 5.27, \emph{SE} = 0.37) nor state anxiety differed between the groups (vertical: \emph{M} = 33.22, \emph{SE} = 1.6; horizontal: \emph{M} = 37.00, \emph{SE} = 2.7), \emph{F}(1,31) = 1.53, \emph{p} = .220.
-Thoughts/worries were split into four categories, most common were thoughts about the performance monitoring (34.9\%), followed by thoughts related about the processes involved in solving the problems (32.4\%), unrelated thoughts made up 18.3\% and, lastly, 14.5\% of the thoughts related to the stereotype threat manipulation.
-Again, no significant difference between the groups was found (Categories 1, 3, and 4: \emph{F} \textless{} 1; Category 2: \emph{F}(1,31) = 2.17, \emph{p} = .150.)\\
+Thoughts/worries were split into four categories, most common were thoughts about the performance monitoring (34.9\%), followed by thoughts related about the processes involved in solving the problems (32.4\%), unrelated thoughts made up 18.3\% and, lastly, 14.5\% of the thoughts related to the stereotype threat manipulation, no significant differences between the groups were found.
 For the MA problems, a three-way interaction between the independent variables was found, \emph{F}(1,31) = 4.12, \emph{p} = .050, \(\eta^{2}_{p}\) = .120.\\
-Similar to Experiment 1, a significant \(\text{Block } \times \text{Problem Demand }\) interaction was found but only for horizontal problems, \emph{F}(1,14) = 7.70, \emph{p} \textless{} .020, \(\eta^{2}_{p}\) = .360.
+Similar to Experiment 1, a significant \(\text{Block } \times \text{Problem Demand }\) interaction was found but only for horizontal problems.
 Accuracy suffered significantly from the baseline (\emph{M} = 91.7\%, \emph{SE} = 3.6\%) to the stereotype threat (\emph{M} = 81.2\%, SE = 4.6\%) block; CI {[}84.00\% - 99.30\%{]}; \emph{d} = 0.64.
 The three-way ANOVA for, RTs revealed that high-demand problems were slower, compared to low-demand problems; vertical: \emph{F}(1,17) = 306.32, \emph{p} \textless{} .010, \(\eta^{2}_{p}\) = .950; horizontal: \emph{F}(1,14) = 11.04, \emph{p} \textless{} .010, \(\eta^{2}_{p}\) = .440.
 This effect was not significant for horizontal problems and revealed a main effect for vertical problems.\\
-It is concluded that low-demand problems do not suffer under stereotype threat, however, the working memory is impaired for high-demand problems resulting in a decrease in accuracy (only for horizontal problems) and an increase in reaction time.
-
-\paragraph{Experiment 4}\label{experiment-4}
-
-All thirty (\(N = 30\)) women were tasked to solve horizontal and vertical MA under stereotype threat.
+In Experiment 4, thirty (\(N = 30\)) women were tasked to solve horizontal and vertical MA under stereotype threat.
 Procedure was similar to Experiment 3A, albeit, with a bigger practice block, and the repetition of some problems.
-The independent variables consisted of Block (baseline vs.~stereotype threat), Problem Repetition (no repeat vs.~multiple repeat), and Problem Working Memory demand (low vs.~high), while the dependent variables did not differ from Experiment 1.
-The significant \(\text{Block } \times \text{ Problem Repetition } \times\) \(\text{ Problem Working Memory demand }\) interaction, \emph{F}(1, 29) = 6.13, \emph{p} \textless{} .020, \(\eta^{2}_{p}\) = .170, was further analysed by differentiating between multi- and no = repeat problems.\\
+The dependent variables did not differ from Experiment 1.
+The significant \(\text{Block } \times \text{ Problem Repetition } \times\) \(\text{ Problem Working Memory demand }\) interaction, \emph{F}(1, 29) = 6.13, \emph{p} \textless{} .020, \(\eta^{2}_{p}\) = .170, was further analysed by differentiating between multi- and no-repeat problems.\\
 For the multi-repeat problems no significant interaction was to be found (\emph{F} \textless{} 1), meanwhile a significant effect was found for the no-repeat problems, \emph{F}(1,29) = 11.11, \emph{p} \textless{} 0.01, \(\eta^{2}_{p}\) = .280.
 While the accuracy, again, significantly decreased from the baseline (\emph{M} = 65.00\%, \emph{SE} = 3.9\%) to the stereotype threat block (\emph{M} = 65.00\%, \emph{SE} = 5.9\%; CI {[}52.80\% - 77.20\%{]}; \emph{d} = 0.70) in high-demand problems, within the no-repeat condition, no significant effect was found for the low-demand problems (baseline: \emph{M} = 95.00\%, \emph{SE} = 1.50\%, stereotype threat: \emph{M} = 94.80\%, \emph{SE} = 2.80\%).
 For the RTs, problem demand, \emph{F}(1,26) = 144.14, \emph{p} \textless{} .010, \(\eta^{2}_{p}\) = .850, influenced the RTs more than problem repetition,\emph{F}(1,26) = 139.94, \emph{p} \textless{} .010, \(\eta^{2}_{p}\) = .840, both showing main effects.\\
-Based on these results, the authors conclude that practised, horizontal problems do not rely on working memory heavily, evidenced by them not being affected by stereotype threat.
-The opposite is true for no-repeat problems, which did suffer under stereotype threat, given that they were of high verbal working memory demand.
-
-\paragraph{Experiment 5}\label{experiment-5}
-
-The last experiment was preceded by a pilot test to establish whether the two-back tasks were of equal difficulty.
+The last experiment (Experiment 5) was preceded by a pilot test to establish whether the two-back tasks were of equal difficulty.
 This pilot test was done with \(N = 27\) women, without any stereotype threat manipulation, the procedure is similar to the main experiment, thus will not be discussed further.\\
 The main experiment consisted of thirty-three (\(N = 33\)) women.
-Upon arrival participants completed a two-back practise task, after changing computers, they practised the MA task.
-Afterwards, the stereotype threat manipulation was performed, followed by twenty high-demand horizontal problems.
+Upon arrival participants completed a two-back practise task, after changing computers, they practised the MA task, afterwards, the stereotype threat manipulation was performed, followed by twenty high-demand horizontal problems.
 In the next step, participants went back to the first computer to complete 100 trails of the same version of the two-back task that was practised before.\\
 Condition (stereotype threat vs.~control; control being the pilot test) and Two-back task type (verbal vs.~spatial) functioned as independent variables, while the dependent variables were accuracy and reaction time, each for, both, the maths problem and the two-back task.\\
-Comparing the MA results with the previous experiments results for the same type of task (horizontal, high-demand), showed that the stereotype threat significantly inhibited performance (\emph{M} = 82.20\%, \emph{SE} = 2.00\%), while the same cannot be said for the no-threat conditions (\emph{M} = 91.50\%, \emph{SE} = 1.50\%).\\
-For the two-back task, RTs between spatial (\emph{M} = 895 ms, \emph{SE} = 49 ms) and verbal (\emph{M} = 1087 ms, \emph{SE} = 59 ms) task differed significantly, \emph{F}(1,31) = 6.133, \emph{p} \textless{} .020, \(\eta^{2}_{p}\) = .170 while the difference in accuracy did not reach significance (verbal: \emph{M} = 87.30\%, \emph{SE} = 1.70\%; spatial: \emph{M} = 89.00\%, \emph{SE} = 1.50\%, \emph{F} \textless{} 1).
+Comparing the MA results with the previous experiments results for the same type of task (horizontal, high-demand), showed that the stereotype threat significantly inhibited performance while the same cannot be said for the no-threat conditions.\\
+For the two-back task, RTs between spatial and verbal task differed significantly, \emph{F}(1,31) = 6.133, \emph{p} \textless{} .020, \(\eta^{2}_{p}\) = .170 while the difference in accuracy did not reach significance.
 Comparing the performance of the stereotype threat condition with the control (pilot test), showed an interaction between \(\text{Task } \times \text{ Experiment }\) for RT, \emph{F}(1,56) = 4.38, \emph{p} \textless{} .050, \(\eta^{2}_{p}\) = .070.
 Without stereotype threat, no significant differences in performance between thee verbal and spatial two-back tasks were found, however, under stereotype threat the verbal task was significantly slower than the spatial task.\\
-Contrary to the previous Experiments, Experiment 5 additionally aimed to investigate whether stereotype threat has a spill over effect on unrelated tasks.
+Contrary to the previous Experiments, Experiment 5 additionally aimed to investigate whether stereotype threat has a spill over effect on unrelated tasks, which was found to be true.
 Since these results are not relevant to the hypotheses of this review, they will not be discussed in detail.
-Using multiple regression analyses the authors found that the stereotype threat did indeed spill over to the two-back task, however, only for the verbal task.\\
-According to the authors, the results of the different Experiments in this paper, show stereotype threats effect on working memory, they mention that ``especially the phonological aspects'' are affected.
-Stereotype threat's effect onto task-related worries as well as thoughts serve as further indications for this conclusion.
-Further, it is concluded that stereotype threat likely affects multiple aspects of working memory.
-A combination of phonological loop and central executive functioning is suggested to be affected by stereotype threat.\\
 H1 is partially confirmed by this paper, central executive functioning is assumed to involve the prefrontal cortex, however, this is not the only area affected.
-The phonological loop is associated with BA4, BA49, and (approximately) BA44 and BA 45.
+The phonological loop is associated with BA4, BA49, and (approximately) BA44 and BA45.
 
 \subsubsection{Dunst et al. (2013)}\label{dunstsexdifferencesneural2013}
 
@@ -451,8 +419,8 @@ Task-related-power (TRP) changes were measured using an EEG, specifically the up
 The final sample consisted of 58 participants (\(N = 58\); 26 girls, 32 boys).
 Participants were randomly assigned to either the stereotype threat or control conditions, additionally, they were IQ-matched between experimental groups.\\
 Firstly, participants were set up with the EEG, 33 electrodes were placed, following the international 10-20 system.
-Afterwards, the stereotype threat manipulation was performed using a message claiming boys to be better on the subsequent task, in the no-threat condition the message was neutral, stating that sex differences did not exist.
-The experimental task followed and consisted of Shepard-Metzler figures, here, figures were presented in a 3D presentation mode, participants had to decide whether the figures were identical or mirroed, to do so, the figures had to be rotated mentally.
+Afterwards, the stereotype threat manipulation was performed using a message claiming boys to be better on the subsequent task.
+The experimental task followed and consisted of Shepard-Metzler figures, here, figures were presented in a 3D presentation mode, participants had to decide whether the figures were identical or mirrored, to do so, the figures had to be rotated mentally.
 Previous studies successfully used a similar manipulation in the past.\\
 None of the behavioural analyses were significant, since they do not relate to this reviews hypotheses, they will not be discussed further.
 The TRP changes were analysed, a main effect for Stereotype Exposure (\emph{F}(1,54) = 3.93, \emph{p} = .050, \(\text{partial }\eta^{2}\) = 0.07) was found using a four-way ANOVA, with the between-subjects factors of Stereotype Exposure, and Sex and the within-subjects factors of Hemisphere and Area.
@@ -471,14 +439,12 @@ The experiment began with preparations for the EEG recording, followed by a rest
 Afterwards, participants tried to solve a probabilistic learning task which was manipulated to evoke similar amounts of correct or wrong feedback.
 For the stereotype manipulation, participants were told, more intelligent individuals were able to learn the relations in a shorter time frame, in the probabilistic learning task, thus the task was able to predict their intelligence.
 In between the stereotype threat manipulation and the probabilistic learning task, participants filled out a demographic questionnaire which included a question about their race, to further manipulate stereotype threat.
-After finishing the task, participants completed a error estimates, as well as self-doubt questionnaires, and a manipulation check.\\
+After finishing the task, participants completed questionnaires, including a manipulation check.
 For the EEG, 32 tin electrodes were placed on the scalp using a stretch-lycra cap.
 Besides ethnicity (Minority vs.~White), the independent variables consisted of the phase-locking between the left lateral parietal cortex (LLPC) and precuneus/posterior cingulate cortex (P/PCC), and the phase-locking between LLPC and the medial prefrontal cortex (MPFC), each at the frequency bands alpha (8-12 Hz) and theta (4-8 Hz), these will also be referred to as DMN phase-locking, if the need to differentiate between them is not given.
-In short, ethnicity, LLPC-P/PCC phase-locking (alpha and theta), and LLPC-MPFC phase-locking (alpha and theta) formed the independent variables.
-Error estimates and self-doubt were used as dependent variables.\\
-Minorities and Whites performance on learning rates, error overestimation, self-doubt were similar, this was analysed using a independent samples \emph{t}-test on learning performance, error estimates, doubt, and stereotype threat manipulation check (all \emph{p}s \textgreater{} .050).
-However, the stereotype threat manipulation was successful, as indicated by the heightened assumption minorities (\emph{M} = 3.08, \emph{SD} = 1.11) elicited about the researchers expectations about their performance, \emph{t}(86) = -2.48, \emph{p} \textless{} .020, compared to Whites (\emph{M} = 3.60, \emph{SD} = 0.77).
-Despite not being significant (\emph{p} = .200), minorities overestimated their errors, showing greater self-doubt, compared to Whites.
+Error estimates and self-doubt were used as dependent variables (measured with questionnaires).\\
+Minorities and Whites performance on learning rates, error overestimation, self-doubt were similar.
+The stereotype threat manipulation was successful.
 Using regression models, DMN phase-locking during the learning phase was inspected, resulting in no significant effects (\emph{p}s \textgreater{} .500).
 The relationship between LLPC-P/PCC phase-locking in the theta band and error estimations showed a tendency to overestimate errors was not related to ethnicity (\emph{p} = .957), a main effect was found for LLPC-P/PCC theta phase locking (\emph{b} = -195.29, \(\beta\) = -0.37, \emph{SE} = 81.13, \emph{p} = .021), which was then moderated by a significant interaction (\emph{b} = 350.13, \(\beta\) = 0.37, \emph{SE} = 147.26, \emph{p} = .021).
 No significant relationships were found between error estimation and LLPC-P/PCC phase locking, in either alpha or theta bands, for neither ethnic group (\emph{p}s \textgreater{} .300).
@@ -492,22 +458,19 @@ H1 is supported by this paper.
 
 \subsubsection{Forbes et al. (2008)}\label{forbesroledevaluingdiscounting2008}
 
-Forbes et al. (2008) investigated psychological disengagement among minority students under stereotype threat, using cognitive neuroscience methodology.
-It is hypothesized that error-related negativity (ERN) displays a greater amplitude under stereotype threat and, that greater Error Positivity (Pe) amplitudes to errors would be predicted under stereotype threat.\\
+Forbes et al. (2008) hypothesised that error-related negativity (ERN) displays a greater amplitude under stereotype threat and, that greater Error Positivity (Pe) amplitudes to errors would be predicted under stereotype threat.\\
 The study design was cross-sectional with two groups, diagnostic of intelligence (DIQ; stereotype threat) and control (no stereotype threat).
 These also made up the independent variables, alongside psychological disengagement (devaluing academics/discounting intelligence tests). ERN and Pe, as well as task performance measurements (number of errors, post-error slowing reaction times), and self-reported measurements (perceived task difficulty, self-doubt) functioned as dependent variables.\\
-The sample consisted of 57 (\(N = 57\)) minority undergraduates, who were randomly allocated to either the DIQ or control group.
+The sample consisted of 57 (\(N = 57\)) minority undergraduates, who were randomly allocated to either condition.
 Beginning with the EEG setup, participants completed a baseline version of the Eriksen-Flankers task, followed by the stereotype threat manipulation, and a second round of the flankers task.
 Once finished with the second task, participants filled out a final questionnaire.
 Stereotype threat manipulation was done by describing the flankers task as a predictive measure of intelligence (DIQ), and the goal of the study, as an investigation into the differences of intelligence between different groups.
-The task was described as a measure of pattern recognition for the control group.
 Participants in the DIQ group also completed a demographics questionnaire including their race/ethnicity.\\
-In the Eriksen-Flankers task, participants must quickly identify a target stimulus while ignoring distractors, which are either congruent or incongruent with the target.
-It is a measure of attention and inhibitory control.
+In the Eriksen-Flankers task, participants must quickly identify a target stimulus while ignoring distractors, which are either congruent or incongruent with the target, it is a measure of attention and inhibitory control.
 For the EEG measure, 32 tin electrodes were placed on the scalp using a stretch-lycra cap.
 Error-specific activity was determined by subtracting the average waveforms of correct responses from error responses.
-The ERN was measured as the peak negative defelction at Fz (frontal midline electrode) between 50 and 130 ms after the response, while the Pe was measured as the peak positive deflection at site Pz (midline parietal electrode) between 200 and 500 ms after the error, based on these difference waveforms.
-The final questionnaire asked the participant to assess how doubtful, foolish, inferior, insecure and unsure they felt while completing the task (on a 7-point scale).\\
+The ERN was measured as the peak negative deflection at Fz (frontal midline electrode) between 50 and 130 ms after the response, while the Pe was measured as the peak positive deflection at site Pz (midline parietal electrode) between 200 and 500 ms after the error, based on these difference waveforms.
+The final questionnaire asked the participant to assess their experience in the study (on a 7-point scale).\\
 Through repeated measures analysis on premanipulation early stage amplitudes, a general ERN pattern was identified, considering site (Fz, Cz {[}central midline electrode{]}, Pz) and accuracy (correct, error), main effects for site and accuracy were found, \(F_{site}\)(1,40) = 42.34, \emph{p} \textless{} .001; \(F_{accuracy}\)(1,40) = 71.43, \emph{p} \textless{} .001.
 At Fz (\(\eta^{2}\) = 0.53) and Cz (\(\eta^{2}\) = 0.66), ERN differences between correct and error trials were most prominent, compared to Pz (\(\eta^{2}\) = 0.47, \emph{F}(1,40) = 3.00, \emph{p} = .090).
 Analysing premanipulation later stage amplitudes, using repeated measures analysis, Pe was established, again, main effects were found for site and accuracy, \(F_{site}\)(1,40) = 55.08, \emph{p} \textless{} .001; \(F_{accuracy}\)(1,40) = 77.68, \emph{p} \textless{} .001, with a notable interaction, \emph{F}(1,40) = 13.29, \emph{p} \textless{} .001.
@@ -520,14 +483,12 @@ Further, in the pre-threat task, discounting was able to predict lower Pe amplit
 If participants were low in discounting (\(\beta_{Low}\) = -0.39, \emph{p} \textless{} 0.04), smaller Pe amplitudes were found, compared to control participants, while linking the task to intelligence.
 In the opposite case, i.e.~high discounting (\(\beta_{High}\) = 0.20, \emph{p} = .230), participants showed larger Pe amplitudes.
 Testing devaluing as a moderator of diagnosticity on Pe amplitudes, only a devaluing main effect, \(\beta\) = -0.27, \emph{p} \textless{} .030, was found, while other effects were not significant (\emph{p}s \textgreater{} .100).\\
-Since the results on error analyses, posterror slowing, and self-reported difficulty as well as self-doubt are not relevant to the hypotheses of this review, they will not be discussed further.
-One exception is part of the posterror slowing analyses, which indicated that, when paired with effects on ERN and errors, minorities valuing academics, tended to make fewer errors and showed less posterror slowing.
+Post-error slowing analyses indicated that, when paired with effects on ERN and errors, minorities valuing academics, tended to make fewer errors and showed less post-error slowing.
 H1 is partially being confirmed by this paper, as neural activation was found due to stereotype threat, however, the results for the affected areas are more vague, being linked to the anterior cingulate of the prefrontal cortex.
 
 \subsubsection{Jończyk et al. (2022)}\label{jonczykhowstereotypethreat2022}
 
-In their study Jończyk et al. (2022) used EEG measurements in combination with behavioural performance tasks to investigate stereotype threats effects on creative thinking.
-The researchers hypothesise, that a measurable decrease in alpha can be expected under stereotype threat, if it affects creative in a negative way.
+In their study Jończyk et al. (2022) hypothesise, that a measurable decrease in alpha can be expected under stereotype threat, if it affects creative in a negative way.
 On the other hand, an increase in alpha power in combination with increased creative thinking, can be expected if stereotype threat does not discourage but rather motivates individuals.
 Additionally, a positive correlation is expected between elevated creative thinking and heightened alpha power.\\
 The study design was cross-sectional with one group, thus every participant received the stereotype threat manipulation.
@@ -535,16 +496,13 @@ Measurements were taken before and after threat manipulation, forming the indepe
 Alpha power was measured using an elastic cap with 31 active Ag/AgCl (silver/silver chloride) electrodes.
 Task related power (TRP) was calculated in the lower (8-10 Hz) and upper (10-12 Hz) alpha bands before and after the stereotype threat manipulation.\\
 The final sample consisted of twenty-three (\(N = 23\)) female undergraduates from an American university.
-Beginning with a demographics questionnaire, participants were then prepared for the EEG during which they completed further questionnaires.
-A resting-state EEG was recorded followed by practice trails of the Alternative Uses task (AUT) and Utopian Situations task (UST).
+The experiment began with a demographiscs questionniare, followed by the EEG setup and a resting-state EEG recording.
+After which parctise trails of the Alterantive Uses (AUT) and Utopian Situations task (UST) were completed.
 While in the AUT participants have to come up with new or unorthodox uses for everyday objects, in the UST were given scenarios and had to come up with creative solutions.
-To measure originality, participants answers were evaluated, on a 5-point scale, by five independent and trained judges; creative fluency was measured by the number of answers given.
-Following the practice, the first block of experimental tasks for the AUT and UST were completed.
-Stereotype threat was manipulated after one block of AUT and UST, using a text modelled after previous studies.
+Following the practice, the first block of experimental tasks for the AUT and UST was done, stereotype threat was manipulated after one block of AUT and UST, using a text modelled after previous studies.
 Here, the participants were told that women usually perform worse on the tasks, and thus, the participants should try their best on the following block.
-After the manipulation, the second block of AUT and UST were completed, followed by another resting-state EEG recording.
+Following the manipulation, the second block of AUT and UST was completed as well as another resting-state measure.
 Finally, participants completed the Stereotype Vulnerability Scale (SVS) as well as the self-efficacy scale and the Big Five Inventory.\\
-Since the results of originality and fluency are not the primary focus of this reviews hypothesis, they will not be discussed in detail, same goes for the self-efficacy, SVS and Big Five Inventory results.
 Neither idea fluency nor idea originality did differ significantly between pre- and post-threat measures, also, no significant correlations were found between fluency/originality and self-efficacy, SVS, or Big Five Inventory.
 EEG results were calculated using a 2 (pre- vs.~post-threat; i.e., no stereotype threat vs.~stereotype threat) \(\times\) 2 (hemisphere: left vs.~right) \(\times\) 6 (area: anteriofrontal, fronto-central, centrotemporal, centro-parietal, parietal, parieto-occipital) \(\times\) 2 (block half: first half vs.~second half) within-subject repeated measures ANOVA.
 A main effect of threat was found in the lower alpha range (8-10 Hz), \emph{F}(1,21) = 19.41, \emph{p} \textless{} .001, \(\hat{\eta}^{2}_{G}\) = 0.05, 90\% CI {[}0.00, 0.26{]}, with greater alpha Event-Related Synchronisation (ERS) after the administration of stereotype threat (\(M_{\text{post-threat}}\) = 10.00, 95\% CI {[}-4.38, 24.39{]}).
@@ -555,7 +513,6 @@ The area-by-hemisphere interaction also indicated greater ERS in the right hemis
 Furthermore, a significant threat-by-block interaction suggested increased alpha power immediately after the threat, \emph{F}(1,21) = 4.34, \emph{p} = .050, \(\hat{\eta}^{2}_{G}\) = 0.01, 90\% CI {[}0.00, 0.16{]}.
 Put together, these results suggest that stereotype threat leads to increases in neural activity, particularly the regions associated with executive function and attention.
 Additional correlation analyses revealed no significant relationship between ideation fluency and alpha power, in neither the lower or upper range.
-Similar findings were reported between idea originality and alpha power in both ranges (upper and lower bands).
 H1 is partially supported by this paper, while stereotype threat did result in increased neural activity, the paper did not explicitly investigate stereotype effects on any of the mentioned areas. However, parts that are associated with the DMN were affected. Furthermore, performance was not found to be inhibited to a significant degree under stereotype threat.
 
 \subsubsection{Krendl et al. (2008)}\label{krendlnegativeconsequencesthreat2008}
@@ -569,19 +526,17 @@ First of a baseline measurement was taking using latter trails, followed by a ne
 Afterwards, participants had to solve 50 difficult maths problems (first set) using basic arithmetic (e.g., 'Is \(3 \times 89+9-7^2 = 29\)?), or modular arithmetic (e.g., \(50 = 29(\mod{4})\)).
 Stereotype threat was manipulated after the first set, by telling participants that the research had shown gender differences in maths ability, thus, the following task was to measure ``maths attitudes'' - this manipulation has also been used in previous studies.
 Additionally, participants in the threat condition completed another IAT, this time regarding maths/arts.
-Meanwhile, in the control condition, were told that the following task would assess their ``political attitudes'', they completed a liberal/conservative IAT.
 After the second IAT, participants completed another set (second set) of maths problems, all while in the scanner.\\
 Neural activation patterns and maths performance (measured by accuracy i.e., amount of correct maths items; reaction time on maths problems) were used as dependent variables, stereotype threat condition (threat vs.~control) and time of measurements (Time 1: pre-manipulation vs.~Time 2: post-manipulation) functioned as independent variables.
-An ANOVA on performance, using time (Time 1 vs.~Time 2) as a within-subjects variables and condition (threat vs.~control) as a between-subjects variable, revealed a significant interaction, \emph{F}(1,26) = 11.41, \emph{p} \textless{} .005, \(\eta^{2}_{p}\) = .310, however, no main effect of either time or condition.
-Further t-tests showed that individuals under stereotype threat performed slightly worse over time, \emph{t}(13) = 1.98, \emph{p} = .070), while the opposite was true for the control group (\emph{t}(13) = 2.81, \emph{p} \textless{} .020), the latter showing a significant improvement.
+For performance, a significant condition \(\times\) time interaction was found, \emph{F}(1,26) = 11.41, \emph{p} \textless{} .005, \(\eta^{2}_{p}\) = .310, however, no main effect of either time or condition.
+Individuals under stereotype threat performed slightly worse over time, \emph{t}(13) = 1.98, \emph{p} = .070), while the opposite was true for the control group, showing a significant improvement.
 Using a mixed-model ANOVA on reaction times to analyse performance, a main effect of time, \emph{F}(1,26) = 6.21, \emph{p} \textless{} .020, \(\eta^{2}_{p}\) = .190, but not condition, \(F < 1\), was found, neither was an interaction, \emph{F}(1,26) = 1.21, \emph{p} = .280.
-The results of the fMRI analyses revealed distinct neural activation patterns between control and threat conditions, during the second set of maths problems.
 While increased activation was found in several left-lateralized regions, including the inferior prefrontal cortex (Brodmann area, BA 47), the left inferior parietal cortex (BA 40), and the bilateral angular gyrus (BA 39) for the control group, the threatened group showed heightened activity in the ventral anterior cingulate cortex (vACC; BA 32/10) during the second test.
 To further inspect these regions-of-interest (ROIs), a ANOVA, for each ROI, was conducted, using 2 (condition) \(\times\) 2 (time) as factors.
-These ANOVAs identified significant interactions for BA 47, \emph{F}(1,26) = 7.35, \emph{p} \textless{} .020, and a trend for BA 40, \emph{F}(1,26) = 2.93, \emph{p} \textless{} .100.
-Over time participants under threat did not show the same increased activation, as control participants did, for BA 47, BA 40, and BA 39, which resulted in the two-way interactions.
+These ANOVAs identified significant interactions for BA47, \emph{F}(1,26) = 7.35, \emph{p} \textless{} .020, and a trend for BA40, \emph{F}(1,26) = 2.93, \emph{p} \textless{} .100.
+Over time participants under threat did not show the same increased activation, as control participants did, for BA47, BA40, and BA39, which resulted in the two-way interactions.
 However, threatened participants did show increased vACC activation over time, \emph{t}(13) = 5.64, \emph{p} \textless{} .001, compared to controls, resulting in a significant interaction, \emph{F}(1,26) = 5.97, \emph{p} = .020.
-A significant three-way interaction was found for BA 47, \emph{F}(1,26) = 13.94, \emph{p} \textless{} .005, left BA 40, \emph{F}(1,26) = 10.99, \emph{p} \textless{} .005, left BA 39 \emph{F}(1,26) = 11.31, \emph{p} \textless{} .005, and right BA 39, \emph{F}(1,26) = 13.39, \emph{p} \textless{} .005, when using a 2 \(\times\) 2 \(\times\) 2 ANOVA (time; condition; region: vACC vs.~each cognitive region).
+A significant three-way interaction was found for BA47, \emph{F}(1,26) = 13.94, \emph{p} \textless{} .005, left BA 40, \emph{F}(1,26) = 10.99, \emph{p} \textless{} .005, left BA 39 \emph{F}(1,26) = 11.31, \emph{p} \textless{} .005, and right BA39, \emph{F}(1,26) = 13.39, \emph{p} \textless{} .005, when using a 2 \(\times\) 2 \(\times\) 2 ANOVA (time; condition; region: vACC vs.~each cognitive region).
 Double dissociation is indicated by these results; cognitive regions (left inferior frontal, left parietal, and bilateral angular gyrus) showed increased activity in controls but not threatened participants, however, heightened activation, for threatened individuals, but not controls, was found in the affective region (vACC).
 Regarding H1, neural activation across different brain areas and networks, was found in this study, furthermore, heightened activation of vACC, which is part of the DMN, further support it.
 However, BA47 is part of the prefrontal cortex and BA40, as well as BA39 are part of the DMN, all three areas only showed increased activation in the control group, not the threatened group, thus more evidence against H1 is found in this paper.
@@ -589,8 +544,7 @@ These findings do point out a significant flaw in H1, more on that in the discus
 
 \subsubsection{Mangels et al. (2012)}\label{mangelsemotionblockspath2012}
 
-Using EEG measurements, Mangels et al. (2012) investigated emotional responses to negative feedback and learning for females under maths stereotype threat.
-Analysing three different event-related potentials (ERPs), the researchers hypothesised that the anterior P3 (P3a) and medial frontal feedback-related negativity (FRN) would indicate initial responses to the positivity or negativity of feedback under stereotype threat.
+Analysing three different event-related potentials (ERPs), Mangels et al. (2012) hypothesised that the anterior P3 (P3a) and medial frontal feedback-related negativity (FRN) would indicate initial responses to the positivity or negativity of feedback under stereotype threat.
 Furthermore, how emotional arousal is managed will be reflected in the posteriorly-maximal late positive potential (LPP).
 The study design was prospective, stretching over three days.
 Sixty-eight (\(N = 68\)) participants were included in the final sample, 36 of which in the non-threat condition, and the remaining 32 in the stereotype threat condition.
@@ -603,20 +557,16 @@ The maths task consisted of multiple-choice Graduate Record Examination (GRE) ma
 Feedback was provided after each problem, further, participants were able to use an interactive maths tutor to explain the correct solution - this tutor was only present on day 2.
 Following previous studies, stereotype threat was manipulated in a similar way, instructions were displayed on the screen, while simultaneously being read out loud by a male voice.
 Within these instructions, participants in the stereotype threat condition were told that maths intelligence and ability were to be tested and compared with others in the following task, additionally participants were asked to indicate their gender.
-Contrary to this, participants in the control condition were told that the task would asses problem-solving abilities, and that comparisons would not be made.
 To record the EEG, 64 Ag/AgCl electrodes were placed on the scalp.
 Stereotype threat vs.~no stereotype threat formed the independent variable, maths performance (first-test vs.~retest accuracy), ERP responses to feedback (P3a, FRN, LPP), use of the tutor (proportion of tutor uses, i.e., how often the tutor was used out of the possible uses vs.~depth of exploration, i.e., the proportion of clicks and steps taken in the tutor, out of all the possible tutor clicks), and learning success (error correction on retest) were used as dependent variables.
 Maths SAT scores were used as a control variable, while analysing ERPs and retest performance another control variable was used, first-test performance.\\
 While a significant difference was not to be found under stereotype threat between better and poorer learners, regarding maths identification, better learners in the no-threat condition reported slightly higher maths identification (\emph{p} \textless{} .090).
-Under stereotype threat, individuals with higher maths identification suffered more, while better learners under stereotype threat showed significantly lower maths identification, compared to the control group (\emph{p} \textless{} .040).
-These results explain the significant interaction between stereotype threat and maths identification, \emph{F}(1,64) = 3.90, \emph{p} \textless{} .050.
+A significant interaction between stereotype threat and maths identification was found, \emph{F}(1,64) = 3.90, \emph{p} \textless{} .050.
 The stereotype threat condition performed worse on the initial maths test, resulting in a main effect of stereotype threat, \emph{F}(1,64) = 4.30, \emph{p} \textless{} .050.
-No effect was found of stereotype threat on either overall retest performance, or error correction, \emph{p}s \textgreater{} .800.
+No effect was found of stereotype threat on either overall retest performance, or error correction.
 ERP analyses revealed significant deviations from baseline (correct feedback) for FRN, \emph{t}(78) = -2.79, \emph{p} \textless{} .010, and P3a, \emph{t}(78) = 2.30, \emph{p} \textless{} .050, these were not significantly influenced by stereotype threat or learning success, \emph{p}s \textgreater{} .300.
 While LPP and learning success were closely linked in both conditions, this was effect was more pronounced in the stereotype threat condition.
 Significant differences were found between better and poorer learners on LPP, resulting in a main effect of learning, \emph{F}(1,63) = 4.10, \emph{p} \textless{} .050.
-Since the results on tutor use and depth of exploration are not relevant to the hypotheses of this review, they will not be detailed; although analyses showed no difference on tutor depth of exploration between conditions, they also suggest that, under stereotype threat, better learners extracted more information from the tutor than poorer learners.
-Using structural equation modelling of retest success (SEM), emotional and cognitive interactions that influenced learning under stereotype threat, were explored.
 Emotional responses to negative feedback significantly impacted learning, further, disengagement from tutor exploration was found to a higher degree in participants who showed greater initial detection of negative feedback, this was indicated using differences in FRN.
 If participants had trouble to regulate their attention and arousal in response to negative feedback, they were less likely to benefit from the tutor, this was indicated by differences in LPP.
 Relating these results to H1, only neural activation is supported by this paper, as the results of the affected areas are more vague, partially due to the ERPs not being significantly influenced by stereotype threat, and partially because it is not possible to link LPP, FRN, and P3a to the suggested brain areas/networks, if so, only to a small degree.
@@ -625,18 +575,16 @@ Relating these results to H1, only neural activation is supported by this paper,
 
 Wu and Zhao (2021) looked into the effects of maths stereotype threat using resting-state fMRI (RS-fMRI) and degree centrality (DC) analysis.
 While DC is a method to analyse the strength and connectivity of nodes inside a network, RSDC is a method to analyse the connectivity (i.e., strength and amount of connections) of different regions (nodes) in the brain during its resting state.
-The researchers hypothesised that under stereotype threat, degree centrality of the hippocampus would be reduced, while the degree centrality of regions associated with social emotion regulation as well as self-memory related regions would be increased.\\
-Forty-eight female undergraduates, from a Chinese university, were randomly assigned to either the stereotype threat or control condition, forming the independent variable.
-RSDC of different brain regions and the manipulation check (MC) score were used as dependent variables.\\
+The researchers hypothesised that under stereotype threat, DC of the hippocampus would be reduced, while the DC of regions associated with social emotion regulation as well as self-memory related regions would be increased.\\
+Forty-eight female undergraduates, from a Chinese university, were randomly assigned to either the stereotype threat or control condition, forming the independent variable, RSDC of different brain regions were used as dependent variables.\\
 Upon arrival, participants got instructions and were then prepared for the fMRI scan.
 Inside the scanner the RS-fMRI pre-test was recorded, followed by the stereotype threat manipulation.
 Afterwards, another resting period, while examples of the upcoming maths problems were presented, and the post-test RS-fMRI scanning was done.
-Finally, participants were told to complete the MC inside the scanner as well as the maths problems\footnote{The description of hte procedure (and later on the conclusion) is very ambiguous, thus, it is unclear whether the participant actually completed the maths problems at all.}\\
+Finally, participants were told to complete the MC inside the scanner as well as the maths problems\footnote{The description of the procedure (and later on the conclusion) is very ambiguous, thus, it is unclear whether the participant actually completed the maths problems at all.}\\
 Stereotype threat manipulation was done by claiming that women are inferior at maths across the world, meanwhile, the control group read a text about mountain peaks.
 A three maths problem test was used to measure maths performance.
 Here, participants were asked to solve maths problems, in which out of three numbers they had to calculate whether the last one was dividable from the difference of the first two.
-The manipulation check was done using the participants agreement with a statement about the experimenter's expectations of their maths performance, on a 7-point scale.\\
-The results of the manipulation check indicate that the manipulation was successful, participants under threat scored significantly higher than the control group, \emph{t}(46) = 2.46, \emph{p} \textless{} .002; \(M_{\text{ST}}\) = 4.52, \(SD_{\text{ST}}\) = 1.58; \(M_{\text{C}}\) = 3.47, \(SD_{\text{C}}\) = 1.31.
+The results of the manipulation check indicate that the manipulation was successful,
 Significant main effects were found for the hippocampus, middle cingulate gyrus (MCG), right cerebellum, and left precentral gyrus (PCG), using a 2 (test: pre- vs post-test) \(\times\) 2 (condition: stereotype threat vs.~control) mixed-effect analysis for the binary graph.
 However, out of these MCG had increased RSDC \emph{z}-values under stereotype threat, compared to the control, \emph{F}(1,45) = 4.88, \emph{p} = .032.
 Further, an interaction was found to be significant between test and condition in the left cerebellum anterior lobe, left hippocampus, left precuneus, and left middle occipital gyrus (MOC).
@@ -656,39 +604,31 @@ H1 is partially supported by this paper, increases in the DMN (associated areas)
 
 \subsubsection{Guardabassi and Tomasetto (2020)}\label{guardabassiweightstatusweight2020}
 
-Guardabassi and Tomasetto (2020) compared weight stereotype threat related working memory impairments between obese and overweight children.
-It was hypothesised that BMI and working memory were negatively, whether this effect was increased by stereotype threat, and whether this effect can be moderated by endorsement.
-The study design was cross-sectional, with Body Mass Index (BMI), stereotype threat condition (threat vs.~control), personal endorsement of obesity-related stereotypes (stereotype endorsement), and weight-based teasing, as independent variables, working memory performance (\emph{N}-back task performance) was used as the dependent variable.
+Guardabassi and Tomasetto (2020) ypothesised that BMI and working memory were negatively, whether this effect was increased by stereotype threat, and whether this effect can be moderated by endorsement.
+The study design was cross-sectional, with Body Mass Index (BMI), stereotype threat condition (threat vs.~control), personal endorsement of obesity-related stereotypes (stereotype endorsement), and weight-based teasing, as independent variables, working memory performance (\emph{N}-back task performance; 0-back up to two-back) was used as the dependent variable.
 The Body Mass Index was adjusted to sex- and age, resulting in the \emph{z}BMI.
-Working memory was tested with the \emph{N}-back task, here participants need to indicate whether the current stimulus matches the one presented n trials before, this study used three levels (N0: beginning of the task; N1: preceding position; N2: two preceding positions).
-The Perception of Teasing Scale (POTS) measured weight-based teasing, why the Obesity Stigmatisation Questionnaire measured stereotype endorsement - these were administered during the initial screening phase.
+The Perception of Teasing Scale (POTS) measured weight-based teasing, while the Obesity Stigmatisation Questionnaire measured stereotype endorsement - these were administered during the initial screening phase.
 Stereotype threat was manipulated by claiming that the \emph{N}-back task was a sensitive measure of intelligence, in the control condition, it was described as a computer game.\\
 The final sample consisted of 176 primary school children, 106 of which were boys (\(M_{\text{age}}\) = 116.07 months, \emph{SD} = 10.43).
 The sample was randomly assigned to their the stereotype threat or control condition, \(n = 86\) and \(n = 90\), respectively.
 Upon arrival, height and weight were measured, followed by the \emph{N}-back task, which began with a practice trail, and then three blocks per level of difficult.
 While no correlation was found between \emph{z}BMI and endorsement of stereotypes (\emph{p} = .830), participants reported to have experienced more teasing at higher \emph{z}BMI levels, \emph{p} \textless{} .001.
-Using a linear mixed-effects models, with condition, \emph{z}BMI, and the condition \(\times\) \emph{z}BMI interaction as fixed and between-subjects factors, and \emph{N}-back task difficulty as a within-subjects factor, a significant main effect was only found for \emph{N}-back difficulty, F(2, 198.70) = 43.43, \emph{p} \textless{} .001, \emph{z}BMI, F(1, 153.07) = 5.46, \emph{p} = .021, and their interaction, F(1, 153.07) = 5.07, \emph{p} = .026.
-Neither the three-way interaction (p = .548), nor the two way interactions (\emph{N}-back levels \(\times\) \emph{z}BMI, \emph{p} = .340 and \emph{N}-back levels \(\times\) condition, \emph{p} = .236) were significant.
+A significant main effect was only found for \emph{N}-back difficulty, F(2, 198.70) = 43.43, \emph{p} \textless{} .001, \emph{z}BMI, F(1, 153.07) = 5.46, \emph{p} = .021, and their interaction, F(1, 153.07) = 5.07, \emph{p} = .026.
+Neither the three-way interaction, nor the two way interactions (\emph{N}-back levels \(\times\) \emph{z}BMI, and \emph{N}-back levels \(\times\) condition were significant.
 In the control condition, no relation between \emph{z}BMI and working memory was to be found, however, under stereotype threat, \emph{z}BMI scores negatively correlated with working memory.
 Including interactions between \emph{z}BMI, condition, and stigma experiences (\(\Delta\)AIC = 42.71, \(\Delta\)BIC = 42.62\footnote{Akaike information criterion (AIC), Bayesian information criterion (BIC)}) and interactions between \emph{z}BMI, condition, and stereotype endorsement (\(\Delta\)AIC = 21.03, \(\Delta\)BIC = 20.09), led to a notable decline in fit indices.
 H2 is partially supported by this paper, while stereotype threat did decrease \emph{N}-back task performance, it cannot be divided which parts of working memory were affected, since the \emph{N}-back task does involve multiple parts of working memory.
 
 \subsubsection{Hirnstein et al. (2014)}\label{hirnsteingenderstereotypingcognitivesex2014}
 
-Hirnstein et al. (2014) investigated the relationship Testosterone (T) might have on cognitive abilities and stereotype threat, further, it was tested whether group sex allocation would influence the results.
-The researchers hypothesised that sex differences are more pronounced under stereotype threat, moreover, that this effect would be amplified in mixed-sex groups.
-Additionally, it was hypothesised that increased T would be associated with better cognitive performance, and that a positive correlation between T, cognitive performance and stereotype threat would be found.
-Since only the impairment of cognitive performance under stereotype threat is relevant to this review, the other results will just be mentioned in passing.\\
+Hirnstein et al. (2014) hypothesised that sex differences are more pronounced under stereotype threat, moreover, that this effect would be amplified in mixed-sex groups.
+Additionally, it was hypothesised that increased Testosterone (T) would be associated with better cognitive performance, and that a positive correlation between T, cognitive performance and stereotype threat would be found.
 To test these hypotheses, a final sample of 136 participants (\(n_{\text{male}} = 66\), \(n_{\text{female}} = 70\)) were tested in a 2 (stereotype threat vs.~control) \(\times\) 2 (mixed vs.~same sex) \(\times\) 2 (male vs.~female) factorial design, which formed the independent variables.
 Cognitive performance (tested using mental rotation, verbal fluency, and perceptual speed tests) alongside testosterone levels, were used as dependent variables.
-Using a gender-stereotype questionnaire, consisting of 16 items, participants had to rate the probability that a person in a given scenario was either male or female.
-This questionnaire also served as the stereotype threat manipulation, participants in the control group received a gender neutral questionnaire (deciding between `Northern American' or `European', instead of `male/female').
-This approach to manipulate stereotype threat has been used in previous studies.
-This questionnaire was done once before and another time after the cognitive tests, however, in the second round, every participant received the gender stereotype questionnaire.
-Cognitive abilities were tested using the Redrawn Vandenberg and Kuse Mental Rotation Test (Version A; MRT-3D), the Mirror Pictures (MP-2D) test, the Word Fluency Test (WF), the 4-Word Sentences Test (4W), and the Perceptual Speed Test (PS).
-Saliva samples were taken to measure testosterone levels.\\
+Using a gender-stereotype questionnaire, consisting of 16 items, participants had to rate the probability that a person in a given scenario was either male or female - this also served as the stereotype threat manipulation.
+The questionnaire was done once before and after the cognitive tests, however, in the second round, every participant received the gender stereotype questionnaire.
+Cognitive abilities were tested using the Redrawn Vandenberg and Kuse Mental Rotation Test (Version A; MRT-3D), the Mirror Pictures (MP-2D) test, the Word Fluency Test (WF), the 4-Word Sentences Test (4W), and the Perceptual Speed Test (PS), saliva samples were taken to measure testosterone levels.\\
 Analysing the gender stereotypes, consistent results were found, with a clear indication that the stereotype threat manipulation was successful.
-In 2 (Sex) \(\times\) 2 (Condition) \(\times\) 2 (Group sex composition: Same- vs.~Mixed-Sex) ANOVAs, each cognitive test was analysed separately.
 The MRT-3D showed a significant main effect of Sex, with men performing better than women, \emph{F}(1,128) = 10.97, \emph{p} = .001, \(\eta^{2}\) = 0.08, \emph{d} = 0.57, while Condition showed a significant main effect in the MP-2D, \emph{F}(1,128) = 4.70, \emph{p} = .032, \(\eta^{2}\) = 0.04.
 For verbal fluency, interactions were found between Condition and Group Sex Composition, in both, the WF, \emph{F}(1,128) = 4.49, \emph{p} = .036, \(\eta^{2}\) = 0.03,and the 4W, \emph{F}(1,128) = 6.30, \emph{p} = .013, \(\eta^{2}\) = 0.05).
 Between Sex \(\times\) Condition, another interaction was found, in the 4W, \emph{F}(1,128) = 6.77, \emph{p} = .011, \(\eta^{2}\) = 0.05.
@@ -703,14 +643,13 @@ H2 is weakly but partially being supported, since individuals under stereotype t
 \subsubsection{Jordano and Touron (2017)}\label{jordanoprimingperformancerelatedconcerns2017}
 
 In this study, the researchers investigated the effects of stereotype threat on both, cognitive performance and task-related mind-wandering.
-Two experiments were conducted, using similar methods and procedure, with the second experiment using a more difficult version of the Operation Span Task.
+Two experiments were conducted, using similar methods and procedure, with the second experiment using a more difficult version of the Operation Span Task (OSPAN).
 In both experiments sixty female undergraduates were randomly assigned to either a stereotype threat or control condition, forming the independent variable, while mind-wandering - measured using Task-Unrelated Thoughts (TUTs) and Task-Related Inference (TRI) probes -, task performance (on the OSPAN), and self-reported measures (i.e., emotional states, cognitive load/perceived difficulty, experience of mind-wandering), were used as dependent variables.
 Stereotype threat manipulation was done by telling participants that the OSPAN task showed gender differences and was a measure of ``quantitative ability''.
-The experiments began with the stereotype threat manipulation, followed by a modified Gender-Science Implicit Associations Task (IAT), and the OSPAN task, which was then followed by the post-task surveys.
-Mind-wandering was assessed during the OSPAN task.\\
-In the first experiment, it was found that participants under stereotype threat reported significantly more TRI (\emph{M} = 0.21, \emph{SE} = 0.03) compared to the control group (\emph{M} = 0.13, \emph{SE} = 0.02), \emph{F}(1,58) = 5.67, \emph{p} = .021, \emph{d} = 0.64.
-These thoughts also resolved significantly more around task strategy and approach in the stereotype threat condition (\emph{M} = 0.10, \emph{SE} = 0.02), compared to the control group (\emph{M} = 0.04, \emph{SE} = 0.01), \emph{F}(1,58) = 5.16, \emph{p} = .027, \emph{d} = 0.57).
-Neither maths verification accuracy, \emph{F}(1,58) = 1.80, \emph{p} = .185, nor letter recall accuracy, \emph{F}(1,58) = 0.24, \emph{p} = .624, were worse under stereotype threat, compared to the control group.
+The experiments began with the stereotype threat manipulation, followed by a modified Gender-Science Implicit Associations Task (IAT), and the OSPAN task, which was then followed by the post-task surveys, mind-wandering was assessed during the OSPAN task.\\
+In the first experiment, it was found that participants under stereotype threat reported significantly more TRI compared to the control group, \emph{F}(1,58) = 5.67, \emph{p} = .021, \emph{d} = 0.64.
+These thoughts also resolved significantly more around task strategy and approach in the stereotype threat condition, compared to the control group, \emph{F}(1,58) = 5.16, \emph{p} = .027, \emph{d} = 0.57).
+Neither maths verification accuracy, \emph{F}(1,58) = 1.80, \emph{p} = .185, nor letter recall accuracy, \emph{F}(1,58) = 0.24, \emph{p} = .624, were worse under stereotype threat, compared to the control group.\\
 In the second experiment, the same pattern was found, with participants under stereotype threat reporting significantly more TRI (\emph{M} = 0.16, \emph{SE} = 0.04) compared to the control group (\emph{M} = 0.08, \emph{SE} = 0.03), \emph{F}(1,58) = 5.53, \emph{p} = .022, \emph{d} = 0.42.
 Contrary to Experiment 1, evaluation related TRIs did not reach significance.
 This time, maths verification accuracy was worse under stereotype threat, \emph{F}(1,58) = 12.11, \emph{p} = .001, \emph{d} = 0.16, while, again, no differences in letter recall accuracy were found.\\
@@ -723,20 +662,20 @@ H2 is supported, due to decreased accuracy under stereotype threat, as well as n
 
 \subsubsection{Lin et al. (2023)}\label{lineffectstereotypethreat2023}
 
-To looking into the mediating role of executive function on stereotype threat, Lin et al. (2023) hypothesised that under threat, females performance on spatial perspective-taking tasks would decrease, further, they investigated the underlying mechanisms of gender stereotype threat, and tested, whether or not lessening inhibition would alleviate the effects of stereotype threat.\\
+To look into the mediating role of executive function on stereotype threat, Lin et al. (2023) hypothesised that under threat, females performance on spatial perspective-taking tasks would decrease, further, they investigated the underlying mechanisms of gender stereotype threat, and tested, whether or not lessening inhibition would alleviate the effects of stereotype threat.\\
 Over two experiments they tested these hypotheses in a cross-sectional design, with stereotype threat (threat vs.~control) serving as the independent variable, while spatial perspective-taking performance and executive function performance (inhibition, updating, shifting) - the latter only in Experiment 2 - were used as dependent variables, further gender identification functioned as a covariate.
 Seventy six undergraduates (\(M_{/text{age}}\) = 18.36 years, \emph{SD} = 1.17) first completed a demographics questionnaire as well as a gender identification scale, after which the random assignment to either condition (threat vs.~control) followed.
 Stereotype threat was manipulated by having participants read a brief report, highlighting gender differences in spatial ability.
 Afterwards, they completed the spatial perspective-taking test, followed by a manipulation check.\\
-The stereotype threat manipulation was successful, as indicated by participants under threat (\emph{M} = 2.89, \emph{SD} = 1.29) scoring significantly higher compared to the control (\emph{M} = 2.21, \emph{SD} = 0.98), \emph{t}(74) = -2.61, \emph{p} = .011, \emph{d} = 0.60.
+The stereotype threat manipulation was successful.
 Using a single factor (condition) ANCOVA, a significant decrease in performance was found for the threat group, \emph{F}(1,74) = 10.06, \emph{p} = .002, \(\eta^{2}\) = 0.12).\\
 In Experiment 2, another seventy-seven undergraduates (\(M_{/text{age}}\) = 18.53 years) were again randomly assigned to either condition.
 The procedure was similar to Experiment 1, with the addition of executive function tests being added after the stereotype threat manipulation.
 The Stroop task was used to measure inhibition, while the local-global task was used to measure shifting, and updating was being measured by the keep track task.\\
-Again, the manipulation check showed significantly higher scores for individuals under threat (\emph{M} = 3.57, \emph{SD} = 1.41), compared to the control group (\emph{M} = 2.70, \emph{SD} = 1.14), \emph{t}(75) = -2.93, \emph{p} = .004, \emph{d} = 0.69.
+Again, the manipulation check was successful.
 The effect of stereotype threat was significant for inhibition and updating, \emph{F}(1,75) = 11.40, \emph{p} = .001, \(\eta^{2}\) = 0.13), and \emph{F}(1,75) = 5.54, \emph{p} = .021, \(\eta^{2}\) = 0.07), respectively, while shifting was not affected in a significant manner, \emph{F}(1,75) = 0.30, \emph{p} = .613, \(\eta^2\) = 0.00.
 Similar to Experiment 1, females under threat performed worse on the spatial perspective-taking task, compared to the control group, \emph{F}(1,75) = 14.28, \emph{p} \textless{} .001, \(\eta^{2}\) = 0.16).
-After a significant positive correlation between inhibition and spatial perspective-taking was found, the researchers analysed the mediating role of inhibition, which showed only a significant mediating effect for inhibition (but not updating), \(\text{indirect effect}\) = 0.44, \(\text{BootSE}\) = 0.15, 95\% \(\text{BootCI}\) {[}0.18, 0.76{]}.
+Only inhibition, not updating showed a significant mediating effect, \(\text{indirect effect}\) = 0.44, \(\text{BootSE}\) = 0.15, 95\% \(\text{BootCI}\) {[}0.18, 0.76{]}.
 Further, between spatial perspective-taking and stereotype threat, a significant direct effect was found, \(\text{direct effect}\) = 0.38, \emph{SE} = 0.18, \emph{t} = 2.06 95\% \(\text{CI}\) {[}0.01, 0.75{]}, also, significant negative effects of stereotype threat on inhibition (\emph{b} = -0.73, \emph{SE} = 0.22, \emph{t} = -3.38 CI {[}-1.51, -0.30{]}) and updating (\emph{b} = -0.52, \emph{SE} = 0.22, \emph{t} = -2.35, 95\% CI {[}-0.96, -0.08{]}) were found.
 These results indicate that spatial perspective taking is negatively influenced by stereotype threat and inhibition, with the former directly, and the latter indirectly affecting performance.\\
 H2 is partially supported by this paper, as cognitive control (updating and inhibition) and performance did suffer under stereotype threat, however, shifting did not reach significance.
@@ -888,10 +827,10 @@ One hundred eighty-seven men (\emph{M} = 21.2 years old, 88.5\% Caucasian) forme
 The experiment began with the OSPAN, after which they were assigned into one of four groups (stereotype threat \(\times\) list congruency), followed by the stereotype threat manipulation, and the Stroop task.
 Stereotype threat was manipulated by claiming that the Stroop task measured gender differences in verbal skills and by having participants indicate their gender, this manipulation has been used in previous studies.\\
 Analyses showed that neither Stroop performance on neutral items nor OSPAN scores differed between the four conditions.
-While the two-way interaction between stereotype threat and working memory capacity was moderate, \(\beta\) = -.110, \emph{t} = -1.93, \emph{p} = .054, a main effect was found for stereotype threat, \(\beta\) = .120, \emph{t} = 2.11, \emph{p} \textless{} .050, showing the Stroop effect to be larger under threat.
-Further, the interaction with list congruency was found to qualify this main effect, with mostly congruent lists, \(\beta\) = .240, \emph{t} = 2.55, \emph{p} \textless{} .050, showing a greater Stroop effect under threat, than mostly incongruent lists, \(\beta\) = -.020, \emph{t} = -0.17, \emph{p} = .860,
+While the two-way interaction between stereotype threat and working memory capacity was moderate, \(\beta\) = -0.11, \emph{t} = -1.93, \emph{p} = .054, a main effect was found for stereotype threat, \(\beta\) = .120, \emph{t} = 2.11, \emph{p} \textless{} .050, showing the Stroop effect to be larger under threat.
+Further, the interaction with list congruency was found to qualify this main effect, with mostly congruent lists, \(\beta\) = .240, \emph{t} = 2.55, \emph{p} \textless{} .050, showing a greater Stroop effect under threat, than mostly incongruent lists, \(\beta\) = -0.02, \emph{t} = -0.17, \emph{p} = .860,
 The Stroop effect was a lot smaller in high working memory capacity (\emph{p} \textless{} .860 at 1 \emph{SD} above the mean working memory capacity) participants, compared to low working memory capacity participants, this effect was found for both, the control and stereotype threat conditions.
-Building on this, the interaction between all independent variables was found to be significant, \(\beta\) = -.120, \emph{t} = -1.99, \emph{p} \textless{} .050.
+Building on this, the interaction between all independent variables was found to be significant, \(\beta\) = -0.12, \emph{t} = -1.99, \emph{p} \textless{} .050.
 Reaction times on the Stroop task were also decreased under threat to a significant degree, \(R^2\) = .530, \emph{F}(7, 174) = 28.95, \emph{p} \textless{} .001.\\
 H3 is partially supported, a significant effect of threat on Stroop performance was only found for low working memory capacity individuals.
 Further, working memory capacity might moderate the effect.
@@ -1017,21 +956,88 @@ Experiment 2 followed the same procedure as Experiment 1, however, the main task
 Here, the final sample consisted of 111 females (79 White, 10 Hispanic, 7 African American, 7 Asian American, 1 American Indian, and 7 unidentified; \(N = 111\)).\\
 The manipulation check was successful.
 A prime \(\times\) task frame interaction was found for anxiety, \emph{F}(1, 107) = 3.83, \emph{p} = .050, with anxiety being higher in the maths test condition, compared to the problem-solving task, however, significance was not reached, while also not reaching significance, the opposite pattern was found for women in the confidence condition.
-For working memory the three-way interaction among task frame, prime, and anxiety level was significant, \(\beta\) = -.200, \emph{p} = .050.
-If the task was framed to be diagnostic (stereotype threat), the anxiety \(\times\) prime interaction was significant, \(\beta\) = -.300, \emph{p} \textless{} .040, with higher anxiety and doubt resulting in significantly lower working memory performance, compared to confidence, \(\beta\) = -.450, \emph{p} \textless{} .030, while lower anxiety showed now effects, independently of the prime.
+For working memory the three-way interaction among task frame, prime, and anxiety level was significant, \(\beta\) = -0.20, \emph{p} = .050.
+If the task was framed to be diagnostic (stereotype threat), the anxiety \(\times\) prime interaction was significant, \(\beta\) = -0.30, \emph{p} \textless{} .040, with higher anxiety and doubt resulting in significantly lower working memory performance, compared to confidence, \(\beta\) = -0.45, \emph{p} \textless{} .030, while lower anxiety showed now effects, independently of the prime.
 In the neutral task frame, this anxiety \(\times\) prime interaction did not predict working memory, \(\beta\) = .100, \emph{p} \textgreater{} .100.\\
 H3 is partially supported by this paper, as Study 1 does not support it, while Study 2 does.
 
 \subsubsection{Schmader and Johns (2003)}\label{schmaderconvergingevidencethat2003}
+
+Schmader and Johns (2003) predicted that test performance would be decreased due to reduced working memory capacity under stereotype threat.
+Condition (stereotype threat vs.~control) was an independent variable across all three experiments, in Experiment 1, gender (male vs.~female) and in Experiment 2 ethnicity (Latino vs.~White) were additional independent variables.
+Maths test performance and working memory capacity formed the dependent variables.
+Additionally, anxiety, perceived test difficulty and gender/ethnicity threat, all self-reported were measured.\\
+In Experiment 1, the final sample consisted of 31 male and 28 female (\(N = 59\)) undergraduate students.
+The experiment was done in same-gender groups with up to four participants, the study began with a brief introduction, which included the stereotype threat manipulation, by a practice trail the upcoming test, followed by the test itself. The experiment ended with a test experience questionnaire containing the additional measures.
+The OSPAN was used to measure working memory capacity and stereotype threat was manipulated by claiming the test showed gender differences in the past and that it was a reliable measure of quantitative capacity, which is closely related to maths ability.\\
+A significant main effect of gender was found for the absolute span score, using an ANCOVA, \emph{F}(1, 54) = 4.81, \emph{p} \textless{} .050, with womens working memory capacity being lower than mens, also, working memory capacity under threat was also significantly lower than in the control condition, \emph{F}(1, 54) = 23.84, \emph{p} \textless{} .001.
+Women under threat recalled than any other condition, \emph{F}(1, 54) = 15.69, \emph{p} \textless{} .001.
+For men, the span score did not differ significantly between conditions.
+Further, women under threat spent longer on each equation, showing a marginal main effect of stereotype threat, \emph{F}(1, 54) = 3.44, \emph{p} \textless{} .100, however, no significant differences were found for accuracy (equations solved correctly) between the conditions.
+Under threat, the test was rated as more difficult by women but not by their male counterparts, \emph{F}(1 ,54) = 5.70, \emph{p} \textless{} .050.
+Of the remaining additional measures, only gender identity revealed a significant main effect of stereotype threat, \emph{F}(1, 55) = 8.29, \emph{p} \textless{} .010, evaluations based on gender were expected more for males and females, compared to their controls.\\
+Experiment 2 had a final sample of 72 (\(N = 72\)) undergraduate students, 33 of which were Latino (20 women), and 39 White (27 women).
+The procedure was similar to Experiment 1, with only the stereotype threat manipulation differing.
+Here, it was claimed that the test measured working memory capacity, and that the results are indicative of performance on intelligence tests, further, participants were told, that the goal was to find group differences.\\
+Latinos under threat were the lowest performing group, reaching significantly lower scores than Whites under threat, \emph{F}(1, 58) = 6.45, \emph{p} \textless{} .050, \emph{d} = 0.66 and Latinos in the control condition, \emph{F}(1, 58) = 4.19, \emph{p} \textless{} .050, \emph{d} = 0.55.
+Additionally, a main effect of gender was found, with men outperforming women, \emph{F}(1, 58) = 4.10, \emph{p} \textless{} .050.
+Men also were more accurate than their female counterparts, \emph{F}(1, 58) = 4.97, \emph{p} \textless{} .050, the Gender \(\times\) Stereotype Threat interaction qualified this finding, \emph{F}(1, 58) = 5.21, \emph{p} \textless{} .050.
+Anxiety was highest for Latinos under threat, \emph{F}(1, 64) = 5.07, \emph{p} \textless{} .050.
+Both, women and Latinos reported higher perceived difficulty, \emph{F}(1, 64) = 6.82, \emph{p} \textless{} .010, and \emph{F}(1, 64) = 3.66, \emph{p} = .060, respectively, compared to their counterparts.
+Lastly, identity threat was highest for Latinos under threat, \emph{F}(1, 64) = 2.69, \emph{p} = .110.\\
+In Experiment 3, the maths equations within the working memory task were replaced with vowel counting and a maths test was added separately, containing similar questions to the quantitative section of the GRE.
+The final sample consisted of 28 female undergraduate students (\(N = 28\)).
+Stereotype threat was manipulated by claiming that gender differences in the performance on the upcoming tests were the goal of the study, further, participants under threat were grouped with two male confederates, while controls were groups with two females.
+After the stereotype threat manipulation and a change of rooms, the vowel counting task was completed, followed by a questionnaire.
+Back in the original room, the maths test was completed, followed by a questionnaire.\\
+Under stereotype threat, while absolute span scores were lower, \emph{t}(26) = 3.13, \emph{p} \textless{} .010, \emph{d} = 1.19, the same cannot be said for accuracy or speed on the vowel counting task.
+Also, under threat, accuracy was impaired, \emph{t}(26) = 2.38, \emph{p} \textless{} .050, while effort (amount of attempted problems) was not.
+Neither anxiety, nor perceived difficulty or gender identity threat reached significance between conditions.
+Working memory capacity predicted maths test performance to a significant degree, \(\beta\) = .640, \emph{t}(26) = 4.28, \emph{p} \textless{} .001.
+While working memory also remained significant, \(\beta\) = .580, \emph{t}(26) = 3.26, \emph{p} \textless{} .010, when maths performance was regressed onto threat and working memory capacity, threat did not reach significance, \(\beta\) = -0.12, \emph{t}(26) = -0.66, \emph{p} = .500, this these findings were supported by a Sobel test for each, \emph{z} = 2.26, \emph{p} \textless{} .020 and \emph{z} = 1.51, \emph{p} \textgreater{} .100, respectively.\\
+H3 is supported by this paper.
+
+\subsubsection{Tine and Gotlieb (2013)}\label{tinegenderraceincomebased2013}
+
+Tine and Gotlieb (2013) compared how different types of stereotype threat, namely gender-, race-, and income-based stereotype threat, affect maths performance and working memory.
+Further, they investigated whether or not these types of stereotype threat can add up.\\
+Gender (male vs.~female), race (White vs.~racial/ethnic minority), income level (low, middle, high) and number of stigmatised aspects of identity (0 to 3) served as the independent variables, while the post-test scores of both maths performance and working memory performance were the dependent variables.
+Each participant started with the maths pre-test, followed by the working memory pre-test, afterwards stereotype threat was manipulated, and then the post-tests were completed, followed by a demographics and experience questionnaire.
+The maths test consisted of GRE quantitative questions, while working memory was assessed using an adaptation of the Automated Working Memory Assessment (AWMA).
+Here, participants were to recall a string of numbers, in a different order, starting with the last number, followed by the middle numbers (in reverse order), and then the first number - the string length varied between four and nine.
+Stereotype threat was manipulated by claiming that maths differences between race and socioeconomic background as well as gender were found in the past, and that this study aimed to investigate these differences.
+Seventy-one undergraduate students (\(N=71\)) participated (\(M_{\text{age}}\) = 19.54 years, \emph{SD} = 1.60).
+Within this sample, 46 were female, 24 participants belonged to a racial/ethnic minority (17 Black/African American, 7 Hispanic/Latino), and 15 participants were categorised as low-income and 18 as middle-income, excluding the middle-income participants, all of these were considered to have a stigmatised aspect of identity, with some having multiple.\\
+For gender-based stereotype threat, maths performance did not differ significantly, while working memory performance did, \emph{F}(1, 68) = 4.91, \emph{p} \textless{} .050, \(\eta^{2}_{\text{p}}\) = .067.
+Under race-based stereotype threat both maths and working memory performance were impaired, \emph{F}(1, 68) = 16.73, \emph{p} \textless{} .001, \(\eta^{2}_{\text{p}}\) = .197 and \emph{F}(1, 68) = 7.41, \emph{p} \textless{} .001, \(\eta^{2}_{\text{p}}\) = .098, respectively.
+Both, maths, \emph{F}(2, 67)\footnote{corrected to plausible values for F, since it was reported as \emph{F}(12 67)} = 5.92, \emph{p} \textless{} .010, \(\eta^{2}_{\text{p}}\) = .150 and working memory performance, \emph{F}(2, 67) = 4.92, \emph{p} \textless{} .050, \(\eta^{2}_{\text{p}}\) = .128, were also lower under income-based threat.
+Further, the number of stigmatised aspects of identity did predict maths performance to a significant degree, \emph{F}(3, 66) = 6.46, \emph{p} \textless{} .010, \(\eta^{2}_{\text{p}}\) = .191, with the three stigmatised aspects group performing significantly worse than the zero stigmatised aspects group, \emph{p} \textless{} .050), which did in turn not differ from the other two (\emph{p}s \textgreater{} .050).
+A similar results was shown for working memory performance, \emph{F}(3, 66) = 6.82, \emph{p} \textless{} .001, \(\eta^{2}_{\text{p}}\) = .227, with the three stigmatised aspects group performing significantly worse than the zero stigmatised aspects group, \emph{p} \textless{} .001, which, again, did not differ significantly from the other two groups (\emph{p}s \textgreater{} .050).
+The amount of effort did not differ under gender- or race-based threat, however, low-income participants reported to have put in more effort into the task, so did the two stigmatised aspects group; each compared to their counterparts.\\
+H3 is supported by this paper.
+
+\subsubsection{Van Loo and Rydell (2013)}\label{vanlooexperiencefeelingpowerful2013}
+
+Only Experiment 3 was deemed relevant for this review.
+Van Loo and Rydell (2013) hypothesised that after being primed with power, stereotype threat should be shielded from the negative effects on maths performance in women under stereotype threat, due to not suffering under decreased working memory capacity.\\
+Power prime (high, low, control) and stereotype threat condition (stereotype threat vs.~no threat) were the independent variables, while working memory capacity, maths performance and threat-based concern were the dependent variables, further Positive and Negative Affect Schedule (PANAS) was considered as a control variables.\\
+Participants began with a practice set of MA problems, which also included instructions on how to solve them, followed by the power prime, its manipulation check, and the PANAS.
+The stereotype threat manipulation was done next, followed by the working memory capacity task, and the maths test, as well as some questionnaires.
+To measure working memory capacity, the letter-memory task was used, where participants were to recall the last three letters of a previously presented set of letters, the set size varied between five, seven, and nine letters.
+Power was manipulated by having participants write a short essay about a situation where they (power) or someone else (low power) had power, while the control wrote an unrelated short essay.
+Stereotype threat manipulation was done by claiming the goal of the study was to investigate gender differences on maths performance.
+The final sample consisted of 131 (\(N = 131\)) female undergraduates.\\
+Both, stereotype threat, \emph{F}(1, 125) = 39.46, \emph{p} \textless{} .001, \(\eta^{2}_{\text{p}}\) = .240, and power prime, \emph{F}(2, 125) = 8.75, \emph{p} \textless{} .001, \(\eta^{2}_{\text{p}}\) = .120, had a significant main effect on working memory capacity, the two-way interaction qualified these results, \emph{F}(2, 125) = 13.38, \emph{p} \textless{} .001, \(\eta^{2}_{\text{p}}\) = .180), under threat, working memory was lower for women with low power or in the control condition, \emph{F}(1, 125) = 50.05, \emph{p} \textless{} .001, \(\eta^{2}_{\text{p}}\) = .270, \emph{F}(1, 125) = 15.50, \emph{p} \textless{} .001, \(\eta^{2}_{\text{p}}\) = .110, respectively.
+Maths performance showed similar results across the board.
+Working memory capacity mediated the relationship between power and stereotype threat, \(\beta\) = -0.36, \emph{p} \textless{} 0.00, further a positive and significant correlation between maths performance and working memory was found, \(\beta\) = .620, \emph{p} \textless{} 0.00.
+Using a Sobel test, it was found that, in the relationship between maths performance and the power \(\times\) stereotype threat interaction, working memory capacity was a significant mediator, \emph{z} = -3.53, \emph{p} \textless{} .001.\\
+H3 is mostly supported by this hypothesis, only when primed with high power, stereotype threat did not impair working memory capacity.
 
 \section{Discussion}\label{discussion}
 
 \newpage
 
 \section{References}\label{references}
-
-::: \{\#refs custom-style = ``Bibliography''\}
-:::
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
@@ -1152,8 +1158,14 @@ R Core Team. (2024). \emph{R: A language and environment for statistical computi
 \bibitem[\citeproctext]{ref-stahlRolePreventionFocus2012}
 \textsuperscript{*} Ståhl, T., Van Laar, C., \& Ellemers, N. (2012). The role of prevention focus under stereotype threat: {Initial} cognitive mobilization is followed by depletion. \emph{Journal of Personality and Social Psychology}, \emph{102}(6), 1239--1251. \url{https://doi.org/10.1037/a0027678}
 
+\bibitem[\citeproctext]{ref-tineGenderRaceIncomebased2013}
+\textsuperscript{*} Tine, M., \& Gotlieb, R. (2013). Gender-, race-, and income-based stereotype threat: The effects of multiple stigmatized aspects of identity on math performance and working memory function. \emph{Social Psychology of Education}, \emph{16}(3), 353--376. \url{https://doi.org/10.1007/s11218-013-9224-8}
+
 \bibitem[\citeproctext]{ref-universityofglasgowCriticalAppraisalChecklistn.d.nodate}
 University of Glasgow. (n.d.). \emph{Critical appraisal checklist for a systematic review} {[}Checklist{]}. Department of General Practice, University of Glasgow.
+
+\bibitem[\citeproctext]{ref-vanlooExperienceFeelingPowerful2013}
+\textsuperscript{*} Van Loo, K. J., \& Rydell, R. J. (2013). On the experience of feeling powerful: {Perceived} power moderates the effect of stereotype threat on women's math performance. \emph{Personality and Social Psychology Bulletin}, \emph{39}(3), 387--400. \url{https://doi.org/10.1177/0146167212475320}
 
 \bibitem[\citeproctext]{ref-wellsNewcastleottawaScaleNOS2014}
 Wells, G., Shea, B., O'Connell, D., Robertson, J., Welch, V., Losos, M., \& Tugwell, P. (2014). The newcastle-ottawa scale ({NOS}) for assessing the quality of nonrandomised studies in meta-analyses. \emph{Ottawa Health Research Institute Web Site}, \emph{7}.

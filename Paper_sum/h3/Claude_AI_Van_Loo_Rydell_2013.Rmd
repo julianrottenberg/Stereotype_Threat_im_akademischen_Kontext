@@ -300,7 +300,7 @@ Power was manipulated using an essay-writing task. Working memory was measured u
 
 - [x] Details
 
-The authors report Cronbach's alpha for the threat-based concern measure (α = .85) and the PANAS (positive affect α = .86, negative affect α = .90).
+The authors report Cronbach's alpha for the threat-based concern measure ($\alpha$ = .85) and the PANAS (positive affect $\alpha$ = .86, negative affect $\alpha$= .90).
 
 ### Do the authors describe any ways they have addressed the validity of their data collection tools/methods?
 
