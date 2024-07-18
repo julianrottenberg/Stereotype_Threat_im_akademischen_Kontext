@@ -356,7 +356,7 @@ h1_table[6, ] <- c(
   "Experimental",
   "28 female undergraduates",
   "fMRI",
-  "Neural activation, math performance",
+  "Neural activation, maths performance",
   "Mixed-model ANOVA",
   "Increased vACC activation, decreased cognitive region activation under threat",
   "Partially"
@@ -367,7 +367,7 @@ h1_table[7, ] <- c(
   "Prospective",
   "68 participants",
   "EEG",
-  "Math performance, ERP responses, learning success",
+  "Maths performance, ERP responses, learning success",
   "ANOVA",
   "LPP and learning success link more pronounced under threat",
   "Partially"
@@ -534,7 +534,7 @@ h2_table[3, ] <- c(
   "OSPAN task, mind-wandering probes",
   "Stereotype threat, mind-wandering, task performance",
   "ANOVA",
-  "Increased mind-wandering, decreased math performance under threat",
+  "Increased mind-wandering, decreased maths performance under threat",
   "Partially"
 )
 
@@ -543,7 +543,7 @@ h2_table[4, ] <- c(
   "Experimental",
   "28 female undergraduates",
   "fMRI",
-  "Neural activation, math performance",
+  "Neural activation, maths performance",
   "Mixed-model ANOVA",
   "Increased vACC activation, decreased cognitive region activation under threat",
   "Yes"
@@ -564,10 +564,10 @@ h2_table[6, ] <- c(
   "Rydell et al. (2014)",
   "Experimental",
   "340 undergraduates across 3 experiments",
-  "Executive function tasks, math tests",
-  "Stereotype threat, executive function, math performance",
+  "Executive function tasks, maths tests",
+  "Stereotype threat, executive function, maths performance",
   "ANOVA, mediation analysis",
-  "Impaired inhibition and updating, decreased math performance under threat",
+  "Impaired inhibition and updating, decreased maths performance under threat",
   "Mostly"
 )
 
@@ -575,7 +575,7 @@ h2_table[7, ] <- c(
   "Ståhl et al. (2012)",
   "Experimental",
   "335 students across 3 experiments",
-  "Stroop task, math task",
+  "Stroop task, maths task",
   "Stereotype threat, regulatory focus, cognitive control",
   "ANOVA",
   "Initial increase then decrease in cognitive control under threat (prevention focus)",
@@ -586,7 +586,7 @@ h2_table[8, ] <- c(
   "Wister et al. (2013)",
   "Experimental",
   "92 female undergraduates",
-  "Stroop test, SAT-like math test",
+  "Stroop test, SAT-like maths test",
   "Menstruation threat, cognitive performance",
   "MANOVA",
   "Impaired Stroop performance under menstruation threat",
@@ -795,9 +795,9 @@ h3_table[2, ] <- c(
   "Cross-sectional",
   "624 female secondary school students",
   "Working memory tasks",
-  "Chronic stereotype threat, working memory, math achievement",
+  "Chronic stereotype threat, working memory, maths achievement",
   "Mediation analysis",
-  "Working memory mediated stereotype threat and math achievement",
+  "Working memory mediated stereotype threat and maths achievement",
   "Yes"
 )
 
@@ -816,7 +816,7 @@ h3_table[4, ] <- c(
   "Brown and Harkins (2016)",
   "Experimental",
   "73 female undergraduates",
-  "SART, math test",
+  "SART, maths test",
   "Stereotype threat, SART framing, mind-wandering",
   "ANOVA",
   "Support for mere effort account, not working memory impairment",
@@ -861,10 +861,10 @@ h3_table[8, ] <- c(
   "Johns et al. (2008)",
   "Experimental",
   "176 participants across 3 experiments",
-  "Working memory task, math test",
+  "Working memory task, maths test",
   "Stereotype threat, emotion regulation, working memory",
   "ANOVA, mediation analysis",
-  "Working memory impaired under threat, mediated math performance",
+  "Working memory impaired under threat, mediated maths performance",
   "Yes"
 )
 
@@ -872,7 +872,7 @@ h3_table[9, ] <- c(
   "Pennington et al. (2019)",
   "Experimental",
   "124 female university students",
-  "Anti-saccade task, math task",
+  "Anti-saccade task, maths task",
   "Stereotype condition, task performance",
   "ANOVA",
   "No significant effects of threat on performance",
@@ -883,10 +883,10 @@ h3_table[10, ] <- c(
   "Rydell et al. (2009)",
   "Experimental",
   "57 female undergraduates",
-  "Vowel counting task, math problems",
+  "Vowel counting task, maths problems",
   "Gender stereotype, college student stereotype, working memory",
   "ANOVA, mediation analysis",
-  "Working memory capacity mediated stereotype effects on math performance",
+  "Working memory capacity mediated stereotype effects on maths performance",
   "Yes"
 )
 
@@ -905,10 +905,10 @@ h3_table[12, ] <- c(
   "Schmader and Johns (2003)",
   "Experimental",
   "159 undergraduates across 3 experiments",
-  "OSPAN, math test",
-  "Stereotype threat, working memory capacity, math performance",
+  "OSPAN, maths test",
+  "Stereotype threat, working memory capacity, maths performance",
   "ANCOVA, mediation analysis",
-  "Working memory capacity reduced under threat, mediated math performance",
+  "Working memory capacity reduced under threat, mediated maths performance",
   "Yes"
 )
 
@@ -916,8 +916,8 @@ h3_table[13, ] <- c(
   "Tine and Gotlieb (2013)",
   "Experimental",
   "71 undergraduates",
-  "Math test, working memory test",
-  "Multiple stereotype threats, math and working memory performance",
+  "Maths test, working memory test",
+  "Multiple stereotype threats, maths and working memory performance",
   "ANOVA",
   "Working memory impaired under various stereotype threats",
   "Yes"
@@ -927,7 +927,7 @@ h3_table[14, ] <- c(
   "Van Loo and Rydell (2013)",
   "Experimental",
   "131 female undergraduates",
-  "Letter-memory task, math test",
+  "Letter-memory task, maths test",
   "Power prime, stereotype threat, working memory",
   "ANOVA, mediation analysis",
   "High power prime protected working memory from stereotype threat effects",

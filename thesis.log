@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  18 JUL 2024 02:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  18 JUL 2024 03:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1325,6 +1325,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--461
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 461--461
+\T1/lmr/m/n/12 (+20) activation,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--461
+\T1/lmr/m/n/12 (+20) maths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--461
 []|\T1/lmr/m/n/12 (+20) Mixed-model
  []
 
@@ -1365,7 +1375,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 462--462
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 462--462
-[]|\T1/lmr/m/n/12 (+20) Math
+[]|\T1/lmr/m/n/12 (+20) Maths
  []
 
 
@@ -1662,7 +1672,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 577--577
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 577--577
-\T1/lmr/m/n/12 (+20) decreased math
+\T1/lmr/m/n/12 (+20) decreased maths
  []
 
 
@@ -1693,6 +1703,16 @@ Overfull \hbox (6.33865pt too wide) in paragraph at lines 578--578
 
 Underfull \hbox (badness 10000) in paragraph at lines 578--578
 []|\T1/lmr/m/n/12 (+20) Neural
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--578
+\T1/lmr/m/n/12 (+20) activation,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--578
+\T1/lmr/m/n/12 (+20) maths
  []
 
 
@@ -1806,11 +1826,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 580--580
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 580--580
-\T1/lmr/m/n/12 (+20) function, math
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 580--580
 []|\T1/lmr/m/n/12 (+20) ANOVA,
  []
@@ -1827,7 +1842,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 580--580
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 580--580
-\T1/lmr/m/n/12 (+20) decreased math
+\T1/lmr/m/n/12 (+20) decreased maths
  []
 
 
@@ -2155,11 +2170,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 749--749
  []
 
 
-Underfull \hbox (badness 5847) in paragraph at lines 749--749
-\T1/lmr/m/n/12 (+20) memory, math
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 749--749
 []|\T1/lmr/m/n/12 (+20) Mediation
  []
@@ -2176,12 +2186,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 749--749
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 749--749
-\T1/lmr/m/n/12 (+20) stereotype
+\T1/lmr/m/n/12 (+20) stereotype threat
  []
 
 
-Underfull \hbox (badness 3803) in paragraph at lines 749--749
-\T1/lmr/m/n/12 (+20) threat and math
+Underfull \hbox (badness 10000) in paragraph at lines 749--749
+\T1/lmr/m/n/12 (+20) and maths
  []
 
 
@@ -2272,6 +2282,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 751--751
 
 Overfull \hbox (6.33865pt too wide) in paragraph at lines 751--751
 \T1/lmr/m/n/12 (-20) undergraduates| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
+[]|\T1/lmr/m/n/12 (+20) SART, maths
  []
 
 
@@ -2561,7 +2576,7 @@ Underfull \hbox (badness 2635) in paragraph at lines 757--757
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 757--757
-\T1/lmr/m/n/12 (+20) task, math
+\T1/lmr/m/n/12 (+20) task, maths
  []
 
 
@@ -2610,8 +2625,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 757--757
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
-\T1/lmr/m/n/12 (+20) effects on math
+Underfull \hbox (badness 5288) in paragraph at lines 757--757
+\T1/lmr/m/n/12 (+20) effects on maths
  []
 
 
@@ -2710,8 +2725,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 759--759
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
-[]|\T1/lmr/m/n/12 (+20) OSPAN, math
+Underfull \hbox (badness 1622) in paragraph at lines 759--759
+[]|\T1/lmr/m/n/12 (+20) OSPAN, maths
  []
 
 
@@ -2722,11 +2737,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 759--759
 
 Underfull \hbox (badness 10000) in paragraph at lines 759--759
 \T1/lmr/m/n/12 (+20) memory
- []
-
-
-Underfull \hbox (badness 4193) in paragraph at lines 759--759
-\T1/lmr/m/n/12 (+20) capacity, math
  []
 
 
@@ -2756,7 +2766,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 759--759
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 759--759
-\T1/lmr/m/n/12 (+20) mediated math
+\T1/lmr/m/n/12 (+20) mediated maths
  []
 
 
@@ -2786,7 +2796,7 @@ Overfull \hbox (6.33865pt too wide) in paragraph at lines 760--760
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 760--760
-[]|\T1/lmr/m/n/12 (+20) Math test,
+[]|\T1/lmr/m/n/12 (+20) Maths test,
  []
 
 
@@ -2800,8 +2810,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 760--760
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-\T1/lmr/m/n/12 (+20) threats, math
+Underfull \hbox (badness 5652) in paragraph at lines 760--760
+\T1/lmr/m/n/12 (+20) threats, maths
  []
 
 
@@ -2939,7 +2949,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  99i,12n,107p,1561b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on thesis.pdf (51 pages, 318977 bytes).
+Output written on thesis.pdf (51 pages, 319016 bytes).
 PDF statistics:
  500 PDF objects out of 1000 (max. 8388607)
  415 compressed objects within 5 object streams
