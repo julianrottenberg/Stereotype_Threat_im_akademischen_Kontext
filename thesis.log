@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  17 JUL 2024 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  18 JUL 2024 02:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -992,24 +992,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [8]
 
 [9 <./files/prisma.pdf>]
-
-[10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[11{/home/julian/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[10{/home/julian/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Underfull \vbox (badness 4752) has occurred while \output is active []
 
 
+
+[11]
 
 [12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [13]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 4752) has occurred while \output is active []
 
 
 
@@ -1019,32 +1016,26 @@ Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4752) has occurred while \output is active []
 
 
 
 [16]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 4752) has occurred while \output is active []
 
 
 
 [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4752) has occurred while \output is active []
 
 
 
 [18]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
 
 [19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [20]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1054,47 +1045,38 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [22]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
 
 [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [24]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 583.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 583.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 583.
-
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
 
 [25]
-Underfull \vbox (badness 4072) has occurred while \output is active []
+Underfull \vbox (badness 4752) has occurred while \output is active []
 
 
 
 [26]
 
 [27]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 643.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 643.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 643.
+
 
 [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4673) has occurred while \output is active []
 
 
 
 [29]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
 
 [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [31]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1112,158 +1094,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [34]
-Underfull \vbox (badness 7433) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-[36]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
-
-[37]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
-
-[38]
-
-[39]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
-
-[40]
-
-[41]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[42]
-
-[43]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
-
-[44]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[45]
-
-[46]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[48]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
-
-[49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[50]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[51]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
-
-[52]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
-
-[53]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[54]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[55]
-Underfull \vbox (badness 7433) has occurred while \output is active []
-
-
-
-[56]
-
-[57]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[58]
-
-[59]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[60]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[61]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[62]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[63]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[64]
-
-[65] AED endfloat: Processing end Figures and Tables (./thesis.aux)
+[36] AED endfloat: Processing end Figures and Tables (./thesis.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29472 strings out of 475544
- 542235 string characters out of 5777454
+ 29344 strings out of 475544
+ 539619 string characters out of 5777454
  1938905 words of memory out of 5000000
- 51224 multiletter control sequences out of 15000+600000
- 645428 words of font info for 189 fonts, out of 8000000 for 9000
+ 51165 multiletter control sequences out of 15000+600000
+ 645060 words of font info for 185 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,12n,107p,4377b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,107p,1561b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on thesis.pdf (65 pages, 387215 bytes).
+Output written on thesis.pdf (36 pages, 299828 bytes).
 PDF statistics:
- 673 PDF objects out of 1000 (max. 8388607)
- 573 compressed objects within 6 object streams
- 167 named destinations out of 1000 (max. 500000)
- 43362 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 414 PDF objects out of 1000 (max. 8388607)
+ 345 compressed objects within 4 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 43130 words of extra memory for PDF output out of 51595 (max. 10000000)
 
