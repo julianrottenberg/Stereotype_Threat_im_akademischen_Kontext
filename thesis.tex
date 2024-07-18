@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-  stu,floatsintext]{apa7}
+  stu, a4paper,floatsintext]{apa7}
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
 \ifPDFTeX
@@ -205,6 +205,7 @@
 \course{Modul 6b: Empirisch-Experimentelles Praktikum}
 \professor{Dr. }
 
+\usepackage{pdflscape}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -433,6 +434,40 @@ The weighted graph analysis showed similar patterns, with increased RSDC z-value
 For interactions, lower RSDC \emph{z}-values under stereotype threat were only found for the left cerebellum (F(1, 45) = 4.23, \emph{p} = .046).
 H1 is partially supported by this paper, increases in the DMN (associated areas) were found as well as neural activation. However, it is unclear whether performance did suffer as a result of stereotype threat and further, while the ACC and prefrontal cortex are mentioned in the researcher's hypothesis, they are not mentioned in the results.
 
+An overview of the included papers for Hypothesis 1 can be found in Table \ref{tab:h1_table}.
+
+\begin{lltable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} This table summarizes studies investigating neural activation patterns under stereotype threat. The 'Variables' column focuses on brain areas and networks of interest, such as the amygdala, prefrontal cortex, default mode network, and salience network. 'Methods of Data Analysis' includes neuroimaging techniques like fMRI and EEG. 'Results' highlight changes in neural activation patterns related to stereotype threat.}
+\end{TableNotes}
+
+\begin{longtable}{m{1.5cm}m{3cm}m{2.5cm}m{3cm}m{3cm}m{3cm}m{3.5cm}m{1.5cm}}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:h1_table}Overview of the Included Papers for Hypothesis 1}\\
+\toprule
+Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:h1_table} continued}}\\
+\toprule
+Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
+\midrule
+\endhead
+Beilock et al. (2007) & Experimental & Female college students in US & Behavioral tasks & Stereotype threat, working memory efficiency & ANOVA & Reduced performance on high-demand problems under threat & Yes\\
+Dunst et al. (2013) & Experimental & 58 secondary school students in Austria & EEG & Stereotype threat, neural efficiency, task performance & ANOVA & Higher cortical activation under threat & Partially\\
+Forbes et al. (2015) & Experimental & 58 participants (25 White, 33 minorities) & EEG & DMN phase-locking, error estimates, self-doubt & Regression models & DMN phase-locking may mitigate stereotype threat effects & Yes\\
+Forbes et al. (2008) & Experimental & 57 minority undergraduates & EEG & ERN, Pe, task performance & Repeated measures analysis & Smaller ERN amplitudes under threat & Partially\\
+Jończyk et al. (2022) & Experimental & 23 female undergraduates in US & EEG & Creativity, alpha power & Repeated measures ANOVA & Increased alpha power after threat & Partially\\
+Krendl et al. (2008) & Experimental & 28 female undergraduates & fMRI & Neural activation, math performance & Mixed-model ANOVA & Increased vACC activation, decreased cognitive region activation under threat & Partially\\
+Mangels et al. (2012) & Prospective & 68 participants & EEG & Math performance, ERP responses, learning success & ANOVA & LPP and learning success link more pronounced under threat & Partially\\
+Wu and Zhao (2021) & Experimental & 48 female undergraduates in China & RS-fMRI & RSDC of brain regions & Mixed-effect analysis & Increased RSDC in DMN areas, decreased in cerebellum and hippocampus & Partially\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+\end{lltable}
+
 \subsection{Hypothesis 2: Stereotype threat, cognitive control.}\label{hypothesis-2-stereotype-threat-cognitive-control.}
 
 Guardabassi and Tomasetto (2020) hypothesized that BMI and working memory were negatively, whether this effect was increased by stereotype threat, and whether this effect can be moderated by endorsement.
@@ -517,6 +552,41 @@ The sample consisted of 168 undergraduates (\(n_{\text{female}}\) = 91).\\
 No significant effect was found for switching, neither for gender, nor for threat; for cluster size, only a significant effect of gender was found, \emph{F}(1,159) = 4.12, \emph{p} \textless{} .050, \(\eta^{2}_{\text{p}}\) = .025, with males scoring higher than females.
 Also, positive correlations between total errors and gender-stereotype score, \emph{r} = 0.22, \emph{p} \textless{} .010, were found, with gender-stereotype score being the result of the gender-stereotype questionnaire.
 H2 is not supported by this paper, more so, it provides evidence against it.
+
+An overview of the included papers for Hypothesis 2 can be found in Table \ref{tab:h2_table}.
+
+\begin{lltable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} This table presents studies examining cognitive control processes under stereotype threat. The 'Variables' column includes both cognitive processes (e.g., inhibition, updating, shifting) and related performance measures. 'Methods of Data Analysis' specifies cognitive tasks used, such as the Stroop task, n-back task, or task-switching paradigms. 'Results' emphasize changes in cognitive control performance under stereotype threat conditions.}
+\end{TableNotes}
+
+\begin{longtable}{m{1.5cm}m{3cm}m{2.5cm}m{3cm}m{3cm}m{3cm}m{3.5cm}m{1.5cm}}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:h2_table}Overview of the Included Papers for Hypothesis 2}\\
+\toprule
+Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:h2_table} continued}}\\
+\toprule
+Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
+\midrule
+\endhead
+Guardabassi and Tomasetto (2020) & Cross-sectional & 176 primary school children & N-back task & BMI, stereotype threat, working memory & Mixed-effects models & zBMI negatively correlated with working memory under threat & Partially\\
+Hirnstein et al. (2014) & Factorial & 136 participants (66 male, 70 female) & Cognitive tests & Stereotype threat, sex, group composition, cognitive performance & ANOVA & Performance decreased on 4W and perceptual speed under threat & Weakly\\
+Jordano and Touron (2017) & Experimental & 120 female undergraduates & OSPAN task, mind-wandering probes & Stereotype threat, mind-wandering, task performance & ANOVA & Increased mind-wandering, decreased math performance under threat & Partially\\
+Krendl et al. (2008) & Experimental & 28 female undergraduates & fMRI & Neural activation, math performance & Mixed-model ANOVA & Increased vACC activation, decreased cognitive region activation under threat & Yes\\
+Lin et al. (2023) & Cross-sectional & 153 female undergraduates & Spatial perspective-taking, executive function tests & Stereotype threat, executive function, spatial performance & ANCOVA, mediation analysis & Decreased performance, impaired inhibition and updating under threat & Partially\\
+Rydell et al. (2014) & Experimental & 340 undergraduates across 3 experiments & Executive function tasks, math tests & Stereotype threat, executive function, math performance & ANOVA, mediation analysis & Impaired inhibition and updating, decreased math performance under threat & Mostly\\
+Ståhl et al. (2012) & Experimental & 335 students across 3 experiments & Stroop task, math task & Stereotype threat, regulatory focus, cognitive control & ANOVA & Initial increase then decrease in cognitive control under threat (prevention focus) & Mostly\\
+Wister et al. (2013) & Experimental & 92 female undergraduates & Stroop test, SAT-like math test & Menstruation threat, cognitive performance & MANOVA & Impaired Stroop performance under menstruation threat & Partially\\
+Wulandari and Hendrawan (2020) & Experimental & 168 undergraduates (91 female) & Letter fluency test & Stereotype threat activation, gender, task difficulty & ANOVA & No significant effects of threat on performance & No\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+\end{lltable}
 
 \subsection{Hypothesis 3: Stereotype threat, working memory.}\label{hypothesis-3-stereotype-threat-working-memory.}
 
@@ -655,6 +725,46 @@ Maths performance showed similar results across the board.
 Working memory capacity mediated the relationship between power and stereotype threat, \(\beta\) = -0.36, \emph{p} \textless{} 0.00, further a positive and significant correlation between maths performance and working memory was found, \(\beta\) = .620, \emph{p} \textless{} 0.00.
 Using a Sobel test, it was found that, in the relationship between maths performance and the power \(\times\) stereotype threat interaction, working memory capacity was a significant mediator, \emph{z} = -3.53, \emph{p} \textless{} .001.
 H3 is mostly supported by this hypothesis, only when primed with high power, stereotype threat did not impair working memory capacity.
+
+An overview of the included papers for Hypothesis 2 can be found in Table \ref{tab:h3_table}.
+
+\begin{lltable}
+
+\begin{TableNotes}[para]
+\normalsize{\textit{Note.} This table outlines studies investigating working memory impairment under stereotype threat. The 'Variables' column focuses on working memory measures and associated performance indicators. 'Methods of Data Analysis' details specific working memory tasks employed, such as complex span tasks, operational span tasks, or reading span tests. 'Results' highlight changes in working memory capacity and performance under stereotype threat.}
+\end{TableNotes}
+
+\begin{longtable}{m{1.5cm}m{3cm}m{2.5cm}m{3cm}m{3cm}m{3cm}m{3.5cm}m{1.5cm}}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
+\caption{\label{tab:h3_table}Overview of the Included Papers for Hypothesis 3}\\
+\toprule
+Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
+\midrule
+\endfirsthead
+\caption*{\normalfont{Table \ref{tab:h3_table} continued}}\\
+\toprule
+Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
+\midrule
+\endhead
+Bedyńska et al. (2020) & Cross-sectional & 319 male secondary school students & Working memory tasks & Chronic stereotype threat, working memory, language achievement & Mediation analysis & Stereotype threat negatively impacted working memory capacity & Yes\\
+Bedyńska et al. (2018) & Cross-sectional & 624 female secondary school students & Working memory tasks & Chronic stereotype threat, working memory, math achievement & Mediation analysis & Working memory mediated stereotype threat and math achievement & Yes\\
+Beilock et al. (2007) & Experimental & Female college students in US & Modular Arithmetic task & Stereotype threat, working memory efficiency & ANOVA & Reduced performance on high-demand problems under threat & Yes\\
+Brown and Harkins (2016) & Experimental & 73 female undergraduates & SART, math test & Stereotype threat, SART framing, mind-wandering & ANOVA & Support for mere effort account, not working memory impairment & No\\
+Guardabassi and Tomasetto (2020) & Cross-sectional & 176 primary school children & N-back task & BMI, stereotype threat, working memory & Mixed-effects models & zBMI negatively correlated with working memory under threat & Yes\\
+Hutchison et al. (2013) & Experimental & 187 men & Stroop task, OSPAN & Working memory capacity, stereotype threat, Stroop performance & Regression analysis & Stroop effect larger under threat for low WMC individuals & Partially\\
+Jamieson and Harkins (2007) & Experimental & 224 undergraduates across 4 experiments & Saccade tasks, N-back task & Stereotype threat, task type, cognitive load & ANOVA & Support for mere effort account in most conditions & Mostly No\\
+Johns et al. (2008) & Experimental & 176 participants across 3 experiments & Working memory task, math test & Stereotype threat, emotion regulation, working memory & ANOVA, mediation analysis & Working memory impaired under threat, mediated math performance & Yes\\
+Pennington et al. (2019) & Experimental & 124 female university students & Anti-saccade task, math task & Stereotype condition, task performance & ANOVA & No significant effects of threat on performance & No\\
+Rydell et al. (2009) & Experimental & 57 female undergraduates & Vowel counting task, math problems & Gender stereotype, college student stereotype, working memory & ANOVA, mediation analysis & Working memory capacity mediated stereotype effects on math performance & Yes\\
+Schmader et al. (2009) & Experimental & 188 participants across 2 experiments & Reading Span Test & Stereotype threat, anxiety, working memory & Regression analysis & Anxiety predicted lower working memory under stereotype threat & Partially\\
+Schmader and Johns (2003) & Experimental & 159 undergraduates across 3 experiments & OSPAN, math test & Stereotype threat, working memory capacity, math performance & ANCOVA, mediation analysis & Working memory capacity reduced under threat, mediated math performance & Yes\\
+Tine and Gotlieb (2013) & Experimental & 71 undergraduates & Math test, working memory test & Multiple stereotype threats, math and working memory performance & ANOVA & Working memory impaired under various stereotype threats & Yes\\
+Van Loo and Rydell (2013) & Experimental & 131 female undergraduates & Letter-memory task, math test & Power prime, stereotype threat, working memory & ANOVA, mediation analysis & High power prime protected working memory from stereotype threat effects & Mostly\\
+\bottomrule
+\addlinespace
+\insertTableNotes
+\end{longtable}
+
+\end{lltable}
 
 \section{Discussion}\label{discussion}
 
