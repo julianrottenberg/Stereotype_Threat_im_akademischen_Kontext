@@ -62,39 +62,6 @@
   \let\oldsubparagraph\subparagraph
   \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
-% definitions for citeproc citations
-\NewDocumentCommand\citeproctext{}{}
-\NewDocumentCommand\citeproc{mm}{%
-  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
-\makeatletter
- % allow citations to break across lines
- \let\@cite@ofmt\@firstofone
- % avoid brackets around text for \cite:
- \def\@biblabel#1{}
- \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
-\makeatother
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
- {\begin{list}{}{%
-  \setlength{\itemindent}{0pt}
-  \setlength{\leftmargin}{0pt}
-  \setlength{\parsep}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-   \setlength{\leftmargin}{\cslhangindent}
-   \setlength{\itemindent}{-1\cslhangindent}
-  \fi
-  % set entry spacing
-  \setlength{\itemsep}{#2\baselineskip}}}
- {\end{list}}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \ifLuaTeX
 \usepackage[bidi=basic]{babel}
 \else
@@ -186,6 +153,13 @@
 \makeatother
 
 \usepackage{pdflscape}
+\usepackage{amsmath}
+\usepackage{setspace}
+\AtBeginEnvironment{tabular}{\singlespacing}
+\AtBeginEnvironment{lltable}{\singlespacing}
+\AtBeginEnvironment{tablenotes}{\doublespacing}
+\captionsetup[table]{font={stretch=1.5}}
+\captionsetup[figure]{font={stretch=1.5}}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -222,186 +196,48 @@ Correspondence concerning this article should be addressed to First Author, Post
 \begin{document}
 \maketitle
 
+\begin{verbatim}
+## Warning in matrix(value, n, p): data length [12] is not a sub-multiple or
+## multiple of the number of columns [8]
+\end{verbatim}
+
 \begin{lltable}
 
 \begin{TableNotes}[para]
-\normalsize{\textit{Note.} This table summarizes studies investigating neural activation patterns under stereotype threat. The 'Variables' column focuses on brain areas and networks of interest, such as the amygdala, prefrontal cortex, default mode network, and salience network. 'Methods of Data Analysis' includes neuroimaging techniques like fMRI and EEG. 'Results' highlight changes in neural activation patterns related to stereotype threat.}
+\normalsize{\textit{Note.} This table summarises studies investigating working memory impairment under stereotype threat. The 'Variables' column focuses on working memory measures and associated performance indicators. 'Methods of Data Analysis' details specific working memory tasks employed, such as complex span tasks, operational span tasks, or reading span tests. 'Results' highlight changes in working memory capacity and performance under stereotype threat. Asterisks indicate the significance level: *p < .05, **p < .01, ***p < .001.}
 \end{TableNotes}
 
 \begin{longtable}{m{1.5cm}m{3cm}m{2.5cm}m{3cm}m{3cm}m{3cm}m{3.5cm}m{1.5cm}}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
-\caption{\label{tab:unnamed-chunk-1}Overview of the Included Papers for Hypothesis 1}\\
+\caption{\label{tab:h3_table}Overview of the Included Papers for Hypothesis 3}\\
 \toprule
 Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
 \midrule
 \endfirsthead
-\caption*{\normalfont{Table \ref{tab:unnamed-chunk-1} continued}}\\
+\caption*{\normalfont{Table \ref{tab:h3_table} continued}}\\
 \toprule
 Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
 \midrule
 \endhead
-Beilock et al. (2007) & Experimental & Female college students in US & Behavioral tasks & Stereotype threat, working memory efficiency & ANOVA & Reduced performance on high-demand problems under threat & Yes\\
-Dunst et al. (2013) & Experimental & 58 secondary school students in Austria & EEG & Stereotype threat, neural efficiency, task performance & ANOVA & Higher cortical activation under threat & Partially\\
-Forbes et al. (2015) & Experimental & 58 participants (25 White, 33 minorities) & EEG & DMN phase-locking, error estimates, self-doubt & Regression models & DMN phase-locking may mitigate stereotype threat effects & Yes\\
-Forbes et al. (2008) & Experimental & 57 minority undergraduates & EEG & ERN, Pe, task performance & Repeated measures analysis & Smaller ERN amplitudes under threat & Partially\\
-Jończyk et al. (2022) & Experimental & 23 female undergraduates in US & EEG & Creativity, alpha power & Repeated measures ANOVA & Increased alpha power after threat & Partially\\
-Krendl et al. (2008) & Experimental & 28 female undergraduates & fMRI & Neural activation, math performance & Mixed-model ANOVA & Increased vACC activation, decreased cognitive region activation under threat & Partially\\
-Mangels et al. (2012) & Prospective & 68 participants & EEG & Math performance, ERP responses, learning success & ANOVA & LPP and learning success link more pronounced under threat & Partially\\
-Wu and Zhao (2021) & Experimental & 48 female undergraduates in China & RS-fMRI & RSDC of brain regions & Mixed-effect analysis & Increased RSDC in DMN areas, decreased in cerebellum and hippocampus & Partially\\
+Bedyńska et al. (2020) & Cross-sectional & 319 male secondary school students & Effects of chronic stereotype threat on working memory and language achievement; counting span task, set switching task, and spatial location memory task (capacity) & IV: Chronic stereotype threat, Gender identification; DV: Working memory, Language achievement & Mediation analysis & Stereotype threat negatively impacted working memory capacity, with the latter mediating the relationship between stereotype threat and language achievement. $b$ = 2.81, $\beta$ = 0.45, $SE$ = 0.06, $p$ < .001, 95\% CI [[0.34, 0.55]]. Higher gender identification moderated the effect of stereotype threat on working memory. $r$ = 0.32. & Yes\\
+Bedyńska et al. (2018) & Cross-sectional & 624 female secondary school students & Effects of chronic stereotype threat on working memory and maths achievement; Functional Aspects of Working Memory Test (capacity, accuracy) & IV: Chronic stereotype threat, Gender identification; DV: Working memory, Maths achievement & Mediation analysis & Working memory mediated the relationship between stereotype threat and maths achievement. $\beta$ = 0.50, indirect effect $\beta$ = -0.14, 95\% CI [[-0.20, -0.07]]. Higher gender identification moderated the negative effect of stereotype threat on working memory. $b$ = -0.01, $\beta$ = -0.29, $SE$ = 0.14, $p$ = .039. $r$ = 0.20. & Yes\\
+Beilock et al. (2007) & Experimental & Experiment 1: 31 female college students; Experiment 3A: 33 female college students; Experiment 4: 30 female college students; Experiment 5: 33 female college students & Effects of stereotype threat on working memory and its influence on unrelated tasks; modular arithmetic (processing speed); n-back task (capacity, accuracy) & IV: Group (stereotype threat vs. control), Problem working memory demand (low vs. high), Block (baseline vs. posttest); DV: Accuracy, Reaction time & ANOVA & High-demand problems showed a significant decrease in accuracy at the post-test, CI [81.00\% - 97.00\%]; $\textit{d}$ = 0.61. $\textit{F}$(1,29) = 11.18, $\eta^{2}_\text{p}$ = 0.28. & Yes\\
+Brown and Harkins (2016) & Experimental & 73 female undergraduates & Effects of stereotype threat on mind-wandering and task performance; SART (processing speed, accuracy) & IV: Condition (stereotype threat vs. control), SART framing (related vs. unrelated); DV: Mind-wandering (SART performance) & ANOVA & Significant effect of the mere effort account: commission errors $\textit{F}$(1, 69) = 28.78, $p$ < .001, $\eta^{2}_\text{p}$ = 0.29. Counter-hypothesis not supported. & No\\
+Guardabassi and Tomasetto (2020) & Cross-sectional & 176 primary school children & Effects of BMI and stereotype threat on working memory; N-back task (capacity, accuracy) & IV: BMI, Stereotype threat; DV: Working memory & Mixed-effects models & zBMI negatively correlated with working memory under threat. $F$ = & 12.40\\
+Hutchison et al. (2013) & Experimental & 187 men & Effects of stereotype threat on working memory and Stroop performance; OSPAN (capacity, accuracy) & IV: Working memory capacity, List congruency, Stereotype threat condition; DV: Stroop task performance & Regression analysis & Stroop effect larger under threat for low WMC individuals. $\beta$ = 0.12, $\beta$ = -0.11, $\beta$ = 0.24*. & Partially\\
+Jamieson and Harkins (2007) & Experimental & 224 undergraduates across 4 experiments & Effects of stereotype threat on task performance requiring inhibitory control; saccade tasks (processing speed, accuracy) & IV: Condition (stereotype threat vs. control), Task type (antisaccade vs. prosaccade), Cognitive load; DV: Accuracy, Reaction time, Eye movements & ANOVA & Support for mere effort account in most conditions. Anti-saccade task: $F$(1, 72) = 17.28, $p$ < .001, $d$ = 0.98. Condition x Task: $F$(1, 72) = 4.85, $p$ = .050. & Mostly No\\
+Johns et al. (2008) & Experimental & 176 participants across 3 experiments & Effects of stereotype threat on working memory and emotion regulation; reading span task (capacity, accuracy) & IV: Condition (stereotype threat vs. control), Emotion regulation strategy; DV: Working memory capacity, Maths performance, Self-reported anxiety & ANOVA, mediation analysis & Working memory impaired under threat, mediated maths performance. $t$(55) = 2.31, $\beta$ = 0.30*. & Yes\\
+Pennington et al. (2019) & Experimental & 124 female university students & Effects of stereotype condition on task performance; anti-saccade task (accuracy, processing speed) & IV: Stereotype condition; DV: Task performance & ANOVA & No significant effects of threat on performance. Anti-saccade task: $F$(2, 58) = 0.30, $p$ = .750, $\eta^{2}_\text{p}$ = 0.01. & No\\
+Rydell et al. (2009) & Experimental & 57 female undergraduates & Effects of multiple social identities on stereotype threat and working memory; vowel counting task (capacity, accuracy) & IV: Gender stereotype, College student stereotype; DV: Working memory capacity, Maths performance & ANOVA, mediation analysis & Working memory capacity mediated stereotype effects on maths performance. $F$(1, 53) = 6.01, $p$ = .020, $\eta^{2}_\text{p}$ = 0.10. Sobel test: $z$ = 1.96, $p$ = .050. & Yes\\
+Schmader et al. (2009) & Experimental & 188 participants across 2 experiments & Effects of stereotype threat on anxiety and working memory; Reading Span Test (capacity, processing speed) & IV: Prime condition, Self-reported anxiety; DV: Working memory performance & Regression analysis & Anxiety predicted lower working memory under stereotype threat. $\beta$ = -0.20, $p$ = .050. Prime x Anxiety interaction significant: $\beta$ = -0.30, $p$ < .040. & Partially\\
+Schmader and Johns (2003) & Experimental & 151 undergraduates across 3 experiments & Effects of stereotype threat on working memory and maths performance; reading span task (capacity, accuracy) & IV: Condition (stereotype threat vs. control); DV: Working memory capacity, Maths test performance & ANOVA, mediation analysis & Working memory capacity predicted maths performance. $F$(1, 54) = 23.84, $p$ < .001. Mediation: Sobel test $z$ = 2.26, $p$ < .020. & Yes\\
+Tine and Gotlieb (2013) & Experimental & 71 undergraduates & Effects of gender-, race-, and income-based stereotype threat on working memory; Automated Working Memory Assessment (capacity, accuracy) & IV: Gender, Race, Income level, Number of stigmatized aspects; DV: Working memory performance & ANOVA & Significant effects of stereotype threat on working memory performance. $F$(1, 68) = 4.91, $p$ < .050, $\eta^{2}_\text{p}$ = 0.07; $F$(1, 68) = 16.73, $p$ < .001, $\eta^{2}_\text{p}$ = 0.20. & Yes\\
+Van Loo and Rydell (2013) & Experimental & 131 female undergraduates & Effects of power prime on stereotype threat and working memory; letter-memory task (capacity, accuracy) & IV: Power prime, Stereotype threat condition; DV: Working memory capacity, Maths performance & ANOVA, mediation analysis & High power prime protected working memory from stereotype threat effects. $F$(2, 125) = 13.38***, mediated by working memory capacity. $z$ = -3.53***. & Mostly\\
 \bottomrule
 \addlinespace
 \insertTableNotes
 \end{longtable}
 
 \end{lltable}
-
-\begin{lltable}
-
-\begin{TableNotes}[para]
-\normalsize{\textit{Note.} This table presents studies examining cognitive control processes under stereotype threat. The 'Variables' column includes both cognitive processes (e.g., inhibition, updating, shifting) and related performance measures. 'Methods of Data Analysis' specifies cognitive tasks used, such as the Stroop task, n-back task, or task-switching paradigms. 'Results' emphasize changes in cognitive control performance under stereotype threat conditions.}
-\end{TableNotes}
-
-\begin{longtable}{m{1.5cm}m{3cm}m{2.5cm}m{3cm}m{3cm}m{3cm}m{3.5cm}m{1.5cm}}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
-\caption{\label{tab:unnamed-chunk-2}Overview of the Included Papers for Hypothesis 2}\\
-\toprule
-Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
-\midrule
-\endfirsthead
-\caption*{\normalfont{Table \ref{tab:unnamed-chunk-2} continued}}\\
-\toprule
-Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
-\midrule
-\endhead
-Guardabassi and Tomasetto (2020) & Cross-sectional & 176 primary school children & N-back task & BMI, stereotype threat, working memory & Mixed-effects models & zBMI negatively correlated with working memory under threat & Partially\\
-Hirnstein et al. (2014) & Factorial & 136 participants (66 male, 70 female) & Cognitive tests & Stereotype threat, sex, group composition, cognitive performance & ANOVA & Performance decreased on 4W and perceptual speed under threat & Weakly\\
-Jordano and Touron (2017) & Experimental & 120 female undergraduates & OSPAN task, mind-wandering probes & Stereotype threat, mind-wandering, task performance & ANOVA & Increased mind-wandering, decreased math performance under threat & Partially\\
-Krendl et al. (2008) & Experimental & 28 female undergraduates & fMRI & Neural activation, math performance & Mixed-model ANOVA & Increased vACC activation, decreased cognitive region activation under threat & Yes\\
-Lin et al. (2023) & Cross-sectional & 153 female undergraduates & Spatial perspective-taking, executive function tests & Stereotype threat, executive function, spatial performance & ANCOVA, mediation analysis & Decreased performance, impaired inhibition and updating under threat & Partially\\
-Rydell et al. (2014) & Experimental & 340 undergraduates across 3 experiments & Executive function tasks, math tests & Stereotype threat, executive function, math performance & ANOVA, mediation analysis & Impaired inhibition and updating, decreased math performance under threat & Mostly\\
-Ståhl et al. (2012) & Experimental & 335 students across 3 experiments & Stroop task, math task & Stereotype threat, regulatory focus, cognitive control & ANOVA & Initial increase then decrease in cognitive control under threat (prevention focus) & Mostly\\
-Wister et al. (2013) & Experimental & 92 female undergraduates & Stroop test, SAT-like math test & Menstruation threat, cognitive performance & MANOVA & Impaired Stroop performance under menstruation threat & Partially\\
-Wulandari and Hendrawan (2020) & Experimental & 168 undergraduates (91 female) & Letter fluency test & Stereotype threat activation, gender, task difficulty & ANOVA & No significant effects of threat on performance & No\\
-\bottomrule
-\addlinespace
-\insertTableNotes
-\end{longtable}
-
-\end{lltable}
-
-\begin{lltable}
-
-\begin{TableNotes}[para]
-\normalsize{\textit{Note.} This table outlines studies investigating working memory impairment under stereotype threat. The 'Variables' column focuses on working memory measures and associated performance indicators. 'Methods of Data Analysis' details specific working memory tasks employed, such as complex span tasks, operational span tasks, or reading span tests. 'Results' highlight changes in working memory capacity and performance under stereotype threat.}
-\end{TableNotes}
-
-\begin{longtable}{m{1.5cm}m{3cm}m{2.5cm}m{3cm}m{3cm}m{3cm}m{3.5cm}m{1.5cm}}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
-\caption{\label{tab:unnamed-chunk-3}Overview of the Included Papers for Hypothesis 3}\\
-\toprule
-Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
-\midrule
-\endfirsthead
-\caption*{\normalfont{Table \ref{tab:unnamed-chunk-3} continued}}\\
-\toprule
-Citation & Study Design & Population & Research Questions & Variables & Methods of Data Analysis & Results & Hypothesis confirmed\\
-\midrule
-\endhead
-Bedyńska et al. (2020) & Cross-sectional & 319 male secondary school students & Working memory tasks & Chronic stereotype threat, working memory, language achievement & Mediation analysis & Stereotype threat negatively impacted working memory capacity & Yes\\
-Bedyńska et al. (2018) & Cross-sectional & 624 female secondary school students & Working memory tasks & Chronic stereotype threat, working memory, math achievement & Mediation analysis & Working memory mediated stereotype threat and math achievement & Yes\\
-Beilock et al. (2007) & Experimental & Female college students in US & Modular Arithmetic task & Stereotype threat, working memory efficiency & ANOVA & Reduced performance on high-demand problems under threat & Yes\\
-Brown and Harkins (2016) & Experimental & 73 female undergraduates & SART, math test & Stereotype threat, SART framing, mind-wandering & ANOVA & Support for mere effort account, not working memory impairment & No\\
-Guardabassi and Tomasetto (2020) & Cross-sectional & 176 primary school children & N-back task & BMI, stereotype threat, working memory & Mixed-effects models & zBMI negatively correlated with working memory under threat & Yes\\
-Hutchison et al. (2013) & Experimental & 187 men & Stroop task, OSPAN & Working memory capacity, stereotype threat, Stroop performance & Regression analysis & Stroop effect larger under threat for low WMC individuals & Partially\\
-Jamieson and Harkins (2007) & Experimental & 224 undergraduates across 4 experiments & Saccade tasks, N-back task & Stereotype threat, task type, cognitive load & ANOVA & Support for mere effort account in most conditions & Mostly No\\
-Johns et al. (2008) & Experimental & 176 participants across 3 experiments & Working memory task, math test & Stereotype threat, emotion regulation, working memory & ANOVA, mediation analysis & Working memory impaired under threat, mediated math performance & Yes\\
-Pennington et al. (2019) & Experimental & 124 female university students & Anti-saccade task, math task & Stereotype condition, task performance & ANOVA & No significant effects of threat on performance & No\\
-Rydell et al. (2009) & Experimental & 57 female undergraduates & Vowel counting task, math problems & Gender stereotype, college student stereotype, working memory & ANOVA, mediation analysis & Working memory capacity mediated stereotype effects on math performance & Yes\\
-Schmader et al. (2009) & Experimental & 188 participants across 2 experiments & Reading Span Test & Stereotype threat, anxiety, working memory & Regression analysis & Anxiety predicted lower working memory under stereotype threat & Partially\\
-Schmader and Johns (2003) & Experimental & 159 undergraduates across 3 experiments & OSPAN, math test & Stereotype threat, working memory capacity, math performance & ANCOVA, mediation analysis & Working memory capacity reduced under threat, mediated math performance & Yes\\
-Tine and Gotlieb (2013) & Experimental & 71 undergraduates & Math test, working memory test & Multiple stereotype threats, math and working memory performance & ANOVA & Working memory impaired under various stereotype threats & Yes\\
-Van Loo and Rydell (2013) & Experimental & 131 female undergraduates & Letter-memory task, math test & Power prime, stereotype threat, working memory & ANOVA, mediation analysis & High power prime protected working memory from stereotype threat effects & Mostly\\
-\bottomrule
-\addlinespace
-\insertTableNotes
-\end{longtable}
-
-\end{lltable}
-
-\section{Methods}\label{methods}
-
-We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study.
-
-\subsection{Participants}\label{participants}
-
-\subsection{Material}\label{material}
-
-\begin{table}[tbp]
-
-\begin{center}
-\begin{threeparttable}
-
-\caption{\label{tab:unnamed-chunk-4}}
-
-\small{
-
-\begin{tabular}{ll}
-\toprule
-Hypothesis & \multicolumn{1}{c}{Query}\\
-\midrule
-Hypothesis 1 & SELECT * FROM papers WHERE hypothesis = 1\\
-\bottomrule
-\end{tabular}
-
-}
-
-\end{threeparttable}
-\end{center}
-
-\end{table}
-
-\section{HELLO WORLD}\label{hello-world}
-
-This is the anova result: \(F(2, 27) = 4.85\), \(\mathit{MSE} = 0.39\), \(p = .016\).
-
-\subsection{Procedure}\label{procedure}
-
-\subsection{Data analysis}\label{data-analysis}
-
-We used R (Version 4.4.1; R Core Team, 2024) and the R-packages \emph{citr} (Version 0.3.2; Aust, 2019), \emph{kableExtra} (Version 1.4.0; Zhu, 2024), \emph{papaja} (Version 0.1.2.9000; Aust \& Barth, 2023), \emph{RefManageR} (Version 1.4.0; McLean, 2017), \emph{rmarkdown} (Version 2.27; Xie et al., 2018, 2020), and \emph{tinylabels} (Version 0.2.4; Barth, 2023) for all our analyses.
-
-\section{Results}\label{results}
-
-\section{Discussion}\label{discussion}
-
-\newpage
-
-\section{References}\label{references}
-
-\phantomsection\label{refs}
-\begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-R-citr}
-Aust, F. (2019). \emph{Citr: 'RStudio' add-in to insert markdown citations}. \url{https://github.com/crsh/citr}
-
-\bibitem[\citeproctext]{ref-R-papaja}
-Aust, F., \& Barth, M. (2023). \emph{{papaja}: {Prepare} reproducible {APA} journal articles with {R Markdown}}. \url{https://github.com/crsh/papaja}
-
-\bibitem[\citeproctext]{ref-R-tinylabels}
-Barth, M. (2023). \emph{{tinylabels}: Lightweight variable labels}. \url{https://cran.r-project.org/package=tinylabels}
-
-\bibitem[\citeproctext]{ref-R-RefManageR}
-McLean, M. W. (2017). RefManageR: Import and manage BibTeX and BibLaTeX references in r. \emph{The Journal of Open Source Software}. \url{https://doi.org/10.21105/joss.00338}
-
-\bibitem[\citeproctext]{ref-R-base}
-R Core Team. (2024). \emph{R: A language and environment for statistical computing}. R Foundation for Statistical Computing. \url{https://www.R-project.org/}
-
-\bibitem[\citeproctext]{ref-R-rmarkdown_a}
-Xie, Y., Allaire, J. J., \& Grolemund, G. (2018). \emph{R markdown: The definitive guide}. Chapman; Hall/CRC. \url{https://bookdown.org/yihui/rmarkdown}
-
-\bibitem[\citeproctext]{ref-R-rmarkdown_b}
-Xie, Y., Dervieux, C., \& Riederer, E. (2020). \emph{R markdown cookbook}. Chapman; Hall/CRC. \url{https://bookdown.org/yihui/rmarkdown-cookbook}
-
-\bibitem[\citeproctext]{ref-R-kableExtra}
-Zhu, H. (2024). \emph{kableExtra: Construct complex table with 'kable' and pipe syntax}. \url{https://CRAN.R-project.org/package=kableExtra}
-
-\end{CSLReferences}
 
 
 \end{document}

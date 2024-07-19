@@ -24,7 +24,7 @@ abstract: |
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : "r-references.bib"
+bibliography      : ["files/references.bib"]
 
 floatsintext      : no
 linenumbers       : yes
@@ -49,6 +49,14 @@ header-includes:
       {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
     \makeatother
   - \usepackage{pdflscape}
+  - \usepackage{amsmath}
+  - \usepackage{setspace}
+  - \AtBeginEnvironment{tabular}{\singlespacing}
+  - \AtBeginEnvironment{lltable}{\singlespacing}
+  - \AtBeginEnvironment{tablenotes}{\doublespacing}
+  - \captionsetup[table]{font={stretch=1.5}}
+  - \captionsetup[figure]{font={stretch=1.5}}
+
 
 csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
 documentclass     : "apa7"
@@ -61,7 +69,7 @@ output            : papaja::apa6_pdf
 library("papaja")
 library(RefManageR)
 library(kableExtra)
-r_refs("r-references.bib")
+library(citr)
 ```
 
 ```{r analysis-preferences}
@@ -69,265 +77,7 @@ r_refs("r-references.bib")
 set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
-
-
-```{r include = TRUE, results = "asis"}
-h1_table <- data.frame(
-  Citation = character(),
-  Study_Design = character(),
-  Population = character(),
-  Questions = character(),
-  Variables = character(),
-  data_analysis = character(),
-  results = character(),
-  review = character(),
-  stringsAsFactors = FALSE
-)
-
-h1_table[1, ] <- c(
-  "Beilock et al. (2007)",
-  "Experimental",
-  "Female college students in US",
-  "Behavioral tasks",
-  "Stereotype threat, working memory efficiency",
-  "ANOVA",
-  "Reduced performance on high-demand problems under threat",
-  "Yes"
-)
-
-h1_table[2, ] <- c(
-  "Dunst et al. (2013)",
-  "Experimental",
-  "58 secondary school students in Austria",
-  "EEG",
-  "Stereotype threat, neural efficiency, task performance",
-  "ANOVA",
-  "Higher cortical activation under threat",
-  "Partially"
-)
-
-h1_table[3, ] <- c(
-  "Forbes et al. (2015)",
-  "Experimental",
-  "58 participants (25 White, 33 minorities)",
-  "EEG",
-  "DMN phase-locking, error estimates, self-doubt",
-  "Regression models",
-  "DMN phase-locking may mitigate stereotype threat effects",
-  "Yes"
-)
-
-h1_table[4, ] <- c(
-  "Forbes et al. (2008)",
-  "Experimental",
-  "57 minority undergraduates",
-  "EEG",
-  "ERN, Pe, task performance",
-  "Repeated measures analysis",
-  "Smaller ERN amplitudes under threat",
-  "Partially"
-)
-
-h1_table[5, ] <- c(
-  "Jończyk et al. (2022)",
-  "Experimental",
-  "23 female undergraduates in US",
-  "EEG",
-  "Creativity, alpha power",
-  "Repeated measures ANOVA",
-  "Increased alpha power after threat",
-  "Partially"
-)
-
-h1_table[6, ] <- c(
-  "Krendl et al. (2008)",
-  "Experimental",
-  "28 female undergraduates",
-  "fMRI",
-  "Neural activation, math performance",
-  "Mixed-model ANOVA",
-  "Increased vACC activation, decreased cognitive region activation under threat",
-  "Partially"
-)
-
-h1_table[7, ] <- c(
-  "Mangels et al. (2012)",
-  "Prospective",
-  "68 participants",
-  "EEG",
-  "Math performance, ERP responses, learning success",
-  "ANOVA",
-  "LPP and learning success link more pronounced under threat",
-  "Partially"
-)
-
-h1_table[8, ] <- c(
-  "Wu and Zhao (2021)",
-  "Experimental",
-  "48 female undergraduates in China",
-  "RS-fMRI",
-  "RSDC of brain regions",
-  "Mixed-effect analysis",
-  "Increased RSDC in DMN areas, decreased in cerebellum and hippocampus",
-  "Partially"
-)
-
-apa_table(
-  h1_table,
-  caption = "Overview of the Included Papers for Hypothesis 1",
-  longtable = TRUE,
-  escape = FALSE,
-  landscape = TRUE,
-  col.names = c(
-    "Citation",
-    "Study Design",
-    "Population",
-    "Research Questions",
-    "Variables",
-    "Methods of Data Analysis",
-    "Results",
-    "Hypothesis confirmed"
-  ),
-  align = c("m{1.5cm}", "m{3cm}", "m{2.5cm}", "m{3cm}", "m{3cm}", "m{3cm}", "m{3.5cm}", "m{1.5cm}"),
-  note = "This table summarizes studies investigating neural activation patterns under stereotype threat. The 'Variables' column focuses on brain areas and networks of interest, such as the amygdala, prefrontal cortex, default mode network, and salience network. 'Methods of Data Analysis' includes neuroimaging techniques like fMRI and EEG. 'Results' highlight changes in neural activation patterns related to stereotype threat."
-)
-```
-
-```{r include = TRUE, results = "asis"}
-h2_table <- data.frame(
-  Citation = character(),
-  Study_Design = character(),
-  Population = character(),
-  Questions = character(),
-  Variables = character(),
-  data_analysis = character(),
-  results = character(),
-  review = character(),
-  stringsAsFactors = FALSE
-)
-
-h2_table[1, ] <- c(
-  "Guardabassi and Tomasetto (2020)",
-  "Cross-sectional",
-  "176 primary school children",
-  "N-back task",
-  "BMI, stereotype threat, working memory",
-  "Mixed-effects models",
-  "zBMI negatively correlated with working memory under threat",
-  "Partially"
-)
-
-h2_table[2, ] <- c(
-  "Hirnstein et al. (2014)",
-  "Factorial",
-  "136 participants (66 male, 70 female)",
-  "Cognitive tests",
-  "Stereotype threat, sex, group composition, cognitive performance",
-  "ANOVA",
-  "Performance decreased on 4W and perceptual speed under threat",
-  "Weakly"
-)
-
-h2_table[3, ] <- c(
-  "Jordano and Touron (2017)",
-  "Experimental",
-  "120 female undergraduates",
-  "OSPAN task, mind-wandering probes",
-  "Stereotype threat, mind-wandering, task performance",
-  "ANOVA",
-  "Increased mind-wandering, decreased math performance under threat",
-  "Partially"
-)
-
-h2_table[4, ] <- c(
-  "Krendl et al. (2008)",
-  "Experimental",
-  "28 female undergraduates",
-  "fMRI",
-  "Neural activation, math performance",
-  "Mixed-model ANOVA",
-  "Increased vACC activation, decreased cognitive region activation under threat",
-  "Yes"
-)
-
-h2_table[5, ] <- c(
-  "Lin et al. (2023)",
-  "Cross-sectional",
-  "153 female undergraduates",
-  "Spatial perspective-taking, executive function tests",
-  "Stereotype threat, executive function, spatial performance",
-  "ANCOVA, mediation analysis",
-  "Decreased performance, impaired inhibition and updating under threat",
-  "Partially"
-)
-
-h2_table[6, ] <- c(
-  "Rydell et al. (2014)",
-  "Experimental",
-  "340 undergraduates across 3 experiments",
-  "Executive function tasks, math tests",
-  "Stereotype threat, executive function, math performance",
-  "ANOVA, mediation analysis",
-  "Impaired inhibition and updating, decreased math performance under threat",
-  "Mostly"
-)
-
-h2_table[7, ] <- c(
-  "Ståhl et al. (2012)",
-  "Experimental",
-  "335 students across 3 experiments",
-  "Stroop task, math task",
-  "Stereotype threat, regulatory focus, cognitive control",
-  "ANOVA",
-  "Initial increase then decrease in cognitive control under threat (prevention focus)",
-  "Mostly"
-)
-
-h2_table[8, ] <- c(
-  "Wister et al. (2013)",
-  "Experimental",
-  "92 female undergraduates",
-  "Stroop test, SAT-like math test",
-  "Menstruation threat, cognitive performance",
-  "MANOVA",
-  "Impaired Stroop performance under menstruation threat",
-  "Partially"
-)
-
-h2_table[9, ] <- c(
-  "Wulandari and Hendrawan (2020)",
-  "Experimental",
-  "168 undergraduates (91 female)",
-  "Letter fluency test",
-  "Stereotype threat activation, gender, task difficulty",
-  "ANOVA",
-  "No significant effects of threat on performance",
-  "No"
-)
-
-apa_table(
-  h2_table,
-  caption = "Overview of the Included Papers for Hypothesis 2",
-  longtable = TRUE,
-  escape = FALSE,
-  landscape = TRUE,
-  col.names = c(
-    "Citation",
-    "Study Design",
-    "Population",
-    "Research Questions",
-    "Variables",
-    "Methods of Data Analysis",
-    "Results",
-    "Hypothesis confirmed"
-  ),
-  align = c("m{1.5cm}", "m{3cm}", "m{2.5cm}", "m{3cm}", "m{3cm}", "m{3cm}", "m{3.5cm}", "m{1.5cm}"),
-  note = "This table presents studies examining cognitive control processes under stereotype threat. The 'Variables' column includes both cognitive processes (e.g., inhibition, updating, shifting) and related performance measures. 'Methods of Data Analysis' specifies cognitive tasks used, such as the Stroop task, n-back task, or task-switching paradigms. 'Results' emphasize changes in cognitive control performance under stereotype threat conditions."
-)
-```
-
-```{r include = TRUE, results = "asis"}
-# Create the data frame with the necessary columns
+```{r h3_table, results = "asis"}
 h3_table <- data.frame(
   Citation = character(),
   Study_Design = character(),
@@ -344,10 +94,12 @@ h3_table[1, ] <- c(
   "Bedyńska et al. (2020)",
   "Cross-sectional",
   "319 male secondary school students",
-  "Working memory tasks",
-  "Chronic stereotype threat, working memory, language achievement",
+  "Effects of chronic stereotype threat on working memory and language achievement; counting span task, set switching task, and spatial location memory task (capacity)",
+  "IV: Chronic stereotype threat, Gender identification; DV: Working memory, Language achievement",
   "Mediation analysis",
-  "Stereotype threat negatively impacted working memory capacity",
+  paste0(
+    "Stereotype threat negatively impacted working memory capacity, with the latter mediating the relationship between stereotype threat and language achievement. $b$ = ", apa_num(2.81), ", $\\beta$ = ", apa_num(0.45), ", $SE$ = ", apa_num(0.06), ", $p$ < ", apa_p(.001), ", 95\\% CI [", apa_confint(0.338,0.553), "]. Higher gender identification moderated the effect of stereotype threat on working memory. $r$ = ", apa_num(.32), "."
+  ),
   "Yes"
 )
 
@@ -355,21 +107,25 @@ h3_table[2, ] <- c(
   "Bedyńska et al. (2018)",
   "Cross-sectional",
   "624 female secondary school students",
-  "Working memory tasks",
-  "Chronic stereotype threat, working memory, math achievement",
+  "Effects of chronic stereotype threat on working memory and maths achievement; Functional Aspects of Working Memory Test (capacity, accuracy)",
+  "IV: Chronic stereotype threat, Gender identification; DV: Working memory, Maths achievement",
   "Mediation analysis",
-  "Working memory mediated stereotype threat and math achievement",
+  paste0(
+    "Working memory mediated the relationship between stereotype threat and maths achievement. $\\beta$ = ", apa_num(0.502), ", indirect effect $\\beta$ = -", apa_num(0.136), ", 95\\% CI [", apa_confint(-0.198, -0.074), "]. Higher gender identification moderated the negative effect of stereotype threat on working memory. $b$ = -", apa_num(0.006), ", $\\beta$ = -", apa_num(0.288), ", $SE$ = ", apa_num(0.140), ", $p$ = ", apa_p(0.039), ". $r$ = ", apa_num(0.2), "."
+  ),
   "Yes"
 )
 
 h3_table[3, ] <- c(
   "Beilock et al. (2007)",
   "Experimental",
-  "Female college students in US",
-  "Modular Arithmetic task",
-  "Stereotype threat, working memory efficiency",
+  "Experiment 1: 31 female college students; Experiment 3A: 33 female college students; Experiment 4: 30 female college students; Experiment 5: 33 female college students",
+  "Effects of stereotype threat on working memory and its influence on unrelated tasks; modular arithmetic (processing speed); n-back task (capacity, accuracy)",
+  "IV: Group (stereotype threat vs. control), Problem working memory demand (low vs. high), Block (baseline vs. posttest); DV: Accuracy, Reaction time",
   "ANOVA",
-  "Reduced performance on high-demand problems under threat",
+  paste0(
+    "High-demand problems showed a significant decrease in accuracy at the post-test, CI [", apa_num(81), "\\% - ", apa_num(97), "\\%]; $\\textit{d}$ = ", apa_num(.61), ". $\\textit{F}$(1,29) = ", apa_num(11.18), ", $\\eta^{2}_\\text{p}$ = ", apa_num(.28), "."
+  ),
   "Yes"
 )
 
@@ -377,10 +133,12 @@ h3_table[4, ] <- c(
   "Brown and Harkins (2016)",
   "Experimental",
   "73 female undergraduates",
-  "SART, math test",
-  "Stereotype threat, SART framing, mind-wandering",
+  "Effects of stereotype threat on mind-wandering and task performance; SART (processing speed, accuracy)",
+  "IV: Condition (stereotype threat vs. control), SART framing (related vs. unrelated); DV: Mind-wandering (SART performance)",
   "ANOVA",
-  "Support for mere effort account, not working memory impairment",
+  paste0(
+    "Significant effect of the mere effort account: commission errors $\\textit{F}$(1, 69) = ", apa_num(28.78), ", $p$ < ", apa_p(.001), ", $\\eta^{2}_\\text{p}$ = ", apa_num(.294), ". Counter-hypothesis not supported."
+  ),
   "No"
 )
 
@@ -388,22 +146,23 @@ h3_table[5, ] <- c(
   "Guardabassi and Tomasetto (2020)",
   "Cross-sectional",
   "176 primary school children",
-  "N-back task",
-  "BMI, stereotype threat, working memory",
+  "Effects of BMI and stereotype threat on working memory; N-back task (capacity, accuracy)",
+  "IV: BMI, Stereotype threat; DV: Working memory",
   "Mixed-effects models",
-  "zBMI negatively correlated with working memory under threat",
+  "zBMI negatively correlated with working memory under threat. $F$ = ", apa_num(12.4), ", $p$ < ", apa_p(.001), ".",
   "Yes"
 )
-
 
 h3_table[6, ] <- c(
   "Hutchison et al. (2013)",
   "Experimental",
   "187 men",
-  "Stroop task, OSPAN",
-  "Working memory capacity, stereotype threat, Stroop performance",
+  "Effects of stereotype threat on working memory and Stroop performance; OSPAN (capacity, accuracy)",
+  "IV: Working memory capacity, List congruency, Stereotype threat condition; DV: Stroop task performance",
   "Regression analysis",
-  "Stroop effect larger under threat for low WMC individuals",
+  paste0(
+    "Stroop effect larger under threat for low WMC individuals. $\\beta$ = ", apa_num(0.12), ", $\\beta$ = -", apa_num(0.11), ", $\\beta$ = ", apa_num(0.24), "*."
+  ),
   "Partially"
 )
 
@@ -411,10 +170,12 @@ h3_table[7, ] <- c(
   "Jamieson and Harkins (2007)",
   "Experimental",
   "224 undergraduates across 4 experiments",
-  "Saccade tasks, N-back task",
-  "Stereotype threat, task type, cognitive load",
+  "Effects of stereotype threat on task performance requiring inhibitory control; saccade tasks (processing speed, accuracy)",
+  "IV: Condition (stereotype threat vs. control), Task type (antisaccade vs. prosaccade), Cognitive load; DV: Accuracy, Reaction time, Eye movements",
   "ANOVA",
-  "Support for mere effort account in most conditions",
+  paste0(
+    "Support for mere effort account in most conditions. Anti-saccade task: $F$(1, 72) = ", apa_num(17.28), ", $p$ < ", apa_p(.001), ", $d$ = ", apa_num(0.98), ". Condition x Task: $F$(1, 72) = ", apa_num(4.85), ", $p$ = ", apa_p(.05), "."
+  ),
   "Mostly No"
 )
 
@@ -422,10 +183,12 @@ h3_table[8, ] <- c(
   "Johns et al. (2008)",
   "Experimental",
   "176 participants across 3 experiments",
-  "Working memory task, math test",
-  "Stereotype threat, emotion regulation, working memory",
+  "Effects of stereotype threat on working memory and emotion regulation; reading span task (capacity, accuracy)",
+  "IV: Condition (stereotype threat vs. control), Emotion regulation strategy; DV: Working memory capacity, Maths performance, Self-reported anxiety",
   "ANOVA, mediation analysis",
-  "Working memory impaired under threat, mediated math performance",
+  paste0(
+    "Working memory impaired under threat, mediated maths performance. $t$(55) = ", apa_num(2.31), ", $\\beta$ = ", apa_num(.30), "*."
+  ),
   "Yes"
 )
 
@@ -433,10 +196,12 @@ h3_table[9, ] <- c(
   "Pennington et al. (2019)",
   "Experimental",
   "124 female university students",
-  "Anti-saccade task, math task",
-  "Stereotype condition, task performance",
+  "Effects of stereotype condition on task performance; anti-saccade task (accuracy, processing speed)",
+  "IV: Stereotype condition; DV: Task performance",
   "ANOVA",
-  "No significant effects of threat on performance",
+  paste0(
+    "No significant effects of threat on performance. Anti-saccade task: $F$(2, 58) = ", apa_num(0.30), ", $p$ = ", apa_p(0.75), ", $\\eta^{2}_\\text{p}$ = ", apa_num(0.01), "."
+  ),
   "No"
 )
 
@@ -444,10 +209,12 @@ h3_table[10, ] <- c(
   "Rydell et al. (2009)",
   "Experimental",
   "57 female undergraduates",
-  "Vowel counting task, math problems",
-  "Gender stereotype, college student stereotype, working memory",
+  "Effects of multiple social identities on stereotype threat and working memory; vowel counting task (capacity, accuracy)",
+  "IV: Gender stereotype, College student stereotype; DV: Working memory capacity, Maths performance",
   "ANOVA, mediation analysis",
-  "Working memory capacity mediated stereotype effects on math performance",
+  paste0(
+    "Working memory capacity mediated stereotype effects on maths performance. $F$(1, 53) = ", apa_num(6.01), ", $p$ = ", apa_p(.02), ", $\\eta^{2}_\\text{p}$ = ", apa_num(.102), ". Sobel test: $z$ = ", apa_num(1.96), ", $p$ = ", apa_p(.05), "."
+  ),
   "Yes"
 )
 
@@ -455,21 +222,25 @@ h3_table[11, ] <- c(
   "Schmader et al. (2009)",
   "Experimental",
   "188 participants across 2 experiments",
-  "Reading Span Test",
-  "Stereotype threat, anxiety, working memory",
+  "Effects of stereotype threat on anxiety and working memory; Reading Span Test (capacity, processing speed)",
+  "IV: Prime condition, Self-reported anxiety; DV: Working memory performance",
   "Regression analysis",
-  "Anxiety predicted lower working memory under stereotype threat",
+  paste0(
+    "Anxiety predicted lower working memory under stereotype threat. $\\beta$ = -", apa_num(.2), ", $p$ = ", apa_p(.05), ". Prime x Anxiety interaction significant: $\\beta$ = -", apa_num(.3), ", $p$ < ", apa_p(.04), "."
+  ),
   "Partially"
 )
 
 h3_table[12, ] <- c(
   "Schmader and Johns (2003)",
   "Experimental",
-  "159 undergraduates across 3 experiments",
-  "OSPAN, math test",
-  "Stereotype threat, working memory capacity, math performance",
-  "ANCOVA, mediation analysis",
-  "Working memory capacity reduced under threat, mediated math performance",
+  "151 undergraduates across 3 experiments",
+  "Effects of stereotype threat on working memory and maths performance; reading span task (capacity, accuracy)",
+  "IV: Condition (stereotype threat vs. control); DV: Working memory capacity, Maths test performance",
+  "ANOVA, mediation analysis",
+  paste0(
+    "Working memory capacity predicted maths performance. $F$(1, 54) = ", apa_num(23.84), ", $p$ < ", apa_p(.001), ". Mediation: Sobel test $z$ = ", apa_num(2.26), ", $p$ < ", apa_p(.02), "."
+  ),
   "Yes"
 )
 
@@ -477,10 +248,12 @@ h3_table[13, ] <- c(
   "Tine and Gotlieb (2013)",
   "Experimental",
   "71 undergraduates",
-  "Math test, working memory test",
-  "Multiple stereotype threats, math and working memory performance",
+  "Effects of gender-, race-, and income-based stereotype threat on working memory; Automated Working Memory Assessment (capacity, accuracy)",
+  "IV: Gender, Race, Income level, Number of stigmatized aspects; DV: Working memory performance",
   "ANOVA",
-  "Working memory impaired under various stereotype threats",
+  paste0(
+    "Significant effects of stereotype threat on working memory performance. $F$(1, 68) = ", apa_num(4.91), ", $p$ < ", apa_p(.05), ", $\\eta^{2}_\\text{p}$ = ", apa_num(.067), "; $F$(1, 68) = ", apa_num(16.73), ", $p$ < ", apa_p(.001), ", $\\eta^{2}_\\text{p}$ = ", apa_num(.197), "."
+  ),
   "Yes"
 )
 
@@ -488,10 +261,12 @@ h3_table[14, ] <- c(
   "Van Loo and Rydell (2013)",
   "Experimental",
   "131 female undergraduates",
-  "Letter-memory task, math test",
-  "Power prime, stereotype threat, working memory",
+  "Effects of power prime on stereotype threat and working memory; letter-memory task (capacity, accuracy)",
+  "IV: Power prime, Stereotype threat condition; DV: Working memory capacity, Maths performance",
   "ANOVA, mediation analysis",
-  "High power prime protected working memory from stereotype threat effects",
+  paste0(
+    "High power prime protected working memory from stereotype threat effects. $F$(2, 125) = ", apa_num(13.38), "***, mediated by working memory capacity. $z$ = -", apa_num(3.53), "***."
+  ),
   "Mostly"
 )
 
@@ -513,65 +288,7 @@ apa_table(
     "Hypothesis confirmed"
   ),
   align = c("m{1.5cm}", "m{3cm}", "m{2.5cm}", "m{3cm}", "m{3cm}", "m{3cm}", "m{3.5cm}", "m{1.5cm}"),
-  note = "This table outlines studies investigating working memory impairment under stereotype threat. The 'Variables' column focuses on working memory measures and associated performance indicators. 'Methods of Data Analysis' details specific working memory tasks employed, such as complex span tasks, operational span tasks, or reading span tests. 'Results' highlight changes in working memory capacity and performance under stereotype threat."
+  note = "This table summarises studies investigating working memory impairment under stereotype threat. The 'Variables' column focuses on working memory measures and associated performance indicators. 'Methods of Data Analysis' details specific working memory tasks employed, such as complex span tasks, operational span tasks, or reading span tests. 'Results' highlight changes in working memory capacity and performance under stereotype threat. Asterisks indicate the significance level: *p < .05, **p < .01, ***p < .001."
 )
-```
-
-
-# Methods
-We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
-
-## Participants
-
-## Material
-
-```{r include = TRUE, results = "asis"}
-
-query_table <- data.frame(
-     Hypothesis = character(),
-     Query = character()
-)
-
-colnames(query_table) <- c(
-     "Hypothesis",
-     "Query"
-)
-
-query_table[1, ] <- c(
-     "Hypothesis 1",
-     "SELECT * FROM papers WHERE hypothesis = 1"
-)
-
-apa_table(query_table,
-          escape = TRUE,
-          small = T
-          )
 
 ```
-
-# HELLO WORLD
-
-```{r include = FALSE}
-source("analysis-test.R")
-```
-
-This is the anova result: `r yep$statistic`.
-
-
-## Procedure
-
-## Data analysis
-We used `r cite_r("r-references.bib")` for all our analyses.
-
-
-# Results
-
-# Discussion
-
-
-\newpage
-
-# References
-
-::: {#refs custom-style="Bibliography"}
-:::

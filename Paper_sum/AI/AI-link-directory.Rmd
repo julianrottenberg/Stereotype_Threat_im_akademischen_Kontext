@@ -1,6 +1,6 @@
 ---
-title             : "Link Directory Claude AI"
-shorttitle        : "Link Direcotry Claude AI"
+title             : "Link Directory AI"
+shorttitle        : "Link Direcotry AI"
 
 
 keywords          : "keywords"
@@ -45,138 +45,148 @@ library(kableExtra)
 r_refs("r-references.bib")
 ```
 
-# Paper summaries
+# Claude 3.5 Sonnet
 
-## @beilockStereotypeThreatWorking2007
+## Paper summaries
+
+### @beilockStereotypeThreatWorking2007
 
 https://aiarchives.org/id/yif3dUhW1z2qeNRq3mce-p
 
-## @dunstSexDifferencesNeural2013
+### @dunstSexDifferencesNeural2013
 
 https://aiarchives.org/id/dPtsG0OsmA7u4afK8euY-p
 
-## @forbesSpontaneousDefaultMode2015
+### @forbesSpontaneousDefaultMode2015
 
 https://aiarchives.org/id/IMnbLf5gCqjsGwNHc8dr-p
 
-## @forbesRoleDevaluingDiscounting2008
+### @forbesRoleDevaluingDiscounting2008
 
 https://aiarchives.org/id/kf2H1r42Wh2YSwq2tpER-p
 
-## @jonczykHowStereotypeThreat2022
+### @jonczykHowStereotypeThreat2022
 
 https://aiarchives.org/id/IfrmZTkrxeEwwIze1rkO-p
 
-## @krendlNegativeConsequencesThreat2008
+### @krendlNegativeConsequencesThreat2008
 
 https://aiarchives.org/id/eGFa3aeF6jdb4RzQIzrv-p
 
-## @mangelsEmotionBlocksPath2012
+### @mangelsEmotionBlocksPath2012
 
 https://aiarchives.org/id/RjAvSsI3ZkMOb2OF4a1C-p
 
-## @wuDegreeCentralityBrain2021
+### @wuDegreeCentralityBrain2021
 
 https://aiarchives.org/id/fsDQp5kQ7jY8fHpteimr-p
 
-## @guardabassiWeightStatusWeight2020
+### @guardabassiWeightStatusWeight2020
 
 https://aiarchives.org/id/MKtlXc0xny62hSkAchgq-p
 
-## @hirnsteinGenderstereotypingCognitiveSex2014
+### @hirnsteinGenderstereotypingCognitiveSex2014
 
 https://aiarchives.org/id/QmsoeBwLsFmo2bh8rBqs-p
 
-## @jordanoPrimingPerformancerelatedConcerns2017
+### @jordanoPrimingPerformancerelatedConcerns2017
 
 https://aiarchives.org/id/wJwTQSXRjB5ff3Lsueuy-p
 
-## @linEffectStereotypeThreat2023a
+### @linEffectStereotypeThreat2023a
 
 https://aiarchives.org/id/AEeIzDo6a57edPTJvbw8-p
 
-## @rydellStereotypeThreatExecutive2014
+### @rydellStereotypeThreatExecutive2014
 
 https://aiarchives.org/id/OK6r6mtDvu38rkPLlKCa-p
 
-## @stahlRolePreventionFocus2012a
+### @stahlRolePreventionFocus2012a
 
 https://aiarchives.org/id/3HeqjNu7AnIA0ELPW06X-p
 
-## @wisterMentioningMenstruationStereotype2013
+### @wisterMentioningMenstruationStereotype2013
 
 https://aiarchives.org/id/xF9HotCSMyWqaP5fbr79-p
 
-## @wulandariTrustYourAbilities2020
+### @wulandariTrustYourAbilities2020
 
 https://aiarchives.org/id/Tl6ESrS0wUEb7O8FhWFS-p
 
-## @bedynskaChronicStereotypeThreat2018
+### @bedynskaChronicStereotypeThreat2018
 
 https://aiarchives.org/id/cUWcpSisADDPa8wf59v5-p
 
-## @bedynskaStereotypeThreatLinked2020
+### @bedynskaStereotypeThreatLinked2020
 
 https://aiarchives.org/id/awF6QH2ndmsGXgWKyI0L-p
 
-## @brownThreatDoesNot2016
+### @brownThreatDoesNot2016
 
 https://aiarchives.org/id/x7E0XfZY7U3dsdw1BX9Z-p
 
-## @forbesRetrainingAttitudesStereotypes2010
+### @forbesRetrainingAttitudesStereotypes2010
 
 https://aiarchives.org/id/7lGYIQPAs3ZLGqlNFrm6-p
 
-## @hutchisonGoalsCanBe2013
+### @hutchisonGoalsCanBe2013
 
 https://aiarchives.org/id/zY9MX9oDg6oapcVGaftv-p
 
-## @hutterWomenStereotypeThreat2019
+### @hutterWomenStereotypeThreat2019
 
 https://aiarchives.org/id/eG36qVia9oOdFs9TFop8-p
 
-## @jamiesonMereEffortStereotype2007
+### @jamiesonMereEffortStereotype2007
 
 https://aiarchives.org/id/gwgS1iWbxA56gCr0Vis2-p
 
-## @johnsStereotypeThreatExecutive2008
+### @johnsStereotypeThreatExecutive2008
 
 https://aiarchives.org/id/cdbIdlUMX9Zp6UKdaPKg-p
 
-## @penningtonStereotypeThreatMay2019
+### @penningtonStereotypeThreatMay2019
 
 https://aiarchives.org/id/xLa1RiapcwOkvfkMM0qW-p
 
-## @regnerIndividualDifferencesWorking2010
+### @regnerIndividualDifferencesWorking2010
 
 https://aiarchives.org/id/h7nIbMwsAnQP282sPQ6f-p
 
-## @rydellMultipleSocialIdentities2009
+### @rydellMultipleSocialIdentities2009
 
 https://aiarchives.org/id/GLfojJCfJMN4cBtZXXvT-p
 
-## @schmaderMetacognitivePerspectiveCognitive2009
+### @schmaderMetacognitivePerspectiveCognitive2009
 
 https://aiarchives.org/id/N1q4EvUKhKVLj1AajiWY-p
 
-## @schmaderConvergingEvidenceThat2003
+### @schmaderConvergingEvidenceThat2003
 
 https://aiarchives.org/id/QgeWkqq6wS4j8Qs22GpR-p
 
-## @seitchikStereotypeThreatMental2015
+### @seitchikStereotypeThreatMental2015
 
 https://aiarchives.org/id/sAbgdoBEli1FRrHIhrrW-p
 
-## @tineGenderRaceIncomebased2013
+### @tineGenderRaceIncomebased2013
 
 https://aiarchives.org/id/bjbQcOGtqwTIIgaUTPBC-p
 
-## @vanlooExperienceFeelingPowerful2013
+### @vanlooExperienceFeelingPowerful2013
 
 https://aiarchives.org/id/EneDzNT2iS6b4dUfoslW-p
 
 
+----
 
+# ChatGPT 4o
+
+## Results table generation *extracted* from *my* lengthy first draft of the results section.
+
+https://aiarchives.org/id/RSk5jlPm5rogNH4LtlSW-p
+
+https://aiarchives.org/id/yg5WBLKOv7ucPIBAHiKj-p
 
 
 

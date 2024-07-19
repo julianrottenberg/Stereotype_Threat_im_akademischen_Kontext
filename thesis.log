@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  18 JUL 2024 03:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  19 JUL 2024 06:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,7 +793,9 @@ Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)) (/home/julian/.TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
+)) (/home/julian/.TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/home/julian/.TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
@@ -802,7 +804,7 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 \c@NumberOfAuthors=\count356
 \c@NumberOfSuperscripts=\count357
 
-Class apa7 Warning: Deprecated: see documentation for \authorsaffiliations on input line 242.
+Class apa7 Warning: Deprecated: see documentation for \authorsaffiliations on input line 249.
 
 \c@NumberOfAffiliations=\count358
 Package csquotes Info: Checking for multilingual support...
@@ -812,24 +814,24 @@ Package csquotes Info: Redefining alias 'default' -> 'british'.
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 260.
-LaTeX Font Info:    ... okay on input line 260.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 260.
-LaTeX Font Info:    ... okay on input line 260.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 260.
-LaTeX Font Info:    ... okay on input line 260.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 260.
-LaTeX Font Info:    ... okay on input line 260.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 260.
-LaTeX Font Info:    ... okay on input line 260.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 260.
-LaTeX Font Info:    ... okay on input line 260.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 260.
-LaTeX Font Info:    ... okay on input line 260.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 260.
-LaTeX Font Info:    ... okay on input line 260.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 260.
-LaTeX Font Info:    ... okay on input line 260.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 267.
+LaTeX Font Info:    ... okay on input line 267.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -879,17 +881,11 @@ LaTeX Font Info:    ... okay on input line 260.
 \everyMPtoPDFconversion=\toks48
 ) (/home/julian/.TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-(/home/julian/.TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 260.
+Package hyperref Info: Link coloring OFF on input line 267.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/apa7/config/APA7british.txt
 File: APA7british.txt 2020/12/02 v1.02 apa7 configuration for British English
 )
@@ -900,54 +896,56 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 260.
-Package microtype Info: Applying patch `item' on input line 260.
-Package microtype Info: Applying patch `toc' on input line 260.
-Package microtype Info: Applying patch `eqnum' on input line 260.
-Package microtype Info: Applying patch `footnote' on input line 260.
-Package microtype Info: Applying patch `verbatim' on input line 260.
+LaTeX Info: Redefining \microtypecontext on input line 267.
+Package microtype Info: Applying patch `item' on input line 267.
+Package microtype Info: Applying patch `toc' on input line 267.
+Package microtype Info: Applying patch `eqnum' on input line 267.
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 267.
+
+Package microtype Info: Applying patch `verbatim' on input line 267.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 260.
+LaTeX Info: Redefining \showhyphens on input line 267.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 261.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 268.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 261.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 268.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 261.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 268.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 261.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 268.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 261.
+(Font)              <12> on input line 268.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 261.
+(Font)              <8> on input line 268.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 261.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 261.
+(Font)              <6> on input line 268.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 268.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/home/julian/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 261.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 268.
 (/home/julian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/home/julian/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -964,14 +962,16 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 
 ]
 
-[3]
+[3] (./thesis.toc)
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [4]
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 294--319
- [] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -979,1980 +979,3526 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [5]
 
 [6]
+
+[7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[7{/home/julian/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/home/julian/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-<files/prisma.pdf, id=59, 600.2425pt x 650.43pt>
+[8]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 353.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 353.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 353.
+
+
+[9]
+Underfull \vbox (badness 6445) has occurred while \output is active []
+
+
+
+[10]
+
+[11]
+Underfull \vbox (badness 1769) has occurred while \output is active []
+
+
+
+[12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 475--475
+[]|\T1/lmr/m/n/12 (+20) TRP (Task-Related
+ []
+
+
+Underfull \hbox (badness 4647) in paragraph at lines 479--479
+[]|\T1/lmr/m/n/12 (+20) ERN (Error-Related
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 479--480
+\T1/lmr/m/n/12 (+20) associated with error detection and conflict
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 483--483
+[]|\T1/lmr/m/n/12 (+20) LPP (Late Positive
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 484--485
+[]|\T1/lmr/m/n/12 (+20) An ERP component peaking around 250-280
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 485--485
+[]|\T1/lmr/m/n/12 (+20) ERP (Event-Related
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 486--486
+[]|\T1/lmr/m/n/12 (+20) FRN (Feedback-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
+[]|\T1/lmr/m/n/12 (+20) Degree centrality measured during resting
+ []
+
+[15] [16] [17]
+
+[18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[19]
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 528--553
+ [] 
+ []
+
+
+
+[20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[21{/home/julian/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/home/julian/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+<files/prisma.pdf, id=182, 600.2425pt x 650.43pt>
 File: files/prisma.pdf Graphic file (type pdf)
 <use files/prisma.pdf>
-Package pdftex.def Info: files/prisma.pdf  used on input line 342.
+Package pdftex.def Info: files/prisma.pdf  used on input line 576.
 (pdftex.def)             Requested size: 452.9834pt x 490.85828pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[8]
+[22]
 
-[9 <./files/prisma.pdf>]
+[23 <./files/prisma.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[10{/home/julian/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+[24{/home/julian/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 Underfull \vbox (badness 7099) has occurred while \output is active []
 
 
 
-[11]
+[25]
 Underfull \vbox (badness 1194) has occurred while \output is active []
 
 
 
-[12]
+[26]
 Underfull \vbox (badness 1194) has occurred while \output is active []
 
 
 
-[13]
+[27]
 Underfull \vbox (badness 7099) has occurred while \output is active []
 
 
-
-[14]
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 448--448
-[]|\T1/lmr/m/n/12 (+20) Research
- []
-
-
-Overfull \hbox (12.7871pt too wide) in paragraph at lines 448--449
-[]|\T1/lmr/m/n/12 (-20) Hypothesis
- []
-
-
-Overfull \hbox (6.57985pt too wide) in paragraph at lines 448--449
-\T1/lmr/m/n/12 (-20) confirmed| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--453
-[]|\T1/lmr/m/n/12 (+20) Research
- []
-
-
-Overfull \hbox (12.7871pt too wide) in paragraph at lines 453--454
-[]|\T1/lmr/m/n/12 (-20) Hypothesis
- []
-
-
-Overfull \hbox (6.57985pt too wide) in paragraph at lines 453--454
-\T1/lmr/m/n/12 (-20) confirmed| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-[]|\T1/lmr/m/n/12 (+20) Beilock
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-[]|\T1/lmr/m/n/12 (+20) Female
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-\T1/lmr/m/n/12 (+20) college
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-\T1/lmr/m/n/12 (+20) students
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-[]|\T1/lmr/m/n/12 (+20) Stereotype
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-\T1/lmr/m/n/12 (+20) memory
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-[]|\T1/lmr/m/n/12 (+20) Reduced
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-\T1/lmr/m/n/12 (+20) performance
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-\T1/lmr/m/n/12 (+20) on high-demand
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
-\T1/lmr/m/n/12 (+20) problems under
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 457--457
-[]|\T1/lmr/m/n/12 (+20) Dunst
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 457--457
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 457--457
-\T1/lmr/m/n/12 (+20) school
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 457--457
-\T1/lmr/m/n/12 (+20) students
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 457--457
-[]|\T1/lmr/m/n/12 (+20) Stereotype
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 457--457
-\T1/lmr/m/n/12 (+20) threat, neural
- []
-
-
-Underfull \hbox (badness 6978) in paragraph at lines 457--457
-\T1/lmr/m/n/12 (+20) efficiency, task
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 457--457
-[]|\T1/lmr/m/n/12 (+20) Higher cortical
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 457--457
-\T1/lmr/m/n/12 (+20) activation under
- []
-
-
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 457--458
-[]|\T1/lmr/m/n/12 (-20) Partially| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--458
-[]|\T1/lmr/m/n/12 (+20) Forbes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--458
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--458
-[]|\T1/lmr/m/n/12 (+20) 58
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--458
-\T1/lmr/m/n/12 (+20) participants
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--458
-[]|\T1/lmr/m/n/12 (+20) DMN phase-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--458
-\T1/lmr/m/n/12 (+20) locking, error
- []
-
-
-Underfull \hbox (badness 7433) in paragraph at lines 458--458
-\T1/lmr/m/n/12 (+20) estimates, self-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--458
-[]|\T1/lmr/m/n/12 (+20) Regression
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--458
-\T1/lmr/m/n/12 (+20) may mitigate
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--458
-\T1/lmr/m/n/12 (+20) stereotype threat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--459
-[]|\T1/lmr/m/n/12 (+20) Forbes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--459
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--459
-[]|\T1/lmr/m/n/12 (+20) 57 minority
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 459--459
-\T1/lmr/m/n/12 (-20) undergraduates| 
- []
-
-
-Underfull \hbox (badness 1292) in paragraph at lines 459--459
-[]|\T1/lmr/m/n/12 (+20) ERN, Pe, task
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--459
-[]|\T1/lmr/m/n/12 (+20) Repeated
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--459
-\T1/lmr/m/n/12 (+20) measures
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--459
-[]|\T1/lmr/m/n/12 (+20) Smaller ERN
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--459
-\T1/lmr/m/n/12 (+20) amplitudes under
- []
-
-
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 459--460
-[]|\T1/lmr/m/n/12 (-20) Partially| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--460
-[]|\T1/lmr/m/n/12 (+20) Jo«czyk
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--460
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--460
-[]|\T1/lmr/m/n/12 (+20) 23 female
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 460--460
-\T1/lmr/m/n/12 (-20) undergraduates
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--460
-[]|\T1/lmr/m/n/12 (+20) Repeated
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--460
-\T1/lmr/m/n/12 (+20) measures
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--460
-[]|\T1/lmr/m/n/12 (+20) Increased alpha
- []
-
-
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 460--461
-[]|\T1/lmr/m/n/12 (-20) Partially| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
-[]|\T1/lmr/m/n/12 (+20) Krendl
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
-[]|\T1/lmr/m/n/12 (+20) 28 female
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 461--461
-\T1/lmr/m/n/12 (-20) undergraduates| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
-[]|\T1/lmr/m/n/12 (+20) Neural
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
-\T1/lmr/m/n/12 (+20) activation,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
-\T1/lmr/m/n/12 (+20) maths
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
-[]|\T1/lmr/m/n/12 (+20) Mixed-model
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
-[]|\T1/lmr/m/n/12 (+20) Increased vACC
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
-\T1/lmr/m/n/12 (+20) activation,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
-\T1/lmr/m/n/12 (+20) region activation
- []
-
-
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 461--462
-[]|\T1/lmr/m/n/12 (-20) Partially| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 462--462
-[]|\T1/lmr/m/n/12 (+12) Mangels
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 462--462
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 462--462
-[]|\T1/lmr/m/n/12 (+20) 68
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 462--462
-[]|\T1/lmr/m/n/12 (+20) Maths
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 462--462
-\T1/lmr/m/n/12 (+20) performance,
- []
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 462--462
-\T1/lmr/m/n/12 (+20) ERP responses,
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 462--462
-\T1/lmr/m/n/12 (+20) success link more
- []
-
-
-Underfull \hbox (badness 2020) in paragraph at lines 462--462
-\T1/lmr/m/n/12 (+20) pronounced under
- []
-
-
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 462--463
-[]|\T1/lmr/m/n/12 (-20) Partially| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
-\T1/lmr/m/n/12 (+20) Zhao
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
-[]|\T1/lmr/m/n/12 (+20) 48 female
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 463--463
-\T1/lmr/m/n/12 (-20) undergraduates
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
-[]|\T1/lmr/m/n/12 (+20) Mixed-effect
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
-[]|\T1/lmr/m/n/12 (+20) Increased RSDC
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
-\T1/lmr/m/n/12 (+20) in DMN areas,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
-\T1/lmr/m/n/12 (+20) decreased in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
-\T1/lmr/m/n/12 (+20) cerebellum and
- []
-
-
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 463--464
-[]|\T1/lmr/m/n/12 (-20) Partially| 
- []
-
-[16
-
-] [17]
-
-[18]
-
-[19
-
-]
-
-[20]
-Underfull \vbox (badness 1194) has occurred while \output is active []
-
-
-
-[21]
-Underfull \vbox (badness 1194) has occurred while \output is active []
-
-
-
-[22]
-Underfull \vbox (badness 7099) has occurred while \output is active []
-
-
-
-[23]
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
-[]|\T1/lmr/m/n/12 (+20) Research
- []
-
-
-Overfull \hbox (12.7871pt too wide) in paragraph at lines 567--568
-[]|\T1/lmr/m/n/12 (-20) Hypothesis
- []
-
-
-Overfull \hbox (6.57985pt too wide) in paragraph at lines 567--568
-\T1/lmr/m/n/12 (-20) confirmed| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 572--572
-[]|\T1/lmr/m/n/12 (+20) Research
- []
-
-
-Overfull \hbox (12.7871pt too wide) in paragraph at lines 572--573
-[]|\T1/lmr/m/n/12 (-20) Hypothesis
- []
-
-
-Overfull \hbox (6.57985pt too wide) in paragraph at lines 572--573
-\T1/lmr/m/n/12 (-20) confirmed| 
- []
-
-
-Overfull \hbox (19.58087pt too wide) in paragraph at lines 575--575
-[]|\T1/lmr/m/n/12 (-20) Guardabassi
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
-\T1/lmr/m/n/12 (+20) and
- []
-
-
-Overfull \hbox (9.71904pt too wide) in paragraph at lines 575--575
-\T1/lmr/m/n/12 (-20) Tomasetto
- []
-
-
-Underfull \hbox (badness 6961) in paragraph at lines 575--575
-[]|\T1/lmr/m/n/12 (+20) 176 primary
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
-\T1/lmr/m/n/12 (+20) school
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
-[]|\T1/lmr/m/n/12 (+20) Mixed-effects
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
-[]|\T1/lmr/m/n/12 (+20) zBMI negatively
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
-\T1/lmr/m/n/12 (+20) correlated with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
-\T1/lmr/m/n/12 (+20) working memory
- []
-
-
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 575--576
-[]|\T1/lmr/m/n/12 (-20) Partially| 
- []
-
-
-Overfull \hbox (3.76042pt too wide) in paragraph at lines 576--576
-[]|\T1/lmr/m/n/12 (-20) Hirnstein
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-[]|\T1/lmr/m/n/12 (+20) 136
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-\T1/lmr/m/n/12 (+20) participants
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-[]|\T1/lmr/m/n/12 (+20) Stereotype
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-\T1/lmr/m/n/12 (+20) threat,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-\T1/lmr/m/n/12 (+20) sex, group
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-\T1/lmr/m/n/12 (+20) composition,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-\T1/lmr/m/n/12 (+20) cognitive
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-[]|\T1/lmr/m/n/12 (+20) Performance
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 576--576
-\T1/lmr/m/n/12 (+20) decreased on 4W
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-\T1/lmr/m/n/12 (+20) and perceptual
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-[]|\T1/lmr/m/n/12 (+20) Jordano
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-\T1/lmr/m/n/12 (+20) and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-\T1/lmr/m/n/12 (+20) Touron
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-[]|\T1/lmr/m/n/12 (+20) 120 female
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 577--577
-\T1/lmr/m/n/12 (-20) undergraduates| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-[]|\T1/lmr/m/n/12 (+20) OSPAN task,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-\T1/lmr/m/n/12 (+20) mind-wandering
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-[]|\T1/lmr/m/n/12 (+20) Stereotype
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-\T1/lmr/m/n/12 (+20) threat, mind-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-[]|\T1/lmr/m/n/12 (+20) Increased mind-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-\T1/lmr/m/n/12 (+20) wandering,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-\T1/lmr/m/n/12 (+20) decreased maths
- []
-
-
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 577--578
-[]|\T1/lmr/m/n/12 (-20) Partially| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
-[]|\T1/lmr/m/n/12 (+20) Krendl
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
-[]|\T1/lmr/m/n/12 (+20) 28 female
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 578--578
-\T1/lmr/m/n/12 (-20) undergraduates| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
-[]|\T1/lmr/m/n/12 (+20) Neural
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
-\T1/lmr/m/n/12 (+20) activation,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
-\T1/lmr/m/n/12 (+20) maths
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
-[]|\T1/lmr/m/n/12 (+20) Mixed-model
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
-[]|\T1/lmr/m/n/12 (+20) Increased vACC
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
-\T1/lmr/m/n/12 (+20) activation,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
-\T1/lmr/m/n/12 (+20) region activation
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--579
-[]|\T1/lmr/m/n/12 (+20) 153 female
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 579--579
-\T1/lmr/m/n/12 (-20) undergraduates| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--579
-[]|\T1/lmr/m/n/12 (+20) Spatial
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--579
-\T1/lmr/m/n/12 (+20) perspective-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--579
-[]|\T1/lmr/m/n/12 (+20) Stereotype
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--579
-[]|\T1/lmr/m/n/12 (+20) ANCOVA,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--579
-\T1/lmr/m/n/12 (+20) mediation
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--579
-[]|\T1/lmr/m/n/12 (+20) Decreased
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--579
-\T1/lmr/m/n/12 (+20) performance,
- []
-
-
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 579--580
-[]|\T1/lmr/m/n/12 (-20) Partially| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-[]|\T1/lmr/m/n/12 (+20) Rydell
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-[]|\T1/lmr/m/n/12 (+20) 340
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 580--580
-\T1/lmr/m/n/12 (-20) undergraduates
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-\T1/lmr/m/n/12 (+20) across 3
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-[]|\T1/lmr/m/n/12 (+20) Executive
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-\T1/lmr/m/n/12 (+20) function tasks,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-[]|\T1/lmr/m/n/12 (+20) Stereotype
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-[]|\T1/lmr/m/n/12 (+20) ANOVA,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-\T1/lmr/m/n/12 (+20) mediation
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-\T1/lmr/m/n/12 (+20) and updating,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 580--580
-\T1/lmr/m/n/12 (+20) decreased maths
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-[]|\T1/lmr/m/n/12 (+20) Ståhl
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 581--581
-[]|\T1/lmr/m/n/12 (+20) 335 students
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-\T1/lmr/m/n/12 (+20) across 3
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-[]|\T1/lmr/m/n/12 (+20) Stroop task,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-[]|\T1/lmr/m/n/12 (+20) Stereotype
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-\T1/lmr/m/n/12 (+20) threat,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-\T1/lmr/m/n/12 (+20) regulatory
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-[]|\T1/lmr/m/n/12 (+20) Initial increase
- []
-
-
-Underfull \hbox (badness 5741) in paragraph at lines 581--581
-\T1/lmr/m/n/12 (+20) then decrease in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-\T1/lmr/m/n/12 (+20) cognitive control
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-\T1/lmr/m/n/12 (+20) under threat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
-[]|\T1/lmr/m/n/12 (+20) Wister
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
-\T1/lmr/m/n/12 (+20) et al.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
-[]|\T1/lmr/m/n/12 (+20) 92 female
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 582--582
-\T1/lmr/m/n/12 (-20) undergraduates| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
-[]|\T1/lmr/m/n/12 (+20) Menstruation
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
-[]|\T1/lmr/m/n/12 (+20) Impaired Stroop
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
-\T1/lmr/m/n/12 (+20) menstruation
- []
-
-
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 582--583
-[]|\T1/lmr/m/n/12 (-20) Partially| 
- []
-
-
-Overfull \hbox (9.75494pt too wide) in paragraph at lines 583--583
-[]|\T1/lmr/m/n/12 (-20) Wulandari
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--583
-\T1/lmr/m/n/12 (+20) and
- []
-
-
-Overfull \hbox (13.91893pt too wide) in paragraph at lines 583--583
-\T1/lmr/m/n/12 (-20) Hendrawan
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--583
-[]|\T1/lmr/m/n/12 (+20) 168
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 583--583
-\T1/lmr/m/n/12 (-20) undergraduates
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--583
-[]|\T1/lmr/m/n/12 (+20) Letter fluency
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--583
-[]|\T1/lmr/m/n/12 (+20) Stereotype
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--583
-\T1/lmr/m/n/12 (+20) gender, task
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--583
-[]|\T1/lmr/m/n/12 (+20) No significant
- []
-
-[25
-
-] [26] [27]
 
 [28]
 
-[29
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 684--684
+[]|\T1/lmr/m/n/10.95 (+20) Research
+ []
+
+
+Overfull \hbox (9.01494pt too wide) in paragraph at lines 684--685
+[]|\T1/lmr/m/n/10.95 (-20) Hypothesis
+ []
+
+
+Overfull \hbox (3.25504pt too wide) in paragraph at lines 684--685
+\T1/lmr/m/n/10.95 (-20) confirmed| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+[]|\T1/lmr/m/n/10.95 (+20) Research
+ []
+
+
+Overfull \hbox (9.01494pt too wide) in paragraph at lines 689--690
+[]|\T1/lmr/m/n/10.95 (-20) Hypothesis
+ []
+
+
+Overfull \hbox (3.25504pt too wide) in paragraph at lines 689--690
+\T1/lmr/m/n/10.95 (-20) confirmed| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+[]|\T1/lmr/m/n/10.95 (+20) Beilock
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) 31 female
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) college
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) students;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) Experiment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) college
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) students;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) 30 female
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) college
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) students;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) 33 female
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) college
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) on working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) memory and
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) its influence on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) unrelated tasks;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) (phonological
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+[]|\T1/lmr/m/n/10.95 (+20) IV: Group
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) vs. control),
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) (low vs. high),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) Block (baseline
+ []
+
+
+Underfull \hbox (badness 6978) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) vs. posttest);
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) DV: Accuracy,
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 692.
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+[]|\T1/lmr/m/n/10.95 (+20) High-demand
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 (+20) significant decrease
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 692--692
+$[]$\T1/lmr/m/n/10.95 (+20) (1,29) = 11.18**,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
+[]|\T1/lmr/m/n/10.95 (+20) Dunst
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
+[]|\T1/lmr/m/n/10.95 (+20) 58 secondary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
+\T1/lmr/m/n/10.95 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
+\T1/lmr/m/n/10.95 (+20) efficiency and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
+\T1/lmr/m/n/10.95 (+20) EEG (cerebral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
+[]|\T1/lmr/m/n/10.95 (+20) IV: Stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--693
+\T1/lmr/m/n/10.95 (+20) exposure; DV:
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 693--693
+\T1/lmr/m/n/10.95 (+20) Neural efficiency,
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 693--693
+[]|\T1/lmr/m/n/10.95 (+20) Heightened cortical
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+[]|\T1/lmr/m/n/10.95 (+20) Forbes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+[]|\T1/lmr/m/n/10.95 (+20) DMN phase-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) locking at rest
+ []
+
+
+Underfull \hbox (badness 6927) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) and its impact
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) on performance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) between LLPC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) and P/PCC,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) Phase-locking
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) between LLPC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+[]|\T1/lmr/m/n/10.95 (+20) The relationship
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) between LLPC-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) P/PCC theta
+ []
+
+
+Underfull \hbox (badness 5893) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) a main effect on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) error estimation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) by a significant
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 694--694
+\T1/lmr/m/n/10.95 (+20) interaction. $[]$ =
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 694--694
+$[]$\T1/lmr/m/n/10.95 (+20) = 81.13*, $[]$ =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+[]|\T1/lmr/m/n/10.95 (+20) Forbes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+[]|\T1/lmr/m/n/10.95 (+20) 57 minority
+ []
+
+
+Overfull \hbox (1.12341pt too wide) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (-20) undergraduates| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) EEG (anterior
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) Psychological
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) disengagement
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) (devaluing
+ []
+
+
+Overfull \hbox (20.57405pt too wide) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (-20) academics/discounting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) DV: ERN, Pe,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) Self-reported
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+[]|\T1/lmr/m/n/10.95 (+20) Repeated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+[]|\T1/lmr/m/n/10.95 (+20) Smaller ERN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) amplitudes were
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) found under
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) stereotype threat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) ($\OML/lmm/m/it/10.95 ^^L$ \T1/lmr/m/n/10.95 (+20) = 0.46, **).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) A significant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) moderation effect
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) of discounting on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--695
+\T1/lmr/m/n/10.95 (+20) diagnosticity was
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+[]|\T1/lmr/m/n/10.95 (+20) Jo«czyk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+[]|\T1/lmr/m/n/10.95 (+20) 23 female
+ []
+
+
+Overfull \hbox (1.12341pt too wide) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (-20) undergraduates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) on alpha power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) and creative
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) thinking; EEG
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+[]|\T1/lmr/m/n/10.95 (+20) IV: Threat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) manipulation;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) DV: Creative
+ []
+
+
+Underfull \hbox (badness 5147) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) thinking, Alpha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+[]|\T1/lmr/m/n/10.95 (+20) Repeated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+[]|\T1/lmr/m/n/10.95 (+20) Greater alpha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) Event-Related
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) Synchronization
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) (ERS) was
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) found after the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) administration of
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 696--696
+\T1/lmr/m/n/10.95 (+20) Hz) alpha ranges.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+[]|\T1/lmr/m/n/10.95 (+20) Krendl
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+[]|\T1/lmr/m/n/10.95 (+20) 28 female
+ []
+
+
+Overfull \hbox (1.12341pt too wide) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (-20) undergraduates| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) activation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) patterns
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) and maths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) performance;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) fMRI (vACC,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) BA47, BA40,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+[]|\T1/lmr/m/n/10.95 (+20) IV: Condition
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) of measurements
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) vs. post-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) manipulation);
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) DV: Neural
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) activation
+ []
+
+
+Underfull \hbox (badness 3407) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) patterns, Maths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--697
+[]|\T1/lmr/m/n/10.95 (+20) Mixed-model
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 697--697
+[]|\T1/lmr/m/n/10.95 (+20) Heightened activity
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) in the vACC (BA
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) 32/10) during the
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 697--697
+\T1/lmr/m/n/10.95 (+20) = 11.41***, $\OML/lmm/m/it/10.95 ^^Q[]$ \T1/lmr/m/n/10.95 (+20) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+[]|\T1/lmr/m/n/10.95 (+20) Mangels
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+\T1/lmr/m/n/10.95 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 698--698
+\T1/lmr/m/n/10.95 (+20) neural responses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+[]|\T1/lmr/m/n/10.95 (+20) IV: Stereotype
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 698--698
+\T1/lmr/m/n/10.95 (+20) threat vs. no
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+\T1/lmr/m/n/10.95 (+20) DV: Maths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+\T1/lmr/m/n/10.95 (+20) performance,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+\T1/lmr/m/n/10.95 (+20) ERP responses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+\T1/lmr/m/n/10.95 (+20) to feedback,
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 698--698
+[]|\T1/lmr/m/n/10.95 (+20) Maths performance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+\T1/lmr/m/n/10.95 (+20) stereotype threat.
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 699--699
+[]|\T1/lmr/m/n/10.95 (+20) Wu and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) Zhao
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]|\T1/lmr/m/n/10.95 (+20) 48 female
+ []
+
+
+Overfull \hbox (1.12341pt too wide) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (-20) undergraduates
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) on brain region
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) connectivity;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) rs-fMRI
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) (hippocampus,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]|\T1/lmr/m/n/10.95 (+20) IV: Test (pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) vs post-test),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) Condition
+ []
+
+
+Underfull \hbox (badness 4072) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) RSDC of brain
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]|\T1/lmr/m/n/10.95 (+20) Mixed-effect
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]|\T1/lmr/m/n/10.95 (+20) Significant main
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) effects were found
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) MCG, right
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 (+20) cerebellum, and
+ []
+
+[30
+
+] [31] [32]
+
+[33]
+
+[34
 
 ]
 
-[30]
-Underfull \vbox (badness 1194) has occurred while \output is active []
-
-
-
-[31]
-Underfull \vbox (badness 1194) has occurred while \output is active []
-
-
-
-[32]
-Underfull \vbox (badness 1194) has occurred while \output is active []
-
-
-
-[33]
-Underfull \vbox (badness 7099) has occurred while \output is active []
-
-
-
-[34]
-Underfull \vbox (badness 1194) has occurred while \output is active []
-
-
-
 [35]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 713.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 713.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 713.
-
-Underfull \vbox (badness 4608) has occurred while \output is active []
+Underfull \vbox (badness 1194) has occurred while \output is active []
 
 
 
 [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1194) has occurred while \output is active []
 
 
 
 [37]
+Underfull \vbox (badness 7099) has occurred while \output is active []
+
+
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 740--740
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 807--807
+[]|\T1/lmr/m/n/10.95 (+20) Research
+ []
+
+
+Overfull \hbox (9.01494pt too wide) in paragraph at lines 807--808
+[]|\T1/lmr/m/n/10.95 (-20) Hypothesis
+ []
+
+
+Overfull \hbox (3.25504pt too wide) in paragraph at lines 807--808
+\T1/lmr/m/n/10.95 (-20) confirmed| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 812--812
+[]|\T1/lmr/m/n/10.95 (+20) Research
+ []
+
+
+Overfull \hbox (9.01494pt too wide) in paragraph at lines 812--813
+[]|\T1/lmr/m/n/10.95 (-20) Hypothesis
+ []
+
+
+Overfull \hbox (3.25504pt too wide) in paragraph at lines 812--813
+\T1/lmr/m/n/10.95 (-20) confirmed| 
+ []
+
+
+Overfull \hbox (15.3722pt too wide) in paragraph at lines 815--815
+[]|\T1/lmr/m/n/10.95 (-20) Guardabassi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
+\T1/lmr/m/n/10.95 (+20) and
+ []
+
+
+Overfull \hbox (6.15149pt too wide) in paragraph at lines 815--815
+\T1/lmr/m/n/10.95 (-20) Tomasetto
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
+[]|\T1/lmr/m/n/10.95 (+20) 176 primary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
+\T1/lmr/m/n/10.95 (+20) on working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
+[]|\T1/lmr/m/n/10.95 (+20) IV: BMI,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
+\T1/lmr/m/n/10.95 (+20) DV: Working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
+[]|\T1/lmr/m/n/10.95 (+20) Mixed-effects
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
+[]|\T1/lmr/m/n/10.95 (+20) Under stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
+\T1/lmr/m/n/10.95 (+20) with working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--815
+\T1/lmr/m/n/10.95 (+20) memory; $[]$(2,
+ []
+
+
+Overfull \hbox (0.6324pt too wide) in paragraph at lines 816--816
+[]|\T1/lmr/m/n/10.95 (-20) Hirnstein
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+[]|\T1/lmr/m/n/10.95 (+20) 136
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) participants
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) (66 male, 70
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) sex, and group
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) composition
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) on cognitive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) performance;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+[]|\T1/lmr/m/n/10.95 (+20) IV: Stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) threat, Sex,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) Group
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) composition;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) DV: Cognitive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+[]|\T1/lmr/m/n/10.95 (+20) Performance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) decreased on 4W
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--816
+\T1/lmr/m/n/10.95 (+20) and perceptual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/10.95 (+20) Jordano
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (+20) and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (+20) Touron
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/10.95 (+20) 120 female
+ []
+
+
+Overfull \hbox (1.12341pt too wide) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (-20) undergraduates| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (+20) threat on mind-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (+20) wandering and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (+20) OSPAN task,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (+20) mind-wandering
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/10.95 (+20) IV: Stereotype
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (+20) wandering, Task
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+[]|\T1/lmr/m/n/10.95 (+20) Increased mind-
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (+20) maths performance
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 817--817
+\T1/lmr/m/n/10.95 (+20) = 12.11***, $\OML/lmm/m/it/10.95 ^^Q[]$ \T1/lmr/m/n/10.95 (+20) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T1/lmr/m/n/10.95 (+20) Krendl
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T1/lmr/m/n/10.95 (+20) 28 female
+ []
+
+
+Overfull \hbox (1.12341pt too wide) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (-20) undergraduates| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) threat on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) and maths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) performance;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) fMRI (vACC,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) DLPFC, IFG,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T1/lmr/m/n/10.95 (+20) IV: Condition
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) DV: Neural
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) activation
+ []
+
+
+Underfull \hbox (badness 3407) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) patterns, Maths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T1/lmr/m/n/10.95 (+20) Mixed-model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+[]|\T1/lmr/m/n/10.95 (+20) Increased vACC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) cognitive region
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) activation under
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 818--818
+\T1/lmr/m/n/10.95 (+20) threat; $[]$(1,26) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+[]|\T1/lmr/m/n/10.95 (+20) 153 female
+ []
+
+
+Overfull \hbox (1.12341pt too wide) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (-20) undergraduates| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) performance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) and executive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) perspective-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+[]|\T1/lmr/m/n/10.95 (+20) IV: Stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) threat; DV:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) Spatial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) performance,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) Executive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+[]|\T1/lmr/m/n/10.95 (+20) ANCOVA,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) mediation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+[]|\T1/lmr/m/n/10.95 (+20) Decreased
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) performance,
+ []
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) impaired inhibition
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 819--819
+\T1/lmr/m/n/10.95 (+20) threat; $[]$(1,74) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\T1/lmr/m/n/10.95 (+20) Rydell
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\T1/lmr/m/n/10.95 (+20) 340
+ []
+
+
+Overfull \hbox (1.12341pt too wide) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (-20) undergraduates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) across 3
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) threat on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) and maths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) performance;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) Executive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) function tasks,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\T1/lmr/m/n/10.95 (+20) IV: Stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) threat; DV:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) Executive
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) function, Maths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+[]|\T1/lmr/m/n/10.95 (+20) ANOVA,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) mediation
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 820--820
+[]|\T1/lmr/m/n/10.95 (+20) Impaired inhibition
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) and updating,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) decreased maths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 820--820
+\T1/lmr/m/n/10.95 (+20) performance under
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+[]|\T1/lmr/m/n/10.95 (+20) Ståhl
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+[]|\T1/lmr/m/n/10.95 (+20) 335 students
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+\T1/lmr/m/n/10.95 (+20) across 3
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+\T1/lmr/m/n/10.95 (+20) and regulatory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+\T1/lmr/m/n/10.95 (+20) control; Stroop
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+[]|\T1/lmr/m/n/10.95 (+20) IV: Stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+\T1/lmr/m/n/10.95 (+20) threat,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+\T1/lmr/m/n/10.95 (+20) DV: Cognitive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+\T1/lmr/m/n/10.95 (+20) control, Maths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+\T1/lmr/m/n/10.95 (+20) (prevention focus);
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+[]|\T1/lmr/m/n/10.95 (+20) Wister
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T1/lmr/m/n/10.95 (+20) et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+[]|\T1/lmr/m/n/10.95 (+20) 92 female
+ []
+
+
+Overfull \hbox (1.12341pt too wide) in paragraph at lines 822--822
+\T1/lmr/m/n/10.95 (-20) undergraduates| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T1/lmr/m/n/10.95 (+20) menstruation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T1/lmr/m/n/10.95 (+20) on cognitive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T1/lmr/m/n/10.95 (+20) performance;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T1/lmr/m/n/10.95 (+20) threat, Positive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T1/lmr/m/n/10.95 (+20) prime; DV:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T1/lmr/m/n/10.95 (+20) Cognitive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+[]|\T1/lmr/m/n/10.95 (+20) Impaired Stroop
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 822--822
+\T1/lmr/m/n/10.95 (+20) performance under
+ []
+
+
+Overfull \hbox (6.21803pt too wide) in paragraph at lines 823--823
+[]|\T1/lmr/m/n/10.95 (-20) Wulandari
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/lmr/m/n/10.95 (+20) and
+ []
+
+
+Overfull \hbox (10.09882pt too wide) in paragraph at lines 823--823
+\T1/lmr/m/n/10.95 (-20) Hendrawan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+[]|\T1/lmr/m/n/10.95 (+20) 168
+ []
+
+
+Overfull \hbox (1.12341pt too wide) in paragraph at lines 823--823
+\T1/lmr/m/n/10.95 (-20) undergraduates
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+[]|\T1/lmr/m/n/10.95 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/lmr/m/n/10.95 (+20) activation on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+[]|\T1/lmr/m/n/10.95 (+20) IV: Stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/lmr/m/n/10.95 (+20) Gender, Task
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/lmr/m/n/10.95 (+20) difficulty; DV:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+[]|\T1/lmr/m/n/10.95 (+20) No significant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/lmr/m/n/10.95 (+20) effects of threat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/lmr/m/n/10.95 (+20) on performance;
+ []
+
+[40
+
+] [41]
+
+[42]
+
+[43
+
+]
+
+[44]
+Underfull \vbox (badness 1194) has occurred while \output is active []
+
+
+
+[45]
+Underfull \vbox (badness 1194) has occurred while \output is active []
+
+
+
+[46]
+Underfull \vbox (badness 1194) has occurred while \output is active []
+
+
+
+[47]
+Underfull \vbox (badness 7099) has occurred while \output is active []
+
+
+
+[48]
+Underfull \vbox (badness 1194) has occurred while \output is active []
+
+
+
+[49]
+
+[50]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 973.
+(/home/julian/.TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \hbox (16.33234pt too wide) in paragraph at lines 976--976
+[]\T1/lmtt/m/n/12 ## Warning in matrix(value, n, p): data length [12] is not a sub-multiple or[] 
+ []
+
+
+Underfull \vbox (badness 7099) has occurred while \output is active []
+
+
+
+[51]
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 987--987
 []|\T1/lmr/m/n/12 (+20) Research
  []
 
 
-Overfull \hbox (12.7871pt too wide) in paragraph at lines 740--741
+Overfull \hbox (12.7871pt too wide) in paragraph at lines 987--988
 []|\T1/lmr/m/n/12 (-20) Hypothesis
  []
 
 
-Overfull \hbox (6.57985pt too wide) in paragraph at lines 740--741
+Overfull \hbox (6.57985pt too wide) in paragraph at lines 987--988
 \T1/lmr/m/n/12 (-20) confirmed| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 992--992
 []|\T1/lmr/m/n/12 (+20) Research
  []
 
 
-Overfull \hbox (12.7871pt too wide) in paragraph at lines 745--746
+Overfull \hbox (12.7871pt too wide) in paragraph at lines 992--993
 []|\T1/lmr/m/n/12 (-20) Hypothesis
  []
 
 
-Overfull \hbox (6.57985pt too wide) in paragraph at lines 745--746
+Overfull \hbox (6.57985pt too wide) in paragraph at lines 992--993
 \T1/lmr/m/n/12 (-20) confirmed| 
  []
 
 
-Overfull \hbox (5.8423pt too wide) in paragraph at lines 748--748
+Overfull \hbox (5.8423pt too wide) in paragraph at lines 995--995
 []|\T1/lmr/m/n/12 (-20) Bedy«ska
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
 \T1/lmr/m/n/12 (+20) et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
 []|\T1/lmr/m/n/12 (+20) 319 male
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
 \T1/lmr/m/n/12 (+20) secondary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
 \T1/lmr/m/n/12 (+20) school
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
-[]|\T1/lmr/m/n/12 (+20) Chronic
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) on working
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
-\T1/lmr/m/n/12 (+20) stereotype
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) memory and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
-\T1/lmr/m/n/12 (+20) memory,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
 \T1/lmr/m/n/12 (+20) language
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) achievement;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) counting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) span task,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) set switching
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+[]|\T1/lmr/m/n/12 (+20) IV: Chronic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) threat, Gender
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) identification;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) DV: Working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) memory,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) Language
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
 []|\T1/lmr/m/n/12 (+20) Mediation
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 748--748
+Underfull \hbox (badness 7963) in paragraph at lines 995--995
 []|\T1/lmr/m/n/12 (+20) Stereotype threat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--748
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
 \T1/lmr/m/n/12 (+20) working memory
  []
 
 
-Overfull \hbox (5.8423pt too wide) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) latter mediating
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) the relationship
+ []
+
+
+Underfull \hbox (badness 5260) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) 2.81, $\OML/lmm/m/it/12 ^^L$ \T1/lmr/m/n/12 (+20) = 0.45,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+$\OML/lmm/m/it/12 SE$ \T1/lmr/m/n/12 (+20) = 0.06, $\OML/lmm/m/it/12 p$
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) < .001, 95% CI
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) [[0.34, 0.55]].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) Higher gender
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) identification
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/12 (+20) moderated the
+ []
+
+
+Overfull \hbox (5.8423pt too wide) in paragraph at lines 996--996
 []|\T1/lmr/m/n/12 (-20) Bedy«ska
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
 \T1/lmr/m/n/12 (+20) et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
 []|\T1/lmr/m/n/12 (+20) 624 female
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
 \T1/lmr/m/n/12 (+20) secondary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
 \T1/lmr/m/n/12 (+20) school
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
-[]|\T1/lmr/m/n/12 (+20) Chronic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
 \T1/lmr/m/n/12 (+20) stereotype
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
-[]|\T1/lmr/m/n/12 (+20) Mediation
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) threat on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
-[]|\T1/lmr/m/n/12 (+20) Working memory
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
-\T1/lmr/m/n/12 (+20) mediated
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
-\T1/lmr/m/n/12 (+20) stereotype threat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 749--749
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
 \T1/lmr/m/n/12 (+20) and maths
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) achievement;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) Functional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) Aspects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) Working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) Memory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) Test (capacity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+[]|\T1/lmr/m/n/12 (+20) IV: Chronic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) threat, Gender
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) identification;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) DV: Working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+[]|\T1/lmr/m/n/12 (+20) Mediation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+[]|\T1/lmr/m/n/12 (+20) Working memory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) mediated the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) relationship
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) threat and maths
+ []
+
+
+Underfull \hbox (badness 3635) in paragraph at lines 996--996
+$\OML/lmm/m/it/12 ^^L$ \T1/lmr/m/n/12 (+20) = -0.14, 95%
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) CI [[-0.20, -0.07]].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) Higher gender
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) identification
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) moderated the
+ []
+
+
+Underfull \hbox (badness 2318) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) negative effect of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--996
+\T1/lmr/m/n/12 (+20) stereotype threat
+ []
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 996--996
+$\OML/lmm/m/it/12 b$ \T1/lmr/m/n/12 (+20) = -0.01, $\OML/lmm/m/it/12 ^^L$ \T1/lmr/m/n/12 (+20) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
 []|\T1/lmr/m/n/12 (+20) Beilock
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
 \T1/lmr/m/n/12 (+20) et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-[]|\T1/lmr/m/n/12 (+20) Female
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) 31 female
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
 \T1/lmr/m/n/12 (+20) college
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-\T1/lmr/m/n/12 (+20) students
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) students;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-[]|\T1/lmr/m/n/12 (+20) Modular
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) Experiment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-\T1/lmr/m/n/12 (+20) Arithmetic
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) college
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-[]|\T1/lmr/m/n/12 (+20) Stereotype
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) students;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-\T1/lmr/m/n/12 (+20) memory
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) 30 female
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-[]|\T1/lmr/m/n/12 (+20) Reduced
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) college
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-\T1/lmr/m/n/12 (+20) performance
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) students;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-\T1/lmr/m/n/12 (+20) on high-demand
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) 33 female
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
-\T1/lmr/m/n/12 (+20) problems under
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) college
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+[]|\T1/lmr/m/n/12 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) on working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) memory and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) its influence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) on unrelated
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) tasks; modular
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) arithmetic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) (processing
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) speed); n-back
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) task (capacity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+[]|\T1/lmr/m/n/12 (+20) IV: Group
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) (stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) threat vs.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) control),
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) Block (baseline
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) vs. posttest);
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) DV: Accuracy,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+[]|\T1/lmr/m/n/12 (+20) High-demand
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) in accuracy at
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 997--997
+\T1/lmr/m/n/12 (+20) the post-test, CI
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
 []|\T1/lmr/m/n/12 (+20) Brown
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
 \T1/lmr/m/n/12 (+20) and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
 \T1/lmr/m/n/12 (+20) Harkins
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
 []|\T1/lmr/m/n/12 (+20) 73 female
  []
 
 
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 751--751
+Overfull \hbox (6.33865pt too wide) in paragraph at lines 998--998
 \T1/lmr/m/n/12 (-20) undergraduates| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
-[]|\T1/lmr/m/n/12 (+20) SART, maths
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+[]|\T1/lmr/m/n/12 (+20) Effects of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
-[]|\T1/lmr/m/n/12 (+20) Stereotype
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) stereotype
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
-\T1/lmr/m/n/12 (+20) threat, SART
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) wandering
  []
 
 
-Underfull \hbox (badness 5231) in paragraph at lines 751--751
-\T1/lmr/m/n/12 (+20) framing, mind-
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) and task
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 751--751
-[]|\T1/lmr/m/n/12 (+20) Support for mere
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) performance;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
-\T1/lmr/m/n/12 (+20) working memory
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) SART
  []
 
 
-Overfull \hbox (19.58087pt too wide) in paragraph at lines 752--752
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) (processing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+[]|\T1/lmr/m/n/12 (+20) IV: Condition
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) (stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) threat vs.
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) control), SART
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) DV: Mind-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) wandering
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) (SART
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+[]|\T1/lmr/m/n/12 (+20) Significant effect
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) of the mere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) effort account:
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+20) commission errors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+\T1/lmr/m/n/12 (+2) Counter-hypothesis
+ []
+
+
+Overfull \hbox (19.58087pt too wide) in paragraph at lines 999--999
 []|\T1/lmr/m/n/12 (-20) Guardabassi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--752
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
 \T1/lmr/m/n/12 (+20) and
  []
 
 
-Overfull \hbox (9.71904pt too wide) in paragraph at lines 752--752
+Overfull \hbox (9.71904pt too wide) in paragraph at lines 999--999
 \T1/lmr/m/n/12 (-20) Tomasetto
  []
 
 
-Underfull \hbox (badness 6961) in paragraph at lines 752--752
+Underfull \hbox (badness 6961) in paragraph at lines 999--999
 []|\T1/lmr/m/n/12 (+20) 176 primary
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--752
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
 \T1/lmr/m/n/12 (+20) school
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--752
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+[]|\T1/lmr/m/n/12 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+\T1/lmr/m/n/12 (+20) BMI and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+\T1/lmr/m/n/12 (+20) on working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+\T1/lmr/m/n/12 (+20) task (capacity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+[]|\T1/lmr/m/n/12 (+20) IV: BMI,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+\T1/lmr/m/n/12 (+20) Stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+\T1/lmr/m/n/12 (+20) threat; DV:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
 []|\T1/lmr/m/n/12 (+20) Mixed-effects
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--752
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
 []|\T1/lmr/m/n/12 (+20) zBMI negatively
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--752
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
 \T1/lmr/m/n/12 (+20) correlated with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--752
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
 \T1/lmr/m/n/12 (+20) working memory
  []
 
 
-Overfull \hbox (7.91228pt too wide) in paragraph at lines 753--753
+Overfull \hbox (7.91228pt too wide) in paragraph at lines 1000--1000
 []|\T1/lmr/m/n/12 (-20) Hutchison
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 753--753
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
 \T1/lmr/m/n/12 (+20) et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 753--753
-[]|\T1/lmr/m/n/12 (+20) Stroop task,
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+[]|\T1/lmr/m/n/12 (+20) Effects of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 753--753
-\T1/lmr/m/n/12 (+20) capacity,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 753--753
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
 \T1/lmr/m/n/12 (+20) stereotype
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 753--753
-\T1/lmr/m/n/12 (+20) threat, Stroop
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+\T1/lmr/m/n/12 (+20) threat on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 753--753
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+\T1/lmr/m/n/12 (+20) and Stroop
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+\T1/lmr/m/n/12 (+20) performance;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+\T1/lmr/m/n/12 (+20) OSPAN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+\T1/lmr/m/n/12 (+20) (capacity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+[]|\T1/lmr/m/n/12 (+20) IV: Working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+\T1/lmr/m/n/12 (+20) memory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+\T1/lmr/m/n/12 (+20) capacity, List
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+\T1/lmr/m/n/12 (+20) congruency,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
+\T1/lmr/m/n/12 (+20) Stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
 []|\T1/lmr/m/n/12 (+20) Regression
  []
 
 
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 753--754
+Underfull \hbox (badness 3281) in paragraph at lines 1000--1000
+\T1/lmr/m/n/12 (+20) WMC individuals.
+ []
+
+
+Overfull \hbox (0.9736pt too wide) in paragraph at lines 1000--1001
 []|\T1/lmr/m/n/12 (-20) Partially| 
  []
 
 
-Overfull \hbox (3.60295pt too wide) in paragraph at lines 754--754
+Overfull \hbox (3.60295pt too wide) in paragraph at lines 1001--1001
 []|\T1/lmr/m/n/12 (-20) Jamieson
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
 \T1/lmr/m/n/12 (+20) and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
 \T1/lmr/m/n/12 (+20) Harkins
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
 []|\T1/lmr/m/n/12 (+20) 224
  []
 
 
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 754--754
+Overfull \hbox (6.33865pt too wide) in paragraph at lines 1001--1001
 \T1/lmr/m/n/12 (-20) undergraduates
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
 \T1/lmr/m/n/12 (+20) across 4
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
-[]|\T1/lmr/m/n/12 (+20) Stereotype
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+[]|\T1/lmr/m/n/12 (+20) Effects of
  []
 
 
-Underfull \hbox (badness 1590) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) threat on task
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) performance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) requiring
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) inhibitory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+[]|\T1/lmr/m/n/12 (+20) IV: Condition
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) (stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) threat vs.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) control),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) Task type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) (antisaccade
+ []
+
+
+Underfull \hbox (badness 6380) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) Cognitive load;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) DV: Accuracy,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) Reaction time,
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 1001--1001
 []|\T1/lmr/m/n/12 (+20) Support for mere
  []
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 754--754
+Underfull \hbox (badness 4403) in paragraph at lines 1001--1001
 \T1/lmr/m/n/12 (+20) effort account in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--755
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) most conditions.
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 1001--1001
+\T1/lmr/m/n/12 (+20) Anti-saccade task:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1002
 []|\T1/lmr/m/n/12 (+20) Mostly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
 []|\T1/lmr/m/n/12 (+20) Johns
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
 \T1/lmr/m/n/12 (+20) et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
 []|\T1/lmr/m/n/12 (+20) 176
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
 \T1/lmr/m/n/12 (+20) participants
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
 \T1/lmr/m/n/12 (+20) across 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
-[]|\T1/lmr/m/n/12 (+20) Stereotype
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+[]|\T1/lmr/m/n/12 (+20) Effects of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
-\T1/lmr/m/n/12 (+20) regulation,
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) stereotype
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) threat on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) and emotion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) regulation;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) reading span
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) task (capacity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+[]|\T1/lmr/m/n/12 (+20) IV: Condition
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) (stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) threat vs.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) control),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) Emotion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) regulation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) strategy; DV:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) performance,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/12 (+20) Self-reported
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
 []|\T1/lmr/m/n/12 (+20) ANOVA,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
 \T1/lmr/m/n/12 (+20) mediation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
 []|\T1/lmr/m/n/12 (+20) Working memory
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
 \T1/lmr/m/n/12 (+20) impaired under
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
 \T1/lmr/m/n/12 (+20) threat, mediated
  []
 
 
-Overfull \hbox (14.728pt too wide) in paragraph at lines 756--756
+Overfull \hbox (14.728pt too wide) in paragraph at lines 1003--1003
 []|\T1/lmr/m/n/12 (-20) Pennington
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--756
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
 \T1/lmr/m/n/12 (+20) et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--756
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
 []|\T1/lmr/m/n/12 (+20) 124 female
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--756
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
 \T1/lmr/m/n/12 (+20) university
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--756
-[]|\T1/lmr/m/n/12 (+20) Anti-saccade
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+[]|\T1/lmr/m/n/12 (+20) Effects of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--756
-[]|\T1/lmr/m/n/12 (+20) Stereotype
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\T1/lmr/m/n/12 (+20) stereotype
  []
 
 
-Underfull \hbox (badness 3623) in paragraph at lines 756--756
-\T1/lmr/m/n/12 (+20) condition, task
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\T1/lmr/m/n/12 (+20) performance;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--756
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\T1/lmr/m/n/12 (+20) anti-saccade
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\T1/lmr/m/n/12 (+20) task (accuracy,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\T1/lmr/m/n/12 (+20) processing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+[]|\T1/lmr/m/n/12 (+20) IV: Stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\T1/lmr/m/n/12 (+20) condition;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\T1/lmr/m/n/12 (+20) DV: Task
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
 []|\T1/lmr/m/n/12 (+20) No significant
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\T1/lmr/m/n/12 (+20) effects of threat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\T1/lmr/m/n/12 (+20) on performance.
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 1003--1003
+\T1/lmr/m/n/12 (+20) Anti-saccade task:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
 []|\T1/lmr/m/n/12 (+20) Rydell
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
 \T1/lmr/m/n/12 (+20) et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
 []|\T1/lmr/m/n/12 (+20) 57 female
  []
 
 
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 757--757
+Overfull \hbox (6.33865pt too wide) in paragraph at lines 1004--1004
 \T1/lmr/m/n/12 (-20) undergraduates| 
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 757--757
-[]|\T1/lmr/m/n/12 (+20) Vowel counting
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+[]|\T1/lmr/m/n/12 (+20) Effects of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
-\T1/lmr/m/n/12 (+20) task, maths
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+\T1/lmr/m/n/12 (+20) multiple social
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
-[]|\T1/lmr/m/n/12 (+20) Gender
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+\T1/lmr/m/n/12 (+20) identities on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+\T1/lmr/m/n/12 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+\T1/lmr/m/n/12 (+20) threat and
+ []
+
+
+Underfull \hbox (badness 7186) in paragraph at lines 1004--1004
+\T1/lmr/m/n/12 (+20) vowel counting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+\T1/lmr/m/n/12 (+20) task (capacity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+[]|\T1/lmr/m/n/12 (+20) IV: Gender
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
 \T1/lmr/m/n/12 (+20) stereotype,
  []
 
 
-Underfull \hbox (badness 7099) in paragraph at lines 757--757
-\T1/lmr/m/n/12 (+20) college student
+Underfull \hbox (badness 1454) in paragraph at lines 1004--1004
+\T1/lmr/m/n/12 (+20) College student
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
-\T1/lmr/m/n/12 (+20) stereotype,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
 []|\T1/lmr/m/n/12 (+20) ANOVA,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
 \T1/lmr/m/n/12 (+20) mediation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
 []|\T1/lmr/m/n/12 (+20) Working memory
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 757--757
+Underfull \hbox (badness 1163) in paragraph at lines 1004--1004
 \T1/lmr/m/n/12 (+20) capacity mediated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 757--757
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
 \T1/lmr/m/n/12 (+20) stereotype
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 757--757
+Underfull \hbox (badness 5288) in paragraph at lines 1004--1004
 \T1/lmr/m/n/12 (+20) effects on maths
  []
 
 
-Overfull \hbox (6.0302pt too wide) in paragraph at lines 758--758
+Underfull \hbox (badness 1024) in paragraph at lines 1004--1004
+\T1/lmr/m/n/12 (+20) 53) = 6.01, $\OML/lmm/m/it/12 p$ \T1/lmr/m/n/12 (+20) =
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 1004--1004
+\T1/lmr/m/n/12 (+20) .020, $\OML/lmm/m/it/12 ^^Q[]$ \T1/lmr/m/n/12 (+20) = 0.10.
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 1004--1004
+\T1/lmr/m/n/12 (+20) Sobel test: $\OML/lmm/m/it/12 z$ \T1/lmr/m/n/12 (+20) =
+ []
+
+
+Overfull \hbox (6.0302pt too wide) in paragraph at lines 1005--1005
 []|\T1/lmr/m/n/12 (-20) Schmader
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
 \T1/lmr/m/n/12 (+20) et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
 []|\T1/lmr/m/n/12 (+20) 188
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
 \T1/lmr/m/n/12 (+20) participants
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
 \T1/lmr/m/n/12 (+20) across 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
-[]|\T1/lmr/m/n/12 (+20) Reading Span
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+[]|\T1/lmr/m/n/12 (+20) Effects of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
-[]|\T1/lmr/m/n/12 (+20) Stereotype
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+\T1/lmr/m/n/12 (+20) Reading Span
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 758--758
-\T1/lmr/m/n/12 (+20) threat, anxiety,
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+\T1/lmr/m/n/12 (+20) Test (capacity,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+\T1/lmr/m/n/12 (+20) processing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+[]|\T1/lmr/m/n/12 (+20) IV: Prime
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+\T1/lmr/m/n/12 (+20) condition,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+\T1/lmr/m/n/12 (+20) Self-reported
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+\T1/lmr/m/n/12 (+20) anxiety; DV:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
 []|\T1/lmr/m/n/12 (+20) Regression
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 758--758
+Underfull \hbox (badness 2564) in paragraph at lines 1005--1005
 []|\T1/lmr/m/n/12 (+20) Anxiety predicted
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
 \T1/lmr/m/n/12 (+20) lower working
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
 \T1/lmr/m/n/12 (+20) memory under
  []
 
 
-Overfull \hbox (0.9736pt too wide) in paragraph at lines 758--759
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+\T1/lmr/m/n/12 (+20) stereotype threat.
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 1005--1005
+$\OML/lmm/m/it/12 ^^L$ \T1/lmr/m/n/12 (+20) = -0.20, $\OML/lmm/m/it/12 p$ \T1/lmr/m/n/12 (+20) =
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 1005--1005
+\T1/lmr/m/n/12 (+20) .050. Prime x
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 1005--1005
+\T1/lmr/m/n/12 (+20) significant: $\OML/lmm/m/it/12 ^^L$ \T1/lmr/m/n/12 (+20) =
+ []
+
+
+Overfull \hbox (0.9736pt too wide) in paragraph at lines 1005--1006
 []|\T1/lmr/m/n/12 (-20) Partially| 
  []
 
 
-Overfull \hbox (6.0302pt too wide) in paragraph at lines 759--759
+Overfull \hbox (6.0302pt too wide) in paragraph at lines 1006--1006
 []|\T1/lmr/m/n/12 (-20) Schmader
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
 \T1/lmr/m/n/12 (+20) and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
 \T1/lmr/m/n/12 (+20) Johns
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
-[]|\T1/lmr/m/n/12 (+20) 159
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+[]|\T1/lmr/m/n/12 (+20) 151
  []
 
 
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 759--759
+Overfull \hbox (6.33865pt too wide) in paragraph at lines 1006--1006
 \T1/lmr/m/n/12 (-20) undergraduates
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
 \T1/lmr/m/n/12 (+20) across 3
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 759--759
-[]|\T1/lmr/m/n/12 (+20) OSPAN, maths
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+[]|\T1/lmr/m/n/12 (+20) Effects of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
-[]|\T1/lmr/m/n/12 (+20) Stereotype
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
-\T1/lmr/m/n/12 (+20) memory
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
-[]|\T1/lmr/m/n/12 (+20) ANCOVA,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
-\T1/lmr/m/n/12 (+20) mediation
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
-[]|\T1/lmr/m/n/12 (+20) Working memory
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
-\T1/lmr/m/n/12 (+20) capacity reduced
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
-\T1/lmr/m/n/12 (+20) under threat,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 759--759
-\T1/lmr/m/n/12 (+20) mediated maths
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-[]|\T1/lmr/m/n/12 (+20) Tine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-\T1/lmr/m/n/12 (+20) and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-\T1/lmr/m/n/12 (+20) Gotlieb
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-[]|\T1/lmr/m/n/12 (+20) 71
- []
-
-
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 760--760
-\T1/lmr/m/n/12 (-20) undergraduates| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-[]|\T1/lmr/m/n/12 (+20) Maths test,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-[]|\T1/lmr/m/n/12 (+20) Multiple
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
 \T1/lmr/m/n/12 (+20) stereotype
  []
 
 
-Underfull \hbox (badness 5652) in paragraph at lines 760--760
-\T1/lmr/m/n/12 (+20) threats, maths
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+\T1/lmr/m/n/12 (+20) threat on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-\T1/lmr/m/n/12 (+20) and working
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+\T1/lmr/m/n/12 (+20) and maths
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-\T1/lmr/m/n/12 (+20) memory
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+\T1/lmr/m/n/12 (+20) performance;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-[]|\T1/lmr/m/n/12 (+20) Working memory
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+\T1/lmr/m/n/12 (+20) reading span
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
-\T1/lmr/m/n/12 (+20) impaired under
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+\T1/lmr/m/n/12 (+20) task (capacity,
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 760--760
-\T1/lmr/m/n/12 (+20) various stereotype
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+[]|\T1/lmr/m/n/12 (+20) IV: Condition
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
-[]|\T1/lmr/m/n/12 (+20) Van
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+\T1/lmr/m/n/12 (+20) (stereotype
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
-\T1/lmr/m/n/12 (+20) Rydell
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+\T1/lmr/m/n/12 (+20) threat vs.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
-[]|\T1/lmr/m/n/12 (+20) 131 female
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+\T1/lmr/m/n/12 (+20) control); DV:
  []
 
 
-Overfull \hbox (6.33865pt too wide) in paragraph at lines 761--761
-\T1/lmr/m/n/12 (-20) undergraduates| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
-[]|\T1/lmr/m/n/12 (+20) Letter-memory
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
-[]|\T1/lmr/m/n/12 (+20) Power prime,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
-\T1/lmr/m/n/12 (+20) stereotype
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
 []|\T1/lmr/m/n/12 (+20) ANOVA,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
 \T1/lmr/m/n/12 (+20) mediation
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 761--761
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1006
+[]|\T1/lmr/m/n/12 (+20) Working memory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+[]|\T1/lmr/m/n/12 (+20) Tine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) Gotlieb
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+[]|\T1/lmr/m/n/12 (+20) 71
+ []
+
+
+Overfull \hbox (6.33865pt too wide) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (-20) undergraduates| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) , race-, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) income-based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) threat on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) Automated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) Working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) Memory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) Assessment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) (capacity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+[]|\T1/lmr/m/n/12 (+20) IV: Gender,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) Race, Income
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) level, Number
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) of stigmatized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/lmr/m/n/12 (+20) aspects; DV:
+ []
+
+
+Underfull \hbox (badness 7796) in paragraph at lines 1007--1007
+[]|\T1/lmr/m/n/12 (+20) Significant effects
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+[]|\T1/lmr/m/n/12 (+20) Van
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) Rydell
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+[]|\T1/lmr/m/n/12 (+20) 131 female
+ []
+
+
+Overfull \hbox (6.33865pt too wide) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (-20) undergraduates| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+[]|\T1/lmr/m/n/12 (+20) Effects of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) power prime
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) on stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) threat and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) letter-memory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) task (capacity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) Stereotype
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) DV: Working
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) memory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+[]|\T1/lmr/m/n/12 (+20) ANOVA,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) mediation
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 1008--1008
 \T1/lmr/m/n/12 (+20) protected working
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
 \T1/lmr/m/n/12 (+20) memory from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--761
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
 \T1/lmr/m/n/12 (+20) stereotype threat
  []
 
-[39
 
-] [40] [41] [42] [43]
+Underfull \hbox (badness 5331) in paragraph at lines 1008--1008
+\T1/lmr/m/n/12 (+20) capacity. $\OML/lmm/m/it/12 z$ \T1/lmr/m/n/12 (+20) =
+ []
 
-[44]
+[53
 
-[45
+] [54] [55] [56] [57] [58] [59]
+
+[60]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[61
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[46]
+[62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[47]
+[63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[48]
+[64]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[49]
+[65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[50]
+[66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[51] AED endfloat: Processing end Figures and Tables (./thesis.aux)
+
+
+[67]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[69]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[70]
+Overfull \hbox (570.08908pt too wide) in paragraph at lines 1317--1318
+$[]$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[71]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[72]
+
+[73] AED endfloat: Processing end Figures and Tables (./thesis.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29434 strings out of 475544
- 541702 string characters out of 5777454
- 1963905 words of memory out of 5000000
- 51222 multiletter control sequences out of 15000+600000
- 645418 words of font info for 189 fonts, out of 8000000 for 9000
+ 29847 strings out of 475544
+ 551117 string characters out of 5777454
+ 1979905 words of memory out of 5000000
+ 51421 multiletter control sequences out of 15000+600000
+ 676599 words of font info for 250 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,12n,107p,1561b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on thesis.pdf (51 pages, 319016 bytes).
+ 99i,12n,107p,1561b,786s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
+
+</home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on thesis.pdf (73 pages, 464025 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
- 415 compressed objects within 5 object streams
- 124 named destinations out of 1000 (max. 500000)
- 43130 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 841 PDF objects out of 1000 (max. 8388607)
+ 724 compressed objects within 8 object streams
+ 236 named destinations out of 1000 (max. 500000)
+ 57538 words of extra memory for PDF output out of 61914 (max. 10000000)
 
