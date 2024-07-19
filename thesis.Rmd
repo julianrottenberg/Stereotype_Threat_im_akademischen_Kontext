@@ -1,20 +1,27 @@
 ---
-title             : "Stereotype threat im akademischen Kontext"
+title             : "Stereotype threat im akademischen Context"
 shorttitle        : " "
 
 author: 
   - name          : "Julian Rottenberg"
     affiliation   : "1"
-
+    corresponding :  no # Define only one corresponding author
+    address       : " "
+    email         : " "
+    
 affiliation:
   - id            : "1"
-    institution   : "FernUni in Hagen"
+    institution   : "Fakultät für Psychologie der FernUniversität in Hagen"
+
 
 note: "\\clearpage"
 
-authornote:
+authornote: |
+  JR
+  
 
-abstract: >
+
+abstract: |
   Stereotype threat, a phenomenon where awareness of negative stereotypes impairs performance, has been extensively studied in academic contexts. However, its underlying neural and cognitive mechanisms have received less attention. This systematic review uses social neuroscience to examine how stereotype threat affects brain activation, cognitive control, and working memory in academic settings. The analysis of 28 studies revealed complex patterns of neural activation under threat, with increased activity in emotional processing regions and decreased activity in cognitive control areas. Cognitive control, particularly inhibition and updating, was often impaired. Working memory capacity consistently decreased under stereotype threat. These findings support an integrated model where stereotype threat induces affective and cognitive responses that collectively tax working memory resources. This review highlights the need for interventions targeting both emotional regulation and cognitive support to mitigate stereotype threat effects in academic environments.
   
   **Zusammenfassung**: 
@@ -30,7 +37,7 @@ nocite            : |
 floatsintext      : yes
 linenumbers       : no
 draft             : no
-mask              : no
+mask              : yes
 
 figurelist        : no
 tablelist         : no
@@ -59,8 +66,8 @@ header-includes:
     \renewcommand{\headrulewidth}{0pt}
     \thispagestyle{fancy}
     \duedate{19.07.2024}
-    \course{Modul 6b: Empirisch-Experimentelles Praktikum}
-    \professor{Dr. Julia Zimmermann}
+    \course{Bachelorarbeit im Studiengang \\ B. Sc. Psychologie \\ Lehrgebiet Psychologische Methodenlehre und Evaluation} 
+    \professor{Erstprüfer/in:  \\ Zweitprüfer/in: }
   - \usepackage{pdflscape}
   - \usepackage{amsmath}
   - \usepackage{setspace}
@@ -98,7 +105,7 @@ header-includes:
 csl               : "`r system.file('rmd', 'apa7-annotated.csl', package = 'papaja')`"
 documentclass     : "apa7"
 output            : papaja::apa6_pdf
-classoption       : "stu, a4paper"
+classoption       : "stu, a4paper, 12pt"
 language          : "en-GB"
 ---
 
@@ -159,9 +166,9 @@ writeLines(right_content, "abbreviations_right.tex")
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.5\baselineskip}
 
-\hyperref[tab:neuro_table]{\hbox to \textwidth{Table 1. Study Characteristics \dotfill 19}}
+\hyperref[tab:neuro_table]{\hbox to \textwidth{Table 1. Overview of the EEG and fMRI measurements \dotfill 18}}
 
-\hyperref[tab:query_table]{\hbox to \textwidth{Table 2. Descriptive Statistics \dotfill 24}}
+\hyperref[tab:query_table]{\hbox to \textwidth{Table 2. Search queries used for the systematic literature review. \dotfill 24}}
 
 \hyperref[fig:prisma]{\hbox to \textwidth{Figure 1. PRISMA Flow Diagram of Study Selection Process \dotfill 26}}
 
@@ -374,7 +381,8 @@ This approach opens the possibility of reconciling seemingly contradictory theor
 
 
 
-```{r neuro_table, results = "asis"}
+```{r neuro_table, include=TRUE}
+
 neuroimaging_measures <- data.frame(
   Measure = character(),
   Type = character(),
@@ -467,19 +475,34 @@ neuroimaging_measures[14, ] <- c(
 )
 
 apa_table(
-  neuroimaging_measures,
+  neuroimaging_measures, 
   caption = "Overview of the EEG and fMRI measurements",
-  col.names = c(
+  note = "{\\small This table provides an overview of neuroimaging measures used in the papers reported by this review. The 'Measure' column lists specific neuroimaging indicators, 'Type' specifies whether the measure is derived from EEG or fMRI, and 'Description' offers a detailed explanation of each measure and its relevance to cognitive processes.}",
+   col.names = c(
    "Measure",
    "Type",
    "Description"
   ),
-  align = c("p{4cm}", "p{1.5cm}", "p{9cm}"),
+  escape = FALSE,
   longtable = TRUE,
   font_size = "small",
-  note = "{\\small This table provides an overview of neuroimaging measures used in the papers reported by this review. The 'Measure' column lists specific neuroimaging indicators, 'Type' specifies whether the measure is derived from EEG or fMRI, and 'Description' offers a detailed explanation of each measure and its relevance to cognitive processes.}",
-  escape = FALSE
+  align = c("p{4cm}", "p{1.5cm}", "p{9cm}")
 )
+
+# apa_table(
+#   neuroimaging_measures,
+#   caption = "Overview of the EEG and fMRI measurements",
+#   col.names = c(
+#    "Measure",
+#    "Type",
+#    "Description"
+#   ),
+#   align = c("p{4cm}", "p{1.5cm}", "p{9cm}"),
+#   longtable = TRUE,
+#   note = "{\\small This table provides an overview of neuroimaging measures used in the papers reported by this review. The 'Measure' column lists specific neuroimaging indicators, 'Type' specifies whether the measure is derived from EEG or fMRI, and 'Description' offers a detailed explanation of each measure and its relevance to cognitive processes.}",
+#   escape = FALSE,
+#   font_size = "small"
+# )
 ```
 
 # Methods
@@ -1532,6 +1555,10 @@ To get to these and to spread awareness of them, it is deemed quite helpful to b
 \newpage
 
 # References
+
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+\setlength{\parskip}{8pt}
 
 ::: {#refs custom-style="Bibliography"}
 :::
