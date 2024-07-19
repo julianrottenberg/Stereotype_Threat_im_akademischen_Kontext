@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  19 JUL 2024 16:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.8)  19 JUL 2024 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4321,29 +4321,50 @@ Underfull \hbox (badness 5331) in paragraph at lines 1000--1000
 ] [53] [54] [55] [56] [57] [58]
 
 [59]
+Underfull \vbox (badness 1635) has occurred while \output is active []
+
+
 
 [60
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [61]
-Underfull \vbox (badness 4108) has occurred while \output is active []
+Underfull \vbox (badness 1635) has occurred while \output is active []
 
 
 
 [62]
+Underfull \vbox (badness 5908) has occurred while \output is active []
+
+
 
 [63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [65]
 
 [66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [67]
 
 [68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4400,11 +4421,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [79]
-Overfull \hbox (570.08908pt too wide) in paragraph at lines 1438--1439
-$[]$ 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -4415,18 +4431,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [81]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[82] AED endfloat: Processing end Figures and Tables (./thesis.aux)
+
+
+[82]
+
+[83] AED endfloat: Processing end Figures and Tables (./thesis.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 29843 strings out of 475544
- 550984 string characters out of 5777454
+ 29874 strings out of 475544
+ 552232 string characters out of 5777454
  1979905 words of memory out of 5000000
- 51398 multiletter control sequences out of 15000+600000
+ 51413 multiletter control sequences out of 15000+600000
  676494 words of font info for 250 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,12n,107p,1561b,786s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4437,10 +4458,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></home/julian/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on thesis.pdf (82 pages, 461562 bytes).
+Output written on thesis.pdf (83 pages, 460469 bytes).
 PDF statistics:
- 930 PDF objects out of 1000 (max. 8388607)
- 805 compressed objects within 9 object streams
- 257 named destinations out of 1000 (max. 500000)
+ 967 PDF objects out of 1000 (max. 8388607)
+ 841 compressed objects within 9 object streams
+ 273 named destinations out of 1000 (max. 500000)
  57618 words of extra memory for PDF output out of 61914 (max. 10000000)
 

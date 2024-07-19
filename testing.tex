@@ -196,10 +196,27 @@ Correspondence concerning this article should be addressed to First Author, Post
 \begin{document}
 \maketitle
 
-\begin{verbatim}
+\documentclass{article}
+\usepackage{glossaries}
+\makenoidxglossaries
+\newacronym{svm}{svm}{support vector machine}
+
+\begin{document}
+When you use predefined glossaries like this: First use: \gls{svm}. Second use: \gls{svm}.
+And print them in footnote like this\footnote{Abbreviations used in this paper are as follow: }
+\printnoidxglossaries
+
+\end{document}
+
+
+
+```
 ## Warning in matrix(value, n, p): data length [12] is not a sub-multiple or
 ## multiple of the number of columns [8]
-\end{verbatim}
+```
+
+
+
 
 \begin{lltable}
 

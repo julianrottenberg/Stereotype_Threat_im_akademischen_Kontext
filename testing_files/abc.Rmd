@@ -1,0 +1,217 @@
+---
+title             : "The title"
+shorttitle        : "Title"
+
+author: 
+  - name          : "First Author"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Postal address"
+    email         : "my@email.com"
+    role: # Contributorship roles (e.g., CRediT, https://credit.niso.org/)
+      - "Conceptualization"
+      - "Writing - Original Draft Preparation"
+      - "Writing - Review & Editing"
+  - name          : "Ernst-August Doelle"
+    affiliation   : "1,2"
+    role:
+      - "Writing - Review & Editing"
+      - "Supervision"
+
+affiliation:
+  - id            : "1"
+    institution   : "Wilhelm-Wundt-University"
+  - id            : "2"
+    institution   : "Konstanz Business School"
+
+note: "\\clearpage"
+
+authornote: |
+  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
+
+  Enter author note here.
+
+abstract: |
+  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline.
+  Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
+  One sentence clearly stating the **general problem** being addressed by  this particular study.
+  One sentence summarizing the main result (with the words "**here we show**" or their equivalent).
+    corresponding : yes    # Define only one corresponding author
+  One or two sentences to put the results into a more **general context**.
+  Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline.
+  
+  < !-- https://tinyurl.com/ybremelq -- >
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : ["r-references.bib", "../files/references.bib"]
+annotate_references: yes
+nocite            : |
+  @R-base
+
+floatsintext      : yes
+linenumbers       : no
+draft             : no
+mask              : no
+
+figurelist        : yes
+tablelist         : yes
+footnotelist      : no
+toc               : yes
+numbersections    : yes
+
+header-includes:
+  - |
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-1em}%
+      {\normalfont\normalsize\bfseries\typesectitle}}
+    
+    \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+      {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+      {-\z@\relax}%
+      {\normalfont\normalsize\bfseries\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+    \makeatother
+    \setlength{\cslhangindent}{0.5in}
+    \usepackage{fancyhdr} 
+    \pagestyle{fancy}   
+    \fancyhf{} 
+    \fancyhead[R]{\thepage} 
+    \renewcommand{\headrulewidth}{0pt}
+    \thispagestyle{fancy}
+    \duedate{07.08.2023}
+    \course{Modul 6b: Empirisch-Experimentelles Praktikum}
+    \professor{Dr. }
+  - \usepackage{pdflscape}
+  - \usepackage{amsmath}
+  - \usepackage{setspace}
+  - \AtBeginEnvironment{tabular}{\singlespacing}
+  - \AtBeginEnvironment{lltable}{\singlespacing}
+  - \AtBeginEnvironment{tablenotes}{\doublespacing}
+  - \captionsetup[table]{font={stretch=1.5}}
+  - \captionsetup[figure]{font={stretch=1.5}}
+  - |
+    \usepackage{afterpage}
+    \newcommand{\blankpage}{%
+      \null
+      \thispagestyle{empty}%
+      \addtocounter{page}{-1}%
+      \newpage}
+  - |
+    \usepackage{longtable}
+    \usepackage{booktabs}
+    \newcommand{\abbrlabel}[1]{\makebox[2.5em][l]{\textbf{#1}}}
+
+
+csl               : "`r system.file('rmd', 'apa7-annotated.csl', package = 'papaja')`"
+documentclass     : "apa7"
+output            : papaja::apa6_pdf
+classoption       : "stu, a4paper"
+language          : "en-GB"
+---
+```{r setup, include = FALSE}
+library("papaja")
+library("stringr")
+r_refs("r-references.bib")
+
+# Function to extract potential abbreviations with their definitions
+extract_abbreviations <- function(text) {
+  # Pattern to match abbreviations with their definitions
+  pattern <- "([A-Za-z\\s]+?)\\s*\\(([A-Z]{2,5})\\)"
+  
+  # Find all matches
+  matches <- str_match_all(text, pattern)[[1]]
+  
+  # Create a data frame of abbreviations and their definitions
+  abbrevs <- data.frame(
+    abbr = matches[, 3],
+    definition = str_trim(matches[, 2]),
+    stringsAsFactors = FALSE
+  )
+  
+  # Sort alphabetically by abbreviation
+  abbrevs <- abbrevs[order(abbrevs$abbr), ]
+  
+  # Remove duplicates
+  abbrevs <- abbrevs[!duplicated(abbrevs$abbr), ]
+  
+  return(abbrevs)
+}
+
+# Function to generate LaTeX table rows
+generate_latex_rows <- function(abbrevs) {
+  sapply(1:nrow(abbrevs), function(i) {
+    sprintf("\\abbrlabel{%s} & %s \\\\", 
+            abbrevs$abbr[i], 
+            str_to_sentence(abbrevs$definition[i]))
+  })
+}
+
+# Extract abbreviations from this document
+rmd_content <- readLines(knitr::current_input())
+text_content <- rmd_content[-(1:which(rmd_content == "---")[2])]
+text_content <- text_content[!grepl("^```", text_content)]
+text_content <- paste(text_content, collapse = " ")
+
+abbrevs <- extract_abbreviations(text_content)
+latex_rows <- generate_latex_rows(abbrevs)
+
+# Write to a file
+writeLines(latex_rows, "abbreviations.tex")
+```
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+\tableofcontents
+
+\newpage
+\section*{List of Abbreviations}
+\addcontentsline{toc}{section}{List of Abbreviations}
+\begin{longtable}{@{}p{2.5em}p{0.8\textwidth}@{}}
+\toprule
+\textbf{Term} & \textbf{Definition} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Term} & \textbf{Definition} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{\textit{Continued on next page}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+\input{abbreviations.tex}
+\end{longtable}
+\newpage
+
+# Introduction
+Hello, this is a thing. Let's call the Prefrontal Cortex (PFC) the PFC.
+
+# Methods
+In this study, we used Functional Magnetic Resonance Imaging (fMRI) to examine brain activity.
+
+# Results
+The Analysis of Variance (ANOVA) revealed significant differences between groups.
+
+# Discussion
+Our findings suggest that the PFC plays a crucial role in cognitive control.
+
+# References
+
+::: {#refs custom-style="Bibliography"}
+:::
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id="refs" custom-style="Bibliography"></div>
+
+\endgroup
