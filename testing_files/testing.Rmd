@@ -56,11 +56,6 @@ header-includes:
   - \AtBeginEnvironment{tablenotes}{\doublespacing}
   - \captionsetup[table]{font={stretch=1.5}}
   - \captionsetup[figure]{font={stretch=1.5}}
-  \documentclass{article}
-\usepackage{glossaries}
-\makenoidxglossaries
-\newacronym{svm}{svm}{support vector machine}
-
 
 
 csl               : "`r system.file('rmd', 'apa7.csl', package = 'papaja')`"
@@ -76,9 +71,6 @@ library(RefManageR)
 library(kableExtra)
 library(citr)
 ```
-
-
-
 
 ```{r analysis-preferences}
 # Seed for random number generation

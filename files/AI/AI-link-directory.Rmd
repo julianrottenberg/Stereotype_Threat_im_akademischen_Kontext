@@ -45,7 +45,23 @@ library(kableExtra)
 r_refs("r-references.bib")
 ```
 
-# Claude 3.5 Sonnet
+
+## Miscellaneous
+
+### Abbreviations list
+
+https://aiarchives.org/id/Iv5MuVoI5c2CghcxY4xQ-p
+
+### Results table generation *extracted* from *my* lengthy first draft of the results section.
+
+https://aiarchives.org/id/RSk5jlPm5rogNH4LtlSW-p
+
+https://aiarchives.org/id/yg5WBLKOv7ucPIBAHiKj-p
+
+### Abstract translation
+
+https://aiarchives.org/id/T0vgW8P4AGO08Cw0mKvA-p
+
 
 ## Paper summaries
 
@@ -177,16 +193,6 @@ https://aiarchives.org/id/bjbQcOGtqwTIIgaUTPBC-p
 
 https://aiarchives.org/id/EneDzNT2iS6b4dUfoslW-p
 
-
-----
-
-# ChatGPT 4o
-
-## Results table generation *extracted* from *my* lengthy first draft of the results section.
-
-https://aiarchives.org/id/RSk5jlPm5rogNH4LtlSW-p
-
-https://aiarchives.org/id/yg5WBLKOv7ucPIBAHiKj-p
 
 
 

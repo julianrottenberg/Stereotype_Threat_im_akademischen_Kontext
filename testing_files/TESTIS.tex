@@ -168,7 +168,21 @@
     {}{\InnerPatchFailed}%
   }
 {}{\PatchFailed}
+\keywords{keywords\newline\indent Word count: X}
 \usepackage{csquotes}
+\usepackage[titles]{tocloft}
+\cftpagenumbersoff{figure}
+\renewcommand{\cftfigpresnum}{\itshape\figurename\enspace}
+\renewcommand{\cftfigaftersnum}{.\space}
+\setlength{\cftfigindent}{0pt}
+\setlength{\cftafterloftitleskip}{0pt}
+\settowidth{\cftfignumwidth}{Figure 10.\qquad}
+\cftpagenumbersoff{table}
+\renewcommand{\cfttabpresnum}{\itshape\tablename\enspace}
+\renewcommand{\cfttabaftersnum}{.\space}
+\setlength{\cfttabindent}{0pt}
+\setlength{\cftafterloftitleskip}{0pt}
+\settowidth{\cfttabnumwidth}{Table 10.\qquad}
 \makeatletter
 \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
   {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
@@ -187,9 +201,9 @@
 \fancyhead[R]{\thepage} 
 \renewcommand{\headrulewidth}{0pt}
 \thispagestyle{fancy}
-\duedate{19.07.2024}
+\duedate{07.08.2023}
 \course{Modul 6b: Empirisch-Experimentelles Praktikum}
-\professor{Dr. Julia Zimmermann}
+\professor{Dr. }
 
 \usepackage{pdflscape}
 \usepackage{amsmath}
@@ -210,18 +224,6 @@
 \usepackage{booktabs}
 \newcommand{\abbrlabel}[1]{\makebox[2.5em][l]{\textbf{#1}}}
 
-\usepackage{caption}
-\captionsetup[figure]{font=small}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=false,
-    linkcolor=black,
-    filecolor=black,      
-    urlcolor=black,
-    citecolor=black,
-    pdfborderstyle={/S/U/W 1}
- }
-
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -229,26 +231,46 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Stereotype threat im akademischen Kontext},
-  pdfauthor={Julian Rottenberg1},
+  pdftitle={The title},
+  pdfauthor={First Author1 \& Ernst-August Doelle1,2},
   pdflang={en-GB},
+  pdfkeywords={keywords},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Stereotype threat im akademischen Kontext}
-\author{Julian Rottenberg\textsuperscript{1}}
+\title{The title}
+\author{First Author\textsuperscript{1} \& Ernst-August Doelle\textsuperscript{1,2}}
 \date{}
 
 
-\shorttitle{SHORT TITLE}
+\shorttitle{Title}
 
-\affiliation{\vspace{0.5cm}\textsuperscript{1} FernUni in Hagen}
+\authornote{
+
+Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
+
+Enter author note here.
+
+The authors made the following contributions. First Author: Conceptualization, Writing - Original Draft Preparation, Writing - Review \& Editing; Ernst-August Doelle: Writing - Review \& Editing, Supervision.
+
+Correspondence concerning this article should be addressed to First Author, Postal address. E-mail: \href{mailto:my@email.com}{\nolinkurl{my@email.com}}
+
+}
+
+\affiliation{\vspace{0.5cm}\textsuperscript{1} Wilhelm-Wundt-University\\\textsuperscript{2} Konstanz Business School}
 
 \note{\clearpage}
 
 \abstract{%
-Stereotype threat, a phenomenon where awareness of negative stereotypes impairs performance, has been extensively studied in academic contexts. However, its underlying neural and cognitive mechanisms have received less attention. This systematic review uses social neuroscience to examine how stereotype threat affects brain activation, cognitive control, and working memory in academic settings. The analysis of 28 studies revealed complex patterns of neural activation under threat, with increased activity in emotional processing regions and decreased activity in cognitive control areas. Cognitive control, particularly inhibition and updating, was often impaired. Working memory capacity consistently decreased under stereotype threat. These findings support an integrated model where stereotype threat induces affective and cognitive responses that collectively tax working memory resources. This review highlights the need for interventions targeting both emotional regulation and cognitive support to mitigate stereotype threat effects in academic environments.
-\textbf{Zusammenfassung}: Stereotype threat, ein Phänomen, bei dem das Bewusstsein für negative Stereotype die Leistung beeinträchtigt, wurde im akademischen Kontext umfassend untersucht. Die zugrundeliegenden neuralen und kognitiven Mechanismen erhielten jedoch weniger Aufmerksamkeit. Dieses systematische Review nutzt die soziale Neurowissenschaft, um die Auswirkungen auf Hirnaktivierung, kognitive Kontrolle und Arbeitsgedächtnis zu untersuchen. Die Auswertung von 28 Studien zeigte komplexe Muster neuronaler Aktivierung, mit erhöhter Aktivität in Regionen der emotionalen Verarbeitung und verringerter Aktivität in Bereichen der kognitiven Kontrolle. Kognitive Kontrolle, insbesondere Hemmung und Aktualisierung, war oft beeinträchtigt. Die Arbeitsgedächtniskapazität nahm durchgängig ab. Diese Ergebnisse stützen ein integriertes Modell, bei dem Stereotype threat affektive und kognitive Reaktionen hervorruft, die gemeinsam die Arbeitsgedächtnisressourcen belasten. Das Review betont die Notwendigkeit von Interventionen, die sowohl emotionale Regulation als auch kognitive Unterstützung adressieren, um die Auswirkungen von Stereotype threat im akademischen Umfeld zu mildern.
+One or two sentences providing a \textbf{basic introduction} to the field, comprehensible to a scientist in any discipline.
+Two to three sentences of \textbf{more detailed background}, comprehensible to scientists in related disciplines.
+One sentence clearly stating the \textbf{general problem} being addressed by this particular study.
+One sentence summarizing the main result (with the words ``\textbf{here we show}'' or their equivalent).
+corresponding : yes \# Define only one corresponding author
+One or two sentences to put the results into a more \textbf{general context}.
+Two or three sentences to provide a \textbf{broader perspective}, readily comprehensible to a scientist in any discipline.
+
+\textless{} !-- \url{https://tinyurl.com/ybremelq} -- \textgreater{}
 }
 
 
@@ -261,40 +283,13 @@ Stereotype threat, a phenomenon where awareness of negative stereotypes impairs 
 \tableofcontents
 }
 \newpage
-\section*{List of Tables and Figures}
-\addcontentsline{toc}{section}{List of Tables and Figures}
-
-\begin{flushleft}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.5\baselineskip}
-
-\hyperref[tab:neuro_table]{\hbox to \textwidth{Table 1. Study Characteristics \dotfill 19}}
-
-\hyperref[tab:query_table]{\hbox to \textwidth{Table 2. Descriptive Statistics \dotfill 24}}
-
-\hyperref[fig:prisma]{\hbox to \textwidth{Figure 1. PRISMA Flow Diagram of Study Selection Process \dotfill 26}}
-
-\hyperref[tab:h1_table]{\hbox to \textwidth{Table 3. Overview of the Included Papers for Hypothesis 1 \dotfill 34}}
-
-\hyperref[tab:h2_table]{\hbox to \textwidth{Table 4. Overview of the Included Papers for Hypothesis 2 \dotfill 44}}
-
-\hyperref[tab:h3_table]{\hbox to \textwidth{Table 5. Overview of the Included Papers for Hypothesis 3 \dotfill 57}}
-
-
-
-
-% Add more tables and figures as needed, following the same format
-\end{flushleft}
-
-\newpage
-
-\newpage
 \section*{List of Abbreviations}
 \addcontentsline{toc}{section}{List of Abbreviations}
 
-\begin{footnotesize}
+\footnotesize
 \setlength{\parindent}{0pt}
 \begin{minipage}[t]{0.45\textwidth}
+
 \vspace{1ex}
 \begin{tabular}{@{}p{4em}p{0.75\textwidth}@{}}
 \input{abbreviations_left.tex}
@@ -302,12 +297,12 @@ Stereotype threat, a phenomenon where awareness of negative stereotypes impairs 
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.45\textwidth}
+
 \vspace{1ex}
 \begin{tabular}{@{}p{4em}p{0.75\textwidth}@{}}
 \input{abbreviations_right.tex}
 \end{tabular}
 \end{minipage}
-\end{footnotesize}
 
 \newpage
 
@@ -353,8 +348,8 @@ Although it consists of multiple nuclei, this review will refer to it as a whole
 \paragraph{Prefrontal cortex}\label{prefrontal-cortex}
 
 The prefrontal cortex (PFC) is essential for high-level cognitive functions such as decision-making, social behaviour, and working memory.
-Its main subregions include the dorsolateral prefrontal cortex (dlPFC), orbitofrontal cortex, ventrolateral prefrontal cortex (vlPFC), ventromedial prefrontal cortex (vmPFC), anterior cingulate cortex (ACC), and frontal pole (Chafee \& Heilbronner, 2022; VandenBos \& American Psychological Association, 2015c).
-The dlPFC is important for working memory and cognitive flexibility, the orbitofrontal cortex evaluates rewards and punishments, crucial for decision-making, the vlPFC aids in inhibitory control and attention while the vmPFC regulates emotions and value-based decisions (Chafee \& Heilbronner, 2022; {``Consciousness,''} 2020; Teffer \& Semendeferi, 2012).
+Its main subregions include the dorsolateral prefrontal cortex (dlPFC), orbitofrontal cortex (OFC), ventrolateral prefrontal cortex (vlPFC), ventromedial prefrontal cortex (vmPFC), anterior cingulate cortex (ACC), and frontal pole (Chafee \& Heilbronner, 2022; VandenBos \& American Psychological Association, 2015c).
+The dlPFC is important for working memory and cognitive flexibility, the OFC evaluates rewards and punishments, crucial for decision-making, the vlPFC aids in inhibitory control and attention while the vmPFC regulates emotions and value-based decisions (Chafee \& Heilbronner, 2022; {``Consciousness,''} 2020; Teffer \& Semendeferi, 2012).
 
 \paragraph{Default mode network}\label{default-mode-network}
 
@@ -391,7 +386,7 @@ An overview of the EEG and fMRI measurements used in this reviews' papers can eb
 
 Cognitive control refers to the ability to regulate one's thoughts, emotions, and behaviours in accordance with internal goals, despite the presence of distractions or competing demands ({``Cognitive Control,''} 2020; Dixon, 2015).
 It is closely linked to executive function, which encompasses a range of cognitive processes including inhibition, working memory, and cognitive flexibility --- the terms are often used interchangeably, including in this review\footnote{in some contexts, executive function is considered to be an umbrella term that includes cognitive control as one of its components} (Cohen, 2017; Dixon, 2015).
-The lateral prefrontal cortex plays a crucial role in cognitive control by holding information in working memory and guiding behaviour based on current goals (Cohen, 2017; Mackie et al., 2013).
+The lateral prefrontal cortex (LPFC) plays a crucial role in cognitive control by holding information in working memory and guiding behaviour based on current goals (Cohen, 2017; Mackie et al., 2013).
 Moreover, regions such as the ACC, posterior parietal cortex, and orbitofrontal cortex are involved in various aspects of cognitive control, including error monitoring, attention regulation, and decision-making (Aron, 2007).
 
 \paragraph{Measuring cognitive control}\label{measuring-cognitive-control}
@@ -500,10 +495,8 @@ This approach opens the possibility of reconciling seemingly contradictory theor
 \begin{ThreePartTable}
 
 \begin{TableNotes}[para]
-\normalsize{\textit{Note.} {\small This table provides an overview of neuroimaging measures used in the papers reported by this review. The 'Measure' column lists specific neuroimaging indicators, 'Type' specifies whether the measure is derived from EEG or fMRI, and 'Description' offers a detailed explanation of each measure and its relevance to cognitive processes.}}
+\normalsize{\textit{Note.} This table provides an overview of neuroimaging measures used in the papers reported by this review. The 'Measure' column lists specific neuroimaging indicators, 'Type' specifies whether the measure is derived from EEG or fMRI, and 'Description' offers a detailed explanation of each measure and its relevance to cognitive processes.}
 \end{TableNotes}
-
-\small{
 
 \begin{longtable}{p{4cm}p{1.5cm}p{9cm}}\noalign{\getlongtablewidth\global\LTcapwidth=\longtablewidth}
 \caption{\label{tab:neuro_table}Overview of the EEG and fMRI measurements}\\
@@ -534,8 +527,6 @@ RSDC (Resting-State Degree Centrality) & fMRI & Degree centrality measured durin
 \addlinespace
 \insertTableNotes
 \end{longtable}
-
-}
 
 \end{ThreePartTable}
 \end{center}
@@ -574,35 +565,25 @@ These extra filters were applied in accordance with the inclusion and exclusion 
 
 \caption{\label{tab:query_table}Search queries used for the systematic literature review.}
 
-\small{
-
 \begin{tabular}{p{4cm}p{12cm}}
 \toprule
 Hypothesis & \multicolumn{1}{c}{Search Query}\\
 \midrule
 H1 & ("stereotype threat") AND 
-
-(neural OR neuroimaging OR "functional magnetic resonance imaging" OR fMRI OR electroencephalo* OR EEG OR ERP OR "brain activation" OR amygdala OR "prefrontal cortex" OR "default mode network" OR "salience network") AND 
-
+(neural OR neuroimaging OR "functional magnetic resonance imaging" OR fMRI OR electroencephalo* OR EEG OR ERP OR "brain activation" OR amygdala OR "prefrontal cortex" OR "default mode network" OR "salience network") AND
 (academ* OR education* OR stud* OR learn* OR perform* OR school OR university OR college)\\
 H2 & ("stereotype threat") AND 
-
 ("cognitive control" OR "executive function" OR "executive function network" OR "cognitive control network" OR "brain activation" OR "brain activation patterns" OR "cognitive tasks" OR "executive tasks" OR "cognitive assessment" OR "executive assessment") AND 
-
 (academ* OR education* OR stud* OR learn* OR perform* OR school OR university OR college)\\
 H3 & ("stereotype threat") AND 
-
 ("working memory*" OR "processing speed" OR accuracy) AND 
-
 (academ* OR education* OR stud* OR learn* OR perform* OR school OR university OR college)\\
 \bottomrule
 \addlinespace
 \end{tabular}
 
-}
-
 \begin{tablenotes}[para]
-\normalsize{\textit{Note.} \small The search queries were used in the databases Web of Science, Google Scholar, PSYNDEX, ResearchRabbit, and EBSCOhost. The permalinks to each search used can be found within the GitHub repository.}
+\normalsize{\textit{Note.} The search queries were used in the databases Web of Science, Google Scholar, PSYNDEX, ResearchRabbit, and EBSCOhost. The permalinks to each search used can be found within the GitHub repository.}
 \end{tablenotes}
 
 \end{threeparttable}
@@ -622,24 +603,24 @@ An example for Hypothesis 3 would be, a paper measured working memory but just r
 This second screening was done by looking into the full-text of each paper, here another 49 papers were excluded for the following reasons: wrong focus (\(n = 30\)), wrong study design (\(n = 10\)), wrong population (\(n = 7\)), wrong publication type (\(n = 2\)) --- an overview of this can be found in the Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) flowchart (Haddaway et al., 2022) in Figure \ref{fig:prisma}.
 In the end, 28 papers were included in this review, \(n = 8\) for Hypothesis 1, \(n = 9\) for Hypothesis 2, and \(n = 14\) for Hypothesis 3 --- some were used for multiple hypotheses. Out of the 517 papers, 382 were excluded for 'wrong focus', 73 for `wrong population', 43 for `wrong study design', 13 for wrong publication type, 4 for `foreign language', and 1 for `wrong study duration' (some papers were excluded for multiple reasons). A full list of all papers found and excluded can be found in the GitHub repository.\\
 A template was created to summarize each paper, with two versions completed: one by the author and one by Claude AI.
-The template was a mixture of the following checklists: Critical Appraisal Skills Programme systematic review checklist (Critical Appraisal Skills Programme, 2018), Review guidelines for extracting data and quality assessing primary studies in educational research (EPPI-Centre, 2003), Critical appraisal checklist for a systematic review (University of Glasgow, n.d.), and the Newcastle-Ottawa scale for assessing the quality of nonrandomised studies in meta-analyses (Wells et al., 2014), which are used to describe studies and assess their quality.
+The template was a mixture of the following checklists: CASP systematic review checklist (Critical Appraisal Skills Programme, 2018), Review guidelines for extracting data and quality assessing primary studies in educational research (EPPI-Centre, 2003), Critical appraisal checklist for a systematic review (University of Glasgow, n.d.), and the Newcastle-Ottawa scale for assessing the quality of nonrandomised studies in meta-analyses (Wells et al., 2014), which are used to describe studies and assess their quality.
 Redundant and irrelevant items were eliminated, and the remaining questions were consolidated into a single template.
 This approach provided a comprehensive overview of the final papers.
 Based on these summaries, the papers were analysed, and the results are presented in the following sections.
 
 \begin{figure}
 \centering
-\includegraphics{files/prisma.pdf}
-\caption{\label{fig:prisma}PRISMA Flow Diagram of Study Selection Process}
+\includegraphics{../files/prisma.pdf}
+\caption{\label{fig:prisma}This PRISMA flow diagram illustrates the process of study selection for this systematic review. The diagram shows the number of records identified through database searching, the number of records screened and excluded, and the final number of studies included in the review. EBSCOhost, Google Scholar, PSYNDEX, ResearchRabbit, and Web of Science were the databases used for the initial search. Records were excluded based on criteria such as wrong focus, study design, population, or publication type.}
 \end{figure}
 
 \subsection{\texorpdfstring{Reporting of \emph{p}-values}{Reporting of p-values}}\label{reporting-of-p-values}
 
-It should be noted that some \emph{p}-values are reported for example, \emph{p} \textless{} .010, this is not in accordance with American Psychology Association (APA) guidelines ({``6.36 {Decimal Fractions},''} 2020); however, this format was chosen, since the papers it was taken from used this format, and it was deemed important to keep the original format, especially since it is unknown what the actual \emph{p}-value was.
+It should be noted that some \emph{p}-values are reported for example, \emph{p} \textless{} .010, this is not in accordance with APA guidelines ({``6.36 {Decimal Fractions},''} 2020); however, this format was chosen, since the papers it was taken from used this format, and it was deemed important to keep the original format, especially since it is unknown what the actual \emph{p}-value was.
 
 \subsection{RStudio and R packages}\label{rstudio-and-r-packages}
 
-The following R packages were used to create this review: R (Version 4.4.1; R Core Team, 2024) and the R-packages \emph{citr} (Version 0.3.2; Aust, 2019), \emph{dplyr} (Version 1.1.4; Wickham et al., 2023), \emph{gramr} (Version 0.0.0.9000; Dumas et al., 2024), \emph{kableExtra} (Version 1.4.0; Zhu, 2024), \emph{papaja} (Version 0.1.2.9000; Aust \& Barth, 2023), \emph{RefManageR} (Version 1.4.0; McLean, 2017), \emph{rmarkdown} (Version 2.27; Xie et al., 2018, 2020), \emph{shiny} (Version 1.8.1.1; Chang et al., 2024), and \emph{tinylabels} (Version 0.2.4; Barth, 2023).
+The following R packages were used to create this review: R (Version 4.4.1; R Core Team, 2024) and the R-packages \emph{citr} (Version 0.3.2; Aust, 2019), \emph{dplyr} (Version 1.1.4; Wickham et al., 2023), \emph{gramr} (Version 0.0.0.9000; Dumas et al., 2024), \emph{papaja} (Version 0.1.2.9000; Aust \& Barth, 2023), \emph{rmarkdown} (Version 2.27; Xie et al., 2018, 2020), \emph{stringr} (Version 1.5.1; Wickham, 2023), and \emph{tinylabels} (Version 0.2.4; Barth, 2023).
 
 \section{Results}\label{results}
 
@@ -656,7 +637,7 @@ Experiment 4: A significant Block \(\times\) Problem Repetition \(\times\) Probl
 Accuracy significantly decreased under stereotype threat; CI {[}52.80\% - 77.20\%{]}; \emph{d} = 0.70) in high-demand problems.\\
 Experiment 5: Under stereotype threat, an interaction between Task \(\times\) Experiment for RT, \emph{F}(1,56) = 4.38, \emph{p} \textless{} .050, \(\eta^{2}_{p}\) = .070 was found, with verbal tasks being significantly slower than spatial ones.
 H1 is partially confirmed by this paper, central executive functioning is assumed to involve the prefrontal cortex; however, this is not the only area affected.
-The phonological loop is associated with Brodmann Area 4 (BA4), BA49, and (approximately) BA44 and BA45.
+The phonological loop is associated with BA4, BA49, and (approximately) BA44 and BA45.
 
 Dunst et al. (2013) investigated the effects of stereotype threat on neural efficiency and sex differences in visuospatial task performance, using task performance, brain activation, and neural efficiency as dependent variables, and sex, stereotype exposure, and figural intelligence as independent variables
 The final sample consisted of 58 participants (\(N = 58\); 26 girls).
@@ -671,7 +652,8 @@ Among minorities, a correlation between LLPC-MPFC theta phase-locking and self-d
 H1 is supported by this paper.
 
 Forbes et al. (2008) hypothesized that error-related negativity (ERN) displays a greater amplitude under stereotype threat, and that greater Error Positivity (Pe) amplitudes to errors would be predicted under stereotype threat.\\
-Diagnostic of intelligence (stereotype threat) and control, alongside psychological disengagement (devaluing academics/discounting intelligence tests) were the independent variables and ERN, Pe, task performance, and self-reported measurements were the dependent variables.
+The study design was cross-sectional with two groups, diagnostic of intelligence (DIQ; stereotype threat) and control (no stereotype threat).
+Diagnostic of intelligence (DIQ; stereotype threat) and control, alongside psychological disengagement (devaluing academics/discounting intelligence tests) were the independent variables and ERN, Pe, task performance, and self-reported measurements were the dependent variables.
 The sample consisted of 57 (\(N = 57\)) minority undergraduates.
 The ERN was measured as the peak negative deflection at Fz (frontal midline electrode) between 50 and 130 ms after the response, while the Pe was measured as the peak positive deflection at site Pz (midline parietal electrode) between 200 and 500 ms after the error, based on these difference waveforms.
 Under stereotype threat (\(\beta\) = 0.46, \emph{p} \textless{} .010), smaller ERN amplitudes were found, with devaluing was a predictor.
@@ -682,7 +664,7 @@ H1 is partially being confirmed by this paper, as neural activation was found du
 
 Jończyk et al. (2022) examined the impact of stereotype threat on alpha power and creative thinking in 23 female undergraduates.
 Measurements were taken before and after threat manipulation, forming the independent variables, while creative thinking (measured using Alternative Uses task, and Utopian Situations task) and alpha power formed the dependent variables.
-Task related power was calculated in the lower (8-10 Hz) and upper (10-12 Hz) alpha bands before and after the stereotype threat manipulation.\\
+Task related power (TRP) was calculated in the lower (8-10 Hz) and upper (10-12 Hz) alpha bands before and after the stereotype threat manipulation.\\
 The final sample consisted of twenty-three (\(N = 23\)) female undergraduates.\\
 A main effect of threat was found in the lower alpha range (8-10 Hz), \emph{F}(1,21) = 19.41, \emph{p} \textless{} .001, \(\hat{\eta}^{2}_{G}\) = 0.05, 90\% CI {[}0.00, 0.26{]}, with greater alpha Event-Related Synchronization (ERS) after the administration of stereotype threat (\(M_{\text{post-threat}}\) = 10.00, 95\% CI {[}-4.38, 24.39{]}).
 A main effect of threat was also found in the upper alpha range, \emph{F}(1, 21) = 15.42, \emph{p} \textless{} .001, \(\hat{\eta}^{2}_{G}\) = 0.05, 90\% CI {[}0.00, 0.26{]}, with greater upper alpha ERS after the administration of stereotype threat (\(M_{\text{post-threat}}\) = 3.75, 95\% CI {[}-10.09, 17.59{]}).
@@ -743,7 +725,7 @@ Beilock et al. (2007) & Experimental & Experiment 1: 31 female college students;
 Dunst et al. (2013) & Experimental & 58 secondary school students in Austria & Effects of stereotype threat on neural efficiency and task performance; EEG (cerebral cortex, cerebellar cortex) & IV: Stereotype exposure; DV: Neural efficiency, Task performance & ANOVA & Heightened cortical activation ($\textit{M}$ = 0.07, $\textit{SD}$ = 0.03). $\textit{F}$(1, 54) = 3.93*, $\text{partial }\eta^{2}_\text{p}$ = 0.07. & No\\
 Forbes et al. (2015) & Experimental & 58 participants (25 White, 33 minorities) & DMN phase-locking at rest and its impact on performance perceptions under stereotype threat; EEG (DMN) & IV: Phase-locking between LLPC and P/PCC, Phase-locking between LLPC and MPFC; DV: Error estimation, Self-doubt & Regression models & The relationship between LLPC-P/PCC theta phase-locking showed a main effect on error estimation and was moderated by a significant interaction. $\textit{b}$ = -195.29, $\beta$ = -0.37, $\textit{SE}$= 81.13*, $\textit{b}$ = 350.13, $\beta$ = 0.37, $\textit{SE}$ = 147.26*,). & Yes\\
 Forbes et al. (2008) & Experimental & 57 minority undergraduates & Effects of stereotype threat on ERN and Pe; EEG (anterior cingulate) & IV: Diagnosticity, Psychological disengagement (devaluing academics/discounting intelligence tests); DV: ERN, Pe, Task performance, Self-reported measurements & Repeated measures analysis & Smaller ERN amplitudes were found under stereotype threat ($\beta$ = 0.46, **). A significant moderation effect of discounting on diagnosticity was observed at Pz ($\beta$ = 0.29*, $R^2$ = 0.52). & Partially\\
-Jończyk et al. (2022) & Experimental & 23 female undergraduates in the United States & Effects of stereotype threat on alpha power and creative thinking; EEG (DMN) & IV: Threat manipulation; DV: Creative thinking, Alpha power & Repeated measures ANOVA & Greater alpha Event-Related Synchronization (ERS) was found after the administration of stereotype threat in both the lower (8-10 Hz) and upper (10-12 Hz) alpha ranges. $\textit{F}$(1,21) = 19.41***, $\hat{\eta}^{2}_\text{G}$ = 0.05, 90\% CI [0.00, 0.26]. & Partially\\
+Jończyk et al. (2022) & Experimental & 23 female undergraduates in US & Effects of stereotype threat on alpha power and creative thinking; EEG (DMN) & IV: Threat manipulation; DV: Creative thinking, Alpha power & Repeated measures ANOVA & Greater alpha Event-Related Synchronization (ERS) was found after the administration of stereotype threat in both the lower (8-10 Hz) and upper (10-12 Hz) alpha ranges. $\textit{F}$(1,21) = 19.41***, $\hat{\eta}^{2}_\text{G}$ = 0.05, 90\% CI [0.00, 0.26]. & Partially\\
 Krendl et al. (2008) & Experimental & 28 female undergraduates & Effects of stereotype threat on neural activation patterns and maths performance; fMRI (vACC, BA11, BA2) & IV: Condition (stereotype threat vs. control), Time of measurements (pre-manipulation vs. post-manipulation); DV: Neural activation patterns, Maths performance & Mixed-model ANOVA & Heightened activity in the vACC, BA11, and BA2 during the second test. $\textit{t}$ = 6.26***, $\textit{t}$(13) = 5.63***, and $\textit{t}$(13) = 5.19***, respectively & Partially\\
 Mangels et al. (2012) & Prospective & 68 participants & Effects of stereotype threat on maths performance and neural responses to feedback; EEG (LPP) & IV: Stereotype threat vs. no stereotype threat; DV: Maths performance, ERP responses to feedback, Learning success & ANOVA & Maths performance was impaired under stereotype threat. $\textit{F}$(1,64) = 4.30*. & No\\
 Wu and Zhao (2021) & Experimental & 48 female undergraduates in China & Effects of maths stereotype threat on brain region connectivity; rs-fMRI (left precuneous, hippocampus, MCG, cerebellum) & IV: Test (pre- vs post-test), Condition (stereotype threat vs. control); DV: RSDC of brain regions & Mixed-effect analysis & Significant main effects were found for the hippocampus, MCG, right cerebellum, and left precentral gyrus; left precuneus: $\textit{F}$(1,45) = 8.43**. & Partially\\
@@ -768,21 +750,21 @@ H2 is weakly supported by this paper, while stereotype threat did decrease \emph
 Hirnstein et al. (2014) investigated the effects of stereotype threat on sex differences in cognitive performance and its relation to testosterone levels.
 A final sample of 136 participants (\(n_{\text{female}} = 70\)) were tested in a 2 (stereotype threat vs.~control) \(\times\) 2 (mixed vs.~same sex) \(\times\) 2 (male vs.~female) factorial design, which formed the independent variables.
 Cognitive performance (tested using mental rotation, verbal fluency, and perceptual speed tests) alongside testosterone levels, were used as dependent variables.
-The Mental-Rotation-Task-3D showed a significant main effect of Sex, with men performing better than women, \emph{F}(1,128) = 10.97, \emph{p} = .001, \(\eta^{2}\) = 0.08, \emph{d} = 0.57, while Condition showed a significant main effect in the Mirror-Pictures-2D, \emph{F}(1,128) = 4.70, \emph{p} = .032, \(\eta^{2}\) = 0.04.
+The Mental-Rotation-Task-3D showed a significant main effect of Sex, with men performing better than women, \emph{F}(1,128) = 10.97, \emph{p} = .001, \(\eta^{2}\) = 0.08, \emph{d} = 0.57, while Condition showed a significant main effect in the MP-2D, \emph{F}(1,128) = 4.70, \emph{p} = .032, \(\eta^{2}\) = 0.04.
 For verbal fluency, interactions were found between Condition and Group Sex Composition, in both, the Word Fluency, \emph{F}(1,128) = 4.49, \emph{p} = .036, \(\eta^{2}\) = 0.03,and the 4W, \emph{F}(1,128) = 6.30, \emph{p} = .013, \(\eta^{2}\) = 0.05).
 Between Sex \(\times\) Condition, another interaction was found, in the 4W, \emph{F}(1,128) = 6.77, \emph{p} = .011, \(\eta^{2}\) = 0.05.
 Furthermore, in the 4W, Condition showed a significant main effect, \emph{F}(1,128) = 4.67, \emph{p} = .033, \(\eta^{2}\) = 0.04.
 Perceptual speed also showed the significant Condition and Group Sex Composition interaction, \emph{F}(1,128) = 6.89, \emph{p} = .009, \(\eta^{2}\) = 0.05.
-Condition, again showed a significant main effect, this time in the perceptual speed, \emph{F}(1,128) = 12.65, \emph{p} = .001, \(\eta^{2}\) = 0.09.
+Condition, again showed a significant main effect, this time in the PS, \emph{F}(1,128) = 12.65, \emph{p} = .001, \(\eta^{2}\) = 0.09.
 H2 is weakly but partially being supported, since individuals under stereotype threat performed worse on the 4W (but not Word Fluency) and perceptual speed tests, which measure cognitive control among other things.
 
 In this study, the Jordano and Touron (2017b) investigated the effects of stereotype threat on both, cognitive performance and task-related mind-wandering.
 In both experiments sixty female undergraduates were assigned to either a stereotype threat or control condition; mind-wandering --- measured using Task-Unrelated Thoughts and Task-Related Inference probes ---, task performance (on the Operation Span task; OSPAN), and self-reported measures (i.e., emotional states, cognitive load/perceived difficulty, experience of mind-wandering), were used as dependent variables.
 In the first experiment, it was found that participants under stereotype threat reported significantly more task-related interference compared to the control group, \emph{F}(1,58) = 5.67, \emph{p} = .021, \emph{d} = 0.64.\\
 Neither maths verification accuracy nor letter recall accuracy were worse under stereotype threat.
-In the second experiment, the same pattern was found, with participants under stereotype threat reporting significantly more task related inference, \emph{F}(1,58) = 5.53, \emph{p} = .022, \emph{d} = 0.42.
+In the second experiment, the same pattern was found, with participants under stereotype threat reporting significantly more TRI, \emph{F}(1,58) = 5.53, \emph{p} = .022, \emph{d} = 0.42.
 Maths verification accuracy was worse under stereotype threat, \emph{F}(1,58) = 12.11, \emph{p} = .001, \emph{d} = 0.16.
-H2 is partially confirmed. While cognitive control did suffer under stereotype threat, as evidenced by increased mind-wandering (task related inference), regardless of task difficulty, task performance only worsened in the more difficult maths component of the OSPAN task.
+H2 is partially confirmed. While cognitive control did suffer under stereotype threat, as evidenced by increased mind-wandering (TRI), regardless of task difficulty, task performance only worsened in the more difficult maths component of the OSPAN task.
 
 Krendl et al. (2008) has already been reported in the H1 section.
 H2 is supported, due to decreased accuracy under stereotype threat, as well as neural activation patterns (vACC).
@@ -828,7 +810,7 @@ H2 is mostly supported by this paper, albeit, only under prevention focus - and 
 
 Wister et al. (2013) hypothesized that menstruation stereotype threat would impair performance on cognitive tasks, this effect would be amplified if women believed menstruation to be a hindrance to their cognitive abilities.
 However, if menstruation was primed as a positive influence, cognitive performance would not be impaired.
-Ninety-two female undergraduates were assigned into four groups, 2 stereotype threat (menstruation threat vs.~no threat) \(\times\) 2 menstruation prime (positive vs.~no positive prime), forming the independent variables, while cognitive performance (measured by a Stroop test and Scholastic Assessment Test-like maths test) and menstrual attitudes (measured by Menstrual Attitude Questionnaire) were used as dependent variables.
+Ninety-two female undergraduates were assigned into four groups, 2 stereotype threat (menstruation threat vs.~no threat) \(\times\) 2 menstruation prime (positive vs.~no positive prime), forming the independent variables, while cognitive performance (measured by a Stroop test and SAT-like maths test) and menstrual attitudes (measured by Menstrual Attitude Questionnaire) were used as dependent variables.
 The experiment ended for everyone with the completion of the Menstrual Attitudes Questionnaire.\\
 While a main effect of threat on Stroop performance was found, Lambda = 0.87, \emph{F}(1,68) = 4.91, \emph{p} \textless{} .010.
 Participants under threat were able to complete less items correctly, \emph{F}(1,69) = 9.48, \emph{p} \textless{} 0.01, and a correlation between closeness to menstruation and both, Stroop performance, \emph{r} = -0.56, \emph{p} = .011, and positive prime effectiveness, \emph{r} = -0.46, \emph{p} = .610 were found, with individuals in the Menstruation Threat/Positive Prime condition performing worst.
@@ -869,7 +851,7 @@ Krendl et al. (2008) & Experimental & 28 female undergraduates & Effects of ster
 Lin et al. (2023) & Cross-sectional & 153 female undergraduates & Effects of stereotype threat on spatial performance and executive function; Spatial perspective-taking, executive function tests & IV: Stereotype threat; DV: Spatial performance, Executive function & ANCOVA, mediation analysis & Decreased performance, impaired inhibition and updating under threat; $\textit{F}$(1,74) = 10.06**, $\eta^{2}_\text{p}$ = .120 & Partially\\
 Rydell et al. (2014) & Experimental & 340 undergraduates across 3 experiments & Effects of stereotype threat on executive function and maths performance; Executive function tasks, maths tests & IV: Stereotype threat; DV: Executive function, Maths performance & ANOVA, mediation analysis & Impaired inhibition and updating, decreased maths performance under threat; $\textit{F}$(1,164) = 20.22***, $\eta^{2}_\text{p}$ = .110 & Mostly\\
 Ståhl et al. (2012) & Experimental & 335 students across 3 experiments & Effects of stereotype threat and regulatory focus on cognitive control; Stroop task, maths task & IV: Stereotype threat, Regulatory focus; DV: Cognitive control, Maths performance & ANOVA & Initial increase then decrease in cognitive control under threat (prevention focus); $\textit{F}$(1,150) = 13.30***, $\eta^{2}_\text{p}$ = .080 & Mostly\\
-Wister et al. (2013) & Experimental & 92 female undergraduates & Effects of menstruation stereotype threat on cognitive performance; Stroop test, Scholastic Assessment Test-like maths test & IV: Menstruation threat, Positive prime; DV: Cognitive performance & MANOVA & Impaired Stroop performance under menstruation threat; $\textit{F}$(1,68) = 4.91**, $\eta^{2}_\text{p}$ = .130 & Partially\\
+Wister et al. (2013) & Experimental & 92 female undergraduates & Effects of menstruation stereotype threat on cognitive performance; Stroop test, SAT-like maths test & IV: Menstruation threat, Positive prime; DV: Cognitive performance & MANOVA & Impaired Stroop performance under menstruation threat; $\textit{F}$(1,68) = 4.91**, $\eta^{2}_\text{p}$ = .130 & Partially\\
 Wulandari and Hendrawan (2020) & Experimental & 168 undergraduates (91 female) & Effects of stereotype threat activation on task performance; Letter fluency test & IV: Stereotype threat activation, Gender, Task difficulty; DV: Task performance & ANOVA & No significant effects of threat on performance; $\textit{F}$(1,159) = 4.12*, $\eta^{2}_\text{p}$ = .025 & No\\
 \bottomrule
 \addlinespace
@@ -1288,9 +1270,6 @@ Chafee, M. V., \& Heilbronner, S. R. (2022). Prefrontal cortex. \emph{Current Bi
 \bibitem[\citeproctext]{ref-chandlerCognitiveLoadTheory1991}
 Chandler, P., \& Sweller, J. (1991). Cognitive {Load Theory} and the {Format} of {Instruction}. \emph{Cognition and Instruction}, \emph{8}(4), 293--332. \url{https://doi.org/10.1207/s1532690xci0804_2}
 
-\bibitem[\citeproctext]{ref-R-shiny}
-Chang, W., Cheng, J., Allaire, J., Sievert, C., Schloerke, B., Xie, Y., Allen, J., McPherson, J., Dipert, A., \& Borges, B. (2024). \emph{Shiny: Web application framework for r}. \url{https://CRAN.R-project.org/package=shiny}
-
 \bibitem[\citeproctext]{ref-eysenckCognitiveControlIts2020}
 Cognitive control: Its role in insight, functional fixedness and mental set. (2020). In \emph{Cognitive psychology: A student's handbook} (Eighth edition, pp. 586--588). Routledge.
 
@@ -1422,9 +1401,6 @@ Maloney, E. A., Schaeffer, M. W., \& Beilock, S. L. (2013). Mathematics anxiety 
 
 \bibitem[\citeproctext]{ref-matherHowFMRICan2013}
 Mather, M., Cacioppo, J. T., \& Kanwisher, N. (2013). How {fMRI Can Inform Cognitive Theories}. \emph{Perspectives on Psychological Science}, \emph{8}(1), 108--113. \url{https://doi.org/10.1177/1745691612469037}
-
-\bibitem[\citeproctext]{ref-R-RefManageR}
-McLean, M. W. (2017). RefManageR: Import and manage BibTeX and BibLaTeX references in r. \emph{The Journal of Open Source Software}. \url{https://doi.org/10.21105/joss.00338}
 
 \bibitem[\citeproctext]{ref-michelUtilizationEEGBrain2012}
 Michel, C. M., \& Murray, M. M. (2012). Towards the utilization of {EEG} as a brain imaging tool. \emph{NeuroImage}, \emph{61}(2), 371--385. \url{https://doi.org/10.1016/j.neuroimage.2011.12.039}
@@ -1576,6 +1552,9 @@ Weber, S., Appel, M., \& Kronberger, N. (2015). Stereotype threat and the cognit
 \bibitem[\citeproctext]{ref-wellsNewcastleottawaScaleNOS2014}
 Wells, G., Shea, B., O'Connell, D., Robertson, J., Welch, V., Losos, M., \& Tugwell, P. (2014). The newcastle-ottawa scale ({NOS}) for assessing the quality of nonrandomised studies in meta-analyses. \emph{Ottawa Health Research Institute Web Site}, \emph{7}.
 
+\bibitem[\citeproctext]{ref-R-stringr}
+Wickham, H. (2023). \emph{Stringr: Simple, consistent wrappers for common string operations}. \url{https://CRAN.R-project.org/package=stringr}
+
 \bibitem[\citeproctext]{ref-R-dplyr}
 Wickham, H., François, R., Henry, L., Müller, K., \& Vaughan, D. (2023). \emph{Dplyr: A grammar of data manipulation}. \url{https://CRAN.R-project.org/package=dplyr}
 
@@ -1600,10 +1579,14 @@ Xie, Y., Dervieux, C., \& Riederer, E. (2020). \emph{R markdown cookbook}. Chapm
 \bibitem[\citeproctext]{ref-zhangRoleStereotypeThreat2023}
 Zhang, H., Zhou, X., Nielsen, M. S., \& Klyver, K. (2023). The role of stereotype threat, anxiety, and emotional intelligence in women's opportunity evaluation. \emph{Entrepreneurship Theory and Practice}, \emph{47}(5), 1699--1730. \url{https://doi.org/10.1177/10422587221096905}
 
-\bibitem[\citeproctext]{ref-R-kableExtra}
-Zhu, H. (2024). \emph{kableExtra: Construct complex table with 'kable' and pipe syntax}. \url{https://CRAN.R-project.org/package=kableExtra}
-
 \end{CSLReferences}
+
+
+\clearpage
+\renewcommand{\listfigurename}{Figure captions}
+
+\clearpage
+\renewcommand{\listtablename}{Table captions}
 
 
 \end{document}

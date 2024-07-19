@@ -1,0 +1,5 @@
+\usepackage{tocloft}
+\usepackage{etoolbox}
+\patchcmd{\listoffigures}{\section*}{\section}{}{}
+\renewcommand{\listfigurename}{Figures}
+\setlength{\cftfignumwidth}{2em}
